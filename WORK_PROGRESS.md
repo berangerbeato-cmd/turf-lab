@@ -175,6 +175,19 @@ Statut : planifiée, non implémentée et non utilisée dans le modèle actuel.
 - Conserver le protocole V2 en cours et le modèle prospectif V1 figés. Intégration effective seulement après audit, implémentation et évaluation documentés.
 - Prochaine action pour cette extension : inventorier les champs de départ dans les données mensuelles sauvegardées et établir leur taux de disponibilité.
 
+## Extensions futures demandées — météo et terrain (13 octobre 2026)
+
+Statut : planifiées ; disponibilité des sources à auditer, non intégrées au modèle actuel.
+
+- Terrain/piste : distinguer revêtement, configuration du parcours et état de piste annoncé (humidité, piste lourde ou autres libellés réellement fournis). Conserver le libellé source et sa signification propre au trot ; ne pas transposer automatiquement une échelle du galop.
+- Météo : rechercher une source gratuite autorisée donnant température, pluie récente/cumulée, vent (vitesse et direction), et si utile humidité, avec localisation de l'hippodrome, distance de station et horodatage.
+- Séparer observations disponibles avant départ, prévisions émises avant départ et mesures constatées après. Une archive météo réalisée ou réanalysée ne doit pas être présentée comme une prévision historique disponible à l'époque.
+- Ne jamais utiliser le cumul de pluie de toute la journée pour une course antérieure à la fin de cette journée. Ne pas déduire un état de piste certain de la seule météo ; entretien et drainage restent des facteurs non observés.
+- Mesurer la couverture historique et prospective, les délais de publication et les valeurs manquantes avant intégration ; aucune donnée manquante remplacée silencieusement par « sec ».
+- Étudier les interactions avec revêtement, hippodrome, distance et performances antérieures du cheval dans des conditions comparables ; réduire les ajustements quand l'historique est faible.
+- Comparer les ajouts météo et terrain séparément puis ensemble sur validation chronologique, avec log loss, Brier et calibration. Conserver uniquement les gains mesurés ; test indépendant non utilisé pour régler les variables.
+- Prochaine action : inventorier les champs piste/terrain dans les bruts PMU sauvegardés, puis identifier une source météo gratuite seulement si ces données manquent. Préserver le protocole V2 en cours et le modèle prospectif V1 figés.
+
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
 
