@@ -18,7 +18,8 @@ def month_days(month):
 
 
 def valid_programme(value):
-    return isinstance(value, dict) and isinstance(value.get('programme', value).get('reunions'), list)
+    body = value.get('programme', value) if isinstance(value, dict) else None
+    return isinstance(body, dict) and isinstance(body.get('reunions'), list)
 
 
 def collect(month, store, output):
@@ -46,10 +47,14 @@ def collect(month, store, output):
                           'country': 'FRA', 'start_type': start_type(course),
                           'distance_m': course.get('distance'), 'scheduled_start_ms': course.get('heureDepart'),
                           'course': course, 'participants': runners, 'detail': detail}
-                if not runners or not isinstance(detail, dict):
+                if not isinstance(runners, list) or not runners or not isinstance(detail, dict):
                     report['quarantine'].append({'race_id': race_id, 'issues': ['missing_response']})
                     continue
-                diagnostic = assess([record])
+                try:
+                    diagnostic = assess([record])
+                except (KeyError, TypeError, AttributeError) as error:
+                    report['quarantine'].append({'race_id': race_id, 'issues': ['malformed_response: '+str(error)]})
+                    continue
                 if diagnostic['issues'] or diagnostic['counts'].get('single_winner_races') != 1:
                     report['quarantine'].append({'race_id': race_id, 'issues': diagnostic['issues'] or ['not_single_winner']})
                     continue
@@ -73,6 +78,10 @@ def collect(month, store, output):
             raise
         report['status'] = 'PAUSED_REQUEST_BUDGET'
     finally:
+        report['field_availability_retained_participants'] = {
+            key: {'nonempty': value, 'denominator': report['participants'],
+                  'fraction': value/report['participants'] if report['participants'] else None}
+            for key, value in field_counts.items()}
         report['requests_this_run'] = store.requests
         report['venues'] = dict(collections.Counter(p['venue'] for p in report['partitions']))
         report['candidate_races'] = sum(d.get('candidate_races', 0) for d in report['days'])

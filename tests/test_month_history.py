@@ -34,3 +34,15 @@ class MonthlyHistoryTests(unittest.TestCase):
         later['participants'][0]['rapportDirect']={'rapport':99}
         self.assertEqual(base,build_history([r,later]))
         with self.assertRaises(ValueError):build_history([r,r])
+
+    def test_unknown_place_is_not_invented_non_placing(self):
+        past=race('2024-01-01');past['participants'][0]['ordreArrivee']=None
+        rows=build_history([past,race('2024-01-03')])
+        self.assertIsNone(rows[-1]['runners'][0]['features'][1])
+
+    def test_conflicting_pedigree_blocks_history_merge(self):
+        a=race('2024-01-01');b=race('2024-01-03')
+        a['participants'][0]['idCheval']='123'
+        b['participants'][0]['idCheval']='123'
+        b['participants'][0]['nomMere']='Different'
+        with self.assertRaises(ValueError):build_history([a,b])

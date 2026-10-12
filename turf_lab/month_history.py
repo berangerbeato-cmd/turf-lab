@@ -40,9 +40,13 @@ def build_history(records):
             for p in race['participants']:
                 key = identity(p)
                 prior = sorted(history[key], key=lambda h: (h['date'], h['race_id']), reverse=True)[:5]
+                values = features(prior, day)
+                # Unknown placing is not evidence of finishing outside the first three.
+                if any(h['rank'] is None and not h['status'] for h in prior):
+                    values[1] = None
                 normalized['runners'].append({'number': p['numPmu'], 'name': p['nom'], 'horse_id': key,
                     'non_runner': p.get('statut') == 'NON_PARTANT',
-                    'features': features(prior, day), 'history': prior,
+                    'features': values, 'history': prior,
                     'won': int(p.get('ordreArrivee') == 1), 'rank': p.get('ordreArrivee'), 'incident': p.get('incident')})
             result.append(normalized)
         for race in batch:
@@ -52,5 +56,5 @@ def build_history(records):
                 incident = str(p.get('incident') or '')
                 history[identity(p)].append({'date': day, 'race_id': race['race_id'],
                     'venue': race['venue'], 'distance_m': race['distance_m'],
-                    'rank': p.get('ordreArrivee'), 'dq': incident.startswith('DISQUALIFIE') or incident == 'DISTANCE'})
+                    'rank': p.get('ordreArrivee'), 'status': incident, 'dq': incident.startswith('DISQUALIFIE') or incident == 'DISTANCE'})
     return result
