@@ -5,11 +5,11 @@ on:
       date:
         description: Start date YYYY-MM-DD
         required: true
-        default: '2026-10-11'
+        default: '2026-10-05'
       days:
         description: Days to fetch (1 to 7)
         required: true
-        default: '1'
+        default: '7'
 permissions:
   contents: read
 jobs:
