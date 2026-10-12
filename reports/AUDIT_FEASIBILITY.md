@@ -28,7 +28,7 @@ Huit dates 2024/2025, quatre courses au plus par date, sélectionnées pour vari
 
 Hippodromes réellement audités : ARGENTAN, BEAUMONT DE LOMAGNE, CAEN, CAGNES/MER, ENGHIEN, LAVAL, LE CROISE LAROCHE, LES SABLES D OLONNE, LYON LA SOIE, NANTES, NIMES, VINCENNES.
 
-Collecte principale : 107 réponses, statuts {'200': 107}. Évidence complémentaire incluse : 173 réponses conservées au total. Rejouer les analyses utilise le cache et vérifie les empreintes SHA-256.
+Collecte principale : 107 réponses, statuts {'200': 107}. Évidence complémentaire incluse : 1228 réponses conservées au total. Rejouer les analyses utilise le cache et vérifie les empreintes SHA-256.
 
 ## A1 — cinq chevaux, historique arrêté avant le 05/10/2026
 

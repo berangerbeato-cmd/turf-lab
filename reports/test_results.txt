@@ -2,6 +2,9 @@ test_geographical_and_discipline_scope (test_evidence.EvidenceTests.test_geograp
 test_github_credential_not_forwarded_to_artifact_host (test_evidence.EvidenceTests.test_github_credential_not_forwarded_to_artifact_host) ... ok
 test_historical_identity_requires_both_parents (test_evidence.EvidenceTests.test_historical_identity_requires_both_parents) ... ok
 test_resume_checks_integrity_without_network (test_evidence.EvidenceTests.test_resume_checks_integrity_without_network) ... ok
+test_end_to_end_freezes_test_and_fits_only_training_period (test_extension.ExtensionTests.test_end_to_end_freezes_test_and_fits_only_training_period) ... ok
+test_missing_programme_blocks_training (test_extension.ExtensionTests.test_missing_programme_blocks_training) ... ok
+test_protocol_has_disjoint_unseen_test_and_warmup (test_extension.ExtensionTests.test_protocol_has_disjoint_unseen_test_and_warmup) ... ok
 test_cannot_leak_target_or_future_race (test_history.HistoryTests.test_cannot_leak_target_or_future_race) ... ok
 test_conflicting_duplicates_fail (test_history.HistoryTests.test_conflicting_duplicates_fail) ... ok
 test_disqualification_not_imputed_rank_or_speed (test_history.HistoryTests.test_disqualification_not_imputed_rank_or_speed) ... ok
@@ -22,6 +25,7 @@ test_missing_programme_is_recorded (test_month.MonthTests.test_missing_programme
 test_quality_quarantine_and_cached_rebuild (test_month.MonthTests.test_quality_quarantine_and_cached_rebuild) ... ok
 test_weekly_durable_checkpoint_boundaries (test_month.MonthTests.test_weekly_durable_checkpoint_boundaries) ... ok
 test_conflicting_pedigree_blocks_history_merge (test_month_history.MonthlyHistoryTests.test_conflicting_pedigree_blocks_history_merge) ... ok
+test_fixed_lookback_excludes_gaps_between_windows (test_month_history.MonthlyHistoryTests.test_fixed_lookback_excludes_gaps_between_windows) ... ok
 test_future_and_same_day_excluded (test_month_history.MonthlyHistoryTests.test_future_and_same_day_excluded) ... ok
 test_no_market_dependency_and_duplicate_rejected (test_month_history.MonthlyHistoryTests.test_no_market_dependency_and_duplicate_rejected) ... ok
 test_np_skipped_and_dq_preserved (test_month_history.MonthlyHistoryTests.test_np_skipped_and_dq_preserved) ... ok
@@ -38,6 +42,6 @@ test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_reje
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 38 tests in 0.020s
+Ran 42 tests in 0.036s
 
 OK
