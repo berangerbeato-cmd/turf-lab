@@ -1,6 +1,6 @@
 {
   "month": "2024-02",
-  "status": "RUNNING",
+  "status": "COLLECTED_WITH_GAPS",
   "days": [
     {
       "date": "2024-02-01",
@@ -4396,5 +4396,96 @@
   },
   "participants": 6317,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
-  "model_status": "NO BET; no training in this experiment"
+  "model_status": "NO BET; no training in this experiment",
+  "field_availability_retained_participants": {
+    "idCheval": {
+      "nonempty": 0,
+      "denominator": 6317,
+      "fraction": 0.0
+    },
+    "nomMere": {
+      "nonempty": 6317,
+      "denominator": 6317,
+      "fraction": 1.0
+    },
+    "nomPere": {
+      "nonempty": 6317,
+      "denominator": 6317,
+      "fraction": 1.0
+    },
+    "driver": {
+      "nonempty": 6317,
+      "denominator": 6317,
+      "fraction": 1.0
+    },
+    "entraineur": {
+      "nonempty": 6317,
+      "denominator": 6317,
+      "fraction": 1.0
+    },
+    "musique": {
+      "nonempty": 6148,
+      "denominator": 6317,
+      "fraction": 0.9732467943644135
+    },
+    "ferrure": {
+      "nonempty": 0,
+      "denominator": 6317,
+      "fraction": 0.0
+    },
+    "reductionKilometrique": {
+      "nonempty": 4723,
+      "denominator": 6317,
+      "fraction": 0.7476650308690834
+    },
+    "tempsObtenu": {
+      "nonempty": 4723,
+      "denominator": 6317,
+      "fraction": 0.7476650308690834
+    },
+    "age": {
+      "nonempty": 6317,
+      "denominator": 6317,
+      "fraction": 1.0
+    },
+    "sexe": {
+      "nonempty": 6317,
+      "denominator": 6317,
+      "fraction": 1.0
+    },
+    "gainsParticipant": {
+      "nonempty": 4819,
+      "denominator": 6317,
+      "fraction": 0.7628621180940319
+    }
+  },
+  "requests_this_run": 991,
+  "venues": {
+    "VINCENNES": 113,
+    "LYON LA SOIE": 30,
+    "LA CEPIERE": 28,
+    "CAGNES/MER": 68,
+    "ARGENTAN": 23,
+    "AGEN LA GARENNE": 22,
+    "HYERES": 13,
+    "CHERBOURG": 13,
+    "SAINT BRIEUC": 6,
+    "CHATEAUBRIANT": 6,
+    "GRAIGNES": 21,
+    "MAUQUENCHY": 21,
+    "LAVAL": 20,
+    "SAINT GALMIER": 13,
+    "LE BOUSCAT": 5,
+    "MAURE DE BRETAGNE": 8,
+    "VIRE": 7,
+    "PONT DE VIVAUX": 8,
+    "NANTES": 21,
+    "LIGNIERES": 1,
+    "PONTCHATEAU": 7,
+    "AMIENS": 7,
+    "CHOLET": 6,
+    "REIMS": 6,
+    "LE CROISE LAROCHE": 7
+  },
+  "candidate_races": 481
 }
