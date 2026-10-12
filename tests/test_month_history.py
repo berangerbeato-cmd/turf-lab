@@ -46,3 +46,8 @@ class MonthlyHistoryTests(unittest.TestCase):
         b['participants'][0]['idCheval']='123'
         b['participants'][0]['nomMere']='Different'
         with self.assertRaises(ValueError):build_history([a,b])
+
+    def test_fixed_lookback_excludes_gaps_between_windows(self):
+        rows=build_history([race('2024-01-01'),race('2025-01-01'),race('2025-03-02')],lookback_days=60)
+        self.assertEqual(rows[1]['runners'][0]['history'],[])
+        self.assertEqual([h['date'] for h in rows[2]['runners'][0]['history']],['2025-01-01'])

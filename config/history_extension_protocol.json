@@ -1,0 +1,37 @@
+{
+  "version": "historical-v2-q1",
+  "months": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2026-01",
+    "2026-02",
+    "2026-03"
+  ],
+  "lookback_days": 60,
+  "train": {
+    "from": "2024-03-02",
+    "to": "2024-03-31"
+  },
+  "validation": {
+    "from": "2025-03-02",
+    "to": "2025-03-31"
+  },
+  "test": {
+    "from": "2026-03-02",
+    "to": "2026-03-31"
+  },
+  "l2_candidates": [
+    0.1,
+    1.0
+  ],
+  "minimum_races_per_split": 200,
+  "minimum_retained_fraction_per_month": 0.98,
+  "max_requests_per_month_run": 3000,
+  "status": "EXPERIMENTAL_NO_BET",
+  "selection": "minimum validation log loss including uniform baseline",
+  "policy": "January-February warm-up only. Strict prior-day observations within 60 days. Never tune on March 2026 test; October 2026 pilot test excluded. Frozen prospective pilot unchanged. No odds or ROI."
+}

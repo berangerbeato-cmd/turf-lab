@@ -1,0 +1,103 @@
+name: Turf Lab bounded Q1 historical extension
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/history_extension.yml'
+      - 'config/history_extension_protocol.json'
+      - 'scripts/collect_extension.py'
+      - 'scripts/backtest_extension.py'
+permissions:
+  contents: write
+concurrency:
+  group: turf-history-extension-v2
+  cancel-in-progress: false
+jobs:
+  collect:
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        month: ['2024-01', '2024-02', '2024-03', '2025-01', '2025-02', '2025-03', '2026-01', '2026-02', '2026-03']
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test and collect one frozen month
+        env:
+          HISTORY_MONTH: ${{ matrix.month }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.collect_extension --month "$HISTORY_MONTH"
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save monthly evidence including partial results
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence data reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve historical extension month and quality report'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-${{ matrix.month }}-diagnostic
+          path: |
+            reports/month_${{ matrix.month }}.json
+            data/month_${{ matrix.month }}/manifest.json
+            evidence/month_${{ matrix.month }}/manifest.json
+          retention-days: 7
+  backtest:
+    needs: collect
+    if: always() && !cancelled()
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Evaluate frozen chronological protocol only after quality gates
+        run: python -m scripts.backtest_extension
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save evaluated model and reports
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add models data reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve frozen V2 evaluation and chronological datasets'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

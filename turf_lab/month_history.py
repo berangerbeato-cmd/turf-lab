@@ -1,6 +1,8 @@
 """Features derived only from earlier collected race results, never pretty/odds."""
 from collections import defaultdict
 from itertools import groupby
+from datetime import date, timedelta
+import re
 from turf_lab.pilot import features
 
 
@@ -13,7 +15,7 @@ def identity(runner):
     raise ValueError('Missing reliable horse identity')
 
 
-def build_history(records):
+def build_history(records, lookback_days=None):
     """Do not infer unobserved starts; cold starts remain explicit missing values."""
     records = sorted(records, key=lambda r: (r['date'], r['race_id']))
     if len({r['race_id'] for r in records}) != len(records):
@@ -36,10 +38,12 @@ def build_history(records):
         # All features for a day are computed BEFORE any of its results are added.
         for race in batch:
             normalized = {k: race[k] for k in ('date', 'race_id', 'venue', 'country', 'start_type', 'distance_m', 'scheduled_start_ms')}
-            normalized.update(feature_cutoff=day, runners=[])
+            match = re.search(r'Course\s+([A-G])\b', race.get('course', {}).get('conditions') or '')
+            normalized.update(feature_cutoff=day, category=match.group(1) if match else 'UNKNOWN', runners=[])
             for p in race['participants']:
                 key = identity(p)
-                prior = sorted(history[key], key=lambda h: (h['date'], h['race_id']), reverse=True)[:5]
+                cutoff = (date.fromisoformat(day)-timedelta(days=lookback_days)).isoformat() if lookback_days else '0001-01-01'
+                prior = sorted((h for h in history[key] if h['date'] >= cutoff), key=lambda h: (h['date'], h['race_id']), reverse=True)[:5]
                 values = features(prior, day)
                 # Unknown placing is not evidence of finishing outside the first three.
                 if any(h['rank'] is None and not h['status'] for h in prior):

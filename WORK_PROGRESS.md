@@ -6,11 +6,7 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
-Phase A terminée. Stockage Git durable opérationnel. Pilote B/C/D exécuté dans
-le runtime cloud : 40 courses exploitables sur 46 candidates, six quarantaines
-explicites. Régression expérimentale ; pas de modèle validé, **NO BET**.
-Prédictions prospectives et rapports mobiles générés. Workflows pilote et
-prédiction réussis sur GitHub Actions. Observation quotidienne bornée déployée et premier run réussi.
+Extension historique V2 : janvier 2024 entièrement collecté et sauvegardé (512 courses, 6 757 participations, 18 hippodromes). La chaîne mensuelle et les historiques strictement antérieurs sont reproduits dans GitHub Actions. Collecte bornée des premiers trimestres 2024, 2025 et 2026 en cours de déploiement ; nouveau protocole chronologique figé avant consultation du test. Le pilote prospectif V1 reste inchangé et **NO BET**.
 
 ## Travaux publiés et vérifiés
 
@@ -80,24 +76,12 @@ prédiction réussis sur GitHub Actions. Observation quotidienne bornée déploy
 
 ## Prochaine action précise
 
-1. Priorité active : extension contrôlée de janvier 2024 via scripts/collect_month.py.
-   Examiner reports/MONTH_COVERAGE.md et data/month_2024-01/manifest.json ;
-   résoudre les quarantaines et valider la couverture avant extension pluriannuelle.
-   Le suivi prospectif est indépendant et ne bloque pas le développement.
-   En parallèle : résultats des courses du 13 octobre. Le run quotidien du
-   14 octobre à 06:15 UTC doit récupérer les arrivées définitives et calculer
-   les scores prospectifs, si les partants sont restés identiques. Vérifier
-   reports/shadow_v1.json, les éventuelles quarantaines et le commit de sauvegarde.
-2. Le suivi collecte au maximum deux courses par jour, une à Vincennes et une
-   en province, pour les départs du 13 au 26 octobre. Le contrôle des résultats
-   se poursuit jusqu’au 28 octobre puis les appels PMU cessent. Ne pas élargir
-   cette fenêtre ni changer le modèle sans versionner un nouveau protocole.
-3. Suite scientifique : préparer une extension bornée et un nouveau protocole
-   figé avec davantage de jours/hippodromes ; ne pas réutiliser le test V1 pour
-   sélectionner des améliorations. Préférer des captures prospectives horodatées.
-4. Lors d'une capture utilisateur, refaire les partants et probabilités avant
-   lecture des cotes, vérifier identités/heure/convention, calculer EV ; maintenir
-   NO BET tant que validation prospective insuffisante. Aucun pari réel.
+1. Vérifier le workflow `history_extension.yml` (neuf mois, un seul collecteur à la fois). Ne pas attendre le suivi prospectif pour développer.
+2. Lire `reports/month_YYYY-MM.json` et les manifestes dans `data/month_YYYY-MM/`. Si une tâche est interrompue, reprendre depuis les bruts sauvegardés et ne pas répéter les requêtes déjà enregistrées. Les programmes absents et quarantaines ne sont jamais convertis en zéros silencieux.
+3. Le backtest V2 suit automatiquement la collecte seulement si les contrôles passent : calendriers complets, couverture >= 98 % par mois, >= 200 courses par partition, identités et empreintes valides. Blocage documenté dans `reports/history_extension_status.json` sinon.
+4. Protocole V2 : janvier–février construisent les historiques ; 2–31 mars 2024 entraînement, 2025 validation, 2026 test inédit. Fenêtre antérieure de 60 jours, cinq courses maximum. Ne jamais régler sur le test ; ne pas remplacer le modèle prospectif V1 automatiquement.
+5. Contrôler le futur `reports/BACKTEST_EXTENSION_V2.md`, les sous-groupes/calibration JSON et les sauvegardes. Aucun résultat V2 n'est encore annoncé à ce checkpoint.
+6. Le suivi prospectif du 13 au 26 octobre continue indépendamment ; résultats jusqu'au 28. Aucun pari réel, ROI ou cote collectée automatiquement.
 
 ## Reprise
 
@@ -159,6 +143,16 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
 - Construction des historiques strictement antérieurs écrite et testée ; workflow après collecte réussie.
 - NO BET inchangé ; pas de réentraînement. Protocole : reports/MONTH_EXTENSION_PROTOCOL.md.
 - Prochaine action : vérifier le run mensuel et sa sauvegarde, puis month_features et son rapport de couverture historique ; traiter les lacunes avant extension.
+
+## Résultats mensuels vérifiés et nouvelle extension
+
+- 512/512 courses de janvier 2024 contrôlées, 31/31 programmes, 1 055 réponses HTTP 200 ; 142 courses Vincennes, 370 province, 18 hippodromes.
+- 6 568 participations actives ; 2 184 avec historique antérieur dans le mois (33,25 %). Un mois ne fournit pas des carrières complètes.
+- Runs mensuels `38313938501`, `38315157655` et historiques `38315576125`, `38315622039` : succès. Bruts, rapports et données dans Git.
+- Reprise depuis cache réellement vérifiée : zéro nouvel appel PMU. Commits hebdomadaires réels puis sauvegarde finale ; dernier état vérifié `6742c97`.
+- 42 tests locaux réussis : couverture, quarantaine, sauvegardes hebdomadaires, identité, NP/DQ, absence de fuite cible/même jour/futur, fenêtre 60 jours, partitionnement et gel du backtest.
+- Rapport de décision : `reports/JANUARY_2024_FEASIBILITY.md`. Protocole figé : `config/history_extension_protocol.json`.
+- Nouveau backtest écrit et testé sur données synthétiques ; pas encore évalué sur les neuf mois réels. Modèle prospectif inchangé.
 
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
