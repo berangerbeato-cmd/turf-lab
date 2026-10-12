@@ -15,8 +15,14 @@ test_missing_and_duplicate_quotes_fail_closed (test_manual_value.ManualValueTest
 test_non_runner_requires_updated_probabilities (test_manual_value.ManualValueTests.test_non_runner_requires_updated_probabilities) ... ok
 test_quote_cannot_change_probability (test_manual_value.ManualValueTests.test_quote_cannot_change_probability) ... ok
 test_wrong_horse_number_rejected (test_manual_value.ManualValueTests.test_wrong_horse_number_rejected) ... ok
+test_dq_no_invented_rank (test_pilot.PilotTests.test_dq_no_invented_rank) ... ok
+test_future_rejected (test_pilot.PilotTests.test_future_rejected) ... ok
+test_metrics_multiclass (test_pilot.PilotTests.test_metrics_multiclass) ... ok
+test_non_runners_and_normalization (test_pilot.PilotTests.test_non_runners_and_normalization) ... ok
+test_target_and_odds_do_not_change_prediction (test_pilot.PilotTests.test_target_and_odds_do_not_change_prediction) ... ok
+test_training_does_not_mutate (test_pilot.PilotTests.test_training_does_not_mutate) ... ok
 
 ----------------------------------------------------------------------
-Ran 17 tests in 0.004s
+Ran 23 tests in 0.012s
 
 OK
