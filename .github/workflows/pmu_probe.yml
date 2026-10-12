@@ -23,11 +23,16 @@ jobs:
           python-version: '3.12'
       - name: Fetch PMU programme and trotting runners
         run: python collect.py --date '${{ inputs.date }}' --days '${{ inputs.days }}'
+      - name: Probe historical race results and payouts
+        if: success()
+        run: python probe_results.py --date '${{ inputs.date }}' --days 2 --max-races 5
       - name: Upload diagnostic data
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pmu-probe
-          path: data/raw/
+          path: |
+            data/raw/
+            data/results_probe/
           if-no-files-found: warn
-          retention-days: 7
+          retention-days: 90
