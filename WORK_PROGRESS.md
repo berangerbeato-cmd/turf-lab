@@ -116,3 +116,15 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
   ne sont jamais évalués comme s’ils étaient valides.
 - Modèle figé par SHA-256 dans config/shadow_protocol.json. Aucun réentraînement
   automatique, aucune promotion vers un statut de pari.
+
+<!-- CLOUD_CHECKPOINT -->
+## Dernière exécution Actions observée automatiquement
+
+- Horodatage UTC : 2026-10-12T17:47:28.664201+00:00.
+- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38286546386
+- Commit exécuté : `c5ed934bb87606d58ab3e2bfd95ac2bc7dd830c4`.
+- Statut avant sauvegarde : **success**.
+- La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
+- Une exécution d'audit réussie ne valide pas un modèle prédictif.
+- En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
+  et les manifestes pour reprendre au premier appel absent, sans répéter les autres.
