@@ -155,22 +155,12 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
 
-- Horodatage UTC : 2026-10-12T17:51:54.843650+00:00.
-- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38287036836
-- Commit déclencheur : `3e81418589bfb004c3e89ac0cdbfa9aad533bc95`.
-- Commit réellement extrait et exécuté : `3e81418589bfb004c3e89ac0cdbfa9aad533bc95`.
+- Horodatage UTC : 2026-10-12T21:58:47.837899+00:00.
+- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38313938608
+- Commit déclencheur : `158098cc80ada5da883716406db06e7255a30e76`.
+- Commit réellement extrait et exécuté : `158098cc80ada5da883716406db06e7255a30e76`.
 - Statut avant sauvegarde : **success**.
 - La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
 - Une exécution d'audit réussie ne valide pas un modèle prédictif.
 - En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
   et les manifestes pour reprendre au premier appel absent, sans répéter les autres.
-
-## Reprise : extension historique mensuelle
-
-- Collecteur borné à janvier 2024 : tous les programmes quotidiens et les courses françaises de trot attelé proposées par PMU.
-- Réemploi EvidenceStore : bruts compressés, empreintes, cache/reprise, plafond 1800 appels ; aucun endpoint de cotes.
-- Contrôle par course : identités, numéros, partants déclarés, gagnant unique concordant et arrivée définitive. Quarantaine explicite sinon.
-- Une réponse programme absente ne vaut jamais une journée sans course.
-- 31 tests locaux réussis (27 précédents + 4 sur calendrier, programme absent et reprise).
-- Workflow month_history.yml préparé ; exécution distante pas encore confirmée à ce checkpoint.
-- Aucun nouvel entraînement : le modèle prospectif reste figé.
