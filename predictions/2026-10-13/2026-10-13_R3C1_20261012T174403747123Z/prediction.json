@@ -1,0 +1,964 @@
+{
+  "race_id": "2026-10-13_R3C1",
+  "venue": "LYON-PARILLY",
+  "distance_m": 2000,
+  "start_type": "AUTOSTART",
+  "scheduled_start": "2026-10-13T09:20:00+00:00",
+  "predicted_at": "2026-10-12T17:44:25.588883+00:00",
+  "feature_cutoff": "2026-10-12T17:44:03.747123+00:00",
+  "validation_status": "experimental",
+  "uncertainty": "high",
+  "data_quality_pass": true,
+  "status": "NO BET",
+  "model_sha256": "0e22333bc5f8c86b0896c1a3bd57f1516fa6da0f25342357db3ddd5b8b3cee54",
+  "evidence_manifest": "evidence/predictions/20261012T174403747123Z_2026-10-13_R3C1/manifest.json",
+  "runners": [
+    {
+      "number": 1,
+      "horse_id": "INOPINE-SERENADE DE JIEL-TABBY POINT",
+      "name": "INOPINE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.2,
+        3.9512437185814275,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-08-23",
+          "venue": "CHATEAUROUX",
+          "distance_m": 2900,
+          "field_size": 15,
+          "rank": 12,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-05-03",
+          "venue": "MONPAZIER",
+          "distance_m": 3125,
+          "field_size": 13,
+          "rank": 11,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-24",
+          "venue": "TOULOUSE",
+          "distance_m": 2325,
+          "field_size": 13,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-13",
+          "venue": "BORDEAUX-LE BOUSCAT",
+          "distance_m": 2550,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISTANCE",
+          "dq": true
+        },
+        {
+          "date": "2026-04-04",
+          "venue": "MESLAY-DU-MAINE",
+          "distance_m": 2900,
+          "field_size": 16,
+          "rank": 12,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.0373051597531044
+    },
+    {
+      "number": 2,
+      "horse_id": "KHEOPS DU LOISIR-TAISY DES JACQUOTS-CANADIEN D'AM",
+      "name": "KHEOPS DU LOISIR",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.25,
+        0.25,
+        0.25,
+        3.332204510175204,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-09-16",
+          "venue": "FEURS",
+          "distance_m": 2850,
+          "field_size": 12,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-07",
+          "venue": "FEURS",
+          "distance_m": 2100,
+          "field_size": 15,
+          "rank": null,
+          "status": "DISTANCE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-21",
+          "venue": "SAINT GALMIER",
+          "distance_m": 2000,
+          "field_size": 12,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-05",
+          "venue": "CLUNY",
+          "distance_m": 2700,
+          "field_size": 12,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.054936306097844764
+    },
+    {
+      "number": 3,
+      "horse_id": "JULIANA DU LOISIR-URANIE DU LOISIR-THORENS VEDAQUAIS",
+      "name": "JULIANA DU LOISIR",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.25,
+        0.25,
+        0.25,
+        2.833213344056216,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-09-27",
+          "venue": "CHATEAUROUX",
+          "distance_m": 2900,
+          "field_size": 16,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-28",
+          "venue": "AIX LES BAINS",
+          "distance_m": 2000,
+          "field_size": 12,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-14",
+          "venue": "JULLIANGES",
+          "distance_m": 2425,
+          "field_size": 16,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-05",
+          "venue": "VITTEAUX",
+          "distance_m": 2600,
+          "field_size": 14,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.049532091090016925
+    },
+    {
+      "number": 4,
+      "horse_id": "IDEAL LOVER-PENY DU PADOUENG-REPEAT LOVE",
+      "name": "IDEAL LOVER",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.2,
+        0.0,
+        3.2188758248682006,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-19",
+          "venue": "HYERES",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-07",
+          "venue": "FEURS",
+          "distance_m": 2100,
+          "field_size": 14,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-02",
+          "venue": "LA CAPELLE",
+          "distance_m": 1800,
+          "field_size": 13,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-27",
+          "venue": "STRASBOURG",
+          "distance_m": 2800,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-21",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2000,
+          "field_size": 10,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.034575736197109026
+    },
+    {
+      "number": 5,
+      "horse_id": "KID BLACK-ONLY LOVE-LOOK DE STAR",
+      "name": "KID BLACK",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.8,
+        0.0,
+        2.8903717578961645,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-26",
+          "venue": "NIMES",
+          "distance_m": 2750,
+          "field_size": 16,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-13",
+          "venue": "JULLIANGES",
+          "distance_m": 2425,
+          "field_size": 13,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-29",
+          "venue": "CAVAILLON",
+          "distance_m": 2600,
+          "field_size": 13,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-31",
+          "venue": "HYERES",
+          "distance_m": 2850,
+          "field_size": 11,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-14",
+          "venue": "CARPENTRAS",
+          "distance_m": 2650,
+          "field_size": 13,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.13555132667808278
+    },
+    {
+      "number": 6,
+      "horse_id": "JO DE L'ETANG-HAVANE DE LOIRE-QUISLING D'ANJOU",
+      "name": "JO DE L'ETANG",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.25,
+        0.0,
+        3.4657359027997265,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-09-12",
+          "venue": "SALON-DE-PROVENCE",
+          "distance_m": 3000,
+          "field_size": 14,
+          "rank": 11,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-30",
+          "venue": "CLUNY",
+          "distance_m": 2700,
+          "field_size": 15,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-14",
+          "venue": "JULLIANGES",
+          "distance_m": 2425,
+          "field_size": 16,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-05",
+          "venue": "VITTEAUX",
+          "distance_m": 2600,
+          "field_size": 14,
+          "rank": 9,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.02942038804285156
+    },
+    {
+      "number": 7,
+      "horse_id": "JOHN RIVER-OLGA DE LA GRENNE-BOLD EAGLE",
+      "name": "JOHN RIVER",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.6,
+        2.302585092994046,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-04",
+          "venue": "LYON-PARILLY",
+          "distance_m": 2850,
+          "field_size": 14,
+          "rank": 9,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-21",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2675,
+          "field_size": 11,
+          "rank": 9,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-18",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2000,
+          "field_size": 10,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-28",
+          "venue": "AIX LES BAINS",
+          "distance_m": 2000,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-14",
+          "venue": "JULLIANGES",
+          "distance_m": 2425,
+          "field_size": 16,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.05254065477206061
+    },
+    {
+      "number": 8,
+      "horse_id": "HALDO DE LA CLOUE-RIVIERA GOUSSERIE-ALDO DES CHAMPS",
+      "name": "HALDO DE LA CLOUE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        2.8903717578961645,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-26",
+          "venue": "NIMES",
+          "distance_m": 2750,
+          "field_size": 13,
+          "rank": 10,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-07",
+          "venue": "FEURS",
+          "distance_m": 2100,
+          "field_size": 14,
+          "rank": 10,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-30",
+          "venue": "SALON-DE-PROVENCE",
+          "distance_m": 2200,
+          "field_size": 12,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-21",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2000,
+          "field_size": 10,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-18",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2000,
+          "field_size": 10,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.02125676984805313
+    },
+    {
+      "number": 9,
+      "horse_id": "JAWENN DE KERYANN-ULA D'OCCAGNES-TITAN D'OCCAGNES",
+      "name": "JAWENN DE KERYANN",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.25,
+        0.0,
+        3.332204510175204,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-09-16",
+          "venue": "FEURS",
+          "distance_m": 2850,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-06",
+          "venue": "FEURS",
+          "distance_m": 2850,
+          "field_size": 12,
+          "rank": 10,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-30",
+          "venue": "CLUNY",
+          "distance_m": 2725,
+          "field_size": 12,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-18",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2000,
+          "field_size": 10,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.02861630495983875
+    },
+    {
+      "number": 10,
+      "horse_id": "KING DE BASSIERE-TOSA DE BASSIERE-ROLLING D'HERIPRE",
+      "name": "KING DE BASSIERE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.2,
+        0.8,
+        3.4339872044851463,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-13",
+          "venue": "JULLIANGES",
+          "distance_m": 2425,
+          "field_size": 13,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-25",
+          "venue": "VICHY",
+          "distance_m": 2950,
+          "field_size": 10,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-06-09",
+          "venue": "LYON-PARILLY",
+          "distance_m": 2600,
+          "field_size": 13,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-05-28",
+          "venue": "VICHY",
+          "distance_m": 2800,
+          "field_size": 16,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-05-08",
+          "venue": "CLUNY",
+          "distance_m": 2700,
+          "field_size": 13,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.17010986606017006
+    },
+    {
+      "number": 11,
+      "horse_id": "KALIMA DU GOUTIER-ELEGANTE DELO-DOLLAR MACKER",
+      "name": "KALIMA DU GOUTIER",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.4,
+        0.4,
+        0.6,
+        2.833213344056216,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-27",
+          "venue": "CARPENTRAS",
+          "distance_m": 2650,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-12",
+          "venue": "SALON-DE-PROVENCE",
+          "distance_m": 3000,
+          "field_size": 12,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-05",
+          "venue": "VICHY",
+          "distance_m": 2950,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-23",
+          "venue": "JULLIANGES",
+          "distance_m": 2450,
+          "field_size": 12,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-13",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2000,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.19387910891331775
+    },
+    {
+      "number": 12,
+      "horse_id": "KAISER DE CHANLECY-BOLLEVILLE-REDEO JOSSELYN",
+      "name": "KAISER DE CHANLECY",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.2,
+        0.0,
+        5.111987788356544,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-05-01",
+          "venue": "CHATILLON-SUR-CHALARONNE",
+          "distance_m": 2675,
+          "field_size": 16,
+          "rank": 9,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-14",
+          "venue": "LYON-PARILLY",
+          "distance_m": 2600,
+          "field_size": 16,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-03-30",
+          "venue": "CHATILLON-SUR-CHALARONNE",
+          "distance_m": 2675,
+          "field_size": 12,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2025-11-21",
+          "venue": "SAINT GALMIER",
+          "distance_m": 2650,
+          "field_size": 16,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2025-11-11",
+          "venue": "LYON LA SOIE",
+          "distance_m": 2700,
+          "field_size": 15,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.061281798162340445
+    },
+    {
+      "number": 13,
+      "horse_id": "JOYEUX D'OUXY-USTIANA-OLITRO",
+      "name": "JOYEUX D'OUXY",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.2,
+        0.2,
+        3.8066624897703196,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-08-30",
+          "venue": "SALON-DE-PROVENCE",
+          "distance_m": 2200,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-18",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2000,
+          "field_size": 10,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-26",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 16,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-04",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 13,
+          "rank": 10,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-03-20",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 3000,
+          "field_size": 16,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.05500537223246875
+    },
+    {
+      "number": 14,
+      "horse_id": "KARLITO SCOTT-ALEXIA SCOTT-UGO DE NIEUL",
+      "name": "KARLITO SCOTT",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.4,
+        3.091042453358316,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-22",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 3000,
+          "field_size": 18,
+          "rank": 11,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-30",
+          "venue": "CLUNY",
+          "distance_m": 2700,
+          "field_size": 16,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-20",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2675,
+          "field_size": 14,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-04",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-06-21",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.04394395543291412
+    },
+    {
+      "number": 15,
+      "horse_id": "HIMEROS DU DOLLAR-NYMPHE DU DOLLAR-BOLD EAGLE",
+      "name": "HIMEROS DU DOLLAR",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.2,
+        3.2188758248682006,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-19",
+          "venue": "HYERES",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": 10,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-06",
+          "venue": "FEURS",
+          "distance_m": 2850,
+          "field_size": 11,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-30",
+          "venue": "CLUNY",
+          "distance_m": 2725,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-15",
+          "venue": "LA CLAYETTE",
+          "distance_m": 2650,
+          "field_size": 10,
+          "rank": null,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-10",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2600,
+          "field_size": 15,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.032045161759826864
+    },
+    {
+      "number": 16,
+      "horse_id": "JAMY DE SAMPANGES-BELLE DE LAUBOIS-AMIRAL SACHA",
+      "name": "JAMY DE SAMPANGES",
+      "status": "NON_PARTANT",
+      "non_runner": true,
+      "features": [
+        0.0,
+        0.25,
+        0.25,
+        3.4339872044851463,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-09-13",
+          "venue": "JULLIANGES",
+          "distance_m": 2425,
+          "field_size": 13,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-29",
+          "venue": "SAINT GALMIER",
+          "distance_m": 2650,
+          "field_size": 16,
+          "rank": 11,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-15",
+          "venue": "LA CLAYETTE",
+          "distance_m": 2650,
+          "field_size": 14,
+          "rank": null,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-14",
+          "venue": "JULLIANGES",
+          "distance_m": 2425,
+          "field_size": 16,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.0
+    }
+  ]
+}

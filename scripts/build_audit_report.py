@@ -51,7 +51,7 @@ def main():
     decision={
       'data_access':'VERIFIED_ON_BOUNDED_SAMPLE',
       'pilot_architecture':'GO_WITH_CONDITIONS' if not quality['issues'] and latest_leak==0 else 'HOLD',
-      'mass_backfill':'HOLD', 'production_prediction':'HOLD','model_training':'NOT_STARTED',
+      'mass_backfill':'HOLD', 'production_prediction':'HOLD','model_training':'OUTSIDE_PHASE_A_SEE_WORK_PROGRESS',
       'github_publication':'SEE_WORK_PROGRESS_AND_ACTIONS_FOR_CURRENT_DEPLOYMENT',
       'conditions':['Restore verified GitHub writes and persistent checkpoints before expanding',
         'Use exact composite identities and explicit missingness',

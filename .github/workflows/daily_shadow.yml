@@ -1,0 +1,41 @@
+name: Turf Lab bounded prospective observation
+on:
+  schedule:
+    - cron: '15 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/daily_shadow.yml', 'config/shadow_protocol.json', 'scripts/daily_shadow.py', 'turf_lab/shadow.py']
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test prospective scoring safeguards
+        run: python -m unittest discover -s tests -v
+      - name: Observe bounded sample with fixed model
+        id: observe
+        run: python -m scripts.daily_shadow
+      - name: Preserve completed captures, results and checkpoint
+        if: (success() || failure()) && steps.observe.outputs.active != 'false'
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: |
+          python -m scripts.write_cloud_checkpoint
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence predictions reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve bounded prospective observation and checkpoint'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

@@ -21,8 +21,12 @@ test_metrics_multiclass (test_pilot.PilotTests.test_metrics_multiclass) ... ok
 test_non_runners_and_normalization (test_pilot.PilotTests.test_non_runners_and_normalization) ... ok
 test_target_and_odds_do_not_change_prediction (test_pilot.PilotTests.test_target_and_odds_do_not_change_prediction) ... ok
 test_training_does_not_mutate (test_pilot.PilotTests.test_training_does_not_mutate) ... ok
+test_changed_field_never_renormalized_after_result (test_shadow.ShadowTests.test_changed_field_never_renormalized_after_result) ... ok
+test_correct_scoring_and_dq (test_shadow.ShadowTests.test_correct_scoring_and_dq) ... ok
+test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_rejected) ... ok
+test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 0.019s
+Ran 27 tests in 0.052s
 
 OK

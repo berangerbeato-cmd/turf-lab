@@ -9,8 +9,8 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 Phase A terminée. Stockage Git durable opérationnel. Pilote B/C/D exécuté dans
 le runtime cloud : 40 courses exploitables sur 46 candidates, six quarantaines
 explicites. Régression expérimentale ; pas de modèle validé, **NO BET**.
-Première prédiction prospective et rapport mobile générés ; workflows pilote et
-prédiction en cours de publication, leur succès Actions reste à confirmer.
+Prédictions prospectives et rapports mobiles générés. Workflows pilote et
+prédiction réussis sur GitHub Actions. Observation quotidienne bornée en préparation.
 
 ## Travaux publiés et vérifiés
 
@@ -75,14 +75,17 @@ prédiction en cours de publication, leur succès Actions reste à confirmer.
   somme des probabilités 1,0, historique strictement antérieur ; rapport HTML mobile.
 - Intégration EV sur cotes synthétiques : NO BET confirmé. Aucune capture réelle
   reçue. Le modèle expérimental ne peut produire de candidat de mise.
-- Syntaxe Python et YAML contrôlée. 23 tests passent ; contrôles de normalisation,
+- Syntaxe Python et YAML contrôlée. 27 tests passent ; contrôles de normalisation,
   chronologie et raccordement EV sur la prédiction enregistrés séparément.
 
 ## Prochaine action précise
 
-1. Publier les nouvelles partitions, scripts, modèle, rapports et workflows ;
-   confirmer les runs pilote/prédiction et leurs commits de sauvegarde.
-2. Réviser ce checkpoint avec les identifiants réellement exécutés.
+1. Publier puis vérifier le workflow daily_shadow et son premier run ;
+   inscrire son identifiant et le résultat de sauvegarde dans ce checkpoint.
+2. Le suivi collecte au maximum deux courses par jour, une à Vincennes et une
+   en province, pour les départs du 13 au 26 octobre. Le contrôle des résultats
+   se poursuit jusqu’au 28 octobre puis les appels PMU cessent. Ne pas élargir
+   cette fenêtre ni changer le modèle sans versionner un nouveau protocole.
 3. Suite scientifique : préparer une extension bornée et un nouveau protocole
    figé avec davantage de jours/hippodromes ; ne pas réutiliser le test V1 pour
    sélectionner des améliorations. Préférer des captures prospectives horodatées.
@@ -97,14 +100,19 @@ les empreintes ; ne pas refaire les étapes validées. La sauvegarde de secours
 Turf_Lab_Reprise_2026-10-12.zip contient l'état d'audit antérieur à la publication.
 Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f72b50.
 
-<!-- CLOUD_CHECKPOINT -->
-## Dernière exécution Actions observée automatiquement
+## Déploiement du pilote confirmé
 
-- Horodatage UTC : 2026-10-12T17:41:43.850337+00:00.
-- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38285892122
-- Commit exécuté : `a1e4517d5f83071ccaa34a6d1257e28705f69e00`.
-- Statut avant sauvegarde : **success**.
-- La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
-- Une exécution d'audit réussie ne valide pas un modèle prédictif.
-- En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
-  et les manifestes pour reprendre au premier appel absent, sans répéter les autres.
+- Commit publié `a1e4517d5f83071ccaa34a6d1257e28705f69e00`.
+- Run pilote `38285892122` : succès, résultats reproduits et sauvegardés.
+- Run prédiction `38285892128` : succès, nouvelle capture avant-course sauvegardée
+  par le commit `0594c2d`. Deux captures de Vincennes existent ; utiliser la plus
+  récente avant départ, sans effacer l’ancienne.
+- Prédiction Lyon-Parilly du 13/10 R3C1 exécutée ensuite dans le runtime cloud,
+  rapport et preuves conservés. Deux courses distinctes prospectives disponibles.
+- Suivi prospectif exécuté localement : zéro course évaluée (départs demain),
+  aucune métrique prospective ni résultat inventé.
+- Quatre tests supplémentaires de notation prospective réussis : 27 tests total.
+  Résultat provisoire, arrivée ambiguë, pronostic tardif ou partants modifiés
+  ne sont jamais évalués comme s’ils étaient valides.
+- Modèle figé par SHA-256 dans config/shadow_protocol.json. Aucun réentraînement
+  automatique, aucune promotion vers un statut de pari.

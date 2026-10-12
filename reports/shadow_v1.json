@@ -1,0 +1,32 @@
+{
+  "protocol": {
+    "version": "shadow-v1",
+    "first_target_date": "2026-10-13",
+    "last_target_date": "2026-10-26",
+    "last_execution_date": "2026-10-28",
+    "max_races_per_day": 2,
+    "selection": "one earliest Vincennes harness race and one earliest other French venue where available",
+    "model_sha256": "0e22333bc5f8c86b0896c1a3bd57f1516fa6da0f25342357db3ddd5b8b3cee54",
+    "policy": "fixed model, experimental NO BET; whole-race quarantine if field changes; latest saved prediction before start; no tuning from shadow outcomes"
+  },
+  "results": {},
+  "capture_log": {
+    "2026-10-13_R4C1": {
+      "status": "ALREADY_CAPTURED",
+      "prediction_file": "predictions/2026-10-13/2026-10-13_R4C1_20261012T174155902279Z/prediction.json"
+    },
+    "2026-10-13_R3C1": {
+      "status": "CAPTURED",
+      "returncode": 0,
+      "log": "200 2026-10-13_programme\n200 2026-10-13_R3C1_participants\n200 2026-10-13_R3C1_performances_pretty\npredictions/2026-10-13/2026-10-13_R3C1_20261012T174403747123Z\n"
+    }
+  },
+  "summary": {
+    "scored_races": 0,
+    "days": 0,
+    "status": "EXPERIMENTAL_NO_BET",
+    "metrics": null,
+    "note": "No result exists before the race; no ROI, no tuning, no automatic promotion."
+  },
+  "updated_at": "2026-10-12T17:43:55.586551+00:00"
+}

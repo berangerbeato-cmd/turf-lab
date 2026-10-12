@@ -14,7 +14,7 @@ VPN, contournement ou scraper de cotes.
   3 pour Fabius Ors et 2 pour Over The Hill, avant le 05/10/2026.
 - Avant-course vérifié sur deux captures prospectives du 13/10 : 28 partants,
   sans résultats. Les historiques actuels sont filtrés par date.
-- **23 tests réussis**. Pilote régression conditionnelle entraîné sur 14 courses
+- **27 tests réussis**. Pilote régression conditionnelle entraîné sur 14 courses
   de 2024, sélection sur 12 courses de 2025, test sur 14 courses du 05/10/2026.
 - Test exploratoire : log loss 2,4845 (uniforme 2,6444), Brier 0,8960
   (uniforme 0,9282), premier choix gagnant 1/14. **NO BET : modèle non validé.**
@@ -76,6 +76,9 @@ Le workflow de prédiction accepte une exécution manuelle ou une modification d
 HTML mobile et un modèle de transcription manuelle des cotes. Les captures sont
 horodatées et conservées séparément. Un départ passé provoque un arrêt.
 
-Aucune collecte massive ni automatisation quotidienne n'est activée. Le pilote
+Aucune collecte massive. Un suivi prospectif borné est préparé : deux courses
+maximum par jour, pour les départs du 13 au 26 octobre 2026, modèle figé.
+Les résultats sont vérifiés jusqu'au 28 octobre ; les appels PMU cessent ensuite.
+Voir WORK_PROGRESS.md pour la confirmation du déploiement. Le pilote
 ne justifie pas de pari : volume faible, historique rétrospectif et validation
 prospective encore nécessaire. Aucun ROI n'est calculé.

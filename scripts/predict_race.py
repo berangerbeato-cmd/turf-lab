@@ -6,18 +6,21 @@ import json
 import re
 from datetime import datetime,timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from turf_lab.evidence import EvidenceStore,dump,races,start_type
 from turf_lab.pilot import dated_history,features,norm_name,probabilities
 
 
 def render(prediction):
+    start_local=datetime.fromisoformat(prediction['scheduled_start']).astimezone(ZoneInfo('Europe/Paris')).strftime('%d/%m/%Y à %H:%M')
+    calculated_local=datetime.fromisoformat(prediction['predicted_at']).astimezone(ZoneInfo('Europe/Paris')).strftime('%d/%m/%Y à %H:%M')
     cards=[]
     active=[r for r in prediction['runners'] if r['status']=='PARTANT']
     for rank,r in enumerate(sorted(active,key=lambda x:(-x['probability'],x['number'])),1):
         h=r['history'];n=len(h);wins=sum(x['rank']==1 for x in h);dq=sum(x['dq'] for x in h)
         description=f'{wins} victoire(s), {dq} disqualification(s) sur {n} sorties attelées disponibles.' if n else 'Historique antérieur indisponible : incertitude renforcée.'
         cards.append(f'<article><b>{rank}. N°{r["number"]} — {html.escape(r["name"])}</b><strong>{r["probability"]:.1%}</strong><p>{description}</p></article>')
-    return f'''<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Turf Lab {prediction['race_id']}</title><style>body{{font:17px system-ui;max-width:680px;margin:auto;padding:20px;background:#f4f6f8;color:#18212b}}article{{padding:16px;margin:12px 0;background:white;border-radius:12px}}strong{{display:block;font-size:26px;color:#12553c}}p{{line-height:1.5}}.alert{{background:#fff1ce;padding:16px;border-radius:12px}}</style><h1>{prediction['race_id']}</h1><p>{html.escape(prediction['venue'])} · {prediction['distance_m']} m · {prediction['start_type']}</p><p>Départ UTC : {prediction['scheduled_start']}<br>Calcul UTC : {prediction['predicted_at']}</p><div class="alert"><b>EXPÉRIMENTAL — NO BET</b><p>Incertitude élevée. Les probabilités ne constituent pas un modèle validé. Aucune cote reçue, aucune EV disponible.</p></div><h2>Classement indicatif</h2>{''.join(cards)}<h2>Lecture prudente</h2><p>Le premier du classement est le favori du modèle. Les chevaux moins bien classés ne sont pas automatiquement des outsiders intéressants : il faut une cote vérifiée et un modèle fiable.</p><p>Scénarios conditionnels : un non-partant impose un nouveau calcul. Une disqualification peut modifier fortement l'arrivée ; l'historique décrit ce risque sans garantir qu'il se reproduira. Aucun déroulement tactique certain n'est prédit.</p><p>Historique limité à cinq sorties antérieures. Les conditions, la ferrure et les tandems ne sont pas encore intégrés au score. Aucun pari réel.</p></html>'''
+    return f'''<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Turf Lab {prediction['race_id']}</title><style>body{{font:17px system-ui;max-width:680px;margin:auto;padding:20px;background:#f4f6f8;color:#18212b}}article{{padding:16px;margin:12px 0;background:white;border-radius:12px}}strong{{display:block;font-size:26px;color:#12553c}}p{{line-height:1.5}}.alert{{background:#fff1ce;padding:16px;border-radius:12px}}</style><h1>{prediction['race_id']}</h1><p>{html.escape(prediction['venue'])} · {prediction['distance_m']} m · {prediction['start_type']}</p><p>Départ : {start_local} (Paris)<br>Calcul : {calculated_local} (Paris)</p><div class="alert"><b>EXPÉRIMENTAL — NO BET</b><p>Incertitude élevée. Les probabilités ne constituent pas un modèle validé. Aucune cote reçue, aucune EV disponible.</p></div><h2>Classement indicatif</h2>{''.join(cards)}<h2>Lecture prudente</h2><p>Le premier du classement est le favori du modèle. Les chevaux moins bien classés ne sont pas automatiquement des outsiders intéressants : il faut une cote vérifiée et un modèle fiable.</p><p>Scénarios conditionnels : un non-partant impose un nouveau calcul. Une disqualification peut modifier fortement l'arrivée ; l'historique décrit ce risque sans garantir qu'il se reproduira. Aucun déroulement tactique certain n'est prédit.</p><p>Historique limité à cinq sorties antérieures. Les conditions, la ferrure et les tandems ne sont pas encore intégrés au score. Aucun pari réel.</p></html>'''
 
 
 def main():
