@@ -188,6 +188,18 @@ Statut : planifiées ; disponibilité des sources à auditer, non intégrées au
 - Comparer les ajouts météo et terrain séparément puis ensemble sur validation chronologique, avec log loss, Brier et calibration. Conserver uniquement les gains mesurés ; test indépendant non utilisé pour régler les variables.
 - Prochaine action : inventorier les champs piste/terrain dans les bruts PMU sauvegardés, puis identifier une source météo gratuite seulement si ces données manquent. Préserver le protocole V2 en cours et le modèle prospectif V1 figés.
 
+## Trois axes prédictifs futurs — demande confirmée le 13 octobre 2026
+
+Statut : planifiés, non implémentés ; ne pas les confondre avec les cinq variables du pilote actuel.
+
+1. **Niveau de l'opposition** : construire une note évolutive de type Elo adaptée aux courses à plusieurs partants, en utilisant uniquement les résultats antérieurs. Comparer chaque cheval au lot du jour avec les notes disponibles avant départ. Définir et valider le traitement des DQ, NP, égalités et rangs inconnus ; séparer autant que possible capacité et faute. Initialisation prudente des nouveaux chevaux et mises à jour après course seulement.
+2. **Risque de faute/disqualification** : référence par fréquence historique régularisée vers une moyenne estimée sur l'entraînement, puis modèle contextuel si les données le permettent (repos, départ, driver, etc.). Distinguer probabilité de DQ et capacité conditionnelle à la non-DQ. La factorisation P(victoire)=P(non-DQ)*P(victoire|non-DQ) est une relation théorique, pas une implémentation suffisante : assurer cohérence au niveau de la course et calibration. Mesurer séparément qualité du modèle de DQ et apport au modèle de victoire.
+3. **Adéquation au départ et au parcours** : estimer les écarts de performance au niveau habituel selon distance, hippodrome, type de départ, position/ligne autostart et recul. Tenir compte de l'opposition pour ne pas confondre parcours favorable et lot faible. Régulariser fortement les petits historiques et utiliser des effets collectifs quand les observations individuelles manquent. Articuler avec les extensions départ, météo et terrain décrites ci-dessus.
+
+Protocole commun : auditer les champs et la profondeur historique, construire les variables strictement avant chaque cible, comparer chaque bloc seul puis leur combinaison à la référence sur validation chronologique. Apprendre hyperparamètres et régularisation sans consulter le test final. Si le test V2 a déjà été consulté, prévoir un autre test indépendant pour les nouveaux choix. Ne retenir une complexité supplémentaire que si elle améliore les résultats mesurés (log loss, Brier, calibration). Aucun remplacement du modèle prospectif figé ni changement du protocole V2 en cours.
+
+Prochaine action pour ces axes : après contrôle de l'extension historique, établir couverture et protocole expérimental ; commencer par la note d'opposition et une référence DQ régularisée.
+
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
 
