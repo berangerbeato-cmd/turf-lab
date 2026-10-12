@@ -1,0 +1,33 @@
+name: PMU collection probe
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Start date YYYY-MM-DD
+        required: true
+        default: '2026-10-11'
+      days:
+        description: Days to fetch (1 to 7)
+        required: true
+        default: '1'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch PMU programme and trotting runners
+        run: python collect.py --date '${{ inputs.date }}' --days '${{ inputs.days }}'
+      - name: Upload diagnostic data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pmu-probe
+          path: data/raw/
+          if-no-files-found: warn
+          retention-days: 7
