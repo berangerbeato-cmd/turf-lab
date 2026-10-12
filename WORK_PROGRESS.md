@@ -80,7 +80,11 @@ prédiction réussis sur GitHub Actions. Observation quotidienne bornée déploy
 
 ## Prochaine action précise
 
-1. Prochaine étape : résultats des courses du 13 octobre. Le run quotidien du
+1. Priorité active : extension contrôlée de janvier 2024 via scripts/collect_month.py.
+   Examiner reports/MONTH_COVERAGE.md et data/month_2024-01/manifest.json ;
+   résoudre les quarantaines et valider la couverture avant extension pluriannuelle.
+   Le suivi prospectif est indépendant et ne bloque pas le développement.
+   En parallèle : résultats des courses du 13 octobre. Le run quotidien du
    14 octobre à 06:15 UTC doit récupérer les arrivées définitives et calculer
    les scores prospectifs, si les partants sont restés identiques. Vérifier
    reports/shadow_v1.json, les éventuelles quarantaines et le commit de sauvegarde.
@@ -160,3 +164,13 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
 - Une exécution d'audit réussie ne valide pas un modèle prédictif.
 - En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
   et les manifestes pour reprendre au premier appel absent, sans répéter les autres.
+
+## Reprise : extension historique mensuelle
+
+- Collecteur borné à janvier 2024 : tous les programmes quotidiens et les courses françaises de trot attelé proposées par PMU.
+- Réemploi EvidenceStore : bruts compressés, empreintes, cache/reprise, plafond 1800 appels ; aucun endpoint de cotes.
+- Contrôle par course : identités, numéros, partants déclarés, gagnant unique concordant et arrivée définitive. Quarantaine explicite sinon.
+- Une réponse programme absente ne vaut jamais une journée sans course.
+- 31 tests locaux réussis (27 précédents + 4 sur calendrier, programme absent et reprise).
+- Workflow month_history.yml préparé ; exécution distante pas encore confirmée à ce checkpoint.
+- Aucun nouvel entraînement : le modèle prospectif reste figé.
