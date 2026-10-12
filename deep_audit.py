@@ -56,5 +56,5 @@ def main():
                      "This audit measures field presence, not historical pre-race availability.",
                      "Cotes and payout fields need timestamp and units validation."]}
     (out/"audit_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
-    print("DEEP_AUDIT_SUMMARY",json.dumps({"counts":dict(counts),"endpoint_status":dict(collections.Counter((x["endpoint"],str(x["status"])) for x in endpoints))},ensure_ascii=False))
+    print("DEEP_AUDIT_SUMMARY",json.dumps({"counts":dict(counts),"endpoint_status":{f"{endpoint}:{status}": count for (endpoint, status), count in collections.Counter((x["endpoint"],str(x["status"])) for x in endpoints).items()}},ensure_ascii=False))
 if __name__=="__main__":main()
