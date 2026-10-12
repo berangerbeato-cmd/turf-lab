@@ -1,136 +1,75 @@
 # TURF LAB — point de reprise Work V3
 
-Mise à jour : 12 octobre 2026. Branche visée : `main`.
-Contraintes : zéro achat/abonnement/API payante ; cloud uniquement ; aucun pari
-réel, scraper de cotes, MySQL, AspiTurf, VPN ou contournement.
+Mise à jour : 12 octobre 2026. Branche `main`.
+Contraintes : gratuit, cloud uniquement ; aucun pari réel, achat, scraper de cotes,
+MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
-**Phase A réalisée sur un échantillon borné. Rapport de faisabilité disponible.**
-GO conditionnel pour un pilote ; pas de collecte massive ni base définitive.
-Phase B proposée, pas déployée. Modèle/backtest non commencés.
-L'écriture du connecteur GitHub fonctionne à nouveau : checkpoint publié dans
-cec7d8bd3cc72242fdfeac275acaeff6c9e202ea. Transfert complet en cours ;
-aucun nouveau workflow exécuté confirmé à ce stade.
+Phase A terminée sur échantillon borné : GO conditionnel pour petit pilote.
+Phase B : stockage Git durable opérationnel pour les preuves d'audit ;
+normalisation du pilote en cours. Phase C/D : code expérimental en préparation,
+aucun résultat prédictif annoncé à ce checkpoint. Pas de collecte massive.
 
-## Dépôt distant : faits vérifiés
+## Travaux publiés et vérifiés
 
-- État initial `d69d555806b40be9b61c025d201fd43ffbfaf7b6`, dépôt public,
-  droits push annoncés par le connecteur.
-- Run de référence `38238010891`, job `114773373147` : succès confirmé.
-- Artefact `11741548220`, `pmu-deep-audit`, 115580 octets, SHA-256
-  `b2fac86c0419d6a83b0323a18e49126762e059fa4da1b8b76bdcc9116053739e`.
-- Run `38233770270` réussi ; artefact `11740330993`, `pmu-probe`, 849323 octets,
-  SHA-256 `057bfef8fc6cc45d5bef921af696c5097bbfbc714c0de596c669a980f659e3f2`.
-- Ces ZIP sont identifiés mais **pas récupérés**. La récupération prévue dans
-  `scripts/recover_reference.py` n'est pas encore exécutée.
-- `get_repo`, `get_user_login` et lecture GitHub par `fetch` fonctionnent.
-- `fetch_file`, `download_workflow_artifact`, `create_tree`, `create_file` et
-  certains outils de jobs échouent : `InvalidActionArgumentsError`, validation
-  des arguments. Ne pas boucler sur ces appels inchangés.
-- `git clone`/lecture publics réussis. `git push origin main` échoue :
-  `could not read Username for https://github.com` (pas d'authentification Git).
-- **Aucun commit nouveau ni workflow nouveau confirmé sur GitHub.**
+- Commit `6f46485c2c9221522790535d27d936e4dd77a29e` : 171 fichiers transférés,
+  code/audit/rapports et 126 réponses brutes avec empreintes.
+- Run audit `38284344664` : succès ; tests et reproduction sur GitHub Actions.
+- Run récupération `38284344661` : succès ; les ZIP de référence sont désormais
+  dans `data/reference`, sauvegardés par le commit distant `e8bd4a6`.
+- ZIP pmu-deep-audit : 14 courses, 203 participants, 42 requêtes, recomptés.
+- ZIP pmu-probe : 149 fichiers participants dans raw/. Les 10 copies présentes
+  dans results_probe/ ne sont pas des courses supplémentaires.
+- Les deux SHA-256 des archives correspondent aux métadonnées Actions.
+- Le connecteur GitHub fonctionne en écriture. Les anciennes erreurs ont cessé.
+  Le navigateur a expiré ; il n'est plus nécessaire. Autorisation utilisateur
+  acquise, ne pas la redemander.
 
-## Résultats vérifiés, pas des promesses
+## Résultats d'audit
 
-- Programmes 05–11/10/2026 : **149 attelés, dont 99 FRA et 50 étrangers**.
-  Les collecteurs d'origine omettaient le filtre pays, corrigé dans cette reprise.
-- Audit principal : **46 courses, 619 participants, 12 hippodromes**.
-  2024 : 16 courses / 218 participants ; 2025 : 16 / 198 ; 05/10/2026 : 14 / 203.
-  Huit dates historiques, 107 réponses HTTP 200 sur le collecteur principal.
-- Gagnants concordants entre participants et détails pour 46/46 courses.
-  15 non-partants, 124 disqualifiés/distancés (dont 4 DISTANCE), 2 arrêtés,
-  6 partants sans rang ni incident explicatif : ne pas inventer leurs rangs.
-- 327 identités composites reconstruites (nom-mère-père) faute d'idCheval direct.
-- Cinq chevaux, avant le 05/10/2026 : FABIUS ORS 3 courses, LORD ON WAY 10,
-  OVER THE HILL 2, GISARO 10, MAZURKA DE BELI 10. Historiques limités explicités.
-- Source officielle découverte et testée : `program/{id}/light-performances`.
-  Le JSON contient aussi la course cible et des courses ultérieures : filtre
-  strict `raceDate < targetDate`, pas de résumé de carrière contemporain.
-- Ancien endpoint `performances-detaillees/pretty` : 297 lignes de performances
-  sur quatre courses 2024/2025 ; aucune à la date cible ou après. Jusqu'à cinq
-  performances par cheval ; peut montrer seulement le top-5 + le cheval.
-- `performance-details` testé sur LORD ON WAY à La Capelle le 21/09/2026 :
-  les 15 participants sont retournés, avec l'opposition et les résultats.
-- Deux captures avant course pour le 13/10/2026, Lyon-Parilly/Vincennes,
-  28 partants, pas d'arrivée/chrono/commentaire après-course.
-- Gains en centimes : conversion /100 vérifiée dans le client officiel PMU.
-  Chronos participants en ms : cohérence vérifiée sur 467 lignes, erreur
-  médiane 0,0625 s / maximum 0,14 s avec réduction × distance.
-- Ferrure manquante ≠ ferré ; absence d'autostart ≠ preuve de départ volté.
-  `timeRecord` est une durée de course, pas un record de carrière validé.
+- 149 courses sur sept jours = 99 françaises + 50 étrangères ; filtre pays corrigé.
+- 46 courses françaises, 619 participants, 12 hippodromes : 16 courses 2024,
+  16 de 2025 et 14 du 05/10/2026. 46 gagnants uniques concordants.
+- 15 non-partants, 124 disqualifiés/distancés, 2 arrêtés, 6 rangs inexpliqués.
+  Garder les rangs manquants ; cible victoire contrôlée séparément.
+- Cinq historiques : FABIUS ORS 3, LORD ON WAY 10, OVER THE HILL 2,
+  GISARO 10, MAZURKA DE BELI 10 courses antérieures retenues.
+- idCheval absent sur 327 lignes : composite nom-mère-père contrôlé.
+- pretty : jusqu'à cinq performances antérieures ; publication originelle non prouvée.
+- Ferrure absente ≠ ferré ; autostart absent ≠ volté ; timeRecord ≠ record personnel.
+- Rapports détaillés : reports/AUDIT_FEASIBILITY.md et FIVE_HORSE_HISTORIES.md.
 
-## Code écrit et exécuté dans le runtime cloud
+## Tests et code
 
-- Cache d'évidence borné, JSON.gz exacts, UTC/URL/SHA-256, écriture atomique,
-  reprise sur fichiers existants, vérification d'intégrité sans réseau au replay.
-- Scripts audit_phase_a, audit_horses, audit_temporal, audit_before_race,
-  audit_opposition et build_audit_report : exécutés avec résultats conservés.
-- Modules history/quality et filtre pays, 17 tests réussis dans
-  `reports/test_results.txt` : fuite temporelle, non-partants, disqualifications,
-  DISTANCE, identités, cache intègre, retrait du jeton GitHub en redirection,
-  EV indépendante, correspondances, heure, format de cote et NO BET.
-- Comparateur manuel EV : testé sur fixtures seulement. Pas de lecture de capture
-  réelle ni de modèle branché. Un modèle expérimental impose NO BET.
-- Workflows recovery et phase_a : code préparé, **pas d'exécution GHA confirmée**.
-
-## Commits locaux et fichiers
-
-- `0364253` : initialisation du checkpoint et récupération des preuves préparée.
-- `edd8747` : collecteur d'audit borné et découverte des endpoints.
-- `cdbed01` : audits, preuves, rapports, 17 tests et correctifs.
-- Vérification finale : 126 corps JSON.gz relus, empreintes exactes, Python
-  compilé et syntaxe des quatre workflows YAML vérifiée.
-- Le paquet de reprise comporte un patch binaire complet contre le SHA initial,
-  les rapports et ce fichier. Son intégrité de restauration est testée avant remise.
-- Rapports : `reports/AUDIT_FEASIBILITY.md`, `FIVE_HORSE_HISTORIES.md`, JSONs
-  d'audit/qualité/variables/décision. Proposition : `docs/ARCHITECTURE_PROPOSAL.md`.
-- Les réponses brutes sont dans `evidence/`. Ne pas refaire leur collecte :
-  rejouer les scripts valide les empreintes et réutilise les captures.
+- 17 tests d'audit/EV publiés et exécutés dans Actions.
+- 6 tests pilote supplémentaires passent dans le runtime cloud (23 au total) :
+  fuite cible/futur, probabilités/NP, indépendance des cotes, DQ, métriques.
+- scripts/reconcile_reference.py exécuté avec succès après correction du
+  comptage des copies results_probe/. Rapports de rapprochement sauvegardés.
+- config/pilot_protocol.json : train 2024, validation 2025, test 05/10/2026.
+  Uniforme et régression conditionnelle avec deux pénalisations prédéfinies.
+  Sélection sur validation seulement ; aucun réglage à partir du test.
+- scripts/build_pilot.py : exactement 46 courses ; réemploi des quatre captures
+  pretty déjà validées, au maximum 42 nouvelles requêtes. Collecte en cours.
+- turf_lab/pilot.py et scripts/backtest_pilot.py : écrits ; backtest complet
+  pas encore exécuté à ce checkpoint. Toujours statut expérimental/NO BET.
 
 ## Prochaine action précise
 
-1. Rétablir une voie d'écriture GitHub. Le recours au navigateur après l'échec
-   répété du connecteur nécessite l'accord explicite de l'utilisateur selon
-   les instructions du navigateur. Ne pas réclamer un secret dans le chat.
-2. Publier le paquet préparé sur main après vérification du HEAD distant ; si
-   main a changé, intégrer les changements sans force push ni écrasement.
-3. Vérifier les deux nouveaux workflows, leurs commits de sauvegarde et les ZIP
-   de référence. Mettre à jour ce fichier avec les vrais SHA et run_id.
-4. Puis Phase B : petit lot durable versionné, identités et dates de publication,
-   données normalisées et contrôle qualité. Résoudre les 6 rangs non expliqués
-   avant un modèle nécessitant un classement complet ; conserver des manquants
-   pour ferrures, volté, piste/terrain et records non prouvés.
-5. Pilote historique limité, périodes train/validation/test figées, baseline
-   uniforme puis modèle explicable sans cotes. Aucun ROI sans cotes réellement
-   capturées avant départ. La taille de cet audit ne suffit pas à valider un modèle.
-6. Prédictions futures, recalcul non-partants, transcription manuelle des captures
-   et restitution iPhone après validation du modèle.
+1. Terminer build_pilot ; examiner les erreurs plutôt que réduire silencieusement
+   l'échantillon. Vérifier les identités et les dates des historiques.
+2. Exécuter backtest_pilot, sauvegarder les données normalisées JSONL.gz,
+   manifestes et résultats ; publier le workflow puis confirmer son succès.
+3. Construire et tester la prédiction future et le rapport iPhone ; conserver
+   NO BET tant que validation insuffisante. Brancher le contrat de captures
+   manuelles déjà testé ; aucun historique de cotes/ROI inventé.
+4. Collecte prospective et extension bornée décidée selon les limites mesurées.
+   Pas d'arbres/Elo supplémentaires sans bénéfice démontré et volume suffisant.
 
-## Reprise après interruption
+## Reprise
 
-Lire ce fichier, les derniers commits et workflows. Si seul le paquet de reprise
-est disponible, suivre RESTORE.md. Contrôler d'abord l'état réel de GitHub.
-Ne pas recréer des rapports déjà présents, ne pas répéter la collecte validée.
-Ne pas confondre fichiers écrits, tests hors ligne réussis et workflow opérationnel.
-
-## Reprise du 12 octobre, seconde session
-
-- Sauvegarde précédente intacte, commit local 99a66e3.
-- Le navigateur a expiré sans ouverture confirmée.
-- Nouvelle tentative après autorisation GitHub : create_file réussi, commit
-  cec7d8bd3cc72242fdfeac275acaeff6c9e202ea pour WORK_PROGRESS.md.
-- Anciennes erreurs ci-dessus conservées comme historique, plus comme diagnostic courant.
-
-<!-- CLOUD_CHECKPOINT -->
-## Dernière exécution Actions observée automatiquement
-
-- Horodatage UTC : 2026-10-12T17:27:47.958352+00:00.
-- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38284344664
-- Commit exécuté : `6f46485c2c9221522790535d27d936e4dd77a29e`.
-- Statut avant sauvegarde : **success**.
-- La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
-- Une exécution d'audit réussie ne valide pas un modèle prédictif.
-- En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
-  et les manifestes pour reprendre au premier appel absent, sans répéter les autres.
+Lire ce fichier puis les derniers commits/runs. Réutiliser les bruts, contrôler
+les empreintes ; ne pas refaire les étapes validées. La sauvegarde de secours
+Turf_Lab_Reprise_2026-10-12.zip contient l'état d'audit antérieur à la publication.
+Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f72b50.
