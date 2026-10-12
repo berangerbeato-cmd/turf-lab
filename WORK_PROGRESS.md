@@ -10,7 +10,7 @@ Phase A terminée. Stockage Git durable opérationnel. Pilote B/C/D exécuté da
 le runtime cloud : 40 courses exploitables sur 46 candidates, six quarantaines
 explicites. Régression expérimentale ; pas de modèle validé, **NO BET**.
 Prédictions prospectives et rapports mobiles générés. Workflows pilote et
-prédiction réussis sur GitHub Actions. Observation quotidienne bornée en préparation.
+prédiction réussis sur GitHub Actions. Observation quotidienne bornée déployée et premier run réussi.
 
 ## Travaux publiés et vérifiés
 
@@ -80,8 +80,10 @@ prédiction réussis sur GitHub Actions. Observation quotidienne bornée en pré
 
 ## Prochaine action précise
 
-1. Publier puis vérifier le workflow daily_shadow et son premier run ;
-   inscrire son identifiant et le résultat de sauvegarde dans ce checkpoint.
+1. Prochaine étape : résultats des courses du 13 octobre. Le run quotidien du
+   14 octobre à 06:15 UTC doit récupérer les arrivées définitives et calculer
+   les scores prospectifs, si les partants sont restés identiques. Vérifier
+   reports/shadow_v1.json, les éventuelles quarantaines et le commit de sauvegarde.
 2. Le suivi collecte au maximum deux courses par jour, une à Vincennes et une
    en province, pour les départs du 13 au 26 octobre. Le contrôle des résultats
    se poursuit jusqu’au 28 octobre puis les appels PMU cessent. Ne pas élargir
@@ -126,7 +128,25 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
   Les données étaient déjà conservées dans Git ; l’artefact diagnostic existe.
 - Correctif : checkout explicite de main à l’entrée de chaque workflow écrivain
   sérialisé ; journal séparant SHA déclencheur et SHA réellement exécuté.
-  Publication et vérification du correctif en cours. Aucun force push.
+  Correctif publié et vérifié ci-dessous. Aucun force push.
+
+## État final vérifié de cette session
+
+- Audit corrigé : run `38286836315`, **success**, sauvegarde réussie.
+- Pilote chronologique : run `38286899576`, **success**, résultats reproduits.
+- Archives : run `38286899636`, **success**, empreintes contrôlées sans retéléchargement.
+- Suivi prospectif corrigé : run `38287036836`, **success**, commit de sauvegarde
+  `9a74bf7`. Modèle figé et deux courses distinctes capturées avant départ.
+- Prédiction future : run `38285892128`, **success** ; JSON et HTML dans predictions/.
+- 27 tests réussis. Aucun test final réutilisé pour régler le modèle.
+- Reprise après incident vérifiée sur le conflit réel de sauvegarde ; checkout
+  de main après acquisition du créneau d’écriture, SHA exécuté enregistré.
+- Aucun backfill massif, aucune donnée de cotes réelle, aucun pari et aucun ROI.
+- Limites : 40 courses historiques exploitables, six quarantaines, un seul jour
+  de test historique ; le modèle reste expérimental. La fenêtre prospective
+  doit produire de nouvelles preuves, pas une validation supposée d'avance.
+- Tous les scripts, preuves, données normalisées, modèles, rapports et workflows
+  sont publiés sur main. Le paquet ZIP initial est seulement un secours ancien.
 
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement

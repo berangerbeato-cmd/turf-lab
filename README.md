@@ -76,9 +76,10 @@ Le workflow de prédiction accepte une exécution manuelle ou une modification d
 HTML mobile et un modèle de transcription manuelle des cotes. Les captures sont
 horodatées et conservées séparément. Un départ passé provoque un arrêt.
 
-Aucune collecte massive. Un suivi prospectif borné est préparé : deux courses
+Aucune collecte massive. Un suivi prospectif borné est activé : deux courses
 maximum par jour, pour les départs du 13 au 26 octobre 2026, modèle figé.
 Les résultats sont vérifiés jusqu'au 28 octobre ; les appels PMU cessent ensuite.
-Voir WORK_PROGRESS.md pour la confirmation du déploiement. Le pilote
+Première exécution et sauvegarde réussies : run 38287036836.
+Voir WORK_PROGRESS.md pour les résultats et la reprise. Le pilote
 ne justifie pas de pari : volume faible, historique rétrospectif et validation
 prospective encore nécessaire. Aucun ROI n'est calculé.
