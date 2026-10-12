@@ -131,10 +131,10 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
 
-- Horodatage UTC : 2026-10-12T17:50:11.040336+00:00.
-- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38286836315
-- Commit déclencheur : `6902243039692ebc3ecc9e1b6e1405ceb7af4e22`.
-- Commit réellement extrait et exécuté : `6902243039692ebc3ecc9e1b6e1405ceb7af4e22`.
+- Horodatage UTC : 2026-10-12T17:50:43.005442+00:00.
+- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38286899576
+- Commit déclencheur : `8ded7dc3ec8a802305ad1cdb33ad99b402da8fcb`.
+- Commit réellement extrait et exécuté : `8ded7dc3ec8a802305ad1cdb33ad99b402da8fcb`.
 - Statut avant sauvegarde : **success**.
 - La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
 - Une exécution d'audit réussie ne valide pas un modèle prédictif.
