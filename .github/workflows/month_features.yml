@@ -1,0 +1,57 @@
+name: Turf Lab monthly history features
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Turf Lab bounded monthly history']
+    types: [completed]
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  history:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test and build strictly historical features
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.build_month_history
+      - name: Record cloud checkpoint
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save completed work even after partial failure
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p models
+          git add evidence data models reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve strictly dated monthly history features'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: month-features-diagnostic-backup
+          path: |
+            reports/
+            data/month_2024-01/
+            evidence/month_2024-01/
+            models/
+            WORK_PROGRESS.md
+          retention-days: 7

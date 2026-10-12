@@ -152,6 +152,14 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
 - Tous les scripts, preuves, données normalisées, modèles, rapports et workflows
   sont publiés sur main. Le paquet ZIP initial est seulement un secours ancien.
 
+## Extension mensuelle en cours — 13 octobre, heure de Paris
+
+- Collecteur publié : `158098cc80ada5da883716406db06e7255a30e76`.
+- Run `38313938501` observé en cours dans GitHub Actions ; succès pas encore établi.
+- Construction des historiques strictement antérieurs écrite et testée ; workflow après collecte réussie.
+- NO BET inchangé ; pas de réentraînement. Protocole : reports/MONTH_EXTENSION_PROTOCOL.md.
+- Prochaine action : vérifier le run mensuel et sa sauvegarde, puis month_features et son rapport de couverture historique ; traiter les lacunes avant extension.
+
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
 
