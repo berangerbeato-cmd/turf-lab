@@ -20,6 +20,7 @@ jobs:
       - name: Audit all trot races for one day
         run: python deep_audit.py --date '${{ inputs.date }}'
       - uses: actions/upload-artifact@v4
+        if: success() || failure()
         with:
           name: pmu-deep-audit
           path: data/deep_audit/
