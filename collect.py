@@ -26,6 +26,7 @@ def main():
     if not 1 <= args.days <= 7:
         parser.error("days must be 1..7")
 
+    totals = {"days": 0, "races_saved": 0, "failures": []}
     for offset in range(args.days):
         day = date.fromisoformat(args.date) + timedelta(days=offset)
         ds = day.strftime("%d%m%Y")
@@ -38,6 +39,7 @@ def main():
         reunions = programme.get("programme", {}).get(
             "reunions", programme.get("reunions", [])
         )
+        totals["days"] += 1
         print(day, "reunions", len(reunions))
         for reunion in reunions:
             rn = reunion.get("numOfficiel") or reunion.get("numeroReunion")
@@ -53,10 +55,18 @@ def main():
                         json.dumps(participants, ensure_ascii=False, indent=2),
                         encoding="utf-8",
                     )
+                    totals["races_saved"] += 1
                     print("saved", rn, cn)
                 except Exception as exc:
+                    totals["failures"].append({"date": day.isoformat(), "reunion": rn, "course": cn, "error": str(exc)})
                     print("participants failed", rn, cn, repr(exc))
                 time.sleep(0.5)
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "summary.json").write_text(json.dumps(totals, indent=2), encoding="utf-8")
+    print("SUMMARY", json.dumps(totals))
+    if totals["races_saved"] == 0 or totals["failures"]:
+        raise SystemExit("Collection incomplete: inspect summary.json")
 
 
 if __name__ == "__main__":
