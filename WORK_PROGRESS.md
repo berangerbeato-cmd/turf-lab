@@ -162,6 +162,19 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
 - Les huit mois supplémentaires et le backtest ne sont pas encore terminés à ce checkpoint. La chaîne GitHub poursuit réellement l'exécution après la session ; aucune collecte pluriannuelle continue ni performance V2 ne sont encore annoncées.
 - Aucune intervention utilisateur nécessaire au lancement. En cas d'échec d'un mois, conserver les checkpoints et reprendre la tâche concernée ; ne pas réinitialiser les historiques.
 
+## Extension future demandée — position de départ (13 octobre 2026)
+
+Statut : planifiée, non implémentée et non utilisée dans le modèle actuel.
+
+- Auditer les champs avant-course disponibles dans les bruts existants : type de départ, position autostart, ligne, emplacement intérieur/extérieur, distance individuelle et échelon de recul.
+- Autostart : distinguer première/deuxième ligne et position réelle ; vérifier les règles de correspondance par hippodrome avant toute dérivation. Ne pas assimiler automatiquement numéro du cheval et position de départ.
+- Départ volté : représenter le recul en mètres (notamment 25/50 m) et l'échelon ; ne pas inventer de place fixe à partir du numéro.
+- Étudier les interactions avec hippodrome, distance et nombre de partants ; aucune pénalité universelle fixée arbitrairement.
+- Mesurer couverture et ambiguïtés ; conserver les valeurs inconnues, leur provenance et la preuve de disponibilité avant départ. Absence d'autostart ne signifie pas départ volté.
+- Comparer avec/sans ces variables sur validation chronologique (log loss, Brier, calibration et sous-groupes). Sélectionner sur validation uniquement ; réserver un test indépendant si le test V2 a déjà été consulté.
+- Conserver le protocole V2 en cours et le modèle prospectif V1 figés. Intégration effective seulement après audit, implémentation et évaluation documentés.
+- Prochaine action pour cette extension : inventorier les champs de départ dans les données mensuelles sauvegardées et établir leur taux de disponibilité.
+
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
 
