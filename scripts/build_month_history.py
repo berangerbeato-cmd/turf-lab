@@ -23,7 +23,16 @@ def main():
     dest = Path('data/month_2024-01/history_features.jsonl.gz')
     dest.write_bytes(gzip.compress(raw, mtime=0))
     runners = [r for race in rows for r in race['runners'] if not r['non_runner']]
-    summary = {'status': 'EXPLORATORY_NOT_TRAINED', 'source_manifest_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+    coverage_by_day = {}
+    for race in rows:
+        day = coverage_by_day.setdefault(race['date'], {'races': 0, 'active_runners': 0, 'with_prior_observation': 0})
+        day['races'] += 1
+        for runner in race['runners']:
+            if not runner['non_runner']:
+                day['active_runners'] += 1
+                day['with_prior_observation'] += bool(runner['history'])
+    summary = {'coverage_by_day': coverage_by_day,
+        'distinct_horses': len({r['horse_id'] for r in runners}), 'status': 'EXPLORATORY_NOT_TRAINED', 'source_manifest_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
         'dataset_sha256': hashlib.sha256(raw).hexdigest(), 'races': len(rows), 'active_runners': len(runners),
         'runners_with_prior_observations': sum(bool(r['history']) for r in runners),
         'runners_with_five_prior_observations': sum(len(r['history'])==5 for r in runners),

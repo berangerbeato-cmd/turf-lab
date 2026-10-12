@@ -5,6 +5,7 @@ import collections
 import gzip
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 from turf_lab.evidence import EvidenceStore, dump, races, start_type
 from turf_lab.quality import assess
@@ -22,7 +23,20 @@ def valid_programme(value):
     return isinstance(body, dict) and isinstance(body.get('reunions'), list)
 
 
-def collect(month, store, output):
+def git_checkpoint(evidence, output):
+    """Used only in authenticated Actions; preserve a week before proceeding."""
+    subprocess.run(['git', 'add', str(evidence), str(output), 'reports/test_results.txt'], check=True)
+    changed = subprocess.run(['git', 'diff', '--cached', '--quiet'])
+    if changed.returncode == 0:
+        return
+    if changed.returncode != 1:
+        raise RuntimeError('Cannot inspect staged checkpoint')
+    subprocess.run(['git', 'commit', '-m', 'Checkpoint bounded monthly collection'], check=True)
+    subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
+    subprocess.run(['git', 'push', 'origin', 'HEAD:main'], check=True)
+
+
+def collect(month, store, output, checkpoint=None):
     report = {'month': month, 'status': 'RUNNING', 'days': [], 'partitions': [],
               'quarantine': [], 'fields_nonempty': {}, 'participants': 0,
               'historical_snapshot': 'Retrospective; original pre-race publication unproven',
@@ -72,6 +86,9 @@ def collect(month, store, output):
                         field_counts[key] += runner.get(key) not in (None, '', [], {})
                 report['fields_nonempty'] = dict(field_counts)
                 dump(output/'manifest.json', report)
+            if checkpoint and (len(report['days']) % 7 == 0 or day == month_days(month)[-1]):
+                dump(output/'manifest.json', report)
+                checkpoint()
         report['status'] = 'COLLECTED_WITH_GAPS' if report['quarantine'] or any(d['status']!='OK' for d in report['days']) else 'COLLECTED'
     except RuntimeError as error:
         if 'request budget' not in str(error):
@@ -93,9 +110,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--month', default='2024-01', choices=['2024-01'])
     parser.add_argument('--max-requests', type=int, default=1800)
+    parser.add_argument('--git-checkpoints', action='store_true')
     args = parser.parse_args()
     output = Path('data/month_'+args.month)
-    report = collect(args.month, EvidenceStore('evidence/month_'+args.month, args.max_requests, delay=0.5), output)
+    evidence = Path('evidence/month_'+args.month)
+    checkpoint = (lambda: git_checkpoint(evidence, output)) if args.git_checkpoints else None
+    report = collect(args.month, EvidenceStore(evidence, args.max_requests, delay=0.5), output, checkpoint)
     dump('reports/month_coverage.json', report)
     lines = ['# Monthly collection coverage', '', f"Month: {args.month}; status: {report['status']}",
              f"Programmes examined: {len(report['days'])}; candidate races: {report['candidate_races']}",

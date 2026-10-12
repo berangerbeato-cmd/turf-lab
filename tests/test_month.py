@@ -53,3 +53,17 @@ class MonthTests(unittest.TestCase):
             self.assertEqual(len(first['partitions']),1)
             self.assertEqual(len(first['quarantine']),1)
             self.assertEqual(first['quarantine'][0]['issues'][0]['issue'],'winner_disagreement')
+
+    def test_weekly_durable_checkpoint_boundaries(self):
+        class Store:
+            requests = 0
+            def programme(self, day):
+                return {'reunions': []}
+        observed=[]
+        with tempfile.TemporaryDirectory() as tmp:
+            import json
+            root=Path(tmp)
+            def checkpoint():
+                observed.append(len(json.loads((root/'manifest.json').read_text())['days']))
+            collect('2024-01', Store(), root, checkpoint)
+        self.assertEqual(observed,[7,14,21,28,31])
