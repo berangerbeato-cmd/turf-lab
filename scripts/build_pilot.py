@@ -2,6 +2,7 @@
 import gzip
 import hashlib
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from turf_lab.evidence import EvidenceStore, dump
@@ -33,6 +34,8 @@ def main():
             normalized.update(category=race['course'].get('categorieParticularite','UNKNOWN'),runners=[],feature_cutoff=day,history_source=source.manifest[key])
             # Preserve known engagement text as metadata, not as a model variable.
             normalized['conditions']=race['course'].get('conditions')
+            category_match=re.search(r'Course\s+([A-G])\b',normalized['conditions'] or '')
+            normalized['category']=category_match.group(1) if category_match else race['course'].get('categorieParticularite','UNKNOWN')
             ids=set();numbers=set()
             for p in race['participants']:
                 num=p['numPmu'];identity=p.get('idCheval') or '-'.join(p[k] for k in ('nom','nomMere','nomPere'))
@@ -54,9 +57,12 @@ def main():
         except (ValueError,KeyError,TypeError) as error:
             manifest['errors'].append({'race_id':race['race_id'],'error':str(error)})
         dump('data/pilot_v1/manifest.json',manifest)
-    manifest['status']='COMPLETE' if len(manifest['partitions'])==46 and not manifest['errors'] else 'INCOMPLETE'
+    manifest['status']='COMPLETE' if len(manifest['partitions'])==46 and not manifest['errors'] else 'PARTIAL_WITH_QUARANTINE'
+    manifest['candidate_races']=46
+    manifest['quarantine_policy']='Whole race excluded on unavailable history or identity/date ambiguity; no imputation of results.'
+    manifest['eligible_status']='COMPLETE' if len(manifest['partitions'])+len(manifest['errors'])==46 else 'INCOMPLETE'
     dump('data/pilot_v1/manifest.json',manifest)
     print(json.dumps({'status':manifest['status'],'races':len(manifest['partitions']),'errors':manifest['errors']}))
-    if manifest['status']!='COMPLETE': raise SystemExit(1)
+    if manifest['eligible_status']!='COMPLETE': raise SystemExit(1)
 
 if __name__=='__main__': main()

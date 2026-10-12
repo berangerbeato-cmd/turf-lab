@@ -1,14 +1,33 @@
 {
   "version": "pilot-v1",
-  "scope": "Exactly the 46 phase A races; no expansion",
-  "train": {"from": "2024-01-01", "to": "2024-12-31"},
-  "validation": {"from": "2025-01-01", "to": "2025-12-31"},
-  "test": {"from": "2026-10-05", "to": "2026-10-05"},
-  "features": ["win_rate", "top3_rate", "dq_rate", "log_rest", "history_coverage"],
-  "l2_candidates": [0.1, 1.0],
+  "scope": "46 candidate races; whole-race quarantine on unavailable history, ambiguous identity or temporal violation. No silent exclusion.",
+  "train": {
+    "from": "2024-01-01",
+    "to": "2024-12-31"
+  },
+  "validation": {
+    "from": "2025-01-01",
+    "to": "2025-12-31"
+  },
+  "test": {
+    "from": "2026-10-05",
+    "to": "2026-10-05"
+  },
+  "features": [
+    "win_rate",
+    "top3_rate",
+    "dq_rate",
+    "log_rest",
+    "history_coverage"
+  ],
+  "l2_candidates": [
+    0.1,
+    1.0
+  ],
   "selection": "lowest validation race log loss, including uniform baseline",
   "test_policy": "no tuning after test; experimental status regardless of result",
   "historical_snapshot_status": "retrospective facts; original publication time unproven",
   "tie_policy": "single winner only; predicted ties use lowest runner number",
-  "minimum_history": "missing allowed with train-only imputation and missing indicators"
+  "minimum_history": "missing allowed with train-only imputation and missing indicators",
+  "eligibility": "No missing labels or identity conflicts; at least 10 eligible races per chronological split. This is a software pilot, not statistical validation."
 }

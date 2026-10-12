@@ -1,13 +1,15 @@
 # Architecture proposée — décision conditionnelle à la fin de l'audit
 
-Statut : proposition, pas une base de données de production déployée.
+Statut : stockage d’audit opérationnel ; petit pilote normalisé en cours. Pas de base de production.
 
 ## Stockage simple et durable
 
 - Code, paramètres, contrats, tests, rapports et `WORK_PROGRESS.md` sur `main`.
 - Évidence d'audit limitée en JSON.gz avec manifestes SHA-256, URL, date de
   récupération UTC, identifiant de collecte et version du collecteur.
-- Après validation : branche `data` dédiée aux petits lots quotidiens JSON.gz
+- Pilote borné : partitions `data/pilot_v1/AAAA/MM/*.jsonl.gz` sur main, empreinte
+  des octets décompressés dans le manifeste. 46 courses candidates, sans expansion.
+- Extension future : branche `data` dédiée aux petits lots quotidiens JSON.gz
   et JSONL.gz partitionnés par année/mois. Ne pas réécrire les bruts existants.
   Les corrections créent une nouvelle observation, jamais une falsification
   de l'heure de collecte.

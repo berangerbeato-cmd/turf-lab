@@ -11,14 +11,14 @@ from turf_lab.pilot import FEATURES, fit, metrics, probabilities
 def main():
     protocol=json.loads(Path('config/pilot_protocol.json').read_text())
     manifest=json.loads(Path('data/pilot_v1/manifest.json').read_text())
-    if manifest.get('status')!='COMPLETE': raise ValueError('Incomplete pilot cannot train')
+    if manifest.get('eligible_status')!='COMPLETE': raise ValueError('Incomplete eligibility review cannot train')
     races=[]
     for item in manifest['partitions']:
         raw=gzip.decompress(Path(item['file']).read_bytes())
         if hashlib.sha256(raw).hexdigest()!=item['sha256']: raise ValueError('Partition digest mismatch')
         races.append(json.loads(raw))
     splits={k:[r for r in races if protocol[k]['from']<=r['date']<=protocol[k]['to']] for k in ['train','validation','test']}
-    assert all(splits.values()) and sum(map(len,splits.values()))==len(races)
+    assert all(len(v)>=10 for v in splits.values()) and sum(map(len,splits.values()))==len(races)
     assert max(r['date'] for r in splits['train'])<min(r['date'] for r in splits['validation'])
     assert max(r['date'] for r in splits['validation'])<min(r['date'] for r in splits['test'])
     models=[{'kind':'uniform'}]+[fit(splits['train'],l2) for l2 in protocol['l2_candidates']]
@@ -27,7 +27,8 @@ def main():
     output={'status':'EXPERIMENTAL_NO_BET','protocol':protocol,'split_races':{k:len(v) for k,v in splits.items()},
         'validation_candidates':[{'model':m,'metrics':v} for m,v in zip(models,validation)],'selected_candidate':selected,
         'test':{'selected':metrics(splits['test'],model),'uniform':metrics(splits['test'],models[0])},
-        'limitations':['Only 46 races and 9 dates; final test is a single day.','Historical publication time unproven.','Up to five historical runs, not complete careers.','No odds input, ROI or profitability estimate.','No test-based tuning or production validation.'],'subgroups':{}}
+        'candidate_races':manifest['candidate_races'],'quarantined_races':manifest['errors'],
+        'limitations':['At most 46 races and 9 dates; final test is a single day. Missing source responses cause non-random coverage bias.','Historical publication time unproven.','Up to five historical runs, not complete careers.','No odds input, ROI or profitability estimate.','No test-based tuning or production validation.'],'subgroups':{}}
     # Feature contribution assessed on validation only, never used to retune on test.
     best_logit=min(models[1:],key=lambda m:metrics(splits['validation'],m)['log_loss'])
     full_loss=metrics(splits['validation'],best_logit)['log_loss']
@@ -42,7 +43,8 @@ def main():
     dump('reports/test_predictions_pilot_v1.json',predictions)
     selected_metrics=output['test']['selected'];base=output['test']['uniform']
     lines=['# Pilote V1 — backtest chronologique','', '**Statut : expérimental, NO BET.**', '',
-      'Entraînement : 16 courses de 2024. Validation : 16 courses de 2025. Test : 14 courses du 05/10/2026.',
+      f"Entraînement : {len(splits['train'])} courses de 2024. Validation : {len(splits['validation'])} courses de 2025. Test : {len(splits['test'])} courses du 05/10/2026.",
+      f"Sur 46 courses candidates, {len(manifest['errors'])} sont explicitement mises en quarantaine pour données absentes ou ambiguës. La liste et les causes sont dans le JSON ; l'échantillon n'est pas représentatif de toutes les courses.",
       'La sélection utilise seulement la log loss de validation. Le modèle retenu reste inchangé sur le test.',
       '', '| Modèle, test uniquement | Log loss | Brier multiclasses | Favori correct |','|---|---:|---:|---:|',
       f"| Retenu ({model['kind']}) | {selected_metrics['log_loss']:.4f} | {selected_metrics['brier_multiclass']:.4f} | {selected_metrics['top1_accuracy']:.1%} |",

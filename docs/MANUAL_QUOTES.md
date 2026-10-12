@@ -53,3 +53,19 @@ puis tableau compact cheval/probabilité/cote/EV. Les points forts et faibles
 doivent citer des observations mesurées ; les scénarios restent conditionnels.
 Afficher séparément la couverture de l'historique et l'incertitude du modèle.
 Cette restitution n'est pas encore produite par un modèle opérationnel.
+
+## Chaîne expérimentale ajoutée
+
+`python -m scripts.predict_race --date AAAA-MM-JJ --reunion R --course C`
+crée une observation fraîche, les probabilités, un rapport HTML adapté au mobile
+et un modèle de transcription JSON dans `predictions/DATE/IDENTIFIANT_HORODATE/`.
+Le workflow `predict_race.yml` expose les mêmes entrées sans installation locale.
+
+La transcription doit être remplie et vérifiée à partir de la capture réelle,
+avec l'heure observée et l'empreinte du fichier image. Le modèle de transcription
+vide n'est pas une cote et échoue volontairement aux contrôles.
+
+`python -m turf_lab.manual_value --prediction prediction.json --quotes quotes.json --output comparison.json`
+produit l'EV arithmétique, sans modifier les probabilités. Le pilote porte toujours
+`validation_status=experimental` et `uncertainty=high` : résultat **NO BET**, même
+si une EV calculée est positive. Aucune capture réelle n'a encore été reçue.

@@ -6,10 +6,11 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
-Phase A terminée sur échantillon borné : GO conditionnel pour petit pilote.
-Phase B : stockage Git durable opérationnel pour les preuves d'audit ;
-normalisation du pilote en cours. Phase C/D : code expérimental en préparation,
-aucun résultat prédictif annoncé à ce checkpoint. Pas de collecte massive.
+Phase A terminée. Stockage Git durable opérationnel. Pilote B/C/D exécuté dans
+le runtime cloud : 40 courses exploitables sur 46 candidates, six quarantaines
+explicites. Régression expérimentale ; pas de modèle validé, **NO BET**.
+Première prédiction prospective et rapport mobile générés ; workflows pilote et
+prédiction en cours de publication, leur succès Actions reste à confirmer.
 
 ## Travaux publiés et vérifiés
 
@@ -51,21 +52,43 @@ aucun résultat prédictif annoncé à ce checkpoint. Pas de collecte massive.
   Uniforme et régression conditionnelle avec deux pénalisations prédéfinies.
   Sélection sur validation seulement ; aucun réglage à partir du test.
 - scripts/build_pilot.py : exactement 46 courses ; réemploi des quatre captures
-  pretty déjà validées, au maximum 42 nouvelles requêtes. Collecte en cours.
-- turf_lab/pilot.py et scripts/backtest_pilot.py : écrits ; backtest complet
-  pas encore exécuté à ce checkpoint. Toujours statut expérimental/NO BET.
+  pretty déjà validées, 42 appels initiaux et 5 nouvelles tentatives bornées. Collecte terminée avec quarantaines explicites.
+- turf_lab/pilot.py et scripts/backtest_pilot.py : écrits et exécutés sur le sous-ensemble contrôlé. Toujours statut expérimental/NO BET.
+
+## Résultats supplémentaires vérifiés
+
+- 37 nouvelles réponses pretty réussies, 5 réponses vides après une unique
+  nouvelle tentative chacune ; une course mise en quarantaine pour deux lignes
+  sans itsHim (KINASSE DE VIVOIN et FUNNY GIRL (ITY), historique du 27/06/2025).
+- Quarantaine définie sur la qualité des données avant le premier backtest :
+  46 candidates, 40 retenues. Aucun résultat inventé ni sélection selon performance.
+- Train 14 courses en 2024 ; validation 12 en 2025 ; test 14 du 05/10/2026.
+- Sélection validation : régression conditionnelle. Test : log loss 2,484502
+  contre 2,644439 uniforme ; Brier multiclasses 0,896022 contre 0,928181 ;
+  top-1 1/14 pour les deux. Aucun ajustement après observation du test.
+- Calibration, sous-groupes et ablations validation enregistrés dans
+  reports/backtest_pilot_v1.json. Petit échantillon, test sur une seule journée,
+  couverture non représentative : aucune conclusion de rentabilité/fiabilité.
+- Modèle sérialisé models/pilot_v1.json ; partitions JSONL.gz et empreintes
+  data/pilot_v1/manifest.json ; bruts evidence/pilot_v1 conservés dans Git.
+- Première prédiction réelle avant-course : 2026-10-13 R4C1 Vincennes, 12 partants,
+  somme des probabilités 1,0, historique strictement antérieur ; rapport HTML mobile.
+- Intégration EV sur cotes synthétiques : NO BET confirmé. Aucune capture réelle
+  reçue. Le modèle expérimental ne peut produire de candidat de mise.
+- Syntaxe Python et YAML contrôlée. 23 tests passent ; contrôles de normalisation,
+  chronologie et raccordement EV sur la prédiction enregistrés séparément.
 
 ## Prochaine action précise
 
-1. Terminer build_pilot ; examiner les erreurs plutôt que réduire silencieusement
-   l'échantillon. Vérifier les identités et les dates des historiques.
-2. Exécuter backtest_pilot, sauvegarder les données normalisées JSONL.gz,
-   manifestes et résultats ; publier le workflow puis confirmer son succès.
-3. Construire et tester la prédiction future et le rapport iPhone ; conserver
-   NO BET tant que validation insuffisante. Brancher le contrat de captures
-   manuelles déjà testé ; aucun historique de cotes/ROI inventé.
-4. Collecte prospective et extension bornée décidée selon les limites mesurées.
-   Pas d'arbres/Elo supplémentaires sans bénéfice démontré et volume suffisant.
+1. Publier les nouvelles partitions, scripts, modèle, rapports et workflows ;
+   confirmer les runs pilote/prédiction et leurs commits de sauvegarde.
+2. Réviser ce checkpoint avec les identifiants réellement exécutés.
+3. Suite scientifique : préparer une extension bornée et un nouveau protocole
+   figé avec davantage de jours/hippodromes ; ne pas réutiliser le test V1 pour
+   sélectionner des améliorations. Préférer des captures prospectives horodatées.
+4. Lors d'une capture utilisateur, refaire les partants et probabilités avant
+   lecture des cotes, vérifier identités/heure/convention, calculer EV ; maintenir
+   NO BET tant que validation prospective insuffisante. Aucun pari réel.
 
 ## Reprise
 
@@ -73,15 +96,3 @@ Lire ce fichier puis les derniers commits/runs. Réutiliser les bruts, contrôle
 les empreintes ; ne pas refaire les étapes validées. La sauvegarde de secours
 Turf_Lab_Reprise_2026-10-12.zip contient l'état d'audit antérieur à la publication.
 Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f72b50.
-
-<!-- CLOUD_CHECKPOINT -->
-## Dernière exécution Actions observée automatiquement
-
-- Horodatage UTC : 2026-10-12T17:33:12.626522+00:00.
-- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38284964919
-- Commit exécuté : `11cbc9098827f524624b31ba348965569207a250`.
-- Statut avant sauvegarde : **success**.
-- La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
-- Une exécution d'audit réussie ne valide pas un modèle prédictif.
-- En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
-  et les manifestes pour reprendre au premier appel absent, sans répéter les autres.

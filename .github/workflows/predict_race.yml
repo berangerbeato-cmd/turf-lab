@@ -1,0 +1,48 @@
+name: Turf Lab prospective race prediction
+on:
+  push:
+    branches: [main]
+    paths: ['config/prediction_request.json']
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Race date YYYY-MM-DD (today to +7 days)'
+        required: true
+      reunion:
+        description: 'Official meeting number'
+        required: true
+      course:
+        description: 'Official race number'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect a fresh snapshot and calculate independent probabilities
+        env:
+          RACE_DATE: ${{ inputs.date }}
+          RACE_MEETING: ${{ inputs.reunion }}
+          RACE_NUMBER: ${{ inputs.course }}
+        run: python -m scripts.run_prediction_request
+      - name: Preserve snapshot and prediction, including failed collection evidence
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p predictions evidence
+          git add predictions evidence
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive prospective race snapshot and experimental prediction'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

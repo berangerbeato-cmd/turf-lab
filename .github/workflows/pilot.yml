@@ -1,0 +1,62 @@
+name: Turf Lab chronological pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pilot.yml'
+      - 'scripts/build_pilot.py'
+      - 'scripts/backtest_pilot.py'
+      - 'scripts/reconcile_reference.py'
+      - 'turf_lab/pilot.py'
+      - 'config/pilot_protocol.json'
+      - 'tests/test_pilot.py'
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test leakage and reproduce pilot
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.reconcile_reference
+          python -m scripts.build_pilot
+          python -m scripts.backtest_pilot
+      - name: Record cloud checkpoint
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save completed work even after partial failure
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p models
+          git add evidence data models reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve chronological pilot data and measured results'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pilot-diagnostic-backup
+          path: |
+            reports/
+            data/pilot_v1/
+            evidence/pilot_v1/
+            models/
+            WORK_PROGRESS.md
+          retention-days: 7

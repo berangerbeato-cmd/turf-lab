@@ -14,14 +14,19 @@ VPN, contournement ou scraper de cotes.
   3 pour Fabius Ors et 2 pour Over The Hill, avant le 05/10/2026.
 - Avant-course vérifié sur deux captures prospectives du 13/10 : 28 partants,
   sans résultats. Les historiques actuels sont filtrés par date.
-- **17 tests hors ligne réussis**. Aucun modèle entraîné, aucun backtest ni ROI.
-- Comparateur de cotes manuelles écrit et testé sur fixtures. La chaîne complète
-  capture → prédiction → EV n'est pas encore opérationnelle.
-- État du déploiement suivi dans WORK_PROGRESS.md : aucune exécution des nouveaux
-  workflows n'est revendiquée. Voir `WORK_PROGRESS.md` avant toute reprise.
+- **23 tests réussis**. Pilote régression conditionnelle entraîné sur 14 courses
+  de 2024, sélection sur 12 courses de 2025, test sur 14 courses du 05/10/2026.
+- Test exploratoire : log loss 2,4845 (uniforme 2,6444), Brier 0,8960
+  (uniforme 0,9282), premier choix gagnant 1/14. **NO BET : modèle non validé.**
+- Six courses candidates mises en quarantaine : cinq réponses historiques vides,
+  une ambiguïté d'identité. Aucune exclusion silencieuse ni donnée inventée.
+- Audit et récupération des archives exécutés avec succès sur GitHub Actions.
+  État des workflows pilote/prédiction : voir `WORK_PROGRESS.md`.
+- Comparateur de cotes manuelles testé sur fixtures ; aucune capture réelle reçue.
 
 ## Documents et preuves
 
+- [Backtest expérimental](reports/BACKTEST_PILOT_V1.md).
 - [Audit de faisabilité](reports/AUDIT_FEASIBILITY.md).
 - [Cinq historiques détaillés](reports/FIVE_HORSE_HISTORIES.md).
 - [Architecture proposée](docs/ARCHITECTURE_PROPOSAL.md).
@@ -55,11 +60,22 @@ Les dates de ce premier audit sont intentionnellement figées. Une nouvelle
 capture doit avoir un nouveau répertoire d'évidence. Ne pas effacer les captures
 anciennes pour les remplacer par des informations connues plus tard.
 
-Le workflow `Recover reference evidence` doit préserver les deux ZIP Actions
-originaux avec les empreintes reçues de GitHub. Il n'a pas encore été exécuté
-pendant cette session. L'audit public actuel est une observation distincte.
+Les archives Actions d'origine ont été récupérées, contrôlées et conservées dans
+`data/reference/`. Les nouveaux bruts et partitions sont sauvegardés dans Git,
+les artefacts temporaires ne constituent pas le stockage principal.
 
-Les phases suivantes restent conditionnées par une sauvegarde durable GitHub
-opérationnelle, puis par un pilote historique plus large avec découpage temporel
-entraînement/validation/test. La bonne disponibilité des champs n'est pas une
-preuve que le modèle sera performant.
+```bash
+python -m scripts.reconcile_reference
+python -m scripts.build_pilot
+python -m scripts.backtest_pilot
+python -m scripts.predict_race --date AAAA-MM-JJ --reunion R --course C
+```
+
+Le workflow de prédiction accepte une exécution manuelle ou une modification de
+`config/prediction_request.json`. Il produit un JSON de probabilités, un rapport
+HTML mobile et un modèle de transcription manuelle des cotes. Les captures sont
+horodatées et conservées séparément. Un départ passé provoque un arrêt.
+
+Aucune collecte massive ni automatisation quotidienne n'est activée. Le pilote
+ne justifie pas de pari : volume faible, historique rétrospectif et validation
+prospective encore nécessaire. Aucun ROI n'est calculé.
