@@ -122,3 +122,15 @@ Ne pas confondre fichiers écrits, tests hors ligne réussis et workflow opérat
 - Nouvelle tentative après autorisation GitHub : create_file réussi, commit
   cec7d8bd3cc72242fdfeac275acaeff6c9e202ea pour WORK_PROGRESS.md.
 - Anciennes erreurs ci-dessus conservées comme historique, plus comme diagnostic courant.
+
+<!-- CLOUD_CHECKPOINT -->
+## Dernière exécution Actions observée automatiquement
+
+- Horodatage UTC : 2026-10-12T17:27:47.958352+00:00.
+- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38284344664
+- Commit exécuté : `6f46485c2c9221522790535d27d936e4dd77a29e`.
+- Statut avant sauvegarde : **success**.
+- La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
+- Une exécution d'audit réussie ne valide pas un modèle prédictif.
+- En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
+  et les manifestes pour reprendre au premier appel absent, sans répéter les autres.
