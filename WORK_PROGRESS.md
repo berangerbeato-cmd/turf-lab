@@ -6,7 +6,7 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
-Extension historique V2 : janvier 2024 entièrement collecté et sauvegardé (512 courses, 6 757 participations, 18 hippodromes). La chaîne mensuelle et les historiques strictement antérieurs sont reproduits dans GitHub Actions. Collecte bornée des premiers trimestres 2024, 2025 et 2026 en cours de déploiement ; nouveau protocole chronologique figé avant consultation du test. Le pilote prospectif V1 reste inchangé et **NO BET**.
+Extension historique V2 : janvier 2024 entièrement collecté et sauvegardé (512 courses, 6 757 participations, 18 hippodromes). La chaîne mensuelle et les historiques strictement antérieurs sont reproduits dans GitHub Actions. Collecte bornée des premiers trimestres 2024, 2025 et 2026 lancée dans GitHub Actions ; nouveau protocole chronologique figé avant consultation du test. Le pilote prospectif V1 reste inchangé et **NO BET**.
 
 ## Travaux publiés et vérifiés
 
@@ -153,6 +153,14 @@ Les commits locaux originaux sont aussi conservés sous recovery/local-audit-4f7
 - 42 tests locaux réussis : couverture, quarantaine, sauvegardes hebdomadaires, identité, NP/DQ, absence de fuite cible/même jour/futur, fenêtre 60 jours, partitionnement et gel du backtest.
 - Rapport de décision : `reports/JANUARY_2024_FEASIBILITY.md`. Protocole figé : `config/history_extension_protocol.json`.
 - Nouveau backtest écrit et testé sur données synthétiques ; pas encore évalué sur les neuf mois réels. Modèle prospectif inchangé.
+
+## Lancement V2 confirmé
+
+- Commit de développement : `b5fea4f274eb8e3854ba3b6a2a02cdafdc6064d5`.
+- Run actif : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38317253515 .
+- Première tâche `collect (2024-01)` : succès, tests et sauvegarde confirmés ; tâche février 2024 créée ensuite.
+- Les huit mois supplémentaires et le backtest ne sont pas encore terminés à ce checkpoint. La chaîne GitHub poursuit réellement l'exécution après la session ; aucune collecte pluriannuelle continue ni performance V2 ne sont encore annoncées.
+- Aucune intervention utilisateur nécessaire au lancement. En cas d'échec d'un mois, conserver les checkpoints et reprendre la tâche concernée ; ne pas réinitialiser les historiques.
 
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
