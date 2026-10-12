@@ -29,6 +29,7 @@ def main():
     reunions=programme.get("programme",{}).get("reunions",[])
     keys=collections.Counter();missing=collections.Counter();examples={};counts=collections.Counter();endpoints=[]
     for reunion in reunions:
+        if reunion.get("pays",{}).get("code") != "FRA":continue
         rn=reunion.get("numOfficiel")
         for course in reunion.get("courses",[]):
             if course.get("discipline") not in ("ATTELE","TROT_ATTELE"):continue

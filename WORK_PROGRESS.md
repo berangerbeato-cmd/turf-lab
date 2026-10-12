@@ -9,8 +9,9 @@ réel, scraper de cotes, MySQL, AspiTurf, VPN ou contournement.
 **Phase A réalisée sur un échantillon borné. Rapport de faisabilité disponible.**
 GO conditionnel pour un pilote ; pas de collecte massive ni base définitive.
 Phase B proposée, pas déployée. Modèle/backtest non commencés.
-L'écriture GitHub bloque la publication ; le code et les données doivent être
-sauvegardés dans un paquet de reprise avant la fin de session.
+L'écriture du connecteur GitHub fonctionne à nouveau : checkpoint publié dans
+cec7d8bd3cc72242fdfeac275acaeff6c9e202ea. Transfert complet en cours ;
+aucun nouveau workflow exécuté confirmé à ce stade.
 
 ## Dépôt distant : faits vérifiés
 
@@ -113,3 +114,11 @@ Lire ce fichier, les derniers commits et workflows. Si seul le paquet de reprise
 est disponible, suivre RESTORE.md. Contrôler d'abord l'état réel de GitHub.
 Ne pas recréer des rapports déjà présents, ne pas répéter la collecte validée.
 Ne pas confondre fichiers écrits, tests hors ligne réussis et workflow opérationnel.
+
+## Reprise du 12 octobre, seconde session
+
+- Sauvegarde précédente intacte, commit local 99a66e3.
+- Le navigateur a expiré sans ouverture confirmée.
+- Nouvelle tentative après autorisation GitHub : create_file réussi, commit
+  cec7d8bd3cc72242fdfeac275acaeff6c9e202ea pour WORK_PROGRESS.md.
+- Anciennes erreurs ci-dessus conservées comme historique, plus comme diagnostic courant.

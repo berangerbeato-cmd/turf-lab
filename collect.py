@@ -42,6 +42,8 @@ def main():
         totals["days"] += 1
         print(day, "reunions", len(reunions))
         for reunion in reunions:
+            if reunion.get("pays", {}).get("code") != "FRA":
+                continue
             rn = reunion.get("numOfficiel") or reunion.get("numeroReunion")
             for course in reunion.get("courses", []):
                 cn = course.get("numOrdre") or course.get("numeroCourse")

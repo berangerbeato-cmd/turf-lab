@@ -1,0 +1,62 @@
+name: Turf Lab bounded phase A audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/phase_a.yml'
+      - 'scripts/audit_*.py'
+      - 'scripts/build_audit_report.py'
+      - 'turf_lab/**'
+      - 'tests/**'
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check leakage, identities, integrity and manual value safeguards
+        run: |
+          mkdir -p reports
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+      - name: Reproduce the bounded audit, reusing preserved responses
+        run: |
+          python -m scripts.audit_phase_a
+          python -m scripts.audit_horses
+          python -m scripts.audit_temporal
+          python -m scripts.audit_before_race
+          python -m scripts.audit_opposition
+          python -m scripts.build_audit_report
+      - name: Record the actual workflow state
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Preserve evidence and progress even on partial failure
+        if: success() || failure()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record bounded audit evidence and workflow checkpoint'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase-a-diagnostic-backup
+          path: |
+            reports/
+            evidence/
+            WORK_PROGRESS.md
+          retention-days: 7

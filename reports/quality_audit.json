@@ -1,0 +1,54 @@
+{
+  "races": 46,
+  "participants_including_non_runners": 619,
+  "counts": {
+    "single_winner_races": 46,
+    "dead_heat_races": 0,
+    "disqualified": 124,
+    "non_runners": 15,
+    "distanced": 4,
+    "stopped": 2,
+    "composite_id_reconstructed": 327,
+    "missing_rank_without_dq_or_np": 8
+  },
+  "issues": [],
+  "warnings": [
+    {
+      "race_id": "2024-11-01_R4C1",
+      "number": 1,
+      "issue": "unclassified_finisher_without_incident"
+    },
+    {
+      "race_id": "2024-11-01_R4C1",
+      "number": 2,
+      "issue": "unclassified_finisher_without_incident"
+    },
+    {
+      "race_id": "2024-11-01_R4C1",
+      "number": 5,
+      "issue": "unclassified_finisher_without_incident"
+    },
+    {
+      "race_id": "2024-11-01_R4C1",
+      "number": 8,
+      "issue": "unclassified_finisher_without_incident"
+    },
+    {
+      "race_id": "2024-11-01_R4C1",
+      "number": 9,
+      "issue": "unclassified_finisher_without_incident"
+    },
+    {
+      "race_id": "2025-08-09_R4C2",
+      "number": 2,
+      "issue": "unclassified_finisher_without_incident"
+    }
+  ],
+  "status": "PASS_WIN_LABELS_WITH_WARNINGS",
+  "time_unit_check": {
+    "n": 467,
+    "hypothesis": "tempsObtenu and reductionKilometrique in milliseconds",
+    "median_absolute_error_seconds": 0.0625,
+    "max_absolute_error_seconds": 0.14000000000001478
+  }
+}

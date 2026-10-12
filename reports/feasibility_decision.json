@@ -1,0 +1,16 @@
+{
+  "data_access": "VERIFIED_ON_BOUNDED_SAMPLE",
+  "pilot_architecture": "GO_WITH_CONDITIONS",
+  "mass_backfill": "HOLD",
+  "production_prediction": "HOLD",
+  "model_training": "NOT_STARTED",
+  "github_publication": "SEE_WORK_PROGRESS_AND_ACTIONS_FOR_CURRENT_DEPLOYMENT",
+  "conditions": [
+    "Restore verified GitHub writes and persistent checkpoints before expanding",
+    "Use exact composite identities and explicit missingness",
+    "Separate outcomes from features; strict date filtering of individual histories",
+    "Explain six unclassified finishers before using complete rankings",
+    "Do not infer volte or shod status from absent fields",
+    "Validate a bounded multi-period training pilot before any mass collection"
+  ]
+}

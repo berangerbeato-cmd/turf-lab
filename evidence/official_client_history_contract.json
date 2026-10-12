@@ -1,0 +1,27 @@
+{
+  "source": "https://www.pmu.fr/_next/static/chunks/pages/_app-45c214c767923d6e.js",
+  "fetched_on": "2026-10-12",
+  "source_sha256": "51d0b1b2f43d47034d81a823c683c260d29edc2aa964c9173d205dd45c3ec225",
+  "purpose": "Document public history endpoints and shoe-code semantics; no odds scraping",
+  "excerpts": [
+    "fetchPerformancesDetaillees:async t=>{const{date:r,reunion:n,course:i}=t;return e({url:`/programme/${r}/R${n}/C${i}/performances-detaillees/pretty`})},fetchLightPerformances:async t=>{const{horseId:r}=t;return e({url:`/program/${r}/light-performances`})},fetchPerformanceDetails:async t=>{const{horseId:r,date:n,racecourseCode:i,raceNumber:s}=t,a=`/program/${r}/performance-details`,l={};return n&&(l.date=n),i&&(l.racecourseCode=i),s&&(l.raceNumber=`${s}`),e({url:a,params:o(o({},l),{},{language:\"fr\"})})},fetchBig5Prog",
+    "fetchLightPerformances:async t=>{const{horseId:r}=t;return e({url:`/program/${r}/light-performances`})},fetchPerformanceDetails:async t=>{const{horseId:r,date:n,racecourseCode:i,raceNumber:s}=t,a=`/program/${r}/performance-details`,l={};return n&&(l.date=n),i&&(l.racecourseCode=i),s&&(l.raceNumber=`${s}`),e({url:a,params:o(o({},l),{},{language:\"fr\"})})},fetchBig5ProgrammeLight:async t=>{const{date:r}=t;return e({url:`/offredepari/light?date=${r}&codePari=EB5`})}})},24490:(e,t,r)=>{var n=r(54703)(r(45516),\"WeakMap\")",
+    "fetchPerformanceDetails:async t=>{const{horseId:r,date:n,racecourseCode:i,raceNumber:s}=t,a=`/program/${r}/performance-details`,l={};return n&&(l.date=n),i&&(l.racecourseCode=i),s&&(l.raceNumber=`${s}`),e({url:a,params:o(o({},l),{},{language:\"fr\"})})},fetchBig5ProgrammeLight:async t=>{const{date:r}=t;return e({url:`/offredepari/light?date=${r}&codePari=EB5`})}})},24490:(e,t,r)=>{var n=r(54703)(r(45516),\"WeakMap\");e.exports=n},24570:(e,t,r)=>{\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0}),t.Configurat",
+    "const c=\"FERRE\",C=\"DEFERRE_ANTERIEURS\",u=\"DEFERRE_POSTERIEURS\",d=\"DEFERRE_ANTERIEURS_POSTERIEURS\",p=\"PROTEGE_ANTERIEURS_POSTERIEURS\",f=\"PROTEGE_ANTERIEURS\",h=\"PROTEGE_POSTERIEURS\",m=\"PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS\",g=\"DEFERRE_ANTERIEURS_PROTEGE_POSTERIEURS\",y=\"INCONNU\",b=e=>{switch(e){case\"0\":return c;case\"1\":return C;case\"2\":return u;case\"3\":return d;case\"4\":return p;case\"5\":return f;case\"6\":return m;case\"7\":return h;case\"8\":return g;default:return}},A=e=>e<=16?\"sm\":e<=20?\"md\":e<=24?\"lg\":\"xl\",w={[c]:\"ferr"
+  ],
+  "verified_semantics": {
+    "gainsParticipant": "centimes. Gains totaux uses module 75704 Eg, splitting the last two digits as cents. Divide by 100 for euros.",
+    "shoe_codes": {
+      "0": "FERRE",
+      "1": "DA",
+      "2": "DP",
+      "3": "D4",
+      "4": "P4",
+      "5": "PA",
+      "6": "PA_DP",
+      "7": "PP",
+      "8": "DA_PP"
+    },
+    "history_filter": "Official client filters light-performances to dates before the target day; raw endpoint returns later races too."
+  }
+}

@@ -1,0 +1,464 @@
+[
+  {
+    "variable": "Identité PMU directe",
+    "source_field": "idCheval",
+    "interpretation": "Identifiant ; absent de certaines archives",
+    "availability": {
+      "2024": {
+        "nonempty": 0,
+        "denominator": 218,
+        "rate": 0.0
+      },
+      "2025": {
+        "nonempty": 89,
+        "denominator": 198,
+        "rate": 0.4494949494949495
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Nom",
+    "source_field": "nom",
+    "interpretation": "Avec père et mère pour identité composite",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Père",
+    "source_field": "nomPere",
+    "interpretation": "Identité",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Mère",
+    "source_field": "nomMere",
+    "interpretation": "Identité",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Âge",
+    "source_field": "age",
+    "interpretation": "Avant course",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Sexe",
+    "source_field": "sexe",
+    "interpretation": "Avant course",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Musique",
+    "source_field": "musique",
+    "interpretation": "Avant course ; dates non incluses",
+    "availability": {
+      "2024": {
+        "nonempty": 216,
+        "denominator": 218,
+        "rate": 0.9908256880733946
+      },
+      "2025": {
+        "nonempty": 190,
+        "denominator": 198,
+        "rate": 0.9595959595959596
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Driver",
+    "source_field": "driver",
+    "interpretation": "Déclaration avant course, changements possibles",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Entraîneur",
+    "source_field": "entraineur",
+    "interpretation": "Déclaration avant course",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Ferrure déclarée",
+    "source_field": "deferre",
+    "interpretation": "Absent ≠ ferré",
+    "availability": {
+      "2024": {
+        "nonempty": 151,
+        "denominator": 218,
+        "rate": 0.6926605504587156
+      },
+      "2025": {
+        "nonempty": 115,
+        "denominator": 198,
+        "rate": 0.5808080808080808
+      },
+      "2026": {
+        "nonempty": 121,
+        "denominator": 203,
+        "rate": 0.5960591133004927
+      }
+    }
+  },
+  {
+    "variable": "Distance individuelle",
+    "source_field": "handicapDistance",
+    "interpretation": "Avant course ; recul à calculer",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Gains de carrière",
+    "source_field": "gainsParticipant.gainsCarriere",
+    "interpretation": "Centimes ; caractère figé historique à contrôler",
+    "availability": {
+      "2024": {
+        "nonempty": 197,
+        "denominator": 218,
+        "rate": 0.9036697247706422
+      },
+      "2025": {
+        "nonempty": 190,
+        "denominator": 198,
+        "rate": 0.9595959595959596
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Nombre de courses",
+    "source_field": "nombreCourses",
+    "interpretation": "Couverture/périmètre du compteur non garanti",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Victoires cumulées",
+    "source_field": "nombreVictoires",
+    "interpretation": "Recalculer avant chaque course",
+    "availability": {
+      "2024": {
+        "nonempty": 218,
+        "denominator": 218,
+        "rate": 1.0
+      },
+      "2025": {
+        "nonempty": 198,
+        "denominator": 198,
+        "rate": 1.0
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Avis entraîneur",
+    "source_field": "avisEntraineur",
+    "interpretation": "Neutralité et date de publication à contrôler",
+    "availability": {
+      "2024": {
+        "nonempty": 197,
+        "denominator": 218,
+        "rate": 0.9036697247706422
+      },
+      "2025": {
+        "nonempty": 190,
+        "denominator": 198,
+        "rate": 0.9595959595959596
+      },
+      "2026": {
+        "nonempty": 203,
+        "denominator": 203,
+        "rate": 1.0
+      }
+    }
+  },
+  {
+    "variable": "Place au départ",
+    "source_field": "placeCorde",
+    "interpretation": "Surtout autostart ; absence pas une position nulle",
+    "availability": {
+      "2024": {
+        "nonempty": 83,
+        "denominator": 218,
+        "rate": 0.38073394495412843
+      },
+      "2025": {
+        "nonempty": 79,
+        "denominator": 198,
+        "rate": 0.398989898989899
+      },
+      "2026": {
+        "nonempty": 38,
+        "denominator": 203,
+        "rate": 0.18719211822660098
+      }
+    }
+  },
+  {
+    "variable": "Rang final",
+    "source_field": "ordreArrivee",
+    "interpretation": "Après course : cible seulement",
+    "availability": {
+      "2024": {
+        "nonempty": 171,
+        "denominator": 218,
+        "rate": 0.7844036697247706
+      },
+      "2025": {
+        "nonempty": 152,
+        "denominator": 198,
+        "rate": 0.7676767676767676
+      },
+      "2026": {
+        "nonempty": 149,
+        "denominator": 203,
+        "rate": 0.7339901477832512
+      }
+    }
+  },
+  {
+    "variable": "Incident",
+    "source_field": "incident",
+    "interpretation": "Après course ; absence souvent normale",
+    "availability": {
+      "2024": {
+        "nonempty": 42,
+        "denominator": 218,
+        "rate": 0.1926605504587156
+      },
+      "2025": {
+        "nonempty": 45,
+        "denominator": 198,
+        "rate": 0.22727272727272727
+      },
+      "2026": {
+        "nonempty": 54,
+        "denominator": 203,
+        "rate": 0.2660098522167488
+      }
+    }
+  },
+  {
+    "variable": "Temps obtenu",
+    "source_field": "tempsObtenu",
+    "interpretation": "Après course ; millisecondes",
+    "availability": {
+      "2024": {
+        "nonempty": 171,
+        "denominator": 218,
+        "rate": 0.7844036697247706
+      },
+      "2025": {
+        "nonempty": 152,
+        "denominator": 198,
+        "rate": 0.7676767676767676
+      },
+      "2026": {
+        "nonempty": 144,
+        "denominator": 203,
+        "rate": 0.7093596059113301
+      }
+    }
+  },
+  {
+    "variable": "Réduction kilométrique",
+    "source_field": "reductionKilometrique",
+    "interpretation": "Après course ; millisecondes par km, pas record personnel",
+    "availability": {
+      "2024": {
+        "nonempty": 171,
+        "denominator": 218,
+        "rate": 0.7844036697247706
+      },
+      "2025": {
+        "nonempty": 152,
+        "denominator": 198,
+        "rate": 0.7676767676767676
+      },
+      "2026": {
+        "nonempty": 144,
+        "denominator": 203,
+        "rate": 0.7093596059113301
+      }
+    }
+  },
+  {
+    "variable": "Commentaire après course",
+    "source_field": "commentaireApresCourse.texte",
+    "interpretation": "Exclu des features de la course cible",
+    "availability": {
+      "2024": {
+        "nonempty": 0,
+        "denominator": 218,
+        "rate": 0.0
+      },
+      "2025": {
+        "nonempty": 0,
+        "denominator": 198,
+        "rate": 0.0
+      },
+      "2026": {
+        "nonempty": 83,
+        "denominator": 203,
+        "rate": 0.4088669950738916
+      }
+    }
+  }
+]

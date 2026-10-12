@@ -35,6 +35,8 @@ def main():
         reunions = programme.get("programme", {}).get("reunions", programme.get("reunions", []))
         found = 0
         for reunion in reunions:
+            if reunion.get("pays", {}).get("code") != "FRA":
+                continue
             rn = reunion.get("numOfficiel") or reunion.get("numeroReunion")
             for course in reunion.get("courses", []):
                 cn = course.get("numOrdre") or course.get("numeroCourse")
