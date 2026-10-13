@@ -1,8 +1,9 @@
 """One bounded V3/V5 prospective batch. No fitting, betting or V1 changes."""
+import argparse
 import gzip
 import hashlib
 import json
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from scripts.backtest_connections import PROTOCOL, verify_frozen
@@ -98,7 +99,7 @@ def record_failure(state, error):
     write_status(state)
 
 
-def main(state=None):
+def main(state=None, target_date=None):
     state = state if state is not None else {}
     state.update(batch=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'), saved=[], rejected=[])
     policy = json.loads(CONFIG.read_text())
@@ -107,7 +108,9 @@ def main(state=None):
     now = datetime.now(timezone.utc)
     today = now.astimezone(ZoneInfo('Europe/Paris')).date()
     # A one-shot snapshot for tomorrow, not a recurring or open-ended collector.
-    day = (today + timedelta(days=1)).isoformat()
+    day = target_date or (today + timedelta(days=1)).isoformat()
+    if day not in (today.isoformat(), (today + timedelta(days=1)).isoformat()):
+        raise ValueError('Only today or tomorrow can be captured')
     if not policy['prediction_from'] <= day <= policy['prediction_to']:
         raise ValueError('Outside bounded prospective window')
     history, coverage = load_sources({'months': policy['completed_months'],
@@ -133,8 +136,14 @@ def main(state=None):
     if not isinstance(programme, dict):
         raise ValueError('Future programme unavailable')
     eligible = sorted(races(programme), key=lambda rc: (rc[1]['heureDepart'], rc[0]['numOfficiel'], rc[1]['numOrdre']))
-    selected_races = eligible[:policy['max_races']]
     saved, rejected = state['saved'], state['rejected']
+    if target_date:
+        fixed = json.loads(Path('config/v5_followup.json').read_text())['race_ids']
+        selected_races = [(m, c) for m, c in eligible if f"{day}_R{m['numOfficiel']}C{c['numOrdre']}" in fixed]
+        found = {f"{day}_R{m['numOfficiel']}C{c['numOrdre']}" for m,c in selected_races}
+        rejected.extend({'race_id': rid, 'reason': 'predeclared_race_missing_from_programme'} for rid in fixed if rid.startswith(day) and rid not in found)
+    else:
+        selected_races = eligible[:policy['max_races']]
     for meeting, course in selected_races:
         rid = f"{day}_R{meeting['numOfficiel']}C{course['numOrdre']}"
         try:
@@ -148,7 +157,8 @@ def main(state=None):
             dump(path, {'status': 'SHADOW_NO_BET', 'race_id': rid, 'date': day,
                 'scheduled_start': datetime.fromtimestamp(course['heureDepart']/1000, timezone.utc).isoformat(),
                 'predicted_at': calculated.isoformat(), 'history_through': through,
-                'history_gap_days': 1, 'history_gap_note': 'Current-day results deliberately excluded; snapshot for tomorrow needs refresh before departure.',
+                'history_gap_days': (date.fromisoformat(day)-date.fromisoformat(through)).days-1,
+                'history_gap_note': 'Same-day results excluded; current field can still change before departure.',
                 'history_sha256': source_sha, 'frozen': frozen, 'models': prediction,
                 'history_quarantine': quarantines,
                 'target_snapshot': target, 'evidence_manifest': str(evidence.manifest_path),
@@ -170,9 +180,12 @@ def main(state=None):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--date')
+    args = parser.parse_args()
     state = {}
     try:
-        main(state)
+        main(state, args.date)
     except (ValueError, RuntimeError, FileNotFoundError, KeyError, TypeError) as error:
         record_failure(state, error)
         raise
