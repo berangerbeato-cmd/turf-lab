@@ -141,6 +141,16 @@
       "date": "2026-09-28",
       "status": "OK",
       "candidate_races": 22
+    },
+    {
+      "date": "2026-09-29",
+      "status": "OK",
+      "candidate_races": 6
+    },
+    {
+      "date": "2026-09-30",
+      "status": "OK",
+      "candidate_races": 12
     }
   ],
   "partitions": [
@@ -4254,24 +4264,167 @@
       "venue": "CAEN",
       "start_type": "AUTOSTART",
       "warnings": []
+    },
+    {
+      "race_id": "2026-09-29_R4C1",
+      "file": "data/month_2026-09/races/2026-09-29_R4C1.json.gz",
+      "sha256": "5eb2b2052f64a83ab722418f850c98b745852b43c3b42c23fb1294c6491e9c04",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-29_R4C2",
+      "file": "data/month_2026-09/races/2026-09-29_R4C2.json.gz",
+      "sha256": "6daf1c3dc6653cac1bd893a4e5e7304f299560f5bfe0a775ee1859d32a4f7235",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-29_R4C3",
+      "file": "data/month_2026-09/races/2026-09-29_R4C3.json.gz",
+      "sha256": "9faaf97c8fa369881e3e8913db5661bf514c44faee42db13e52cca9e51326380",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-29_R4C5",
+      "file": "data/month_2026-09/races/2026-09-29_R4C5.json.gz",
+      "sha256": "2d8de1f9f1b1b777d47b0e3139abfc34a8274752db42c0291275bf214d3b5c3d",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-29_R4C6",
+      "file": "data/month_2026-09/races/2026-09-29_R4C6.json.gz",
+      "sha256": "d0f4de83c7b43b059ca3d4dbc41249461d771c9d40ff5628de083139faf40e72",
+      "venue": "VINCENNES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-29_R4C8",
+      "file": "data/month_2026-09/races/2026-09-29_R4C8.json.gz",
+      "sha256": "21b5d66111aa9fc8c39bbc3f1d92c31e16f537853d89e0b96a931d53481bfa7f",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R1C1",
+      "file": "data/month_2026-09/races/2026-09-30_R1C1.json.gz",
+      "sha256": "915cb92b64bdae0fde3f5da8189d964660a1c08c793328bb1b011d7d4e84de00",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R1C2",
+      "file": "data/month_2026-09/races/2026-09-30_R1C2.json.gz",
+      "sha256": "010d20004c7093de85726c7b77bdcedbd5e807d4fa7b42346dee017e33c003a4",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R1C5",
+      "file": "data/month_2026-09/races/2026-09-30_R1C5.json.gz",
+      "sha256": "72f3c0ca1716a09e0c6729e24634eadc098571417c7fb7d913f4dc8c8904080c",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R1C6",
+      "file": "data/month_2026-09/races/2026-09-30_R1C6.json.gz",
+      "sha256": "8c6baa4b3e332fb6a5a4ac06eb59a1924a3fd2a3bc68b308965d61dae42c16b7",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R1C8",
+      "file": "data/month_2026-09/races/2026-09-30_R1C8.json.gz",
+      "sha256": "f4ad513eeb0289f31ceb7013789fd8ef90ea61189e0dc203fe21e9c3f6d9b665",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R5C1",
+      "file": "data/month_2026-09/races/2026-09-30_R5C1.json.gz",
+      "sha256": "7cc112916ed297e2032c431d6b382be9ecd02aeae26469fc58b96b23ac47b0ac",
+      "venue": "LE CROISE LAROCHE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R5C3",
+      "file": "data/month_2026-09/races/2026-09-30_R5C3.json.gz",
+      "sha256": "6ebf5532737fb08ba66ca9eec26bbbb87f992ab425700b3a03de3b123564066f",
+      "venue": "LE CROISE LAROCHE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R5C4",
+      "file": "data/month_2026-09/races/2026-09-30_R5C4.json.gz",
+      "sha256": "8ff4b2d9629aee2e86c756217e969ad4180597347da8dcb760a2eeacd0c41738",
+      "venue": "LE CROISE LAROCHE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R5C5",
+      "file": "data/month_2026-09/races/2026-09-30_R5C5.json.gz",
+      "sha256": "7dc2ae39aba67b2dc7949e92305d469d734d0ead0d3c0eaab4cd2f9e3598d464",
+      "venue": "LE CROISE LAROCHE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R5C6",
+      "file": "data/month_2026-09/races/2026-09-30_R5C6.json.gz",
+      "sha256": "0196a0e8e980accca18562bef61396c7a808bce961d79a91b3fcfc0a2f40c1bf",
+      "venue": "LE CROISE LAROCHE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-09-30_R5C7",
+      "file": "data/month_2026-09/races/2026-09-30_R5C7.json.gz",
+      "sha256": "8e3fa9c69743ff189a8bb8486ae258ac11eae36e8edcd5cd0991e72bd6f6ac84",
+      "venue": "LE CROISE LAROCHE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
     }
   ],
-  "quarantine": [],
+  "quarantine": [
+    {
+      "race_id": "2026-09-30_R1C4",
+      "issues": [
+        "not_single_winner"
+      ]
+    }
+  ],
   "fields_nonempty": {
-    "idCheval": 6241,
-    "nomMere": 6241,
-    "nomPere": 6241,
-    "driver": 6241,
-    "entraineur": 6241,
-    "musique": 6140,
+    "idCheval": 6482,
+    "nomMere": 6482,
+    "nomPere": 6482,
+    "driver": 6482,
+    "entraineur": 6482,
+    "musique": 6381,
     "ferrure": 0,
-    "reductionKilometrique": 4391,
-    "tempsObtenu": 4391,
-    "age": 6241,
-    "sexe": 6241,
-    "gainsParticipant": 6241
+    "reductionKilometrique": 4571,
+    "tempsObtenu": 4571,
+    "age": 6482,
+    "sexe": 6482,
+    "gainsParticipant": 6482
   },
-  "participants": 6241,
+  "participants": 6482,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
   "model_status": "NO BET; no training in this experiment"
 }
