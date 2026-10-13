@@ -1,0 +1,14 @@
+{
+  "version": "v6-fixed-july-august-2025",
+  "collection_months": ["2025-06", "2025-07", "2025-08"],
+  "source_months": ["2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08"],
+  "test": {"from": "2025-07-01", "to": "2025-08-31"},
+  "models": ["v5", "v6"],
+  "v6_selected": "combined",
+  "minimum_races_per_month": 200,
+  "minimum_retained_fraction_per_month": 0.98,
+  "max_requests_per_month": 3000,
+  "refit": false,
+  "selection": "None on this test; compare frozen V5 and previously selected V6 only",
+  "limits": ["June warmup only", "Past-only rolling histories may use earlier completed test days", "No odds or profitability", "No automatic promotion", "Reused development validation acknowledged", "Retrospective pre-race publication unproven globally"]
+}
