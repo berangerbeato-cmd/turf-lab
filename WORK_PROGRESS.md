@@ -6,9 +6,16 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
-Reprise du 13 octobre : neuf tâches mensuelles réussies ; backtest bloqué avant entraînement par 18 courses annulées comptées comme résultats manquants en janvier 2026. Correctif testé (44 tests), audit `reports/cancellation_audit.json`, explication `reports/COVERAGE_CORRECTION.md`. Prochaine action immédiate : publier ce correctif puis reproduire le backtest figé.
+Reprise du 13 octobre 2026 : **V2 évalué et sauvegardé ; V3 opposition/DQ évalué sur validation, test indépendant en préparation**. 4 508 courses conservées, 59 027 participations, neuf mois Q1 2024/2025/2026. NO BET et modèle prospectif V1 inchangé.
 
-Extension historique V2 : janvier 2024 entièrement collecté et sauvegardé (512 courses, 6 757 participations, 18 hippodromes). La chaîne mensuelle et les historiques strictement antérieurs sont reproduits dans GitHub Actions. Collecte bornée des premiers trimestres 2024, 2025 et 2026 lancée dans GitHub Actions ; nouveau protocole chronologique figé avant consultation du test. Le pilote prospectif V1 reste inchangé et **NO BET**.
+- V2 confirmé dans GitHub Actions : run 38317253515, job 115151701807, succès calcul ET sauvegarde. 496 courses train, 537 validation, 488 test. Test : log loss 2,430765 contre 2,544523 uniforme ; Brier 0,898787 contre 0,919721 ; 97/488 premiers choix gagnants. Rapport BACKTEST_EXTENSION_V2.md.
+- Couverture corrigée avant consultation des scores : annulations explicites PMU retirées du dénominateur, empreintes vérifiées ; véritables anomalies conservées. 29 annulations confirmées et 9 quarantaines non résolues sur 4 546 courses programmées. Aucun seuil abaissé. Rapports COVERAGE_CORRECTION.md et cancellation_audit.json.
+- Sauvegardes : retries Git sans force ; mois complets réutilisés après vérification des empreintes, sans requêtes ni réécriture intermédiaire. Concurrence Git observée et corrigée ; certains anciens essais Actions sont annulés/échoués, ne pas les confondre avec le job V2 réussi ci-dessus.
+- V3 implémenté : Elo multi-partants, DQ exclues des duels, fréquence DQ régularisée et incertitude ; mises à jour après journée, resets annuels. Quatre variantes comparées sur mars 2025 uniquement : baseline 2,436894 ; opposition 2,424855 ; DQ 2,436870 ; combinaison 2,423875 en log loss. Gain DQ seul négligeable ; intervalle exploratoire par journée publié. Aucune nouveauté mathématique revendiquée.
+- Modèles V3 et rapports publiés : models/opposition_v3_candidates.json, reports/OPPOSITION_V3_VALIDATION.md. Protocole publié avant calcul : 00d9200 ; protocole test indépendant : 6e71d14. Code de validation 3e52073.
+- Test indépendant **avril 2026** gelé avant collecte : config/opposition_v3_holdout.json. Modèles contrôlés par SHA-256, combinaison choisie sur validation, aucun refit. Collecte bornée à un mois, sauvegardes hebdomadaires, 98 % de couverture et minimum 200 courses ; aucun remplacement prospectif.
+- 52 tests locaux passent. V2 reproduit sur GitHub ; V3 validation exécutée dans le runtime cloud, test indépendant pas encore évalué à ce checkpoint.
+- Inventaire des extensions publié : deferre disponible sur 36 460/59 027 participations ; driver, entraîneur et handicapDistance sur toutes. 349 écarts de distance négatifs à clarifier. Position/ligne autostart non trouvées dans les champs audités. Pas encore de variables météo/terrain intégrées.
 
 ## Travaux publiés et vérifiés
 
@@ -78,12 +85,11 @@ Extension historique V2 : janvier 2024 entièrement collecté et sauvegardé (51
 
 ## Prochaine action précise
 
-1. Vérifier le workflow `history_extension.yml` (neuf mois, un seul collecteur à la fois). Ne pas attendre le suivi prospectif pour développer.
-2. Lire `reports/month_YYYY-MM.json` et les manifestes dans `data/month_YYYY-MM/`. Si une tâche est interrompue, reprendre depuis les bruts sauvegardés et ne pas répéter les requêtes déjà enregistrées. Les programmes absents et quarantaines ne sont jamais convertis en zéros silencieux.
-3. Le backtest V2 suit automatiquement la collecte seulement si les contrôles passent : calendriers complets, couverture >= 98 % par mois, >= 200 courses par partition, identités et empreintes valides. Blocage documenté dans `reports/history_extension_status.json` sinon.
-4. Protocole V2 : janvier–février construisent les historiques ; 2–31 mars 2024 entraînement, 2025 validation, 2026 test inédit. Fenêtre antérieure de 60 jours, cinq courses maximum. Ne jamais régler sur le test ; ne pas remplacer le modèle prospectif V1 automatiquement.
-5. Contrôler le futur `reports/BACKTEST_EXTENSION_V2.md`, les sous-groupes/calibration JSON et les sauvegardes. Aucun résultat V2 n'est encore annoncé à ce checkpoint.
-6. Le suivi prospectif du 13 au 26 octobre continue indépendamment ; résultats jusqu'au 28. Aucun pari réel, ROI ou cote collectée automatiquement.
+1. Vérifier le workflow opposition_holdout.yml : collecte d'avril 2026 et test V3 figé. Lire reports/opposition_v3_holdout_status.json puis OPPOSITION_V3_HOLDOUT.md si réussite. Ne pas annoncer de résultat avant preuve.
+2. En cas d'interruption, reprendre les bruts evidence/month_2026-04 ; aucun nouveau téléchargement des réponses présentes. Vérifier sauvegarde Git et artefact diagnostic.
+3. Ne pas retoucher les modèles V3 sur avril après consultation. Le V2 de mars 2026 est également déjà observé. Aucun changement du modèle prospectif V1.
+4. Suite indépendante : audit sémantique des 349 distances individuelles inférieures à la distance de course, puis départ/parcours et deferre ; météo selon disponibilité avant départ. Ne pas assimiler numPmu à une position.
+5. Les autres sections ci-dessous conservent l'historique des étapes ; l'état actuel ci-dessus fait foi.
 
 ## Reprise
 
