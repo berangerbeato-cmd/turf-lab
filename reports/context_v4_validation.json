@@ -1,0 +1,266 @@
+{
+  "status": "VALIDATION_ONLY_NO_BET",
+  "protocol": {
+    "version": "context-v4-validation-only",
+    "source_months": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2025-01",
+      "2025-02",
+      "2025-03"
+    ],
+    "train": {
+      "from": "2024-03-02",
+      "to": "2024-03-31"
+    },
+    "validation": {
+      "from": "2025-03-02",
+      "to": "2025-03-31"
+    },
+    "minimum_retained_fraction_per_month": 0.98,
+    "lookback_days": 60,
+    "aptitude_prior_strength": 5,
+    "distance_tolerance_m": 250,
+    "l2": 0.1,
+    "candidates": [
+      "v3",
+      "departure",
+      "aptitude",
+      "combined"
+    ],
+    "selection": "Lowest validation log loss, no test-year outcomes loaded",
+    "departure": "Signed handicapDistance minus course distance. Negative values require exact advance-of-25m corroboration; otherwise missing. PMU number is never an autostart slot.",
+    "aptitude": "Past classified-finisher pairwise performance minus pre-race Elo expected performance; shrunk toward zero for same venue, nearby distance and explicit AUTOSTART only. All same-day outcomes excluded.",
+    "test_policy": "March and April 2026 already observed. No reuse for selecting V4; freeze another unseen period if validation improves.",
+    "status": "EXPERIMENTAL_NO_BET",
+    "prospective_model_changed": false
+  },
+  "protocol_sha256": "778a11ddcf820e1a62b7c28c1192f6b59a16670eb5e76248cb02cb6d4cda0eb9",
+  "source_records_sha256": "813baaf40cd2ee0513c145654224c0d7ff6b6aedca0c46b091d263bfd525968e",
+  "split_races": {
+    "train": 496,
+    "validation": 537
+  },
+  "validation": {
+    "v3": {
+      "races": 537,
+      "log_loss": 2.4238749885005766,
+      "brier_multiclass": 0.8981486247886572,
+      "top1_accuracy": 0.19180633147113593,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5707,
+          "mean_probability": 0.06246598434789302,
+          "win_frequency": 0.061152970036796914
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1154,
+          "mean_probability": 0.12857176127343883,
+          "win_frequency": 0.13258232235701906
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 120,
+          "mean_probability": 0.23261726211684938,
+          "win_frequency": 0.23333333333333334
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 13,
+          "mean_probability": 0.3246725663849052,
+          "win_frequency": 0.5384615384615384
+        }
+      ]
+    },
+    "departure": {
+      "races": 537,
+      "log_loss": 2.4242249004668914,
+      "brier_multiclass": 0.8982102598069454,
+      "top1_accuracy": 0.19180633147113593,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5709,
+          "mean_probability": 0.06247840951935983,
+          "win_frequency": 0.061131546680679626
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1153,
+          "mean_probability": 0.1286804195175102,
+          "win_frequency": 0.1326973113616652
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 119,
+          "mean_probability": 0.23296235218735412,
+          "win_frequency": 0.23529411764705882
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 13,
+          "mean_probability": 0.3245935723070227,
+          "win_frequency": 0.5384615384615384
+        }
+      ]
+    },
+    "aptitude": {
+      "races": 537,
+      "log_loss": 2.424299086570762,
+      "brier_multiclass": 0.8985144648106487,
+      "top1_accuracy": 0.17690875232774675,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5693,
+          "mean_probability": 0.0620254840857722,
+          "win_frequency": 0.06060073774811171
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1163,
+          "mean_probability": 0.1294740499365278,
+          "win_frequency": 0.1358555460017197
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 124,
+          "mean_probability": 0.23252869640589344,
+          "win_frequency": 0.24193548387096775
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 14,
+          "mean_probability": 0.31978861922757157,
+          "win_frequency": 0.2857142857142857
+        }
+      ]
+    },
+    "combined": {
+      "races": 537,
+      "log_loss": 2.424610603216336,
+      "brier_multiclass": 0.8985684683204906,
+      "top1_accuracy": 0.1750465549348231,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5691,
+          "mean_probability": 0.062012083770050096,
+          "win_frequency": 0.06062203479177649
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1165,
+          "mean_probability": 0.12941860427763338,
+          "win_frequency": 0.1356223175965665
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 124,
+          "mean_probability": 0.23257805191599606,
+          "win_frequency": 0.24193548387096775
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 14,
+          "mean_probability": 0.3197770602583569,
+          "win_frequency": 0.2857142857142857
+        }
+      ]
+    }
+  },
+  "paired_comparisons": {
+    "departure": {
+      "delta_log_loss": 0.00034991196631499997,
+      "day_bootstrap_95_percent": [
+        8.183579970984705e-05,
+        0.0006186683740649718
+      ],
+      "days": 30,
+      "interpretation": "Validation only; exploratory interval, not adjusted for selecting multiple candidates"
+    },
+    "aptitude": {
+      "delta_log_loss": 0.00042409807018561955,
+      "day_bootstrap_95_percent": [
+        -0.007959100731076694,
+        0.008340492141795228
+      ],
+      "days": 30,
+      "interpretation": "Validation only; exploratory interval, not adjusted for selecting multiple candidates"
+    },
+    "combined": {
+      "delta_log_loss": 0.0007356147157593214,
+      "day_bootstrap_95_percent": [
+        -0.007737113844140429,
+        0.008737013123987775
+      ],
+      "days": 30,
+      "interpretation": "Validation only; exploratory interval, not adjusted for selecting multiple candidates"
+    }
+  },
+  "selected": "v3",
+  "departure_provenance": {
+    "distance_difference": 39801,
+    "explicit_advance": 193,
+    "uncorroborated_advance": 50
+  },
+  "test_evaluated": false,
+  "prospective_model_changed": false,
+  "limitations": [
+    "Retrospective inputs do not prove original pre-race publication.",
+    "Validation period reused for successive research iterations; independent holdout needed.",
+    "Residual aptitude is conditional on classified finishers, not a causal effect.",
+    "No verified autostart slot; unknown start type is not a standing start."
+  ]
+}
