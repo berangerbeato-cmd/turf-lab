@@ -3,6 +3,8 @@ test_fast_optimizer_matches_existing_reference (test_connections.ConnectionsTest
 test_missing_equipment_never_means_shod_or_no_change (test_connections.ConnectionsTests.test_missing_equipment_never_means_shod_or_no_change) ... ok
 test_no_target_same_day_or_future_leakage (test_connections.ConnectionsTests.test_no_target_same_day_or_future_leakage) ... ok
 test_np_dq_and_expiry (test_connections.ConnectionsTests.test_np_dq_and_expiry) ... ok
+test_missing_month_blocks_instead_of_shortening_validation (test_connections_pipeline.ConnectionsPipelineTests.test_missing_month_blocks_instead_of_shortening_validation) ... ok
+test_selection_is_frozen_before_independent_evaluation (test_connections_pipeline.ConnectionsPipelineTests.test_selection_is_frozen_before_independent_evaluation) ... skipped 'V5 workflow installs numpy'
 test_advance_requires_proof_and_number_is_never_position (test_context.ContextTests.test_advance_requires_proof_and_number_is_never_position) ... ok
 test_dq_np_and_expired_history_not_used_as_performance (test_context.ContextTests.test_dq_np_and_expired_history_not_used_as_performance) ... ok
 test_same_day_and_future_results_cannot_change_current_context (test_context.ContextTests.test_same_day_and_future_results_cannot_change_current_context) ... ok
@@ -61,8 +63,8 @@ test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_reje
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 61 tests in 0.064s
+Ran 63 tests in 0.062s
 
-OK (skipped=1)
+OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
