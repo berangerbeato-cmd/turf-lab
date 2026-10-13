@@ -1,0 +1,32 @@
+{
+  "version": "opposition-v3-april-2026-holdout",
+  "status": "FROZEN_BEFORE_TEST_COLLECTION",
+  "month": "2026-04",
+  "source_months": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04"
+  ],
+  "test_from": "2026-04-01",
+  "test_to": "2026-04-30",
+  "selected_candidate": "combined",
+  "selection_reason": "Lowest March 2025 validation log loss under predeclared criterion",
+  "models_file": "models/opposition_v3_candidates.json",
+  "models_sha256": "0e33fb2268f53c0419663d294881962acdcf1349cd434f4cafbfb29680c17708",
+  "feature_protocol_sha256": "229ee69ec91d792f1d66e4f9ccf75158e5369e08ca88735324c495954de94f16",
+  "minimum_retained_fraction_per_month": 0.98,
+  "minimum_test_races": 200,
+  "max_requests": 2200,
+  "no_refit": true,
+  "no_prospective_replacement": true,
+  "comparisons": [
+    "uniform",
+    "baseline",
+    "combined"
+  ],
+  "limitations": [
+    "Prior V2 test March 2026 already observed; April 2026 is new holdout",
+    "Same seasonal geography; not proof of profitability or all-year generalization"
+  ]
+}
