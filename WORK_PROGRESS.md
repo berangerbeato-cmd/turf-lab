@@ -6,6 +6,16 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
+### État actuel — 14 octobre 2026, début de nuit
+
+- V5 : six captures V3/V5 pour le 14 octobre sauvegardées ; anomalie Vichy 2026-07-04_R6C7 exclue uniquement de l'historique shadow, preuve verrouillée et couverture juillet 99,82 %. Bruts conservés.
+- Suivi V5 activé : run 38461104082 réussi ; les six courses sont PENDING, aucun résultat inventé. Workflow v5_followup.yml : 07:00/21:00 UTC (09:00/23:00 Paris), du 14 au 20 octobre ; garde-fou calendaire 2026. Actualisation des six courses le 14 avant leur premier départ, puis scoreur sur arrivées définitives avec contrôle des partants/driver/entraîneur/ferrure. Retards de planification possibles.
+- V6 exploratoire calculé et publié : train 1 563 courses, validation réutilisée 1 611. Log loss moyenne mensuelle V5 2,23558 ; âge/sexe 2,21154 ; tandem 2,23366 ; combinaison 2,20985. Top-1 combinaison 23,9 % contre 23,5 %. Le tandem seul n'a pas de gain net établi. Rapports DEMOGRAPHICS_TANDEM_V6.md et demographics_tandem_v6.json ; V5 non remplacé.
+- Nouveau test chronologique fixé AVANT collecte : config/v6_holdout_protocol.json et models/v6_holdout_frozen.json. Collecter juin–août 2025 ; juin warmup, test juillet–août. Deux modèles seulement : V5 gelé et V6 combinaison sélectionnée antérieurement. Aucun réentraînement, réglage ou promotion automatique.
+- 90 tests locaux réussis. Workflow v6_holdout.yml publié en dernier pour lancer collecte puis évaluation. Vérifier le run avant d'annoncer son démarrage ; aucun résultat de ce nouveau test encore disponible.
+- Prochaine vérification : run v6_holdout, rapports v6_holdout_status_* puis V6_HOLDOUT.md ; et rafraîchissement V5 du matin. NO BET.
+
+
 ### V5 achevé — préparation prospective du 13 octobre au soir
 
 Le run 38386290849 a réussi ses huit tâches, sauvegardes comprises. Les anciennes mentions « aucun résultat V5 » ci-dessous sont des checkpoints historiques désormais dépassés.
