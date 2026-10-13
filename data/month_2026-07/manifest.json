@@ -36,6 +36,41 @@
       "date": "2026-07-07",
       "status": "OK",
       "candidate_races": 12
+    },
+    {
+      "date": "2026-07-08",
+      "status": "OK",
+      "candidate_races": 14
+    },
+    {
+      "date": "2026-07-09",
+      "status": "OK",
+      "candidate_races": 14
+    },
+    {
+      "date": "2026-07-10",
+      "status": "OK",
+      "candidate_races": 20
+    },
+    {
+      "date": "2026-07-11",
+      "status": "OK",
+      "candidate_races": 15
+    },
+    {
+      "date": "2026-07-12",
+      "status": "OK",
+      "candidate_races": 23
+    },
+    {
+      "date": "2026-07-13",
+      "status": "OK",
+      "candidate_races": 27
+    },
+    {
+      "date": "2026-07-14",
+      "status": "OK",
+      "candidate_races": 16
     }
   ],
   "partitions": [
@@ -1155,24 +1190,1135 @@
       "venue": "CABOURG",
       "start_type": "NON_PRECISE",
       "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R1C1",
+      "file": "data/month_2026-07/races/2026-07-08_R1C1.json.gz",
+      "sha256": "0378ecd57b0d7e77c2254098c5bfcb4e8e408f58ad77803162935c946a43bd81",
+      "venue": "PORNICHET",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R1C2",
+      "file": "data/month_2026-07/races/2026-07-08_R1C2.json.gz",
+      "sha256": "b7c5a3704ee79f2b5adb0ddb6b842c1761a29a5ebeeaeaf0f8b27728f83fe9b2",
+      "venue": "PORNICHET",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R1C4",
+      "file": "data/month_2026-07/races/2026-07-08_R1C4.json.gz",
+      "sha256": "c5291cd6a1dab2e3de0dd7c5462b7a05c9e98c76201b3eaefdf3c402d94f0fe0",
+      "venue": "PORNICHET",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R1C5",
+      "file": "data/month_2026-07/races/2026-07-08_R1C5.json.gz",
+      "sha256": "1834050ccf8edf1d41d166c590f5504a30dbe973f6c0268e713b0fd0eff11676",
+      "venue": "PORNICHET",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R1C6",
+      "file": "data/month_2026-07/races/2026-07-08_R1C6.json.gz",
+      "sha256": "db9d68d99d639b2a58e192d4fa677d831b60ac4efd46bfa7106090aa95d1cd0d",
+      "venue": "PORNICHET",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R1C7",
+      "file": "data/month_2026-07/races/2026-07-08_R1C7.json.gz",
+      "sha256": "d6035ac26e565688a8b8c77e9ef055df4119a2b2f0ab17af2ebdb33519705e58",
+      "venue": "PORNICHET",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R1C8",
+      "file": "data/month_2026-07/races/2026-07-08_R1C8.json.gz",
+      "sha256": "d6db999aeae050d9150ae909ea3ebf6222ae048f3a3aefd90129c3b0fe91293b",
+      "venue": "PORNICHET",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R9C1",
+      "file": "data/month_2026-07/races/2026-07-08_R9C1.json.gz",
+      "sha256": "01e3c89948dbef280af64535fad85cc5ff98e88cf5c6496fe46e80561e914b5a",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R9C2",
+      "file": "data/month_2026-07/races/2026-07-08_R9C2.json.gz",
+      "sha256": "85fe3108a51b6f2d331bce0560980b36c457725c107e48f30f49a08f48b9c5c4",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R9C3",
+      "file": "data/month_2026-07/races/2026-07-08_R9C3.json.gz",
+      "sha256": "b1629d6ad8884eb4cd598313915e98fd2bb44593a1106679fe114a2f22ac2b55",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R9C4",
+      "file": "data/month_2026-07/races/2026-07-08_R9C4.json.gz",
+      "sha256": "5f0d3305e60728472ce6f2b65f197a5ec2e1ec9a78307e2a55fb0625f64d4ce1",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R9C5",
+      "file": "data/month_2026-07/races/2026-07-08_R9C5.json.gz",
+      "sha256": "112bce6e189ff8c0cce6c5dfe4073826e61975b23eb12545df83fed5211dbe33",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R9C6",
+      "file": "data/month_2026-07/races/2026-07-08_R9C6.json.gz",
+      "sha256": "e5a9a9d10f9a824f0c70e907a989dbd9801e6de6e16be99e181d6893964d6a51",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-08_R9C7",
+      "file": "data/month_2026-07/races/2026-07-08_R9C7.json.gz",
+      "sha256": "c703e0b49005aef578f165969c392d3d47125c997a62e941dafacfd93a23a1fd",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R1C1",
+      "file": "data/month_2026-07/races/2026-07-09_R1C1.json.gz",
+      "sha256": "a7a4b29971529db8f749b78ce8aa49c8d4612753f11526277cdaa99c771b430e",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R1C2",
+      "file": "data/month_2026-07/races/2026-07-09_R1C2.json.gz",
+      "sha256": "f3b138fb6f2536d452fe903c67289332321acf63a334d49ca20311ba6291e462",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R1C4",
+      "file": "data/month_2026-07/races/2026-07-09_R1C4.json.gz",
+      "sha256": "962821c7c943c35011b9e9798a8f4d33a2f6804e6b793d02fd0bdff2e5aa9b28",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R1C5",
+      "file": "data/month_2026-07/races/2026-07-09_R1C5.json.gz",
+      "sha256": "1071a900835d141af40be7d16463a8af9476dcc6bb48e09415d6e834e9ef3925",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R1C6",
+      "file": "data/month_2026-07/races/2026-07-09_R1C6.json.gz",
+      "sha256": "cf15d32c8d72b83bb3f06a7db9d0498e5df50d26fe384b491c9ca732edd4f2ec",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R1C7",
+      "file": "data/month_2026-07/races/2026-07-09_R1C7.json.gz",
+      "sha256": "b4091132f49b63b5d099c9e94c7f58f03e05adaa9f40758533c445abf11b2597",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R1C8",
+      "file": "data/month_2026-07/races/2026-07-09_R1C8.json.gz",
+      "sha256": "dcfc5ba34347cbd8430926d1011cbf09681a0f1429571752ef888ac6ee12d558",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R3C1",
+      "file": "data/month_2026-07/races/2026-07-09_R3C1.json.gz",
+      "sha256": "378050d34ba45aad2343e559bfad8d360263bf0a4c9e035d16e01de856a7b427",
+      "venue": "SAINT MALO",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R3C3",
+      "file": "data/month_2026-07/races/2026-07-09_R3C3.json.gz",
+      "sha256": "d6a637f0245c59058c6e5d3f2d61700ace782e5861929c6099949ef32781a391",
+      "venue": "SAINT MALO",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R3C4",
+      "file": "data/month_2026-07/races/2026-07-09_R3C4.json.gz",
+      "sha256": "bcd53debe7559429ac33a4d94c2ad72feb51b96e5026b4aa0c956662f7e5624b",
+      "venue": "SAINT MALO",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R3C5",
+      "file": "data/month_2026-07/races/2026-07-09_R3C5.json.gz",
+      "sha256": "b2e0784293f57d4a178384736fe3fd2ecf34ca8ded8f1a032c872d6c7b7f8ecd",
+      "venue": "SAINT MALO",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R3C6",
+      "file": "data/month_2026-07/races/2026-07-09_R3C6.json.gz",
+      "sha256": "e3125f688445482fe276d3c3a1375f714c1fcdb5bbf51bd09a9e2c2e4fcb399e",
+      "venue": "SAINT MALO",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R3C7",
+      "file": "data/month_2026-07/races/2026-07-09_R3C7.json.gz",
+      "sha256": "17c0a0832d25be19a3a113ddbdf0cc87f254b8d5d3fd295d4c5fec413dff0454",
+      "venue": "SAINT MALO",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-09_R3C8",
+      "file": "data/month_2026-07/races/2026-07-09_R3C8.json.gz",
+      "sha256": "e724f8e61d3a517612e0a8d9dd8c0cc15cb527953cf0141b2140b681d4690969",
+      "venue": "SAINT MALO",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R1C2",
+      "file": "data/month_2026-07/races/2026-07-10_R1C2.json.gz",
+      "sha256": "4e064a84f6202008ea83bb56595497c8e57cf7fe0516d477db1c365603bbdcc1",
+      "venue": "CABOURG",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R1C3",
+      "file": "data/month_2026-07/races/2026-07-10_R1C3.json.gz",
+      "sha256": "6863a28595b8b69d040f2edd11911d8f795151bfc9c5e8aa2661a9c613c09c40",
+      "venue": "CABOURG",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R1C4",
+      "file": "data/month_2026-07/races/2026-07-10_R1C4.json.gz",
+      "sha256": "65a563c6c69eb25f8dcc86b5bc9a650b09b6c20623837965f9cee00f79ea916c",
+      "venue": "CABOURG",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R1C5",
+      "file": "data/month_2026-07/races/2026-07-10_R1C5.json.gz",
+      "sha256": "41a1c2da6d0fa10c3fb4d050e7cb2b35238d88807e0cfe99b7723eafffd59280",
+      "venue": "CABOURG",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R1C6",
+      "file": "data/month_2026-07/races/2026-07-10_R1C6.json.gz",
+      "sha256": "a1997c32c627339b89fc584bac3c815a3468b999f10439d28469d16b44f31e5a",
+      "venue": "CABOURG",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R1C7",
+      "file": "data/month_2026-07/races/2026-07-10_R1C7.json.gz",
+      "sha256": "5a759e88c370facd85edc0a5913e08e997c2ef209bf6d04acc937622b762474c",
+      "venue": "CABOURG",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R3C1",
+      "file": "data/month_2026-07/races/2026-07-10_R3C1.json.gz",
+      "sha256": "db57085bd7cea997eb44610e11a5bef08db103001bbc196099ca39e94bad6b64",
+      "venue": "AMIENS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R3C2",
+      "file": "data/month_2026-07/races/2026-07-10_R3C2.json.gz",
+      "sha256": "af899d341e5c791ea906d816fd9a04290e3802a1a19f8d58f4fab02c19f0d619",
+      "venue": "AMIENS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R3C3",
+      "file": "data/month_2026-07/races/2026-07-10_R3C3.json.gz",
+      "sha256": "5455d97a7350b350fd4fdc113eb30d5da0552975484f6afedfa9d824fa48f2c0",
+      "venue": "AMIENS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R3C4",
+      "file": "data/month_2026-07/races/2026-07-10_R3C4.json.gz",
+      "sha256": "fdc4beaec502a3b93dc439f889893101bfcd32fda93700d18717875f14c46084",
+      "venue": "AMIENS",
+      "start_type": "AUTOSTART",
+      "warnings": [
+        {
+          "race_id": "2026-07-10_R3C4",
+          "number": 14,
+          "issue": "unclassified_finisher_without_incident"
+        }
+      ]
+    },
+    {
+      "race_id": "2026-07-10_R3C5",
+      "file": "data/month_2026-07/races/2026-07-10_R3C5.json.gz",
+      "sha256": "503be80d2d5d57dbb61573877acf2764af56118a5e075eb301e329dc4e75b7a6",
+      "venue": "AMIENS",
+      "start_type": "NON_PRECISE",
+      "warnings": [
+        {
+          "race_id": "2026-07-10_R3C5",
+          "number": 12,
+          "issue": "unclassified_finisher_without_incident"
+        }
+      ]
+    },
+    {
+      "race_id": "2026-07-10_R3C7",
+      "file": "data/month_2026-07/races/2026-07-10_R3C7.json.gz",
+      "sha256": "da96bd762f585909e1bbf33c8da2af6745c1e5b3f4ccde4dd75c473950d85dfc",
+      "venue": "AMIENS",
+      "start_type": "NON_PRECISE",
+      "warnings": [
+        {
+          "race_id": "2026-07-10_R3C7",
+          "number": 1,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-10_R3C7",
+          "number": 6,
+          "issue": "unclassified_finisher_without_incident"
+        }
+      ]
+    },
+    {
+      "race_id": "2026-07-10_R3C8",
+      "file": "data/month_2026-07/races/2026-07-10_R3C8.json.gz",
+      "sha256": "8718a7056a4c7373c86464abe1488ddcff0a922eccdf3905d975f969f8931d16",
+      "venue": "AMIENS",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R7C1",
+      "file": "data/month_2026-07/races/2026-07-10_R7C1.json.gz",
+      "sha256": "67554db3b2bf11b71545e9a7eedacdb26b5a8c1476baaacc9cff9f8323c4557a",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R7C2",
+      "file": "data/month_2026-07/races/2026-07-10_R7C2.json.gz",
+      "sha256": "5da7b159ba7994521ad53fc03d5c7c5104505d7ebefde4aa9c19b387fe5f1fb3",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R7C3",
+      "file": "data/month_2026-07/races/2026-07-10_R7C3.json.gz",
+      "sha256": "bef4d09c15157e4a6b941b7519bd01d6287315d8d43090b4ddba62b552b22a7d",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R7C4",
+      "file": "data/month_2026-07/races/2026-07-10_R7C4.json.gz",
+      "sha256": "758848838d2953f0489af23ae21485a5e39e9379b33684a8e76769f4c6e918da",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R7C5",
+      "file": "data/month_2026-07/races/2026-07-10_R7C5.json.gz",
+      "sha256": "70e34ed7cbe3304eaedd966c478f95a10cee172685163a31a553dfbd3cc4ff02",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R7C6",
+      "file": "data/month_2026-07/races/2026-07-10_R7C6.json.gz",
+      "sha256": "1e798b95814b387395d46faf5fbe23dbfc2f6b4eddc9226e39750016945b5fd7",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-10_R7C7",
+      "file": "data/month_2026-07/races/2026-07-10_R7C7.json.gz",
+      "sha256": "a48fc74842a1d28f418699aeaf91ab10859fdad01b88322b52af3eacc7128892",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C1",
+      "file": "data/month_2026-07/races/2026-07-11_R1C1.json.gz",
+      "sha256": "4d447128d931e88d52e6b7287808944738ab78d99b86ed12be267b390e3bfd99",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C2",
+      "file": "data/month_2026-07/races/2026-07-11_R1C2.json.gz",
+      "sha256": "f4b610180621668607067b4880074fc3cd7f399ed9856b98317e608cb92155a9",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C3",
+      "file": "data/month_2026-07/races/2026-07-11_R1C3.json.gz",
+      "sha256": "c42ce48cca7435ac916bab3efc0970c053fa5d26d0abf1df7555dc3b517f23f0",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C4",
+      "file": "data/month_2026-07/races/2026-07-11_R1C4.json.gz",
+      "sha256": "ed5ad2d3851a39cab5754d110851389adb8c5ed18cb01423b3a8a00a520a8bf2",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C5",
+      "file": "data/month_2026-07/races/2026-07-11_R1C5.json.gz",
+      "sha256": "08944b8b2f9400e71966f19eb0ff2e1a67de68b6f6f3d8f4315aab14e6f16b4d",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C6",
+      "file": "data/month_2026-07/races/2026-07-11_R1C6.json.gz",
+      "sha256": "6ac899b60a4626978cbd3ab89b0d678c376136ade6b4f454729c6a791a28d40b",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C7",
+      "file": "data/month_2026-07/races/2026-07-11_R1C7.json.gz",
+      "sha256": "ff236c5d16af789d2cfac2ad79d28c4842ef991eafedd6e9c47523dfa1f0daec",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C8",
+      "file": "data/month_2026-07/races/2026-07-11_R1C8.json.gz",
+      "sha256": "e7d1605bc46ecf568f8985ca1440451fae69f53927a2a5c94466b27db15e5d9d",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R1C9",
+      "file": "data/month_2026-07/races/2026-07-11_R1C9.json.gz",
+      "sha256": "99d6ae825c154657196ab0a19a231b81ca186660377942e69bab53ac8c8a9c6e",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R7C1",
+      "file": "data/month_2026-07/races/2026-07-11_R7C1.json.gz",
+      "sha256": "d74c2468ecc43ad6756b64359b65c05758a1d85a8fac3f67eee22e42cccc1118",
+      "venue": "LES SABLES D OLONNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R7C2",
+      "file": "data/month_2026-07/races/2026-07-11_R7C2.json.gz",
+      "sha256": "f455c697eebf9b968ca22c7421c7aad3550368356d28e661c7e9d1f9001419ca",
+      "venue": "LES SABLES D OLONNE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R7C3",
+      "file": "data/month_2026-07/races/2026-07-11_R7C3.json.gz",
+      "sha256": "e018ae6c29a815f8184fe0cbbaf8c91bd275e9cbbe43dc3c82dd680cd3b75f9e",
+      "venue": "LES SABLES D OLONNE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R7C4",
+      "file": "data/month_2026-07/races/2026-07-11_R7C4.json.gz",
+      "sha256": "dd75fbd9de020fce434cb6c888cda87b2005d56f0ed519492499f34558270357",
+      "venue": "LES SABLES D OLONNE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R7C5",
+      "file": "data/month_2026-07/races/2026-07-11_R7C5.json.gz",
+      "sha256": "3bcb1abe62b3401d06d4778d3ab931e1f14a17c4c3c32a2358fe12f1d37ca490",
+      "venue": "LES SABLES D OLONNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-11_R7C7",
+      "file": "data/month_2026-07/races/2026-07-11_R7C7.json.gz",
+      "sha256": "805ed5dd5d22433ddaa6670a8f2b3735d0e2889de68abc138d96f4ca296d0d08",
+      "venue": "LES SABLES D OLONNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C1",
+      "file": "data/month_2026-07/races/2026-07-12_R3C1.json.gz",
+      "sha256": "9789499aa130be948d6209b6603d1dce4b1ea3cc1f4ee8edd9b2ad9d6c9fc343",
+      "venue": "CHATELAILLON",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C2",
+      "file": "data/month_2026-07/races/2026-07-12_R3C2.json.gz",
+      "sha256": "17fedcaba968a0ac4719e184b1e991517d49989e2653347cc6b12b8ac76df0ff",
+      "venue": "CHATELAILLON",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C3",
+      "file": "data/month_2026-07/races/2026-07-12_R3C3.json.gz",
+      "sha256": "9e114478ad6558f6fb36e1982e354b738217c43870ca376ae0f87431c8eba666",
+      "venue": "CHATELAILLON",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C4",
+      "file": "data/month_2026-07/races/2026-07-12_R3C4.json.gz",
+      "sha256": "2e9247cfafa494965c26cec6424699ffd8a3904a542e567453b0cc7b474304b9",
+      "venue": "CHATELAILLON",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C5",
+      "file": "data/month_2026-07/races/2026-07-12_R3C5.json.gz",
+      "sha256": "f8bc8e6165e54c882257b961ee42ef9245fbc38989423e4ffe06368d4d3cec08",
+      "venue": "CHATELAILLON",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C6",
+      "file": "data/month_2026-07/races/2026-07-12_R3C6.json.gz",
+      "sha256": "bd01854dfc4423ba9fb5bd9184fd106b5289d5847ce18bb9c4701389ef0c4b14",
+      "venue": "CHATELAILLON",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C7",
+      "file": "data/month_2026-07/races/2026-07-12_R3C7.json.gz",
+      "sha256": "aeeec8edaec95c1753af1f1087add5a4ea36c42bdf49b9cc1d1032934ba171a7",
+      "venue": "CHATELAILLON",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R3C8",
+      "file": "data/month_2026-07/races/2026-07-12_R3C8.json.gz",
+      "sha256": "8971f504adc525df3905e152046380cbdf8c37511476604db61b9ffd66859875",
+      "venue": "CHATELAILLON",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C1",
+      "file": "data/month_2026-07/races/2026-07-12_R5C1.json.gz",
+      "sha256": "b6e3fa581ee08900e70b701fa70fdc8c0402a5269cb5639a94f245028952eb3f",
+      "venue": "HYERES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C2",
+      "file": "data/month_2026-07/races/2026-07-12_R5C2.json.gz",
+      "sha256": "8fd6788dc77e1fee889031c89787c68d708181846911febcbc4d42c9c5e47124",
+      "venue": "HYERES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C3",
+      "file": "data/month_2026-07/races/2026-07-12_R5C3.json.gz",
+      "sha256": "0dbb382024a100bcedf05e6257c9851918180a9e8863bf6f43eaf8b841c0efec",
+      "venue": "HYERES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C4",
+      "file": "data/month_2026-07/races/2026-07-12_R5C4.json.gz",
+      "sha256": "d3aecd3d05f463f98f21bb6c4bd6cbef33a0a4f00019f93c56f6394b41cd73f8",
+      "venue": "HYERES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C5",
+      "file": "data/month_2026-07/races/2026-07-12_R5C5.json.gz",
+      "sha256": "30848c0a72434dc5cf2262dbd1a6670a55254b78977c338aff522f12db1e27d9",
+      "venue": "HYERES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C6",
+      "file": "data/month_2026-07/races/2026-07-12_R5C6.json.gz",
+      "sha256": "df4600d60d214fa6b096ad4c54dbe2363be905022b076dc697ff8e0757cc2bd9",
+      "venue": "HYERES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C7",
+      "file": "data/month_2026-07/races/2026-07-12_R5C7.json.gz",
+      "sha256": "53e4000d8f1b6a4eafbe58db63055e71a2674a4f3ed6fdbb6852c3acb84f1dca",
+      "venue": "HYERES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R5C8",
+      "file": "data/month_2026-07/races/2026-07-12_R5C8.json.gz",
+      "sha256": "9cec32f77cfff7e8d5cab86e1ffbc272e304775511d8eada8a82812cb5b663fa",
+      "venue": "HYERES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R9C7",
+      "file": "data/month_2026-07/races/2026-07-12_R9C7.json.gz",
+      "sha256": "4245bb1c37f1c365482639e9c82f20d036ceed8e24b482d35358496f9215203c",
+      "venue": "LIGNIERES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R10C2",
+      "file": "data/month_2026-07/races/2026-07-12_R10C2.json.gz",
+      "sha256": "84e212725ee32398087f464cc50e6e3608e79cc5c5408be8b22ac7d6c38d89e8",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R10C3",
+      "file": "data/month_2026-07/races/2026-07-12_R10C3.json.gz",
+      "sha256": "aedab1dc15538edc5466a1a72ca1fc59f1b874e2b2f1da69389836fdd13d4f6e",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R10C4",
+      "file": "data/month_2026-07/races/2026-07-12_R10C4.json.gz",
+      "sha256": "147490cf6d52343f3a49188436593349952593a775486106ab18e51238f48b74",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R10C5",
+      "file": "data/month_2026-07/races/2026-07-12_R10C5.json.gz",
+      "sha256": "824a071353658388e9943c4507dd3e676967155e6f1e6d38983478d2b85fa41e",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R10C6",
+      "file": "data/month_2026-07/races/2026-07-12_R10C6.json.gz",
+      "sha256": "d85b8506929f1024dd1dad43ec99ce7956aeb45a51f599d7003d6ee5f1c1cb22",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-12_R10C7",
+      "file": "data/month_2026-07/races/2026-07-12_R10C7.json.gz",
+      "sha256": "890d9226bc4e57e769f8fc1d4375cfae89e0460c1086142959966c419e9caa9f",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R2C1",
+      "file": "data/month_2026-07/races/2026-07-13_R2C1.json.gz",
+      "sha256": "b66bc55ca6863944fbc252c023202e577c6a7d1d7d850b0b74194c060f19e366",
+      "venue": "BEAUMONT DE LOMAGNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R2C2",
+      "file": "data/month_2026-07/races/2026-07-13_R2C2.json.gz",
+      "sha256": "14ef301d95623e1f74d257c7612f5eb821b8c65c26c6cfdcbc8a3101e9cdc8e8",
+      "venue": "BEAUMONT DE LOMAGNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R2C3",
+      "file": "data/month_2026-07/races/2026-07-13_R2C3.json.gz",
+      "sha256": "573301d41782f58f8c996a659b68acaa37f0376e778d83964b325c8085734c5a",
+      "venue": "BEAUMONT DE LOMAGNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R2C4",
+      "file": "data/month_2026-07/races/2026-07-13_R2C4.json.gz",
+      "sha256": "567bcf1499baf31fbb80e6fe8b8ea1866bc7bb28ca9fc92dce533f7718609644",
+      "venue": "BEAUMONT DE LOMAGNE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R2C5",
+      "file": "data/month_2026-07/races/2026-07-13_R2C5.json.gz",
+      "sha256": "c56dbfd07c5bc6c99ba5cbfa815f6c4c1b05dbc9a84954281296dad92ab43baf",
+      "venue": "BEAUMONT DE LOMAGNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R2C7",
+      "file": "data/month_2026-07/races/2026-07-13_R2C7.json.gz",
+      "sha256": "dc1b98bb897da91b7a31ad80043bdae2d9cbde5c0dd70e8df762419509563cbd",
+      "venue": "BEAUMONT DE LOMAGNE",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R2C8",
+      "file": "data/month_2026-07/races/2026-07-13_R2C8.json.gz",
+      "sha256": "8369e18c2aa6b487e0e8323adcad8f0bec04f67d884fe4c2b5ee980a3b8c8aaa",
+      "venue": "BEAUMONT DE LOMAGNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R3C1",
+      "file": "data/month_2026-07/races/2026-07-13_R3C1.json.gz",
+      "sha256": "bf3673a603975d42e7b78f11d865ac2a63f29fd35c7e48126a2e42a0b1c497a9",
+      "venue": "LE MANS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R3C2",
+      "file": "data/month_2026-07/races/2026-07-13_R3C2.json.gz",
+      "sha256": "d3f341af8df70728bf9bbac160803d127ac11f8ade1aa68506c6e9915aab98cf",
+      "venue": "LE MANS",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R3C3",
+      "file": "data/month_2026-07/races/2026-07-13_R3C3.json.gz",
+      "sha256": "b35a8c80abd544298c5a8627bb69d5bc2113a8c460d3d97b7130705ed534420e",
+      "venue": "LE MANS",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R3C5",
+      "file": "data/month_2026-07/races/2026-07-13_R3C5.json.gz",
+      "sha256": "f5dce534b2416252a584591ce3b771f7977c360c9600710521ce639722720d5b",
+      "venue": "LE MANS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R3C6",
+      "file": "data/month_2026-07/races/2026-07-13_R3C6.json.gz",
+      "sha256": "b8994963156e0be9cfed281f5f51032d8711d3fa03131f81d1e4b668a2cb64c8",
+      "venue": "LE MANS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R3C7",
+      "file": "data/month_2026-07/races/2026-07-13_R3C7.json.gz",
+      "sha256": "404e411bafee2f3206a7211d25fc97223f757f054814867f6825d91c3b0ee5b7",
+      "venue": "LE MANS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R3C8",
+      "file": "data/month_2026-07/races/2026-07-13_R3C8.json.gz",
+      "sha256": "dd6a985dddbfac3f2a18dce074dce41d517405d81dc597303ec4ad4f11d5a9a1",
+      "venue": "LE MANS",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R5C1",
+      "file": "data/month_2026-07/races/2026-07-13_R5C1.json.gz",
+      "sha256": "a81ef01e01553bd9c4911eb8429512bfdb040f6a6f3e6e23226a8acf4fb18a8c",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R5C2",
+      "file": "data/month_2026-07/races/2026-07-13_R5C2.json.gz",
+      "sha256": "3c78579de3b61be1aab5ebd2b387f4cdeaa66760b4fe26a0a32a05dd3dc2ca21",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R5C3",
+      "file": "data/month_2026-07/races/2026-07-13_R5C3.json.gz",
+      "sha256": "3c584dbd703e0dde45c894164f7403f55fe4a0612f92e69a45c088d7ad79d736",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R5C4",
+      "file": "data/month_2026-07/races/2026-07-13_R5C4.json.gz",
+      "sha256": "26e2f8cec3361313a3683d0f976e1f29670be63ef3003e97cd438bfcad4539ff",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R5C5",
+      "file": "data/month_2026-07/races/2026-07-13_R5C5.json.gz",
+      "sha256": "60d31834a70a0c6696c2103d923c4ec7f52ecc47ae45aef8249a259b04821e50",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R5C6",
+      "file": "data/month_2026-07/races/2026-07-13_R5C6.json.gz",
+      "sha256": "97a3279dfc22b499c5188db7064e9bb502089cd5027ec2f7f3148b1e88cf5afb",
+      "venue": "CAGNES/MER",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R5C7",
+      "file": "data/month_2026-07/races/2026-07-13_R5C7.json.gz",
+      "sha256": "e1ff7867ec78e9efc61429edd3f40f83193a9e1e290fc718234640cc8a8d599e",
+      "venue": "CAGNES/MER",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R7C2",
+      "file": "data/month_2026-07/races/2026-07-13_R7C2.json.gz",
+      "sha256": "66cb636a2c0be98d603bdf827889a625b39563e77c59d5d228566ca58e2f5e89",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R7C4",
+      "file": "data/month_2026-07/races/2026-07-13_R7C4.json.gz",
+      "sha256": "450f52dd23cd6532b36b57cb6319718a2993384e2bedd4a6b1c5fbb7d38be58b",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R7C5",
+      "file": "data/month_2026-07/races/2026-07-13_R7C5.json.gz",
+      "sha256": "cbb34fcf2fcf69bc87894239a262f1ceb0d4a21f1d1d985d6f02d41a19f01725",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R7C6",
+      "file": "data/month_2026-07/races/2026-07-13_R7C6.json.gz",
+      "sha256": "653c4200dc8c5074531fc093e576e5489aca6ff0b37180cb761687f3dcebc768",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R7C7",
+      "file": "data/month_2026-07/races/2026-07-13_R7C7.json.gz",
+      "sha256": "776007b00cccaf6f5a954c7a5c0cd3d69c122b32bc4ffe5e16450dea3e62ed30",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-13_R7C8",
+      "file": "data/month_2026-07/races/2026-07-13_R7C8.json.gz",
+      "sha256": "f015f9d09c8ed9cea34eb28b75bce7048db0cd35797baa9110affed1f03fe4c0",
+      "venue": "CLAIREFONTAINE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C1",
+      "file": "data/month_2026-07/races/2026-07-14_R2C1.json.gz",
+      "sha256": "d99a3ece5d7ed8dec8f3c284f636014a617fb0cbf44d6cbacb1f774015e9bfa0",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C2",
+      "file": "data/month_2026-07/races/2026-07-14_R2C2.json.gz",
+      "sha256": "75b1f0794e1656d17c176e4d1d175a81984e935fc47cad61f92faf629101d37a",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C3",
+      "file": "data/month_2026-07/races/2026-07-14_R2C3.json.gz",
+      "sha256": "ae7226c272adc9199588a8abaa93cc25d0e61a036dd30937ca7daba7cb4691c0",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C4",
+      "file": "data/month_2026-07/races/2026-07-14_R2C4.json.gz",
+      "sha256": "135b1d2fa7327e690b1519a98c8860b9c8486eb509874aefd1ee1577208eb6f2",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C5",
+      "file": "data/month_2026-07/races/2026-07-14_R2C5.json.gz",
+      "sha256": "43bbdaced8023b4ff5ba043e0998dcd36795277cf3a4967bf56e8ae2809389b2",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C6",
+      "file": "data/month_2026-07/races/2026-07-14_R2C6.json.gz",
+      "sha256": "16faa29cecb2dd4201b62a080055e9a25fabb3b01d14bb29ec5522b2d0adc2a3",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C7",
+      "file": "data/month_2026-07/races/2026-07-14_R2C7.json.gz",
+      "sha256": "f59ce4659704cf98c290b1d6e866ab227ac377789f06ddeb27e9e5639e98a8a2",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R2C8",
+      "file": "data/month_2026-07/races/2026-07-14_R2C8.json.gz",
+      "sha256": "901e09360875e73eab2da051ebaaed5d57b1ccbd2004bf6164c033ef70572947",
+      "venue": "LANGON-LIBOURNE",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R5C1",
+      "file": "data/month_2026-07/races/2026-07-14_R5C1.json.gz",
+      "sha256": "6fb7b4ad6796b981d2706732ca56e489a19fe95774a9f6cd239d8d42d93a37e1",
+      "venue": "CABOURG",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R5C2",
+      "file": "data/month_2026-07/races/2026-07-14_R5C2.json.gz",
+      "sha256": "af0ae9e2a4bb450560135fe3a5db2d08582a11b8d43ef606fa8630316e19cb62",
+      "venue": "CABOURG",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R5C3",
+      "file": "data/month_2026-07/races/2026-07-14_R5C3.json.gz",
+      "sha256": "d24934f4c5ef0af70a8d71ae802cbb9ca10d10e26997fd54293db2f265ab599f",
+      "venue": "CABOURG",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R5C5",
+      "file": "data/month_2026-07/races/2026-07-14_R5C5.json.gz",
+      "sha256": "0afb6c8dc189f9109ad65d0ef2fbf360ba94d42316601045e8942f75ae4a95e8",
+      "venue": "CABOURG",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R5C7",
+      "file": "data/month_2026-07/races/2026-07-14_R5C7.json.gz",
+      "sha256": "51fbeb8da080e0e958c5609fcc464dc2e8b7b054e604859496d8aaa3890afe73",
+      "venue": "CABOURG",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R5C8",
+      "file": "data/month_2026-07/races/2026-07-14_R5C8.json.gz",
+      "sha256": "8e567e36adc3641389f0244b2d9f8c4acad89ffc66c87bb163a0ad0833c5671d",
+      "venue": "CABOURG",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-07-14_R6C7",
+      "file": "data/month_2026-07/races/2026-07-14_R6C7.json.gz",
+      "sha256": "01d93118ca9dceda2adc59f31a093602ac702d85224703f701119f366156e387",
+      "venue": "JULLIANGES",
+      "start_type": "NON_PRECISE",
+      "warnings": [
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 1,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 2,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 3,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 4,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 5,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 7,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 9,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 10,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 11,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 14,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2026-07-14_R6C7",
+          "number": 16,
+          "issue": "unclassified_finisher_without_incident"
+        }
+      ]
+    },
+    {
+      "race_id": "2026-07-14_R7C7",
+      "file": "data/month_2026-07/races/2026-07-14_R7C7.json.gz",
+      "sha256": "eb0fa7eef20d1c5139b6d16bfbd1a0e6d3af396592d90ad1bcfcbe2a9f05e39f",
+      "venue": "CARPENTRAS",
+      "start_type": "NON_PRECISE",
+      "warnings": []
     }
   ],
   "quarantine": [],
   "fields_nonempty": {
-    "idCheval": 1521,
-    "nomMere": 1521,
-    "nomPere": 1521,
-    "driver": 1521,
-    "entraineur": 1509,
-    "musique": 1492,
+    "idCheval": 3133,
+    "nomMere": 3133,
+    "nomPere": 3133,
+    "driver": 3133,
+    "entraineur": 3121,
+    "musique": 3086,
     "ferrure": 0,
-    "reductionKilometrique": 1017,
-    "tempsObtenu": 1017,
-    "age": 1521,
-    "sexe": 1521,
-    "gainsParticipant": 1521
+    "reductionKilometrique": 2173,
+    "tempsObtenu": 2173,
+    "age": 3133,
+    "sexe": 3133,
+    "gainsParticipant": 3133
   },
-  "participants": 1521,
+  "participants": 3133,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
   "model_status": "NO BET; no training in this experiment"
 }
