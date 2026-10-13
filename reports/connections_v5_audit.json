@@ -1,0 +1,171 @@
+{
+  "status": "DESCRIPTIVE_NO_BET",
+  "frozen": {
+    "protocol_sha256": "fb01d8561e078dc737638442156349003c7f90af1f53da0e6095d8818e9e1d83",
+    "models_sha256": "f537cc13991ed401533f7af782952ad298b0d3de120f25d9909435dd69d8d950",
+    "selected": "combined",
+    "sources_sha256": "54d289e07d9e54d1da97c058e901ca65bd63ad96c9ec8d7c1b8e4f7408490d21",
+    "code_sha256": {
+      "turf_lab/connections.py": "8cb77d6a4111c103dce0e47570dde7770db025d52457e1a6add7f0a069e65ef3",
+      "turf_lab/opposition.py": "7fcc90941505bfe32d218920a68541e76b0c97c0f32f7d48501f10d249a47e33",
+      "turf_lab/month_history.py": "e617b1f180e111e098871506caa62a6c57e6c22fcb698d78286b4463882f1990",
+      "turf_lab/pilot.py": "a5997e8dfaea58b13d8e0903c147834bad1ce93d463a5e2f126fb45d5d81cd77",
+      "turf_lab/fast_logit.py": "e6396d6a7d98ab55cdca23acdc767ce1839abf065312dc870d608960a8961e60",
+      "scripts/backtest_connections.py": "955079efa9ea5a2f9357c5dabef6100ddc86bdd50929621f4642c1fafe939c70"
+    }
+  },
+  "monthly": [
+    {
+      "month": "2026-05",
+      "races": 533,
+      "v3": 2.365541458298781,
+      "v5": 2.1884260956068626,
+      "delta": -0.1771153626919184,
+      "top1_v3": 0.2101313320825516,
+      "top1_v5": 0.24765478424015008
+    },
+    {
+      "month": "2026-06",
+      "races": 555,
+      "v3": 2.351912254483495,
+      "v5": 2.147045188679998,
+      "delta": -0.204867065803497,
+      "top1_v3": 0.1891891891891892,
+      "top1_v5": 0.24144144144144145
+    }
+  ],
+  "paired": {
+    "delta_log_loss": -0.19127179212843132,
+    "day_bootstrap_95_percent": [
+      -0.22537887152078176,
+      -0.15532221851611078
+    ],
+    "days": 61,
+    "interpretation": "Descriptive paired day bootstrap on the frozen independent test; no retuning. Does not establish future profitability."
+  },
+  "calibration": {
+    "v3": {
+      "runner_weighted_ece": 0.007777295942531646,
+      "runner_count": 13692,
+      "bins": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 10809,
+          "mean_probability": 0.06104578298149804,
+          "win_frequency": 0.05643445277083912
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 2463,
+          "mean_probability": 0.13160642662799177,
+          "win_frequency": 0.1518473406414941
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 360,
+          "mean_probability": 0.2322500088685689,
+          "win_frequency": 0.24166666666666667
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 55,
+          "mean_probability": 0.3295759302152864,
+          "win_frequency": 0.3090909090909091
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 4,
+          "mean_probability": 0.43356092479349706,
+          "win_frequency": 0.0
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 1,
+          "mean_probability": 0.5385799145447718,
+          "win_frequency": 0.0
+        }
+      ],
+      "warning": "Descriptive fixed bins; runners are dependent within races. Sparse high probabilities remain uncertain."
+    },
+    "combined": {
+      "runner_weighted_ece": 0.0066244652127164134,
+      "runner_count": 13692,
+      "bins": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 10114,
+          "mean_probability": 0.04832922809417668,
+          "win_frequency": 0.04459165513150089
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 2747,
+          "mean_probability": 0.13566531684386376,
+          "win_frequency": 0.15143793228977065
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 618,
+          "mean_probability": 0.2392911163891616,
+          "win_frequency": 0.2313915857605178
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 166,
+          "mean_probability": 0.34141415041233686,
+          "win_frequency": 0.3373493975903614
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 36,
+          "mean_probability": 0.44423936124455815,
+          "win_frequency": 0.3888888888888889
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 11,
+          "mean_probability": 0.5432987076045404,
+          "win_frequency": 0.7272727272727273
+        }
+      ],
+      "warning": "Descriptive fixed bins; runners are dependent within races. Sparse high probabilities remain uncertain."
+    }
+  },
+  "refitted": false
+}
