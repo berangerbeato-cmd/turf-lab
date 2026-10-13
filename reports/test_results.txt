@@ -54,6 +54,10 @@ test_future_and_same_day_excluded (test_month_history.MonthlyHistoryTests.test_f
 test_no_market_dependency_and_duplicate_rejected (test_month_history.MonthlyHistoryTests.test_no_market_dependency_and_duplicate_rejected) ... ok
 test_np_skipped_and_dq_preserved (test_month_history.MonthlyHistoryTests.test_np_skipped_and_dq_preserved) ... ok
 test_unknown_place_is_not_invented_non_placing (test_month_history.MonthlyHistoryTests.test_unknown_place_is_not_invented_non_placing) ... ok
+test_conservative_ceiling (test_next_features_audit.NextFeatureTests.test_conservative_ceiling) ... ok
+test_disqualification_not_a_valid_chrono (test_next_features_audit.NextFeatureTests.test_disqualification_not_a_valid_chrono) ... ok
+test_expiry_and_nonrunner (test_next_features_audit.NextFeatureTests.test_expiry_and_nonrunner) ... ok
+test_same_day_target_and_future_excluded (test_next_features_audit.NextFeatureTests.test_same_day_target_and_future_excluded) ... ok
 test_extended_fit_has_all_dimensions_and_normalized_probabilities (test_opposition.OppositionTests.test_extended_fit_has_all_dimensions_and_normalized_probabilities) ... ok
 test_new_year_resets_and_inputs_unchanged (test_opposition.OppositionTests.test_new_year_resets_and_inputs_unchanged) ... ok
 test_target_future_and_same_day_do_not_change_features (test_opposition.OppositionTests.test_target_future_and_same_day_do_not_change_features) ... ok
@@ -74,7 +78,7 @@ test_preserves_raw_and_denominator (test_shadow_quarantine.QuarantineTests.test_
 test_source_changes_and_missing_target_block (test_shadow_quarantine.QuarantineTests.test_source_changes_and_missing_target_block) ... ok
 
 ----------------------------------------------------------------------
-Ran 74 tests in 0.077s
+Ran 78 tests in 0.073s
 
 OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
