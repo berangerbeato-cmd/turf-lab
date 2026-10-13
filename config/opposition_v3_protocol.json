@@ -1,0 +1,20 @@
+{
+  "version": "opposition-v3-validation-only",
+  "status": "EXPERIMENTAL_NO_BET",
+  "train": {"from": "2024-03-02", "to": "2024-03-31"},
+  "validation": {"from": "2025-03-02", "to": "2025-03-31"},
+  "source_years": [2024, 2025],
+  "test": null,
+  "test_policy": "Do not read 2026 outcomes for V3 selection. A new independent period must be frozen before testing.",
+  "elo_k": 32,
+  "elo_scale": 400,
+  "dq_prior_strength": 10,
+  "initial_dq_prior": 0.2,
+  "l2": 0.1,
+  "candidates": ["baseline", "opposition", "dq", "combined"],
+  "selection": "Validation log loss; report Brier and paired day bootstrap, no promotion",
+  "reset": "Ratings reset at the beginning of each source year; unobserved gaps are not filled",
+  "update": "Only after all features of a day have been built; NP, DQ and unknown ranks excluded from Elo comparisons",
+  "dq": "Rate shrunk toward expanding past-only population rate; unknown outcomes excluded",
+  "limitations": ["Elo and shrinkage are established techniques, not claims of novel mathematics", "Cold starts and 3-month seasonal coverage", "No odds or automatic prospective replacement"]
+}
