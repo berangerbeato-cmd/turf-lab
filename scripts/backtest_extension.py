@@ -5,6 +5,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from turf_lab.evidence import dump
+from turf_lab.coverage import cancelled_evidence, coverage_counts
 from turf_lab.month_history import build_history
 from turf_lab.pilot import FEATURES, fit, metrics, probabilities
 
@@ -17,10 +18,13 @@ def load_sources(protocol):
             raise ValueError('Incomplete monthly programmes: '+month)
         from scripts.collect_month import month_days
         if [d['date'] for d in manifest['days']]!=month_days(month):raise ValueError('Incomplete calendar: '+month)
-        fraction=len(manifest['partitions'])/max(1,manifest['candidate_races'])
+        cancellations=cancelled_evidence(month, manifest['quarantine'])
+        counts=coverage_counts(manifest, cancellations)
+        fraction=counts['fraction']
         if fraction<protocol['minimum_retained_fraction_per_month']:raise ValueError('Coverage gate failed: '+month)
         coverage.append({'month':month,'candidates':manifest['candidate_races'],'retained':len(manifest['partitions']),
-            'quarantine':manifest['quarantine'],'venues':manifest['venues']})
+            'quarantine':manifest['quarantine'],'venues':manifest['venues'],
+            'coverage_counts':counts,'confirmed_cancellations':cancellations})
         for entry in manifest['partitions']:
             raw=gzip.decompress(Path(entry['file']).read_bytes())
             if hashlib.sha256(raw).hexdigest()!=entry['sha256']:raise ValueError('Source digest mismatch')
