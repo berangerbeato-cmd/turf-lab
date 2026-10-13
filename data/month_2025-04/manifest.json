@@ -141,6 +141,16 @@
       "date": "2025-04-28",
       "status": "OK",
       "candidate_races": 19
+    },
+    {
+      "date": "2025-04-29",
+      "status": "OK",
+      "candidate_races": 12
+    },
+    {
+      "date": "2025-04-30",
+      "status": "OK",
+      "candidate_races": 19
     }
   ],
   "partitions": [
@@ -4710,24 +4720,294 @@
       "venue": "LE CROISE LAROCHE",
       "start_type": "AUTOSTART",
       "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R3C1",
+      "file": "data/month_2025-04/races/2025-04-29_R3C1.json.gz",
+      "sha256": "d72d2f453dea99461a597f206e9b39df7d37c9e885042c6b7167af432dab66b9",
+      "venue": "GRAIGNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R3C2",
+      "file": "data/month_2025-04/races/2025-04-29_R3C2.json.gz",
+      "sha256": "c483cac07068deb5e14a70ca281142053f8e0f9912f669520419129e32771d87",
+      "venue": "GRAIGNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R3C3",
+      "file": "data/month_2025-04/races/2025-04-29_R3C3.json.gz",
+      "sha256": "065a103d3e0fe97712bdd31e3f0185b956feeec55eae0d57c4e0161572a76534",
+      "venue": "GRAIGNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R3C4",
+      "file": "data/month_2025-04/races/2025-04-29_R3C4.json.gz",
+      "sha256": "74f8b5d55cda72f4c90212c922966a790185f6345db1ac3efbb05c1bd5a39787",
+      "venue": "GRAIGNES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R3C5",
+      "file": "data/month_2025-04/races/2025-04-29_R3C5.json.gz",
+      "sha256": "3084892aa53128fbfe1c6144648dc96136b72f01c4b3937785db8b132cacf6e8",
+      "venue": "GRAIGNES",
+      "start_type": "AUTOSTART",
+      "warnings": [
+        {
+          "race_id": "2025-04-29_R3C5",
+          "number": 14,
+          "issue": "unclassified_finisher_without_incident"
+        }
+      ]
+    },
+    {
+      "race_id": "2025-04-29_R3C6",
+      "file": "data/month_2025-04/races/2025-04-29_R3C6.json.gz",
+      "sha256": "05c98ea2a97085a3485e797376ebc9492fdcdd8c176789a479e6db4dae4f94c3",
+      "venue": "GRAIGNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R3C8",
+      "file": "data/month_2025-04/races/2025-04-29_R3C8.json.gz",
+      "sha256": "1d22e1f7e0173ee9fc4c31412a4f890b6cea9bebe57cf129a7592273b9f9a355",
+      "venue": "GRAIGNES",
+      "start_type": "AUTOSTART",
+      "warnings": [
+        {
+          "race_id": "2025-04-29_R3C8",
+          "number": 1,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2025-04-29_R3C8",
+          "number": 9,
+          "issue": "unclassified_finisher_without_incident"
+        },
+        {
+          "race_id": "2025-04-29_R3C8",
+          "number": 11,
+          "issue": "unclassified_finisher_without_incident"
+        }
+      ]
+    },
+    {
+      "race_id": "2025-04-29_R4C1",
+      "file": "data/month_2025-04/races/2025-04-29_R4C1.json.gz",
+      "sha256": "cdc97fea175de221271c2727bbca5c524fb3abc34d9271baefe8da5e98460dc2",
+      "venue": "VINCENNES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R4C2",
+      "file": "data/month_2025-04/races/2025-04-29_R4C2.json.gz",
+      "sha256": "c4008b16241bb483a3e7d428c822ed2921b5adf1bc3cf9f97073561cdd196ad1",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R4C4",
+      "file": "data/month_2025-04/races/2025-04-29_R4C4.json.gz",
+      "sha256": "ec460d36586c4ac4767becfaa76d78530b75ed1b4dba0b264caf00da997ab78a",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R4C5",
+      "file": "data/month_2025-04/races/2025-04-29_R4C5.json.gz",
+      "sha256": "aa09230fc259e98f7dd83d63b90bf93c0c0f4733a0c5b292d423bbac5682f4cc",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-29_R4C7",
+      "file": "data/month_2025-04/races/2025-04-29_R4C7.json.gz",
+      "sha256": "65a40eaf853a797aba1d7c3d3ac02104c6e93f3d55836a7aef0a019928a4065a",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R3C1",
+      "file": "data/month_2025-04/races/2025-04-30_R3C1.json.gz",
+      "sha256": "b2e40e039167ad7d4361f45d5fbfd8b61daf897a9352c268547bf485091db9bd",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R3C2",
+      "file": "data/month_2025-04/races/2025-04-30_R3C2.json.gz",
+      "sha256": "c6c095d37c6b8babd6bff457a9fa0e9fa17b29b4d61e33588879f263dd5eb0f3",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R3C4",
+      "file": "data/month_2025-04/races/2025-04-30_R3C4.json.gz",
+      "sha256": "8827ce38b9a5b7f59179cd4095ae6fcee996fd64a96e57961267943560cd8e82",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R3C5",
+      "file": "data/month_2025-04/races/2025-04-30_R3C5.json.gz",
+      "sha256": "0bd7841906c851f0a31274782cba0291eee38658639728ba1a3f03f532ccefc9",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R3C6",
+      "file": "data/month_2025-04/races/2025-04-30_R3C6.json.gz",
+      "sha256": "b790b0844e3c4402a34ce36e23ad1a7684b78f0c8ec4ada84f9140d464088159",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R3C7",
+      "file": "data/month_2025-04/races/2025-04-30_R3C7.json.gz",
+      "sha256": "2458cfa5297340c0d1ef820975f57da11b76a47515c2d1b071d244cbfb4f1aa3",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R3C8",
+      "file": "data/month_2025-04/races/2025-04-30_R3C8.json.gz",
+      "sha256": "8f15b012f2895451a57b56f7944a7e450a30c045a62bfa8581b74344e992f6ea",
+      "venue": "LAVAL",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R4C2",
+      "file": "data/month_2025-04/races/2025-04-30_R4C2.json.gz",
+      "sha256": "17099411be42c686de35b094d5577d445772ff2a2d8c39770b60e98b23ed02f8",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R4C4",
+      "file": "data/month_2025-04/races/2025-04-30_R4C4.json.gz",
+      "sha256": "01d6650478a430ed80ef4c898b76644a004973f98c5a8f72ffb242908261f0d0",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R4C5",
+      "file": "data/month_2025-04/races/2025-04-30_R4C5.json.gz",
+      "sha256": "e58adec9fbcbe0c31b63a68c6ccb3eb9fcd2694598d02d3c3b1d2c5148a422c0",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R4C6",
+      "file": "data/month_2025-04/races/2025-04-30_R4C6.json.gz",
+      "sha256": "98b2455316c08da2f5a7eabee3de2079c9fd43e83c121a942afa12c3cf888e80",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R4C7",
+      "file": "data/month_2025-04/races/2025-04-30_R4C7.json.gz",
+      "sha256": "8ee169ae9fea31e9af683cce303e91312629765669c0a63cc59a179e180a02ff",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R4C8",
+      "file": "data/month_2025-04/races/2025-04-30_R4C8.json.gz",
+      "sha256": "600be4e847fa8c8798f70d8c72831cb33e594f1268c6b6adf6574c8c6d7305de",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R11C1",
+      "file": "data/month_2025-04/races/2025-04-30_R11C1.json.gz",
+      "sha256": "227e4d23f8344ec76c8a8679e385d2740bdc5851017b858f7b24cc9d9c14bbfc",
+      "venue": "BORELY",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R11C2",
+      "file": "data/month_2025-04/races/2025-04-30_R11C2.json.gz",
+      "sha256": "a303a0e94f48d9e30f6a288bb950c039c4d81dc3e6777fcbed45ca739532a459",
+      "venue": "BORELY",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R11C3",
+      "file": "data/month_2025-04/races/2025-04-30_R11C3.json.gz",
+      "sha256": "f6241f559bc7ed72e524de2b506fa8984e9ed83a69514c1df77e27129fb6abee",
+      "venue": "BORELY",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R11C4",
+      "file": "data/month_2025-04/races/2025-04-30_R11C4.json.gz",
+      "sha256": "c919c54bf33f1c57c9634f83ebeb0fcf6a75fd749eb5abf512fecf88478dd5b1",
+      "venue": "BORELY",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R11C6",
+      "file": "data/month_2025-04/races/2025-04-30_R11C6.json.gz",
+      "sha256": "fa55b250e6ec59b228a8421048e738f67130377327e2cb393c7d7931acb0bbab",
+      "venue": "BORELY",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2025-04-30_R11C7",
+      "file": "data/month_2025-04/races/2025-04-30_R11C7.json.gz",
+      "sha256": "c47f049369f62ee9431c78cc90bc22a1b2beba50521c66b0f96fdd61d42010cd",
+      "venue": "BORELY",
+      "start_type": "AUTOSTART",
+      "warnings": []
     }
   ],
   "quarantine": [],
   "fields_nonempty": {
     "idCheval": 0,
-    "nomMere": 6728,
-    "nomPere": 6728,
-    "driver": 6728,
-    "entraineur": 6728,
-    "musique": 6549,
+    "nomMere": 7119,
+    "nomPere": 7119,
+    "driver": 7119,
+    "entraineur": 7119,
+    "musique": 6932,
     "ferrure": 0,
-    "reductionKilometrique": 4916,
-    "tempsObtenu": 4916,
-    "age": 6728,
-    "sexe": 6728,
-    "gainsParticipant": 5047
+    "reductionKilometrique": 5220,
+    "tempsObtenu": 5220,
+    "age": 7119,
+    "sexe": 7119,
+    "gainsParticipant": 5438
   },
-  "participants": 6728,
+  "participants": 7119,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
   "model_status": "NO BET; no training in this experiment"
 }
