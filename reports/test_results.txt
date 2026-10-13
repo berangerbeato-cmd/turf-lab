@@ -1,3 +1,7 @@
+test_advance_requires_proof_and_number_is_never_position (test_context.ContextTests.test_advance_requires_proof_and_number_is_never_position) ... ok
+test_dq_np_and_expired_history_not_used_as_performance (test_context.ContextTests.test_dq_np_and_expired_history_not_used_as_performance) ... ok
+test_same_day_and_future_results_cannot_change_current_context (test_context.ContextTests.test_same_day_and_future_results_cannot_change_current_context) ... ok
+test_unknown_start_type_not_standing_start (test_context.ContextTests.test_unknown_start_type_not_standing_start) ... ok
 test_only_explicit_noncontradictory_cancellation_is_excluded (test_coverage.CoverageTests.test_only_explicit_noncontradictory_cancellation_is_excluded) ... ok
 test_unresolved_remains_in_denominator (test_coverage.CoverageTests.test_unresolved_remains_in_denominator) ... ok
 test_geographical_and_discipline_scope (test_evidence.EvidenceTests.test_geographical_and_discipline_scope) ... ok
@@ -52,7 +56,7 @@ test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_reje
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 52 tests in 0.082s
+Ran 56 tests in 0.057s
 
 OK
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
