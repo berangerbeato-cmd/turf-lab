@@ -1,10 +1,12 @@
 # TURF LAB — point de reprise Work V3
 
-Mise à jour : 12 octobre 2026. Branche `main`.
+Mise à jour : 13 octobre 2026. Branche `main`.
 Contraintes : gratuit, cloud uniquement ; aucun pari réel, achat, scraper de cotes,
 MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
+
+Reprise du 13 octobre : neuf tâches mensuelles réussies ; backtest bloqué avant entraînement par 18 courses annulées comptées comme résultats manquants en janvier 2026. Correctif testé (44 tests), audit `reports/cancellation_audit.json`, explication `reports/COVERAGE_CORRECTION.md`. Prochaine action immédiate : publier ce correctif puis reproduire le backtest figé.
 
 Extension historique V2 : janvier 2024 entièrement collecté et sauvegardé (512 courses, 6 757 participations, 18 hippodromes). La chaîne mensuelle et les historiques strictement antérieurs sont reproduits dans GitHub Actions. Collecte bornée des premiers trimestres 2024, 2025 et 2026 lancée dans GitHub Actions ; nouveau protocole chronologique figé avant consultation du test. Le pilote prospectif V1 reste inchangé et **NO BET**.
 
