@@ -1,0 +1,11 @@
+{
+  "status": "PREPARATION_ONLY_NO_BET",
+  "collection_months": ["2026-07", "2026-08", "2026-09"],
+  "max_requests_per_month": 3000,
+  "minimum_retained_fraction_per_month": 0.98,
+  "refit": false,
+  "prospective_v1_changed": false,
+  "purpose": "Restore continuous 2026 Elo and recent history before prospective V5 predictions",
+  "next_required": "Collect completed October days up to the day preceding each prediction; capture current runners and equipment before departure; record V3 and frozen V5 together in a separate shadow registry.",
+  "prohibited": ["Bets", "Automatic promotion", "Refitting", "Retrospective predictions labelled prospective", "Predictions with stale histories"]
+}
