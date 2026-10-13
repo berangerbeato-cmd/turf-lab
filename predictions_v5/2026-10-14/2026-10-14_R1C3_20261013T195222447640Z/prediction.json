@@ -1,0 +1,3873 @@
+{
+  "status": "SHADOW_NO_BET",
+  "race_id": "2026-10-14_R1C3",
+  "date": "2026-10-14",
+  "scheduled_start": "2026-10-14T13:05:00+00:00",
+  "predicted_at": "2026-10-13T19:53:03.975438+00:00",
+  "history_through": "2026-10-12",
+  "history_gap_days": 1,
+  "history_gap_note": "Current-day results deliberately excluded; snapshot for tomorrow needs refresh before departure.",
+  "history_sha256": "798d97a238815f270fe6b7b7fdb19172ee29468cb622d4b06ece65a368834b83",
+  "frozen": {
+    "protocol_sha256": "fb01d8561e078dc737638442156349003c7f90af1f53da0e6095d8818e9e1d83",
+    "models_sha256": "f537cc13991ed401533f7af782952ad298b0d3de120f25d9909435dd69d8d950",
+    "selected": "combined",
+    "sources_sha256": "54d289e07d9e54d1da97c058e901ca65bd63ad96c9ec8d7c1b8e4f7408490d21",
+    "code_sha256": {
+      "turf_lab/connections.py": "8cb77d6a4111c103dce0e47570dde7770db025d52457e1a6add7f0a069e65ef3",
+      "turf_lab/opposition.py": "7fcc90941505bfe32d218920a68541e76b0c97c0f32f7d48501f10d249a47e33",
+      "turf_lab/month_history.py": "e617b1f180e111e098871506caa62a6c57e6c22fcb698d78286b4463882f1990",
+      "turf_lab/pilot.py": "a5997e8dfaea58b13d8e0903c147834bad1ce93d463a5e2f126fb45d5d81cd77",
+      "turf_lab/fast_logit.py": "e6396d6a7d98ab55cdca23acdc767ce1839abf065312dc870d608960a8961e60",
+      "scripts/backtest_connections.py": "955079efa9ea5a2f9357c5dabef6100ddc86bdd50929621f4642c1fafe939c70"
+    }
+  },
+  "models": {
+    "v3": {
+      "probabilities": {
+        "1": 0.042572588430860814,
+        "2": 0.023182856060369204,
+        "3": 0.024554053925081188,
+        "4": 0.07998814363215359,
+        "5": 0.11687966715446693,
+        "6": 0.08025572820270988,
+        "7": 0.04730610113576678,
+        "8": 0.07654915563806017,
+        "9": 0.15748958585897435,
+        "10": 0.045538639534995255,
+        "11": 0.03952322840970127,
+        "12": 0.031993075588351565,
+        "13": 0.09088112307162373,
+        "14": 0.023562024160677222,
+        "15": 0.06828617628480678,
+        "16": 0.05143785291140124
+      },
+      "runners": [
+        {
+          "number": 1,
+          "name": "NARCOS SANTIGNY",
+          "horse_id": "pedigree:('NARCOS SANTIGNY', \"IDOLE D'ATOUT\", 'FEELING CASH')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            2.8903717578961645,
+            0.2,
+            -0.03717097574359247,
+            0.0,
+            0.2883007389928092,
+            0.13076168618553416
+          ],
+          "history": [
+            {
+              "date": "2026-09-27",
+              "race_id": "2026-09-27_R13C7",
+              "venue": "NANCY-BRABOIS",
+              "distance_m": 2600,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.03717097574359247,
+            0.0,
+            0.2883007389928092,
+            0.13076168618553416
+          ],
+          "connection_features": {
+            "driver": [
+              -0.02434475593316803,
+              0.6931471805599453,
+              0.2354073817662585,
+              1.0986122886681096
+            ],
+            "trainer": [
+              -0.02434475593316803,
+              0.6931471805599453,
+              0.2354073817662585,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. BOUCHEZ",
+            "trainer": "M. BOUCHEZ"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 2,
+          "name": "NIKITA DE MONCHEL",
+          "horse_id": "pedigree:('NIKITA DE MONCHEL', 'IVANKA DE MONCHEL', \"ROLLING D'HERIPRE\")",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.5,
+            0.0,
+            3.367295829986474,
+            0.4,
+            -0.10050235965247488,
+            1.9459101490553132,
+            0.27217411204846853,
+            0.09952270212848328
+          ],
+          "history": [
+            {
+              "date": "2026-09-16",
+              "race_id": "2026-09-16_R3C4",
+              "venue": "CABOURG",
+              "distance_m": 2750,
+              "rank": 2,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-09-05",
+              "race_id": "2026-09-05_R9C7",
+              "venue": "AMIENS",
+              "distance_m": 2400,
+              "rank": 7,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.10050235965247488,
+            1.9459101490553132,
+            0.27217411204846853,
+            0.09952270212848328
+          ],
+          "connection_features": {
+            "driver": [
+              -0.008342842899493632,
+              1.791759469228055,
+              0.16715849595430746,
+              1.791759469228055
+            ],
+            "trainer": [
+              0.049825018003527094,
+              1.3862943611198906,
+              0.18169401734163856,
+              1.3862943611198906
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "E. HERBEAU",
+            "trainer": "F. DELENCLOS"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 3,
+          "name": "NOTRE SAXO D'AURE",
+          "horse_id": "pedigree:(\"NOTRE SAXO D'AURE\", \"INSATIABLE D'AURE\", 'SAXO DE VANDEL')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.833213344056216,
+            0.2,
+            -0.06830536452453508,
+            2.1972245773362196,
+            0.12062822938449454,
+            0.07471949638483227
+          ],
+          "history": [
+            {
+              "date": "2026-09-28",
+              "race_id": "2026-09-28_R1C3",
+              "venue": "ENGHIEN",
+              "distance_m": 2875,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.06830536452453508,
+            2.1972245773362196,
+            0.12062822938449454,
+            0.07471949638483227
+          ],
+          "connection_features": {
+            "driver": [
+              -0.031698170884091874,
+              3.713572066704308,
+              0.20255660569796696,
+              3.9318256327243257
+            ],
+            "trainer": [
+              0.03334137065576466,
+              3.044522437723423,
+              0.16695261392692295,
+              3.1780538303479458
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "F. NIVARD",
+            "trainer": "P.Y. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 4,
+          "name": "NOURKIS",
+          "horse_id": "pedigree:('NOURKIS', 'BELLA DU VIVIER', 'SINGALO')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            2.70805020110221,
+            0.2,
+            0.04695865126891794,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834
+          ],
+          "history": [
+            {
+              "date": "2026-09-30",
+              "race_id": "2026-09-30_R5C6",
+              "venue": "LE CROISE LAROCHE",
+              "distance_m": 2800,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.04695865126891794,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834
+          ],
+          "connection_features": {
+            "driver": [
+              -0.027881066745296286,
+              3.1354942159291497,
+              0.286395516959579,
+              3.5263605246161616
+            ],
+            "trainer": [
+              -0.02812666972175102,
+              2.1972245773362196,
+              0.20596541329525622,
+              2.3978952727983707
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. VERVA",
+            "trainer": "G. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 5,
+          "name": "NANS DE FLEUR",
+          "horse_id": "pedigree:('NANS DE FLEUR', 'ARIANE DES PRES', 'COUP DE POKER')",
+          "non_runner": false,
+          "features": [
+            1.0,
+            1.0,
+            0.0,
+            3.4657359027997265,
+            0.2,
+            0.018459474745238257,
+            1.6094379124341003,
+            0.1550934377800644,
+            0.09346638017227574
+          ],
+          "history": [
+            {
+              "date": "2026-09-13",
+              "race_id": "2026-09-13_R5C5",
+              "venue": "REIMS",
+              "distance_m": 2550,
+              "rank": 1,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.018459474745238257,
+            1.6094379124341003,
+            0.1550934377800644,
+            0.09346638017227574
+          ],
+          "connection_features": {
+            "driver": [
+              0.12654201798941822,
+              4.727387818712341,
+              0.13046913196501828,
+              4.852030263919617
+            ],
+            "trainer": [
+              -0.07437691449981156,
+              2.639057329615259,
+              0.24155164207520227,
+              2.9444389791664403
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "B. ROCHARD",
+            "trainer": "L. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 6,
+          "name": "NORD CALITY",
+          "horse_id": "pedigree:('NORD CALITY', 'CALITY SAUTREUIL', 'DOLLAR MACKER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.70805020110221,
+            0.2,
+            0.05883287281530704,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834
+          ],
+          "history": [
+            {
+              "date": "2026-09-30",
+              "race_id": "2026-09-30_R5C6",
+              "venue": "LE CROISE LAROCHE",
+              "distance_m": 2800,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05883287281530704,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834
+          ],
+          "connection_features": {
+            "driver": [
+              0.04819931949549041,
+              4.143134726391533,
+              0.16321464945008266,
+              4.304065093204169
+            ],
+            "trainer": [
+              0.03334137065576466,
+              3.044522437723423,
+              0.16695261392692295,
+              3.1780538303479458
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "P.Y. VERVA",
+            "trainer": "P.Y. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 7,
+          "name": "NIRVAGO DE LA COUR",
+          "horse_id": "pedigree:('NIRVAGO DE LA COUR', 'COSTAVA', 'UZO JOSSELYN')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.8066624897703196,
+            0.2,
+            0.006871654548224746,
+            1.791759469228055,
+            0.14475387526139344,
+            0.08796312823358234
+          ],
+          "history": [
+            {
+              "date": "2026-08-31",
+              "race_id": "2026-08-31_R4C7",
+              "venue": "VINCENNES",
+              "distance_m": 2850,
+              "rank": 4,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.006871654548224746,
+            1.791759469228055,
+            0.14475387526139344,
+            0.08796312823358234
+          ],
+          "connection_features": {
+            "driver": [
+              0.0031459052514942066,
+              3.5553480614894135,
+              0.16964937331429478,
+              3.713572066704308
+            ],
+            "trainer": [
+              -0.0005411312147653349,
+              1.791759469228055,
+              0.19919086149452642,
+              1.9459101490553132
+            ],
+            "equipment": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "R. LAMY",
+            "trainer": "MME EMELINE DESMIGNEUX"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_POSTERIEURS"
+        },
+        {
+          "number": 8,
+          "name": "NINA HAGEN D'OR",
+          "horse_id": "pedigree:(\"NINA HAGEN D'OR\", \"GRACIOUS D'OR\", 'EXIT MONEY')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.091042453358316,
+            0.2,
+            0.05293632536109648,
+            2.0794415416798357,
+            0.2938718156629001,
+            0.09712016259671936
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05293632536109648,
+            2.0794415416798357,
+            0.2938718156629001,
+            0.09712016259671936
+          ],
+          "connection_features": {
+            "driver": [
+              0.16422060075153436,
+              4.634728988229636,
+              0.18179834999206726,
+              4.8283137373023015
+            ],
+            "trainer": [
+              0.03630800050485445,
+              2.5649493574615367,
+              0.15693825451083898,
+              2.639057329615259
+            ],
+            "equipment": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.00213735873043579,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "E. RAFFIN",
+            "trainer": "A. BUISSON"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_POSTERIEURS"
+        },
+        {
+          "number": 9,
+          "name": "NACOMA RUN",
+          "horse_id": "pedigree:('NACOMA RUN', 'TACOMA JET', 'GOLDEN BRIDGE')",
+          "non_runner": false,
+          "features": [
+            0.5,
+            0.5,
+            0.0,
+            3.091042453358316,
+            0.4,
+            0.1000448135695759,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": 1,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-28",
+              "race_id": "2026-08-28_R1C7",
+              "venue": "CABOURG",
+              "distance_m": 2750,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.1000448135695759,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063
+          ],
+          "connection_features": {
+            "driver": [
+              0.08434492714228678,
+              2.4849066497880004,
+              0.211145952907579,
+              2.70805020110221
+            ],
+            "trainer": [
+              0.08015899127726855,
+              2.70805020110221,
+              0.19402601077993747,
+              2.8903717578961645
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "L.J. LEGROS",
+            "trainer": "J.M. LEGROS"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 10,
+          "name": "NO LIMIT DELO",
+          "horse_id": "pedigree:('NO LIMIT DELO', 'ETINCELLE DELO', 'CHARLY DU NOYER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            3.2188758248682006,
+            0.2,
+            -0.02458564061887097,
+            1.6094379124341003,
+            0.2607067580575564,
+            0.10647804091777222
+          ],
+          "history": [
+            {
+              "date": "2026-09-20",
+              "race_id": "2026-09-20_R11C6",
+              "venue": "RAMBOUILLET",
+              "distance_m": 2800,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.02458564061887097,
+            1.6094379124341003,
+            0.2607067580575564,
+            0.10647804091777222
+          ],
+          "connection_features": {
+            "driver": [
+              0.050510966279614426,
+              1.3862943611198906,
+              0.27611393841760334,
+              1.9459101490553132
+            ],
+            "trainer": [
+              0.030978236051658874,
+              2.772588722239781,
+              0.20971698458609453,
+              2.995732273553991
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "TH. LAMARE",
+            "trainer": "TH. LAMARE"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS"
+        },
+        {
+          "number": 11,
+          "name": "NELSON THORIS",
+          "horse_id": "pedigree:('NELSON THORIS', \"GAZELLE D'YVEL\", 'GOLDEN BRIDGE')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.5,
+            3.091042453358316,
+            0.4,
+            -0.03432638955417171,
+            1.0986122886681096,
+            0.24394677914776167,
+            0.11477827945689614
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            },
+            {
+              "date": "2026-08-24",
+              "race_id": "2026-08-24_R1C4",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 8,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.03432638955417171,
+            1.0986122886681096,
+            0.24394677914776167,
+            0.11477827945689614
+          ],
+          "connection_features": {
+            "driver": [
+              0.09962852893104393,
+              4.1588830833596715,
+              0.24932345141769224,
+              4.454347296253507
+            ],
+            "trainer": [
+              0.03630800050485445,
+              2.5649493574615367,
+              0.15693825451083898,
+              2.639057329615259
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.01626567229565013,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "Y. LEBOURGEOIS",
+            "trainer": "A. BUISSON"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS"
+        },
+        {
+          "number": 12,
+          "name": "NUAGE DE BEAUCAMPS",
+          "horse_id": "pedigree:('NUAGE DE BEAUCAMPS', \"REINE D'AWAGNE\", 'GALIUS')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.70805020110221,
+            0.2,
+            -0.04955066869164617,
+            1.3862943611198906,
+            0.16702370222468474,
+            0.09968764972934374
+          ],
+          "history": [
+            {
+              "date": "2026-09-30",
+              "race_id": "2026-09-30_R5C6",
+              "venue": "LE CROISE LAROCHE",
+              "distance_m": 2800,
+              "rank": 7,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.04955066869164617,
+            1.3862943611198906,
+            0.16702370222468474,
+            0.09968764972934374
+          ],
+          "connection_features": {
+            "driver": [
+              0.00798681944945437,
+              3.6635616461296463,
+              0.14569781585488392,
+              3.784189633918261
+            ],
+            "trainer": [
+              0.007498935482519274,
+              1.0986122886681096,
+              0.18995283631171303,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "F. OUVRIE",
+            "trainer": "P. DESPREZ"
+          },
+          "equipment_code": "PROTEGE_POSTERIEURS"
+        },
+        {
+          "number": 13,
+          "name": "NONONINO",
+          "horse_id": "pedigree:('NONONINO', 'EDARLING', 'FACE TIME BOURBON')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            1.0,
+            0.0,
+            3.091042453358316,
+            0.4,
+            0.05565604134406071,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": 2,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-25",
+              "race_id": "2026-08-25_R4C3",
+              "venue": "VICHY",
+              "distance_m": 2950,
+              "rank": 3,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05565604134406071,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063
+          ],
+          "connection_features": {
+            "driver": [
+              0.07641300997561337,
+              4.02535169073515,
+              0.21309958220952982,
+              4.2626798770413155
+            ],
+            "trainer": [
+              0.07650533588839628,
+              3.5553480614894135,
+              0.2779559767950389,
+              3.912023005428146
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.02168939261870711,
+              1.0986122886681096
+            ]
+          },
+          "connection_entities": {
+            "driver": "A. ABRIVARD",
+            "trainer": "L.CL. ABRIVARD"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS"
+        },
+        {
+          "number": 14,
+          "name": "NET MONEY",
+          "horse_id": "pedigree:('NET MONEY', 'GUINNESS DES PRES', 'IN THE MONEY')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.4965075614664802,
+            0.4,
+            -0.07832874569443746,
+            2.3978952727983707,
+            0.22483948386612618,
+            0.08521704894976029
+          ],
+          "history": [
+            {
+              "date": "2026-09-12",
+              "race_id": "2026-09-12_R1C5",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 11,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-29",
+              "race_id": "2026-08-29_R1C7",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 7,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.07832874569443746,
+            2.3978952727983707,
+            0.22483948386612618,
+            0.08521704894976029
+          ],
+          "connection_features": {
+            "driver": [
+              0.06168526283255605,
+              2.302585092994046,
+              0.19932136770508666,
+              2.4849066497880004
+            ],
+            "trainer": [
+              0.07802520582926738,
+              3.4339872044851463,
+              0.20998211032513253,
+              3.6635616461296463
+            ],
+            "equipment": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.01706989477571247,
+              1.0986122886681096
+            ]
+          },
+          "connection_entities": {
+            "driver": "CL. DUVALDESTIN",
+            "trainer": "TH. DUVALDESTIN"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_POSTERIEURS"
+        },
+        {
+          "number": 15,
+          "name": "NYASSA DAXEL",
+          "horse_id": "pedigree:('NYASSA DAXEL', 'AXELLE DARK', 'EARL SIMON')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.5,
+            0.0,
+            3.4965075614664802,
+            0.4,
+            0.03952638371001044,
+            2.0794415416798357,
+            0.1761837849400501,
+            0.08740199289075865
+          ],
+          "history": [
+            {
+              "date": "2026-09-12",
+              "race_id": "2026-09-12_R1C5",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 12,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-29",
+              "race_id": "2026-08-29_R1C3",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 2,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.03952638371001044,
+            2.0794415416798357,
+            0.1761837849400501,
+            0.08740199289075865
+          ],
+          "connection_features": {
+            "driver": [
+              0.07144872880738838,
+              3.9318256327243257,
+              0.19730441949826444,
+              4.143134726391533
+            ],
+            "trainer": [
+              0.040532851418223964,
+              2.8903717578961645,
+              0.21854672378232587,
+              3.1354942159291497
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "P.PH. PLOQUIN",
+            "trainer": "J.G. VAN EECKHAUTE"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 16,
+          "name": "NOELA JOSSELYN",
+          "horse_id": "pedigree:('NOELA JOSSELYN', 'FELINA JOSSELYN', 'FACE TIME BOURBON')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.5,
+            3.4965075614664802,
+            0.4,
+            0.013483927117297232,
+            2.3978952727983707,
+            0.1896049149509501,
+            0.08173522767139853
+          ],
+          "history": [
+            {
+              "date": "2026-09-12",
+              "race_id": "2026-09-12_R1C5",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            },
+            {
+              "date": "2026-08-29",
+              "race_id": "2026-08-29_R1C3",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.013483927117297232,
+            2.3978952727983707,
+            0.1896049149509501,
+            0.08173522767139853
+          ],
+          "connection_features": {
+            "driver": [
+              0.006759706159773388,
+              3.2188758248682006,
+              0.2625733777566238,
+              3.5553480614894135
+            ],
+            "trainer": [
+              -0.08971902398973866,
+              3.2188758248682006,
+              0.23421081536264782,
+              3.4965075614664802
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "TH. DROMIGNY",
+            "trainer": "N. BAZIRE"
+          },
+          "equipment_code": "UNKNOWN"
+        }
+      ]
+    },
+    "combined": {
+      "probabilities": {
+        "1": 0.010249380294211352,
+        "2": 0.012532779143410309,
+        "3": 0.02210749340598227,
+        "4": 0.03832581794099541,
+        "5": 0.1086127657018696,
+        "6": 0.0858670067535624,
+        "7": 0.038085540772824625,
+        "8": 0.14510475624388633,
+        "9": 0.14338393060241575,
+        "10": 0.04399203612983508,
+        "11": 0.05933751207597776,
+        "12": 0.027859152344049072,
+        "13": 0.12940801077058636,
+        "14": 0.02457697007642428,
+        "15": 0.08244217452191309,
+        "16": 0.028114673222056328
+      },
+      "runners": [
+        {
+          "number": 1,
+          "name": "NARCOS SANTIGNY",
+          "horse_id": "pedigree:('NARCOS SANTIGNY', \"IDOLE D'ATOUT\", 'FEELING CASH')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            2.8903717578961645,
+            0.2,
+            -0.03717097574359247,
+            0.0,
+            0.2883007389928092,
+            0.13076168618553416,
+            -0.02434475593316803,
+            0.6931471805599453,
+            0.2354073817662585,
+            1.0986122886681096,
+            -0.02434475593316803,
+            0.6931471805599453,
+            0.2354073817662585,
+            1.0986122886681096,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-27",
+              "race_id": "2026-09-27_R13C7",
+              "venue": "NANCY-BRABOIS",
+              "distance_m": 2600,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.03717097574359247,
+            0.0,
+            0.2883007389928092,
+            0.13076168618553416
+          ],
+          "connection_features": {
+            "driver": [
+              -0.02434475593316803,
+              0.6931471805599453,
+              0.2354073817662585,
+              1.0986122886681096
+            ],
+            "trainer": [
+              -0.02434475593316803,
+              0.6931471805599453,
+              0.2354073817662585,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. BOUCHEZ",
+            "trainer": "M. BOUCHEZ"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 2,
+          "name": "NIKITA DE MONCHEL",
+          "horse_id": "pedigree:('NIKITA DE MONCHEL', 'IVANKA DE MONCHEL', \"ROLLING D'HERIPRE\")",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.5,
+            0.0,
+            3.367295829986474,
+            0.4,
+            -0.10050235965247488,
+            1.9459101490553132,
+            0.27217411204846853,
+            0.09952270212848328,
+            -0.008342842899493632,
+            1.791759469228055,
+            0.16715849595430746,
+            1.791759469228055,
+            0.049825018003527094,
+            1.3862943611198906,
+            0.18169401734163856,
+            1.3862943611198906,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-16",
+              "race_id": "2026-09-16_R3C4",
+              "venue": "CABOURG",
+              "distance_m": 2750,
+              "rank": 2,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-09-05",
+              "race_id": "2026-09-05_R9C7",
+              "venue": "AMIENS",
+              "distance_m": 2400,
+              "rank": 7,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.10050235965247488,
+            1.9459101490553132,
+            0.27217411204846853,
+            0.09952270212848328
+          ],
+          "connection_features": {
+            "driver": [
+              -0.008342842899493632,
+              1.791759469228055,
+              0.16715849595430746,
+              1.791759469228055
+            ],
+            "trainer": [
+              0.049825018003527094,
+              1.3862943611198906,
+              0.18169401734163856,
+              1.3862943611198906
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "E. HERBEAU",
+            "trainer": "F. DELENCLOS"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 3,
+          "name": "NOTRE SAXO D'AURE",
+          "horse_id": "pedigree:(\"NOTRE SAXO D'AURE\", \"INSATIABLE D'AURE\", 'SAXO DE VANDEL')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.833213344056216,
+            0.2,
+            -0.06830536452453508,
+            2.1972245773362196,
+            0.12062822938449454,
+            0.07471949638483227,
+            -0.031698170884091874,
+            3.713572066704308,
+            0.20255660569796696,
+            3.9318256327243257,
+            0.03334137065576466,
+            3.044522437723423,
+            0.16695261392692295,
+            3.1780538303479458,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-28",
+              "race_id": "2026-09-28_R1C3",
+              "venue": "ENGHIEN",
+              "distance_m": 2875,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.06830536452453508,
+            2.1972245773362196,
+            0.12062822938449454,
+            0.07471949638483227
+          ],
+          "connection_features": {
+            "driver": [
+              -0.031698170884091874,
+              3.713572066704308,
+              0.20255660569796696,
+              3.9318256327243257
+            ],
+            "trainer": [
+              0.03334137065576466,
+              3.044522437723423,
+              0.16695261392692295,
+              3.1780538303479458
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "F. NIVARD",
+            "trainer": "P.Y. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 4,
+          "name": "NOURKIS",
+          "horse_id": "pedigree:('NOURKIS', 'BELLA DU VIVIER', 'SINGALO')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            2.70805020110221,
+            0.2,
+            0.04695865126891794,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834,
+            -0.027881066745296286,
+            3.1354942159291497,
+            0.286395516959579,
+            3.5263605246161616,
+            -0.02812666972175102,
+            2.1972245773362196,
+            0.20596541329525622,
+            2.3978952727983707,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-30",
+              "race_id": "2026-09-30_R5C6",
+              "venue": "LE CROISE LAROCHE",
+              "distance_m": 2800,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.04695865126891794,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834
+          ],
+          "connection_features": {
+            "driver": [
+              -0.027881066745296286,
+              3.1354942159291497,
+              0.286395516959579,
+              3.5263605246161616
+            ],
+            "trainer": [
+              -0.02812666972175102,
+              2.1972245773362196,
+              0.20596541329525622,
+              2.3978952727983707
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. VERVA",
+            "trainer": "G. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 5,
+          "name": "NANS DE FLEUR",
+          "horse_id": "pedigree:('NANS DE FLEUR', 'ARIANE DES PRES', 'COUP DE POKER')",
+          "non_runner": false,
+          "features": [
+            1.0,
+            1.0,
+            0.0,
+            3.4657359027997265,
+            0.2,
+            0.018459474745238257,
+            1.6094379124341003,
+            0.1550934377800644,
+            0.09346638017227574,
+            0.12654201798941822,
+            4.727387818712341,
+            0.13046913196501828,
+            4.852030263919617,
+            -0.07437691449981156,
+            2.639057329615259,
+            0.24155164207520227,
+            2.9444389791664403,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-13",
+              "race_id": "2026-09-13_R5C5",
+              "venue": "REIMS",
+              "distance_m": 2550,
+              "rank": 1,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.018459474745238257,
+            1.6094379124341003,
+            0.1550934377800644,
+            0.09346638017227574
+          ],
+          "connection_features": {
+            "driver": [
+              0.12654201798941822,
+              4.727387818712341,
+              0.13046913196501828,
+              4.852030263919617
+            ],
+            "trainer": [
+              -0.07437691449981156,
+              2.639057329615259,
+              0.24155164207520227,
+              2.9444389791664403
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "B. ROCHARD",
+            "trainer": "L. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 6,
+          "name": "NORD CALITY",
+          "horse_id": "pedigree:('NORD CALITY', 'CALITY SAUTREUIL', 'DOLLAR MACKER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.70805020110221,
+            0.2,
+            0.05883287281530704,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834,
+            0.04819931949549041,
+            4.143134726391533,
+            0.16321464945008266,
+            4.304065093204169,
+            0.03334137065576466,
+            3.044522437723423,
+            0.16695261392692295,
+            3.1780538303479458,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-30",
+              "race_id": "2026-09-30_R5C6",
+              "venue": "LE CROISE LAROCHE",
+              "distance_m": 2800,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05883287281530704,
+            1.9459101490553132,
+            0.23173934049560568,
+            0.09680045089125834
+          ],
+          "connection_features": {
+            "driver": [
+              0.04819931949549041,
+              4.143134726391533,
+              0.16321464945008266,
+              4.304065093204169
+            ],
+            "trainer": [
+              0.03334137065576466,
+              3.044522437723423,
+              0.16695261392692295,
+              3.1780538303479458
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "P.Y. VERVA",
+            "trainer": "P.Y. VERVA"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 7,
+          "name": "NIRVAGO DE LA COUR",
+          "horse_id": "pedigree:('NIRVAGO DE LA COUR', 'COSTAVA', 'UZO JOSSELYN')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.8066624897703196,
+            0.2,
+            0.006871654548224746,
+            1.791759469228055,
+            0.14475387526139344,
+            0.08796312823358234,
+            0.0031459052514942066,
+            3.5553480614894135,
+            0.16964937331429478,
+            3.713572066704308,
+            -0.0005411312147653349,
+            1.791759469228055,
+            0.19919086149452642,
+            1.9459101490553132,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-08-31",
+              "race_id": "2026-08-31_R4C7",
+              "venue": "VINCENNES",
+              "distance_m": 2850,
+              "rank": 4,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.006871654548224746,
+            1.791759469228055,
+            0.14475387526139344,
+            0.08796312823358234
+          ],
+          "connection_features": {
+            "driver": [
+              0.0031459052514942066,
+              3.5553480614894135,
+              0.16964937331429478,
+              3.713572066704308
+            ],
+            "trainer": [
+              -0.0005411312147653349,
+              1.791759469228055,
+              0.19919086149452642,
+              1.9459101490553132
+            ],
+            "equipment": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "R. LAMY",
+            "trainer": "MME EMELINE DESMIGNEUX"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_POSTERIEURS"
+        },
+        {
+          "number": 8,
+          "name": "NINA HAGEN D'OR",
+          "horse_id": "pedigree:(\"NINA HAGEN D'OR\", \"GRACIOUS D'OR\", 'EXIT MONEY')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.091042453358316,
+            0.2,
+            0.05293632536109648,
+            2.0794415416798357,
+            0.2938718156629001,
+            0.09712016259671936,
+            0.16422060075153436,
+            4.634728988229636,
+            0.18179834999206726,
+            4.8283137373023015,
+            0.03630800050485445,
+            2.5649493574615367,
+            0.15693825451083898,
+            2.639057329615259,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.00213735873043579,
+            0.6931471805599453
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05293632536109648,
+            2.0794415416798357,
+            0.2938718156629001,
+            0.09712016259671936
+          ],
+          "connection_features": {
+            "driver": [
+              0.16422060075153436,
+              4.634728988229636,
+              0.18179834999206726,
+              4.8283137373023015
+            ],
+            "trainer": [
+              0.03630800050485445,
+              2.5649493574615367,
+              0.15693825451083898,
+              2.639057329615259
+            ],
+            "equipment": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.00213735873043579,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "E. RAFFIN",
+            "trainer": "A. BUISSON"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_POSTERIEURS"
+        },
+        {
+          "number": 9,
+          "name": "NACOMA RUN",
+          "horse_id": "pedigree:('NACOMA RUN', 'TACOMA JET', 'GOLDEN BRIDGE')",
+          "non_runner": false,
+          "features": [
+            0.5,
+            0.5,
+            0.0,
+            3.091042453358316,
+            0.4,
+            0.1000448135695759,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063,
+            0.08434492714228678,
+            2.4849066497880004,
+            0.211145952907579,
+            2.70805020110221,
+            0.08015899127726855,
+            2.70805020110221,
+            0.19402601077993747,
+            2.8903717578961645,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": 1,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-28",
+              "race_id": "2026-08-28_R1C7",
+              "venue": "CABOURG",
+              "distance_m": 2750,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.1000448135695759,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063
+          ],
+          "connection_features": {
+            "driver": [
+              0.08434492714228678,
+              2.4849066497880004,
+              0.211145952907579,
+              2.70805020110221
+            ],
+            "trainer": [
+              0.08015899127726855,
+              2.70805020110221,
+              0.19402601077993747,
+              2.8903717578961645
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "L.J. LEGROS",
+            "trainer": "J.M. LEGROS"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 10,
+          "name": "NO LIMIT DELO",
+          "horse_id": "pedigree:('NO LIMIT DELO', 'ETINCELLE DELO', 'CHARLY DU NOYER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            3.2188758248682006,
+            0.2,
+            -0.02458564061887097,
+            1.6094379124341003,
+            0.2607067580575564,
+            0.10647804091777222,
+            0.050510966279614426,
+            1.3862943611198906,
+            0.27611393841760334,
+            1.9459101490553132,
+            0.030978236051658874,
+            2.772588722239781,
+            0.20971698458609453,
+            2.995732273553991,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-20",
+              "race_id": "2026-09-20_R11C6",
+              "venue": "RAMBOUILLET",
+              "distance_m": 2800,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.02458564061887097,
+            1.6094379124341003,
+            0.2607067580575564,
+            0.10647804091777222
+          ],
+          "connection_features": {
+            "driver": [
+              0.050510966279614426,
+              1.3862943611198906,
+              0.27611393841760334,
+              1.9459101490553132
+            ],
+            "trainer": [
+              0.030978236051658874,
+              2.772588722239781,
+              0.20971698458609453,
+              2.995732273553991
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "TH. LAMARE",
+            "trainer": "TH. LAMARE"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS"
+        },
+        {
+          "number": 11,
+          "name": "NELSON THORIS",
+          "horse_id": "pedigree:('NELSON THORIS', \"GAZELLE D'YVEL\", 'GOLDEN BRIDGE')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.5,
+            3.091042453358316,
+            0.4,
+            -0.03432638955417171,
+            1.0986122886681096,
+            0.24394677914776167,
+            0.11477827945689614,
+            0.09962852893104393,
+            4.1588830833596715,
+            0.24932345141769224,
+            4.454347296253507,
+            0.03630800050485445,
+            2.5649493574615367,
+            0.15693825451083898,
+            2.639057329615259,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.01626567229565013,
+            0.6931471805599453
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            },
+            {
+              "date": "2026-08-24",
+              "race_id": "2026-08-24_R1C4",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 8,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.03432638955417171,
+            1.0986122886681096,
+            0.24394677914776167,
+            0.11477827945689614
+          ],
+          "connection_features": {
+            "driver": [
+              0.09962852893104393,
+              4.1588830833596715,
+              0.24932345141769224,
+              4.454347296253507
+            ],
+            "trainer": [
+              0.03630800050485445,
+              2.5649493574615367,
+              0.15693825451083898,
+              2.639057329615259
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.01626567229565013,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "Y. LEBOURGEOIS",
+            "trainer": "A. BUISSON"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS"
+        },
+        {
+          "number": 12,
+          "name": "NUAGE DE BEAUCAMPS",
+          "horse_id": "pedigree:('NUAGE DE BEAUCAMPS', \"REINE D'AWAGNE\", 'GALIUS')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.70805020110221,
+            0.2,
+            -0.04955066869164617,
+            1.3862943611198906,
+            0.16702370222468474,
+            0.09968764972934374,
+            0.00798681944945437,
+            3.6635616461296463,
+            0.14569781585488392,
+            3.784189633918261,
+            0.007498935482519274,
+            1.0986122886681096,
+            0.18995283631171303,
+            1.0986122886681096,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-30",
+              "race_id": "2026-09-30_R5C6",
+              "venue": "LE CROISE LAROCHE",
+              "distance_m": 2800,
+              "rank": 7,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.04955066869164617,
+            1.3862943611198906,
+            0.16702370222468474,
+            0.09968764972934374
+          ],
+          "connection_features": {
+            "driver": [
+              0.00798681944945437,
+              3.6635616461296463,
+              0.14569781585488392,
+              3.784189633918261
+            ],
+            "trainer": [
+              0.007498935482519274,
+              1.0986122886681096,
+              0.18995283631171303,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "F. OUVRIE",
+            "trainer": "P. DESPREZ"
+          },
+          "equipment_code": "PROTEGE_POSTERIEURS"
+        },
+        {
+          "number": 13,
+          "name": "NONONINO",
+          "horse_id": "pedigree:('NONONINO', 'EDARLING', 'FACE TIME BOURBON')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            1.0,
+            0.0,
+            3.091042453358316,
+            0.4,
+            0.05565604134406071,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063,
+            0.07641300997561337,
+            4.02535169073515,
+            0.21309958220952982,
+            4.2626798770413155,
+            0.07650533588839628,
+            3.5553480614894135,
+            0.2779559767950389,
+            3.912023005428146,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.02168939261870711,
+            1.0986122886681096
+          ],
+          "history": [
+            {
+              "date": "2026-09-23",
+              "race_id": "2026-09-23_R1C4",
+              "venue": "ARGENTAN",
+              "distance_m": 2875,
+              "rank": 2,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-25",
+              "race_id": "2026-08-25_R4C3",
+              "venue": "VICHY",
+              "distance_m": 2950,
+              "rank": 3,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05565604134406071,
+            1.791759469228055,
+            0.19820675805755636,
+            0.09668652777917063
+          ],
+          "connection_features": {
+            "driver": [
+              0.07641300997561337,
+              4.02535169073515,
+              0.21309958220952982,
+              4.2626798770413155
+            ],
+            "trainer": [
+              0.07650533588839628,
+              3.5553480614894135,
+              0.2779559767950389,
+              3.912023005428146
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.02168939261870711,
+              1.0986122886681096
+            ]
+          },
+          "connection_entities": {
+            "driver": "A. ABRIVARD",
+            "trainer": "L.CL. ABRIVARD"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS"
+        },
+        {
+          "number": 14,
+          "name": "NET MONEY",
+          "horse_id": "pedigree:('NET MONEY', 'GUINNESS DES PRES', 'IN THE MONEY')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.4965075614664802,
+            0.4,
+            -0.07832874569443746,
+            2.3978952727983707,
+            0.22483948386612618,
+            0.08521704894976029,
+            0.06168526283255605,
+            2.302585092994046,
+            0.19932136770508666,
+            2.4849066497880004,
+            0.07802520582926738,
+            3.4339872044851463,
+            0.20998211032513253,
+            3.6635616461296463,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.01706989477571247,
+            1.0986122886681096
+          ],
+          "history": [
+            {
+              "date": "2026-09-12",
+              "race_id": "2026-09-12_R1C5",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 11,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-29",
+              "race_id": "2026-08-29_R1C7",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 7,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.07832874569443746,
+            2.3978952727983707,
+            0.22483948386612618,
+            0.08521704894976029
+          ],
+          "connection_features": {
+            "driver": [
+              0.06168526283255605,
+              2.302585092994046,
+              0.19932136770508666,
+              2.4849066497880004
+            ],
+            "trainer": [
+              0.07802520582926738,
+              3.4339872044851463,
+              0.20998211032513253,
+              3.6635616461296463
+            ],
+            "equipment": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.01706989477571247,
+              1.0986122886681096
+            ]
+          },
+          "connection_entities": {
+            "driver": "CL. DUVALDESTIN",
+            "trainer": "TH. DUVALDESTIN"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_POSTERIEURS"
+        },
+        {
+          "number": 15,
+          "name": "NYASSA DAXEL",
+          "horse_id": "pedigree:('NYASSA DAXEL', 'AXELLE DARK', 'EARL SIMON')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.5,
+            0.0,
+            3.4965075614664802,
+            0.4,
+            0.03952638371001044,
+            2.0794415416798357,
+            0.1761837849400501,
+            0.08740199289075865,
+            0.07144872880738838,
+            3.9318256327243257,
+            0.19730441949826444,
+            4.143134726391533,
+            0.040532851418223964,
+            2.8903717578961645,
+            0.21854672378232587,
+            3.1354942159291497,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-12",
+              "race_id": "2026-09-12_R1C5",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 12,
+              "status": "",
+              "dq": false
+            },
+            {
+              "date": "2026-08-29",
+              "race_id": "2026-08-29_R1C3",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 2,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.03952638371001044,
+            2.0794415416798357,
+            0.1761837849400501,
+            0.08740199289075865
+          ],
+          "connection_features": {
+            "driver": [
+              0.07144872880738838,
+              3.9318256327243257,
+              0.19730441949826444,
+              4.143134726391533
+            ],
+            "trainer": [
+              0.040532851418223964,
+              2.8903717578961645,
+              0.21854672378232587,
+              3.1354942159291497
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "P.PH. PLOQUIN",
+            "trainer": "J.G. VAN EECKHAUTE"
+          },
+          "equipment_code": "UNKNOWN"
+        },
+        {
+          "number": 16,
+          "name": "NOELA JOSSELYN",
+          "horse_id": "pedigree:('NOELA JOSSELYN', 'FELINA JOSSELYN', 'FACE TIME BOURBON')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.5,
+            3.4965075614664802,
+            0.4,
+            0.013483927117297232,
+            2.3978952727983707,
+            0.1896049149509501,
+            0.08173522767139853,
+            0.006759706159773388,
+            3.2188758248682006,
+            0.2625733777566238,
+            3.5553480614894135,
+            -0.08971902398973866,
+            3.2188758248682006,
+            0.23421081536264782,
+            3.4965075614664802,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0
+          ],
+          "history": [
+            {
+              "date": "2026-09-12",
+              "race_id": "2026-09-12_R1C5",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": null,
+              "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+              "dq": true
+            },
+            {
+              "date": "2026-08-29",
+              "race_id": "2026-08-29_R1C3",
+              "venue": "VINCENNES",
+              "distance_m": 2700,
+              "rank": 5,
+              "status": "",
+              "dq": false
+            }
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.013483927117297232,
+            2.3978952727983707,
+            0.1896049149509501,
+            0.08173522767139853
+          ],
+          "connection_features": {
+            "driver": [
+              0.006759706159773388,
+              3.2188758248682006,
+              0.2625733777566238,
+              3.5553480614894135
+            ],
+            "trainer": [
+              -0.08971902398973866,
+              3.2188758248682006,
+              0.23421081536264782,
+              3.4965075614664802
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "TH. DROMIGNY",
+            "trainer": "N. BAZIRE"
+          },
+          "equipment_code": "UNKNOWN"
+        }
+      ]
+    }
+  },
+  "history_quarantine": [
+    {
+      "race_id": "2026-07-04_R6C7",
+      "source_sha256": "2363c13c0a611da600b9636921aa635fd2cbf5c54e3e40933a13f11c0b69c7aa",
+      "reason": "Missing parents encoded INCONNU/INCONNUE create ten identity conflicts; entire race excluded from shadow history, raw evidence retained."
+    }
+  ],
+  "target_snapshot": {
+    "date": "2026-10-14",
+    "race_id": "2026-10-14_R1C3",
+    "venue": "REIMS",
+    "country": "FRA",
+    "start_type": "NON_PRECISE",
+    "distance_m": 2550,
+    "scheduled_start_ms": 1791983100000,
+    "course": {
+      "cached": false,
+      "departImminent": false,
+      "timezoneOffset": 7200000,
+      "numReunion": 1,
+      "numExterneReunion": 1,
+      "numOrdre": 3,
+      "numExterne": 3,
+      "heureDepart": 1791983100000,
+      "libelle": "PRIX OSCAR COLLARD",
+      "libelleCourt": "OSCAR COLLARD",
+      "montantPrix": 30000,
+      "parcours": "",
+      "distance": 2550,
+      "distanceUnit": "METRE",
+      "corde": "CORDE_DROITE",
+      "discipline": "ATTELE",
+      "specialite": "TROT_ATTELE",
+      "categorieParticularite": "NATIONALE",
+      "conditionSexe": "TOUS_CHEVAUX",
+      "nombreDeclaresPartants": 16,
+      "grandPrixNationalTrot": false,
+      "numSocieteMere": 510206,
+      "pariMultiCourses": false,
+      "pariSpecial": false,
+      "montantTotalOffert": 30000,
+      "montantOffert1er": 13500,
+      "montantOffert2eme": 7500,
+      "montantOffert3eme": 4200,
+      "montantOffert4eme": 2400,
+      "montantOffert5eme": 1500,
+      "conditions": "PRIX OSCAR COLLARD Course  6 Course B Course Nationale LeTROT Open des Régions - Grand Nord - 3 ans Course Qualificative 30.000. - Attelé. - 2.550 mètres. 13.500, 7.500, 4.200, 2.400, 1.500, 600, 300.- alloués par la S.E.T.F. Pour 3 ans, n'ayant pas été classés dans les trois premiers d'une épreuve de groupe I ou 1er d'une épreuve de groupe II dans les 6 mois précédant la course. - Recul de 25 m. à 38.000. Sont seules admises à driver les personnes ayant gagné au moins cinq courses (en étant titulaire d'une autorisation de monter à titre professionnel). En cas d'élimination, les poulains et pouliches entraînés dans les Fédératio s du Nord et de l'Est seront maintenus partants en priorité.",
+      "numCourseDedoublee": 0,
+      "paris": [
+        {
+          "poolId": "61ff4ead-dc72-49fc-b0a9-86c8ecc06d3e",
+          "typePari": "SIMPLE_GAGNANT",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "SIMPLE_GAGNANT",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 1,
+          "ordre": false,
+          "combine": true,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 300,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "08e0ab27-019f-4048-811f-104de35cf9b3",
+          "typePari": "E_SIMPLE_GAGNANT",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_SIMPLE_GAGNANT",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 1,
+          "ordre": false,
+          "combine": true,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 150,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "62154253-2548-49ed-94b7-ec328497a476",
+          "typePari": "SIMPLE_PLACE",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "SIMPLE_PLACE",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 1,
+          "ordre": false,
+          "combine": true,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 300,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "65c7af2f-a19b-4a6c-b33d-48e0e1a1c287",
+          "typePari": "E_SIMPLE_PLACE",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_SIMPLE_PLACE",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 1,
+          "ordre": false,
+          "combine": true,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 150,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "d3ed92d4-acb6-4e0a-9031-488dd56daddf",
+          "typePari": "COUPLE_GAGNANT",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "COUPLE_GAGNANT",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 2,
+          "ordre": false,
+          "combine": true,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true
+        },
+        {
+          "poolId": "8538089a-74a1-40f3-9c2d-825084b4b8e6",
+          "typePari": "E_COUPLE_GAGNANT",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_COUPLE_GAGNANT",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 2,
+          "ordre": false,
+          "combine": true,
+          "complement": true
+        },
+        {
+          "poolId": "9e2632ce-423e-48c8-b76e-3457495ed808",
+          "typePari": "COUPLE_PLACE",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "COUPLE_PLACE",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 2,
+          "ordre": false,
+          "combine": true,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true
+        },
+        {
+          "poolId": "001c9bfa-fc22-4a69-a93c-68dec97d3c45",
+          "typePari": "E_COUPLE_PLACE",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_COUPLE_PLACE",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 2,
+          "ordre": false,
+          "combine": true,
+          "complement": true
+        },
+        {
+          "poolId": "a42b7140-634f-4466-a937-10925e954cc7",
+          "typePari": "DEUX_SUR_QUATRE",
+          "miseBase": 300,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "DEUX_SUR_QUATRE",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 2,
+          "ordre": false,
+          "combine": true,
+          "valeursFlexiAutorisees": [
+            50,
+            25
+          ],
+          "complement": true,
+          "infosJackpot": {
+            "miseBase": 400,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 4
+            }
+          }
+        },
+        {
+          "poolId": "fe510eac-d005-47b8-85b7-c67a17b037a3",
+          "typePari": "E_DEUX_SUR_QUATRE",
+          "miseBase": 300,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_DEUX_SUR_QUATRE",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 2,
+          "ordre": false,
+          "combine": true,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true,
+          "infosJackpot": {
+            "miseBase": 400,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 4
+            }
+          }
+        },
+        {
+          "poolId": "d3d788f3-440b-401c-ba8f-28ab44c48cad",
+          "typePari": "TRIO",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "TRIO",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 3,
+          "ordre": false,
+          "combine": true,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true
+        },
+        {
+          "poolId": "045cebf1-c2bd-4c07-9bec-65c82125bf65",
+          "typePari": "E_TRIO",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "E_TRIO",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 3,
+          "ordre": false,
+          "combine": true,
+          "complement": true
+        },
+        {
+          "poolId": "b119a6cc-0fa1-41a7-a272-b02851f186eb",
+          "typePari": "MULTI",
+          "miseBase": 300,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "MULTI",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 4,
+          "ordre": false,
+          "combine": true,
+          "valeursFlexiAutorisees": [
+            50,
+            25
+          ],
+          "valeursRisqueAutorisees": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complement": false
+        },
+        {
+          "poolId": "86cd04b2-e29e-4dc9-8317-e20a640a2efa",
+          "typePari": "E_MULTI",
+          "miseBase": 300,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "E_MULTI",
+          "spotAutorise": true,
+          "nbChevauxReglementaire": 4,
+          "ordre": false,
+          "combine": true,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "valeursRisqueAutorisees": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complement": false
+        },
+        {
+          "poolId": "5648947e-781d-4e18-852e-7bf83dc8a92f",
+          "typePari": "REPORT_PLUS",
+          "miseBase": 100,
+          "miseMax": 9999999999,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "reportable": false,
+          "codePari": "REPORT_PLUS",
+          "spotAutorise": false,
+          "nbChevauxReglementaire": 1,
+          "ordre": false,
+          "combine": false,
+          "complement": false
+        },
+        {
+          "poolId": "a74535ae-ca16-4d5f-91fb-7a70f765422e",
+          "typePari": "E_REPORT_PLUS",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": false,
+          "audience": "NATIONAL",
+          "reportable": false,
+          "codePari": "E_REPORT_PLUS",
+          "spotAutorise": false,
+          "nbChevauxReglementaire": 1,
+          "ordre": false,
+          "combine": false,
+          "complement": false
+        }
+      ],
+      "statut": "PROGRAMMEE",
+      "categorieStatut": "A_PARTIR",
+      "participants": [],
+      "ecuries": [],
+      "rapportsDefinitifsDisponibles": false,
+      "isDepartImminent": false,
+      "isDepartAJPlusUn": false,
+      "cagnottes": [],
+      "pronosticsExpires": false,
+      "replayDisponible": false,
+      "hippodrome": {
+        "codeHippodrome": "REI",
+        "libelleCourt": "REIMS",
+        "libelleLong": "HIPPODROME DE REIMS"
+      },
+      "epcPourTousParis": true,
+      "courseTrackee": false,
+      "courseExclusiveInternet": false,
+      "formuleChampLibreIndisponible": false,
+      "hasEParis": true
+    },
+    "participants": [
+      {
+        "idCheval": "NARCOS SANTIGNY-IDOLE D'ATOUT-FEELING CASH",
+        "nom": "NARCOS SANTIGNY",
+        "numPmu": 1,
+        "age": 3,
+        "sexe": "MALES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "B. BACARISSE",
+        "entraineur": "M. BOUCHEZ",
+        "driver": "M. BOUCHEZ",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "DaDmDaDa",
+        "nombreCourses": 4,
+        "nombreVictoires": 0,
+        "nombrePlaces": 0,
+        "nombrePlacesSecond": 0,
+        "nombrePlacesTroisieme": 0,
+        "gainsParticipant": {
+          "gainsCarriere": 0,
+          "gainsVictoires": 0,
+          "gainsPlace": 0,
+          "gainsAnneeEnCours": 0,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "FEELING CASH",
+        "nomMere": "IDOLE D'ATOUT",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-1.png",
+        "eleveur": "S.C.E.A. EQUIBIO",
+        "allure": "TROT",
+        "avisEntraineur": "NEGATIF"
+      },
+      {
+        "idCheval": "NIKITA DE MONCHEL-IVANKA DE MONCHEL-ROLLING D'HERIPRE",
+        "nom": "NIKITA DE MONCHEL",
+        "numPmu": 2,
+        "age": 3,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "A. GANTIER",
+        "entraineur": "F. DELENCLOS",
+        "driver": "E. HERBEAU",
+        "driverChange": false,
+        "robe": {
+          "code": "022",
+          "libelleCourt": "BAI BR",
+          "libelleLong": "BAI BRUN"
+        },
+        "indicateurInedit": false,
+        "musique": "2a7a4aDa6a5a8aDaDa9a",
+        "nombreCourses": 12,
+        "nombreVictoires": 0,
+        "nombrePlaces": 5,
+        "nombrePlacesSecond": 1,
+        "nombrePlacesTroisieme": 0,
+        "gainsParticipant": {
+          "gainsCarriere": 754000,
+          "gainsVictoires": 0,
+          "gainsPlace": 754000,
+          "gainsAnneeEnCours": 754000,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "ROLLING D'HERIPRE",
+        "nomMere": "IVANKA DE MONCHEL",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-2.png",
+        "eleveur": "M. Bertrand CLERET",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NOTRE SAXO D'AURE-INSATIABLE D'AURE-SAXO DE VANDEL",
+        "nom": "NOTRE SAXO D'AURE",
+        "numPmu": 3,
+        "age": 3,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie Eric LEMAITRE",
+        "entraineur": "P.Y. VERVA",
+        "driver": "F. NIVARD",
+        "driverChange": false,
+        "robe": {
+          "code": "001",
+          "libelleCourt": "ALEZAN",
+          "libelleLong": "ALEZAN"
+        },
+        "indicateurInedit": false,
+        "musique": "5a6a3a2a5a6a2a5a",
+        "nombreCourses": 8,
+        "nombreVictoires": 0,
+        "nombrePlaces": 8,
+        "nombrePlacesSecond": 2,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 2004000,
+          "gainsVictoires": 0,
+          "gainsPlace": 2004000,
+          "gainsAnneeEnCours": 2004000,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "SAXO DE VANDEL",
+        "nomMere": "INSATIABLE D'AURE",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-3.png",
+        "eleveur": "Mme Danielle DELARUE",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NOURKIS-BELLA DU VIVIER-SINGALO",
+        "nom": "NOURKIS",
+        "numPmu": 4,
+        "age": 3,
+        "sexe": "MALES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "G. VERVA",
+        "entraineur": "G. VERVA",
+        "driver": "M. VERVA",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "DaDa6a1a2a3a4a3a",
+        "nombreCourses": 8,
+        "nombreVictoires": 1,
+        "nombrePlaces": 5,
+        "nombrePlacesSecond": 1,
+        "nombrePlacesTroisieme": 2,
+        "gainsParticipant": {
+          "gainsCarriere": 2258000,
+          "gainsVictoires": 1035000,
+          "gainsPlace": 1223000,
+          "gainsAnneeEnCours": 2258000,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "SINGALO",
+        "nomMere": "BELLA DU VIVIER",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-4.png",
+        "eleveur": "E.A.R.L. Guy VERVA",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NANS DE FLEUR-ARIANE DES PRES-COUP DE POKER",
+        "nom": "NANS DE FLEUR",
+        "numPmu": 5,
+        "age": 3,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Mme Caroline MULLER",
+        "entraineur": "L. VERVA",
+        "driver": "B. ROCHARD",
+        "driverChange": false,
+        "indicateurInedit": false,
+        "musique": "1a7a3a1a2a",
+        "nombreCourses": 5,
+        "nombreVictoires": 2,
+        "nombrePlaces": 3,
+        "nombrePlacesSecond": 1,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 2540000,
+          "gainsVictoires": 1845000,
+          "gainsPlace": 695000,
+          "gainsAnneeEnCours": 2540000,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "COUP DE POKER",
+        "nomMere": "ARIANE DES PRES",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-5.png",
+        "eleveur": "Elevage de FLEUR",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NORD CALITY-CALITY SAUTREUIL-DOLLAR MACKER",
+        "nom": "NORD CALITY",
+        "numPmu": 6,
+        "age": 3,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "J. CARPENTIER",
+        "entraineur": "P.Y. VERVA",
+        "driver": "P.Y. VERVA",
+        "driverChange": false,
+        "robe": {
+          "code": "001",
+          "libelleCourt": "ALEZAN",
+          "libelleLong": "ALEZAN"
+        },
+        "indicateurInedit": false,
+        "musique": "5a1a2a3aDa5a2aDa",
+        "nombreCourses": 8,
+        "nombreVictoires": 1,
+        "nombrePlaces": 5,
+        "nombrePlacesSecond": 2,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 2609000,
+          "gainsVictoires": 1035000,
+          "gainsPlace": 1574000,
+          "gainsAnneeEnCours": 2609000,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "DOLLAR MACKER",
+        "nomMere": "CALITY SAUTREUIL",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-6.png",
+        "eleveur": "M. James CARPENTIER",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NIRVAGO DE LA COUR-COSTAVA-UZO JOSSELYN",
+        "nom": "NIRVAGO DE LA COUR",
+        "numPmu": 7,
+        "age": 3,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie STARRY DREAM",
+        "entraineur": "Mme Emeline DESMIGNEUX",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "driver": "R. LAMY",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "4a5a1a3a9a(25)3a4a1a",
+        "nombreCourses": 8,
+        "nombreVictoires": 2,
+        "nombrePlaces": 5,
+        "nombrePlacesSecond": 0,
+        "nombrePlacesTroisieme": 2,
+        "gainsParticipant": {
+          "gainsCarriere": 3371500,
+          "gainsVictoires": 1822500,
+          "gainsPlace": 1549000,
+          "gainsAnneeEnCours": 2154000,
+          "gainsAnneePrecedente": 1217500
+        },
+        "nomPere": "UZO JOSSELYN",
+        "nomMere": "COSTAVA",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-7.png",
+        "eleveur": "S.C.E.A. de LA TOUR",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NINA HAGEN D'OR-GRACIOUS D'OR-EXIT MONEY",
+        "nom": "NINA HAGEN D'OR",
+        "numPmu": 8,
+        "age": 3,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "P. SCHMIDT",
+        "entraineur": "A. BUISSON",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "driver": "E. RAFFIN",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "5aDaDa3a8aDa2a4aDa2a",
+        "nombreCourses": 15,
+        "nombreVictoires": 0,
+        "nombrePlaces": 8,
+        "nombrePlacesSecond": 3,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 3510500,
+          "gainsVictoires": 0,
+          "gainsPlace": 3510500,
+          "gainsAnneeEnCours": 2937000,
+          "gainsAnneePrecedente": 573500
+        },
+        "nomPere": "EXIT MONEY",
+        "nomMere": "GRACIOUS D'OR",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-8.png",
+        "eleveur": "M. Bertrand GARNIER",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NACOMA RUN-TACOMA JET-GOLDEN BRIDGE",
+        "nom": "NACOMA RUN",
+        "numPmu": 9,
+        "age": 3,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie HARAS DES QUATRE VENTS",
+        "entraineur": "J.M. LEGROS",
+        "driver": "L.J. LEGROS",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "1a5a2a2aDa1a2a",
+        "nombreCourses": 7,
+        "nombreVictoires": 2,
+        "nombrePlaces": 4,
+        "nombrePlacesSecond": 3,
+        "nombrePlacesTroisieme": 0,
+        "gainsParticipant": {
+          "gainsCarriere": 3600000,
+          "gainsVictoires": 2025000,
+          "gainsPlace": 1575000,
+          "gainsAnneeEnCours": 3600000,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "GOLDEN BRIDGE",
+        "nomMere": "TACOMA JET",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-9.png",
+        "eleveur": "M. Patrick VAN NEVEL",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NO LIMIT DELO-ETINCELLE DELO-CHARLY DU NOYER",
+        "nom": "NO LIMIT DELO",
+        "numPmu": 10,
+        "age": 3,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie Jean-Pierre MICHOLET",
+        "entraineur": "TH. LAMARE",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "driver": "TH. LAMARE",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "DaDa0a5a4a3a(25)0aDa1a",
+        "nombreCourses": 10,
+        "nombreVictoires": 2,
+        "nombrePlaces": 3,
+        "nombrePlacesSecond": 0,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 3690000,
+          "gainsVictoires": 2250000,
+          "gainsPlace": 1440000,
+          "gainsAnneeEnCours": 1440000,
+          "gainsAnneePrecedente": 2250000
+        },
+        "nomPere": "CHARLY DU NOYER",
+        "nomMere": "ETINCELLE DELO",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2550,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-10.png",
+        "eleveur": "Mme Elodie MANGEARD DE BARROS",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NELSON THORIS-GAZELLE D'YVEL-GOLDEN BRIDGE",
+        "nom": "NELSON THORIS",
+        "numPmu": 11,
+        "age": 3,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "J. COTTEL",
+        "entraineur": "A. BUISSON",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "driver": "Y. LEBOURGEOIS",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "Da8a2aDm5mDm1m1m",
+        "nombreCourses": 8,
+        "nombreVictoires": 2,
+        "nombrePlaces": 2,
+        "nombrePlacesSecond": 1,
+        "nombrePlacesTroisieme": 0,
+        "gainsParticipant": {
+          "gainsCarriere": 4970000,
+          "gainsVictoires": 3870000,
+          "gainsPlace": 1100000,
+          "gainsAnneeEnCours": 4970000,
+          "gainsAnneePrecedente": 0
+        },
+        "nomPere": "GOLDEN BRIDGE",
+        "nomMere": "GAZELLE D'YVEL",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2575,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-11.png",
+        "eleveur": "M. Lionel BRANTHONNE",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NUAGE DE BEAUCAMPS-REINE D'AWAGNE-GALIUS",
+        "nom": "NUAGE DE BEAUCAMPS",
+        "numPmu": 12,
+        "age": 3,
+        "sexe": "MALES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "P. DESPREZ",
+        "entraineur": "P. DESPREZ",
+        "deferre": "PROTEGE_POSTERIEURS",
+        "driver": "F. OUVRIE",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "7a5a5a(25)5a1a1a1a",
+        "nombreCourses": 7,
+        "nombreVictoires": 3,
+        "nombrePlaces": 4,
+        "nombrePlacesSecond": 0,
+        "nombrePlacesTroisieme": 0,
+        "gainsParticipant": {
+          "gainsCarriere": 5827500,
+          "gainsVictoires": 4297500,
+          "gainsPlace": 1530000,
+          "gainsAnneeEnCours": 930000,
+          "gainsAnneePrecedente": 4897500
+        },
+        "nomPere": "GALIUS",
+        "nomMere": "REINE D'AWAGNE",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2575,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-12.png",
+        "eleveur": "M. Thierry DUCHAUSSOY",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NONONINO-EDARLING-FACE TIME BOURBON",
+        "nom": "NONONINO",
+        "numPmu": 13,
+        "age": 3,
+        "sexe": "MALES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie des CHARMES",
+        "entraineur": "L.CL. ABRIVARD",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "driver": "A. ABRIVARD",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "2a3aDa1aDm5a4a(25)4a1a",
+        "nombreCourses": 10,
+        "nombreVictoires": 3,
+        "nombrePlaces": 5,
+        "nombrePlacesSecond": 1,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 6017000,
+          "gainsVictoires": 3735000,
+          "gainsPlace": 2282000,
+          "gainsAnneeEnCours": 3288000,
+          "gainsAnneePrecedente": 2729000
+        },
+        "nomPere": "FACE TIME BOURBON",
+        "nomMere": "EDARLING",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2575,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-13.png",
+        "eleveur": "Ecurie des CHARMES",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NET MONEY-GUINNESS DES PRES-IN THE MONEY",
+        "nom": "NET MONEY",
+        "numPmu": 14,
+        "age": 3,
+        "sexe": "MALES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "CH. BOURRATIERE",
+        "entraineur": "TH. DUVALDESTIN",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "driver": "CL. DUVALDESTIN",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "0a7a3a6a6a5a7aDa4a6a",
+        "nombreCourses": 19,
+        "nombreVictoires": 3,
+        "nombrePlaces": 11,
+        "nombrePlacesSecond": 1,
+        "nombrePlacesTroisieme": 2,
+        "gainsParticipant": {
+          "gainsCarriere": 10009500,
+          "gainsVictoires": 4590000,
+          "gainsPlace": 5419500,
+          "gainsAnneeEnCours": 4530000,
+          "gainsAnneePrecedente": 5479500
+        },
+        "nomPere": "IN THE MONEY",
+        "nomMere": "GUINNESS DES PRES",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2575,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-14.png",
+        "eleveur": "Ecurie Thierry DUVALDESTIN",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NYASSA DAXEL-AXELLE DARK-EARL SIMON",
+        "nom": "NYASSA DAXEL",
+        "numPmu": 15,
+        "age": 3,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Mme Madeleine DECLERCQ LETELLIER",
+        "entraineur": "J.G. VAN EECKHAUTE",
+        "driver": "P.PH. PLOQUIN",
+        "driverChange": false,
+        "robe": {
+          "code": "022",
+          "libelleCourt": "BAI BR",
+          "libelleLong": "BAI BRUN"
+        },
+        "indicateurInedit": false,
+        "musique": "0a2a3aDa2a4a1a5a(25)1a",
+        "nombreCourses": 12,
+        "nombreVictoires": 2,
+        "nombrePlaces": 6,
+        "nombrePlacesSecond": 2,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 11023500,
+          "gainsVictoires": 3555000,
+          "gainsPlace": 7468500,
+          "gainsAnneeEnCours": 9476000,
+          "gainsAnneePrecedente": 1547500
+        },
+        "nomPere": "EARL SIMON",
+        "nomMere": "AXELLE DARK",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2575,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-15.png",
+        "eleveur": "M. Mathieu CATHERINE",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "NOELA JOSSELYN-FELINA JOSSELYN-FACE TIME BOURBON",
+        "nom": "NOELA JOSSELYN",
+        "numPmu": 16,
+        "age": 3,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie BERNARD",
+        "entraineur": "N. BAZIRE",
+        "driver": "TH. DROMIGNY",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "Da5a2a4a9a5aDa1a6a6a",
+        "nombreCourses": 19,
+        "nombreVictoires": 1,
+        "nombrePlaces": 14,
+        "nombrePlacesSecond": 4,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 14316000,
+          "gainsVictoires": 3150000,
+          "gainsPlace": 11166000,
+          "gainsAnneeEnCours": 10990000,
+          "gainsAnneePrecedente": 3326000
+        },
+        "nomPere": "FACE TIME BOURBON",
+        "nomMere": "FELINA JOSSELYN",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2575,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261014/REI/3/20261014-REI-3-16.png",
+        "eleveur": "Ecurie BERNARD",
+        "allure": "TROT",
+        "avisEntraineur": "NEGATIF"
+      }
+    ]
+  },
+  "evidence_manifest": "evidence/v5_shadow/20261013T195222447640Z/manifest.json",
+  "capture_code_sha256": "416337e5a083997871b6233e321d856f1fd7367a00b86d8bbf3f76848e491109",
+  "policy_sha256": "d85f7b6a5aba86e6cd8bdf77f8d45de8715d0478c1e4bbc52f7b63e14e252324",
+  "requires_runner_recheck": true,
+  "v1_changed": false
+}

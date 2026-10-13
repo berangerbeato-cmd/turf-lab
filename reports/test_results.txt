@@ -68,26 +68,14 @@ test_changed_field_never_renormalized_after_result (test_shadow.ShadowTests.test
 test_correct_scoring_and_dq (test_shadow.ShadowTests.test_correct_scoring_and_dq) ... ok
 test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_rejected) ... ok
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
-test_shadow_quarantine (unittest.loader._FailedTest.test_shadow_quarantine) ... ERROR
-
-======================================================================
-ERROR: test_shadow_quarantine (unittest.loader._FailedTest.test_shadow_quarantine)
-----------------------------------------------------------------------
-ImportError: Failed to import test module: test_shadow_quarantine
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
-    module = self._get_module_from_name(name)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
-    __import__(name)
-  File "/home/runner/work/turf-lab/turf-lab/tests/test_shadow_quarantine.py", line 7, in <module>
-    from scripts.shadow_connections import record_failure
-ImportError: cannot import name 'record_failure' from 'scripts.shadow_connections' (/home/runner/work/turf-lab/turf-lab/scripts/shadow_connections.py)
-
+test_coverage_is_not_lowered (test_shadow_quarantine.QuarantineTests.test_coverage_is_not_lowered) ... ok
+test_failure_preserves_current_rejections_and_saved_paths (test_shadow_quarantine.QuarantineTests.test_failure_preserves_current_rejections_and_saved_paths) ... ok
+test_preserves_raw_and_denominator (test_shadow_quarantine.QuarantineTests.test_preserves_raw_and_denominator) ... ok
+test_source_changes_and_missing_target_block (test_shadow_quarantine.QuarantineTests.test_source_changes_and_missing_target_block) ... ok
 
 ----------------------------------------------------------------------
-Ran 71 tests in 0.057s
+Ran 74 tests in 0.077s
 
-FAILED (errors=1, skipped=2)
+OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
