@@ -1,0 +1,116 @@
+name: Turf Lab fixed V6 holdout
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v6_holdout.yml'
+permissions:
+  contents: write
+concurrency:
+  group: turf-v6-holdout
+  cancel-in-progress: false
+jobs:
+  collect_development:
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        month: ['2025-06', '2025-07', '2025-08']
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect one bounded month using checkpoints
+        env:
+          MONTH: ${{ matrix.month }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.v6_holdout --month "$MONTH"
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save evidence models and reports
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence data models reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Checkpoint fixed V6 holdout collection'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v5-warmup-${{ matrix.month }}-${{ github.run_attempt }}
+          path: |
+            data/month_${{ matrix.month }}/manifest.json
+            reports/month_${{ matrix.month }}.json
+          retention-days: 7
+
+  evaluate:
+    needs: collect_development
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests and fixed comparison without fitting
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.v6_holdout --evaluate
+      - name: Save fixed holdout report
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save fixed V5 V6 holdout comparison'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v6-holdout-${{ github.run_attempt }}
+          path: |
+            reports/v6_holdout*.json
+            reports/V6_HOLDOUT.md
+          retention-days: 7
