@@ -34,6 +34,10 @@ test_future_and_same_day_excluded (test_month_history.MonthlyHistoryTests.test_f
 test_no_market_dependency_and_duplicate_rejected (test_month_history.MonthlyHistoryTests.test_no_market_dependency_and_duplicate_rejected) ... ok
 test_np_skipped_and_dq_preserved (test_month_history.MonthlyHistoryTests.test_np_skipped_and_dq_preserved) ... ok
 test_unknown_place_is_not_invented_non_placing (test_month_history.MonthlyHistoryTests.test_unknown_place_is_not_invented_non_placing) ... ok
+test_extended_fit_has_all_dimensions_and_normalized_probabilities (test_opposition.OppositionTests.test_extended_fit_has_all_dimensions_and_normalized_probabilities) ... ok
+test_new_year_resets_and_inputs_unchanged (test_opposition.OppositionTests.test_new_year_resets_and_inputs_unchanged) ... ok
+test_target_future_and_same_day_do_not_change_features (test_opposition.OppositionTests.test_target_future_and_same_day_do_not_change_features) ... ok
+test_unknown_np_and_dq_do_not_become_elo_losses (test_opposition.OppositionTests.test_unknown_np_and_dq_do_not_become_elo_losses) ... ok
 test_dq_no_invented_rank (test_pilot.PilotTests.test_dq_no_invented_rank) ... ok
 test_future_rejected (test_pilot.PilotTests.test_future_rejected) ... ok
 test_metrics_multiclass (test_pilot.PilotTests.test_metrics_multiclass) ... ok
@@ -46,7 +50,7 @@ test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_reje
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 46 tests in 0.042s
+Ran 50 tests in 0.057s
 
 OK
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
