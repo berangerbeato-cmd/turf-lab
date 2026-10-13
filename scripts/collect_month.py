@@ -40,13 +40,18 @@ def git_checkpoint(evidence, output):
     raise RuntimeError('Checkpoint push failed after three non-forcing attempts')
 
 
-def collect(month, store, output, checkpoint=None):
+def collect(month, store, output, checkpoint=None, through=None):
+    days = month_days(month)
+    if through is not None:
+        if through not in days:
+            raise ValueError('Through date must belong to month')
+        days = [day for day in days if day <= through]
     saved = output / 'manifest.json'
     if saved.exists():
         previous = json.loads(saved.read_text())
         if (previous.get('month') == month
                 and previous.get('status') in ('COLLECTED', 'COLLECTED_WITH_GAPS')
-                and [d['date'] for d in previous['days']] == month_days(month)
+                and [d['date'] for d in previous['days']] == days
                 and all(d['status'] == 'OK' for d in previous['days'])):
             for entry in previous['partitions']:
                 raw = gzip.decompress(Path(entry['file']).read_bytes())
@@ -60,7 +65,7 @@ def collect(month, store, output, checkpoint=None):
               'model_status': 'NO BET; no training in this experiment'}
     field_counts = collections.Counter()
     try:
-        for day in month_days(month):
+        for day in days:
             programme = store.programme(day)
             if not valid_programme(programme):
                 report['days'].append({'date': day, 'status': 'PROGRAMME_UNAVAILABLE'})
@@ -103,7 +108,7 @@ def collect(month, store, output, checkpoint=None):
                         field_counts[key] += runner.get(key) not in (None, '', [], {})
                 report['fields_nonempty'] = dict(field_counts)
                 dump(output/'manifest.json', report)
-            if checkpoint and (len(report['days']) % 7 == 0 or day == month_days(month)[-1]):
+            if checkpoint and (len(report['days']) % 7 == 0 or day == days[-1]):
                 dump(output/'manifest.json', report)
                 checkpoint()
         report['status'] = 'COLLECTED_WITH_GAPS' if report['quarantine'] or any(d['status']!='OK' for d in report['days']) else 'COLLECTED'
