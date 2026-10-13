@@ -18,6 +18,9 @@ test_same_day_and_future_results_cannot_change_current_context (test_context.Con
 test_unknown_start_type_not_standing_start (test_context.ContextTests.test_unknown_start_type_not_standing_start) ... ok
 test_only_explicit_noncontradictory_cancellation_is_excluded (test_coverage.CoverageTests.test_only_explicit_noncontradictory_cancellation_is_excluded) ... ok
 test_unresolved_remains_in_denominator (test_coverage.CoverageTests.test_unresolved_remains_in_denominator) ... ok
+test_dimensions_missing_and_expiry (test_demographics_tandem.V6Tests.test_dimensions_missing_and_expiry) ... ok
+test_no_same_day_target_future_leakage (test_demographics_tandem.V6Tests.test_no_same_day_target_future_leakage) ... ok
+test_nonrunner_never_updates_pair (test_demographics_tandem.V6Tests.test_nonrunner_never_updates_pair) ... ok
 test_geographical_and_discipline_scope (test_evidence.EvidenceTests.test_geographical_and_discipline_scope) ... ok
 test_github_credential_not_forwarded_to_artifact_host (test_evidence.EvidenceTests.test_github_credential_not_forwarded_to_artifact_host) ... ok
 test_historical_identity_requires_both_parents (test_evidence.EvidenceTests.test_historical_identity_requires_both_parents) ... ok
@@ -76,9 +79,15 @@ test_coverage_is_not_lowered (test_shadow_quarantine.QuarantineTests.test_covera
 test_failure_preserves_current_rejections_and_saved_paths (test_shadow_quarantine.QuarantineTests.test_failure_preserves_current_rejections_and_saved_paths) ... ok
 test_preserves_raw_and_denominator (test_shadow_quarantine.QuarantineTests.test_preserves_raw_and_denominator) ... ok
 test_source_changes_and_missing_target_block (test_shadow_quarantine.QuarantineTests.test_source_changes_and_missing_target_block) ... ok
+test_invalid_probabilities_and_disqualified_winner (test_shadow_v5_score.ScoreTests.test_invalid_probabilities_and_disqualified_winner) ... ok
+test_latest_prestart_without_outcome_selection (test_shadow_v5_score.ScoreTests.test_latest_prestart_without_outcome_selection) ... ok
+test_paired_metrics_and_no_mutation (test_shadow_v5_score.ScoreTests.test_paired_metrics_and_no_mutation) ... ok
+test_pending_late_and_ambiguous (test_shadow_v5_score.ScoreTests.test_pending_late_and_ambiguous) ... ok
+test_refresh_delayed_schedule_and_no_repeat (test_shadow_v5_score.ScoreTests.test_refresh_delayed_schedule_and_no_repeat) ... ok
+test_runner_equipment_driver_changes_excluded (test_shadow_v5_score.ScoreTests.test_runner_equipment_driver_changes_excluded) ... ok
 
 ----------------------------------------------------------------------
-Ran 78 tests in 0.051s
+Ran 87 tests in 0.088s
 
 OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
