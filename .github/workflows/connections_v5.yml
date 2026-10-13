@@ -1,0 +1,240 @@
+name: Turf Lab expanded driver trainer equipment study
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/connections_v5.yml'
+permissions:
+  contents: write
+concurrency:
+  group: turf-connections-v5
+  cancel-in-progress: false
+jobs:
+  collect_development:
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        month: ['2024-04', '2024-05', '2025-04', '2025-05']
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect one bounded month using checkpoints
+        env:
+          MONTH: ${{ matrix.month }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.collect_connections --month "$MONTH"
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save evidence models and reports
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence data models reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Checkpoint expanded V5 study'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v5-${{ matrix.month }}-${{ github.run_attempt }}
+          path: |
+            data/month_${{ matrix.month }}/manifest.json
+            reports/month_${{ matrix.month }}.json
+          retention-days: 7
+  validate:
+    needs: collect_development
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free numerical dependency
+        run: python -m pip install -r requirements-v5.txt
+      - name: Test and evaluate frozen protocol
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.backtest_connections --phase validate
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save evidence models and reports
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence data models reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Checkpoint expanded V5 study'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v5-validate-${{ github.run_attempt }}
+          path: |
+            reports/connections_v5_*.json
+            reports/CONNECTIONS_V5_*.md
+            models/connections_v5_*.json
+          retention-days: 7
+  collect_test:
+    needs: validate
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        month: ['2026-05', '2026-06']
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect one bounded month using checkpoints
+        env:
+          MONTH: ${{ matrix.month }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.collect_connections --month "$MONTH"
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save evidence models and reports
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence data models reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Checkpoint expanded V5 study'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v5-${{ matrix.month }}-${{ github.run_attempt }}
+          path: |
+            data/month_${{ matrix.month }}/manifest.json
+            reports/month_${{ matrix.month }}.json
+          retention-days: 7
+  independent_test:
+    needs: collect_test
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free numerical dependency
+        run: python -m pip install -r requirements-v5.txt
+      - name: Test and evaluate frozen protocol
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.backtest_connections --phase test
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save evidence models and reports
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence data models reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Checkpoint expanded V5 study'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v5-test-${{ github.run_attempt }}
+          path: |
+            reports/connections_v5_*.json
+            reports/CONNECTIONS_V5_*.md
+            models/connections_v5_*.json
+          retention-days: 7
