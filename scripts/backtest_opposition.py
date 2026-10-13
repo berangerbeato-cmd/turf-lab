@@ -51,6 +51,7 @@ def main():
     output={'status':'VALIDATION_ONLY_NO_BET','protocol':p,'split_races':{'train':len(train),'validation':len(validation)},
             'validation':results,'paired_comparisons':comparisons,'lowest_validation_log_loss':selected,
             'source_months':base['months'],'test_evaluated':False,
+            'source_records_sha256':hashlib.sha256(json.dumps(records,sort_keys=True).encode()).hexdigest(),
             'protocol_sha256':hashlib.sha256(Path('config/opposition_v3_protocol.json').read_bytes()).hexdigest()}
     dump('reports/opposition_v3_validation.json',output)
     dump('models/opposition_v3_candidates.json',{'status':'VALIDATION_ONLY_NOT_DEPLOYED','models':models,
