@@ -13,7 +13,7 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 - Départ : handicapDistance moins distance de course, signe conservé ; avances négatives uniquement si texte exact « avance de 25 m » les corrobore, sinon manquant. Aucune position autostart fabriquée depuis numPmu.
 - Aptitude : résidu de performance parmi classés comparé aux attentes Elo avant la course ; mêmes hippodromes, distances proches (+/-250 m), autostart explicitement connu. Régularisation force 5 et fenêtre 60 jours ; résultats du même jour exclus ; NP/DQ non transformés en mauvaises performances numériques.
 - Résultats V4 locaux : log loss V3 2,423875 ; départ 2,424225 ; aptitude 2,424299 ; combinaison 2,424611. V3 reste sélectionné selon le critère fixé. Aucun gain démontré ; pas de nouveau test collecté ni de modèle promu. Les intervalles exploratoires et Brier sont publiés dans CONTEXT_V4_VALIDATION.md et context_v4_validation.json.
-- 56 tests locaux réussis. Code publié : c3101a8 (context), e1f4e45 (tests), 3ac09ed (évaluation). Rapports/modèles candidats publiés jusqu'à d6fd7d9. Reproduction GitHub via context_validation.yml à vérifier.
+- 56 tests réussis localement et dans la reproduction GitHub. Code publié : c3101a8 (context), e1f4e45 (tests), 3ac09ed (évaluation). Rapports/modèles candidats publiés jusqu'à d6fd7d9. Reproduction GitHub confirmée : run 38368916592, job 115200722756, succès calcul et sauvegarde ; mêmes métriques et sélection V3. https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38368916592 .
 - Audit départ : sur 40 044 participations 2024/2025, placeCorde positif 11 650 fois, toujours égal à numPmu ; 11 623 dans des courses explicitement AUTOSTART, 27 de type inconnu. La sémantique de grille/ligne reste non validée ; cette variable n'entre pas dans V4. Rapports start_position_audit.json et script reproductible.
 - Les preuves avant-course déjà conservées confirment handicapDistance disponible sur 28/28 chevaux de deux courses du 13 octobre, empreintes/horodatages vérifiés. Cela ne prouve pas la publication historique de tous les champs.
 - Audit antérieur Q1 : 349 distances négatives, dont 257 corroborées explicitement ; 92 ambiguës, notamment textes abîmés. Preuves departure_advance_audit.json. Ne pas les ramener à zéro.
@@ -88,7 +88,7 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Prochaine action précise
 
-1. Vérifier la reproduction context_validation.yml (tests, métriques et sauvegarde). V4 n'est pas retenu : ne pas lancer de test supplémentaire pour tenter de renverser la sélection.
+1. V4 est terminé, reproduit et sauvegardé : V3 reste retenu. Ne pas répéter cette évaluation ni lancer un test supplémentaire pour tenter de renverser la sélection.
 2. Continuer l'audit sémantique du départ : grille/ligne autostart pour placeCorde et 92 avances non corroborées. Conserver inconnus et preuves ; ne pas modifier le protocole V4 après consultation des résultats.
 3. Extension suivante possible : driver/entraîneur et deferre avec statistiques strictement antérieures ; protocole distinct avant comparaison. Météo/terrain restent planifiés, non intégrés.
 4. Toute nouvelle sélection utilise train/validation et nécessite ensuite une période indépendante encore non observée. Aucun réentraînement du pilote prospectif V1 ni pari réel.
