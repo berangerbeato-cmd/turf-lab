@@ -14,6 +14,7 @@ from turf_lab.month_history import build_history, identity
 from turf_lab.opposition import augment
 from turf_lab.connections import augment_connections, candidate
 from turf_lab.pilot import probabilities
+from turf_lab.shadow_quarantine import apply_quarantine
 
 CONFIG = Path('config/connections_v5_prospective.json')
 
@@ -84,7 +85,22 @@ def load_partial(month, through, minimum):
     return records, coverage
 
 
-def main():
+def write_status(state):
+    dump('reports/connections_v5_prospective_status.json', state)
+    if state.get('batch'):
+        dump('reports/v5_shadow_runs/' + state['batch'] + '.json', state)
+
+
+def record_failure(state, error):
+    state.update(status='BLOCKED_NO_BET', reason=str(error),
+        checked_at=datetime.now(timezone.utc).isoformat(),
+        note='Current-attempt diagnostics retained; old captures remain immutable.')
+    write_status(state)
+
+
+def main(state=None):
+    state = state if state is not None else {}
+    state.update(batch=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'), saved=[], rejected=[])
     policy = json.loads(CONFIG.read_text())
     p = json.loads(PROTOCOL.read_text())
     frozen, models = verify_frozen(p)
@@ -96,6 +112,9 @@ def main():
         raise ValueError('Outside bounded prospective window')
     history, coverage = load_sources({'months': policy['completed_months'],
         'minimum_retained_fraction_per_month': policy['minimum_coverage']})
+    history, coverage, quarantines = apply_quarantine(history, coverage,
+        policy.get('history_quarantine', []), policy['minimum_coverage'])
+    state.update(coverage=coverage, history_quarantine=quarantines)
     through = (today - timedelta(days=1)).isoformat()
     if through[:7] != policy['partial_month']:
         raise ValueError('Recent history month outside authorization')
@@ -108,14 +127,14 @@ def main():
     recent, partial_coverage = load_partial(policy['partial_month'], through, policy['minimum_coverage'])
     history += recent
     source_sha = hashlib.sha256(json.dumps(history, sort_keys=True).encode()).hexdigest()
-    batch = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+    batch = state['batch']
     evidence = EvidenceStore('evidence/v5_shadow/' + batch, max_requests=1 + policy['max_races'], delay=.5)
     programme = evidence.programme(day)
     if not isinstance(programme, dict):
         raise ValueError('Future programme unavailable')
     eligible = sorted(races(programme), key=lambda rc: (rc[1]['heureDepart'], rc[0]['numOfficiel'], rc[1]['numOrdre']))
     selected_races = eligible[:policy['max_races']]
-    saved, rejected = [], []
+    saved, rejected = state['saved'], state['rejected']
     for meeting, course in selected_races:
         rid = f"{day}_R{meeting['numOfficiel']}C{course['numOrdre']}"
         try:
@@ -131,6 +150,7 @@ def main():
                 'predicted_at': calculated.isoformat(), 'history_through': through,
                 'history_gap_days': 1, 'history_gap_note': 'Current-day results deliberately excluded; snapshot for tomorrow needs refresh before departure.',
                 'history_sha256': source_sha, 'frozen': frozen, 'models': prediction,
+                'history_quarantine': quarantines,
                 'target_snapshot': target, 'evidence_manifest': str(evidence.manifest_path),
                 'capture_code_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                 'policy_sha256': hashlib.sha256(CONFIG.read_bytes()).hexdigest(),
@@ -138,21 +158,21 @@ def main():
             saved.append(str(path))
         except (ValueError, KeyError, TypeError) as error:
             rejected.append({'race_id': rid, 'reason': str(error)})
-    dump('reports/connections_v5_prospective_status.json', {'status': 'CAPTURED_NO_BET' if saved else 'NO_VALID_CAPTURE',
+            print(json.dumps(rejected[-1]), flush=True)
+    state.update({'status': 'CAPTURED_NO_BET' if saved else 'NO_VALID_CAPTURE',
         'batch': batch, 'date': day, 'history_through': through, 'saved': saved, 'rejected': rejected,
         'coverage': coverage, 'partial_coverage': partial_coverage,
         'selection': 'First six French harness races by scheduled start; no replacement of rejected races; not representative of all courses.'})
+    write_status(state)
     if not saved:
         raise ValueError('No valid prospective capture')
     print(json.dumps({'captured': len(saved), 'rejected': rejected, 'day': day}))
 
 
 if __name__ == '__main__':
+    state = {}
     try:
-        main()
+        main(state)
     except (ValueError, RuntimeError, FileNotFoundError, KeyError, TypeError) as error:
-        dump('reports/connections_v5_prospective_status.json', {
-            'status': 'BLOCKED_NO_BET', 'reason': str(error),
-            'checked_at': datetime.now(timezone.utc).isoformat(),
-            'note': 'Older captures, if any, remain immutable. No current-run success is implied.'})
+        record_failure(state, error)
         raise
