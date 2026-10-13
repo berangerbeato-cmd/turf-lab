@@ -13,6 +13,8 @@ test_disqualification_not_imputed_rank_or_speed (test_history.HistoryTests.test_
 test_distanced_horse_cannot_keep_a_winning_rank (test_history.HistoryTests.test_distanced_horse_cannot_keep_a_winning_rank) ... ok
 test_non_runner_does_not_count_as_performance (test_history.HistoryTests.test_non_runner_does_not_count_as_performance) ... ok
 test_source_time_units (test_history.HistoryTests.test_source_time_units) ... ok
+test_frozen_model_tampering_blocks_evaluation (test_holdout_opposition.HoldoutOppositionTests.test_frozen_model_tampering_blocks_evaluation) ... ok
+test_holdout_is_disjoint_and_chosen_before_collection (test_holdout_opposition.HoldoutOppositionTests.test_holdout_is_disjoint_and_chosen_before_collection) ... ok
 test_ambiguous_odds_rejected (test_manual_value.ManualValueTests.test_ambiguous_odds_rejected) ... ok
 test_formula_and_experimental_model_no_bet (test_manual_value.ManualValueTests.test_formula_and_experimental_model_no_bet) ... ok
 test_future_quotes_or_started_race_rejected (test_manual_value.ManualValueTests.test_future_quotes_or_started_race_rejected) ... ok
@@ -50,7 +52,7 @@ test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_reje
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 50 tests in 0.063s
+Ran 52 tests in 0.043s
 
 OK
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
