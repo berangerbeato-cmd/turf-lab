@@ -1,6 +1,6 @@
 {
   "month": "2026-07",
-  "status": "RUNNING",
+  "status": "COLLECTED_WITH_GAPS",
   "days": [
     {
       "date": "2026-07-01",
@@ -5044,5 +5044,106 @@
   },
   "participants": 6764,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
-  "model_status": "NO BET; no training in this experiment"
+  "model_status": "NO BET; no training in this experiment",
+  "field_availability_retained_participants": {
+    "idCheval": {
+      "nonempty": 6764,
+      "denominator": 6764,
+      "fraction": 1.0
+    },
+    "nomMere": {
+      "nonempty": 6764,
+      "denominator": 6764,
+      "fraction": 1.0
+    },
+    "nomPere": {
+      "nonempty": 6764,
+      "denominator": 6764,
+      "fraction": 1.0
+    },
+    "driver": {
+      "nonempty": 6764,
+      "denominator": 6764,
+      "fraction": 1.0
+    },
+    "entraineur": {
+      "nonempty": 6752,
+      "denominator": 6764,
+      "fraction": 0.9982259018332348
+    },
+    "musique": {
+      "nonempty": 6640,
+      "denominator": 6764,
+      "fraction": 0.9816676522767593
+    },
+    "ferrure": {
+      "nonempty": 0,
+      "denominator": 6764,
+      "fraction": 0.0
+    },
+    "reductionKilometrique": {
+      "nonempty": 4692,
+      "denominator": 6764,
+      "fraction": 0.693672383205204
+    },
+    "tempsObtenu": {
+      "nonempty": 4692,
+      "denominator": 6764,
+      "fraction": 0.693672383205204
+    },
+    "age": {
+      "nonempty": 6764,
+      "denominator": 6764,
+      "fraction": 1.0
+    },
+    "sexe": {
+      "nonempty": 6764,
+      "denominator": 6764,
+      "fraction": 1.0
+    },
+    "gainsParticipant": {
+      "nonempty": 6764,
+      "denominator": 6764,
+      "fraction": 1.0
+    }
+  },
+  "requests_this_run": 1139,
+  "venues": {
+    "ENGHIEN": 73,
+    "VICHY": 15,
+    "LISIEUX": 14,
+    "PORNICHET": 42,
+    "CABOURG": 54,
+    "FEURS": 14,
+    "AVIGNON": 2,
+    "GRAIGNES": 7,
+    "LAVAL": 5,
+    "AGON-COUTAINVILLE": 1,
+    "HYERES": 29,
+    "MACON-CLUNY": 1,
+    "RAMBOUILLET": 7,
+    "LES SABLES D OLONNE": 28,
+    "CAGNES/MER": 73,
+    "CRAON": 6,
+    "LA CAPELLE": 29,
+    "SAINT MALO": 7,
+    "AMIENS": 20,
+    "CHATELAILLON": 23,
+    "LIGNIERES": 1,
+    "CLAIREFONTAINE": 20,
+    "BEAUMONT DE LOMAGNE": 7,
+    "LE MANS": 14,
+    "LANGON-LIBOURNE": 8,
+    "JULLIANGES": 1,
+    "CARPENTRAS": 1,
+    "LE MONT SAINT MICHEL": 7,
+    "ROYAN": 1,
+    "LA CLAYETTE": 1,
+    "SAINT GALMIER": 7,
+    "MAUQUENCHY": 7,
+    "BIARRITZ": 1,
+    "AIX LES BAINS": 14,
+    "MESLAY DU MAINE": 7
+  },
+  "candidate_races": 554
 }
