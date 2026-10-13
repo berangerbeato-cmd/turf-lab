@@ -1,0 +1,19 @@
+{
+  "version": "v6-development-only",
+  "candidates": ["v5", "age_sex", "tandem", "combined"],
+  "development_protocol": "config/connections_v5_protocol.json",
+  "baseline": "Frozen V5 combined weights, same training and source hashes",
+  "train": {"from": "2024-03-02", "to": "2024-05-31"},
+  "validation": {"from": "2025-03-02", "to": "2025-05-31"},
+  "age_sex": ["age", "age_squared", "male", "female", "gelding"],
+  "tandem": ["shrunk_elo_residual", "log_classified", "shrunk_dq", "log_known"],
+  "tandem_window_days": 60,
+  "prior_strength": 20,
+  "l2": 0.1,
+  "iterations": 800,
+  "learning_rate": 0.03,
+  "selection": "Lowest mean monthly validation log loss; ties follow candidate order",
+  "minimum_races_per_month": 200,
+  "test_period": null,
+  "limits": ["Reused validation: exploratory only", "No 2026 outcomes loaded", "No gain or chrono feature", "No tuning after results", "No V5 changes or prospective promotion", "No bets"]
+}
