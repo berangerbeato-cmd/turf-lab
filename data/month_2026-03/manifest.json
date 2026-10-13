@@ -1,6 +1,6 @@
 {
   "month": "2026-03",
-  "status": "RUNNING",
+  "status": "COLLECTED_WITH_GAPS",
   "days": [
     {
       "date": "2026-03-01",
@@ -4820,5 +4820,109 @@
   },
   "participants": 6997,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
-  "model_status": "NO BET; no training in this experiment"
+  "model_status": "NO BET; no training in this experiment",
+  "field_availability_retained_participants": {
+    "idCheval": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    },
+    "nomMere": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    },
+    "nomPere": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    },
+    "driver": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    },
+    "entraineur": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    },
+    "musique": {
+      "nonempty": 6769,
+      "denominator": 6997,
+      "fraction": 0.9674146062598257
+    },
+    "ferrure": {
+      "nonempty": 0,
+      "denominator": 6997,
+      "fraction": 0.0
+    },
+    "reductionKilometrique": {
+      "nonempty": 5068,
+      "denominator": 6997,
+      "fraction": 0.7243104187508932
+    },
+    "tempsObtenu": {
+      "nonempty": 5068,
+      "denominator": 6997,
+      "fraction": 0.7243104187508932
+    },
+    "age": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    },
+    "sexe": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    },
+    "gainsParticipant": {
+      "nonempty": 6997,
+      "denominator": 6997,
+      "fraction": 1.0
+    }
+  },
+  "requests_this_run": 1085,
+  "venues": {
+    "VIRE": 13,
+    "AGEN LA GARENNE": 28,
+    "CAVAILLON": 8,
+    "CHATILLON/CHALARONNE": 3,
+    "REIMS": 19,
+    "CHARTRES": 13,
+    "CHERBOURG": 6,
+    "CAEN": 44,
+    "LE CROISE LAROCHE": 26,
+    "CAGNES/MER": 31,
+    "AMIENS": 14,
+    "LAVAL": 19,
+    "ENGHIEN": 26,
+    "PONTCHATEAU": 14,
+    "LE BOUSCAT": 7,
+    "CORDEMAIS": 6,
+    "FEURS": 7,
+    "LA CAPELLE": 13,
+    "LE MONT SAINT MICHEL": 9,
+    "STRASBOURG": 7,
+    "LYON LA SOIE": 7,
+    "SAINT GALMIER": 16,
+    "BORELY": 31,
+    "LA CEPIERE": 21,
+    "LISIEUX": 13,
+    "MAURE DE BRETAGNE": 14,
+    "GRAIGNES": 13,
+    "MESLAY DU MAINE": 11,
+    "MAUQUENCHY": 6,
+    "VINCENNES": 28,
+    "PARAY LE MONIAL": 1,
+    "CHOLET": 9,
+    "NANCY-BRABOIS": 7,
+    "CHATELAILLON": 7,
+    "RAMBOUILLET": 7,
+    "ARGENTAN": 8,
+    "BEAUMONT DE LOMAGNE": 5,
+    "LYON-PARILLY": 8
+  },
+  "candidate_races": 527
 }
