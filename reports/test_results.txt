@@ -8,6 +8,10 @@ test_empty_calibration (test_connections_audit.AuditTest.test_empty_calibration)
 test_weighted_calibration (test_connections_audit.AuditTest.test_weighted_calibration) ... ok
 test_missing_month_blocks_instead_of_shortening_validation (test_connections_pipeline.ConnectionsPipelineTests.test_missing_month_blocks_instead_of_shortening_validation) ... ok
 test_selection_is_frozen_before_independent_evaluation (test_connections_pipeline.ConnectionsPipelineTests.test_selection_is_frozen_before_independent_evaluation) ... skipped 'V5 workflow installs numpy'
+test_live_rejects_results_and_duplicates (test_connections_shadow.ShadowConnectionsTests.test_live_rejects_results_and_duplicates) ... ok
+test_normalized_and_target_labels_do_not_change_features (test_connections_shadow.ShadowConnectionsTests.test_normalized_and_target_labels_do_not_change_features) ... ok
+test_partial_collection_stops_and_expands_from_cache (test_connections_shadow.ShadowConnectionsTests.test_partial_collection_stops_and_expands_from_cache) ... ok
+test_started_is_rejected (test_connections_shadow.ShadowConnectionsTests.test_started_is_rejected) ... ok
 test_advance_requires_proof_and_number_is_never_position (test_context.ContextTests.test_advance_requires_proof_and_number_is_never_position) ... ok
 test_dq_np_and_expired_history_not_used_as_performance (test_context.ContextTests.test_dq_np_and_expired_history_not_used_as_performance) ... ok
 test_same_day_and_future_results_cannot_change_current_context (test_context.ContextTests.test_same_day_and_future_results_cannot_change_current_context) ... ok
@@ -66,7 +70,7 @@ test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_reje
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 66 tests in 0.075s
+Ran 70 tests in 0.072s
 
 OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
