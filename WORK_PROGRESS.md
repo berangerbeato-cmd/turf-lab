@@ -6,7 +6,7 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
-Reprise du 13 octobre 2026 : **V2 évalué et sauvegardé ; V3 opposition/DQ évalué sur validation, test indépendant en préparation**. 4 508 courses conservées, 59 027 participations, neuf mois Q1 2024/2025/2026. NO BET et modèle prospectif V1 inchangé.
+Reprise du 13 octobre 2026 : **V2 évalué et sauvegardé ; V3 opposition/DQ évalué sur validation, collecte du test indépendant lancée**. 4 508 courses conservées, 59 027 participations, neuf mois Q1 2024/2025/2026. NO BET et modèle prospectif V1 inchangé.
 
 - V2 confirmé dans GitHub Actions : run 38317253515, job 115151701807, succès calcul ET sauvegarde. 496 courses train, 537 validation, 488 test. Test : log loss 2,430765 contre 2,544523 uniforme ; Brier 0,898787 contre 0,919721 ; 97/488 premiers choix gagnants. Rapport BACKTEST_EXTENSION_V2.md.
 - Couverture corrigée avant consultation des scores : annulations explicites PMU retirées du dénominateur, empreintes vérifiées ; véritables anomalies conservées. 29 annulations confirmées et 9 quarantaines non résolues sur 4 546 courses programmées. Aucun seuil abaissé. Rapports COVERAGE_CORRECTION.md et cancellation_audit.json.
@@ -14,8 +14,8 @@ Reprise du 13 octobre 2026 : **V2 évalué et sauvegardé ; V3 opposition/DQ év
 - V3 implémenté : Elo multi-partants, DQ exclues des duels, fréquence DQ régularisée et incertitude ; mises à jour après journée, resets annuels. Quatre variantes comparées sur mars 2025 uniquement : baseline 2,436894 ; opposition 2,424855 ; DQ 2,436870 ; combinaison 2,423875 en log loss. Gain DQ seul négligeable ; intervalle exploratoire par journée publié. Aucune nouveauté mathématique revendiquée.
 - Modèles V3 et rapports publiés : models/opposition_v3_candidates.json, reports/OPPOSITION_V3_VALIDATION.md. Protocole publié avant calcul : 00d9200 ; protocole test indépendant : 6e71d14. Code de validation 3e52073.
 - Test indépendant **avril 2026** gelé avant collecte : config/opposition_v3_holdout.json. Modèles contrôlés par SHA-256, combinaison choisie sur validation, aucun refit. Collecte bornée à un mois, sauvegardes hebdomadaires, 98 % de couverture et minimum 200 courses ; aucun remplacement prospectif.
-- 52 tests locaux passent. V2 reproduit sur GitHub ; V3 validation exécutée dans le runtime cloud, test indépendant pas encore évalué à ce checkpoint.
-- Inventaire des extensions publié : deferre disponible sur 36 460/59 027 participations ; driver, entraîneur et handicapDistance sur toutes. 349 écarts de distance négatifs à clarifier. Position/ligne autostart non trouvées dans les champs audités. Pas encore de variables météo/terrain intégrées.
+- 52 tests locaux passent. V2 reproduit sur GitHub ; V3 validation exécutée dans le runtime cloud, test indépendant pas encore évalué à ce checkpoint. Run 38354061076 (https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38354061076), job 115152751615 observé en cours à l’étape collecte/évaluation. Workflow publié par 2060268 ; aucun lancement manuel nécessaire.
+- Inventaire des extensions publié : deferre disponible sur 36 460/59 027 participations ; driver, entraîneur et handicapDistance sur toutes. 349 écarts de distance négatifs audités : 257 explicitement corroborés par « avance de 25 m », 92 restant à clarifier (notamment textes abîmés). Preuves dans departure_advance_audit.json ; ne jamais ramener silencieusement ces écarts à zéro. Position/ligne autostart non trouvées dans les champs audités. Pas encore de variables météo/terrain intégrées.
 
 ## Travaux publiés et vérifiés
 
@@ -88,7 +88,7 @@ Reprise du 13 octobre 2026 : **V2 évalué et sauvegardé ; V3 opposition/DQ év
 1. Vérifier le workflow opposition_holdout.yml : collecte d'avril 2026 et test V3 figé. Lire reports/opposition_v3_holdout_status.json puis OPPOSITION_V3_HOLDOUT.md si réussite. Ne pas annoncer de résultat avant preuve.
 2. En cas d'interruption, reprendre les bruts evidence/month_2026-04 ; aucun nouveau téléchargement des réponses présentes. Vérifier sauvegarde Git et artefact diagnostic.
 3. Ne pas retoucher les modèles V3 sur avril après consultation. Le V2 de mars 2026 est également déjà observé. Aucun changement du modèle prospectif V1.
-4. Suite indépendante : audit sémantique des 349 distances individuelles inférieures à la distance de course, puis départ/parcours et deferre ; météo selon disponibilité avant départ. Ne pas assimiler numPmu à une position.
+4. Suite indépendante : résoudre les 92 distances individuelles négatives non corroborées par le texte exact, puis départ/parcours et deferre ; météo selon disponibilité avant départ. Ne pas assimiler numPmu à une position.
 5. Les autres sections ci-dessous conservent l'historique des étapes ; l'état actuel ci-dessus fait foi.
 
 ## Reprise
