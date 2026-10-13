@@ -1,0 +1,25 @@
+{
+  "policy_sha256": "cbee92ccbcf6e88a4908b5324a9a57967962d69170617ce2f2616ddc53830c1a",
+  "v5_frozen": {
+    "protocol_sha256": "fb01d8561e078dc737638442156349003c7f90af1f53da0e6095d8818e9e1d83",
+    "models_sha256": "f537cc13991ed401533f7af782952ad298b0d3de120f25d9909435dd69d8d950",
+    "selected": "combined",
+    "sources_sha256": "54d289e07d9e54d1da97c058e901ca65bd63ad96c9ec8d7c1b8e4f7408490d21",
+    "code_sha256": {
+      "turf_lab/connections.py": "8cb77d6a4111c103dce0e47570dde7770db025d52457e1a6add7f0a069e65ef3",
+      "turf_lab/opposition.py": "7fcc90941505bfe32d218920a68541e76b0c97c0f32f7d48501f10d249a47e33",
+      "turf_lab/month_history.py": "e617b1f180e111e098871506caa62a6c57e6c22fcb698d78286b4463882f1990",
+      "turf_lab/pilot.py": "a5997e8dfaea58b13d8e0903c147834bad1ce93d463a5e2f126fb45d5d81cd77",
+      "turf_lab/fast_logit.py": "e6396d6a7d98ab55cdca23acdc767ce1839abf065312dc870d608960a8961e60",
+      "scripts/backtest_connections.py": "955079efa9ea5a2f9357c5dabef6100ddc86bdd50929621f4642c1fafe939c70"
+    }
+  },
+  "files_sha256": {
+    "models/demographics_tandem_v6_candidates.json": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
+    "config/demographics_tandem_v6_protocol.json": "5e5edf09f8d5e94c8632e51e111a7ddbbc7e55ee57888f52503e3b0e14e8081d",
+    "reports/demographics_tandem_v6.json": "f4b6c4a4c179ae06bb6f6c538de052cd1182fa98ffb243427d351fc9fbcd95e0",
+    "turf_lab/demographics_tandem.py": "953bad3b6974b5356def7a5090009f8ca454cdd5cb037eec0f6138c9a86f9425",
+    "scripts/backtest_v6.py": "a5fd00572297c41c0df5167e56ee64d86bfc6cc86a9052f9227ddfabded203c1",
+    "scripts/v6_holdout.py": "a6572e32d534ec3217a7dc5652f225d604882bfd7a9992530de7e90f1cd7c351"
+  }
+}
