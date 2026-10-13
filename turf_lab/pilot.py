@@ -54,8 +54,10 @@ def active(race): return [r for r in race['runners'] if not r['non_runner']]
 
 def fit_transform(races):
     values=[r['features'] for race in races for r in active(race)]
-    mu=[mean(v[i] for v in values if v[i] is not None) if any(v[i] is not None for v in values) else 0.0 for i in range(len(FEATURES))]
-    scale=[max(0.01,math.sqrt(mean((v[i]-mu[i])**2 for v in values if v[i] is not None))) if any(v[i] is not None for v in values) else 1 for i in range(len(FEATURES))]
+    dimensions=len(values[0])
+    if any(len(v)!=dimensions for v in values): raise ValueError('Inconsistent feature dimensions')
+    mu=[mean(v[i] for v in values if v[i] is not None) if any(v[i] is not None for v in values) else 0.0 for i in range(dimensions)]
+    scale=[max(0.01,math.sqrt(mean((v[i]-mu[i])**2 for v in values if v[i] is not None))) if any(v[i] is not None for v in values) else 1 for i in range(dimensions)]
     return {'mean':mu,'scale':scale}
 
 
@@ -74,7 +76,7 @@ def probabilities(race, model):
 
 
 def fit(races,l2,omit=None):
-    transform=fit_transform(races);weights=[0.0]*(2*len(FEATURES))
+    transform=fit_transform(races);weights=[0.0]*(2*len(transform['mean']))
     prepared=[]
     for race in races:
         runners=active(race)
@@ -89,7 +91,7 @@ def fit(races,l2,omit=None):
                 for j in range(len(weights)): grad[j]+=(p/total-y)*x[j]/len(prepared)
         for j in range(len(weights)):
             weights[j]-=0.03*(grad[j]+l2*weights[j])
-            if omit is not None and j in (omit,omit+len(FEATURES)): weights[j]=0.0
+            if omit is not None and j in (omit,omit+len(transform['mean'])): weights[j]=0.0
     return {'kind':'logit','weights':weights,'transform':transform,'l2':l2,'omitted_feature':omit}
 
 
