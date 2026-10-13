@@ -1,6 +1,6 @@
 {
   "month": "2025-05",
-  "status": "RUNNING",
+  "status": "COLLECTED_WITH_GAPS",
   "days": [
     {
       "date": "2025-05-01",
@@ -5224,5 +5224,115 @@
   },
   "participants": 7351,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
-  "model_status": "NO BET; no training in this experiment"
+  "model_status": "NO BET; no training in this experiment",
+  "field_availability_retained_participants": {
+    "idCheval": {
+      "nonempty": 0,
+      "denominator": 7351,
+      "fraction": 0.0
+    },
+    "nomMere": {
+      "nonempty": 7351,
+      "denominator": 7351,
+      "fraction": 1.0
+    },
+    "nomPere": {
+      "nonempty": 7351,
+      "denominator": 7351,
+      "fraction": 1.0
+    },
+    "driver": {
+      "nonempty": 7351,
+      "denominator": 7351,
+      "fraction": 1.0
+    },
+    "entraineur": {
+      "nonempty": 7351,
+      "denominator": 7351,
+      "fraction": 1.0
+    },
+    "musique": {
+      "nonempty": 7175,
+      "denominator": 7351,
+      "fraction": 0.976057679227316
+    },
+    "ferrure": {
+      "nonempty": 0,
+      "denominator": 7351,
+      "fraction": 0.0
+    },
+    "reductionKilometrique": {
+      "nonempty": 5112,
+      "denominator": 7351,
+      "fraction": 0.695415589715685
+    },
+    "tempsObtenu": {
+      "nonempty": 5112,
+      "denominator": 7351,
+      "fraction": 0.695415589715685
+    },
+    "age": {
+      "nonempty": 7351,
+      "denominator": 7351,
+      "fraction": 1.0
+    },
+    "sexe": {
+      "nonempty": 7351,
+      "denominator": 7351,
+      "fraction": 1.0
+    },
+    "gainsParticipant": {
+      "nonempty": 5918,
+      "denominator": 7351,
+      "fraction": 0.8050605359814991
+    }
+  },
+  "requests_this_run": 1145,
+  "venues": {
+    "HYERES": 22,
+    "CHATILLON/CHALARONNE": 2,
+    "CHATELAILLON": 13,
+    "CHOLET": 13,
+    "GRAIGNES": 29,
+    "PONTCHATEAU": 6,
+    "VINCENNES": 68,
+    "SAINT BRIEUC": 7,
+    "AMIENS": 21,
+    "LYON-PARILLY": 11,
+    "LA CAPELLE": 21,
+    "CAEN": 25,
+    "BORELY": 36,
+    "MONTLUCON": 1,
+    "RAMBOUILLET": 22,
+    "VICHY": 40,
+    "MESLAY DU MAINE": 13,
+    "CHARTRES": 7,
+    "CASTILLONNES": 1,
+    "MACON-CLUNY": 1,
+    "ORAISON": 1,
+    "LE MANS": 15,
+    "VIRE": 14,
+    "LA CEPIERE": 14,
+    "CHERBOURG": 7,
+    "MAURE DE BRETAGNE": 5,
+    "ARGENTAN": 13,
+    "LE CROISE LAROCHE": 13,
+    "STRASBOURG": 8,
+    "LAVAL": 6,
+    "REIMS": 5,
+    "BEAUMONT DE LOMAGNE": 14,
+    "MOULINS": 8,
+    "LISIEUX": 8,
+    "SALON DE PROVENCE": 7,
+    "ENGHIEN": 8,
+    "VILLENEUVE SUR LOT": 1,
+    "CHATEAUBRIANT": 7,
+    "CARPENTRAS": 1,
+    "NANTES": 7,
+    "NANCY-BRABOIS": 7,
+    "LE MONT SAINT MICHEL": 8,
+    "AGEN LA GARENNE": 7,
+    "PONT DE VIVAUX": 7
+  },
+  "candidate_races": 557
 }
