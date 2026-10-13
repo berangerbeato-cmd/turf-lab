@@ -7,6 +7,11 @@
   "minimum_coverage": 0.98,
   "max_history_requests": 1800,
   "max_races": 6,
+  "history_quarantine": [{
+    "race_id": "2026-07-04_R6C7",
+    "source_sha256": "2363c13c0a611da600b9636921aa635fd2cbf5c54e3e40933a13f11c0b69c7aa",
+    "reason": "Missing parents encoded INCONNU/INCONNUE create ten identity conflicts; entire race excluded from shadow history, raw evidence retained."
+  }],
   "refit": false,
   "current_day_results": "excluded",
   "selection": "First six French harness races tomorrow by scheduled start, then reunion and course; no replacement if rejected",
