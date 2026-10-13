@@ -1,0 +1,264 @@
+{
+  "status": "VALIDATION_ONLY_NO_BET",
+  "protocol": {
+    "version": "opposition-v3-validation-only",
+    "status": "EXPERIMENTAL_NO_BET",
+    "train": {
+      "from": "2024-03-02",
+      "to": "2024-03-31"
+    },
+    "validation": {
+      "from": "2025-03-02",
+      "to": "2025-03-31"
+    },
+    "source_years": [
+      2024,
+      2025
+    ],
+    "test": null,
+    "test_policy": "Do not read 2026 outcomes for V3 selection. A new independent period must be frozen before testing.",
+    "elo_k": 32,
+    "elo_scale": 400,
+    "dq_prior_strength": 10,
+    "initial_dq_prior": 0.2,
+    "l2": 0.1,
+    "candidates": [
+      "baseline",
+      "opposition",
+      "dq",
+      "combined"
+    ],
+    "selection": "Validation log loss; report Brier and paired day bootstrap, no promotion",
+    "reset": "Ratings reset at the beginning of each source year; unobserved gaps are not filled",
+    "update": "Only after all features of a day have been built; NP, DQ and unknown ranks excluded from Elo comparisons",
+    "dq": "Rate shrunk toward expanding past-only population rate; unknown outcomes excluded",
+    "limitations": [
+      "Elo and shrinkage are established techniques, not claims of novel mathematics",
+      "Cold starts and 3-month seasonal coverage",
+      "No odds or automatic prospective replacement"
+    ]
+  },
+  "split_races": {
+    "train": 496,
+    "validation": 537
+  },
+  "validation": {
+    "baseline": {
+      "races": 537,
+      "log_loss": 2.436894402603716,
+      "brier_multiclass": 0.8997297390408329,
+      "top1_accuracy": 0.18063314711359404,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5847,
+          "mean_probability": 0.06443306616356384,
+          "win_frequency": 0.06191209167094237
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1023,
+          "mean_probability": 0.12655786421402682,
+          "win_frequency": 0.14076246334310852
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 111,
+          "mean_probability": 0.2396430746214218,
+          "win_frequency": 0.23423423423423423
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 13,
+          "mean_probability": 0.3223681359782595,
+          "win_frequency": 0.38461538461538464
+        }
+      ]
+    },
+    "opposition": {
+      "races": 537,
+      "log_loss": 2.424854645858164,
+      "brier_multiclass": 0.898086164202077,
+      "top1_accuracy": 0.19925512104283055,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5728,
+          "mean_probability": 0.06260082115357785,
+          "win_frequency": 0.061976256983240226
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1135,
+          "mean_probability": 0.1291770214169608,
+          "win_frequency": 0.12951541850220263
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 119,
+          "mean_probability": 0.233586664781738,
+          "win_frequency": 0.24369747899159663
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 12,
+          "mean_probability": 0.33414700125222413,
+          "win_frequency": 0.5
+        }
+      ]
+    },
+    "dq": {
+      "races": 537,
+      "log_loss": 2.436869953363947,
+      "brier_multiclass": 0.8998781419247084,
+      "top1_accuracy": 0.18808193668528864,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5835,
+          "mean_probability": 0.06433790204070405,
+          "win_frequency": 0.061696658097686374
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1036,
+          "mean_probability": 0.12642386522203858,
+          "win_frequency": 0.14092664092664092
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 111,
+          "mean_probability": 0.24074812293754996,
+          "win_frequency": 0.24324324324324326
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 12,
+          "mean_probability": 0.32418129803267265,
+          "win_frequency": 0.3333333333333333
+        }
+      ]
+    },
+    "combined": {
+      "races": 537,
+      "log_loss": 2.4238749885005766,
+      "brier_multiclass": 0.8981486247886572,
+      "top1_accuracy": 0.19180633147113593,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5707,
+          "mean_probability": 0.06246598434789302,
+          "win_frequency": 0.061152970036796914
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 1154,
+          "mean_probability": 0.12857176127343883,
+          "win_frequency": 0.13258232235701906
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 120,
+          "mean_probability": 0.23261726211684938,
+          "win_frequency": 0.23333333333333334
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 13,
+          "mean_probability": 0.3246725663849052,
+          "win_frequency": 0.5384615384615384
+        }
+      ]
+    }
+  },
+  "paired_comparisons": {
+    "opposition": {
+      "delta_log_loss": -0.012039756745551628,
+      "day_bootstrap_95_percent": [
+        -0.022745325302708376,
+        -0.0013468842391653152
+      ],
+      "days": 30,
+      "interpretation": "Validation only; exploratory interval, not adjusted for selecting multiple candidates"
+    },
+    "dq": {
+      "delta_log_loss": -2.444923976867124e-05,
+      "day_bootstrap_95_percent": [
+        -0.0018200609114600798,
+        0.0016833248412827576
+      ],
+      "days": 30,
+      "interpretation": "Validation only; exploratory interval, not adjusted for selecting multiple candidates"
+    },
+    "combined": {
+      "delta_log_loss": -0.013019414103139256,
+      "day_bootstrap_95_percent": [
+        -0.023026215642849606,
+        -0.0027953842606063127
+      ],
+      "days": 30,
+      "interpretation": "Validation only; exploratory interval, not adjusted for selecting multiple candidates"
+    }
+  },
+  "lowest_validation_log_loss": "combined",
+  "source_months": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2025-01",
+    "2025-02",
+    "2025-03"
+  ],
+  "test_evaluated": false,
+  "protocol_sha256": "229ee69ec91d792f1d66e4f9ccf75158e5369e08ca88735324c495954de94f16",
+  "source_records_sha256": "813baaf40cd2ee0513c145654224c0d7ff6b6aedca0c46b091d263bfd525968e"
+}
