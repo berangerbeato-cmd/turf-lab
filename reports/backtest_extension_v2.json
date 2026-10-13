@@ -1,0 +1,4308 @@
+{
+  "status": "EXPERIMENTAL_NO_BET",
+  "provenance": {
+    "protocol_sha256": "97bf6ee0609b0823ce32c4e47ebe042f2e4009d563d40a70d29a1315d10f0cb3",
+    "sources_sha256": "3e03201ea7b0d5df4c69e2d1a623ddca16c4a09b926c0ece43eeaab8ca957488"
+  },
+  "protocol": {
+    "version": "historical-v2-q1",
+    "months": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2026-01",
+      "2026-02",
+      "2026-03"
+    ],
+    "lookback_days": 60,
+    "train": {
+      "from": "2024-03-02",
+      "to": "2024-03-31"
+    },
+    "validation": {
+      "from": "2025-03-02",
+      "to": "2025-03-31"
+    },
+    "test": {
+      "from": "2026-03-02",
+      "to": "2026-03-31"
+    },
+    "l2_candidates": [
+      0.1,
+      1.0
+    ],
+    "minimum_races_per_split": 200,
+    "minimum_retained_fraction_per_month": 0.98,
+    "max_requests_per_month_run": 3000,
+    "status": "EXPERIMENTAL_NO_BET",
+    "selection": "minimum validation log loss including uniform baseline",
+    "policy": "January-February warm-up only. Strict prior-day observations within 60 days. Never tune on March 2026 test; October 2026 pilot test excluded. Frozen prospective pilot unchanged. No odds or ROI."
+  },
+  "coverage": [
+    {
+      "month": "2024-01",
+      "candidates": 512,
+      "retained": 512,
+      "quarantine": [],
+      "venues": {
+        "VINCENNES": 142,
+        "CAGNES/MER": 73,
+        "PONTCHATEAU": 7,
+        "CABOURG": 6,
+        "LA CEPIERE": 44,
+        "ARGENTAN": 23,
+        "LE BOUSCAT": 26,
+        "CHATEAUBRIANT": 12,
+        "LYON LA SOIE": 28,
+        "ANGERS": 36,
+        "MAUQUENCHY": 21,
+        "PONT DE VIVAUX": 15,
+        "CORDEMAIS": 11,
+        "NANTES": 25,
+        "AGEN LA GARENNE": 15,
+        "SAINT GALMIER": 16,
+        "GRAIGNES": 4,
+        "SAINT BRIEUC": 8
+      },
+      "coverage_counts": {
+        "scheduled": 512,
+        "cancelled": 0,
+        "eligible": 512,
+        "retained": 512,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2024-02",
+      "candidates": 481,
+      "retained": 480,
+      "quarantine": [
+        {
+          "race_id": "2024-02-01_R1C2",
+          "issues": [
+            "not_single_winner"
+          ]
+        }
+      ],
+      "venues": {
+        "VINCENNES": 113,
+        "LYON LA SOIE": 30,
+        "LA CEPIERE": 28,
+        "CAGNES/MER": 68,
+        "ARGENTAN": 23,
+        "AGEN LA GARENNE": 22,
+        "HYERES": 13,
+        "CHERBOURG": 13,
+        "SAINT BRIEUC": 6,
+        "CHATEAUBRIANT": 6,
+        "GRAIGNES": 21,
+        "MAUQUENCHY": 21,
+        "LAVAL": 20,
+        "SAINT GALMIER": 13,
+        "LE BOUSCAT": 5,
+        "MAURE DE BRETAGNE": 8,
+        "VIRE": 7,
+        "PONT DE VIVAUX": 8,
+        "NANTES": 21,
+        "LIGNIERES": 1,
+        "PONTCHATEAU": 7,
+        "AMIENS": 7,
+        "CHOLET": 6,
+        "REIMS": 6,
+        "LE CROISE LAROCHE": 7
+      },
+      "coverage_counts": {
+        "scheduled": 481,
+        "cancelled": 0,
+        "eligible": 481,
+        "retained": 480,
+        "unresolved": 1,
+        "fraction": 0.997920997920998
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2024-03",
+      "candidates": 509,
+      "retained": 507,
+      "quarantine": [
+        {
+          "race_id": "2024-03-29_R5C2",
+          "issues": [
+            {
+              "race_id": "2024-03-29_R5C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2024-03-29_R5C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2024-03-31_R12C9",
+          "issues": [
+            {
+              "race_id": "2024-03-31_R12C9",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2024-03-31_R12C9",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "VINCENNES": 34,
+        "CORDEMAIS": 6,
+        "CAGNES/MER": 31,
+        "VIRE": 16,
+        "AGEN LA GARENNE": 29,
+        "HYERES": 7,
+        "CHERBOURG": 7,
+        "CHOLET": 10,
+        "SAINT BRIEUC": 11,
+        "STRASBOURG": 6,
+        "CAEN": 39,
+        "LE CROISE LAROCHE": 20,
+        "AMIENS": 7,
+        "SAINT GALMIER": 17,
+        "LAVAL": 19,
+        "ENGHIEN": 28,
+        "PONTCHATEAU": 12,
+        "LE BOUSCAT": 7,
+        "PARAY LE MONIAL": 2,
+        "CHATILLON/CHALARONNE": 3,
+        "LA CAPELLE": 15,
+        "LE MONT SAINT MICHEL": 8,
+        "NANCY-BRABOIS": 12,
+        "LYON LA SOIE": 15,
+        "BORELY": 22,
+        "LA CEPIERE": 6,
+        "LISIEUX": 12,
+        "REIMS": 13,
+        "MAURE DE BRETAGNE": 9,
+        "GRAIGNES": 6,
+        "AVIGNON": 1,
+        "MESLAY DU MAINE": 11,
+        "MAUQUENCHY": 6,
+        "ANGERS": 5,
+        "FEURS": 7,
+        "CHATELAILLON": 15,
+        "ARGENTAN": 7,
+        "PONT DE VIVAUX": 7,
+        "ECOMMOY": 1,
+        "BEAUMONT DE LOMAGNE": 5,
+        "LYON-PARILLY": 5,
+        "CHARTRES": 8
+      },
+      "coverage_counts": {
+        "scheduled": 509,
+        "cancelled": 2,
+        "eligible": 507,
+        "retained": 507,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2024-03-29_R5C2",
+          "evidence_sha256": "bb309627dc09243ae7c22eda3c55fcb3508ded50673a7a6ad4ba18f3ff7a1ff9",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2024-03-31_R12C9",
+          "evidence_sha256": "bf44b6c686dbb6d3c1eac6733192c02d3d6f7deb41a53f8d801d8f045b327102",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    },
+    {
+      "month": "2025-01",
+      "candidates": 540,
+      "retained": 532,
+      "quarantine": [
+        {
+          "race_id": "2025-01-01_R1C8",
+          "issues": [
+            "not_single_winner"
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C1",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C1",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C1",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C2",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C3",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C3",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C3",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C5",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C5",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C5",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C6",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C6",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C6",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C7",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C8",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C8",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C8",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "VINCENNES": 145,
+        "PONTCHATEAU": 7,
+        "CABOURG": 6,
+        "CAGNES/MER": 66,
+        "LA CEPIERE": 42,
+        "ARGENTAN": 31,
+        "LE BOUSCAT": 26,
+        "CORDEMAIS": 11,
+        "CHATEAUBRIANT": 12,
+        "ANGERS": 36,
+        "LYON LA SOIE": 37,
+        "GRAIGNES": 6,
+        "NANTES": 26,
+        "MAUQUENCHY": 21,
+        "PONT DE VIVAUX": 15,
+        "SAINT GALMIER": 16,
+        "AGEN LA GARENNE": 15,
+        "SAINT BRIEUC": 8,
+        "VIRE": 6
+      },
+      "coverage_counts": {
+        "scheduled": 540,
+        "cancelled": 7,
+        "eligible": 533,
+        "retained": 532,
+        "unresolved": 1,
+        "fraction": 0.99812382739212
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2025-01-08_R4C1",
+          "evidence_sha256": "f23371b79dd3e446e197ec7e7051f1ac3417017832e4bad61a88bc832309c3e3",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C2",
+          "evidence_sha256": "2d0e713f57be1d3e65bb21dcfe1e43008801c3a9ff3515bed90443dcc3b26983",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C3",
+          "evidence_sha256": "f943645fe21739d6352707323fc1f5f8fcd8c097c4df757ca7b2ebdd1e277a53",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C5",
+          "evidence_sha256": "7fb80b2866c3a1cfc550f99aabe1d5490633091d327448e462ca08fbc2e6d4df",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C6",
+          "evidence_sha256": "10f8c4c1d9c3a500162f8a477b2c5a10bfc877b24c0fecdb1c9429e7a6d3d9f5",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C7",
+          "evidence_sha256": "7c7396688ad0a25c884dd0d9b9236c5952e81d68bb0135f2f09a47e4041addd3",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C8",
+          "evidence_sha256": "b6d3b702145b98003db227310f6eadd1950f3a557616f9b4fc1b12ab78a2f3f1",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    },
+    {
+      "month": "2025-02",
+      "candidates": 454,
+      "retained": 448,
+      "quarantine": [
+        {
+          "race_id": "2025-02-06_R1C6",
+          "issues": [
+            "not_single_winner"
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C1",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C1",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C1",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C2",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C3",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C3",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C3",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C4",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C4",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C4",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C6",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C6",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C6",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "CAGNES/MER": 76,
+        "VINCENNES": 107,
+        "SAINT GALMIER": 13,
+        "AGEN LA GARENNE": 22,
+        "SAINT BRIEUC": 11,
+        "CHERBOURG": 9,
+        "CHATEAUBRIANT": 6,
+        "GRAIGNES": 22,
+        "LYON LA SOIE": 26,
+        "MAUQUENCHY": 21,
+        "LAVAL": 20,
+        "ARGENTAN": 16,
+        "LA CEPIERE": 14,
+        "HYERES": 7,
+        "LE BOUSCAT": 5,
+        "MAURE DE BRETAGNE": 8,
+        "VIRE": 5,
+        "PONT DE VIVAUX": 8,
+        "NANTES": 22,
+        "NIMES": 1,
+        "PARAY LE MONIAL": 1,
+        "PONTCHATEAU": 7,
+        "AMIENS": 8,
+        "LE CROISE LAROCHE": 7,
+        "CORDEMAIS": 6
+      },
+      "coverage_counts": {
+        "scheduled": 454,
+        "cancelled": 0,
+        "eligible": 454,
+        "retained": 448,
+        "unresolved": 6,
+        "fraction": 0.986784140969163
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2025-03",
+      "candidates": 550,
+      "retained": 549,
+      "quarantine": [
+        {
+          "race_id": "2025-03-28_R1C8",
+          "issues": [
+            "not_single_winner"
+          ]
+        }
+      ],
+      "venues": {
+        "VINCENNES": 28,
+        "HYERES": 7,
+        "VIRE": 7,
+        "AGEN LA GARENNE": 30,
+        "CAGNES/MER": 30,
+        "CHATILLON/CHALARONNE": 3,
+        "CHOLET": 8,
+        "CHATELAILLON": 14,
+        "CHERBOURG": 7,
+        "REIMS": 19,
+        "CAEN": 44,
+        "LE CROISE LAROCHE": 33,
+        "AMIENS": 14,
+        "SAINT GALMIER": 17,
+        "LAVAL": 19,
+        "ENGHIEN": 28,
+        "PONTCHATEAU": 6,
+        "LA CEPIERE": 29,
+        "LE BOUSCAT": 7,
+        "LA CAPELLE": 15,
+        "LE MONT SAINT MICHEL": 9,
+        "STRASBOURG": 7,
+        "LYON LA SOIE": 7,
+        "BORELY": 15,
+        "LISIEUX": 13,
+        "MAURE DE BRETAGNE": 15,
+        "GRAIGNES": 13,
+        "CAGNES-SUR-MER GAZON": 6,
+        "CHARTRES": 16,
+        "MESLAY DU MAINE": 11,
+        "MAUQUENCHY": 6,
+        "ARGENTAN": 6,
+        "PARAY LE MONIAL": 1,
+        "ANGERS": 4,
+        "CAVAILLON": 4,
+        "FEURS": 8,
+        "SALON DE PROVENCE": 7,
+        "PONT DE VIVAUX": 8,
+        "NANCY-BRABOIS": 7,
+        "CORDEMAIS": 7,
+        "BEAUMONT DE LOMAGNE": 5,
+        "CARPENTRAS": 1,
+        "RAMBOUILLET": 8
+      },
+      "coverage_counts": {
+        "scheduled": 550,
+        "cancelled": 0,
+        "eligible": 550,
+        "retained": 549,
+        "unresolved": 1,
+        "fraction": 0.9981818181818182
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2026-01",
+      "candidates": 515,
+      "retained": 497,
+      "quarantine": [
+        {
+          "race_id": "2026-01-03_R8C1",
+          "issues": [
+            {
+              "race_id": "2026-01-03_R8C1",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-03_R8C1",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-03_R8C2",
+          "issues": [
+            {
+              "race_id": "2026-01-03_R8C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-03_R8C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-03_R8C4",
+          "issues": [
+            {
+              "race_id": "2026-01-03_R8C4",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-03_R8C4",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-03_R8C5",
+          "issues": [
+            {
+              "race_id": "2026-01-03_R8C5",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-03_R8C5",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-03_R8C6",
+          "issues": [
+            {
+              "race_id": "2026-01-03_R8C6",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-03_R8C6",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-03_R8C7",
+          "issues": [
+            {
+              "race_id": "2026-01-03_R8C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-03_R8C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-03_R8C8",
+          "issues": [
+            {
+              "race_id": "2026-01-03_R8C8",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-03_R8C8",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-07_R3C1",
+          "issues": [
+            {
+              "race_id": "2026-01-07_R3C1",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-07_R3C1",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-07_R3C2",
+          "issues": [
+            {
+              "race_id": "2026-01-07_R3C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-07_R3C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-07_R3C4",
+          "issues": [
+            {
+              "race_id": "2026-01-07_R3C4",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-07_R3C4",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-07_R3C5",
+          "issues": [
+            {
+              "race_id": "2026-01-07_R3C5",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-07_R3C5",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-07_R3C6",
+          "issues": [
+            {
+              "race_id": "2026-01-07_R3C6",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-07_R3C6",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-07_R3C7",
+          "issues": [
+            {
+              "race_id": "2026-01-07_R3C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-07_R3C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-07_R3C8",
+          "issues": [
+            {
+              "race_id": "2026-01-07_R3C8",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-07_R3C8",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-09_R3C3",
+          "issues": [
+            {
+              "race_id": "2026-01-09_R3C3",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-09_R3C3",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-09_R3C5",
+          "issues": [
+            {
+              "race_id": "2026-01-09_R3C5",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-09_R3C5",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-09_R3C7",
+          "issues": [
+            {
+              "race_id": "2026-01-09_R3C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-09_R3C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-01-09_R3C8",
+          "issues": [
+            {
+              "race_id": "2026-01-09_R3C8",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-01-09_R3C8",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "VINCENNES": 139,
+        "CABOURG": 6,
+        "CAGNES/MER": 74,
+        "LA CEPIERE": 35,
+        "LE BOUSCAT": 26,
+        "CORDEMAIS": 11,
+        "CHATEAUBRIANT": 12,
+        "ARGENTAN": 28,
+        "LYON LA SOIE": 38,
+        "AGEN LA GARENNE": 14,
+        "ANGERS": 26,
+        "GRAIGNES": 6,
+        "NANTES": 24,
+        "MAUQUENCHY": 21,
+        "PONT DE VIVAUX": 15,
+        "SAINT GALMIER": 14,
+        "SAINT BRIEUC": 8
+      },
+      "coverage_counts": {
+        "scheduled": 515,
+        "cancelled": 18,
+        "eligible": 497,
+        "retained": 497,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2026-01-03_R8C1",
+          "evidence_sha256": "ce5b1ad5031cf1609782f18ebeee52b1291def2563b9ca0f60bba352f657f2a3",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-03_R8C2",
+          "evidence_sha256": "e42556db7f47b17a4185b12bb802fb4fba1323d4ac307d17a64e2ba5ff11d432",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-03_R8C4",
+          "evidence_sha256": "a25a199ea5c6fc3243814daa5e352dec608e112a11a5d19c1f378a0479a50850",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-03_R8C5",
+          "evidence_sha256": "11042eeca71ad682be97ac5a745b29e96562a7f0e9fad920be0ea7b1f7bf7a8f",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-03_R8C6",
+          "evidence_sha256": "9d03473ebd84e0be02e756d27fd254d7aab0347ceab09e271311534fe6799664",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-03_R8C7",
+          "evidence_sha256": "456a09690b8827f31514554d4cd9b5083922fa9634539573060bfa0a8a33d5d2",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-03_R8C8",
+          "evidence_sha256": "5b2a66c9db1ab1f9505803c53508dfcc31b9961566e9f8df03f48cd10e5225e7",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-07_R3C1",
+          "evidence_sha256": "f088a059c5eac1c6e77b36d9034bc0c7efcf960fd42f6676a435855a5edc4d50",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-07_R3C2",
+          "evidence_sha256": "5f15c7f10ea801ad56fc04ae5d1976ba2d23d00aaccdedb8f0d393233166a60e",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-07_R3C4",
+          "evidence_sha256": "db0ca3998558f83eb4ded352166147de044fc089cd561a3d6b7b568093587b71",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-07_R3C5",
+          "evidence_sha256": "5377e03d97d387739c6f39195a224b742d2a9b5fc8902ff3c759a6cf6e33b4b2",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-07_R3C6",
+          "evidence_sha256": "6907e6948952b40e8b2a99937e2925fa0617ebab4e07305753d1e03f2a582ee9",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-07_R3C7",
+          "evidence_sha256": "f9073c078556cec72965536857fa97923fc882f08b848094aa49cb75c39349f9",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-07_R3C8",
+          "evidence_sha256": "47aeea2c4d392308dbfad08027ebfd0ef52d0dd7c694861309f488acccde4075",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-09_R3C3",
+          "evidence_sha256": "fec38b17c7310ca4062207e0e77ef60260b38c90ed60b4b2962ebc568ae6fbf8",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-09_R3C5",
+          "evidence_sha256": "42b12b5883190ee147ab2b6bf1ec5b8a527a0f9648f350a9dbe465a800e3cfbf",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-09_R3C7",
+          "evidence_sha256": "68eab4f443d00e1489e95a0a1b099e7116efe949a9cac0f1cf07080378c8e728",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-01-09_R3C8",
+          "evidence_sha256": "d53334a3ddca768f3a5f4ec11a3f40bb97da2514c458314d4f410ba19cf29f4c",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    },
+    {
+      "month": "2026-02",
+      "candidates": 458,
+      "retained": 458,
+      "quarantine": [],
+      "venues": {
+        "VINCENNES": 116,
+        "SAINT GALMIER": 13,
+        "AGEN LA GARENNE": 22,
+        "CHERBOURG": 6,
+        "SAINT BRIEUC": 9,
+        "MAURE DE BRETAGNE": 14,
+        "GRAIGNES": 21,
+        "CAGNES/MER": 68,
+        "MAUQUENCHY": 21,
+        "LAVAL": 20,
+        "ARGENTAN": 8,
+        "LA CEPIERE": 21,
+        "ANGERS": 8,
+        "LE BOUSCAT": 13,
+        "HYERES": 7,
+        "LYON LA SOIE": 26,
+        "VIRE": 7,
+        "NANTES": 15,
+        "PONT DE VIVAUX": 8,
+        "PONTCHATEAU": 6,
+        "LE MONT SAINT MICHEL": 7,
+        "AMIENS": 8,
+        "PARAY LE MONIAL": 1,
+        "LE CROISE LAROCHE": 7,
+        "CORDEMAIS": 6
+      },
+      "coverage_counts": {
+        "scheduled": 458,
+        "cancelled": 0,
+        "eligible": 458,
+        "retained": 458,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2026-03",
+      "candidates": 527,
+      "retained": 525,
+      "quarantine": [
+        {
+          "race_id": "2026-03-13_R1C7",
+          "issues": [
+            {
+              "race_id": "2026-03-13_R1C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-03-13_R1C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2026-03-13_R1C8",
+          "issues": [
+            {
+              "race_id": "2026-03-13_R1C8",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2026-03-13_R1C8",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "VIRE": 13,
+        "AGEN LA GARENNE": 28,
+        "CAVAILLON": 8,
+        "CHATILLON/CHALARONNE": 3,
+        "REIMS": 19,
+        "CHARTRES": 13,
+        "CHERBOURG": 6,
+        "CAEN": 44,
+        "LE CROISE LAROCHE": 26,
+        "CAGNES/MER": 31,
+        "AMIENS": 14,
+        "LAVAL": 19,
+        "ENGHIEN": 26,
+        "PONTCHATEAU": 14,
+        "LE BOUSCAT": 7,
+        "CORDEMAIS": 6,
+        "FEURS": 7,
+        "LA CAPELLE": 13,
+        "LE MONT SAINT MICHEL": 9,
+        "STRASBOURG": 7,
+        "LYON LA SOIE": 7,
+        "SAINT GALMIER": 16,
+        "BORELY": 31,
+        "LA CEPIERE": 21,
+        "LISIEUX": 13,
+        "MAURE DE BRETAGNE": 14,
+        "GRAIGNES": 13,
+        "MESLAY DU MAINE": 11,
+        "MAUQUENCHY": 6,
+        "VINCENNES": 28,
+        "PARAY LE MONIAL": 1,
+        "CHOLET": 9,
+        "NANCY-BRABOIS": 7,
+        "CHATELAILLON": 7,
+        "RAMBOUILLET": 7,
+        "ARGENTAN": 8,
+        "BEAUMONT DE LOMAGNE": 5,
+        "LYON-PARILLY": 8
+      },
+      "coverage_counts": {
+        "scheduled": 527,
+        "cancelled": 2,
+        "eligible": 525,
+        "retained": 525,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2026-03-13_R1C7",
+          "evidence_sha256": "2cffb23435b44ce2c2424ad87edcf5e394057c3fde504671d648efd396a84234",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2026-03-13_R1C8",
+          "evidence_sha256": "fe45e0c5cc5f55a8f88be3c6a13d5dcb5cb5973768e00c99a7314539a46c0fbd",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    }
+  ],
+  "split_races": {
+    "train": 496,
+    "validation": 537,
+    "test": 488
+  },
+  "validation_candidates": [
+    {
+      "kind": "uniform",
+      "l2": null,
+      "metrics": {
+        "races": 537,
+        "log_loss": 2.5469807652865284,
+        "brier_multiclass": 0.9199985002400382,
+        "top1_accuracy": 0.05772811918063315,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 6173,
+            "mean_probability": 0.07257411307305824,
+            "win_frequency": 0.0725741130730601
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 821,
+            "mean_probability": 0.10840438489646734,
+            "win_frequency": 0.10840438489646773
+          }
+        ]
+      }
+    },
+    {
+      "kind": "logit",
+      "l2": 0.1,
+      "metrics": {
+        "races": 537,
+        "log_loss": 2.436894402603716,
+        "brier_multiclass": 0.8997297390408329,
+        "top1_accuracy": 0.18063314711359404,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5847,
+            "mean_probability": 0.06443306616356384,
+            "win_frequency": 0.06191209167094237
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1023,
+            "mean_probability": 0.12655786421402682,
+            "win_frequency": 0.14076246334310852
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 111,
+            "mean_probability": 0.2396430746214218,
+            "win_frequency": 0.23423423423423423
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 13,
+            "mean_probability": 0.3223681359782595,
+            "win_frequency": 0.38461538461538464
+          }
+        ]
+      }
+    },
+    {
+      "kind": "logit",
+      "l2": 1.0,
+      "metrics": {
+        "races": 537,
+        "log_loss": 2.463703170373036,
+        "brier_multiclass": 0.9050375006360416,
+        "top1_accuracy": 0.19180633147113593,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 6084,
+            "mean_probability": 0.06959447004271206,
+            "win_frequency": 0.06591058514135437
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 885,
+            "mean_probability": 0.12231131176949211,
+            "win_frequency": 0.1423728813559322
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 25,
+            "mean_probability": 0.2136693337654089,
+            "win_frequency": 0.4
+          }
+        ]
+      }
+    }
+  ],
+  "selected_candidate": 1,
+  "test": {
+    "selected": {
+      "races": 488,
+      "log_loss": 2.430765106035916,
+      "brier_multiclass": 0.8987872808494103,
+      "top1_accuracy": 0.1987704918032787,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5282,
+          "mean_probability": 0.06341235969727309,
+          "win_frequency": 0.0617190458159788
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 907,
+          "mean_probability": 0.12759400917157304,
+          "win_frequency": 0.13891951488423374
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 141,
+          "mean_probability": 0.23554325573367857,
+          "win_frequency": 0.23404255319148937
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 12,
+          "mean_probability": 0.3430458918282475,
+          "win_frequency": 0.25
+        }
+      ]
+    },
+    "uniform": {
+      "races": 488,
+      "log_loss": 2.544523233765444,
+      "brier_multiclass": 0.9197211442661056,
+      "top1_accuracy": 0.06557377049180328,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 5640,
+          "mean_probability": 0.07269503546099097,
+          "win_frequency": 0.0726950354609929
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 702,
+          "mean_probability": 0.11111111111111131,
+          "win_frequency": 0.1111111111111111
+        }
+      ]
+    }
+  },
+  "subgroups": {
+    "venue": {
+      "CAEN": {
+        "races": 44,
+        "log_loss": 2.486898340127097,
+        "brier_multiclass": 0.9078254364116535,
+        "top1_accuracy": 0.18181818181818182,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 522,
+            "mean_probability": 0.060547835146343675,
+            "win_frequency": 0.05747126436781609
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 72,
+            "mean_probability": 0.12527401081332845,
+            "win_frequency": 0.16666666666666666
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 13,
+            "mean_probability": 0.23032918259961033,
+            "win_frequency": 0.15384615384615385
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.38002190125398533,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "LE CROISE LAROCHE": {
+        "races": 26,
+        "log_loss": 2.4100523220816052,
+        "brier_multiclass": 0.8949025218363117,
+        "top1_accuracy": 0.15384615384615385,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 282,
+            "mean_probability": 0.06414147772566006,
+            "win_frequency": 0.06028368794326241
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 49,
+            "mean_probability": 0.12391375179270438,
+            "win_frequency": 0.14285714285714285
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 8,
+            "mean_probability": 0.23004118044016977,
+            "win_frequency": 0.25
+          }
+        ]
+      },
+      "AGEN LA GARENNE": {
+        "races": 21,
+        "log_loss": 2.4314944355398875,
+        "brier_multiclass": 0.9073823998522956,
+        "top1_accuracy": 0.19047619047619047,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 192,
+            "mean_probability": 0.0648431792552154,
+            "win_frequency": 0.06770833333333333
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 53,
+            "mean_probability": 0.12598903840675166,
+            "win_frequency": 0.11320754716981132
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 8,
+            "mean_probability": 0.23408631843010105,
+            "win_frequency": 0.25
+          }
+        ]
+      },
+      "CAGNES/MER": {
+        "races": 31,
+        "log_loss": 2.209647422875626,
+        "brier_multiclass": 0.8515920699488507,
+        "top1_accuracy": 0.3548387096774194,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 229,
+            "mean_probability": 0.06935006335222421,
+            "win_frequency": 0.0611353711790393
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 89,
+            "mean_probability": 0.1252039897569018,
+            "win_frequency": 0.11235955056179775
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 11,
+            "mean_probability": 0.23118611243682705,
+            "win_frequency": 0.45454545454545453
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 4,
+            "mean_probability": 0.3581582917928233,
+            "win_frequency": 0.5
+          }
+        ]
+      },
+      "AMIENS": {
+        "races": 14,
+        "log_loss": 2.4227883535718333,
+        "brier_multiclass": 0.8980905890789872,
+        "top1_accuracy": 0.21428571428571427,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 138,
+            "mean_probability": 0.06702684350168449,
+            "win_frequency": 0.06521739130434782
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 33,
+            "mean_probability": 0.12708175126444443,
+            "win_frequency": 0.12121212121212122
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.27829890252043804,
+            "win_frequency": 0.5
+          }
+        ]
+      },
+      "LAVAL": {
+        "races": 19,
+        "log_loss": 2.4087465212400803,
+        "brier_multiclass": 0.9019258137579416,
+        "top1_accuracy": 0.21052631578947367,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 211,
+            "mean_probability": 0.06020865074337083,
+            "win_frequency": 0.061611374407582936
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 44,
+            "mean_probability": 0.13310610162829617,
+            "win_frequency": 0.13636363636363635
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.21965311075185645,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "ENGHIEN": {
+        "races": 26,
+        "log_loss": 2.6478188629412256,
+        "brier_multiclass": 0.9397283802616458,
+        "top1_accuracy": 0.11538461538461539,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 299,
+            "mean_probability": 0.06016857297978002,
+            "win_frequency": 0.07357859531772576
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 36,
+            "mean_probability": 0.12790879945661035,
+            "win_frequency": 0.05555555555555555
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 13,
+            "mean_probability": 0.2357232931211717,
+            "win_frequency": 0.15384615384615385
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.34047708803255344,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "PONTCHATEAU": {
+        "races": 14,
+        "log_loss": 2.5237794553568484,
+        "brier_multiclass": 0.9197134003351423,
+        "top1_accuracy": 0.07142857142857142,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 158,
+            "mean_probability": 0.06193838877646359,
+            "win_frequency": 0.06962025316455696
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 24,
+            "mean_probability": 0.12929140251911814,
+            "win_frequency": 0.08333333333333333
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.2221481825719834,
+            "win_frequency": 0.2
+          }
+        ]
+      },
+      "LE BOUSCAT": {
+        "races": 7,
+        "log_loss": 2.0559874446399005,
+        "brier_multiclass": 0.8316427680471687,
+        "top1_accuracy": 0.2857142857142857,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 59,
+            "mean_probability": 0.06736884559879262,
+            "win_frequency": 0.05084745762711865
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 17,
+            "mean_probability": 0.13640955651936823,
+            "win_frequency": 0.17647058823529413
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.23542521628065846,
+            "win_frequency": 0.3333333333333333
+          }
+        ]
+      },
+      "FEURS": {
+        "races": 7,
+        "log_loss": 2.4688380167923234,
+        "brier_multiclass": 0.9052604461267821,
+        "top1_accuracy": 0.14285714285714285,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 81,
+            "mean_probability": 0.06645413110925266,
+            "win_frequency": 0.07407407407407407
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 12,
+            "mean_probability": 0.13476794834587807,
+            "win_frequency": 0.08333333333333333
+          }
+        ]
+      },
+      "LA CAPELLE": {
+        "races": 13,
+        "log_loss": 2.263634132329115,
+        "brier_multiclass": 0.8678994117160322,
+        "top1_accuracy": 0.46153846153846156,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 146,
+            "mean_probability": 0.06856946376874382,
+            "win_frequency": 0.04794520547945205
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 18,
+            "mean_probability": 0.12332316343649244,
+            "win_frequency": 0.2777777777777778
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.22500919250009876,
+            "win_frequency": 0.5
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3190229629063358,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "LE MONT SAINT MICHEL": {
+        "races": 9,
+        "log_loss": 2.5454571337526413,
+        "brier_multiclass": 0.9123912797512033,
+        "top1_accuracy": 0.1111111111111111,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 111,
+            "mean_probability": 0.06375671410702846,
+            "win_frequency": 0.07207207207207207
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 12,
+            "mean_probability": 0.11883599872635651,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.24848637470178037,
+            "win_frequency": 0.5
+          }
+        ]
+      },
+      "STRASBOURG": {
+        "races": 7,
+        "log_loss": 2.227802429578087,
+        "brier_multiclass": 0.8778040905501852,
+        "top1_accuracy": 0.14285714285714285,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 63,
+            "mean_probability": 0.07812105584590957,
+            "win_frequency": 0.047619047619047616
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 14,
+            "mean_probability": 0.13302226620032506,
+            "win_frequency": 0.2857142857142857
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.216061754903143,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "CORDEMAIS": {
+        "races": 6,
+        "log_loss": 2.5059193866231695,
+        "brier_multiclass": 0.9122188367356934,
+        "top1_accuracy": 0.3333333333333333,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 59,
+            "mean_probability": 0.06335112085132596,
+            "win_frequency": 0.06779661016949153
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 13,
+            "mean_probability": 0.13553761841907377,
+            "win_frequency": 0.15384615384615385
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.2501474151619042,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "LYON LA SOIE": {
+        "races": 7,
+        "log_loss": 2.1959177282655205,
+        "brier_multiclass": 0.8630033673358242,
+        "top1_accuracy": 0.14285714285714285,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 70,
+            "mean_probability": 0.07142407205318614,
+            "win_frequency": 0.04285714285714286
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 13,
+            "mean_probability": 0.12086226886287327,
+            "win_frequency": 0.3076923076923077
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.2145527305298089,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "SAINT GALMIER": {
+        "races": 16,
+        "log_loss": 2.321552100615481,
+        "brier_multiclass": 0.8710732666413539,
+        "top1_accuracy": 0.3125,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 176,
+            "mean_probability": 0.06457675963535381,
+            "win_frequency": 0.056818181818181816
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 27,
+            "mean_probability": 0.13516828990289514,
+            "win_frequency": 0.18518518518518517
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.22398396816993463,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.31299457228976524,
+            "win_frequency": 1.0
+          }
+        ]
+      },
+      "BORELY": {
+        "races": 31,
+        "log_loss": 2.308115635539207,
+        "brier_multiclass": 0.8731085245245538,
+        "top1_accuracy": 0.22580645161290322,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 324,
+            "mean_probability": 0.06298508853179,
+            "win_frequency": 0.05555555555555555
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 63,
+            "mean_probability": 0.12408427926051109,
+            "win_frequency": 0.14285714285714285
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 10,
+            "mean_probability": 0.2472649087332563,
+            "win_frequency": 0.4
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3028726349552914,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "LA CEPIERE": {
+        "races": 21,
+        "log_loss": 2.41156654568273,
+        "brier_multiclass": 0.8919522474728321,
+        "top1_accuracy": 0.2857142857142857,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 234,
+            "mean_probability": 0.06170047455168614,
+            "win_frequency": 0.05555555555555555
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 41,
+            "mean_probability": 0.13091425805886464,
+            "win_frequency": 0.17073170731707318
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.2389208748983987,
+            "win_frequency": 0.2
+          }
+        ]
+      },
+      "LISIEUX": {
+        "races": 13,
+        "log_loss": 2.605662663932914,
+        "brier_multiclass": 0.9296022498392057,
+        "top1_accuracy": 0.15384615384615385,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 170,
+            "mean_probability": 0.056915085120502834,
+            "win_frequency": 0.058823529411764705
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 16,
+            "mean_probability": 0.12383690958375063,
+            "win_frequency": 0.1875
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 6,
+            "mean_probability": 0.22384082936241886,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "REIMS": {
+        "races": 13,
+        "log_loss": 2.5753551731510234,
+        "brier_multiclass": 0.9541303519777975,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 118,
+            "mean_probability": 0.07360102817612497,
+            "win_frequency": 0.1016949152542373
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 23,
+            "mean_probability": 0.1190456891282863,
+            "win_frequency": 0.043478260869565216
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.2448960049939113,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3525478002971027,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "MAURE DE BRETAGNE": {
+        "races": 14,
+        "log_loss": 2.454946591225652,
+        "brier_multiclass": 0.8976682398160098,
+        "top1_accuracy": 0.2857142857142857,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 174,
+            "mean_probability": 0.06482800295024585,
+            "win_frequency": 0.05747126436781609
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 19,
+            "mean_probability": 0.11099732203651988,
+            "win_frequency": 0.15789473684210525
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.2532119075398952,
+            "win_frequency": 1.0
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.357766460423448,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "MESLAY DU MAINE": {
+        "races": 11,
+        "log_loss": 2.7737014912118965,
+        "brier_multiclass": 0.9581471588868362,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 145,
+            "mean_probability": 0.05749218562497383,
+            "win_frequency": 0.06896551724137931
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 13,
+            "mean_probability": 0.131178418037211,
+            "win_frequency": 0.07692307692307693
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 4,
+            "mean_probability": 0.23957841247376616,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "CHARTRES": {
+        "races": 7,
+        "log_loss": 2.5324292584992043,
+        "brier_multiclass": 0.9155393141575272,
+        "top1_accuracy": 0.14285714285714285,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 83,
+            "mean_probability": 0.06392304364192367,
+            "win_frequency": 0.04819277108433735
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 12,
+            "mean_probability": 0.12387220203164649,
+            "win_frequency": 0.25
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.20792095334057756,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "GRAIGNES": {
+        "races": 13,
+        "log_loss": 2.4618116080155854,
+        "brier_multiclass": 0.9141462518482695,
+        "top1_accuracy": 0.15384615384615385,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 117,
+            "mean_probability": 0.0683244140725125,
+            "win_frequency": 0.07692307692307693
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 29,
+            "mean_probability": 0.13846100601581401,
+            "win_frequency": 0.10344827586206896
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 4,
+            "mean_probability": 0.24766859476435954,
+            "win_frequency": 0.25
+          }
+        ]
+      },
+      "MAUQUENCHY": {
+        "races": 6,
+        "log_loss": 2.3875601227677854,
+        "brier_multiclass": 0.9015453647376639,
+        "top1_accuracy": 0.16666666666666666,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 72,
+            "mean_probability": 0.06294402610429299,
+            "win_frequency": 0.05555555555555555
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 8,
+            "mean_probability": 0.1189548214738717,
+            "win_frequency": 0.25
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.258195774349966,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "CHATILLON/CHALARONNE": {
+        "races": 2,
+        "log_loss": 2.8344654999865067,
+        "brier_multiclass": 0.9597739333125388,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 30,
+            "mean_probability": 0.05929128858302422,
+            "win_frequency": 0.06666666666666667
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.22126134250927323,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "VIRE": {
+        "races": 6,
+        "log_loss": 2.845754195549014,
+        "brier_multiclass": 0.9502114072964403,
+        "top1_accuracy": 0.16666666666666666,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 83,
+            "mean_probability": 0.05923629728074631,
+            "win_frequency": 0.060240963855421686
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 7,
+            "mean_probability": 0.12254766675239757,
+            "win_frequency": 0.14285714285714285
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.2255536584312744,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "VINCENNES": {
+        "races": 28,
+        "log_loss": 2.4379169656697113,
+        "brier_multiclass": 0.902312802367255,
+        "top1_accuracy": 0.17857142857142858,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 265,
+            "mean_probability": 0.058413650592577644,
+            "win_frequency": 0.06792452830188679
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 75,
+            "mean_probability": 0.13488181269286795,
+            "win_frequency": 0.08
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 11,
+            "mean_probability": 0.21856787645471076,
+            "win_frequency": 0.36363636363636365
+          }
+        ]
+      },
+      "PARAY LE MONIAL": {
+        "races": 1,
+        "log_loss": 2.7253946408003147,
+        "brier_multiclass": 0.9404478397718387,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 14,
+            "mean_probability": 0.06313492669450375,
+            "win_frequency": 0.07142857142857142
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1,
+            "mean_probability": 0.11611102627694726,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "CHOLET": {
+        "races": 9,
+        "log_loss": 2.509798898003928,
+        "brier_multiclass": 0.9174363507611462,
+        "top1_accuracy": 0.2222222222222222,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 123,
+            "mean_probability": 0.06464853110266158,
+            "win_frequency": 0.07317073170731707
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 4,
+            "mean_probability": 0.12710451689606445,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.26990630339418276,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "NANCY-BRABOIS": {
+        "races": 7,
+        "log_loss": 2.03151984514787,
+        "brier_multiclass": 0.7932887034334347,
+        "top1_accuracy": 0.42857142857142855,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 74,
+            "mean_probability": 0.06770418160665231,
+            "win_frequency": 0.04054054054054054
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 10,
+            "mean_probability": 0.14263719426004845,
+            "win_frequency": 0.2
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.2817593092536224,
+            "win_frequency": 1.0
+          }
+        ]
+      },
+      "CAVAILLON": {
+        "races": 4,
+        "log_loss": 2.494531096406105,
+        "brier_multiclass": 0.9095351468458166,
+        "top1_accuracy": 0.25,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 51,
+            "mean_probability": 0.06416353982576738,
+            "win_frequency": 0.058823529411764705
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 4,
+            "mean_probability": 0.12157984441040856,
+            "win_frequency": 0.25
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.24134009124423036,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "RAMBOUILLET": {
+        "races": 7,
+        "log_loss": 2.6524933461543534,
+        "brier_multiclass": 0.9300772988197978,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 101,
+            "mean_probability": 0.056683414705297724,
+            "win_frequency": 0.0594059405940594
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 8,
+            "mean_probability": 0.1315977588127339,
+            "win_frequency": 0.125
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.2221930442630621,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "ARGENTAN": {
+        "races": 8,
+        "log_loss": 2.5552312344177053,
+        "brier_multiclass": 0.9205779513402937,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 96,
+            "mean_probability": 0.06704816763990727,
+            "win_frequency": 0.0625
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 12,
+            "mean_probability": 0.11241891619899279,
+            "win_frequency": 0.16666666666666666
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.21434891218099114,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "BEAUMONT DE LOMAGNE": {
+        "races": 5,
+        "log_loss": 2.5523589904966233,
+        "brier_multiclass": 0.9239515342548886,
+        "top1_accuracy": 0.2,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 60,
+            "mean_probability": 0.06361157415499331,
+            "win_frequency": 0.06666666666666667
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 8,
+            "mean_probability": 0.11275108220664529,
+            "win_frequency": 0.125
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.28129689304723926,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "CHATELAILLON": {
+        "races": 7,
+        "log_loss": 2.0295254529861997,
+        "brier_multiclass": 0.8397760485552912,
+        "top1_accuracy": 0.2857142857142857,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 61,
+            "mean_probability": 0.06525538190235258,
+            "win_frequency": 0.03278688524590164
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 14,
+            "mean_probability": 0.13858917244550437,
+            "win_frequency": 0.2857142857142857
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.25365305837007884,
+            "win_frequency": 0.3333333333333333
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.31821411460919513,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "LYON-PARILLY": {
+        "races": 8,
+        "log_loss": 2.3214031830582127,
+        "brier_multiclass": 0.866536451535068,
+        "top1_accuracy": 0.25,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 91,
+            "mean_probability": 0.06387912489160699,
+            "win_frequency": 0.04395604395604396
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 14,
+            "mean_probability": 0.12166411047031343,
+            "win_frequency": 0.21428571428571427
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.24185104413968828,
+            "win_frequency": 0.5
+          }
+        ]
+      }
+    },
+    "distance_m": {
+      "2450": {
+        "races": 30,
+        "log_loss": 2.4778364695121606,
+        "brier_multiclass": 0.9094894540904312,
+        "top1_accuracy": 0.2,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 361,
+            "mean_probability": 0.06003950241402368,
+            "win_frequency": 0.055401662049861494
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 45,
+            "mean_probability": 0.12664210360746148,
+            "win_frequency": 0.2
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 10,
+            "mean_probability": 0.22468230649476945,
+            "win_frequency": 0.1
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.38002190125398533,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2200": {
+        "races": 16,
+        "log_loss": 2.5222061968721516,
+        "brier_multiclass": 0.9082063248187038,
+        "top1_accuracy": 0.125,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 185,
+            "mean_probability": 0.06319242769887909,
+            "win_frequency": 0.06486486486486487
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 29,
+            "mean_probability": 0.1228256747193148,
+            "win_frequency": 0.10344827586206896
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.24915210294907994,
+            "win_frequency": 0.3333333333333333
+          }
+        ]
+      },
+      "2700": {
+        "races": 46,
+        "log_loss": 2.343046037505753,
+        "brier_multiclass": 0.8811058345473748,
+        "top1_accuracy": 0.21739130434782608,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 464,
+            "mean_probability": 0.062009664093521905,
+            "win_frequency": 0.05603448275862069
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 102,
+            "mean_probability": 0.12989211261676065,
+            "win_frequency": 0.13725490196078433
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 17,
+            "mean_probability": 0.234030610217424,
+            "win_frequency": 0.35294117647058826
+          }
+        ]
+      },
+      "2825": {
+        "races": 19,
+        "log_loss": 2.438383659689298,
+        "brier_multiclass": 0.8966131789410124,
+        "top1_accuracy": 0.21052631578947367,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 213,
+            "mean_probability": 0.06435587703890779,
+            "win_frequency": 0.056338028169014086
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 33,
+            "mean_probability": 0.12601727956299646,
+            "win_frequency": 0.18181818181818182
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.2267255930267496,
+            "win_frequency": 0.2
+          }
+        ]
+      },
+      "2575": {
+        "races": 14,
+        "log_loss": 2.423254888418353,
+        "brier_multiclass": 0.9121006309777359,
+        "top1_accuracy": 0.21428571428571427,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 125,
+            "mean_probability": 0.06934632666906773,
+            "win_frequency": 0.064
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 34,
+            "mean_probability": 0.12391353424399627,
+            "win_frequency": 0.14705882352941177
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.22372980041413162,
+            "win_frequency": 0.2
+          }
+        ]
+      },
+      "2625": {
+        "races": 10,
+        "log_loss": 2.3914954885820925,
+        "brier_multiclass": 0.8857063001493755,
+        "top1_accuracy": 0.2,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 114,
+            "mean_probability": 0.05990572320552661,
+            "win_frequency": 0.06140350877192982
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 16,
+            "mean_probability": 0.13115574341191402,
+            "win_frequency": 0.125
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.2513471817900501,
+            "win_frequency": 0.3333333333333333
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.31821411460919513,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2050": {
+        "races": 6,
+        "log_loss": 2.2966792781181304,
+        "brier_multiclass": 0.891021479780256,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 55,
+            "mean_probability": 0.07029001729983154,
+            "win_frequency": 0.05454545454545454
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 16,
+            "mean_probability": 0.1195122751173654,
+            "win_frequency": 0.1875
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.22185264663141785,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2925": {
+        "races": 18,
+        "log_loss": 2.2499352924754645,
+        "brier_multiclass": 0.852195846230642,
+        "top1_accuracy": 0.2777777777777778,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 135,
+            "mean_probability": 0.06929710364095815,
+            "win_frequency": 0.06666666666666667
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 48,
+            "mean_probability": 0.12693384791985904,
+            "win_frequency": 0.10416666666666667
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 6,
+            "mean_probability": 0.23710914410203995,
+            "win_frequency": 0.3333333333333333
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 3,
+            "mean_probability": 0.3764704812350594,
+            "win_frequency": 0.6666666666666666
+          }
+        ]
+      },
+      "2150": {
+        "races": 21,
+        "log_loss": 2.3792822248203986,
+        "brier_multiclass": 0.8912891043775834,
+        "top1_accuracy": 0.3333333333333333,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 205,
+            "mean_probability": 0.06429129524349633,
+            "win_frequency": 0.06341463414634146
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 45,
+            "mean_probability": 0.12456407974715956,
+            "win_frequency": 0.1111111111111111
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 8,
+            "mean_probability": 0.23895989537436965,
+            "win_frequency": 0.375
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3032217234661151,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2900": {
+        "races": 6,
+        "log_loss": 2.4102759276342294,
+        "brier_multiclass": 0.8737185735400316,
+        "top1_accuracy": 0.3333333333333333,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 71,
+            "mean_probability": 0.06646373154855638,
+            "win_frequency": 0.056338028169014086
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 7,
+            "mean_probability": 0.1403040446274338,
+            "win_frequency": 0.14285714285714285
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.29894674766045976,
+            "win_frequency": 1.0
+          }
+        ]
+      },
+      "2400": {
+        "races": 11,
+        "log_loss": 2.4689792753151467,
+        "brier_multiclass": 0.9156098427915718,
+        "top1_accuracy": 0.18181818181818182,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 102,
+            "mean_probability": 0.06598647016158944,
+            "win_frequency": 0.06862745098039216
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 33,
+            "mean_probability": 0.12156754503446852,
+            "win_frequency": 0.12121212121212122
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.2576510573804163,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2650": {
+        "races": 12,
+        "log_loss": 2.2045133844594234,
+        "brier_multiclass": 0.8622706394525115,
+        "top1_accuracy": 0.25,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 111,
+            "mean_probability": 0.06686741176425201,
+            "win_frequency": 0.06306306306306306
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 27,
+            "mean_probability": 0.13511219188259668,
+            "win_frequency": 0.14814814814814814
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 4,
+            "mean_probability": 0.23242202833447956,
+            "win_frequency": 0.25
+          }
+        ]
+      },
+      "2850": {
+        "races": 44,
+        "log_loss": 2.4375350648528102,
+        "brier_multiclass": 0.9008177208360205,
+        "top1_accuracy": 0.20454545454545456,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 494,
+            "mean_probability": 0.06116613897626992,
+            "win_frequency": 0.06275303643724696
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 92,
+            "mean_probability": 0.12829349303348503,
+            "win_frequency": 0.11956521739130435
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 7,
+            "mean_probability": 0.23187993231694046,
+            "win_frequency": 0.2857142857142857
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.357766460423448,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2875": {
+        "races": 41,
+        "log_loss": 2.662458975918988,
+        "brier_multiclass": 0.941707828016954,
+        "top1_accuracy": 0.04878048780487805,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 503,
+            "mean_probability": 0.06102309994881468,
+            "win_frequency": 0.06759443339960239
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 55,
+            "mean_probability": 0.12220816243512339,
+            "win_frequency": 0.10909090909090909
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 14,
+            "mean_probability": 0.2316753359844186,
+            "win_frequency": 0.07142857142857142
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.34047708803255344,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2800": {
+        "races": 37,
+        "log_loss": 2.524533759624756,
+        "brier_multiclass": 0.9179980246957075,
+        "top1_accuracy": 0.13513513513513514,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 447,
+            "mean_probability": 0.06270420084681563,
+            "win_frequency": 0.06487695749440715
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 51,
+            "mean_probability": 0.13052667145544414,
+            "win_frequency": 0.13725490196078433
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 10,
+            "mean_probability": 0.2314361977245762,
+            "win_frequency": 0.1
+          }
+        ]
+      },
+      "2550": {
+        "races": 9,
+        "log_loss": 2.591926811330972,
+        "brier_multiclass": 0.9668914803529994,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 75,
+            "mean_probability": 0.07183447868511732,
+            "win_frequency": 0.10666666666666667
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 17,
+            "mean_probability": 0.1197286043146789,
+            "win_frequency": 0.058823529411764705
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.2448960049939113,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3525478002971027,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2225": {
+        "races": 2,
+        "log_loss": 2.375148630453899,
+        "brier_multiclass": 0.902436036364916,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 22,
+            "mean_probability": 0.08594383147804686,
+            "win_frequency": 0.09090909090909091
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1,
+            "mean_probability": 0.109235707482969,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2750": {
+        "races": 22,
+        "log_loss": 2.37728108927147,
+        "brier_multiclass": 0.8866742675874153,
+        "top1_accuracy": 0.36363636363636365,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 254,
+            "mean_probability": 0.0645450308018803,
+            "win_frequency": 0.051181102362204724
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 33,
+            "mean_probability": 0.1255418629426376,
+            "win_frequency": 0.24242424242424243
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.2287315472618073,
+            "win_frequency": 0.2
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3190229629063358,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2675": {
+        "races": 16,
+        "log_loss": 2.6106974902418694,
+        "brier_multiclass": 0.926819853739144,
+        "top1_accuracy": 0.0625,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 208,
+            "mean_probability": 0.06110147609825382,
+            "win_frequency": 0.07211538461538461
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 18,
+            "mean_probability": 0.11907603886456967,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.22950485440018906,
+            "win_frequency": 0.2
+          }
+        ]
+      },
+      "1609": {
+        "races": 1,
+        "log_loss": 3.0703627144369423,
+        "brier_multiclass": 1.0107948447340807,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 9,
+            "mean_probability": 0.05302592900093302,
+            "win_frequency": 0.1111111111111111
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 3,
+            "mean_probability": 0.10300561525632629,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.21374979322262394,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2950": {
+        "races": 11,
+        "log_loss": 2.211621264118922,
+        "brier_multiclass": 0.8630565841689171,
+        "top1_accuracy": 0.45454545454545453,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 104,
+            "mean_probability": 0.06325965175945797,
+            "win_frequency": 0.04807692307692308
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 27,
+            "mean_probability": 0.1347679370661474,
+            "win_frequency": 0.18518518518518517
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.2607539720767979,
+            "win_frequency": 0.3333333333333333
+          }
+        ]
+      },
+      "2600": {
+        "races": 21,
+        "log_loss": 2.278704464167948,
+        "brier_multiclass": 0.8609962577575716,
+        "top1_accuracy": 0.3333333333333333,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 230,
+            "mean_probability": 0.06505628308949825,
+            "win_frequency": 0.05217391304347826
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 35,
+            "mean_probability": 0.13667590684714476,
+            "win_frequency": 0.2
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.25067962995306725,
+            "win_frequency": 0.4
+          }
+        ]
+      },
+      "3000": {
+        "races": 17,
+        "log_loss": 2.5258253119916336,
+        "brier_multiclass": 0.9182819765694611,
+        "top1_accuracy": 0.11764705882352941,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 202,
+            "mean_probability": 0.06186704591060946,
+            "win_frequency": 0.0594059405940594
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 28,
+            "mean_probability": 0.1248396259722498,
+            "win_frequency": 0.17857142857142858
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.23482485462619965,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3028726349552914,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2300": {
+        "races": 15,
+        "log_loss": 2.10220368486013,
+        "brier_multiclass": 0.8332138359554344,
+        "top1_accuracy": 0.26666666666666666,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 138,
+            "mean_probability": 0.06653287949834583,
+            "win_frequency": 0.050724637681159424
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 34,
+            "mean_probability": 0.12506034279167214,
+            "win_frequency": 0.14705882352941177
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 6,
+            "mean_probability": 0.26106849571856916,
+            "win_frequency": 0.5
+          }
+        ]
+      },
+      "3025": {
+        "races": 1,
+        "log_loss": 1.6006588160075335,
+        "brier_multiclass": 0.712056500002219,
+        "top1_accuracy": 1,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 4,
+            "mean_probability": 0.06671548321444443,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 5,
+            "mean_probability": 0.10627490359993468,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.20176354914254885,
+            "win_frequency": 1.0
+          }
+        ]
+      },
+      "2325": {
+        "races": 2,
+        "log_loss": 2.696055839830135,
+        "brier_multiclass": 0.9382073941236626,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 28,
+            "mean_probability": 0.07142857142857142,
+            "win_frequency": 0.07142857142857142
+          }
+        ]
+      },
+      "2725": {
+        "races": 9,
+        "log_loss": 2.5030595612706756,
+        "brier_multiclass": 0.914337272334266,
+        "top1_accuracy": 0.3333333333333333,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 95,
+            "mean_probability": 0.06292424212942302,
+            "win_frequency": 0.05263157894736842
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 17,
+            "mean_probability": 0.1377210508345712,
+            "win_frequency": 0.23529411764705882
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.22697971117236768,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2500": {
+        "races": 10,
+        "log_loss": 2.275502372042147,
+        "brier_multiclass": 0.8840087092630142,
+        "top1_accuracy": 0.1,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 87,
+            "mean_probability": 0.07193001460847698,
+            "win_frequency": 0.06896551724137931
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 23,
+            "mean_probability": 0.1296143284327072,
+            "win_frequency": 0.13043478260869565
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 3,
+            "mean_probability": 0.25365305837007884,
+            "win_frequency": 0.3333333333333333
+          }
+        ]
+      },
+      "3300": {
+        "races": 1,
+        "log_loss": 3.1495923233990863,
+        "brier_multiclass": 1.0331874576370008,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 11,
+            "mean_probability": 0.04278803117614296,
+            "win_frequency": 0.09090909090909091
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 2,
+            "mean_probability": 0.160705351860925,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.20792095334057756,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2025": {
+        "races": 3,
+        "log_loss": 2.0698437819929216,
+        "brier_multiclass": 0.7840688558179145,
+        "top1_accuracy": 0.3333333333333333,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 36,
+            "mean_probability": 0.07158578344486577,
+            "win_frequency": 0.05555555555555555
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1,
+            "mean_probability": 0.10991722369506646,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.31299457228976524,
+            "win_frequency": 1.0
+          }
+        ]
+      },
+      "2000": {
+        "races": 6,
+        "log_loss": 2.557996114635215,
+        "brier_multiclass": 0.9150268977309267,
+        "top1_accuracy": 0.16666666666666666,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 70,
+            "mean_probability": 0.06473132768359115,
+            "win_frequency": 0.05714285714285714
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 10,
+            "mean_probability": 0.12298731456727877,
+            "win_frequency": 0.2
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1,
+            "mean_probability": 0.23893391647583037,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2100": {
+        "races": 10,
+        "log_loss": 2.5498598403507358,
+        "brier_multiclass": 0.9230759859554417,
+        "top1_accuracy": 0.1,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 113,
+            "mean_probability": 0.059736019804901036,
+            "win_frequency": 0.07079646017699115
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 17,
+            "mean_probability": 0.13925128951770643,
+            "win_frequency": 0.058823529411764705
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 4,
+            "mean_probability": 0.2206394600612931,
+            "win_frequency": 0.25
+          }
+        ]
+      },
+      "2175": {
+        "races": 1,
+        "log_loss": 3.0814247495875398,
+        "brier_multiclass": 1.022201473009715,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 11,
+            "mean_probability": 0.04344259509857026,
+            "win_frequency": 0.09090909090909091
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 3,
+            "mean_probability": 0.17404381797190902,
+            "win_frequency": 0.0
+          }
+        ]
+      }
+    },
+    "category": {
+      "D": {
+        "races": 55,
+        "log_loss": 2.496878219511052,
+        "brier_multiclass": 0.9108946186386084,
+        "top1_accuracy": 0.16363636363636364,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 618,
+            "mean_probability": 0.0607805175783445,
+            "win_frequency": 0.06634304207119741
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 97,
+            "mean_probability": 0.12940011030169773,
+            "win_frequency": 0.1134020618556701
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 21,
+            "mean_probability": 0.23265854463421132,
+            "win_frequency": 0.14285714285714285
+          }
+        ]
+      },
+      "F": {
+        "races": 198,
+        "log_loss": 2.4036707649385844,
+        "brier_multiclass": 0.8923117481928283,
+        "top1_accuracy": 0.20707070707070707,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 2118,
+            "mean_probability": 0.06484307135895374,
+            "win_frequency": 0.059017941454202076
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 388,
+            "mean_probability": 0.12698865619648073,
+            "win_frequency": 0.14948453608247422
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 43,
+            "mean_probability": 0.24253982371870353,
+            "win_frequency": 0.3488372093023256
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 3,
+            "mean_probability": 0.32052127919901335,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "E": {
+        "races": 123,
+        "log_loss": 2.416632758809501,
+        "brier_multiclass": 0.898325388149534,
+        "top1_accuracy": 0.21138211382113822,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 1327,
+            "mean_probability": 0.06128838298025418,
+            "win_frequency": 0.06103993971363979
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 216,
+            "mean_probability": 0.12652979182317686,
+            "win_frequency": 0.14351851851851852
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 51,
+            "mean_probability": 0.23247741705884017,
+            "win_frequency": 0.17647058823529413
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 7,
+            "mean_probability": 0.35479035448511337,
+            "win_frequency": 0.2857142857142857
+          }
+        ]
+      },
+      "A": {
+        "races": 8,
+        "log_loss": 2.0239296096129884,
+        "brier_multiclass": 0.7973020631783299,
+        "top1_accuracy": 0.5,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 70,
+            "mean_probability": 0.06053533212768665,
+            "win_frequency": 0.05714285714285714
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 14,
+            "mean_probability": 0.12814210449492278,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 7,
+            "mean_probability": 0.23087226687045945,
+            "win_frequency": 0.42857142857142855
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.352431420039801,
+            "win_frequency": 1.0
+          }
+        ]
+      },
+      "UNKNOWN": {
+        "races": 25,
+        "log_loss": 2.4337925448125883,
+        "brier_multiclass": 0.909032979674775,
+        "top1_accuracy": 0.2,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 246,
+            "mean_probability": 0.06665402984445043,
+            "win_frequency": 0.06504065040650407
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 65,
+            "mean_probability": 0.12460220540527622,
+            "win_frequency": 0.13846153846153847
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.2519826534611213,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "C": {
+        "races": 13,
+        "log_loss": 2.2431419817634453,
+        "brier_multiclass": 0.8661744775710739,
+        "top1_accuracy": 0.15384615384615385,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 106,
+            "mean_probability": 0.06465335007997114,
+            "win_frequency": 0.0660377358490566
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 38,
+            "mean_probability": 0.13337876960833658,
+            "win_frequency": 0.10526315789473684
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 5,
+            "mean_probability": 0.21567032928125424,
+            "win_frequency": 0.4
+          }
+        ]
+      },
+      "G": {
+        "races": 61,
+        "log_loss": 2.5289921827214346,
+        "brier_multiclass": 0.9178159334907963,
+        "top1_accuracy": 0.16393442622950818,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 734,
+            "mean_probability": 0.06557516964564226,
+            "win_frequency": 0.06403269754768393
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 80,
+            "mean_probability": 0.12659635807702554,
+            "win_frequency": 0.1625
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 10,
+            "mean_probability": 0.24210938710301902,
+            "win_frequency": 0.1
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3190229629063358,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "B": {
+        "races": 5,
+        "log_loss": 3.0493618949719883,
+        "brier_multiclass": 0.997191799231499,
+        "top1_accuracy": 0,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 63,
+            "mean_probability": 0.04912096008676774,
+            "win_frequency": 0.07936507936507936
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 9,
+            "mean_probability": 0.16496525286226688,
+            "win_frequency": 0.0
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 2,
+            "mean_probability": 0.21034611938661552,
+            "win_frequency": 0.0
+          }
+        ]
+      }
+    },
+    "start_type": {
+      "NON_PRECISE": {
+        "races": 327,
+        "log_loss": 2.4433842686182667,
+        "brier_multiclass": 0.8996683817383793,
+        "top1_accuracy": 0.19877675840978593,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 3641,
+            "mean_probability": 0.06301748190508692,
+            "win_frequency": 0.06152156001098599
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 562,
+            "mean_probability": 0.1281154911444647,
+            "win_frequency": 0.14056939501779359
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 93,
+            "mean_probability": 0.23375390733242674,
+            "win_frequency": 0.22580645161290322
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 11,
+            "mean_probability": 0.3466662707702596,
+            "win_frequency": 0.2727272727272727
+          }
+        ]
+      },
+      "AUTOSTART": {
+        "races": 161,
+        "log_loss": 2.405134881412135,
+        "brier_multiclass": 0.8969977156898271,
+        "top1_accuracy": 0.19875776397515527,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 1641,
+            "mean_probability": 0.06428850231844806,
+            "win_frequency": 0.062157221206581355
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 345,
+            "mean_probability": 0.12674452259544178,
+            "win_frequency": 0.13623188405797101
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 48,
+            "mean_probability": 0.23901011826110397,
+            "win_frequency": 0.25
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 1,
+            "mean_probability": 0.3032217234661151,
+            "win_frequency": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "French PMU-listed attelé only; unlisted starts unknown.",
+    "Sixty-day observed histories, maximum five starts; missing history explicit.",
+    "Winter/spring sample only, not full-year generalization.",
+    "Retrospective snapshots; original publication time unproven.",
+    "No odds, ROI, profitability claim, test tuning or automatic replacement of prospective pilot."
+  ]
+}
