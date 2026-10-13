@@ -1,0 +1,61 @@
+name: Turf Lab frozen V3 independent holdout
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/opposition_holdout.yml'
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify frozen models and collect independent April holdout
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.holdout_opposition
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Preserve partial evidence or completed evaluation
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence data reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve independent V3 holdout evidence and results'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: opposition-v3-independent-holdout
+          path: |
+            reports/opposition_v3_holdout*.json
+            reports/OPPOSITION_V3_HOLDOUT.md
+            reports/month_2026-04.json
+            evidence/month_2026-04/manifest.json
+          retention-days: 7
