@@ -1,0 +1,18 @@
+{
+  "version": "context-v4-validation-only",
+  "source_months": ["2024-01", "2024-02", "2024-03", "2025-01", "2025-02", "2025-03"],
+  "train": {"from": "2024-03-02", "to": "2024-03-31"},
+  "validation": {"from": "2025-03-02", "to": "2025-03-31"},
+  "minimum_retained_fraction_per_month": 0.98,
+  "lookback_days": 60,
+  "aptitude_prior_strength": 5,
+  "distance_tolerance_m": 250,
+  "l2": 0.1,
+  "candidates": ["v3", "departure", "aptitude", "combined"],
+  "selection": "Lowest validation log loss, no test-year outcomes loaded",
+  "departure": "Signed handicapDistance minus course distance. Negative values require exact advance-of-25m corroboration; otherwise missing. PMU number is never an autostart slot.",
+  "aptitude": "Past classified-finisher pairwise performance minus pre-race Elo expected performance; shrunk toward zero for same venue, nearby distance and explicit AUTOSTART only. All same-day outcomes excluded.",
+  "test_policy": "March and April 2026 already observed. No reuse for selecting V4; freeze another unseen period if validation improves.",
+  "status": "EXPERIMENTAL_NO_BET",
+  "prospective_model_changed": false
+}
