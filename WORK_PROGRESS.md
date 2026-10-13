@@ -6,6 +6,21 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
+### Extension V5 — reprise du 13 octobre après-midi
+
+Demande utilisateur : élargir et tester driver, entraîneur, ferrure. Protocole figé et publié avant collecte : `99ecbcb` (`config/connections_v5_protocol.json`). Code/tests publiés jusqu’à `f8718ce` ; 63 tests locaux réussis, dont équivalence de l’optimisation vectorisée, chronologie et gel avant test. Aucun résultat V5 encore disponible.
+
+- Collecte supplémentaire bornée : avril–mai 2024, avril–mai 2025, puis mai–juin 2026. Les mois déjà sauvegardés ne sont pas retéléchargés. Empreintes et sauvegardes hebdomadaires conservées.
+- Train : 2 mars–31 mai 2024 ; validation : 2 mars–31 mai 2025 (trois mois) ; test : mai–juin 2026, jamais utilisé pour choisir les variantes. Janvier/février construisent les historiques. Mars 2025 est déjà observé ; deux nouveaux mois élargissent la validation, sans effacer cette limite.
+- Comparaison : architecture V3 réentraînée sur la même période élargie, +driver, +entraîneur, +ferrure, puis combinaison. Sélection sur moyenne des log loss mensuelles, paramètres figés. Métriques par mois, Brier, calibration et intervalles exploratoires publiés.
+- Driver/entraîneur : résidus historiques corrigés par les attentes Elo avant la course, forme sur 30 jours, DQ régularisée et profondeur connue. Homonymes possibles dans les noms PMU : limite documentée.
+- Ferrure : catégories `deferre`, changement depuis la dernière course observée et historique du cheval sous la même configuration. Absence = inconnue, jamais « ferré » par défaut ; aucune interprétation causale.
+- Workflow `connections_v5.yml` : quatre mois de développement séquentiels → entraînement/sélection → sauvegarde des modèles et SHA-256 du code → deux mois de test séquentiels → test indépendant sans réentraînement. Les phases aval sont bloquées si la précédente échoue ; seuil de couverture 98 %, au moins 200 courses par mois évalué.
+- Gratuit, aucune cote récupérée, aucun pari, aucun remplacement du modèle prospectif V1. NO BET.
+- Le premier lancement reste à confirmer après publication du workflow. Ne pas annoncer une comparaison achevée tant que les rapports V5 ne sont pas produits.
+
+### Derniers résultats achevés (V3/V4)
+
 **13 octobre 2026 : V3 évalué sur avril ; extension départ/parcours V4 testée en validation et NON retenue.** 5 036 courses conservées, 66 072 participations (Q1 2024/2025/2026 + avril 2026). Statut NO BET, modèle prospectif V1 inchangé.
 
 - V3 indépendant : workflow 38354061076, job 115152751615, succès collecte/évaluation/sauvegarde. Avril : 528 courses, 7 045 participations, aucune exclusion. Log loss V3 2,44106 contre baseline 2,47761 ; Brier 0,89959 contre 0,90434 ; top-1 17,8 % contre 18,2 %. Rapport OPPOSITION_V3_HOLDOUT.md. Aucune rentabilité démontrée.
@@ -88,11 +103,10 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Prochaine action précise
 
-1. V4 est terminé, reproduit et sauvegardé : V3 reste retenu. Ne pas répéter cette évaluation ni lancer un test supplémentaire pour tenter de renverser la sélection.
-2. Continuer l'audit sémantique du départ : grille/ligne autostart pour placeCorde et 92 avances non corroborées. Conserver inconnus et preuves ; ne pas modifier le protocole V4 après consultation des résultats.
-3. Extension suivante possible : driver/entraîneur et deferre avec statistiques strictement antérieures ; protocole distinct avant comparaison. Météo/terrain restent planifiés, non intégrés.
-4. Toute nouvelle sélection utilise train/validation et nécessite ensuite une période indépendante encore non observée. Aucun réentraînement du pilote prospectif V1 ni pari réel.
-5. Les sections suivantes conservent l'historique ; l'état actuel ci-dessus fait foi.
+1. Vérifier le run de connections_v5.yml. Ne pas relancer les mois réussis ni ouvrir les résultats de mai–juin 2026 avant la sélection sauvegardée.
+2. Lire reports/connections_v5_validate_status.json et CONNECTIONS_V5_VALIDATION.md après les quatre mois de développement ; puis connections_v5_test_status.json et CONNECTIONS_V5_TEST.md après le test final.
+3. Si collecte interrompue, reprendre depuis les bruts et manifestes ; ne pas abaisser les critères ni remplacer les inconnus. Les modèles/code sont gelés par empreinte avant le test.
+4. V3/V4 achevés ci-dessous restent des résultats historiques. Le pilote prospectif V1 reste inchangé. Aucune performance V5 ni rentabilité encore annoncée.
 
 ## Reprise
 
