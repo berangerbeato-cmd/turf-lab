@@ -1,0 +1,42 @@
+{
+  "source_months": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2025-01",
+    "2025-02",
+    "2025-03"
+  ],
+  "counts": {
+    "participants": 40044,
+    "NON_PRECISE_participants": 28396,
+    "AUTOSTART_participants": 11648,
+    "positive_placeCorde": 11650,
+    "AUTOSTART_positive_placeCorde": 11623,
+    "placeCorde_equals_numPmu": 11650,
+    "NON_PRECISE_positive_placeCorde": 27
+  },
+  "different_from_number_examples": [],
+  "before_race_evidence": [
+    {
+      "race_id": "2026-10-13_R3C1",
+      "sha256": "0650371a98ba0a6ccacc4fd1edc95b6b17a7bd62bdf4fc82887560d1b232ddcf",
+      "fetched_at_utc": "2026-10-12T11:34:15.892622+00:00",
+      "scheduled_start_ms": 1791883200000,
+      "runners": 16,
+      "handicapDistance_available": 16,
+      "positive_placeCorde": 16
+    },
+    {
+      "race_id": "2026-10-13_R4C1",
+      "sha256": "9a289ef96557d01cd1100308dac5b59cd9d5cf28cd2c8f7f8d2656c1cc5e20c4",
+      "fetched_at_utc": "2026-10-12T11:34:22.636228+00:00",
+      "scheduled_start_ms": 1791899820000,
+      "runners": 12,
+      "handicapDistance_available": 12,
+      "positive_placeCorde": 12
+    }
+  ],
+  "decision": "placeCorde not used as autostart slot until semantic/grid mapping is verified. No slot or line derived from numPmu.",
+  "limits": "Two prospective races establish availability in those cases only, not historical publication or slot semantics."
+}
