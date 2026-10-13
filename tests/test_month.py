@@ -67,3 +67,35 @@ class MonthTests(unittest.TestCase):
                 observed.append(len(json.loads((root/'manifest.json').read_text())['days']))
             collect('2024-01', Store(), root, checkpoint)
         self.assertEqual(observed,[7,14,21,28,31])
+
+    def test_complete_cache_is_verified_without_network_or_checkpoint(self):
+        import json,gzip,hashlib
+        from unittest.mock import Mock
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);raw=b'{}';part=root/'race.gz';part.write_bytes(gzip.compress(raw))
+            report={'month':'2024-01','status':'COLLECTED','days':[{'date':d,'status':'OK'} for d in month_days('2024-01')],
+                    'partitions':[{'file':str(part),'race_id':'r','sha256':hashlib.sha256(raw).hexdigest()}]}
+            (root/'manifest.json').write_text(json.dumps(report));store=Mock();checkpoint=Mock()
+            self.assertEqual(collect('2024-01',store,root,checkpoint),report)
+            store.programme.assert_not_called();checkpoint.assert_not_called()
+            part.write_bytes(gzip.compress(b'corrupt'))
+            with self.assertRaisesRegex(ValueError,'digest mismatch'):
+                collect('2024-01',store,root,checkpoint)
+
+    def test_checkpoint_rebases_again_after_concurrent_push(self):
+        from unittest.mock import patch
+        from types import SimpleNamespace
+        from scripts.collect_month import git_checkpoint
+        calls=[]; pushes=0
+        def run(args,**kwargs):
+            nonlocal pushes
+            calls.append(args)
+            if args[:2]==['git','diff']:return SimpleNamespace(returncode=1)
+            if args[:2]==['git','push']:
+                pushes+=1;return SimpleNamespace(returncode=1 if pushes==1 else 0)
+            return SimpleNamespace(returncode=0)
+        with patch('scripts.collect_month.subprocess.run',side_effect=run):
+            git_checkpoint(Path('evidence'),Path('data'))
+        self.assertEqual(pushes,2)
+        self.assertEqual(sum(c[:2]==['git','pull'] for c in calls),2)
+        self.assertFalse(any('--force' in c for c in calls))
