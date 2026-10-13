@@ -1,6 +1,6 @@
 {
   "month": "2026-01",
-  "status": "RUNNING",
+  "status": "COLLECTED_WITH_GAPS",
   "days": [
     {
       "date": "2026-01-01",
@@ -4689,5 +4689,88 @@
   },
   "participants": 6177,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
-  "model_status": "NO BET; no training in this experiment"
+  "model_status": "NO BET; no training in this experiment",
+  "field_availability_retained_participants": {
+    "idCheval": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    },
+    "nomMere": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    },
+    "nomPere": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    },
+    "driver": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    },
+    "entraineur": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    },
+    "musique": {
+      "nonempty": 6010,
+      "denominator": 6177,
+      "fraction": 0.972964222114295
+    },
+    "ferrure": {
+      "nonempty": 0,
+      "denominator": 6177,
+      "fraction": 0.0
+    },
+    "reductionKilometrique": {
+      "nonempty": 4626,
+      "denominator": 6177,
+      "fraction": 0.7489072365225837
+    },
+    "tempsObtenu": {
+      "nonempty": 4626,
+      "denominator": 6177,
+      "fraction": 0.7489072365225837
+    },
+    "age": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    },
+    "sexe": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    },
+    "gainsParticipant": {
+      "nonempty": 6177,
+      "denominator": 6177,
+      "fraction": 1.0
+    }
+  },
+  "requests_this_run": 0,
+  "venues": {
+    "VINCENNES": 139,
+    "CABOURG": 6,
+    "CAGNES/MER": 74,
+    "LA CEPIERE": 35,
+    "LE BOUSCAT": 26,
+    "CORDEMAIS": 11,
+    "CHATEAUBRIANT": 12,
+    "ARGENTAN": 28,
+    "LYON LA SOIE": 38,
+    "AGEN LA GARENNE": 14,
+    "ANGERS": 26,
+    "GRAIGNES": 6,
+    "NANTES": 24,
+    "MAUQUENCHY": 21,
+    "PONT DE VIVAUX": 15,
+    "SAINT GALMIER": 14,
+    "SAINT BRIEUC": 8
+  },
+  "candidate_races": 515
 }
