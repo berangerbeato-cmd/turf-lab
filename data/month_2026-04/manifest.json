@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "status": "RUNNING",
+  "status": "COLLECTED",
   "days": [
     {
       "date": "2026-04-01",
@@ -4791,5 +4791,117 @@
   },
   "participants": 7045,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
-  "model_status": "NO BET; no training in this experiment"
+  "model_status": "NO BET; no training in this experiment",
+  "field_availability_retained_participants": {
+    "idCheval": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    },
+    "nomMere": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    },
+    "nomPere": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    },
+    "driver": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    },
+    "entraineur": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    },
+    "musique": {
+      "nonempty": 6854,
+      "denominator": 7045,
+      "fraction": 0.972888573456352
+    },
+    "ferrure": {
+      "nonempty": 0,
+      "denominator": 7045,
+      "fraction": 0.0
+    },
+    "reductionKilometrique": {
+      "nonempty": 5116,
+      "denominator": 7045,
+      "fraction": 0.7261887863733144
+    },
+    "tempsObtenu": {
+      "nonempty": 5116,
+      "denominator": 7045,
+      "fraction": 0.7261887863733144
+    },
+    "age": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    },
+    "sexe": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    },
+    "gainsParticipant": {
+      "nonempty": 7045,
+      "denominator": 7045,
+      "fraction": 1.0
+    }
+  },
+  "requests_this_run": 1086,
+  "venues": {
+    "ANGERS": 6,
+    "AVIGNON": 2,
+    "AGEN LA GARENNE": 25,
+    "MAUQUENCHY": 7,
+    "VINCENNES": 66,
+    "LA CEPIERE": 26,
+    "MESLAY DU MAINE": 15,
+    "SAINT MALO": 5,
+    "GRAIGNES": 20,
+    "ECOMMOY": 1,
+    "CHARTRES": 14,
+    "BEAUMONT DE LOMAGNE": 21,
+    "CARPENTRAS": 1,
+    "LYON-PARILLY": 35,
+    "CHATELAILLON": 14,
+    "REIMS": 21,
+    "VIRE": 7,
+    "CHERBOURG": 6,
+    "HYERES": 9,
+    "LA CAPELLE": 15,
+    "PARAY LE MONIAL": 2,
+    "CHOLET": 12,
+    "STRASBOURG": 8,
+    "CAVAILLON": 7,
+    "AMIENS": 16,
+    "PONTCHATEAU": 7,
+    "ORAISON": 2,
+    "LISIEUX": 7,
+    "RAMBOUILLET": 8,
+    "ARGENTAN": 6,
+    "LE BOUSCAT": 7,
+    "LE CROISE LAROCHE": 18,
+    "CORDEMAIS": 6,
+    "BORELY": 27,
+    "ENGHIEN": 21,
+    "MONTLUCON": 1,
+    "NIMES": 1,
+    "NANCY-BRABOIS": 8,
+    "FEURS": 7,
+    "CHATEAUBRIANT": 7,
+    "LAVAL": 13,
+    "CAEN": 5,
+    "LE TOUQUET": 1,
+    "CASTILLONNES": 1,
+    "LE MONT SAINT MICHEL": 7,
+    "SAINT BRIEUC": 7
+  },
+  "candidate_races": 528
 }
