@@ -6,16 +6,19 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
-Reprise du 13 octobre 2026 : **V2 évalué et sauvegardé ; V3 opposition/DQ évalué sur validation, collecte du test indépendant lancée**. 4 508 courses conservées, 59 027 participations, neuf mois Q1 2024/2025/2026. NO BET et modèle prospectif V1 inchangé.
+**13 octobre 2026 : V3 évalué sur avril ; extension départ/parcours V4 testée en validation et NON retenue.** 5 036 courses conservées, 66 072 participations (Q1 2024/2025/2026 + avril 2026). Statut NO BET, modèle prospectif V1 inchangé.
 
-- V2 confirmé dans GitHub Actions : run 38317253515, job 115151701807, succès calcul ET sauvegarde. 496 courses train, 537 validation, 488 test. Test : log loss 2,430765 contre 2,544523 uniforme ; Brier 0,898787 contre 0,919721 ; 97/488 premiers choix gagnants. Rapport BACKTEST_EXTENSION_V2.md.
-- Couverture corrigée avant consultation des scores : annulations explicites PMU retirées du dénominateur, empreintes vérifiées ; véritables anomalies conservées. 29 annulations confirmées et 9 quarantaines non résolues sur 4 546 courses programmées. Aucun seuil abaissé. Rapports COVERAGE_CORRECTION.md et cancellation_audit.json.
-- Sauvegardes : retries Git sans force ; mois complets réutilisés après vérification des empreintes, sans requêtes ni réécriture intermédiaire. Concurrence Git observée et corrigée ; certains anciens essais Actions sont annulés/échoués, ne pas les confondre avec le job V2 réussi ci-dessus.
-- V3 implémenté : Elo multi-partants, DQ exclues des duels, fréquence DQ régularisée et incertitude ; mises à jour après journée, resets annuels. Quatre variantes comparées sur mars 2025 uniquement : baseline 2,436894 ; opposition 2,424855 ; DQ 2,436870 ; combinaison 2,423875 en log loss. Gain DQ seul négligeable ; intervalle exploratoire par journée publié. Aucune nouveauté mathématique revendiquée.
-- Modèles V3 et rapports publiés : models/opposition_v3_candidates.json, reports/OPPOSITION_V3_VALIDATION.md. Protocole publié avant calcul : 00d9200 ; protocole test indépendant : 6e71d14. Code de validation 3e52073.
-- Test indépendant **avril 2026** gelé avant collecte : config/opposition_v3_holdout.json. Modèles contrôlés par SHA-256, combinaison choisie sur validation, aucun refit. Collecte bornée à un mois, sauvegardes hebdomadaires, 98 % de couverture et minimum 200 courses ; aucun remplacement prospectif.
-- 52 tests locaux passent. V2 reproduit sur GitHub ; V3 validation exécutée dans le runtime cloud, test indépendant pas encore évalué à ce checkpoint. Run 38354061076 (https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38354061076), job 115152751615 observé en cours à l’étape collecte/évaluation. Workflow publié par 2060268 ; aucun lancement manuel nécessaire.
-- Inventaire des extensions publié : deferre disponible sur 36 460/59 027 participations ; driver, entraîneur et handicapDistance sur toutes. 349 écarts de distance négatifs audités : 257 explicitement corroborés par « avance de 25 m », 92 restant à clarifier (notamment textes abîmés). Preuves dans departure_advance_audit.json ; ne jamais ramener silencieusement ces écarts à zéro. Position/ligne autostart non trouvées dans les champs audités. Pas encore de variables météo/terrain intégrées.
+- V3 indépendant : workflow 38354061076, job 115152751615, succès collecte/évaluation/sauvegarde. Avril : 528 courses, 7 045 participations, aucune exclusion. Log loss V3 2,44106 contre baseline 2,47761 ; Brier 0,89959 contre 0,90434 ; top-1 17,8 % contre 18,2 %. Rapport OPPOSITION_V3_HOLDOUT.md. Aucune rentabilité démontrée.
+- V4 protocole gelé avant calcul : eb57b1a, config/context_v4_protocol.json. Train mars 2024 (496), validation mars 2025 (537), aucun résultat 2026 chargé. Référence V3 ; ajouts séparés départ et aptitude, puis ensemble.
+- Départ : handicapDistance moins distance de course, signe conservé ; avances négatives uniquement si texte exact « avance de 25 m » les corrobore, sinon manquant. Aucune position autostart fabriquée depuis numPmu.
+- Aptitude : résidu de performance parmi classés comparé aux attentes Elo avant la course ; mêmes hippodromes, distances proches (+/-250 m), autostart explicitement connu. Régularisation force 5 et fenêtre 60 jours ; résultats du même jour exclus ; NP/DQ non transformés en mauvaises performances numériques.
+- Résultats V4 locaux : log loss V3 2,423875 ; départ 2,424225 ; aptitude 2,424299 ; combinaison 2,424611. V3 reste sélectionné selon le critère fixé. Aucun gain démontré ; pas de nouveau test collecté ni de modèle promu. Les intervalles exploratoires et Brier sont publiés dans CONTEXT_V4_VALIDATION.md et context_v4_validation.json.
+- 56 tests locaux réussis. Code publié : c3101a8 (context), e1f4e45 (tests), 3ac09ed (évaluation). Rapports/modèles candidats publiés jusqu'à d6fd7d9. Reproduction GitHub via context_validation.yml à vérifier.
+- Audit départ : sur 40 044 participations 2024/2025, placeCorde positif 11 650 fois, toujours égal à numPmu ; 11 623 dans des courses explicitement AUTOSTART, 27 de type inconnu. La sémantique de grille/ligne reste non validée ; cette variable n'entre pas dans V4. Rapports start_position_audit.json et script reproductible.
+- Les preuves avant-course déjà conservées confirment handicapDistance disponible sur 28/28 chevaux de deux courses du 13 octobre, empreintes/horodatages vérifiés. Cela ne prouve pas la publication historique de tous les champs.
+- Audit antérieur Q1 : 349 distances négatives, dont 257 corroborées explicitement ; 92 ambiguës, notamment textes abîmés. Preuves departure_advance_audit.json. Ne pas les ramener à zéro.
+- Couverture : 29 annulations prouvées retirées du dénominateur ; 9 vraies quarantaines conservées. Aucun seuil abaissé. V2 antérieur : 496 train/537 validation/488 test, log loss 2,430765 vs uniforme 2,544523.
+- Sauvegardes Git avec retries sans force ; mois complets réutilisés après vérification SHA-256. Les tests de mars et avril 2026 sont désormais observés ; ne pas les réutiliser pour sélectionner les prochaines extensions.
 
 ## Travaux publiés et vérifiés
 
@@ -85,11 +88,11 @@ Reprise du 13 octobre 2026 : **V2 évalué et sauvegardé ; V3 opposition/DQ év
 
 ## Prochaine action précise
 
-1. Vérifier le workflow opposition_holdout.yml : collecte d'avril 2026 et test V3 figé. Lire reports/opposition_v3_holdout_status.json puis OPPOSITION_V3_HOLDOUT.md si réussite. Ne pas annoncer de résultat avant preuve.
-2. En cas d'interruption, reprendre les bruts evidence/month_2026-04 ; aucun nouveau téléchargement des réponses présentes. Vérifier sauvegarde Git et artefact diagnostic.
-3. Ne pas retoucher les modèles V3 sur avril après consultation. Le V2 de mars 2026 est également déjà observé. Aucun changement du modèle prospectif V1.
-4. Suite indépendante : résoudre les 92 distances individuelles négatives non corroborées par le texte exact, puis départ/parcours et deferre ; météo selon disponibilité avant départ. Ne pas assimiler numPmu à une position.
-5. Les autres sections ci-dessous conservent l'historique des étapes ; l'état actuel ci-dessus fait foi.
+1. Vérifier la reproduction context_validation.yml (tests, métriques et sauvegarde). V4 n'est pas retenu : ne pas lancer de test supplémentaire pour tenter de renverser la sélection.
+2. Continuer l'audit sémantique du départ : grille/ligne autostart pour placeCorde et 92 avances non corroborées. Conserver inconnus et preuves ; ne pas modifier le protocole V4 après consultation des résultats.
+3. Extension suivante possible : driver/entraîneur et deferre avec statistiques strictement antérieures ; protocole distinct avant comparaison. Météo/terrain restent planifiés, non intégrés.
+4. Toute nouvelle sélection utilise train/validation et nécessite ensuite une période indépendante encore non observée. Aucun réentraînement du pilote prospectif V1 ni pari réel.
+5. Les sections suivantes conservent l'historique ; l'état actuel ci-dessus fait foi.
 
 ## Reprise
 
