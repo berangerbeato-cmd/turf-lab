@@ -1,0 +1,50 @@
+name: Turf Lab departure and course validation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/context_validation.yml'
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reproduce validation without opening 2026 test outcomes
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee reports/test_results.txt
+          python -m scripts.audit_start_position
+          python -m scripts.backtest_context
+      - name: Record progress
+        if: success() || failure()
+        env:
+          AUDIT_JOB_STATUS: ${{ job.status }}
+        run: python -m scripts.write_cloud_checkpoint
+      - name: Save reproduction and diagnostics
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add models/context_v4_candidates.json reports WORK_PROGRESS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Reproduce departure and aptitude validation without model promotion'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
