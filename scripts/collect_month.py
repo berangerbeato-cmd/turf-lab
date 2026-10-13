@@ -32,11 +32,28 @@ def git_checkpoint(evidence, output):
     if changed.returncode != 1:
         raise RuntimeError('Cannot inspect staged checkpoint')
     subprocess.run(['git', 'commit', '-m', 'Checkpoint bounded monthly collection'], check=True)
-    subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
-    subprocess.run(['git', 'push', 'origin', 'HEAD:main'], check=True)
+    for attempt in range(3):
+        subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
+        pushed = subprocess.run(['git', 'push', 'origin', 'HEAD:main'])
+        if pushed.returncode == 0:
+            return
+    raise RuntimeError('Checkpoint push failed after three non-forcing attempts')
 
 
 def collect(month, store, output, checkpoint=None):
+    saved = output / 'manifest.json'
+    if saved.exists():
+        previous = json.loads(saved.read_text())
+        if (previous.get('month') == month
+                and previous.get('status') in ('COLLECTED', 'COLLECTED_WITH_GAPS')
+                and [d['date'] for d in previous['days']] == month_days(month)
+                and all(d['status'] == 'OK' for d in previous['days'])):
+            for entry in previous['partitions']:
+                raw = gzip.decompress(Path(entry['file']).read_bytes())
+                if hashlib.sha256(raw).hexdigest() != entry['sha256']:
+                    raise ValueError('Completed month digest mismatch: ' + entry['race_id'])
+            print('Verified completed month from cache; no requests or checkpoint rewrites: '+month)
+            return previous
     report = {'month': month, 'status': 'RUNNING', 'days': [], 'partitions': [],
               'quarantine': [], 'fields_nonempty': {}, 'participants': 0,
               'historical_snapshot': 'Retrospective; original pre-race publication unproven',
