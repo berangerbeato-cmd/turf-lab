@@ -6,6 +6,17 @@ MySQL, AspiTurf, VPN ou contournement. Cotes futures par capture manuelle.
 
 ## Phase actuelle
 
+### V5 achevé — préparation prospective du 13 octobre au soir
+
+Le run 38386290849 a réussi ses huit tâches, sauvegardes comprises. Les anciennes mentions « aucun résultat V5 » ci-dessous sont des checkpoints historiques désormais dépassés.
+
+- Test indépendant : 1 088 courses, log loss V3 2,35859 → V5 combiné 2,16732 ; top-1 19,9 % → 24,4 %. Aucun réentraînement, aucune rentabilité démontrée.
+- Audit reproduit avec vérification des empreintes du modèle, du code et des sources. Mai : écart de log loss −0,17712 ; juin : −0,20487. Intervalle descriptif à 95 % par journées : [−0,22538 ; −0,15532]. Calibration sans correction sur le test ; 47 participations seulement au-dessus de 40 %, prudence.
+- 66 tests locaux réussis. Rapports : CONNECTIONS_V5_AUDIT.md et connections_v5_audit.json. Aucun changement aux fichiers gelés.
+- Préparation prospective autorisée : compléter juillet–septembre 2026 avec cache, limites de requêtes, contrôle qualité et checkpoints. Workflow connections_v5_shadow_prepare.yml, lancement à vérifier.
+- Ce workflow collecte des historiques seulement : il ne produit PAS de prédictions V5. Ensuite, compléter les jours achevés d'octobre, enregistrer les partants et la ferrure avant départ, calculer V3/V5 ensemble dans un registre distinct, puis noter après arrivée définitive. Ne jamais présenter une prédiction rétrospective comme prospective.
+- Le pilote V1 reste inchangé. NO BET. Pas de réglage, de recalibration ni de promotion automatique.
+
 ### Extension V5 — reprise du 13 octobre après-midi
 
 Demande utilisateur : élargir et tester driver, entraîneur, ferrure. Protocole figé et publié avant collecte : `99ecbcb` (`config/connections_v5_protocol.json`). Code/tests publiés jusqu’à `f8718ce` ; 63 tests locaux réussis, dont équivalence de l’optimisation vectorisée, chronologie et gel avant test. Aucun résultat V5 encore disponible.
