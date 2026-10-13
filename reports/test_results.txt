@@ -21,6 +21,8 @@ test_non_runner_requires_updated_probabilities (test_manual_value.ManualValueTes
 test_quote_cannot_change_probability (test_manual_value.ManualValueTests.test_quote_cannot_change_probability) ... ok
 test_wrong_horse_number_rejected (test_manual_value.ManualValueTests.test_wrong_horse_number_rejected) ... ok
 test_budget_pause_retains_checkpoint (test_month.MonthTests.test_budget_pause_retains_checkpoint) ... ok
+test_checkpoint_rebases_again_after_concurrent_push (test_month.MonthTests.test_checkpoint_rebases_again_after_concurrent_push) ... ok
+test_complete_cache_is_verified_without_network_or_checkpoint (test_month.MonthTests.test_complete_cache_is_verified_without_network_or_checkpoint) ... ok
 test_empty_response_not_zero_race_day (test_month.MonthTests.test_empty_response_not_zero_race_day) ... ok
 test_full_calendar (test_month.MonthTests.test_full_calendar) ... ok
 test_missing_programme_is_recorded (test_month.MonthTests.test_missing_programme_is_recorded) ... ok
@@ -44,6 +46,8 @@ test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_reje
 test_no_provisional_or_ambiguous_winner (test_shadow.ShadowTests.test_no_provisional_or_ambiguous_winner) ... ok
 
 ----------------------------------------------------------------------
-Ran 44 tests in 0.040s
+Ran 46 tests in 0.046s
 
 OK
+Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
+Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
