@@ -26,6 +26,8 @@ test_unresolved_remains_in_denominator (test_coverage.CoverageTests.test_unresol
 test_dimensions_missing_and_expiry (test_demographics_tandem.V6Tests.test_dimensions_missing_and_expiry) ... ok
 test_no_same_day_target_future_leakage (test_demographics_tandem.V6Tests.test_no_same_day_target_future_leakage) ... ok
 test_nonrunner_never_updates_pair (test_demographics_tandem.V6Tests.test_nonrunner_never_updates_pair) ... ok
+test_convex_weights_and_nonrunner (test_ensemble.EnsembleTests.test_convex_weights_and_nonrunner) ... ok
+test_invalid_distributions_and_fields (test_ensemble.EnsembleTests.test_invalid_distributions_and_fields) ... ok
 test_geographical_and_discipline_scope (test_evidence.EvidenceTests.test_geographical_and_discipline_scope) ... ok
 test_github_credential_not_forwarded_to_artifact_host (test_evidence.EvidenceTests.test_github_credential_not_forwarded_to_artifact_host) ... ok
 test_historical_identity_requires_both_parents (test_evidence.EvidenceTests.test_historical_identity_requires_both_parents) ... ok
@@ -117,7 +119,7 @@ test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
 ----------------------------------------------------------------------
-Ran 117 tests in 0.136s
+Ran 119 tests in 0.110s
 
 OK (skipped=6)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
