@@ -1,0 +1,79 @@
+{
+  "month": "2022-01",
+  "status": "RUNNING",
+  "days": [
+    {
+      "date": "2022-01-01",
+      "status": "OK",
+      "candidate_races": 6
+    }
+  ],
+  "partitions": [
+    {
+      "race_id": "2022-01-01_R1C1",
+      "file": "data/month_2022-01/races/2022-01-01_R1C1.json.gz",
+      "sha256": "2bfafcc1a0fedc3926cced94614d6cfa31f67c829987eee2bd6b95af9d0e33f9",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2022-01-01_R1C2",
+      "file": "data/month_2022-01/races/2022-01-01_R1C2.json.gz",
+      "sha256": "c0e69a68b5babf95f73d63af05948c686c5d36c3bbee2f3638cdf0e42a77156c",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2022-01-01_R1C3",
+      "file": "data/month_2022-01/races/2022-01-01_R1C3.json.gz",
+      "sha256": "a47a9105113616dc577146daa4447208bea420e7cd7521697db674ec184cd0c6",
+      "venue": "VINCENNES",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2022-01-01_R1C4",
+      "file": "data/month_2022-01/races/2022-01-01_R1C4.json.gz",
+      "sha256": "faa3948e46d71d487da851e1f582687a1cbf0b4ca51839fd39f42b42960143fa",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2022-01-01_R1C6",
+      "file": "data/month_2022-01/races/2022-01-01_R1C6.json.gz",
+      "sha256": "b76690479ccda3c2ea856339e86c4ce67607074b9730ff8188f1bc405a16478d",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2022-01-01_R1C7",
+      "file": "data/month_2022-01/races/2022-01-01_R1C7.json.gz",
+      "sha256": "ca073b02978c11546de8a7c7131c73b3d8057609d77e63fd4450e488837f6ae7",
+      "venue": "VINCENNES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    }
+  ],
+  "quarantine": [],
+  "fields_nonempty": {
+    "idCheval": 0,
+    "nomMere": 84,
+    "nomPere": 84,
+    "driver": 84,
+    "entraineur": 84,
+    "musique": 84,
+    "ferrure": 0,
+    "reductionKilometrique": 61,
+    "tempsObtenu": 61,
+    "age": 84,
+    "sexe": 84,
+    "gainsParticipant": 84
+  },
+  "participants": 84,
+  "historical_snapshot": "Retrospective; original pre-race publication unproven",
+  "model_status": "NO BET; no training in this experiment"
+}
