@@ -107,11 +107,15 @@ test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synth
 test_evaluation_no_refit_and_idempotent (test_v7_holdout.V7HoldoutTests.test_evaluation_no_refit_and_idempotent) ... ok
 test_freeze_and_tampering (test_v7_holdout.V7HoldoutTests.test_freeze_and_tampering) ... ok
 test_scope_guard_before_network (test_v7_holdout.V7HoldoutTests.test_scope_guard_before_network) ... ok
+test_metrics_reproduce_existing_and_reject_invalid (test_xgb_model.XGBProbabilityTests.test_metrics_reproduce_existing_and_reject_invalid) ... ok
+test_normalization_shift_and_nonrunner (test_xgb_model.XGBProbabilityTests.test_normalization_shift_and_nonrunner) ... ok
+test_saved_model_and_inference_ignore_results (test_xgb_model.XGBTrainingTests.test_saved_model_and_inference_ignore_results) ... skipped 'optional XGBoost dependencies absent'
+test_weights_dimensions_and_label_guard (test_xgb_model.XGBTrainingTests.test_weights_dimensions_and_label_guard) ... skipped 'optional XGBoost dependencies absent'
 
 ----------------------------------------------------------------------
-Ran 109 tests in 0.098s
+Ran 113 tests in 1.070s
 
-OK (skipped=2)
+OK (skipped=4)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Outside fixed cohort dates; no requests
