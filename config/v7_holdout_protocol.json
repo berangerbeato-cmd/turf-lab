@@ -1,0 +1,15 @@
+{
+  "version": "v7-fixed-september-october-2025",
+  "collection_months": ["2025-09", "2025-10"],
+  "source_months": ["2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10"],
+  "test": {"from": "2025-09-01", "to": "2025-10-31"},
+  "models": ["v6", "v7_speed"],
+  "minimum_races_per_month": 200,
+  "minimum_retained_fraction_per_month": 0.98,
+  "max_requests_per_month": 3000,
+  "refit": false,
+  "selection": "None: compare the already frozen V6 and experimental V7. No automatic promotion.",
+  "primary_metric": "Paired mean race log loss difference V7 minus V6",
+  "secondary_metrics": ["Brier", "top1_accuracy", "monthly log loss", "calibration", "speed coverage"],
+  "limits": ["January-August supply past-only histories, never test selection", "Past completed test days may update rolling histories, never model coefficients", "Day bootstrap is descriptive", "Two months do not establish annual stability", "Retrospective source publication unproven", "No odds, bets or profitability", "Prospective V5/V6/V7 unchanged"]
+}
