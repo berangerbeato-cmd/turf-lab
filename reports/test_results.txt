@@ -16,6 +16,11 @@ test_advance_requires_proof_and_number_is_never_position (test_context.ContextTe
 test_dq_np_and_expired_history_not_used_as_performance (test_context.ContextTests.test_dq_np_and_expired_history_not_used_as_performance) ... ok
 test_same_day_and_future_results_cannot_change_current_context (test_context.ContextTests.test_same_day_and_future_results_cannot_change_current_context) ... ok
 test_unknown_start_type_not_standing_start (test_context.ContextTests.test_unknown_start_type_not_standing_start) ... ok
+test_context_never_uses_its_own_race (test_context_speed.SpeedTests.test_context_never_uses_its_own_race) ... ok
+test_expiry_and_year_reset (test_context_speed.SpeedTests.test_expiry_and_year_reset) ... ok
+test_invalid_units_dq_and_nonrunner (test_context_speed.SpeedTests.test_invalid_units_dq_and_nonrunner) ... ok
+test_past_only_and_day_batching (test_context_speed.SpeedTests.test_past_only_and_day_batching) ... ok
+test_source_date_guard (test_context_speed.SpeedTests.test_source_date_guard) ... ok
 test_only_explicit_noncontradictory_cancellation_is_excluded (test_coverage.CoverageTests.test_only_explicit_noncontradictory_cancellation_is_excluded) ... ok
 test_unresolved_remains_in_denominator (test_coverage.CoverageTests.test_unresolved_remains_in_denominator) ... ok
 test_dimensions_missing_and_expiry (test_demographics_tandem.V6Tests.test_dimensions_missing_and_expiry) ... ok
@@ -94,7 +99,7 @@ test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of
 test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synthetic_evaluation_is_idempotent) ... ok
 
 ----------------------------------------------------------------------
-Ran 94 tests in 0.099s
+Ran 99 tests in 0.107s
 
 OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
