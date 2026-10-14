@@ -166,6 +166,12 @@ def main(state=None, target_date=None):
                 'policy_sha256': hashlib.sha256(CONFIG.read_bytes()).hexdigest(),
                 'requires_runner_recheck': True, 'v1_changed': False})
             saved.append(str(path))
+            # Separate sidecar: V6 failure cannot erase a valid V5 capture.
+            from scripts.shadow_v6 import capture as capture_v6
+            try:
+                state.setdefault('v6_saved', []).append(capture_v6(history, path))
+            except (ValueError, RuntimeError, FileNotFoundError, KeyError, TypeError) as error:
+                state.setdefault('v6_rejected', []).append({'race_id': rid, 'reason': str(error)})
         except (ValueError, KeyError, TypeError) as error:
             rejected.append({'race_id': rid, 'reason': str(error)})
             print(json.dumps(rejected[-1]), flush=True)
