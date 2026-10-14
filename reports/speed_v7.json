@@ -1,0 +1,634 @@
+{
+  "status": "EXPLORATORY_REUSED_VALIDATION_NO_BET",
+  "protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "baseline_frozen": {
+    "policy_sha256": "cbee92ccbcf6e88a4908b5324a9a57967962d69170617ce2f2616ddc53830c1a",
+    "v5_frozen": {
+      "protocol_sha256": "fb01d8561e078dc737638442156349003c7f90af1f53da0e6095d8818e9e1d83",
+      "models_sha256": "f537cc13991ed401533f7af782952ad298b0d3de120f25d9909435dd69d8d950",
+      "selected": "combined",
+      "sources_sha256": "54d289e07d9e54d1da97c058e901ca65bd63ad96c9ec8d7c1b8e4f7408490d21",
+      "code_sha256": {
+        "turf_lab/connections.py": "8cb77d6a4111c103dce0e47570dde7770db025d52457e1a6add7f0a069e65ef3",
+        "turf_lab/opposition.py": "7fcc90941505bfe32d218920a68541e76b0c97c0f32f7d48501f10d249a47e33",
+        "turf_lab/month_history.py": "e617b1f180e111e098871506caa62a6c57e6c22fcb698d78286b4463882f1990",
+        "turf_lab/pilot.py": "a5997e8dfaea58b13d8e0903c147834bad1ce93d463a5e2f126fb45d5d81cd77",
+        "turf_lab/fast_logit.py": "e6396d6a7d98ab55cdca23acdc767ce1839abf065312dc870d608960a8961e60",
+        "scripts/backtest_connections.py": "955079efa9ea5a2f9357c5dabef6100ddc86bdd50929621f4642c1fafe939c70"
+      }
+    },
+    "files_sha256": {
+      "models/demographics_tandem_v6_candidates.json": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
+      "config/demographics_tandem_v6_protocol.json": "5e5edf09f8d5e94c8632e51e111a7ddbbc7e55ee57888f52503e3b0e14e8081d",
+      "reports/demographics_tandem_v6.json": "f4b6c4a4c179ae06bb6f6c538de052cd1182fa98ffb243427d351fc9fbcd95e0",
+      "turf_lab/demographics_tandem.py": "953bad3b6974b5356def7a5090009f8ca454cdd5cb037eec0f6138c9a86f9425",
+      "scripts/backtest_v6.py": "a5fd00572297c41c0df5167e56ee64d86bfc6cc86a9052f9227ddfabded203c1",
+      "scripts/v6_holdout.py": "a6572e32d534ec3217a7dc5652f225d604882bfd7a9992530de7e90f1cd7c351"
+    }
+  },
+  "sources_sha256": "54d289e07d9e54d1da97c058e901ca65bd63ad96c9ec8d7c1b8e4f7408490d21",
+  "models_sha256": "97f565c8f0e2c80cb94c830da249237c178535bb993f5bef44caa3eee3fd58e9",
+  "code_sha256": {
+    "turf_lab/context_speed.py": "7a0f3ee59c9c4567307b594570f6b11d2d23dad477b9437a74f294d34f8211cd",
+    "scripts/backtest_speed_v7.py": "3f4db774dd3fbade2d4790b23455b6c058354b8792e4b70f71bb6d50059af8f7"
+  },
+  "train_races": 1563,
+  "validation_races": 1611,
+  "validation": {
+    "v6": {
+      "races": 1611,
+      "log_loss": 2.20952187812728,
+      "brier_multiclass": 0.8606884062327909,
+      "top1_accuracy": 0.23898199875853507,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 16031,
+          "mean_probability": 0.046853172088584194,
+          "win_frequency": 0.04254257376333354
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 3986,
+          "mean_probability": 0.13696666308621447,
+          "win_frequency": 0.15679879578524836
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 869,
+          "mean_probability": 0.2376498314352814,
+          "win_frequency": 0.238204833141542
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 214,
+          "mean_probability": 0.33825537223406427,
+          "win_frequency": 0.3130841121495327
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 62,
+          "mean_probability": 0.4391339769598356,
+          "win_frequency": 0.41935483870967744
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 13,
+          "mean_probability": 0.5438480405770961,
+          "win_frequency": 0.3076923076923077
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 1,
+          "mean_probability": 0.7469949118981529,
+          "win_frequency": 0.0
+        }
+      ]
+    },
+    "v7_speed": {
+      "races": 1611,
+      "log_loss": 2.1929023143914392,
+      "brier_multiclass": 0.8566840629368037,
+      "top1_accuracy": 0.2526381129733085,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 16033,
+          "mean_probability": 0.04617139810956914,
+          "win_frequency": 0.04210066737354207
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 3924,
+          "mean_probability": 0.13735937040345853,
+          "win_frequency": 0.1536697247706422
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 905,
+          "mean_probability": 0.23705078386579306,
+          "win_frequency": 0.24640883977900552
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 232,
+          "mean_probability": 0.3396676611689125,
+          "win_frequency": 0.33620689655172414
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 62,
+          "mean_probability": 0.44067398308784766,
+          "win_frequency": 0.3709677419354839
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 17,
+          "mean_probability": 0.5327135840411775,
+          "win_frequency": 0.47058823529411764
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "count": 2,
+          "mean_probability": 0.6373729322829631,
+          "win_frequency": 0.5
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 1,
+          "mean_probability": 0.7492841116613339,
+          "win_frequency": 0.0
+        }
+      ]
+    }
+  },
+  "by_month": {
+    "v6": {
+      "2025-03": {
+        "races": 537,
+        "log_loss": 2.1903068650463897,
+        "brier_multiclass": 0.8585837725217939,
+        "top1_accuracy": 0.23649906890130354,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5247,
+            "mean_probability": 0.046458171003138225,
+            "win_frequency": 0.04154755098151325
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1350,
+            "mean_probability": 0.13793186474027458,
+            "win_frequency": 0.16148148148148148
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 301,
+            "mean_probability": 0.23781205498329758,
+            "win_frequency": 0.2292358803986711
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 72,
+            "mean_probability": 0.33890766720773047,
+            "win_frequency": 0.2777777777777778
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 19,
+            "mean_probability": 0.4420974085505498,
+            "win_frequency": 0.5789473684210527
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 5,
+            "mean_probability": 0.5286655991548795,
+            "win_frequency": 0.2
+          }
+        ]
+      },
+      "2025-04": {
+        "races": 524,
+        "log_loss": 2.2399077153439717,
+        "brier_multiclass": 0.8663805052902052,
+        "top1_accuracy": 0.22519083969465647,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5291,
+            "mean_probability": 0.04720324931108948,
+            "win_frequency": 0.043281043281043284
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1311,
+            "mean_probability": 0.13598452487305224,
+            "win_frequency": 0.15484363081617086
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 273,
+            "mean_probability": 0.23767640477170704,
+            "win_frequency": 0.2454212454212454
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 68,
+            "mean_probability": 0.3380586231375151,
+            "win_frequency": 0.29411764705882354
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 16,
+            "mean_probability": 0.43228828951909903,
+            "win_frequency": 0.25
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 2,
+            "mean_probability": 0.5908191390611321,
+            "win_frequency": 0.5
+          }
+        ]
+      },
+      "2025-05": {
+        "races": 550,
+        "log_loss": 2.199333302350719,
+        "brier_multiclass": 0.8573202760450096,
+        "top1_accuracy": 0.2545454545454545,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5493,
+            "mean_probability": 0.04689327988233243,
+            "win_frequency": 0.042781722191880575
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1325,
+            "mean_probability": 0.13695501098393006,
+            "win_frequency": 0.15396226415094338
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 295,
+            "mean_probability": 0.23745971682919012,
+            "win_frequency": 0.24067796610169492
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 74,
+            "mean_probability": 0.3378015033213805,
+            "win_frequency": 0.36486486486486486
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 27,
+            "mean_probability": 0.4411053028423622,
+            "win_frequency": 0.4074074074074074
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 6,
+            "mean_probability": 0.540843042267598,
+            "win_frequency": 0.3333333333333333
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 1,
+            "mean_probability": 0.7469949118981529,
+            "win_frequency": 0.0
+          }
+        ]
+      }
+    },
+    "v7_speed": {
+      "2025-03": {
+        "races": 537,
+        "log_loss": 2.1689956541112547,
+        "brier_multiclass": 0.8530460939886733,
+        "top1_accuracy": 0.26629422718808193,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5248,
+            "mean_probability": 0.04581909832384226,
+            "win_frequency": 0.041158536585365856
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1336,
+            "mean_probability": 0.13866466160213023,
+            "win_frequency": 0.15494011976047903
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 303,
+            "mean_probability": 0.23636135268055333,
+            "win_frequency": 0.25742574257425743
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 80,
+            "mean_probability": 0.3412482163626619,
+            "win_frequency": 0.3
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 21,
+            "mean_probability": 0.43848417335583084,
+            "win_frequency": 0.47619047619047616
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 6,
+            "mean_probability": 0.52664488072279,
+            "win_frequency": 0.3333333333333333
+          }
+        ]
+      },
+      "2025-04": {
+        "races": 524,
+        "log_loss": 2.2175249959456673,
+        "brier_multiclass": 0.8625919549597849,
+        "top1_accuracy": 0.22137404580152673,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5309,
+            "mean_probability": 0.04677620583422649,
+            "win_frequency": 0.04351101902429836
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1280,
+            "mean_probability": 0.13670185512851346,
+            "win_frequency": 0.1515625
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 284,
+            "mean_probability": 0.2396027988428546,
+            "win_frequency": 0.2535211267605634
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 68,
+            "mean_probability": 0.34127355992512304,
+            "win_frequency": 0.3235294117647059
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 15,
+            "mean_probability": 0.44106974802408466,
+            "win_frequency": 0.13333333333333333
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 3,
+            "mean_probability": 0.5140532101293096,
+            "win_frequency": 0.6666666666666666
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 2,
+            "mean_probability": 0.6373729322829631,
+            "win_frequency": 0.5
+          }
+        ]
+      },
+      "2025-05": {
+        "races": 550,
+        "log_loss": 2.192785207911519,
+        "brier_multiclass": 0.854607433673356,
+        "top1_accuracy": 0.2690909090909091,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5476,
+            "mean_probability": 0.045922666382996864,
+            "win_frequency": 0.04163623082542001
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1308,
+            "mean_probability": 0.13666957721577097,
+            "win_frequency": 0.154434250764526
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 318,
+            "mean_probability": 0.23542853668227776,
+            "win_frequency": 0.22955974842767296
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 84,
+            "mean_probability": 0.336862357229361,
+            "win_frequency": 0.38095238095238093
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 26,
+            "mean_probability": 0.4422143496389553,
+            "win_frequency": 0.4230769230769231
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 8,
+            "mean_probability": 0.5442627517469186,
+            "win_frequency": 0.5
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 1,
+            "mean_probability": 0.7492841116613339,
+            "win_frequency": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "monthly_mean_log_loss": {
+    "v6": 2.209849294247027,
+    "v7_speed": 2.193101952656147
+  },
+  "paired": {
+    "delta_log_loss": -0.016619563735840462,
+    "day_bootstrap_95_percent": [
+      -0.02422991691195466,
+      -0.00826295559210394
+    ],
+    "days": 91,
+    "interpretation": "Validation only; exploratory interval, not adjusted for selecting multiple candidates"
+  },
+  "coverage": {
+    "train": {
+      "active": 20784,
+      "with_speed": 13387
+    },
+    "validation": {
+      "active": 21176,
+      "with_speed": 13304
+    }
+  },
+  "audit": {
+    "active": 67569,
+    "with_speed": 37705,
+    "race_context_available": 4974,
+    "race_insufficient_times": 139
+  },
+  "test_evaluated": false,
+  "prospective_changed": false,
+  "limits": [
+    "Partial context correction, not physical speed or causal track effect",
+    "Race quality, weather and track state not controlled",
+    "Retrospective source publication not proven",
+    "No 2026 outcomes or July-August 2025 test outcomes loaded",
+    "V5/V6 prospective unchanged",
+    "NO BET"
+  ]
+}
