@@ -1,0 +1,11 @@
+{
+  "version":"ensemble-v1-development-only",
+  "baseline":"Frozen V6 combined",
+  "challenger":"Frozen XGBoost Rank V2, including temperature selected on 2024",
+  "xgboost_weights":[0.0,0.1,0.2,0.3],
+  "evaluation":{"from":"2025-03-02","to":"2025-05-31"},
+  "minimum_races_per_month":200,
+  "formula":"(1-weight)*V6_probability + weight*XGBoost_probability, identical race fields",
+  "selection":"Lowest mean monthly log loss; ties prefer smaller XGBoost weight. No refitting or additional weights after results.",
+  "limits":["Already consulted development validation: exploratory selection only", "No independent test loaded", "No calibration refit or new features", "Prospective V6/V7 unchanged", "NO BET"]
+}
