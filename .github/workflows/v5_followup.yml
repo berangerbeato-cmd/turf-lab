@@ -1,4 +1,4 @@
-name: Turf Lab bounded V5 V6 six-race follow-up
+name: Turf Lab bounded V5 V6 V7 six-race follow-up
 on:
   workflow_dispatch:
   schedule:
@@ -39,8 +39,8 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          mkdir -p predictions_v5 predictions_v6
-          git add evidence data predictions_v5 predictions_v6 reports
+          mkdir -p predictions_v5 predictions_v6 predictions_v7
+          git add evidence data predictions_v5 predictions_v6 predictions_v7 reports
           if ! git diff --cached --quiet; then
             git commit -m 'Save bounded paired V3 V5 observation'
             for attempt in 1 2 3; do
@@ -59,4 +59,6 @@ jobs:
             reports/connections_v5_prospective_status.json
             reports/v6_prospective_scores.json
             reports/V6_PROSPECTIVE_SCORES.md
+            reports/v7_prospective_scores.json
+            reports/V7_PROSPECTIVE_SCORES.md
           retention-days: 7
