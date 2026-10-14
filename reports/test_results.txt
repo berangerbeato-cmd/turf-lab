@@ -85,12 +85,16 @@ test_paired_metrics_and_no_mutation (test_shadow_v5_score.ScoreTests.test_paired
 test_pending_late_and_ambiguous (test_shadow_v5_score.ScoreTests.test_pending_late_and_ambiguous) ... ok
 test_refresh_delayed_schedule_and_no_repeat (test_shadow_v5_score.ScoreTests.test_refresh_delayed_schedule_and_no_repeat) ... ok
 test_runner_equipment_driver_changes_excluded (test_shadow_v5_score.ScoreTests.test_runner_equipment_driver_changes_excluded) ... ok
+test_history_or_baseline_mismatch_rejected (test_shadow_v6.V6ShadowTests.test_history_or_baseline_mismatch_rejected) ... ok
+test_late_capture_rejected_before_compute (test_shadow_v6.V6ShadowTests.test_late_capture_rejected_before_compute) ... ok
+test_sidecar_does_not_change_source_and_is_immutable (test_shadow_v6.V6ShadowTests.test_sidecar_does_not_change_source_and_is_immutable) ... ok
+test_v6_paired_scoring_and_field_changes (test_shadow_v6.V6ShadowTests.test_v6_paired_scoring_and_field_changes) ... ok
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
 test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synthetic_evaluation_is_idempotent) ... ok
 
 ----------------------------------------------------------------------
-Ran 90 tests in 0.093s
+Ran 94 tests in 0.097s
 
 OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
