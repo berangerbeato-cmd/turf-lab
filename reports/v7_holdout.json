@@ -1,0 +1,1506 @@
+{
+  "status": "FIXED_HOLDOUT_NO_BET",
+  "frozen": {
+    "v7_frozen": {
+      "status": "FROZEN_EXPERIMENTAL_NO_BET",
+      "baseline_frozen": {
+        "policy_sha256": "cbee92ccbcf6e88a4908b5324a9a57967962d69170617ce2f2616ddc53830c1a",
+        "v5_frozen": {
+          "protocol_sha256": "fb01d8561e078dc737638442156349003c7f90af1f53da0e6095d8818e9e1d83",
+          "models_sha256": "f537cc13991ed401533f7af782952ad298b0d3de120f25d9909435dd69d8d950",
+          "selected": "combined",
+          "sources_sha256": "54d289e07d9e54d1da97c058e901ca65bd63ad96c9ec8d7c1b8e4f7408490d21",
+          "code_sha256": {
+            "turf_lab/connections.py": "8cb77d6a4111c103dce0e47570dde7770db025d52457e1a6add7f0a069e65ef3",
+            "turf_lab/opposition.py": "7fcc90941505bfe32d218920a68541e76b0c97c0f32f7d48501f10d249a47e33",
+            "turf_lab/month_history.py": "e617b1f180e111e098871506caa62a6c57e6c22fcb698d78286b4463882f1990",
+            "turf_lab/pilot.py": "a5997e8dfaea58b13d8e0903c147834bad1ce93d463a5e2f126fb45d5d81cd77",
+            "turf_lab/fast_logit.py": "e6396d6a7d98ab55cdca23acdc767ce1839abf065312dc870d608960a8961e60",
+            "scripts/backtest_connections.py": "955079efa9ea5a2f9357c5dabef6100ddc86bdd50929621f4642c1fafe939c70"
+          }
+        },
+        "files_sha256": {
+          "models/demographics_tandem_v6_candidates.json": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
+          "config/demographics_tandem_v6_protocol.json": "5e5edf09f8d5e94c8632e51e111a7ddbbc7e55ee57888f52503e3b0e14e8081d",
+          "reports/demographics_tandem_v6.json": "f4b6c4a4c179ae06bb6f6c538de052cd1182fa98ffb243427d351fc9fbcd95e0",
+          "turf_lab/demographics_tandem.py": "953bad3b6974b5356def7a5090009f8ca454cdd5cb037eec0f6138c9a86f9425",
+          "scripts/backtest_v6.py": "a5fd00572297c41c0df5167e56ee64d86bfc6cc86a9052f9227ddfabded203c1",
+          "scripts/v6_holdout.py": "a6572e32d534ec3217a7dc5652f225d604882bfd7a9992530de7e90f1cd7c351"
+        }
+      },
+      "files_sha256": {
+        "models/speed_v7_candidates.json": "97f565c8f0e2c80cb94c830da249237c178535bb993f5bef44caa3eee3fd58e9",
+        "config/speed_v7_protocol.json": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+        "reports/speed_v7.json": "0e4c34a78ef43aab89281eab66d65e63089e672fb65666af9bbefa6ee42221f8",
+        "turf_lab/context_speed.py": "7a0f3ee59c9c4567307b594570f6b11d2d23dad477b9437a74f294d34f8211cd",
+        "scripts/backtest_speed_v7.py": "3f4db774dd3fbade2d4790b23455b6c058354b8792e4b70f71bb6d50059af8f7",
+        "scripts/shadow_v7.py": "939290d32f2e212a97d54dc5e6e111345fcd4f7ac5fe31fc1f91a9810b0914f4"
+      },
+      "models": [
+        "v6",
+        "v7_speed"
+      ],
+      "promotion": false
+    },
+    "policy_sha256": "c41bbf6325484b8710b205605577119ed63ef77f94a8cf5fd5d72f96b6a90c3b",
+    "files_sha256": {
+      "scripts/v7_holdout.py": "ff145536bcf1882898e4b82c5824c68ca0e13ae4d96807961a421547303881fc"
+    }
+  },
+  "source_manifests_sha256": {
+    "2025-01": "f1ffef00c7b9e12ff3d63f6193ec2ae69464cc0855df2571519215f0fa3b4032",
+    "2025-02": "14cf76dc2fc9667ec342096b8a4c5aa1f693c85073fb0cbe38c67b6b901d59bb",
+    "2025-03": "58171aad2d1d652833abbdcb373311bebb6fb63842382fc242f5b0a3db070ab1",
+    "2025-04": "d3836b32f286214f2ab53355711e5c220e1279e5c753f832036896ebe1d56bf0",
+    "2025-05": "d91c768e2fe73e43f09e7f322599f1ee9e2a93233ac65acf5e50c7c7de693fe3",
+    "2025-06": "89ad60567a4e32ef14dbcd3b264eae4228c452835e31c0ed73442d55efd85ef3",
+    "2025-07": "cd646ba5a0691b6d2eb6b697f9d2cdabbd921f79d139e4fef3fc2963df7abb13",
+    "2025-08": "cb58ce90c5f4f758d26c3118d85da65bb226f7cfffd82777ec242a0d7b379c36",
+    "2025-09": "9c4343f7cfb4556119f9fdd7606780523e4f3b956af1fba6e528cff0df38fb2b",
+    "2025-10": "0e005d6f1dcd98c7485056e7c37c68b785dfab966154d44d7ef689da0f77c9b2"
+  },
+  "test_races": 1062,
+  "test": {
+    "v6": {
+      "races": 1062,
+      "log_loss": 2.2509951582249474,
+      "brier_multiclass": 0.8635354378883657,
+      "top1_accuracy": 0.24199623352165725,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 10912,
+          "mean_probability": 0.04592691003352196,
+          "win_frequency": 0.04490469208211144
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 2563,
+          "mean_probability": 0.13676489299103547,
+          "win_frequency": 0.14202106905969566
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 545,
+          "mean_probability": 0.23796504622822928,
+          "win_frequency": 0.24954128440366974
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 146,
+          "mean_probability": 0.3409461701007218,
+          "win_frequency": 0.273972602739726
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 38,
+          "mean_probability": 0.4376841378153466,
+          "win_frequency": 0.42105263157894735
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 19,
+          "mean_probability": 0.5349098206481478,
+          "win_frequency": 0.631578947368421
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "count": 4,
+          "mean_probability": 0.6468558155714752,
+          "win_frequency": 1.0
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 2,
+          "mean_probability": 0.7326694287545985,
+          "win_frequency": 0.0
+        }
+      ]
+    },
+    "v7_speed": {
+      "races": 1062,
+      "log_loss": 2.2487238453715337,
+      "brier_multiclass": 0.8631966228600004,
+      "top1_accuracy": 0.2344632768361582,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 10895,
+          "mean_probability": 0.045708369875193715,
+          "win_frequency": 0.04515832950894906
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 2560,
+          "mean_probability": 0.13631928302564905,
+          "win_frequency": 0.137890625
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 564,
+          "mean_probability": 0.23807521072200238,
+          "win_frequency": 0.25
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 150,
+          "mean_probability": 0.3384655213830135,
+          "win_frequency": 0.30666666666666664
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 32,
+          "mean_probability": 0.4380728593064654,
+          "win_frequency": 0.4375
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 23,
+          "mean_probability": 0.5440763980904614,
+          "win_frequency": 0.5652173913043478
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "count": 2,
+          "mean_probability": 0.6442626065301309,
+          "win_frequency": 1.0
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 3,
+          "mean_probability": 0.7216949141641956,
+          "win_frequency": 0.3333333333333333
+        }
+      ]
+    }
+  },
+  "by_month": {
+    "v6": {
+      "2025-09": {
+        "races": 524,
+        "log_loss": 2.2158943353300176,
+        "brier_multiclass": 0.8598286158747902,
+        "top1_accuracy": 0.25572519083969464,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5236,
+            "mean_probability": 0.046420521289750265,
+            "win_frequency": 0.04297173414820474
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1277,
+            "mean_probability": 0.13612737772753192,
+            "win_frequency": 0.15426781519185592
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 275,
+            "mean_probability": 0.2359998205026705,
+            "win_frequency": 0.23272727272727273
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 77,
+            "mean_probability": 0.33854465184443594,
+            "win_frequency": 0.2987012987012987
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 18,
+            "mean_probability": 0.4400704430077832,
+            "win_frequency": 0.3888888888888889
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 14,
+            "mean_probability": 0.5349248031098968,
+            "win_frequency": 0.5714285714285714
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 1,
+            "mean_probability": 0.7293851208739426,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2025-10": {
+        "races": 538,
+        "log_loss": 2.2851825768066263,
+        "brier_multiclass": 0.8671457998495434,
+        "top1_accuracy": 0.22862453531598512,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5676,
+            "mean_probability": 0.04547156321576114,
+            "win_frequency": 0.04668780831571529
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1286,
+            "mean_probability": 0.13739794663916421,
+            "win_frequency": 0.12986003110419908
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 270,
+            "mean_probability": 0.23996666502277966,
+            "win_frequency": 0.26666666666666666
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 69,
+            "mean_probability": 0.34362612525628683,
+            "win_frequency": 0.2463768115942029
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 20,
+            "mean_probability": 0.43553646314215355,
+            "win_frequency": 0.45
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 5,
+            "mean_probability": 0.5348678697552506,
+            "win_frequency": 0.8
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 4,
+            "mean_probability": 0.6468558155714752,
+            "win_frequency": 1.0
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 1,
+            "mean_probability": 0.7359537366352545,
+            "win_frequency": 0.0
+          }
+        ]
+      }
+    },
+    "v7_speed": {
+      "2025-09": {
+        "races": 524,
+        "log_loss": 2.2084112705496137,
+        "brier_multiclass": 0.857281834801986,
+        "top1_accuracy": 0.24045801526717558,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5251,
+            "mean_probability": 0.04644056226046433,
+            "win_frequency": 0.04303942106265473
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1260,
+            "mean_probability": 0.1364674382562677,
+            "win_frequency": 0.14682539682539683
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 275,
+            "mean_probability": 0.2377683461787807,
+            "win_frequency": 0.26545454545454544
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 81,
+            "mean_probability": 0.33733024048290355,
+            "win_frequency": 0.32098765432098764
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 15,
+            "mean_probability": 0.4347035220775391,
+            "win_frequency": 0.4666666666666667
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 15,
+            "mean_probability": 0.5496123394186098,
+            "win_frequency": 0.4666666666666667
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 1,
+            "mean_probability": 0.7168527666817703,
+            "win_frequency": 0.0
+          }
+        ]
+      },
+      "2025-10": {
+        "races": 538,
+        "log_loss": 2.287987394082846,
+        "brier_multiclass": 0.8689574945001481,
+        "top1_accuracy": 0.22862453531598512,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 5644,
+            "mean_probability": 0.045027161119868514,
+            "win_frequency": 0.04712969525159461
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 1300,
+            "mean_probability": 0.13617568641751096,
+            "win_frequency": 0.12923076923076923
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 289,
+            "mean_probability": 0.2383672098548257,
+            "win_frequency": 0.23529411764705882
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 69,
+            "mean_probability": 0.33979824243966444,
+            "win_frequency": 0.2898550724637681
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 17,
+            "mean_probability": 0.4410458039202241,
+            "win_frequency": 0.4117647058823529
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 8,
+            "mean_probability": 0.5336965081001832,
+            "win_frequency": 0.75
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 2,
+            "mean_probability": 0.6442626065301309,
+            "win_frequency": 1.0
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 2,
+            "mean_probability": 0.7241159879054082,
+            "win_frequency": 0.5
+          }
+        ]
+      }
+    }
+  },
+  "paired": {
+    "delta_log_loss": -0.0022713128534135314,
+    "day_bootstrap_95_percent": [
+      -0.01445082320861948,
+      0.009092866025907214
+    ],
+    "days": 61,
+    "interpretation": "Fixed paired holdout; descriptive day bootstrap, no annual stability or profitability claim."
+  },
+  "coverage": [
+    {
+      "month": "2025-01",
+      "candidates": 540,
+      "retained": 532,
+      "quarantine": [
+        {
+          "race_id": "2025-01-01_R1C8",
+          "issues": [
+            "not_single_winner"
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C1",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C1",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C1",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C2",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C3",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C3",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C3",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C5",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C5",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C5",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C6",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C6",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C6",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C7",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-01-08_R4C8",
+          "issues": [
+            {
+              "race_id": "2025-01-08_R4C8",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-01-08_R4C8",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "VINCENNES": 145,
+        "PONTCHATEAU": 7,
+        "CABOURG": 6,
+        "CAGNES/MER": 66,
+        "LA CEPIERE": 42,
+        "ARGENTAN": 31,
+        "LE BOUSCAT": 26,
+        "CORDEMAIS": 11,
+        "CHATEAUBRIANT": 12,
+        "ANGERS": 36,
+        "LYON LA SOIE": 37,
+        "GRAIGNES": 6,
+        "NANTES": 26,
+        "MAUQUENCHY": 21,
+        "PONT DE VIVAUX": 15,
+        "SAINT GALMIER": 16,
+        "AGEN LA GARENNE": 15,
+        "SAINT BRIEUC": 8,
+        "VIRE": 6
+      },
+      "coverage_counts": {
+        "scheduled": 540,
+        "cancelled": 7,
+        "eligible": 533,
+        "retained": 532,
+        "unresolved": 1,
+        "fraction": 0.99812382739212
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2025-01-08_R4C1",
+          "evidence_sha256": "f23371b79dd3e446e197ec7e7051f1ac3417017832e4bad61a88bc832309c3e3",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C2",
+          "evidence_sha256": "2d0e713f57be1d3e65bb21dcfe1e43008801c3a9ff3515bed90443dcc3b26983",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C3",
+          "evidence_sha256": "f943645fe21739d6352707323fc1f5f8fcd8c097c4df757ca7b2ebdd1e277a53",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C5",
+          "evidence_sha256": "7fb80b2866c3a1cfc550f99aabe1d5490633091d327448e462ca08fbc2e6d4df",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C6",
+          "evidence_sha256": "10f8c4c1d9c3a500162f8a477b2c5a10bfc877b24c0fecdb1c9429e7a6d3d9f5",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C7",
+          "evidence_sha256": "7c7396688ad0a25c884dd0d9b9236c5952e81d68bb0135f2f09a47e4041addd3",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        },
+        {
+          "race_id": "2025-01-08_R4C8",
+          "evidence_sha256": "b6d3b702145b98003db227310f6eadd1950f3a557616f9b4fc1b12ab78a2f3f1",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    },
+    {
+      "month": "2025-02",
+      "candidates": 454,
+      "retained": 448,
+      "quarantine": [
+        {
+          "race_id": "2025-02-06_R1C6",
+          "issues": [
+            "not_single_winner"
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C1",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C1",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C1",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C2",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C3",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C3",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C3",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C4",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C4",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C4",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-02-09_R12C6",
+          "issues": [
+            {
+              "race_id": "2025-02-09_R12C6",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-02-09_R12C6",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "CAGNES/MER": 76,
+        "VINCENNES": 107,
+        "SAINT GALMIER": 13,
+        "AGEN LA GARENNE": 22,
+        "SAINT BRIEUC": 11,
+        "CHERBOURG": 9,
+        "CHATEAUBRIANT": 6,
+        "GRAIGNES": 22,
+        "LYON LA SOIE": 26,
+        "MAUQUENCHY": 21,
+        "LAVAL": 20,
+        "ARGENTAN": 16,
+        "LA CEPIERE": 14,
+        "HYERES": 7,
+        "LE BOUSCAT": 5,
+        "MAURE DE BRETAGNE": 8,
+        "VIRE": 5,
+        "PONT DE VIVAUX": 8,
+        "NANTES": 22,
+        "NIMES": 1,
+        "PARAY LE MONIAL": 1,
+        "PONTCHATEAU": 7,
+        "AMIENS": 8,
+        "LE CROISE LAROCHE": 7,
+        "CORDEMAIS": 6
+      },
+      "coverage_counts": {
+        "scheduled": 454,
+        "cancelled": 0,
+        "eligible": 454,
+        "retained": 448,
+        "unresolved": 6,
+        "fraction": 0.986784140969163
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2025-03",
+      "candidates": 550,
+      "retained": 549,
+      "quarantine": [
+        {
+          "race_id": "2025-03-28_R1C8",
+          "issues": [
+            "not_single_winner"
+          ]
+        }
+      ],
+      "venues": {
+        "VINCENNES": 28,
+        "HYERES": 7,
+        "VIRE": 7,
+        "AGEN LA GARENNE": 30,
+        "CAGNES/MER": 30,
+        "CHATILLON/CHALARONNE": 3,
+        "CHOLET": 8,
+        "CHATELAILLON": 14,
+        "CHERBOURG": 7,
+        "REIMS": 19,
+        "CAEN": 44,
+        "LE CROISE LAROCHE": 33,
+        "AMIENS": 14,
+        "SAINT GALMIER": 17,
+        "LAVAL": 19,
+        "ENGHIEN": 28,
+        "PONTCHATEAU": 6,
+        "LA CEPIERE": 29,
+        "LE BOUSCAT": 7,
+        "LA CAPELLE": 15,
+        "LE MONT SAINT MICHEL": 9,
+        "STRASBOURG": 7,
+        "LYON LA SOIE": 7,
+        "BORELY": 15,
+        "LISIEUX": 13,
+        "MAURE DE BRETAGNE": 15,
+        "GRAIGNES": 13,
+        "CAGNES-SUR-MER GAZON": 6,
+        "CHARTRES": 16,
+        "MESLAY DU MAINE": 11,
+        "MAUQUENCHY": 6,
+        "ARGENTAN": 6,
+        "PARAY LE MONIAL": 1,
+        "ANGERS": 4,
+        "CAVAILLON": 4,
+        "FEURS": 8,
+        "SALON DE PROVENCE": 7,
+        "PONT DE VIVAUX": 8,
+        "NANCY-BRABOIS": 7,
+        "CORDEMAIS": 7,
+        "BEAUMONT DE LOMAGNE": 5,
+        "CARPENTRAS": 1,
+        "RAMBOUILLET": 8
+      },
+      "coverage_counts": {
+        "scheduled": 550,
+        "cancelled": 0,
+        "eligible": 550,
+        "retained": 549,
+        "unresolved": 1,
+        "fraction": 0.9981818181818182
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2025-04",
+      "candidates": 524,
+      "retained": 524,
+      "quarantine": [],
+      "venues": {
+        "LYON-PARILLY": 37,
+        "VINCENNES": 65,
+        "ANGERS": 12,
+        "MAUQUENCHY": 7,
+        "GRAIGNES": 22,
+        "LA CEPIERE": 21,
+        "NIMES": 2,
+        "LE MANS": 8,
+        "LA CAPELLE": 14,
+        "ORAISON": 2,
+        "AGEN LA GARENNE": 18,
+        "PARAY LE MONIAL": 2,
+        "CHERBOURG": 13,
+        "SAINT MALO": 6,
+        "FEURS": 7,
+        "AMIENS": 16,
+        "CAVAILLON": 11,
+        "REIMS": 21,
+        "HYERES": 7,
+        "CHARTRES": 13,
+        "TOURS": 1,
+        "BORELY": 34,
+        "CHATILLON/CHALARONNE": 1,
+        "LISIEUX": 9,
+        "ARGENTAN": 6,
+        "LE CROISE LAROCHE": 13,
+        "LE BOUSCAT": 7,
+        "PONTCHATEAU": 6,
+        "ENGHIEN": 19,
+        "LAVAL": 21,
+        "CORDEMAIS": 7,
+        "CARPENTRAS": 1,
+        "BEAUMONT DE LOMAGNE": 21,
+        "CHATELAILLON": 7,
+        "RAMBOUILLET": 8,
+        "VIRE": 8,
+        "CHOLET": 13,
+        "NANCY-BRABOIS": 9,
+        "MAURE DE BRETAGNE": 7,
+        "CAEN": 5,
+        "VITRE": 1,
+        "STRASBOURG": 8,
+        "LE MONT SAINT MICHEL": 8
+      },
+      "coverage_counts": {
+        "scheduled": 524,
+        "cancelled": 0,
+        "eligible": 524,
+        "retained": 524,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2025-05",
+      "candidates": 557,
+      "retained": 550,
+      "quarantine": [
+        {
+          "race_id": "2025-05-11_R10C2",
+          "issues": [
+            {
+              "race_id": "2025-05-11_R10C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-05-11_R10C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-05-11_R10C3",
+          "issues": [
+            {
+              "race_id": "2025-05-11_R10C3",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-05-11_R10C3",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-05-11_R10C4",
+          "issues": [
+            {
+              "race_id": "2025-05-11_R10C4",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-05-11_R10C4",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-05-11_R10C6",
+          "issues": [
+            {
+              "race_id": "2025-05-11_R10C6",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-05-11_R10C6",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-05-11_R10C7",
+          "issues": [
+            {
+              "race_id": "2025-05-11_R10C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-05-11_R10C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-05-13_R3C5",
+          "issues": [
+            "not_single_winner"
+          ]
+        },
+        {
+          "race_id": "2025-05-17_R3C4",
+          "issues": [
+            "not_single_winner"
+          ]
+        }
+      ],
+      "venues": {
+        "HYERES": 22,
+        "CHATILLON/CHALARONNE": 2,
+        "CHATELAILLON": 13,
+        "CHOLET": 13,
+        "GRAIGNES": 29,
+        "PONTCHATEAU": 6,
+        "VINCENNES": 68,
+        "SAINT BRIEUC": 7,
+        "AMIENS": 21,
+        "LYON-PARILLY": 11,
+        "LA CAPELLE": 21,
+        "CAEN": 25,
+        "BORELY": 36,
+        "MONTLUCON": 1,
+        "RAMBOUILLET": 22,
+        "VICHY": 40,
+        "MESLAY DU MAINE": 13,
+        "CHARTRES": 7,
+        "CASTILLONNES": 1,
+        "MACON-CLUNY": 1,
+        "ORAISON": 1,
+        "LE MANS": 15,
+        "VIRE": 14,
+        "LA CEPIERE": 14,
+        "CHERBOURG": 7,
+        "MAURE DE BRETAGNE": 5,
+        "ARGENTAN": 13,
+        "LE CROISE LAROCHE": 13,
+        "STRASBOURG": 8,
+        "LAVAL": 6,
+        "REIMS": 5,
+        "BEAUMONT DE LOMAGNE": 14,
+        "MOULINS": 8,
+        "LISIEUX": 8,
+        "SALON DE PROVENCE": 7,
+        "ENGHIEN": 8,
+        "VILLENEUVE SUR LOT": 1,
+        "CHATEAUBRIANT": 7,
+        "CARPENTRAS": 1,
+        "NANTES": 7,
+        "NANCY-BRABOIS": 7,
+        "LE MONT SAINT MICHEL": 8,
+        "AGEN LA GARENNE": 7,
+        "PONT DE VIVAUX": 7
+      },
+      "coverage_counts": {
+        "scheduled": 557,
+        "cancelled": 0,
+        "eligible": 557,
+        "retained": 550,
+        "unresolved": 7,
+        "fraction": 0.9874326750448833
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2025-06",
+      "candidates": 555,
+      "retained": 553,
+      "quarantine": [
+        {
+          "race_id": "2025-06-11_R1C2",
+          "issues": [
+            {
+              "race_id": "2025-06-11_R1C2",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-06-11_R1C2",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-06-18_R3C7",
+          "issues": [
+            "not_single_winner"
+          ]
+        }
+      ],
+      "venues": {
+        "CHARTRES": 16,
+        "LA ROCHE-POSAY": 1,
+        "REIMS": 20,
+        "BOLLENE": 2,
+        "PARAY LE MONIAL": 1,
+        "VICHY": 56,
+        "NANTES": 6,
+        "LE CROISE LAROCHE": 21,
+        "LES SABLES D OLONNE": 6,
+        "VINCENNES": 62,
+        "LAVAL": 25,
+        "HYERES": 9,
+        "PONTCHATEAU": 17,
+        "MAUQUENCHY": 7,
+        "GRAIGNES": 21,
+        "LA CEPIERE": 15,
+        "PONT DE VIVAUX": 13,
+        "AMIENS": 21,
+        "LISIEUX": 14,
+        "SAINT MALO": 14,
+        "LYON-PARILLY": 14,
+        "NIMES": 3,
+        "CHATEAUBRIANT": 5,
+        "CHATILLON/CHALARONNE": 1,
+        "ANGERS": 7,
+        "BORELY": 14,
+        "CAEN": 20,
+        "FEURS": 16,
+        "ENGHIEN": 21,
+        "SAINT BRIEUC": 6,
+        "CHERBOURG": 7,
+        "MONTLUCON": 1,
+        "LA CAPELLE": 14,
+        "STRASBOURG": 8,
+        "CAVAILLON": 7,
+        "AGEN LA GARENNE": 8,
+        "RAMBOUILLET": 6,
+        "CRAON": 13,
+        "BEAUMONT DE LOMAGNE": 7,
+        "VIRE": 8,
+        "NANCY-BRABOIS": 7,
+        "ARRAS": 1,
+        "SAINT GALMIER": 6,
+        "LE MONT SAINT MICHEL": 6
+      },
+      "coverage_counts": {
+        "scheduled": 555,
+        "cancelled": 1,
+        "eligible": 554,
+        "retained": 553,
+        "unresolved": 1,
+        "fraction": 0.9981949458483754
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2025-06-11_R1C2",
+          "evidence_sha256": "3837b5e1797ae57ad22cbd7bb7191303e69c97e032a3144201d8fbd6fdd19806",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    },
+    {
+      "month": "2025-07",
+      "candidates": 555,
+      "retained": 555,
+      "quarantine": [],
+      "venues": {
+        "VICHY": 22,
+        "CABOURG": 54,
+        "ENGHIEN": 73,
+        "LISIEUX": 7,
+        "PORNICHET": 42,
+        "FEURS": 14,
+        "LA CAPELLE": 36,
+        "CARENTAN": 1,
+        "LAVAL": 5,
+        "MACON-CLUNY": 1,
+        "ORAISON": 1,
+        "CHATEAUBRIANT": 7,
+        "CAGNES/MER": 80,
+        "SAINT MALO": 7,
+        "HYERES": 23,
+        "LES SABLES D OLONNE": 27,
+        "AMIENS": 20,
+        "LIGNIERES": 2,
+        "CHATELAILLON": 15,
+        "CLAIREFONTAINE": 19,
+        "BEAUMONT DE LOMAGNE": 7,
+        "JULLIANGES": 1,
+        "LANGON-LIBOURNE": 15,
+        "LE MANS": 14,
+        "LE MONT SAINT MICHEL": 7,
+        "CHERBOURG": 7,
+        "ROYAN": 1,
+        "LA CLAYETTE": 1,
+        "SAINT GALMIER": 7,
+        "MAUQUENCHY": 7,
+        "BIARRITZ": 1,
+        "GRAIGNES": 8,
+        "BREHAL": 1,
+        "AIX LES BAINS": 15,
+        "MESLAY DU MAINE": 7
+      },
+      "coverage_counts": {
+        "scheduled": 555,
+        "cancelled": 0,
+        "eligible": 555,
+        "retained": 555,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": []
+    },
+    {
+      "month": "2025-08",
+      "candidates": 560,
+      "retained": 558,
+      "quarantine": [
+        {
+          "race_id": "2025-08-14_R4C6",
+          "issues": [
+            "not_single_winner"
+          ]
+        },
+        {
+          "race_id": "2025-08-15_R3C4",
+          "issues": [
+            {
+              "race_id": "2025-08-15_R3C4",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-08-15_R3C4",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "CABOURG": 55,
+        "HYERES": 15,
+        "ENGHIEN": 45,
+        "VICHY": 14,
+        "CAGNES/MER": 66,
+        "VILLEREAL": 1,
+        "LES SABLES D OLONNE": 57,
+        "AIX LES BAINS": 25,
+        "CHATELAILLON": 7,
+        "SAINT MALO": 22,
+        "MAUQUENCHY": 6,
+        "PORNICHET": 33,
+        "CHATEAUBRIANT": 7,
+        "ARGENTAN": 6,
+        "GRAIGNES": 19,
+        "NORT SUR ERDRE": 1,
+        "DIVONNE LES BAINS": 31,
+        "MESLAY DU MAINE": 7,
+        "GRENADE SUR GARONNE": 1,
+        "VINCENNES": 39,
+        "LE MONT SAINT MICHEL": 7,
+        "CAVAILLON": 8,
+        "CHERBOURG": 6,
+        "CASTERA-VERDUZAN": 1,
+        "SAINT GALMIER": 14,
+        "BEAUMONT DE LOMAGNE": 6,
+        "MONTIER EN DER": 1,
+        "JULLIANGES": 1,
+        "LAVAL": 13,
+        "LA CAPELLE": 7,
+        "BORELY": 7,
+        "STRASBOURG": 7,
+        "REIMS": 6,
+        "SALON DE PROVENCE": 8,
+        "MACON-CLUNY": 1,
+        "COMPIEGNE": 8
+      },
+      "coverage_counts": {
+        "scheduled": 560,
+        "cancelled": 1,
+        "eligible": 559,
+        "retained": 558,
+        "unresolved": 1,
+        "fraction": 0.998211091234347
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2025-08-15_R3C4",
+          "evidence_sha256": "d6e9a498e70a210cb375e47e420531fcfec8de908171c028854b30e699e2feda",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    },
+    {
+      "month": "2025-09",
+      "candidates": 526,
+      "retained": 524,
+      "quarantine": [
+        {
+          "race_id": "2025-09-20_R8C3",
+          "issues": [
+            {
+              "race_id": "2025-09-20_R8C3",
+              "issue": "result_not_definitive"
+            }
+          ]
+        },
+        {
+          "race_id": "2025-09-21_R9C7",
+          "issues": [
+            {
+              "race_id": "2025-09-21_R9C7",
+              "issue": "winner_disagreement",
+              "participants": [],
+              "detail": null
+            },
+            {
+              "race_id": "2025-09-21_R9C7",
+              "issue": "result_not_definitive"
+            }
+          ]
+        }
+      ],
+      "venues": {
+        "VIRE": 16,
+        "VINCENNES": 91,
+        "BEAUMONT DE LOMAGNE": 7,
+        "LA CAPELLE": 20,
+        "CAEN": 23,
+        "LES SABLES D OLONNE": 13,
+        "LYON-PARILLY": 18,
+        "LA CEPIERE": 21,
+        "LAVAL": 21,
+        "VICHY": 19,
+        "CAVAILLON": 11,
+        "AMIENS": 11,
+        "GRAIGNES": 14,
+        "LE MONT SAINT MICHEL": 13,
+        "CRAON": 9,
+        "AUCH": 1,
+        "CARPENTRAS": 1,
+        "FEURS": 15,
+        "RAMBOUILLET": 18,
+        "COMPIEGNE": 8,
+        "LE CROISE LAROCHE": 18,
+        "HYERES": 7,
+        "MESLAY DU MAINE": 7,
+        "MAUQUENCHY": 6,
+        "BORELY": 15,
+        "CHARTRES": 6,
+        "CHOLET": 24,
+        "LISIEUX": 16,
+        "REIMS": 7,
+        "CHATEAUROUX": 1,
+        "ORAISON": 2,
+        "CHATEAUBRIANT": 6,
+        "AGEN LA GARENNE": 16,
+        "PORNICHET": 7,
+        "SALON DE PROVENCE": 8,
+        "NANTES": 6,
+        "ENGHIEN": 12,
+        "NANCY-BRABOIS": 5,
+        "SAINT MALO": 5
+      },
+      "coverage_counts": {
+        "scheduled": 526,
+        "cancelled": 1,
+        "eligible": 525,
+        "retained": 524,
+        "unresolved": 1,
+        "fraction": 0.9980952380952381
+      },
+      "confirmed_cancellations": [
+        {
+          "race_id": "2025-09-21_R9C7",
+          "evidence_sha256": "a2c68179e75485dc8132f848e2491e5e2b3bac0e373962921461611a4ffd0a54",
+          "reason": "Explicit PMU cancellation; not a missing result"
+        }
+      ]
+    },
+    {
+      "month": "2025-10",
+      "candidates": 538,
+      "retained": 538,
+      "quarantine": [],
+      "venues": {
+        "ANGERS": 6,
+        "LE CROISE LAROCHE": 14,
+        "BORELY": 25,
+        "CABOURG": 26,
+        "VINCENNES": 62,
+        "HYERES": 12,
+        "LAVAL": 6,
+        "BEAUMONT DE LOMAGNE": 15,
+        "AMIENS": 9,
+        "CARPENTRAS": 2,
+        "LYON-PARILLY": 26,
+        "RAMBOUILLET": 8,
+        "AGEN LA GARENNE": 15,
+        "CORDEMAIS": 7,
+        "LISIEUX": 9,
+        "ENGHIEN": 42,
+        "NANTES": 14,
+        "CAEN": 29,
+        "REIMS": 14,
+        "LE MANS": 6,
+        "SAINT BRIEUC": 11,
+        "LE BOUSCAT": 15,
+        "GRAIGNES": 19,
+        "BOLLENE": 1,
+        "SAINT GALMIER": 8,
+        "VIRE": 8,
+        "FEURS": 7,
+        "CHARTRES": 15,
+        "LA CEPIERE": 15,
+        "SALON DE PROVENCE": 23,
+        "MAURE DE BRETAGNE": 11,
+        "LES SABLES D OLONNE": 7,
+        "CHERBOURG": 8,
+        "STRASBOURG": 6,
+        "LA CAPELLE": 6,
+        "CHATELAILLON": 6,
+        "LE MONT SAINT MICHEL": 8,
+        "MESLAY DU MAINE": 4,
+        "PONT DE VIVAUX": 7,
+        "PORNICHET": 6
+      },
+      "coverage_counts": {
+        "scheduled": 538,
+        "cancelled": 0,
+        "eligible": 538,
+        "retained": 538,
+        "unresolved": 0,
+        "fraction": 1.0
+      },
+      "confirmed_cancellations": []
+    }
+  ],
+  "speed_coverage": {
+    "active": 14229,
+    "with_speed": 8429
+  },
+  "audit": {
+    "active": 68529,
+    "with_speed": 40351,
+    "race_context_available": 5103,
+    "race_insufficient_times": 196
+  },
+  "refitted": false,
+  "prospective_changed": false
+}
