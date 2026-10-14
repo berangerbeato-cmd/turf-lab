@@ -76,6 +76,10 @@ test_metrics_multiclass (test_pilot.PilotTests.test_metrics_multiclass) ... ok
 test_non_runners_and_normalization (test_pilot.PilotTests.test_non_runners_and_normalization) ... ok
 test_target_and_odds_do_not_change_prediction (test_pilot.PilotTests.test_target_and_odds_do_not_change_prediction) ... ok
 test_training_does_not_mutate (test_pilot.PilotTests.test_training_does_not_mutate) ... ok
+test_freeze_and_tamper (test_prospective_cohort.CohortTests.test_freeze_and_tamper) ... ok
+test_no_network_outside_dates (test_prospective_cohort.CohortTests.test_no_network_outside_dates) ... ok
+test_paired_score_reused_without_result_refetch (test_prospective_cohort.CohortTests.test_paired_score_reused_without_result_refetch) ... ok
+test_sampling_fixed_unique_endpoints_and_sorted (test_prospective_cohort.CohortTests.test_sampling_fixed_unique_endpoints_and_sorted) ... ok
 test_changed_field_never_renormalized_after_result (test_shadow.ShadowTests.test_changed_field_never_renormalized_after_result) ... ok
 test_correct_scoring_and_dq (test_shadow.ShadowTests.test_correct_scoring_and_dq) ... ok
 test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_rejected) ... ok
@@ -105,10 +109,12 @@ test_freeze_and_tampering (test_v7_holdout.V7HoldoutTests.test_freeze_and_tamper
 test_scope_guard_before_network (test_v7_holdout.V7HoldoutTests.test_scope_guard_before_network) ... ok
 
 ----------------------------------------------------------------------
-Ran 105 tests in 0.080s
+Ran 109 tests in 0.143s
 
 OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
+Outside fixed cohort dates; no requests
+Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
 Existing V7 holdout retained; no repeated selection
