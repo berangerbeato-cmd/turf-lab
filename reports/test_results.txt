@@ -78,6 +78,16 @@ test_metrics_multiclass (test_pilot.PilotTests.test_metrics_multiclass) ... ok
 test_non_runners_and_normalization (test_pilot.PilotTests.test_non_runners_and_normalization) ... ok
 test_target_and_odds_do_not_change_prediction (test_pilot.PilotTests.test_target_and_odds_do_not_change_prediction) ... ok
 test_training_does_not_mutate (test_pilot.PilotTests.test_training_does_not_mutate) ... ok
+test_departure_window (tests.test_pmu_quotes.QuoteTests.test_departure_window) ... ok
+test_stale_future_wrong_market_and_field (tests.test_pmu_quotes.QuoteTests.test_stale_future_wrong_market_and_field) ... ok
+test_valid_timestamped_pair (tests.test_pmu_quotes.QuoteTests.test_valid_timestamped_pair) ... ok
+test_capture_persist_restart_without_second_request (test_pmu_cohort.SchedulingTests.test_capture_persist_restart_without_second_request) ... Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
+Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
+{"race_id": "2026-10-14_R1C1", "attempts": 1, "status": "CAPTURED", "last_attempt": "2026-10-14T11:45:00+00:00", "path": "quotes_pmu/cohort/2026-10-14/2026-10-14_R1C1.json"}
+ok
+test_fixed_dates_and_year (test_pmu_cohort.SchedulingTests.test_fixed_dates_and_year) ... ok
+test_minute_poll_survives_single_cron_launch (test_pmu_cohort.SchedulingTests.test_minute_poll_survives_single_cron_launch) ... ok
+test_retry_budget_and_restart (test_pmu_cohort.SchedulingTests.test_retry_budget_and_restart) ... ok
 test_departure_window (test_pmu_quotes.QuoteTests.test_departure_window) ... ok
 test_stale_future_wrong_market_and_field (test_pmu_quotes.QuoteTests.test_stale_future_wrong_market_and_field) ... ok
 test_valid_timestamped_pair (test_pmu_quotes.QuoteTests.test_valid_timestamped_pair) ... ok
@@ -122,11 +132,9 @@ test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
 ----------------------------------------------------------------------
-Ran 122 tests in 0.089s
+Ran 129 tests in 0.086s
 
 OK (skipped=6)
-Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
-Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
