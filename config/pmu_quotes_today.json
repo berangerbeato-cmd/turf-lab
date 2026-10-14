@@ -1,0 +1,12 @@
+{
+  "date":"2026-10-14",
+  "race_ids":["2026-10-14_R1C1","2026-10-14_R1C2","2026-10-14_R1C3","2026-10-14_R1C4","2026-10-14_R1C5","2026-10-14_R4C1"],
+  "minimum_minutes_before_start":5,
+  "maximum_minutes_before_start":20,
+  "maximum_quote_age_seconds":600,
+  "max_requests_per_run":12,
+  "market":"SIMPLE_GAGNANT",
+  "source":"PMU public participants: dernierRapportDirect",
+  "selection":"First valid capture within fixed prestart window; never replace a valid capture based on later prices or outcomes",
+  "scope":"Six races today only. No wager, no automatic recommendation, no model change. Raw indicative reports are not guaranteed final payouts."
+}
