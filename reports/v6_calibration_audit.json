@@ -1,0 +1,545 @@
+{
+  "status": "DESCRIPTIVE_ONLY_NO_BET",
+  "races": 2175,
+  "sources_sha256": {
+    "reports/v6_holdout.json": "adcdd5b4cfac263c900c18484b8e08cfa5f4609478cc4887392eabb404870004",
+    "reports/v6_holdout_predictions.json": "f67418464e02cfb1a7618d072936d6fd3512d9c40cbe3d48c3ba2447b9117a50",
+    "reports/v7_holdout.json": "d9ece4622e8c78f62c7be7cebec05625c98db339ed67c0987bcbeefc17f95050",
+    "reports/v7_holdout_predictions.json": "84126907a99f4535b04bf6915f1642909f2956bd90c520e8cd03ea95adc3507d"
+  },
+  "periods": {
+    "v6_holdout": {
+      "races": 1113,
+      "all_runners": {
+        "count": 13446,
+        "mean_probability": 0.08277554663096832,
+        "win_frequency": 0.08277554663096831,
+        "ece_fixed_bins": 0.005919687867803191,
+        "bins": [
+          {
+            "bin": [
+              0,
+              0.1
+            ],
+            "count": 9682,
+            "wins": 425,
+            "mean_probability": 0.0470248610366583,
+            "win_frequency": 0.04389588927907457,
+            "observed_minus_predicted": -0.0031289717575837326,
+            "descriptive_day_bootstrap_95": [
+              -0.006520769644944223,
+              -0.00016761275210157758
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 2785,
+            "wins": 424,
+            "mean_probability": 0.13814204419888979,
+            "win_frequency": 0.15224416517055656,
+            "observed_minus_predicted": 0.014102120971666778,
+            "descriptive_day_bootstrap_95": [
+              0.0044532900532290275,
+              0.023999834516071537
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 702,
+            "wins": 168,
+            "mean_probability": 0.23857029255106998,
+            "win_frequency": 0.23931623931623933,
+            "observed_minus_predicted": 0.0007459467651693381,
+            "descriptive_day_bootstrap_95": [
+              -0.02448242055855619,
+              0.028686568049805572
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 189,
+            "wins": 60,
+            "mean_probability": 0.3398055559536196,
+            "win_frequency": 0.31746031746031744,
+            "observed_minus_predicted": -0.02234523849330216,
+            "descriptive_day_bootstrap_95": [
+              -0.0874657903620847,
+              0.05156241110861065
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.4,
+              1
+            ],
+            "count": 88,
+            "wins": 36,
+            "mean_probability": 0.46909212389864824,
+            "win_frequency": 0.4090909090909091,
+            "observed_minus_predicted": -0.060001214807739164,
+            "descriptive_day_bootstrap_95": [
+              -0.1534172887924796,
+              0.04044798562067638
+            ],
+            "small_sample": false
+          }
+        ]
+      },
+      "top_choice": {
+        "count": 1113,
+        "mean_probability": 0.2543710728777127,
+        "win_frequency": 0.24707996406109614,
+        "ece_fixed_bins": 0.009539567889485547,
+        "bins": [
+          {
+            "bin": [
+              0,
+              0.1
+            ],
+            "count": 1,
+            "wins": 0,
+            "mean_probability": 0.08866573677167508,
+            "win_frequency": 0,
+            "observed_minus_predicted": -0.08866573677167508,
+            "descriptive_day_bootstrap_95": null,
+            "small_sample": true
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 335,
+            "wins": 58,
+            "mean_probability": 0.16987414635091594,
+            "win_frequency": 0.17313432835820897,
+            "observed_minus_predicted": 0.003260182007293013,
+            "descriptive_day_bootstrap_95": [
+              -0.037777808397139845,
+              0.04391800286188537
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 510,
+            "wins": 124,
+            "mean_probability": 0.24282528136939527,
+            "win_frequency": 0.24313725490196078,
+            "observed_minus_predicted": 0.0003119735325655092,
+            "descriptive_day_bootstrap_95": [
+              -0.03095221134393461,
+              0.03525300469226226
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 179,
+            "wins": 57,
+            "mean_probability": 0.3407681505424197,
+            "win_frequency": 0.31843575418994413,
+            "observed_minus_predicted": -0.022332396352475553,
+            "descriptive_day_bootstrap_95": [
+              -0.09043042600559748,
+              0.053199250265874465
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.4,
+              1
+            ],
+            "count": 88,
+            "wins": 36,
+            "mean_probability": 0.46909212389864824,
+            "win_frequency": 0.4090909090909091,
+            "observed_minus_predicted": -0.060001214807739164,
+            "descriptive_day_bootstrap_95": [
+              -0.1534172887924796,
+              0.04044798562067638
+            ],
+            "small_sample": false
+          }
+        ]
+      }
+    },
+    "v7_holdout": {
+      "races": 1062,
+      "all_runners": {
+        "count": 14229,
+        "mean_probability": 0.07463630613535736,
+        "win_frequency": 0.07463630613535736,
+        "ece_fixed_bins": 0.0029422423389554404,
+        "bins": [
+          {
+            "bin": [
+              0,
+              0.1
+            ],
+            "count": 10912,
+            "wins": 490,
+            "mean_probability": 0.045926910033522096,
+            "win_frequency": 0.04490469208211144,
+            "observed_minus_predicted": -0.0010222179514106588,
+            "descriptive_day_bootstrap_95": [
+              -0.004182725576115552,
+              0.0022961352549492053
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 2563,
+            "wins": 364,
+            "mean_probability": 0.13676489299103534,
+            "win_frequency": 0.14202106905969566,
+            "observed_minus_predicted": 0.0052561760686603365,
+            "descriptive_day_bootstrap_95": [
+              -0.005631041551165108,
+              0.016278352270744947
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 545,
+            "wins": 136,
+            "mean_probability": 0.23796504622822914,
+            "win_frequency": 0.24954128440366974,
+            "observed_minus_predicted": 0.011576238175440578,
+            "descriptive_day_bootstrap_95": [
+              -0.0228467332609075,
+              0.04867380520547159
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 146,
+            "wins": 40,
+            "mean_probability": 0.3409461701007217,
+            "win_frequency": 0.273972602739726,
+            "observed_minus_predicted": -0.06697356736099569,
+            "descriptive_day_bootstrap_95": [
+              -0.1461928851636034,
+              0.014685991303375985
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.4,
+              1
+            ],
+            "count": 63,
+            "wins": 32,
+            "mean_probability": 0.4896515230014774,
+            "win_frequency": 0.5079365079365079,
+            "observed_minus_predicted": 0.01828498493503056,
+            "descriptive_day_bootstrap_95": [
+              -0.14051757713007806,
+              0.16723834121754633
+            ],
+            "small_sample": false
+          }
+        ]
+      },
+      "top_choice": {
+        "count": 1062,
+        "mean_probability": 0.23924537939326537,
+        "win_frequency": 0.24199623352165725,
+        "ece_fixed_bins": 0.021534263282464695,
+        "bins": [
+          {
+            "bin": [
+              0,
+              0.1
+            ],
+            "count": 2,
+            "wins": 0,
+            "mean_probability": 0.09792471305365091,
+            "win_frequency": 0,
+            "observed_minus_predicted": -0.09792471305365091,
+            "descriptive_day_bootstrap_95": null,
+            "small_sample": true
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 417,
+            "wins": 74,
+            "mean_probability": 0.1646737090906896,
+            "win_frequency": 0.1774580335731415,
+            "observed_minus_predicted": 0.012784324482451905,
+            "descriptive_day_bootstrap_95": [
+              -0.02191724103718256,
+              0.047676046522823215
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 434,
+            "wins": 111,
+            "mean_probability": 0.24098529957355883,
+            "win_frequency": 0.2557603686635945,
+            "observed_minus_predicted": 0.014775069090035639,
+            "descriptive_day_bootstrap_95": [
+              -0.029438822546698714,
+              0.0621800627548555
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 146,
+            "wins": 40,
+            "mean_probability": 0.3409461701007217,
+            "win_frequency": 0.273972602739726,
+            "observed_minus_predicted": -0.06697356736099569,
+            "descriptive_day_bootstrap_95": [
+              -0.1461928851636034,
+              0.014685991303375985
+            ],
+            "small_sample": false
+          },
+          {
+            "bin": [
+              0.4,
+              1
+            ],
+            "count": 63,
+            "wins": 32,
+            "mean_probability": 0.4896515230014774,
+            "win_frequency": 0.5079365079365079,
+            "observed_minus_predicted": 0.01828498493503056,
+            "descriptive_day_bootstrap_95": [
+              -0.14051757713007806,
+              0.16723834121754633
+            ],
+            "small_sample": false
+          }
+        ]
+      }
+    }
+  },
+  "all_runners": {
+    "count": 27675,
+    "mean_probability": 0.07859078590785908,
+    "win_frequency": 0.07859078590785908,
+    "ece_fixed_bins": 0.004305596430340192,
+    "bins": [
+      {
+        "bin": [
+          0,
+          0.1
+        ],
+        "count": 20594,
+        "wins": 915,
+        "mean_probability": 0.046443097350816684,
+        "win_frequency": 0.044430416626201806,
+        "observed_minus_predicted": -0.0020126807246148783,
+        "descriptive_day_bootstrap_95": [
+          -0.004045715704852747,
+          0.00015162596814340782
+        ],
+        "small_sample": false
+      },
+      {
+        "bin": [
+          0.1,
+          0.2
+        ],
+        "count": 5348,
+        "wins": 788,
+        "mean_probability": 0.13748205195024898,
+        "win_frequency": 0.14734480179506357,
+        "observed_minus_predicted": 0.009862749844814589,
+        "descriptive_day_bootstrap_95": [
+          0.0029877801324884727,
+          0.017053212422288546
+        ],
+        "small_sample": false
+      },
+      {
+        "bin": [
+          0.2,
+          0.3
+        ],
+        "count": 1247,
+        "wins": 304,
+        "mean_probability": 0.238305770300911,
+        "win_frequency": 0.243785084202085,
+        "observed_minus_predicted": 0.00547931390117401,
+        "descriptive_day_bootstrap_95": [
+          -0.017625417314151653,
+          0.02891615353075755
+        ],
+        "small_sample": false
+      },
+      {
+        "bin": [
+          0.3,
+          0.4
+        ],
+        "count": 335,
+        "wins": 100,
+        "mean_probability": 0.34030265943265514,
+        "win_frequency": 0.29850746268656714,
+        "observed_minus_predicted": -0.041795196746088,
+        "descriptive_day_bootstrap_95": [
+          -0.09286962774340073,
+          0.013202222646462244
+        ],
+        "small_sample": false
+      },
+      {
+        "bin": [
+          0.4,
+          1
+        ],
+        "count": 151,
+        "wins": 68,
+        "mean_probability": 0.4776698864382392,
+        "win_frequency": 0.4503311258278146,
+        "observed_minus_predicted": -0.027338760610424645,
+        "descriptive_day_bootstrap_95": [
+          -0.10974364350993106,
+          0.058931029700570674
+        ],
+        "small_sample": false
+      }
+    ]
+  },
+  "top_choice": {
+    "count": 2175,
+    "mean_probability": 0.24698556185220327,
+    "win_frequency": 0.24459770114942528,
+    "ece_fixed_bins": 0.014337020029959114,
+    "bins": [
+      {
+        "bin": [
+          0,
+          0.1
+        ],
+        "count": 3,
+        "wins": 0,
+        "mean_probability": 0.09483838762632563,
+        "win_frequency": 0,
+        "observed_minus_predicted": -0.09483838762632563,
+        "descriptive_day_bootstrap_95": null,
+        "small_sample": true
+      },
+      {
+        "bin": [
+          0.1,
+          0.2
+        ],
+        "count": 752,
+        "wins": 132,
+        "mean_probability": 0.16699039324251916,
+        "win_frequency": 0.17553191489361702,
+        "observed_minus_predicted": 0.008541521651097877,
+        "descriptive_day_bootstrap_95": [
+          -0.01709220380530983,
+          0.03388077216256124
+        ],
+        "small_sample": false
+      },
+      {
+        "bin": [
+          0.2,
+          0.3
+        ],
+        "count": 944,
+        "wins": 235,
+        "mean_probability": 0.2419793575352925,
+        "win_frequency": 0.2489406779661017,
+        "observed_minus_predicted": 0.006961320430809192,
+        "descriptive_day_bootstrap_95": [
+          -0.02100263824630777,
+          0.03425770896786723
+        ],
+        "small_sample": false
+      },
+      {
+        "bin": [
+          0.3,
+          0.4
+        ],
+        "count": 325,
+        "wins": 97,
+        "mean_probability": 0.34084812240553386,
+        "win_frequency": 0.29846153846153844,
+        "observed_minus_predicted": -0.04238658394399537,
+        "descriptive_day_bootstrap_95": [
+          -0.09437711142554793,
+          0.013574745011778109
+        ],
+        "small_sample": false
+      },
+      {
+        "bin": [
+          0.4,
+          1
+        ],
+        "count": 151,
+        "wins": 68,
+        "mean_probability": 0.4776698864382392,
+        "win_frequency": 0.4503311258278146,
+        "observed_minus_predicted": -0.027338760610424645,
+        "descriptive_day_bootstrap_95": [
+          -0.10974364350993106,
+          0.058931029700570674
+        ],
+        "small_sample": false
+      }
+    ]
+  },
+  "refitted": false,
+  "limits": [
+    "Coarse-bin ECE depends on bins and is dominated by low probabilities",
+    "Bootstrap is descriptive; no multiple-comparison correction",
+    "Retrospective snapshots do not prove original pre-race availability",
+    "No odds or profitability",
+    "No calibration learned from holdouts"
+  ]
+}
