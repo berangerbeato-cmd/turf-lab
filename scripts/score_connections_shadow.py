@@ -11,7 +11,7 @@ from turf_lab.evidence import EvidenceStore, dump
 from turf_lab.shadow_v5_score import score, choose_snapshot
 
 
-def main():
+def main(v6=False):
     policy = json.loads(Path('config/v5_followup.json').read_text())
     now = datetime.now(timezone.utc)
     today = now.astimezone(ZoneInfo('Europe/Paris')).date().isoformat()
@@ -19,11 +19,17 @@ def main():
         print('Outside bounded follow-up window: no requests')
         return
     frozen, _ = verify_frozen(json.loads(PROTOCOL.read_text()))
+    label = 'v6' if v6 else 'v5'
+    names = ['v3', frozen['selected']]
+    if v6:
+        from scripts.v6_holdout import verify
+        _, frozen, _, _ = verify()
+        names = ['v5', 'v6']
     batch = now.strftime('%Y%m%dT%H%M%S%fZ')
-    store = EvidenceStore('evidence/v5_results/'+batch, max_requests=policy['max_requests'], delay=.5)
+    store = EvidenceStore('evidence/'+label+'_results/'+batch, max_requests=policy['max_requests'], delay=.5)
     output = []
     for rid in policy['race_ids']:
-        candidates = [(path, json.loads(path.read_text())) for path in Path('predictions_v5').glob(rid[:10]+'/'+rid+'_*/prediction.json')]
+        candidates = [(path, json.loads(path.read_text())) for path in Path('predictions_'+label).glob(rid[:10]+'/'+rid+'_*/prediction.json')]
         chosen = choose_snapshot(candidates)
         if chosen is None:
             output.append({'race_id': rid, 'status': 'QUARANTINE', 'reason': 'no_prestart_snapshot'})
@@ -34,6 +40,11 @@ def main():
         if prediction['frozen'] != frozen:
             output.append(dict(info, status='QUARANTINE', reason='frozen_model_mismatch'))
             continue
+        if v6:
+            source = Path(prediction['v5_snapshot'])
+            if not source.exists() or hashlib.sha256(source.read_bytes()).hexdigest() != prediction['v5_snapshot_sha256']:
+                output.append(dict(info, status='QUARANTINE', reason='v5_snapshot_changed'))
+                continue
         if now <= datetime.fromisoformat(prediction['scheduled_start']):
             output.append(dict(info, status='PENDING', reason='race_not_started'))
             continue
@@ -44,20 +55,20 @@ def main():
             result = {'status': 'PENDING', 'reason': 'response_unavailable'}
         else:
             try:
-                result = score(prediction, detail, runners['participants'])
+                result = score(prediction, detail, runners['participants'], model_names=names)
             except (ValueError, KeyError, TypeError) as error:
                 result = {'status': 'QUARANTINE', 'reason': str(error)}
         output.append(dict(info, **result))
     scored = [r for r in output if r['status'] == 'SCORED']
     aggregate = {n: {key: mean(r['models'][n][key] for r in scored) for key in ('log_loss','brier_multiclass','top1_hit')}
-                 for n in ('v3', frozen['selected'])} if scored else {}
+                 for n in names} if scored else {}
     report = {'status': 'OBSERVATION_ONLY_NO_BET', 'checked_at': now.isoformat(),
               'scored': len(scored), 'planned': len(policy['race_ids']), 'races': output,
               'metrics': aggregate, 'evidence_manifest': str(store.manifest_path),
               'limits': 'Six selected races only, no profitability claim, no post-result probability changes.'}
-    dump('reports/v5_prospective_scores.json', report)
-    dump('reports/v5_score_runs/'+batch+'.json', report)
-    lines = ['# Suivi prospectif V3/V5', '', '**Observation uniquement — NO BET.**',
+    dump('reports/'+label+'_prospective_scores.json', report)
+    dump('reports/'+label+'_score_runs/'+batch+'.json', report)
+    lines = ['# Suivi prospectif '+('/'.join(names)), '', '**Observation uniquement — NO BET.**',
              f"Courses évaluées : {len(scored)}/{len(policy['race_ids'])}. Vérification : {now.isoformat()}.", '',
              '| Course | État | Motif |', '|---|---|---|']
     for r in output:
@@ -68,7 +79,7 @@ def main():
             lines.append(f"| {n} | {m['log_loss']:.5f} | {m['brier_multiclass']:.5f} | {m['top1_hit']:.1%} |")
     lines += ['', 'Dernière capture sauvegardée avant départ retenue sans consulter les résultats. Partants, driver, entraîneur et ferrure doivent concorder.',
               'Aucune renormalisation après non-partant. Les exclusions sont visibles. Six courses ne démontrent ni robustesse ni rentabilité.']
-    Path('reports/V5_PROSPECTIVE_SCORES.md').write_text('\n'.join(lines)+'\n')
+    Path('reports/'+label.upper()+'_PROSPECTIVE_SCORES.md').write_text('\n'.join(lines)+'\n')
     print(json.dumps({'scored': len(scored), 'statuses': [r['status'] for r in output]}))
 
 
