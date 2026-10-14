@@ -100,11 +100,15 @@ test_missing_v7_refresh_only_before_start (test_shadow_v7.V7ShadowTests.test_mis
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
 test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synthetic_evaluation_is_idempotent) ... ok
+test_evaluation_no_refit_and_idempotent (test_v7_holdout.V7HoldoutTests.test_evaluation_no_refit_and_idempotent) ... ok
+test_freeze_and_tampering (test_v7_holdout.V7HoldoutTests.test_freeze_and_tampering) ... ok
+test_scope_guard_before_network (test_v7_holdout.V7HoldoutTests.test_scope_guard_before_network) ... ok
 
 ----------------------------------------------------------------------
-Ran 102 tests in 0.103s
+Ran 105 tests in 0.134s
 
 OK (skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Existing holdout retained; no repeated selection
+Existing V7 holdout retained; no repeated selection
