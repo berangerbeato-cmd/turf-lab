@@ -1,0 +1,12 @@
+{
+  "from": "2026-10-15",
+  "through": "2026-10-31",
+  "market": "SIMPLE_GAGNANT",
+  "minimum_minutes_before_start": 5,
+  "maximum_minutes_before_start": 20,
+  "maximum_quote_age_seconds": 600,
+  "maximum_attempts_per_race": 5,
+  "retry_seconds": 120,
+  "max_races_per_day": 20,
+  "scope": "Separate odds sidecar for the already frozen cohort only. At most 200 PMU requests/day. No new race selection, no model input, no betting, no replacement of valid quotes. Ends October 31, 2026."
+}

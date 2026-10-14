@@ -1,8 +1,6 @@
 name: Turf Lab bounded PMU quotes today
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/5 11-15 14 10 *'
   push:
     branches: [main]
     paths: ['.github/workflows/pmu_quotes_today.yml']

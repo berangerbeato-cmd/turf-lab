@@ -1,0 +1,64 @@
+name: Turf Lab resident prestart odds observer
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6,11,16 15-31 10 *'
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pmu_quotes_cohort.yml', 'scripts/capture_pmu_cohort.py', 'tests/test_pmu_cohort.py']
+permissions:
+  contents: write
+concurrency:
+  group: turf-resident-quotes
+  cancel-in-progress: false
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test strict validation and bounded polling
+        run: python -m unittest tests.test_pmu_quotes tests.test_pmu_cohort -v
+      - name: Observe and persist every capture
+        env:
+          TRIGGER: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p evidence/pmu_cohort quotes_pmu/cohort reports/pmu_cohort
+          deadline=$((SECONDS + 18600))
+          while true; do
+            git pull --rebase origin main
+            python -m scripts.capture_pmu_cohort
+            git add evidence/pmu_cohort quotes_pmu/cohort reports/pmu_cohort
+            if ! git diff --cached --quiet; then
+              git commit -m 'Checkpoint bounded prestart quote observation'
+              saved=false
+              for attempt in 1 2 3; do
+                git pull --rebase origin main
+                if git push origin HEAD:main; then saved=true; break; fi
+              done
+              if [ "$saved" != true ]; then exit 1; fi
+            fi
+            if [ "$TRIGGER" = push ] || [ "$SECONDS" -ge "$deadline" ]; then break; fi
+            if ! python -c 'import sys,json; from datetime import datetime,timezone; from scripts.capture_pmu_cohort import authorized; sys.exit(0 if authorized(datetime.now(timezone.utc),json.load(open("config/pmu_quotes_cohort.json"))) else 1)'; then break; fi
+            sleep 60
+          done
+      - name: Backup evidence even when repository publication fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pmu-quotes-${{ github.run_id }}
+          path: |
+            evidence/pmu_cohort
+            quotes_pmu/cohort
+            reports/pmu_cohort
+          if-no-files-found: ignore
+          retention-days: 30
