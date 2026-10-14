@@ -9,7 +9,73 @@
     "model_sha256": "0e22333bc5f8c86b0896c1a3bd57f1516fa6da0f25342357db3ddd5b8b3cee54",
     "policy": "fixed model, experimental NO BET; whole-race quarantine if field changes; latest saved prediction before start; no tuning from shadow outcomes"
   },
-  "results": {},
+  "results": {
+    "2026-10-13_R3C1": {
+      "status": "SCORED",
+      "winner": 5,
+      "log_loss": 1.9984049157147736,
+      "brier_multiclass": 0.8364924026473985,
+      "top1_hit": 0,
+      "uniform_log_loss": 2.70805020110221,
+      "uniform_brier_multiclass": 0.9333333333333333,
+      "uniform_top1_hit": 0,
+      "probabilities": {
+        "1": 0.0373051597531044,
+        "2": 0.054936306097844764,
+        "3": 0.049532091090016925,
+        "4": 0.034575736197109026,
+        "5": 0.13555132667808278,
+        "6": 0.02942038804285156,
+        "7": 0.05254065477206061,
+        "8": 0.02125676984805313,
+        "9": 0.02861630495983875,
+        "10": 0.17010986606017006,
+        "11": 0.19387910891331775,
+        "12": 0.061281798162340445,
+        "13": 0.05500537223246875,
+        "14": 0.04394395543291412,
+        "15": 0.032045161759826864
+      },
+      "active_runners": 15,
+      "prediction_file": "predictions/2026-10-13/2026-10-13_R3C1_20261012T174403747123Z/prediction.json",
+      "evaluated_at": "2026-10-14T07:03:58.366006+00:00",
+      "date": "2026-10-13",
+      "venue": "LYON-PARILLY",
+      "distance_m": 2000,
+      "start_type": "AUTOSTART"
+    },
+    "2026-10-13_R4C1": {
+      "status": "SCORED",
+      "winner": 7,
+      "log_loss": 1.7624828182030003,
+      "brier_multiclass": 0.768562128139647,
+      "top1_hit": 1,
+      "uniform_log_loss": 2.4849066497880004,
+      "uniform_brier_multiclass": 0.9166666666666666,
+      "uniform_top1_hit": 0,
+      "probabilities": {
+        "1": 0.09541176522136688,
+        "2": 0.12115186967517068,
+        "3": 0.03397156573954547,
+        "4": 0.13920616525483093,
+        "5": 0.033043095276312974,
+        "6": 0.1051870196221703,
+        "7": 0.17161823754032565,
+        "8": 0.13212264272259908,
+        "9": 0.017709386450648998,
+        "10": 0.03148521012401031,
+        "11": 0.05614693199279044,
+        "12": 0.06294611038022836
+      },
+      "active_runners": 12,
+      "prediction_file": "predictions/2026-10-13/2026-10-13_R4C1_20261012T174155902279Z/prediction.json",
+      "evaluated_at": "2026-10-14T07:03:58.366006+00:00",
+      "date": "2026-10-13",
+      "venue": "VINCENNES",
+      "distance_m": 2100,
+      "start_type": "AUTOSTART"
+    }
+  },
   "capture_log": {
     "2026-10-13_R4C1": {
       "status": "ALREADY_CAPTURED",
@@ -23,14 +89,26 @@
       "status": "CAPTURED",
       "returncode": 0,
       "log": "200 2026-10-14_programme\n200 2026-10-14_R1C1_participants\n200 2026-10-14_R1C1_performances_pretty\npredictions/2026-10-14/2026-10-14_R1C1_20261013T064150646972Z\n"
+    },
+    "2026-10-15_R3C1": {
+      "status": "CAPTURED",
+      "returncode": 0,
+      "log": "200 2026-10-15_programme\n200 2026-10-15_R3C1_participants\n200 2026-10-15_R3C1_performances_pretty\npredictions/2026-10-15/2026-10-15_R3C1_20261014T070403953647Z\n"
     }
   },
   "summary": {
-    "scored_races": 0,
-    "days": 0,
+    "scored_races": 2,
+    "days": 1,
     "status": "EXPERIMENTAL_NO_BET",
-    "metrics": null,
+    "metrics": {
+      "log_loss": 1.880443866958887,
+      "brier_multiclass": 0.8025272653935227,
+      "top1_hit": 0.5,
+      "uniform_log_loss": 2.596478425445105,
+      "uniform_brier_multiclass": 0.925,
+      "uniform_top1_hit": 0
+    },
     "note": "No result exists before the race; no ROI, no tuning, no automatic promotion."
   },
-  "updated_at": "2026-10-13T06:41:48.873453+00:00"
+  "updated_at": "2026-10-14T07:03:58.366006+00:00"
 }
