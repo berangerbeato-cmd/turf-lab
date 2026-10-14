@@ -1,0 +1,23 @@
+{
+  "version": "v7-speed-development-only",
+  "candidates": ["v6", "v7_speed"],
+  "train": {"from": "2024-03-02", "to": "2024-05-31"},
+  "validation": {"from": "2025-03-02", "to": "2025-05-31"},
+  "history_days": 60,
+  "last_starts": 5,
+  "minimum_context_races": 20,
+  "context_prior_strength": 20,
+  "distance_bucket_metres": 500,
+  "minimum_timed_per_race": 3,
+  "pace_min": 50000,
+  "pace_max": 150000,
+  "joint_time_distance_tolerance": 0.01,
+  "context": "Past race median pace, grouped by venue, floor(base distance/500), start type; group mean shrunk toward global mean with 20 race equivalents. Reset each calendar year. Day-batched updates.",
+  "feature": "Median of last five valid historical (context expected pace minus runner pace)/1000 values within 60 days; missing explicitly encoded. Context estimated before each historical race, never recomputed with later races.",
+  "l2": 0.1,
+  "iterations": 800,
+  "learning_rate": 0.03,
+  "minimum_races_per_month": 200,
+  "decision": "One comparison only on reused validation; no tuning after results and no automatic promotion. Independent test must use a newly reserved period, not July-August 2025.",
+  "limits": ["Partial context correction, not physical speed or causal track effect", "Race quality, weather and track state not controlled", "Retrospective source publication not proven", "No 2026 outcomes or July-August 2025 test outcomes loaded", "V5/V6 prospective unchanged", "NO BET"]
+}
