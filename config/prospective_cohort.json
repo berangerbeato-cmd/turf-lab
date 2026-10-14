@@ -1,0 +1,19 @@
+{
+  "version": "fixed-october-2026-v6-v7",
+  "from": "2026-10-15",
+  "through": "2026-10-31",
+  "score_through": "2026-11-03",
+  "max_races_per_day": 20,
+  "max_history_requests": 1800,
+  "max_result_requests": 120,
+  "selection": "French harness races in first daily programme, sorted by start/reunion/course; up to 20 evenly spaced indices including endpoints. Selection before participant checks. No replacement or retry of rejected captures.",
+  "models": ["v6", "v7_speed"],
+  "reference": "v6",
+  "challenger": "v7_speed",
+  "primary_metric": "Paired mean log loss difference on identical valid captured fields",
+  "stopping": "Fixed end date, never performance-dependent; at most 340 planned races, not a promise of 340 scored",
+  "refit": false,
+  "promotion": false,
+  "no_bet": true,
+  "limits": ["Early morning snapshots, not near-start prices", "Exclude changed fields without renormalization", "Report all missed or rejected captures", "October only; not representative of annual conditions", "No market endpoint or odds scraping"]
+}
