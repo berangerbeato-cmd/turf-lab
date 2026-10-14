@@ -1,0 +1,25 @@
+{
+  "version": "xgboost-rank-v2-chronological-development",
+  "features": "Same 38 raw V6 variables, native missing; no current outcomes or odds",
+  "xgboost_version": "3.0.5",
+  "candidates": [
+    {"name":"pairwise_depth2","objective":"rank:pairwise","max_depth":2},
+    {"name":"pairwise_depth3","objective":"rank:pairwise","max_depth":3},
+    {"name":"ndcg_depth2","objective":"rank:ndcg","max_depth":2},
+    {"name":"ndcg_depth3","objective":"rank:ndcg","max_depth":3}
+  ],
+  "params": {"tree_method":"hist","eta":0.03,"min_child_weight":5,"lambda":5,"subsample":1,"colsample_bytree":1,"seed":42,"nthread":1,"lambdarank_pair_method":"mean","lambdarank_num_pair_per_sample":8},
+  "num_boost_round": 300,
+  "temperatures": [0.5,1.0,2.0],
+  "folds": [
+    {"train":{"from":"2024-03-02","to":"2024-03-31"},"validation":{"from":"2024-04-01","to":"2024-04-30"}},
+    {"train":{"from":"2024-03-02","to":"2024-04-30"},"validation":{"from":"2024-05-01","to":"2024-05-31"}}
+  ],
+  "final_train":{"from":"2024-03-02","to":"2024-05-31"},
+  "development_evaluation":{"from":"2025-03-02","to":"2025-05-31"},
+  "minimum_races_per_month":200,
+  "selection":"Lowest equal-fold mean race log loss on 2024 folds across 4 candidates x 3 temperatures; ties follow listed order. No selection on 2025.",
+  "labels":"Winner=1, others=0 within each race; nonrunners excluded, equal group weights",
+  "probabilities":"Softmax(score / fixed selected temperature) within race, nonrunners zero",
+  "limits":["Ranking objective is not categorical probability log loss", "Temperature selected on inner development folds is not proof of calibration", "March-May 2025 already consulted for other experiments: exploratory evaluation", "No July-December 2025 or 2026 outcomes loaded", "No early stopping or tuning after evaluation", "V6/V7 prospective unchanged", "NO BET"]
+}
