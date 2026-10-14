@@ -31,6 +31,7 @@ def main():
                 record_failure(state, error)
                 raise
     score()
+    score(v6=True)
 
 
 if __name__ == '__main__':
