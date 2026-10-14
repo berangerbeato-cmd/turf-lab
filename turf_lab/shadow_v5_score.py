@@ -6,7 +6,7 @@ from turf_lab.connections import entity, equipment
 from turf_lab.opposition import is_dq
 
 
-def score(prediction, detail, participants):
+def score(prediction, detail, participants, model_names=None):
     def reject(reason):
         return {'status': 'QUARANTINE', 'reason': reason}
     captured = datetime.fromisoformat(prediction['predicted_at'])
@@ -30,13 +30,16 @@ def score(prediction, detail, participants):
         return reject('duplicate_runner')
     if {signature(p) for p in old} != {signature(p) for p in new}:
         return reject('field_identity_driver_trainer_or_equipment_changed')
+    if model_names and 'v6' in model_names:
+        if {(p['numPmu'], p.get('age'), p.get('sexe')) for p in old} != {(p['numPmu'], p.get('age'), p.get('sexe')) for p in new}:
+            return reject('age_or_sex_changed')
     winners = [p['numPmu'] for p in new if p.get('ordreArrivee') == 1]
     order = detail.get('ordreArrivee') or []
     if len(winners) != 1 or not order or order[0] != winners:
         return reject('ambiguous_or_inconsistent_winner')
     if any(is_dq(p) for p in new if p['numPmu'] == winners[0]):
         return reject('disqualified_winner')
-    names = ['v3', prediction['frozen']['selected']]
+    names = model_names if model_names is not None else ['v3', prediction['frozen']['selected']]
     if set(prediction['models']) != set(names):
         return reject('model_pair_mismatch')
     results = {}
