@@ -172,6 +172,11 @@ def main(state=None, target_date=None):
                 state.setdefault('v6_saved', []).append(capture_v6(history, path))
             except (ValueError, RuntimeError, FileNotFoundError, KeyError, TypeError) as error:
                 state.setdefault('v6_rejected', []).append({'race_id': rid, 'reason': str(error)})
+            from scripts.shadow_v7 import capture as capture_v7
+            try:
+                state.setdefault('v7_saved', []).append(capture_v7(history, path))
+            except (ValueError, RuntimeError, FileNotFoundError, KeyError, TypeError) as error:
+                state.setdefault('v7_rejected', []).append({'race_id': rid, 'reason': str(error)})
         except (ValueError, KeyError, TypeError) as error:
             rejected.append({'race_id': rid, 'reason': str(error)})
             print(json.dumps(rejected[-1]), flush=True)
