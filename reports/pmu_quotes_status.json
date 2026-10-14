@@ -1,6 +1,6 @@
 {
   "status": "OBSERVATION_ONLY_NO_BET",
-  "checked_at": "2026-10-14T14:48:49.179726+00:00",
+  "checked_at": "2026-10-14T15:17:50.926546+00:00",
   "races": [
     {
       "race_id": "2026-10-14_R1C1",
@@ -29,10 +29,10 @@
     },
     {
       "race_id": "2026-10-14_R4C1",
-      "status": "REJECTED",
-      "reason": "Current field differs from frozen forecast"
+      "status": "MISSED_WINDOW",
+      "scheduled_start": "2026-10-14T15:07:00+00:00"
     }
   ],
-  "requests": 2,
+  "requests": 0,
   "limits": "Six races today only. No wager, no automatic recommendation, no model change. Raw indicative reports are not guaranteed final payouts."
 }
