@@ -11,7 +11,7 @@ from turf_lab.evidence import EvidenceStore, dump
 from turf_lab.shadow_v5_score import score, choose_snapshot
 
 
-def main(v6=False):
+def main(v6=False, v7=False):
     policy = json.loads(Path('config/v5_followup.json').read_text())
     now = datetime.now(timezone.utc)
     today = now.astimezone(ZoneInfo('Europe/Paris')).date().isoformat()
@@ -25,6 +25,11 @@ def main(v6=False):
         from scripts.v6_holdout import verify
         _, frozen, _, _ = verify()
         names = ['v5', 'v6']
+    if v7:
+        from scripts.shadow_v7 import verify
+        frozen, _, _ = verify()
+        label = 'v7'
+        names = ['v6', 'v7_speed']
     batch = now.strftime('%Y%m%dT%H%M%S%fZ')
     store = EvidenceStore('evidence/'+label+'_results/'+batch, max_requests=policy['max_requests'], delay=.5)
     output = []
@@ -40,10 +45,15 @@ def main(v6=False):
         if prediction['frozen'] != frozen:
             output.append(dict(info, status='QUARANTINE', reason='frozen_model_mismatch'))
             continue
-        if v6:
+        if v6 or v7:
             source = Path(prediction['v5_snapshot'])
             if not source.exists() or hashlib.sha256(source.read_bytes()).hexdigest() != prediction['v5_snapshot_sha256']:
                 output.append(dict(info, status='QUARANTINE', reason='v5_snapshot_changed'))
+                continue
+        if v7:
+            source = Path(prediction['v6_snapshot'])
+            if not source.exists() or hashlib.sha256(source.read_bytes()).hexdigest() != prediction['v6_snapshot_sha256']:
+                output.append(dict(info, status='QUARANTINE', reason='v6_snapshot_changed'))
                 continue
         if now <= datetime.fromisoformat(prediction['scheduled_start']):
             output.append(dict(info, status='PENDING', reason='race_not_started'))
