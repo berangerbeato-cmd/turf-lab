@@ -1,0 +1,14 @@
+{
+  "version": "xgboost-v1-development-only",
+  "feature_set": "V6 combined, 38 raw dimensions, native missing values; no V7 speed feature",
+  "train": {"from": "2024-03-02", "to": "2024-05-31"},
+  "validation": {"from": "2025-03-02", "to": "2025-05-31"},
+  "minimum_races_per_month": 200,
+  "xgboost_version": "3.0.5",
+  "num_boost_round": 200,
+  "params": {"objective":"binary:logistic","tree_method":"hist","max_depth":3,"eta":0.03,"min_child_weight":5,"lambda":5,"subsample":1,"colsample_bytree":1,"seed":42,"nthread":1},
+  "sample_weight": "1 / number of active runners in that race; no positive-class reweighting",
+  "probabilities": "Softmax of raw binary-logit margins among active runners (normalized odds); non-runners exactly zero. No fitted temperature or calibration.",
+  "selection": "One fixed configuration; no early stopping, grid search or retuning after results",
+  "limits": ["Reused development validation, exploratory only", "Binary training objective differs from race conditional log loss", "Normalized odds do not establish calibration", "No July-October 2025 or 2026 outcomes loaded", "No change to prospective V6/V7", "NO BET"]
+}
