@@ -7,13 +7,13 @@ from scripts.shadow_connections import main as capture, record_failure
 from scripts.score_connections_shadow import main as score
 
 
-def needs_refresh(snapshots, now, today):
+def needs_refresh(snapshots, now, today, missing_v7=False):
     if today != '2026-10-14':
         return False
     existing = [p for values in snapshots.values() for p in values]
     refreshed = all(any(p.get('history_gap_days') == 0 and p['predicted_at'][:10] == today for p in values)
                     for values in snapshots.values())
-    return bool(existing) and not refreshed and now < min(datetime.fromisoformat(p['scheduled_start']) for p in existing)
+    return bool(existing) and (not refreshed or missing_v7) and now < min(datetime.fromisoformat(p['scheduled_start']) for p in existing)
 
 
 def main():
@@ -23,7 +23,8 @@ def main():
         policy = json.loads(Path('config/v5_followup.json').read_text())
         snapshots = {rid: [json.loads(path.read_text()) for path in Path('predictions_v5').glob(rid[:10]+'/'+rid+'_*/prediction.json')]
                      for rid in policy['race_ids']}
-        if needs_refresh(snapshots, now, today):
+        missing_v7 = any(not list(Path('predictions_v7').glob(rid[:10]+'/'+rid+'_*/prediction.json')) for rid in policy['race_ids'])
+        if needs_refresh(snapshots, now, today, missing_v7):
             state = {}
             try:
                 capture(state, today)
@@ -32,6 +33,7 @@ def main():
                 raise
     score()
     score(v6=True)
+    score(v7=True)
 
 
 if __name__ == '__main__':
