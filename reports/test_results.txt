@@ -78,6 +78,9 @@ test_metrics_multiclass (test_pilot.PilotTests.test_metrics_multiclass) ... ok
 test_non_runners_and_normalization (test_pilot.PilotTests.test_non_runners_and_normalization) ... ok
 test_target_and_odds_do_not_change_prediction (test_pilot.PilotTests.test_target_and_odds_do_not_change_prediction) ... ok
 test_training_does_not_mutate (test_pilot.PilotTests.test_training_does_not_mutate) ... ok
+test_departure_window (test_pmu_quotes.QuoteTests.test_departure_window) ... ok
+test_stale_future_wrong_market_and_field (test_pmu_quotes.QuoteTests.test_stale_future_wrong_market_and_field) ... ok
+test_valid_timestamped_pair (test_pmu_quotes.QuoteTests.test_valid_timestamped_pair) ... ok
 test_freeze_and_tamper (test_prospective_cohort.CohortTests.test_freeze_and_tamper) ... ok
 test_no_network_outside_dates (test_prospective_cohort.CohortTests.test_no_network_outside_dates) ... ok
 test_paired_score_reused_without_result_refetch (test_prospective_cohort.CohortTests.test_paired_score_reused_without_result_refetch) ... ok
@@ -119,7 +122,7 @@ test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
 ----------------------------------------------------------------------
-Ran 119 tests in 0.083s
+Ran 122 tests in 0.089s
 
 OK (skipped=6)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
