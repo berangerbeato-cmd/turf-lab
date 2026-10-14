@@ -1,12 +1,12 @@
 {
-  "batch": "20261013T195222447640Z",
+  "batch": "20261014T060717192072Z",
   "saved": [
-    "predictions_v5/2026-10-14/2026-10-14_R1C1_20261013T195222447640Z/prediction.json",
-    "predictions_v5/2026-10-14/2026-10-14_R1C2_20261013T195222447640Z/prediction.json",
-    "predictions_v5/2026-10-14/2026-10-14_R1C3_20261013T195222447640Z/prediction.json",
-    "predictions_v5/2026-10-14/2026-10-14_R1C4_20261013T195222447640Z/prediction.json",
-    "predictions_v5/2026-10-14/2026-10-14_R1C5_20261013T195222447640Z/prediction.json",
-    "predictions_v5/2026-10-14/2026-10-14_R4C1_20261013T195222447640Z/prediction.json"
+    "predictions_v5/2026-10-14/2026-10-14_R1C1_20261014T060717192072Z/prediction.json",
+    "predictions_v5/2026-10-14/2026-10-14_R1C2_20261014T060717192072Z/prediction.json",
+    "predictions_v5/2026-10-14/2026-10-14_R1C3_20261014T060717192072Z/prediction.json",
+    "predictions_v5/2026-10-14/2026-10-14_R1C4_20261014T060717192072Z/prediction.json",
+    "predictions_v5/2026-10-14/2026-10-14_R1C5_20261014T060717192072Z/prediction.json",
+    "predictions_v5/2026-10-14/2026-10-14_R4C1_20261014T060717192072Z/prediction.json"
   ],
   "rejected": [],
   "coverage": [
@@ -1224,14 +1224,22 @@
       "reason": "Missing parents encoded INCONNU/INCONNUE create ten identity conflicts; entire race excluded from shadow history, raw evidence retained."
     }
   ],
+  "v6_saved": [
+    "predictions_v6/2026-10-14/2026-10-14_R1C1_20261014T060717192072Z/prediction.json",
+    "predictions_v6/2026-10-14/2026-10-14_R1C2_20261014T060717192072Z/prediction.json",
+    "predictions_v6/2026-10-14/2026-10-14_R1C3_20261014T060717192072Z/prediction.json",
+    "predictions_v6/2026-10-14/2026-10-14_R1C4_20261014T060717192072Z/prediction.json",
+    "predictions_v6/2026-10-14/2026-10-14_R1C5_20261014T060717192072Z/prediction.json",
+    "predictions_v6/2026-10-14/2026-10-14_R4C1_20261014T060717192072Z/prediction.json"
+  ],
   "status": "CAPTURED_NO_BET",
   "date": "2026-10-14",
-  "history_through": "2026-10-12",
+  "history_through": "2026-10-13",
   "partial_coverage": {
-    "scheduled": 198,
+    "scheduled": 211,
     "cancelled": 0,
-    "eligible": 198,
-    "retained": 198,
+    "eligible": 211,
+    "retained": 211,
     "unresolved": 0,
     "fraction": 1.0
   },
