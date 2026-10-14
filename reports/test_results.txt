@@ -94,14 +94,26 @@ test_history_or_baseline_mismatch_rejected (test_shadow_v6.V6ShadowTests.test_hi
 test_late_capture_rejected_before_compute (test_shadow_v6.V6ShadowTests.test_late_capture_rejected_before_compute) ... ok
 test_sidecar_does_not_change_source_and_is_immutable (test_shadow_v6.V6ShadowTests.test_sidecar_does_not_change_source_and_is_immutable) ... ok
 test_v6_paired_scoring_and_field_changes (test_shadow_v6.V6ShadowTests.test_v6_paired_scoring_and_field_changes) ... ok
+test_capture_immutable_and_baseline_checked (test_shadow_v7.V7ShadowTests.test_capture_immutable_and_baseline_checked) ... ok
+test_freeze_and_tamper (test_shadow_v7.V7ShadowTests.test_freeze_and_tamper) ... ok
+test_missing_v7_refresh_only_before_start (test_shadow_v7.V7ShadowTests.test_missing_v7_refresh_only_before_start) ... ERROR
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
 test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synthetic_evaluation_is_idempotent) ... ok
 
+======================================================================
+ERROR: test_missing_v7_refresh_only_before_start (test_shadow_v7.V7ShadowTests.test_missing_v7_refresh_only_before_start)
 ----------------------------------------------------------------------
-Ran 99 tests in 0.097s
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_shadow_v7.py", line 59, in test_missing_v7_refresh_only_before_start
+    self.assertTrue(needs_refresh(snapshots,before,'2026-10-14',True))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: needs_refresh() takes 3 positional arguments but 4 were given
 
-OK (skipped=2)
+----------------------------------------------------------------------
+Ran 102 tests in 0.092s
+
+FAILED (errors=1, skipped=2)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Existing holdout retained; no repeated selection
