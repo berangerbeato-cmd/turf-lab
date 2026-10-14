@@ -1,0 +1,49 @@
+name: Turf Lab bounded PMU quotes today
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 11-15 14 10 *'
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pmu_quotes_today.yml']
+permissions:
+  contents: write
+concurrency:
+  group: turf-pmu-quotes
+  cancel-in-progress: false
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: turf-repository-writer
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and capture bounded prestart quotes
+        run: |
+          set -euo pipefail
+          python -m unittest tests.test_pmu_quotes -v
+          python -m scripts.capture_pmu_quotes
+      - name: Save quote evidence
+        if: success() || failure()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p quotes_pmu
+          git add evidence quotes_pmu reports
+          if ! git diff --cached --quiet; then
+            git commit -m 'Capture bounded prestart indicative PMU quotes'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
