@@ -111,11 +111,15 @@ test_metrics_reproduce_existing_and_reject_invalid (test_xgb_model.XGBProbabilit
 test_normalization_shift_and_nonrunner (test_xgb_model.XGBProbabilityTests.test_normalization_shift_and_nonrunner) ... ok
 test_saved_model_and_inference_ignore_results (test_xgb_model.XGBTrainingTests.test_saved_model_and_inference_ignore_results) ... skipped 'optional XGBoost dependencies absent'
 test_weights_dimensions_and_label_guard (test_xgb_model.XGBTrainingTests.test_weights_dimensions_and_label_guard) ... skipped 'optional XGBoost dependencies absent'
+test_temperature_normalization_and_ties (test_xgb_rank.RankSelectionTests.test_temperature_normalization_and_ties) ... ok
+test_temporal_and_overlap_guards (test_xgb_rank.RankSelectionTests.test_temporal_and_overlap_guards) ... ok
+test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests.test_both_objectives_and_result_blind_inference) ... skipped 'optional XGBoost dependencies absent'
+test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
 ----------------------------------------------------------------------
-Ran 113 tests in 0.148s
+Ran 117 tests in 0.148s
 
-OK (skipped=4)
+OK (skipped=6)
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Verified completed month from cache; no requests or checkpoint rewrites: 2024-01
 Outside fixed cohort dates; no requests
