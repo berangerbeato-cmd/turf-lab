@@ -1,5 +1,6 @@
 {
-  "version": "full-history-v1",
+  "version": "available-history-v2",
+  "excluded_months": {"2024-11": "Only 6/30 days available after bounded recovery failed; excluded before model results, data preserved. Other 56 closed months must pass original quality checks."},
   "as_of": "2026-10-14",
   "months": {"from": "2022-01", "through": "2026-09"},
   "warmup": ["2022-01-01", "2022-03-01"],
