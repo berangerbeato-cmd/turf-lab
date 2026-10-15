@@ -3,7 +3,7 @@ import importlib.util
 import json
 import unittest
 from pathlib import Path
-from scripts.retest_full_history import gate, learn, predict, select_available, outside_gap_buffer
+from scripts.retest_full_history import gate, learn, predict, select_available, outside_gap_buffer, exclude_documented_races
 from turf_lab.full_history_features import augment_continuous, prepare, seasonal
 from turf_lab.full_history_evaluation import chronological, paired, score, matrix
 from tests.test_xgb_model import fixture
@@ -11,6 +11,17 @@ from tests.test_opposition import race
 
 
 class FullHistoryTests(unittest.TestCase):
+    def test_race_quarantine_preserves_sources_and_excludes_entire_race(self):
+        rows=[{'race_id':'bad','participants':[{'nom':'A'}]}, {'race_id':'good','participants':[]}]
+        original=copy.deepcopy(rows)
+        kept,audit=exclude_documented_races(rows,{'bad':'unknown parents'})
+        self.assertEqual(kept,[rows[1]])
+        self.assertEqual(rows,original)
+        self.assertEqual(audit[0]['race_id'],'bad')
+        self.assertEqual(len(audit[0]['record_sha256']),64)
+        for excluded in ({'missing':'reason'}, {'bad':''}, {'bad':'x','good':'x'}):
+            with self.assertRaises(ValueError):exclude_documented_races(rows,excluded)
+
     def test_bounded_exclusion_does_not_waive_other_gaps_or_integrity(self):
         p=json.loads(Path('config/full_history_protocol.json').read_text())
         _,missing=select_available([],p)
