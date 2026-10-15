@@ -1,0 +1,839 @@
+{
+  "race_id": "2026-10-16_R2C1",
+  "venue": "BORELY",
+  "distance_m": 3000,
+  "start_type": "NON_PRECISE",
+  "scheduled_start": "2026-10-16T09:14:00+00:00",
+  "predicted_at": "2026-10-15T06:56:28.518551+00:00",
+  "feature_cutoff": "2026-10-15T06:56:26.202817+00:00",
+  "validation_status": "experimental",
+  "uncertainty": "high",
+  "data_quality_pass": true,
+  "status": "NO BET",
+  "model_sha256": "0e22333bc5f8c86b0896c1a3bd57f1516fa6da0f25342357db3ddd5b8b3cee54",
+  "evidence_manifest": "evidence/predictions/20261015T065626202817Z_2026-10-16_R2C1/manifest.json",
+  "runners": [
+    {
+      "number": 1,
+      "horse_id": "MELKIOR DU GUERET-GIPSY DU GUERET-DREAMER DELO",
+      "name": "MELKIOR DU GUERET",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        null,
+        null,
+        null,
+        null,
+        0.0
+      ],
+      "history": [],
+      "probability": 0.011869561941266732
+    },
+    {
+      "number": 2,
+      "horse_id": "MEMPHIS GABINLEA-BLUE MOON-GOTLAND",
+      "name": "MEMPHIS GABINLEA",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.2,
+        0.2,
+        4.2626798770413155,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-08-07",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-05",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 10,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-15",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2700,
+          "field_size": 10,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-10",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2150,
+          "field_size": 16,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-06-27",
+          "venue": "LYON-PARILLY",
+          "distance_m": 2850,
+          "field_size": 12,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.057205279516839874
+    },
+    {
+      "number": 3,
+      "horse_id": "MISSISSIPI EMGE-RAVISSIMA-HOHNECK",
+      "name": "MISSISSIPI EMGE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.2,
+        0.0,
+        2.995732273553991,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-27",
+          "venue": "CARPENTRAS",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-19",
+          "venue": "HYERES",
+          "distance_m": 2850,
+          "field_size": 14,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-26",
+          "venue": "MERAL",
+          "distance_m": 2700,
+          "field_size": 15,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-06",
+          "venue": "ORLEANS",
+          "distance_m": 2200,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2025-05-01",
+          "venue": "CHATILLON-SUR-CHALARONNE",
+          "distance_m": 2675,
+          "field_size": 12,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.03123139694754944
+    },
+    {
+      "number": 4,
+      "horse_id": "MISTRAL DES NOIX-VAHINE DU GOUTIER-DOLLAR MACKER",
+      "name": "MISTRAL DES NOIX",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.2,
+        0.2,
+        4.867534450455582,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-06-09",
+          "venue": "LYON-PARILLY",
+          "distance_m": 2600,
+          "field_size": 16,
+          "rank": 13,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-05-24",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 16,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-05-14",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 13,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-26",
+          "venue": "ORAISON",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": null,
+          "status": "ARRETE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-12",
+          "venue": "ORAISON",
+          "distance_m": 2650,
+          "field_size": 15,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.06485599105431926
+    },
+    {
+      "number": 5,
+      "horse_id": "MISTRAL D'URZY-ROMANE D'URZY-READY CASH",
+      "name": "MISTRAL D'URZY",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.2,
+        0.8,
+        3.713572066704308,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-06",
+          "venue": "FEURS",
+          "distance_m": 2100,
+          "field_size": 16,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-07",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-22",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-04",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-06-21",
+          "venue": "AVIGNON",
+          "distance_m": 2650,
+          "field_size": 16,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.17055289539665516
+    },
+    {
+      "number": 6,
+      "horse_id": "MISTRAL NARCY-DUNION DES RACQUES-UP AND QUICK",
+      "name": "MISTRAL NARCY",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.4,
+        0.6,
+        2.5649493574615367,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-04",
+          "venue": "NIMES",
+          "distance_m": 2750,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-02",
+          "venue": "EAUZE",
+          "distance_m": 2375,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2025-09-23",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 2300,
+          "field_size": 15,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2025-08-18",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2700,
+          "field_size": 7,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2025-07-16",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2700,
+          "field_size": 9,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.1449925379567982
+    },
+    {
+      "number": 7,
+      "horse_id": "MERIADOC PAULOIS-ORCHA DE BEVAL-DIJON",
+      "name": "MERIADOC PAULOIS",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.2,
+        0.8,
+        3.295836866004329,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-20",
+          "venue": "RAMBOUILLET",
+          "distance_m": 2000,
+          "field_size": 13,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-07",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 14,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-26",
+          "venue": "MONTIER EN DER",
+          "distance_m": 3025,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-22",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2025-11-30",
+          "venue": "CHATEAUBRIANT",
+          "distance_m": 2400,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.15639025819049338
+    },
+    {
+      "number": 8,
+      "horse_id": "MAGIC SYSTEM-DARLING DAIRPET-SCIPION DU GOUTIER",
+      "name": "MAGIC SYSTEM",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.4,
+        0.2,
+        1.791759469228055,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-11",
+          "venue": "CAVAILLON",
+          "distance_m": 2600,
+          "field_size": 14,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-10-04",
+          "venue": "NIMES",
+          "distance_m": 2750,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-26",
+          "venue": "NIMES",
+          "distance_m": 2750,
+          "field_size": 12,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-13",
+          "venue": "ORAISON",
+          "distance_m": 3200,
+          "field_size": 11,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-06",
+          "venue": "FEURS",
+          "distance_m": 2100,
+          "field_size": 16,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.062279353157798735
+    },
+    {
+      "number": 9,
+      "horse_id": "MISTER GALBE-ELSA GALBE-ALPHA SALTOR",
+      "name": "MISTER GALBE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.2,
+        2.5649493574615367,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-04",
+          "venue": "NIMES",
+          "distance_m": 2750,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-13",
+          "venue": "ECOMMOY",
+          "distance_m": 2750,
+          "field_size": 13,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-06",
+          "venue": "REDON",
+          "distance_m": 2300,
+          "field_size": 12,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-09",
+          "venue": "SABLE SUR SARTHE",
+          "distance_m": 2825,
+          "field_size": 14,
+          "rank": 9,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-30",
+          "venue": "PORNICHET",
+          "distance_m": 2725,
+          "field_size": 14,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.02647019162834289
+    },
+    {
+      "number": 10,
+      "horse_id": "MACAO MIP-ELEA MIP-CARAT WILLIAMS",
+      "name": "MACAO MIP",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.2,
+        0.4,
+        5.093750200806762,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-05-07",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 3000,
+          "field_size": 10,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-05-01",
+          "venue": "HYERES",
+          "distance_m": 2850,
+          "field_size": 8,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-17",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 3000,
+          "field_size": 9,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-04-08",
+          "venue": "LYON-PARILLY",
+          "distance_m": 2850,
+          "field_size": 14,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-03-13",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 3000,
+          "field_size": 10,
+          "rank": null,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.095718594920114
+    },
+    {
+      "number": 11,
+      "horse_id": "MAD DREAM-VOLGA VICI-ROYAL DREAM",
+      "name": "MAD DREAM",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.2,
+        1.791759469228055,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-11",
+          "venue": "TOULOUSE",
+          "distance_m": 2150,
+          "field_size": 11,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-18",
+          "venue": "TOULOUSE",
+          "distance_m": 2950,
+          "field_size": 10,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-03",
+          "venue": "BEAUMONT-DE-LOMAGNE",
+          "distance_m": 2550,
+          "field_size": 14,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-02",
+          "venue": "EAUZE",
+          "distance_m": 2375,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-03",
+          "venue": "TOULOUSE",
+          "distance_m": 2950,
+          "field_size": 9,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.022546102026898537
+    },
+    {
+      "number": 12,
+      "horse_id": "MATCH LOVE-SUSY LOVE-DOBERMAN",
+      "name": "MATCH LOVE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.2,
+        0.2,
+        0.0,
+        2.5649493574615367,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-04",
+          "venue": "AGEN LA GARENNE",
+          "distance_m": 2575,
+          "field_size": 13,
+          "rank": 1,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-16",
+          "venue": "CABOURG",
+          "distance_m": 2750,
+          "field_size": 13,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-28",
+          "venue": "CABOURG",
+          "distance_m": 2750,
+          "field_size": 15,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-15",
+          "venue": "FRANCHEVILLE",
+          "distance_m": 2475,
+          "field_size": 13,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-28",
+          "venue": "CABOURG",
+          "distance_m": 2750,
+          "field_size": 16,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.03417470714639112
+    },
+    {
+      "number": 13,
+      "horse_id": "MICHIGAN HAWK-ELITE PERLE-HELGAFELL",
+      "name": "MICHIGAN HAWK",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.2,
+        3.6375861597263857,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-09-09",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 3000,
+          "field_size": 11,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-20",
+          "venue": "DIVONNE LES BAINS",
+          "distance_m": 2600,
+          "field_size": 14,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-28",
+          "venue": "AIX LES BAINS",
+          "distance_m": 2000,
+          "field_size": 16,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-07-06",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 12,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-06-12",
+          "venue": "FEURS",
+          "distance_m": 2850,
+          "field_size": 13,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.03306976307393911
+    },
+    {
+      "number": 14,
+      "horse_id": "MINOS DES CHARRONS-DIVA DE NACRE-FILE GIN",
+      "name": "MINOS DES CHARRONS",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.4,
+        0.4,
+        2.70805020110221,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-02",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 2300,
+          "field_size": 16,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-12",
+          "venue": "SALON-DE-PROVENCE",
+          "distance_m": 3000,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-27",
+          "venue": "MARSEILLE-BORELY",
+          "distance_m": 2300,
+          "field_size": 16,
+          "rank": 2,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-19",
+          "venue": "CAGNES-SUR-MER",
+          "distance_m": 2925,
+          "field_size": 14,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-12",
+          "venue": "HYERES",
+          "distance_m": 2650,
+          "field_size": 10,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.08864336704259353
+    }
+  ]
+}

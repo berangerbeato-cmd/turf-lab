@@ -74,6 +74,41 @@
       "venue": "VINCENNES",
       "distance_m": 2100,
       "start_type": "AUTOSTART"
+    },
+    "2026-10-14_R1C1": {
+      "status": "SCORED",
+      "winner": 10,
+      "log_loss": 2.544153342713088,
+      "brier_multiclass": 0.9488784799761544,
+      "top1_hit": 0,
+      "uniform_log_loss": 2.772588722239781,
+      "uniform_brier_multiclass": 0.9375,
+      "uniform_top1_hit": 0,
+      "probabilities": {
+        "1": 0.04353900613175522,
+        "2": 0.1827487656984993,
+        "3": 0.02127247863515203,
+        "4": 0.04324023959435501,
+        "5": 0.036136770970129115,
+        "6": 0.021323917137997292,
+        "7": 0.02874418187676976,
+        "8": 0.04904925054317939,
+        "9": 0.0802500866994097,
+        "10": 0.07853951989580826,
+        "11": 0.017886379499346218,
+        "12": 0.04665487815350898,
+        "13": 0.03899045570257976,
+        "14": 0.015599343696952272,
+        "15": 0.18452158728293647,
+        "16": 0.11150313848162124
+      },
+      "active_runners": 16,
+      "prediction_file": "predictions/2026-10-14/2026-10-14_R1C1_20261013T064150646972Z/prediction.json",
+      "evaluated_at": "2026-10-15T06:56:20.822013+00:00",
+      "date": "2026-10-14",
+      "venue": "REIMS",
+      "distance_m": 2550,
+      "start_type": "NON_PRECISE"
     }
   },
   "capture_log": {
@@ -94,21 +129,31 @@
       "status": "CAPTURED",
       "returncode": 0,
       "log": "200 2026-10-15_programme\n200 2026-10-15_R3C1_participants\n200 2026-10-15_R3C1_performances_pretty\npredictions/2026-10-15/2026-10-15_R3C1_20261014T070403953647Z\n"
+    },
+    "2026-10-16_R1C1": {
+      "status": "CAPTURED",
+      "returncode": 0,
+      "log": "200 2026-10-16_programme\n200 2026-10-16_R1C1_participants\n200 2026-10-16_R1C1_performances_pretty\npredictions/2026-10-16/2026-10-16_R1C1_20261015T065623781474Z\n"
+    },
+    "2026-10-16_R2C1": {
+      "status": "CAPTURED",
+      "returncode": 0,
+      "log": "200 2026-10-16_programme\n200 2026-10-16_R2C1_participants\n200 2026-10-16_R2C1_performances_pretty\npredictions/2026-10-16/2026-10-16_R2C1_20261015T065626202817Z\n"
     }
   },
   "summary": {
-    "scored_races": 2,
-    "days": 1,
+    "scored_races": 3,
+    "days": 2,
     "status": "EXPERIMENTAL_NO_BET",
     "metrics": {
-      "log_loss": 1.880443866958887,
-      "brier_multiclass": 0.8025272653935227,
-      "top1_hit": 0.5,
-      "uniform_log_loss": 2.596478425445105,
-      "uniform_brier_multiclass": 0.925,
+      "log_loss": 2.101680358876954,
+      "brier_multiclass": 0.8513110035877333,
+      "top1_hit": 0.3333333333333333,
+      "uniform_log_loss": 2.655181857709997,
+      "uniform_brier_multiclass": 0.9291666666666667,
       "uniform_top1_hit": 0
     },
     "note": "No result exists before the race; no ROI, no tuning, no automatic promotion."
   },
-  "updated_at": "2026-10-14T07:03:58.366006+00:00"
+  "updated_at": "2026-10-15T06:56:20.822013+00:00"
 }

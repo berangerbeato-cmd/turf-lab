@@ -2,6 +2,6 @@
 
 **EXPÉRIMENTAL — NO BET.**
 
-2 course(s) évaluée(s), 1 journée(s).
+3 course(s) évaluée(s), 2 journée(s).
 
 Résultats, captures, quarantaines et causes : shadow_v1.json. Modèle figé ; fenêtre de courses du 13 au 26 octobre 2026, deux courses maximum par jour. Après le 28 octobre, le workflow ne fait aucun appel réseau. Aucun ROI.
