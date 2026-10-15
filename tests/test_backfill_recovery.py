@@ -43,6 +43,26 @@ class RecoveryTests(unittest.TestCase):
                 self.assertEqual(resumed.get('https://example.test', 'day'), {'recovered': True})
                 self.assertEqual(resumed.requests, 0)
 
+    def test_empty_response_gets_one_delayed_recovery(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            store = self.store(Path(tmp), error='Expecting value: line 1 column 1 (char 0)')
+            response = MagicMock(status=200)
+            response.read.return_value = b'{"programme": {}}'
+            response.headers.get.return_value = None
+            response.__enter__.return_value = response
+            with patch('turf_lab.evidence.urlopen', return_value=response) as request:
+                self.assertEqual(store.get('https://example.test', 'day'), {'programme': {}})
+                request.assert_called_once()
+            self.assertEqual(len(store.manifest['day']['previous_attempts']), 1)
+
+    def test_nonempty_invalid_json_is_not_retried(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            store = self.store(Path(tmp), error='Expecting value: line 1 column 1 (char 0)')
+            store.manifest['day']['file'] = 'invalid.json.gz'
+            with patch('turf_lab.evidence.urlopen', side_effect=AssertionError('network')):
+                with self.assertRaises(RuntimeError): store.get('https://example.test', 'day')
+            self.assertEqual(store.requests, 0)
+
     def test_failed_recovery_is_not_retried_across_runs(self):
         with tempfile.TemporaryDirectory() as tmp:
             store = self.store(Path(tmp))
