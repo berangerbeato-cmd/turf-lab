@@ -12,12 +12,16 @@ class StopOnUnavailable(EvidenceStore):
         if not key or any(x in key for x in ('..', '/', '\\')):
             raise ValueError('Unsafe evidence key')
         previous = self.manifest.get(key)
-        # One delayed recovery of a cached transport failure, never an HTTP
+        # One delayed recovery of a transport failure or empty JSON response, never an HTTP
         # denial/rate limit. Keep the original metadata and any response bytes.
         if (previous and previous.get('url') == url
                 and previous.get('status') == 'error'
-                and any(message in previous.get('error', '').lower()
-                        for message in ('connection reset by peer', 'timed out'))):
+                and (any(message in previous.get('error', '').lower()
+                         for message in ('connection reset by peer', 'timed out'))
+                     or (previous.get('error') == 'Expecting value: line 1 column 1 (char 0)'
+                         and not previous.get('file')
+                         and not previous.get('bytes_uncompressed')
+                         and not previous.get('content_type')))):
             age = (datetime.now(timezone.utc) - datetime.fromisoformat(
                 previous['fetched_at_utc'])).total_seconds()
             if age >= 900 and self.requests < self.max_requests:
