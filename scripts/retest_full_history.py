@@ -4,6 +4,7 @@ import hashlib
 import json
 from collections import Counter, defaultdict
 from copy import deepcopy
+from datetime import date, timedelta
 from pathlib import Path
 from turf_lab.evidence import dump
 from scripts.history_inventory import inventory
@@ -33,6 +34,30 @@ def gate(rows,p):
 
 
 def bounds(rows, limits):return [r for r in rows if limits[0]<=r['date']<=limits[1]]
+
+
+def select_available(inv, p):
+    """Explicit, bounded training-month exclusion; never waive integrity checks."""
+    excluded = p.get('excluded_months', {})
+    if len(excluded) > 1:
+        raise ValueError('At most one documented training month may be excluded')
+    for month, reason in excluded.items():
+        if not reason or not p['train'][0][:7] <= month <= p['train'][1][:7]:
+            raise ValueError('Exclusions must be documented training months')
+    if any(r.get('issues') for r in inv):
+        raise ValueError('Inventory integrity issues must not be waived')
+    missing = [m for m in gate(inv, p) if m not in excluded]
+    selected = [r for r in inv if r['month'] not in excluded]
+    return selected, missing
+
+
+def outside_gap_buffer(rows, excluded, days=60):
+    ends=[]
+    for month in excluded:
+        y,m=map(int,month.split('-'))
+        end=date(y+1,1,1) if m==12 else date(y,m+1,1)
+        ends.append((end,end+timedelta(days=days)))
+    return [r for r in rows if not any(a <= date.fromisoformat(r['date']) < b for a,b in ends)]
 
 
 def learn(train, val, p):
@@ -82,14 +107,19 @@ def main():
     p=json.loads(PROTOCOL.read_text())
     inv=inventory(Path('data'),through=p['months']['through'],as_of=p['as_of'])
     dump(ROOT/'verified_inventory.json',inv)
-    missing=gate(inv,p)
+    full_inv=inv
+    inv,missing=select_available(inv,p)
+    coverage_policy={'excluded_months':p.get('excluded_months',{}),
+        'included_months':len(inv), 'inventory':full_inv,
+        'note':'Excluded data preserved on disk, not used for fitting or history. No new archive requests.'}
+    dump(ROOT/'coverage_policy.json',coverage_policy)
     if missing:
         dump(ROOT/'status.json',{'status':'BLOCKED_INCOMPLETE_HISTORY','months_requiring_work':missing,
               'models_retrained':False,'production_changed':False})
         print('Full retest blocked: '+str(len(missing))+' required months incomplete. No model trained.')
         raise SystemExit(2)
     provenance={'protocol_sha256':digest(PROTOCOL),
-       'source_manifests':{r['month']:r['manifest_sha256'] for r in inv},
+       'source_manifests':{r['month']:r['manifest_sha256'] for r in full_inv},
        'code_sha256':{str(f):digest(f) for f in list(Path('turf_lab').glob('*.py'))+[Path('scripts/retest_full_history.py')]}}
     target=ROOT/'comparison.json'
     if target.exists():
@@ -117,9 +147,24 @@ def main():
         'splits':dataset,'frozen':lock,'validation':{n:score(val,v) for n,v in vpred.items()},
         'test':{n:score(test,v) for n,v in tpred.items()},
         'test_uncalibrated':{n:metrics(test,v) for n,v in traw.items()},
+        'coverage_policy':coverage_policy,
         'paired':{n:{b:paired(test,tpred['classic'],tpred[n],b) for b in ('day','week')}
                   for n in ('xgboost','xgboost_rank','ensemble')},'limits':p['limits']}
     dump(ROOT/'primary_comparison.json',results)
+    if p.get('excluded_months'):
+        # Fixed sensitivity: remove the following 60 days from fitting/calibration.
+        # Long-memory Elo can still reflect missing starts; this is not a cure.
+        bt=outside_gap_buffer(train,p['excluded_months'])
+        bv=outside_gap_buffer(val,p['excluded_months'])
+        chronological(bt,bv,test)
+        bc,bx,btemps,ba,_,_=learn(bt,bv,p)
+        bp,_=predict(test,bc,bx,btemps,ba)
+        results['gap_sensitivity']={'buffer_days':60,'train_races':len(bt),
+            'validation_races':len(bv),'test_races':len(test),
+            'test':{n:score(test,v) for n,v in bp.items()},
+            'paired_vs_primary':{n:paired(test,tpred[n],bp[n]) for n in bp},
+            'limit':'Same test races; long-memory Elo still lacks excluded starts. No test-based model selection.'}
+        dump(ROOT/'gap_sensitivity.json',results['gap_sensitivity'])
     # Day-blocked rolling-origin robustness, fixed settings, no validation retuning.
     rolling=[]
     for fold in p['rolling_origin']:
@@ -147,7 +192,8 @@ def main():
           'probabilities':{n:v[i] for n,v in tpred.items()}})+'\n' for i,r in enumerate(test)).encode(),mtime=0))
     dump(ROOT/'status.json',{'status':'COMPLETED_EXPLORATORY','production_changed':False,
           'report_sha256':digest(target),'prediction_sha256':digest(prediction_file)})
-    lines=['# Full-history model comparison','','Exploratory: 2025 and some 2026 outcomes were previously inspected.',
+    lines=['# Available-history model comparison','','Exploratory: 2025 and some 2026 outcomes were previously inspected.',
+           'Excluded training months: '+json.dumps(p.get('excluded_months',{})),
            'No real bets or automatic deployment.','', '| Model | Test races | Log loss | Brier | Top-1 | ECE |',
            '|---|---:|---:|---:|---:|---:|']
     for n,v in results['test'].items():
