@@ -60,6 +60,18 @@ def outside_gap_buffer(rows, excluded, days=60):
     return [r for r in rows if not any(a <= date.fromisoformat(r['date']) < b for a,b in ends)]
 
 
+def exclude_documented_races(records, excluded):
+    """Quarantine a fixed, small list before feature generation; never alter sources."""
+    ids={r['race_id'] for r in records}
+    if len(excluded)>1 or any(not reason for reason in excluded.values()) or not set(excluded)<=ids:
+        raise ValueError('Invalid documented race exclusion')
+    kept=[r for r in records if r['race_id'] not in excluded]
+    audit=[{'race_id':r['race_id'],'reason':excluded[r['race_id']],
+            'record_sha256':hashlib.sha256(json.dumps(r,sort_keys=True).encode()).hexdigest(),
+            'participants':len(r['participants'])} for r in records if r['race_id'] in excluded]
+    return kept,audit
+
+
 def learn(train, val, p):
     classic=fit(train,p['l2'],p['iterations'],p['learning_rate'])
     trees={n:tree_fit(train,p,ranking=n=='xgboost_rank') for n in ('xgboost','xgboost_rank')}
@@ -127,6 +139,12 @@ def main():
         print('Existing verified experiment preserved.');return
     records,coverage=load_sources({'months':[r['month'] for r in inv],
                                   'minimum_retained_fraction_per_month':p['minimum_coverage']})
+    records,excluded_races=exclude_documented_races(records,p.get('excluded_races',{}))
+    coverage_policy['excluded_races']=excluded_races
+    coverage_policy['eligible_races']=len(records)
+    dump(ROOT/'coverage_policy.json',coverage_policy)
+    dump(ROOT/'identity_quarantine.json',excluded_races)
+    dump(ROOT/'status.json',{'status':'BUILDING_FEATURES','models_retrained':False,'production_changed':False})
     dump(ROOT/'representativeness.json',represent(records))
     rows=prepare(records);del records
     splits={name:bounds(rows,p[name]) for name in ('train','validation','test')}
@@ -135,6 +153,8 @@ def main():
     dump(ROOT/'datasets/manifest.json',{'provenance':provenance,'splits':dataset,'protocol':p})
     train,val,test=(splits[k] for k in ('train','validation','test'))
     MODELS.mkdir(parents=True,exist_ok=True)
+    print('Feature preparation complete; starting model comparison: '+str({k:len(v) for k,v in splits.items()}),flush=True)
+    dump(ROOT/'status.json',{'status':'TRAINING_COMPARISON','production_changed':False})
     classic,trees,temps,alpha,vpred,vraw=learn(train,val,p)
     dump(MODELS/'classic.json',classic)
     for n,m in trees.items():m.save_model(MODELS/(n+'.json'))
@@ -151,6 +171,8 @@ def main():
         'paired':{n:{b:paired(test,tpred['classic'],tpred[n],b) for b in ('day','week')}
                   for n in ('xgboost','xgboost_rank','ensemble')},'limits':p['limits']}
     dump(ROOT/'primary_comparison.json',results)
+    print('Primary comparison saved; starting gap sensitivity and robustness checks.',flush=True)
+    dump(ROOT/'status.json',{'status':'ROBUSTNESS_CHECKS','production_changed':False,'comparison_complete':False})
     if p.get('excluded_months'):
         # Fixed sensitivity: remove the following 60 days from fitting/calibration.
         # Long-memory Elo can still reflect missing starts; this is not a cure.
@@ -203,4 +225,10 @@ def main():
             'Autumn 2026 is September only. Future prospective validation remains necessary.']
     (ROOT/'RESULTS.md').write_text('\n'.join(lines)+'\n')
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    try:
+        main()
+    except Exception as error:
+        dump(ROOT/'status.json',{'status':'FAILED_EXPERIMENT','error':type(error).__name__+': '+str(error),
+             'production_changed':False,'comparison_complete':False})
+        raise
