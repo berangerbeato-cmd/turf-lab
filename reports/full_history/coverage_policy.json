@@ -3416,5 +3416,14 @@
       "source_verified": true
     }
   ],
-  "note": "Excluded data preserved on disk, not used for fitting or history. No new archive requests."
+  "note": "Excluded data preserved on disk, not used for fitting or history. No new archive requests.",
+  "excluded_races": [
+    {
+      "race_id": "2026-07-04_R6C7",
+      "reason": "Vichy Speed Cup final: ten conflicting identities, unknown pedigree placeholders and inconsistent ages. Exclude whole race before fitting, preserve source; no guessed identity repair.",
+      "record_sha256": "35d05c9cfa98f2d7e6f59aa2de9c7ec470b2b9c89df9e5dc1407a328402e90ae",
+      "participants": 12
+    }
+  ],
+  "eligible_races": 29579
 }
