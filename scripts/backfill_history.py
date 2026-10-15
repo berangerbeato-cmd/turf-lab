@@ -1,6 +1,7 @@
 """Bounded, resumable collection into new months only; no model writes."""
 import argparse
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 from scripts.collect_month import collect, month_days
 from turf_lab.evidence import EvidenceStore, dump
@@ -8,6 +9,31 @@ from turf_lab.evidence import EvidenceStore, dump
 
 class StopOnUnavailable(EvidenceStore):
     def get(self, url, key):
+        if not key or any(x in key for x in ('..', '/', '\\')):
+            raise ValueError('Unsafe evidence key')
+        previous = self.manifest.get(key)
+        # One delayed recovery of a cached transport failure, never an HTTP
+        # denial/rate limit. Keep the original metadata and any response bytes.
+        if (previous and previous.get('url') == url
+                and previous.get('status') == 'error'
+                and any(message in previous.get('error', '').lower()
+                        for message in ('connection reset by peer', 'timed out'))):
+            age = (datetime.now(timezone.utc) - datetime.fromisoformat(
+                previous['fetched_at_utc'])).total_seconds()
+            if age >= 900 and self.requests < self.max_requests:
+                recovery = EvidenceStore(self.root / 'recovery' / key,
+                    max_requests=1, delay=self.delay)
+                try:
+                    value = recovery.get(url, key)
+                finally:
+                    self.requests += recovery.requests
+                meta = recovery.manifest[key]
+                if meta.get('status') == 200 and value is not None:
+                    promoted = dict(meta, previous_attempts=[previous])
+                    promoted['file'] = str(Path('recovery') / key / meta['file'])
+                    self.manifest[key] = promoted
+                    dump(self.manifest_path, self.manifest)
+                    return value
         value = super().get(url, key)
         meta = self.manifest[key]
         if meta.get('status') != 200 or value is None:
