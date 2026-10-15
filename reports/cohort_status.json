@@ -1,6 +1,6 @@
 {
   "status": "OBSERVATION_ONLY_NO_BET",
-  "checked_at": "2026-10-15T06:28:29.269963+00:00",
+  "checked_at": "2026-10-15T21:22:22.108150+00:00",
   "frozen": {
     "models": {
       "status": "FROZEN_EXPERIMENTAL_NO_BET",
@@ -52,7 +52,7 @@
     }
   },
   "planned": 13,
-  "scored": 0,
+  "scored": 11,
   "missing_capture_records": 0,
   "missing_programme_days": [],
   "races": [
@@ -60,94 +60,274 @@
       "race_id": "2026-10-15_R3C1",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R3C1.json",
       "snapshot_sha256": "dbba8894d4d4c6c9875dd1cf57e795472468038c6376b76a590da0915fa8a4dd",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 1,
+      "models": {
+        "v6": {
+          "log_loss": 1.3377326028394734,
+          "brier_multiclass": 0.6123474646246373,
+          "top1_hit": 1
+        },
+        "v7_speed": {
+          "log_loss": 1.436919601402428,
+          "brier_multiclass": 0.6551954779115364,
+          "top1_hit": 1
+        }
+      },
+      "active_runners": 13,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R3C2",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R3C2.json",
       "snapshot_sha256": "0a623ca3130293ab65e705045899a22da4f1022ba3c33fe921729247750b2111",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 9,
+      "models": {
+        "v6": {
+          "log_loss": 2.273147893289307,
+          "brier_multiclass": 0.9088942488222718,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 2.2166874549509026,
+          "brier_multiclass": 0.8908255927043994,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 12,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R3C3",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R3C3.json",
       "snapshot_sha256": "303bc389d36edce81ba7b8beee3b0b2a53d86aac9025b69375347dd1b622bb06",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 4,
+      "models": {
+        "v6": {
+          "log_loss": 2.87785189407236,
+          "brier_multiclass": 1.0641602772377858,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 2.898190626889194,
+          "brier_multiclass": 1.068495842798105,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 12,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R3C5",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R3C5.json",
       "snapshot_sha256": "a08be101a13464d4d5ab8025f72afe2f8903cf0d460397ea09e5e998007f2450",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 2,
+      "models": {
+        "v6": {
+          "log_loss": 1.228170964955218,
+          "brier_multiclass": 0.59896218506937,
+          "top1_hit": 1
+        },
+        "v7_speed": {
+          "log_loss": 1.1861960261985067,
+          "brier_multiclass": 0.5748729953002966,
+          "top1_hit": 1
+        }
+      },
+      "active_runners": 13,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R3C6",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R3C6.json",
       "snapshot_sha256": "4fa150c9da6cbd6baa093ce56271079e040d2d93a53ac069d212d5916f06673f",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 5,
+      "models": {
+        "v6": {
+          "log_loss": 3.0825726347765916,
+          "brier_multiclass": 1.2177223891025755,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 3.2214911975427287,
+          "brier_multiclass": 1.2548983038467851,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 16,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R3C7",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R3C7.json",
       "snapshot_sha256": "ad7ec20aabd034bfdd87097cf3e440f7c60ac720c1e50f23bc836f3fee5fd44a",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 10,
+      "models": {
+        "v6": {
+          "log_loss": 2.851944606126427,
+          "brier_multiclass": 1.095112345220698,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 2.827921482187273,
+          "brier_multiclass": 1.0745424839953106,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 16,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R3C8",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R3C8.json",
       "snapshot_sha256": "a5575739dc0dfccef21daab65b9698877433b9ce20dfe6c8becbf7485bfb0f0b",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "QUARANTINE",
+      "reason": "field_identity_driver_trainer_or_equipment_changed",
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R4C1",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R4C1.json",
       "snapshot_sha256": "ca8cba6b1bf5cdc1171a49d7bbf9f828581db43e51d303a334175f50e1166a70",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 9,
+      "models": {
+        "v6": {
+          "log_loss": 2.333172354050774,
+          "brier_multiclass": 0.912467708371734,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 2.3697804056247316,
+          "brier_multiclass": 0.9189503295699478,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 15,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R4C4",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R4C4.json",
       "snapshot_sha256": "9825105b1939de4a0f294715b7e23f890761217320b2307c06b47a1321164994",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 4,
+      "models": {
+        "v6": {
+          "log_loss": 1.9533258311360309,
+          "brier_multiclass": 0.8345925735649581,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 2.01352005662563,
+          "brier_multiclass": 0.8447332939082532,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 12,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R4C5",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R4C5.json",
       "snapshot_sha256": "978e5ec368f991af79f2e2da9775a528dc1652ea7790d2cabfdb027c7e5f820a",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 7,
+      "models": {
+        "v6": {
+          "log_loss": 1.3459427667159451,
+          "brier_multiclass": 0.6069912804194894,
+          "top1_hit": 1
+        },
+        "v7_speed": {
+          "log_loss": 1.173076166527773,
+          "brier_multiclass": 0.5281873732745346,
+          "top1_hit": 1
+        }
+      },
+      "active_runners": 15,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R4C6",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R4C6.json",
       "snapshot_sha256": "99d00f8506d5f6a6f7b1123e62aced973eb978332ecd00b8e2da90de2a797ec9",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 5,
+      "models": {
+        "v6": {
+          "log_loss": 1.9499929560820033,
+          "brier_multiclass": 0.8428362416325537,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 1.973891907816724,
+          "brier_multiclass": 0.8423633675034082,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 10,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R4C7",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R4C7.json",
       "snapshot_sha256": "e18c379e654ae49852b2ae86e2123ec510af625c239384e4b3a3329bffa0aa38",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "QUARANTINE",
+      "reason": "field_identity_driver_trainer_or_equipment_changed",
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     },
     {
       "race_id": "2026-10-15_R4C8",
       "snapshot": "predictions_cohort/2026-10-15/2026-10-15_R4C8.json",
       "snapshot_sha256": "75a6d6dc5c54840b49583fb2b504282896c4eec92ccbaa4cdd4b58e558b659e5",
-      "status": "PENDING",
-      "reason": "race_not_started"
+      "status": "SCORED",
+      "winner": 5,
+      "models": {
+        "v6": {
+          "log_loss": 2.8986841332737936,
+          "brier_multiclass": 0.989936285906363,
+          "top1_hit": 0
+        },
+        "v7_speed": {
+          "log_loss": 2.8186909641714974,
+          "brier_multiclass": 0.9827273706522496,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 13,
+      "evidence_manifest": "evidence/cohort_results/20261015T212222108150Z/manifest.json",
+      "checked_at": "2026-10-15T21:22:22.108150+00:00"
     }
   ],
-  "metrics": {},
+  "metrics": {
+    "v6": {
+      "log_loss": 2.193867148847084,
+      "brier_multiclass": 0.8803657272702214,
+      "top1_hit": 0.2727272727272727
+    },
+    "v7_speed": {
+      "log_loss": 2.194215080903399,
+      "brier_multiclass": 0.875981130133166,
+      "top1_hit": 0.2727272727272727
+    }
+  },
   "promotion": false
 }
