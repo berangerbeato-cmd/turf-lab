@@ -3,7 +3,7 @@ import importlib.util
 import json
 import unittest
 from pathlib import Path
-from scripts.retest_full_history import gate, learn, predict
+from scripts.retest_full_history import gate, learn, predict, select_available, outside_gap_buffer
 from turf_lab.full_history_features import augment_continuous, prepare, seasonal
 from turf_lab.full_history_evaluation import chronological, paired, score, matrix
 from tests.test_xgb_model import fixture
@@ -11,6 +11,23 @@ from tests.test_opposition import race
 
 
 class FullHistoryTests(unittest.TestCase):
+    def test_bounded_exclusion_does_not_waive_other_gaps_or_integrity(self):
+        p=json.loads(Path('config/full_history_protocol.json').read_text())
+        _,missing=select_available([],p)
+        self.assertEqual(len(missing),56)
+        self.assertNotIn('2024-11',missing)
+        bad={'month':'2024-11','issues':['digest mismatch']}
+        with self.assertRaises(ValueError):select_available([bad],p)
+        p['excluded_months']['2025-01']='validation gap'
+        with self.assertRaises(ValueError):select_available([],p)
+        p['excluded_months']={'2025-01':'validation gap'}
+        with self.assertRaises(ValueError):select_available([],p)
+
+    def test_gap_buffer_boundary_and_no_mutation(self):
+        rows=[{'date':d} for d in ['2024-11-30','2024-12-01','2025-01-29','2025-01-30']]
+        self.assertEqual(outside_gap_buffer(rows,{'2024-11':'gap'}),[rows[0],rows[3]])
+        self.assertEqual(len(rows),4)
+
     def test_missing_months_stop_full_retest(self):
         p=json.loads(Path('config/full_history_protocol.json').read_text())
         self.assertEqual(len(gate([],p)),57)
