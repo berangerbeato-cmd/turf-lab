@@ -1,7 +1,7 @@
 # Suivi prospectif v5/v6
 
 **Observation uniquement — NO BET.**
-Courses évaluées : 5/6. Vérification : 2026-10-14T21:20:12.850505+00:00.
+Courses évaluées : 5/6. Vérification : 2026-10-15T07:32:38.774639+00:00.
 
 | Course | État | Motif |
 |---|---|---|
