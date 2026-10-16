@@ -1,0 +1,484 @@
+[
+  {
+    "file": "models/connections_v5_candidates.json",
+    "sha256": "f537cc13991ed401533f7af782952ad298b0d3de120f25d9909435dd69d8d950",
+    "keys": [
+      "status",
+      "models",
+      "feature_names"
+    ],
+    "variants": [
+      "v3",
+      "driver",
+      "trainer",
+      "equipment",
+      "combined"
+    ],
+    "feature_names": {
+      "v3": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd"
+      ],
+      "driver": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd",
+        "driver_residual",
+        "driver_log_classified",
+        "driver_dq_rate",
+        "driver_log_known"
+      ],
+      "trainer": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd",
+        "trainer_residual",
+        "trainer_log_classified",
+        "trainer_dq_rate",
+        "trainer_log_known"
+      ],
+      "equipment": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd",
+        "equipment_PROTEGE_ANTERIEURS_POSTERIEURS",
+        "equipment_DEFERRE_ANTERIEURS_POSTERIEURS",
+        "equipment_DEFERRE_ANTERIEURS",
+        "equipment_PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "equipment_DEFERRE_POSTERIEURS",
+        "equipment_PROTEGE_ANTERIEURS",
+        "equipment_DEFERRE_ANTERIEURS_PROTEGE_POSTERIEURS",
+        "equipment_PROTEGE_POSTERIEURS",
+        "equipment_UNKNOWN",
+        "equipment_changed",
+        "equipment_horse_residual",
+        "equipment_log_history"
+      ],
+      "combined": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd",
+        "driver_residual",
+        "driver_log_classified",
+        "driver_dq_rate",
+        "driver_log_known",
+        "trainer_residual",
+        "trainer_log_classified",
+        "trainer_dq_rate",
+        "trainer_log_known",
+        "equipment_PROTEGE_ANTERIEURS_POSTERIEURS",
+        "equipment_DEFERRE_ANTERIEURS_POSTERIEURS",
+        "equipment_DEFERRE_ANTERIEURS",
+        "equipment_PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "equipment_DEFERRE_POSTERIEURS",
+        "equipment_PROTEGE_ANTERIEURS",
+        "equipment_DEFERRE_ANTERIEURS_PROTEGE_POSTERIEURS",
+        "equipment_PROTEGE_POSTERIEURS",
+        "equipment_UNKNOWN",
+        "equipment_changed",
+        "equipment_horse_residual",
+        "equipment_log_history"
+      ]
+    }
+  },
+  {
+    "file": "models/connections_v5_frozen.json",
+    "sha256": "273f9fb270d460f6acc9d42a19fe89177ad490083db1ee5fd684ee0171b56857",
+    "keys": [
+      "protocol_sha256",
+      "models_sha256",
+      "selected",
+      "sources_sha256",
+      "code_sha256"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/context_v4_candidates.json",
+    "sha256": "949bdd6c99b5c476c4e8d1e1522457741be3cc0991c069d2f3ec0e4b47e45606",
+    "keys": [
+      "status",
+      "models",
+      "feature_names"
+    ],
+    "variants": [
+      "v3",
+      "departure",
+      "aptitude",
+      "combined"
+    ],
+    "feature_names": {
+      "v3": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd"
+      ],
+      "departure": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd",
+        "signed_handicap_25m",
+        "signed_handicap_distance_percent"
+      ],
+      "aptitude": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd",
+        "venue_residual",
+        "log_venue_starts",
+        "distance_residual",
+        "log_distance_starts",
+        "autostart_residual",
+        "log_autostart_starts"
+      ],
+      "combined": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd",
+        "signed_handicap_25m",
+        "signed_handicap_distance_percent",
+        "venue_residual",
+        "log_venue_starts",
+        "distance_residual",
+        "log_distance_starts",
+        "autostart_residual",
+        "log_autostart_starts"
+      ]
+    }
+  },
+  {
+    "file": "models/demographics_tandem_v6_candidates.json",
+    "sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
+    "keys": [
+      "status",
+      "models"
+    ],
+    "variants": [
+      "v5",
+      "age_sex",
+      "tandem",
+      "combined"
+    ],
+    "feature_names": null
+  },
+  {
+    "file": "models/ensemble_v1_frozen.json",
+    "sha256": "ef0eedd7375027be238001e2ae8023722eb5e75e78bda4d98d8cbc631916e310",
+    "keys": [
+      "status",
+      "xgboost_weight",
+      "rank_frozen",
+      "protocol_sha256",
+      "report_sha256",
+      "code_sha256"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/full_history/classic.json",
+    "sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
+    "keys": [
+      "kind",
+      "weights",
+      "transform",
+      "l2",
+      "omitted_feature"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/full_history/frozen.json",
+    "sha256": "e55baf43148290bff9287c5188e5019cb98db89fcabc5b5f7d88ee92ac847a2e",
+    "keys": [
+      "provenance",
+      "temperatures",
+      "ensemble_weight",
+      "model_hashes"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/full_history/xgboost.json",
+    "sha256": "91da21680130444be1e0eaa9424a180d66d06adc1a1968ea20ecc588f955eb16",
+    "keys": [
+      "learner",
+      "version"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/full_history/xgboost_rank.json",
+    "sha256": "73e88f4ae72787335f23095794a2b5de90ba545cecd6aee7b627918b00be9d54",
+    "keys": [
+      "learner",
+      "version"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/history_v2.json",
+    "sha256": "2601068ffcca6e749df54816456399a1f5228baa87a7dede344d050702c4ccdf",
+    "keys": [
+      "kind",
+      "weights",
+      "transform",
+      "l2",
+      "omitted_feature",
+      "validation_status",
+      "feature_names",
+      "protocol_version",
+      "provenance"
+    ],
+    "variants": null,
+    "feature_names": [
+      "win_rate",
+      "top3_rate",
+      "dq_rate",
+      "log_rest",
+      "history_coverage"
+    ]
+  },
+  {
+    "file": "models/opposition_v3_candidates.json",
+    "sha256": "0e33fb2268f53c0419663d294881962acdcf1349cd434f4cafbfb29680c17708",
+    "keys": [
+      "status",
+      "models",
+      "feature_names"
+    ],
+    "variants": [
+      "baseline",
+      "opposition",
+      "dq",
+      "combined"
+    ],
+    "feature_names": {
+      "baseline": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage"
+      ],
+      "opposition": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts"
+      ],
+      "dq": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "shrunk_dq_rate",
+        "dq_posterior_sd"
+      ],
+      "combined": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage",
+        "relative_elo",
+        "log_classified_starts",
+        "shrunk_dq_rate",
+        "dq_posterior_sd"
+      ]
+    }
+  },
+  {
+    "file": "models/pilot_v1.json",
+    "sha256": "0e22333bc5f8c86b0896c1a3bd57f1516fa6da0f25342357db3ddd5b8b3cee54",
+    "keys": [
+      "kind",
+      "weights",
+      "transform",
+      "l2",
+      "omitted_feature",
+      "validation_status",
+      "feature_names",
+      "protocol_version",
+      "training_period",
+      "selection_period"
+    ],
+    "variants": null,
+    "feature_names": [
+      "win_rate",
+      "top3_rate",
+      "dq_rate",
+      "log_rest",
+      "history_coverage"
+    ]
+  },
+  {
+    "file": "models/prospective_cohort_frozen.json",
+    "sha256": "31e7452295160336bdd566858f44e472adfe96c5a5f13597218858637d5d3f82",
+    "keys": [
+      "models",
+      "policy_sha256",
+      "files_sha256"
+    ],
+    "variants": [
+      "status",
+      "baseline_frozen",
+      "files_sha256",
+      "models",
+      "promotion"
+    ],
+    "feature_names": null
+  },
+  {
+    "file": "models/speed_v7_candidates.json",
+    "sha256": "97f565c8f0e2c80cb94c830da249237c178535bb993f5bef44caa3eee3fd58e9",
+    "keys": [
+      "status",
+      "models"
+    ],
+    "variants": [
+      "v6",
+      "v7_speed"
+    ],
+    "feature_names": null
+  },
+  {
+    "file": "models/speed_v7_frozen.json",
+    "sha256": "795b3f361537d4cb9344f65924379233462b31c9d3b1b7c54f831af08b1b72d4",
+    "keys": [
+      "status",
+      "baseline_frozen",
+      "files_sha256",
+      "models",
+      "promotion"
+    ],
+    "variants": [
+      "v6",
+      "v7_speed"
+    ],
+    "feature_names": null
+  },
+  {
+    "file": "models/v6_holdout_frozen.json",
+    "sha256": "06380812a7804c8fbb558dd68b22e90d8bfb2b15e3da95f6db1eabf4b1cb6d9c",
+    "keys": [
+      "policy_sha256",
+      "v5_frozen",
+      "files_sha256"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/v7_holdout_frozen.json",
+    "sha256": "fae2890ac5120ae02706c01b4ee576c3d0ff593ae92bc09ca328cf0a62429ea6",
+    "keys": [
+      "v7_frozen",
+      "policy_sha256",
+      "files_sha256"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/xgboost_rank_v2.json",
+    "sha256": "73a5f2d76b4f13c73c1d6dac8f9752519c7a170117ca16f7c784162cf678f487",
+    "keys": [
+      "learner",
+      "version"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/xgboost_rank_v2_frozen.json",
+    "sha256": "f660078eeaf54a011fca394e9a834a531ebf5676a1d09b72be188f55d6d191b3",
+    "keys": [
+      "status",
+      "selected",
+      "trials",
+      "protocol_sha256",
+      "models_sha256",
+      "baseline_frozen",
+      "sources_sha256",
+      "code_sha256",
+      "xgboost_version"
+    ],
+    "variants": null,
+    "feature_names": null
+  },
+  {
+    "file": "models/xgboost_v1.json",
+    "sha256": "8b5b0f20cdb1447299ce00b1e59760fa38f9e1c1bee9c97e402dfa7c3a2eb376",
+    "keys": [
+      "learner",
+      "version"
+    ],
+    "variants": null,
+    "feature_names": null
+  }
+]

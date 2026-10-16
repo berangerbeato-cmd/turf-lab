@@ -169,7 +169,10 @@ class Collector:
             self.remaining -= store.requests
             self.requests += store.requests
         if result is None:
-            # Stop the batch after transport, rate-limit or access failures; next scheduled run retries.
+            # An isolated missing endpoint must not starve the remaining calendar.
+            statuses=[m.get('status') for m in store.manifest.values()]
+            if statuses and statuses[-1] in (404,410):
+                raise FileNotFoundError('Endpoint unavailable; retry on next run')
             self.stopped = True
             raise RuntimeError('Source unavailable; batch stopped, evidence preserved')
         return result
@@ -190,10 +193,16 @@ class Collector:
                 rn, cn = meeting['numOfficiel'], course['numOrdre']
                 rid = f'{day}_R{rn}C{cn}'
                 if rid in records or rid in cancellations: continue
-                detail = self.fetch(day, rn, cn)
+                try:
+                    detail = self.fetch(day, rn, cn)
+                except FileNotFoundError as error:
+                    state['issues'].append(rid+': '+str(error)); continue
                 if cancelled(detail): cancellations[rid] = detail
                 else:
-                    participants = self.fetch(day, rn, cn, 'participants')
+                    try:
+                        participants = self.fetch(day, rn, cn, 'participants')
+                    except FileNotFoundError as error:
+                        state['issues'].append(rid+': '+str(error)); continue
                     record = make_record(day, meeting, course, participants, detail)
                     if not validate(record):
                         records[rid] = record

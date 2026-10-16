@@ -1,4 +1,4 @@
-"""Daily strict audit and missing-only catch-up. Exit nonzero on ANY remaining gap."""
+"""Daily missing-only catch-up; preserve gaps without blocking verified inputs."""
 import argparse
 import gzip
 import hashlib
@@ -63,26 +63,23 @@ def main():
                 if states[i]['status'] != 'OK': states[i]['issues'].extend(errors)
                 if collector.stopped or collector.remaining <= 0: break
             report = summarize(states, today, collector)
-        # Feature inputs are refreshed only after a fully verified calendar.
+        # Publish verified records even with documented gaps; never train here.
         # Existing predictor computes past-only features from this loader, with frozen weights.
-        report['prediction_inputs_status'] = 'READY' if report['status']=='OK' else 'BLOCKED_INCOMPLETE_HISTORY'
-        if not args.audit_only and report['status'] == 'OK':
-            records = [r for s in states for r in s['records']]
-            payload = json.dumps(records, ensure_ascii=False, sort_keys=True).encode()
-            path = Path('data/history_updates/prediction_inputs.json.gz')
-            digest = hashlib.sha256(payload).hexdigest()
-            lock = Path('data/history_updates/prediction_inputs_manifest.json')
-            old = json.loads(lock.read_text()) if lock.exists() else {}
-            if old.get('sha256') != digest or not path.exists():
-                temp = path.with_suffix('.tmp'); temp.parent.mkdir(parents=True, exist_ok=True)
-                temp.write_bytes(gzip.compress(payload, mtime=0)); temp.replace(path)
-            dump(lock, dict(through=report['required_through'], sha256=digest, races=len(records)))
+        recent = states[-1]
+        ready = recent['programme'] is not None and (recent['expected'] == 0 or bool(recent['records']))
+        report['prediction_inputs_status'] = ('READY' if report['status']=='OK' else 'READY_WITH_GAPS') if ready else 'BLOCKED_STALE_HISTORY'
+        # Verified partitions/overlays are already durable; avoid duplicating the entire archive.
+        if not args.audit_only and ready:
+            dump('data/history_updates/prediction_inputs_manifest.json', dict(
+                through=report['required_through'], races=report['verified_races'],
+                status=report['prediction_inputs_status'], loader='turf_lab.history_sync.audit',
+                missing_days=report['missing_days'], missing_races=report['missing_races']))
         write_report(report)
     except Exception as error:
         report.update(status='ÉCHEC', error=str(error), prediction_inputs_status='BLOCKED')
         write_report(report)
         raise
     print(json.dumps({k:v for k,v in report.items() if k!='days'}, ensure_ascii=False))
-    if report['status'] != 'OK': raise SystemExit(2)
+    if report.get('prediction_inputs_status') == 'BLOCKED_STALE_HISTORY': raise SystemExit(2)
 
 if __name__ == '__main__': main()
