@@ -1,8 +1,10 @@
 name: Refresh full-history daily results
 on:
   schedule:
-    - cron: '20 4 * * *'
-    - cron: '20 6 * * *'
+    - cron: '0 6 * * *'
+      timezone: Europe/Paris
+    - cron: '30 8,12,18 * * *'
+      timezone: Europe/Paris
   workflow_dispatch:
   push:
     branches: [main]
@@ -15,27 +17,37 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
           ref: research/full-year-history-2022-2026
-          fetch-depth: 0
+          fetch-depth: 1
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test freshness gate
-        run: python -m unittest discover -s tests -p test_recent_history.py
-      - name: Collect completed days without retraining
-        run: python -m scripts.refresh_recent_history
-      - name: Preserve results and diagnostics
+      - name: Test strict coverage and incremental recovery
+        run: python -m unittest discover -s tests -p 'test_history_sync.py'
+      - name: Audit all dates and recover missing inputs only
+        run: python -m scripts.sync_history --max-requests 800
+      - name: Preserve checkpoints and diagnostics even on partial results
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add --all -- data/recent_history evidence/recent_history reports/recent_history_status.json
+          git add --all -- data/history_updates evidence/history_updates reports/history_sync
           if ! git diff --cached --quiet; then
-            git commit -m 'Update verified daily history; preserve frozen models'
-            git pull --rebase origin research/full-year-history-2022-2026
-            git push origin HEAD:research/full-year-history-2022-2026
+            git commit -m 'Checkpoint incremental history and strict coverage report'
+            for attempt in 1 2 3; do
+              git pull --rebase origin research/full-year-history-2022-2026 || exit 1
+              if git push origin HEAD:research/full-year-history-2022-2026; then exit 0; fi
+            done
+            exit 1
           fi
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: history-coverage-${{ github.run_id }}
+          path: reports/history_sync/
+          if-no-files-found: error
