@@ -4,6 +4,7 @@ import hashlib
 import json
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from turf_lab.evidence import EvidenceStore, dump, races, start_type
 from turf_lab.quality import assess
 
@@ -95,6 +96,9 @@ class History:
         if not isinstance(body, dict) or not isinstance(body.get('reunions'), list):
             return dict(date=day, programme=None, records=[], cancellations={}, pending=[],
                         issues=['programme_unavailable'], status='PARTIEL', expected=None)
+        stamp = body.get('date')
+        if stamp is not None and datetime.fromtimestamp(stamp/1000, ZoneInfo('Europe/Paris')).date().isoformat() != day:
+            raise ValueError('Programme date mismatch: '+day)
         candidates = list(races(programme))
         ids = [f"{day}_R{r['numOfficiel']}C{c['numOrdre']}" for r,c in candidates]
         if len(ids) != len(set(ids)): raise ValueError('Duplicate programme race')
