@@ -1,0 +1,37 @@
+{
+  "calibrators": {
+    "win": {
+      "slope": 0.784208549733548,
+      "intercept": -0.2577558997079275,
+      "ridge": 0.001,
+      "validation_tickets": 4487
+    },
+    "place3": {
+      "slope": 0.607087871598863,
+      "intercept": -0.3148290475478152,
+      "ridge": 0.001,
+      "validation_tickets": 4487
+    },
+    "pair_place3": {
+      "slope": 0.7934116967730933,
+      "intercept": -0.6007139792159012,
+      "ridge": 0.001,
+      "validation_tickets": 4487
+    },
+    "pair_top4": {
+      "slope": 0.617344741291378,
+      "intercept": -0.7726042006697212,
+      "ridge": 0.001,
+      "validation_tickets": 4487
+    }
+  },
+  "validation_sha256": "093aeb9b156698cab6a507812e63424514feaa841d8c78d63baf4526c60ab9f5",
+  "classic_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
+  "selection": "classic maximum-probability ticket only, one per race and market; no value selection",
+  "fit_year": 2025,
+  "test_year": 2026,
+  "validation_exclusions": {
+    "field_or_nonrunner": 1841,
+    "missing_or_tied_top4": 70
+  }
+}

@@ -1,0 +1,3725 @@
+{
+  "status": "EXPLORATORY_REUSED_TEST_NO_PRICE_OR_PROFIT_CLAIM",
+  "n": 3015,
+  "source_sha256": {
+    "features": "5ecb75c8661ded0b77da38347413b1482384d28d33bf26167c8d16e469bd852a",
+    "tickets": "b14e0df68c1857615e1141313829611f7296a5500907dee499dfab512e1e0834"
+  },
+  "distance_bands": {
+    "2100-2399": {
+      "n": 456,
+      "weeks": 40,
+      "hits": 213,
+      "hit_rate": 0.46710526315789475,
+      "mean_prediction": 0.49308509990087596,
+      "prediction_minus_observed": 0.02597983674298121,
+      "hit_rate_week_bootstrap95": [
+        0.43123298856831793,
+        0.5051437144014899
+      ],
+      "bias_week_bootstrap95": [
+        -0.013788705480008219,
+        0.06419368631955316
+      ],
+      "selected_ticket_brier": 0.2476307232685814,
+      "mean_field_size": 12.844298245614034,
+      "autostart_fraction": 0.7960526315789473,
+      "vincennes_fraction": 0.2982456140350877,
+      "seasons": {
+        "winter": 99,
+        "spring": 155,
+        "summer": 155,
+        "autumn": 47
+      }
+    },
+    "2400-2799": {
+      "n": 1316,
+      "weeks": 40,
+      "hits": 651,
+      "hit_rate": 0.4946808510638298,
+      "mean_prediction": 0.4953783346662405,
+      "prediction_minus_observed": 0.0006974836024106756,
+      "hit_rate_week_bootstrap95": [
+        0.4630436219431593,
+        0.5267289523625153
+      ],
+      "bias_week_bootstrap95": [
+        -0.031280402091051235,
+        0.03230192484417815
+      ],
+      "selected_ticket_brier": 0.2466569700721395,
+      "mean_field_size": 13.24240121580547,
+      "autostart_fraction": 0.3411854103343465,
+      "vincennes_fraction": 0.12006079027355623,
+      "seasons": {
+        "winter": 228,
+        "spring": 484,
+        "summer": 482,
+        "autumn": 122
+      }
+    },
+    "<2100": {
+      "n": 99,
+      "weeks": 31,
+      "hits": 49,
+      "hit_rate": 0.494949494949495,
+      "mean_prediction": 0.47788042324931773,
+      "prediction_minus_observed": -0.01706907170017724,
+      "hit_rate_week_bootstrap95": [
+        0.40677500465636063,
+        0.5764705882352941
+      ],
+      "bias_week_bootstrap95": [
+        -0.10035527483810197,
+        0.07408948664882016
+      ],
+      "selected_ticket_brier": 0.24887600500042292,
+      "mean_field_size": 12.717171717171718,
+      "autostart_fraction": 0.7171717171717171,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 14,
+        "spring": 20,
+        "summer": 48,
+        "autumn": 17
+      }
+    },
+    ">=2800": {
+      "n": 1144,
+      "weeks": 40,
+      "hits": 566,
+      "hit_rate": 0.49475524475524474,
+      "mean_prediction": 0.505039591301285,
+      "prediction_minus_observed": 0.010284346546040213,
+      "hit_rate_week_bootstrap95": [
+        0.4614646700090269,
+        0.5269697186132994
+      ],
+      "bias_week_bootstrap95": [
+        -0.021208901363922953,
+        0.04509960130806083
+      ],
+      "selected_ticket_brier": 0.24146250366936986,
+      "mean_field_size": 13.386363636363637,
+      "autostart_fraction": 0.024475524475524476,
+      "vincennes_fraction": 0.07604895104895106,
+      "seasons": {
+        "winter": 185,
+        "spring": 439,
+        "summer": 378,
+        "autumn": 142
+      }
+    }
+  },
+  "exact_distances": {
+    "1609": {
+      "n": 11,
+      "weeks": 8,
+      "hits": 8,
+      "hit_rate": 0.7272727272727273,
+      "mean_prediction": 0.5783224699163676,
+      "prediction_minus_observed": -0.1489502573563597,
+      "hit_rate_week_bootstrap95": [
+        0.45454545454545453,
+        0.9090909090909091
+      ],
+      "bias_week_bootstrap95": [
+        -0.3389468530459229,
+        0.14020534627258183
+      ],
+      "selected_ticket_brier": 0.23493489298664816,
+      "mean_field_size": 12.0,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 3,
+        "summer": 7,
+        "autumn": 1
+      }
+    },
+    "1800": {
+      "n": 6,
+      "weeks": 4,
+      "hits": 3,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.42869615237468356,
+      "prediction_minus_observed": -0.07130384762531644,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.75
+      ],
+      "bias_week_bootstrap95": [
+        -0.3187034881721179,
+        0.4201002728340488
+      ],
+      "selected_ticket_brier": 0.23711596734175092,
+      "mean_field_size": 11.666666666666666,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1,
+        "summer": 2,
+        "autumn": 3
+      }
+    },
+    "2000": {
+      "n": 40,
+      "weeks": 14,
+      "hits": 16,
+      "hit_rate": 0.4,
+      "mean_prediction": 0.44655923365365313,
+      "prediction_minus_observed": 0.04655923365365311,
+      "hit_rate_week_bootstrap95": [
+        0.25,
+        0.5142857142857142
+      ],
+      "bias_week_bootstrap95": [
+        -0.08034926211336717,
+        0.1828272544672641
+      ],
+      "selected_ticket_brier": 0.2564115620899892,
+      "mean_field_size": 13.225,
+      "autostart_fraction": 0.5,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 1,
+        "spring": 6,
+        "summer": 28,
+        "autumn": 5
+      }
+    },
+    "2025": {
+      "n": 6,
+      "weeks": 4,
+      "hits": 3,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.5354302441300938,
+      "prediction_minus_observed": 0.03543024413009377,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.75
+      ],
+      "bias_week_bootstrap95": [
+        -0.29900772803229475,
+        0.5236720469939071
+      ],
+      "selected_ticket_brier": 0.2613226239636941,
+      "mean_field_size": 12.333333333333334,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 1,
+        "spring": 3,
+        "summer": 2
+      }
+    },
+    "2050": {
+      "n": 36,
+      "weeks": 17,
+      "hits": 19,
+      "hit_rate": 0.5277777777777778,
+      "mean_prediction": 0.4805968613174339,
+      "prediction_minus_observed": -0.04718091646034389,
+      "hit_rate_week_bootstrap95": [
+        0.3888888888888889,
+        0.6666666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.18905436810368206,
+        0.09830528400790367
+      ],
+      "selected_ticket_brier": 0.24464851779879174,
+      "mean_field_size": 12.61111111111111,
+      "autostart_fraction": 0.9444444444444444,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 12,
+        "spring": 7,
+        "summer": 9,
+        "autumn": 8
+      }
+    },
+    "2100": {
+      "n": 121,
+      "weeks": 34,
+      "hits": 52,
+      "hit_rate": 0.4297520661157025,
+      "mean_prediction": 0.4679040420993578,
+      "prediction_minus_observed": 0.03815197598365533,
+      "hit_rate_week_bootstrap95": [
+        0.33636162510056317,
+        0.525
+      ],
+      "bias_week_bootstrap95": [
+        -0.05616360153262776,
+        0.1265552181801324
+      ],
+      "selected_ticket_brier": 0.24858795637868925,
+      "mean_field_size": 13.487603305785123,
+      "autostart_fraction": 0.9421487603305785,
+      "vincennes_fraction": 0.7933884297520661,
+      "seasons": {
+        "winter": 39,
+        "spring": 38,
+        "summer": 24,
+        "autumn": 20
+      }
+    },
+    "2150": {
+      "n": 169,
+      "weeks": 35,
+      "hits": 74,
+      "hit_rate": 0.4378698224852071,
+      "mean_prediction": 0.4936061162180556,
+      "prediction_minus_observed": 0.055736293732848496,
+      "hit_rate_week_bootstrap95": [
+        0.38414634146341464,
+        0.4966908780175176
+      ],
+      "bias_week_bootstrap95": [
+        -0.0007726726502115406,
+        0.1081379357087657
+      ],
+      "selected_ticket_brier": 0.2355687042588504,
+      "mean_field_size": 12.615384615384615,
+      "autostart_fraction": 0.9763313609467456,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 34,
+        "spring": 39,
+        "summer": 85,
+        "autumn": 11
+      }
+    },
+    "2175": {
+      "n": 33,
+      "weeks": 19,
+      "hits": 16,
+      "hit_rate": 0.48484848484848486,
+      "mean_prediction": 0.488041480651781,
+      "prediction_minus_observed": 0.003192995803296128,
+      "hit_rate_week_bootstrap95": [
+        0.2903225806451613,
+        0.6666666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.17847694530934807,
+        0.19481171162119376
+      ],
+      "selected_ticket_brier": 0.261545524080689,
+      "mean_field_size": 12.06060606060606,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 1.0,
+      "seasons": {
+        "winter": 12,
+        "spring": 12,
+        "summer": 5,
+        "autumn": 4
+      }
+    },
+    "2200": {
+      "n": 54,
+      "weeks": 20,
+      "hits": 22,
+      "hit_rate": 0.4074074074074074,
+      "mean_prediction": 0.4779504479921942,
+      "prediction_minus_observed": 0.07054304058478683,
+      "hit_rate_week_bootstrap95": [
+        0.29229166666666667,
+        0.5384615384615384
+      ],
+      "bias_week_bootstrap95": [
+        -0.06019508736219693,
+        0.18550045395347778
+      ],
+      "selected_ticket_brier": 0.2785498671414005,
+      "mean_field_size": 13.222222222222221,
+      "autostart_fraction": 0.7037037037037037,
+      "vincennes_fraction": 0.12962962962962962,
+      "seasons": {
+        "winter": 3,
+        "spring": 31,
+        "summer": 17,
+        "autumn": 3
+      }
+    },
+    "2225": {
+      "n": 11,
+      "weeks": 6,
+      "hits": 8,
+      "hit_rate": 0.7272727272727273,
+      "mean_prediction": 0.49627053571926966,
+      "prediction_minus_observed": -0.23100219155345764,
+      "hit_rate_week_bootstrap95": [
+        0.5,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5526677605416663,
+        -0.018578261021972194
+      ],
+      "selected_ticket_brier": 0.23233268674597182,
+      "mean_field_size": 11.909090909090908,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 2,
+        "spring": 1,
+        "summer": 7,
+        "autumn": 1
+      }
+    },
+    "2250": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 2,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.48042752826432034,
+      "prediction_minus_observed": -0.5195724717356797,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5865051573202545,
+        -0.4526397861511048
+      ],
+      "selected_ticket_brier": 0.2744355377850872,
+      "mean_field_size": 10.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 2
+      }
+    },
+    "2275": {
+      "n": 9,
+      "weeks": 6,
+      "hits": 6,
+      "hit_rate": 0.6666666666666666,
+      "mean_prediction": 0.5246786905921421,
+      "prediction_minus_observed": -0.1419879760745245,
+      "hit_rate_week_bootstrap95": [
+        0.3333333333333333,
+        0.9
+      ],
+      "bias_week_bootstrap95": [
+        -0.3872399876096391,
+        0.1968744610875538
+      ],
+      "selected_ticket_brier": 0.26269879597774703,
+      "mean_field_size": 12.333333333333334,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 4,
+        "spring": 2,
+        "summer": 1,
+        "autumn": 2
+      }
+    },
+    "2300": {
+      "n": 44,
+      "weeks": 16,
+      "hits": 28,
+      "hit_rate": 0.6363636363636364,
+      "mean_prediction": 0.5853116137364267,
+      "prediction_minus_observed": -0.05105202262720965,
+      "hit_rate_week_bootstrap95": [
+        0.4284954407294833,
+        0.8333333333333334
+      ],
+      "bias_week_bootstrap95": [
+        -0.258359448455149,
+        0.16244090649476564
+      ],
+      "selected_ticket_brier": 0.24389292326090484,
+      "mean_field_size": 12.363636363636363,
+      "autostart_fraction": 0.8863636363636364,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 25,
+        "summer": 14,
+        "autumn": 5
+      }
+    },
+    "2325": {
+      "n": 6,
+      "weeks": 6,
+      "hits": 1,
+      "hit_rate": 0.16666666666666666,
+      "mean_prediction": 0.42011609344176004,
+      "prediction_minus_observed": 0.2534494267750934,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.5
+      ],
+      "bias_week_bootstrap95": [
+        -0.09415966889926015,
+        0.4556865976610253
+      ],
+      "selected_ticket_brier": 0.21003300378010456,
+      "mean_field_size": 13.833333333333334,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 1,
+        "spring": 4,
+        "autumn": 1
+      }
+    },
+    "2350": {
+      "n": 7,
+      "weeks": 3,
+      "hits": 4,
+      "hit_rate": 0.5714285714285714,
+      "mean_prediction": 0.4971347195736092,
+      "prediction_minus_observed": -0.07429385185496218,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5226791682630041,
+        0.6799860475629848
+      ],
+      "selected_ticket_brier": 0.2709077869816589,
+      "mean_field_size": 13.142857142857142,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 4,
+        "spring": 3
+      }
+    },
+    "2400": {
+      "n": 78,
+      "weeks": 22,
+      "hits": 42,
+      "hit_rate": 0.5384615384615384,
+      "mean_prediction": 0.4864953465212646,
+      "prediction_minus_observed": -0.051966191940273854,
+      "hit_rate_week_bootstrap95": [
+        0.41974313022700116,
+        0.6436781609195402
+      ],
+      "bias_week_bootstrap95": [
+        -0.1568857575788263,
+        0.062187275058756764
+      ],
+      "selected_ticket_brier": 0.2420982444663172,
+      "mean_field_size": 12.756410256410257,
+      "autostart_fraction": 0.782051282051282,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 6,
+        "spring": 36,
+        "summer": 21,
+        "autumn": 15
+      }
+    },
+    "2425": {
+      "n": 6,
+      "weeks": 5,
+      "hits": 2,
+      "hit_rate": 0.3333333333333333,
+      "mean_prediction": 0.5031054101674474,
+      "prediction_minus_observed": 0.16977207683411405,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.6666666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.15979884204047368,
+        0.5285345387733462
+      ],
+      "selected_ticket_brier": 0.2679430511389538,
+      "mean_field_size": 12.5,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 3,
+        "summer": 2,
+        "autumn": 1
+      }
+    },
+    "2450": {
+      "n": 41,
+      "weeks": 12,
+      "hits": 17,
+      "hit_rate": 0.4146341463414634,
+      "mean_prediction": 0.495052993847111,
+      "prediction_minus_observed": 0.0804188475056476,
+      "hit_rate_week_bootstrap95": [
+        0.21428571428571427,
+        0.6190476190476191
+      ],
+      "bias_week_bootstrap95": [
+        -0.11668466920215216,
+        0.27724573675723985
+      ],
+      "selected_ticket_brier": 0.24834701013680052,
+      "mean_field_size": 14.121951219512194,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 35,
+        "summer": 6
+      }
+    },
+    "2500": {
+      "n": 32,
+      "weeks": 13,
+      "hits": 17,
+      "hit_rate": 0.53125,
+      "mean_prediction": 0.510984878193483,
+      "prediction_minus_observed": -0.02026512180651696,
+      "hit_rate_week_bootstrap95": [
+        0.39285714285714285,
+        0.6452087286527516
+      ],
+      "bias_week_bootstrap95": [
+        -0.1351531636675599,
+        0.11444143062818429
+      ],
+      "selected_ticket_brier": 0.24897750043004904,
+      "mean_field_size": 12.21875,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 25,
+        "summer": 6,
+        "autumn": 1
+      }
+    },
+    "2525": {
+      "n": 6,
+      "weeks": 2,
+      "hits": 1,
+      "hit_rate": 0.16666666666666666,
+      "mean_prediction": 0.5502151015997847,
+      "prediction_minus_observed": 0.3835484349331181,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.3333333333333333
+      ],
+      "bias_week_bootstrap95": [
+        0.24466285100351412,
+        0.5224340188627218
+      ],
+      "selected_ticket_brier": 0.2885913115907157,
+      "mean_field_size": 12.5,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 3,
+        "autumn": 3
+      }
+    },
+    "2550": {
+      "n": 64,
+      "weeks": 25,
+      "hits": 33,
+      "hit_rate": 0.515625,
+      "mean_prediction": 0.4889316417418798,
+      "prediction_minus_observed": -0.026693358258120192,
+      "hit_rate_week_bootstrap95": [
+        0.38595864661654133,
+        0.6379310344827587
+      ],
+      "bias_week_bootstrap95": [
+        -0.1478854252753735,
+        0.10131645409725583
+      ],
+      "selected_ticket_brier": 0.2463510315516331,
+      "mean_field_size": 13.25,
+      "autostart_fraction": 0.234375,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 12,
+        "spring": 30,
+        "summer": 16,
+        "autumn": 6
+      }
+    },
+    "2575": {
+      "n": 55,
+      "weeks": 16,
+      "hits": 24,
+      "hit_rate": 0.43636363636363634,
+      "mean_prediction": 0.45925265751357164,
+      "prediction_minus_observed": 0.022889021149935296,
+      "hit_rate_week_bootstrap95": [
+        0.3137254901960784,
+        0.5270331695331695
+      ],
+      "bias_week_bootstrap95": [
+        -0.07083019099743412,
+        0.1494615808442475
+      ],
+      "selected_ticket_brier": 0.2533401189737981,
+      "mean_field_size": 13.454545454545455,
+      "autostart_fraction": 0.8181818181818182,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 16,
+        "spring": 29,
+        "summer": 6,
+        "autumn": 4
+      }
+    },
+    "2600": {
+      "n": 67,
+      "weeks": 22,
+      "hits": 27,
+      "hit_rate": 0.40298507462686567,
+      "mean_prediction": 0.48180043087579955,
+      "prediction_minus_observed": 0.07881535624893388,
+      "hit_rate_week_bootstrap95": [
+        0.2711776129943503,
+        0.5614095169430425
+      ],
+      "bias_week_bootstrap95": [
+        -0.05927566377305681,
+        0.198912403192363
+      ],
+      "selected_ticket_brier": 0.23529718072100805,
+      "mean_field_size": 13.029850746268657,
+      "autostart_fraction": 0.47761194029850745,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 1,
+        "spring": 42,
+        "summer": 21,
+        "autumn": 3
+      }
+    },
+    "2625": {
+      "n": 69,
+      "weeks": 23,
+      "hits": 34,
+      "hit_rate": 0.4927536231884058,
+      "mean_prediction": 0.4971559480462608,
+      "prediction_minus_observed": 0.004402324857854967,
+      "hit_rate_week_bootstrap95": [
+        0.36764705882352944,
+        0.6363965744400528
+      ],
+      "bias_week_bootstrap95": [
+        -0.13163769198462938,
+        0.12171542394456576
+      ],
+      "selected_ticket_brier": 0.23222557356933507,
+      "mean_field_size": 13.73913043478261,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 15,
+        "spring": 36,
+        "summer": 16,
+        "autumn": 2
+      }
+    },
+    "2650": {
+      "n": 150,
+      "weeks": 33,
+      "hits": 82,
+      "hit_rate": 0.5466666666666666,
+      "mean_prediction": 0.5063891885989933,
+      "prediction_minus_observed": -0.040277478067673345,
+      "hit_rate_week_bootstrap95": [
+        0.4596719703574542,
+        0.6216251225318583
+      ],
+      "bias_week_bootstrap95": [
+        -0.11389183468143026,
+        0.04247900553533893
+      ],
+      "selected_ticket_brier": 0.23141770098696554,
+      "mean_field_size": 13.02,
+      "autostart_fraction": 0.5266666666666666,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 36,
+        "spring": 28,
+        "summer": 79,
+        "autumn": 7
+      }
+    },
+    "2675": {
+      "n": 62,
+      "weeks": 16,
+      "hits": 29,
+      "hit_rate": 0.46774193548387094,
+      "mean_prediction": 0.48622387639610326,
+      "prediction_minus_observed": 0.01848194091223232,
+      "hit_rate_week_bootstrap95": [
+        0.3770491803278688,
+        0.5686274509803921
+      ],
+      "bias_week_bootstrap95": [
+        -0.0891596250119312,
+        0.10626723387274377
+      ],
+      "selected_ticket_brier": 0.28085666985515073,
+      "mean_field_size": 13.85483870967742,
+      "autostart_fraction": 0.1935483870967742,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 3,
+        "spring": 27,
+        "summer": 24,
+        "autumn": 8
+      }
+    },
+    "2700": {
+      "n": 367,
+      "weeks": 40,
+      "hits": 179,
+      "hit_rate": 0.4877384196185286,
+      "mean_prediction": 0.4891593721845638,
+      "prediction_minus_observed": 0.001420952566035194,
+      "hit_rate_week_bootstrap95": [
+        0.42552853765619725,
+        0.5457576947693024
+      ],
+      "bias_week_bootstrap95": [
+        -0.06276317516082155,
+        0.06779009727328426
+      ],
+      "selected_ticket_brier": 0.2491836605410681,
+      "mean_field_size": 13.133514986376023,
+      "autostart_fraction": 0.2670299727520436,
+      "vincennes_fraction": 0.4305177111716621,
+      "seasons": {
+        "winter": 114,
+        "spring": 121,
+        "summer": 97,
+        "autumn": 35
+      }
+    },
+    "2725": {
+      "n": 133,
+      "weeks": 23,
+      "hits": 59,
+      "hit_rate": 0.44360902255639095,
+      "mean_prediction": 0.5052468018008216,
+      "prediction_minus_observed": 0.061637779244430646,
+      "hit_rate_week_bootstrap95": [
+        0.35443037974683544,
+        0.5390101757631822
+      ],
+      "bias_week_bootstrap95": [
+        -0.033732995516018556,
+        0.15429135264163615
+      ],
+      "selected_ticket_brier": 0.24620710891201875,
+      "mean_field_size": 13.142857142857142,
+      "autostart_fraction": 0.2556390977443609,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 6,
+        "spring": 28,
+        "summer": 90,
+        "autumn": 9
+      }
+    },
+    "2750": {
+      "n": 149,
+      "weeks": 35,
+      "hits": 82,
+      "hit_rate": 0.5503355704697986,
+      "mean_prediction": 0.5086662973396553,
+      "prediction_minus_observed": -0.04166927313014335,
+      "hit_rate_week_bootstrap95": [
+        0.4674468623481781,
+        0.6462674543501612
+      ],
+      "bias_week_bootstrap95": [
+        -0.1445393183667936,
+        0.04846778250268226
+      ],
+      "selected_ticket_brier": 0.25544854641287595,
+      "mean_field_size": 13.442953020134228,
+      "autostart_fraction": 0.2348993288590604,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 16,
+        "spring": 44,
+        "summer": 71,
+        "autumn": 18
+      }
+    },
+    "2775": {
+      "n": 37,
+      "weeks": 10,
+      "hits": 23,
+      "hit_rate": 0.6216216216216216,
+      "mean_prediction": 0.5203480484251327,
+      "prediction_minus_observed": -0.10127357319648889,
+      "hit_rate_week_bootstrap95": [
+        0.5555555555555556,
+        0.7000675675675677
+      ],
+      "bias_week_bootstrap95": [
+        -0.18748438536012013,
+        -0.022250619643721128
+      ],
+      "selected_ticket_brier": 0.22583774851097785,
+      "mean_field_size": 14.054054054054054,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 27,
+        "autumn": 10
+      }
+    },
+    "2800": {
+      "n": 209,
+      "weeks": 30,
+      "hits": 110,
+      "hit_rate": 0.5263157894736842,
+      "mean_prediction": 0.4929813941630226,
+      "prediction_minus_observed": -0.03333439531066157,
+      "hit_rate_week_bootstrap95": [
+        0.47916424418604653,
+        0.5837845649117326
+      ],
+      "bias_week_bootstrap95": [
+        -0.09225418990769706,
+        0.014184725081393526
+      ],
+      "selected_ticket_brier": 0.22525285271417164,
+      "mean_field_size": 13.961722488038278,
+      "autostart_fraction": 0.10526315789473684,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 11,
+        "spring": 105,
+        "summer": 53,
+        "autumn": 40
+      }
+    },
+    "2825": {
+      "n": 74,
+      "weeks": 20,
+      "hits": 33,
+      "hit_rate": 0.44594594594594594,
+      "mean_prediction": 0.4877386320096104,
+      "prediction_minus_observed": 0.04179268606366443,
+      "hit_rate_week_bootstrap95": [
+        0.36923076923076925,
+        0.5189873417721519
+      ],
+      "bias_week_bootstrap95": [
+        -0.034989968443948714,
+        0.12069669698012371
+      ],
+      "selected_ticket_brier": 0.24119452034570257,
+      "mean_field_size": 13.243243243243244,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 13,
+        "spring": 41,
+        "summer": 11,
+        "autumn": 9
+      }
+    },
+    "2850": {
+      "n": 306,
+      "weeks": 39,
+      "hits": 149,
+      "hit_rate": 0.4869281045751634,
+      "mean_prediction": 0.4963469436463993,
+      "prediction_minus_observed": 0.009418839071235918,
+      "hit_rate_week_bootstrap95": [
+        0.4290649067976337,
+        0.543166577848832
+      ],
+      "bias_week_bootstrap95": [
+        -0.04480901465620436,
+        0.06420388592471195
+      ],
+      "selected_ticket_brier": 0.2508673131959722,
+      "mean_field_size": 13.392156862745098,
+      "autostart_fraction": 0.016339869281045753,
+      "vincennes_fraction": 0.28104575163398693,
+      "seasons": {
+        "winter": 65,
+        "spring": 107,
+        "summer": 88,
+        "autumn": 46
+      }
+    },
+    "2875": {
+      "n": 158,
+      "weeks": 26,
+      "hits": 71,
+      "hit_rate": 0.44936708860759494,
+      "mean_prediction": 0.49629317760172276,
+      "prediction_minus_observed": 0.04692608899412781,
+      "hit_rate_week_bootstrap95": [
+        0.3652618121421391,
+        0.5304909158785466
+      ],
+      "bias_week_bootstrap95": [
+        -0.03171738137152594,
+        0.12878781347749024
+      ],
+      "selected_ticket_brier": 0.23873111321973045,
+      "mean_field_size": 13.455696202531646,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.006329113924050633,
+      "seasons": {
+        "winter": 16,
+        "spring": 63,
+        "summer": 71,
+        "autumn": 8
+      }
+    },
+    "2900": {
+      "n": 45,
+      "weeks": 15,
+      "hits": 21,
+      "hit_rate": 0.4666666666666667,
+      "mean_prediction": 0.4926091352290966,
+      "prediction_minus_observed": 0.025942468562429932,
+      "hit_rate_week_bootstrap95": [
+        0.2916666666666667,
+        0.5926082862523541
+      ],
+      "bias_week_bootstrap95": [
+        -0.10246864552873888,
+        0.200881273953411
+      ],
+      "selected_ticket_brier": 0.24263206757327518,
+      "mean_field_size": 13.4,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 1,
+        "spring": 13,
+        "summer": 25,
+        "autumn": 6
+      }
+    },
+    "2925": {
+      "n": 77,
+      "weeks": 17,
+      "hits": 39,
+      "hit_rate": 0.5064935064935064,
+      "mean_prediction": 0.586292840973863,
+      "prediction_minus_observed": 0.07979933448035659,
+      "hit_rate_week_bootstrap95": [
+        0.375,
+        0.620253164556962
+      ],
+      "bias_week_bootstrap95": [
+        -0.03740842624682492,
+        0.21418209796924115
+      ],
+      "selected_ticket_brier": 0.2537760356604974,
+      "mean_field_size": 12.233766233766234,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 32,
+        "spring": 10,
+        "summer": 35
+      }
+    },
+    "2950": {
+      "n": 136,
+      "weeks": 31,
+      "hits": 70,
+      "hit_rate": 0.5147058823529411,
+      "mean_prediction": 0.4842721242627133,
+      "prediction_minus_observed": -0.030433758090227803,
+      "hit_rate_week_bootstrap95": [
+        0.4274757113115892,
+        0.6060876623376624
+      ],
+      "bias_week_bootstrap95": [
+        -0.12096956362568832,
+        0.06064998808190456
+      ],
+      "selected_ticket_brier": 0.24284947243767618,
+      "mean_field_size": 13.058823529411764,
+      "autostart_fraction": 0.007352941176470588,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 11,
+        "spring": 51,
+        "summer": 63,
+        "autumn": 11
+      }
+    },
+    "2975": {
+      "n": 3,
+      "weeks": 2,
+      "hits": 2,
+      "hit_rate": 0.6666666666666666,
+      "mean_prediction": 0.5229660911436235,
+      "prediction_minus_observed": -0.14370057552304316,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5387442154905816,
+        0.6463867044120338
+      ],
+      "selected_ticket_brier": 0.3329648027922507,
+      "mean_field_size": 14.333333333333334,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 2,
+        "summer": 1
+      }
+    },
+    "3000": {
+      "n": 97,
+      "weeks": 22,
+      "hits": 55,
+      "hit_rate": 0.5670103092783505,
+      "mean_prediction": 0.5486655473892221,
+      "prediction_minus_observed": -0.01834476188912837,
+      "hit_rate_week_bootstrap95": [
+        0.4473684210526316,
+        0.6761974789915967
+      ],
+      "bias_week_bootstrap95": [
+        -0.12630644693485768,
+        0.09629285416588869
+      ],
+      "selected_ticket_brier": 0.2359481075184408,
+      "mean_field_size": 13.144329896907216,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 22,
+        "spring": 36,
+        "summer": 24,
+        "autumn": 15
+      }
+    },
+    "3025": {
+      "n": 7,
+      "weeks": 6,
+      "hits": 3,
+      "hit_rate": 0.42857142857142855,
+      "mean_prediction": 0.5179874069755971,
+      "prediction_minus_observed": 0.08941597840416854,
+      "hit_rate_week_bootstrap95": [
+        0.14285714285714285,
+        0.7142857142857143
+      ],
+      "bias_week_bootstrap95": [
+        -0.21328096435295274,
+        0.41028993352536225
+      ],
+      "selected_ticket_brier": 0.25129496286385106,
+      "mean_field_size": 14.571428571428571,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 2,
+        "spring": 3,
+        "summer": 2
+      }
+    },
+    "3100": {
+      "n": 3,
+      "weeks": 2,
+      "hits": 2,
+      "hit_rate": 0.6666666666666666,
+      "mean_prediction": 0.5679803547952669,
+      "prediction_minus_observed": -0.09868631187139976,
+      "hit_rate_week_bootstrap95": [
+        0.5,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5496090231063253,
+        0.12677504374606308
+      ],
+      "selected_ticket_brier": 0.3370270373896956,
+      "mean_field_size": 14.333333333333334,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1,
+        "autumn": 2
+      }
+    },
+    "3125": {
+      "n": 18,
+      "weeks": 8,
+      "hits": 6,
+      "hit_rate": 0.3333333333333333,
+      "mean_prediction": 0.4743078674116616,
+      "prediction_minus_observed": 0.14097453407832827,
+      "hit_rate_week_bootstrap95": [
+        0.125,
+        0.4444444444444444
+      ],
+      "bias_week_bootstrap95": [
+        0.02506252506409856,
+        0.34207396902228276
+      ],
+      "selected_ticket_brier": 0.2264834820714623,
+      "mean_field_size": 14.555555555555555,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 8,
+        "spring": 7,
+        "autumn": 3
+      }
+    },
+    "3150": {
+      "n": 4,
+      "weeks": 2,
+      "hits": 2,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.5651790365383504,
+      "prediction_minus_observed": 0.06517903653835044,
+      "hit_rate_week_bootstrap95": [
+        0.5,
+        0.5
+      ],
+      "bias_week_bootstrap95": [
+        0.016563814262859133,
+        0.11379425881384175
+      ],
+      "selected_ticket_brier": 0.2155627982649489,
+      "mean_field_size": 12.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 4
+      }
+    },
+    "3200": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 1,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.645867408552195,
+      "prediction_minus_observed": 0.14586740855219504,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.0983973905811798,
+        0.39013220768556994
+      ],
+      "selected_ticket_brier": 0.08094259297340096,
+      "mean_field_size": 16.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1,
+        "autumn": 1
+      }
+    },
+    "3300": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.6444474561559084,
+      "prediction_minus_observed": -0.35555254384409163,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.35555254384409163,
+        -0.35555254384409163
+      ],
+      "selected_ticket_brier": 0.1264176114340047,
+      "mean_field_size": 14.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1
+      }
+    },
+    "3350": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.45686195235640603,
+      "prediction_minus_observed": 0.45686195235640603,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.45686195235640603,
+        0.45686195235640603
+      ],
+      "selected_ticket_brier": 0.208722843510907,
+      "mean_field_size": 12.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "3425": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.743278213952606,
+      "prediction_minus_observed": 0.743278213952606,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.743278213952606,
+        0.743278213952606
+      ],
+      "selected_ticket_brier": 0.5524625033365759,
+      "mean_field_size": 18.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "3525": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.4732696720585166,
+      "prediction_minus_observed": -0.5267303279414834,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5267303279414834,
+        -0.5267303279414834
+      ],
+      "selected_ticket_brier": 0.2774448383733427,
+      "mean_field_size": 10.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "4275": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.642907588399317,
+      "prediction_minus_observed": 0.642907588399317,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.642907588399317,
+        0.642907588399317
+      ],
+      "selected_ticket_brier": 0.4133301672214257,
+      "mean_field_size": 12.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "autumn": 1
+      }
+    }
+  },
+  "venue_distance": {
+    "OTHER_TRACKS | 2100-2399": {
+      "n": 320,
+      "weeks": 40,
+      "hits": 156,
+      "hit_rate": 0.4875,
+      "mean_prediction": 0.5009597942913779,
+      "prediction_minus_observed": 0.013459794291377947,
+      "hit_rate_week_bootstrap95": [
+        0.439386655011655,
+        0.5362318840579711
+      ],
+      "bias_week_bootstrap95": [
+        -0.035504545043462635,
+        0.06296810146469553
+      ],
+      "selected_ticket_brier": 0.24490027537460643,
+      "mean_field_size": 12.71875,
+      "autostart_fraction": 0.834375,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 46,
+        "spring": 112,
+        "summer": 134,
+        "autumn": 28
+      }
+    },
+    "OTHER_TRACKS | 2400-2799": {
+      "n": 1158,
+      "weeks": 40,
+      "hits": 580,
+      "hit_rate": 0.5008635578583766,
+      "mean_prediction": 0.4965941936227154,
+      "prediction_minus_observed": -0.004269364235661155,
+      "hit_rate_week_bootstrap95": [
+        0.46794767441860463,
+        0.5325352226585158
+      ],
+      "bias_week_bootstrap95": [
+        -0.03546924292239348,
+        0.028684568712036264
+      ],
+      "selected_ticket_brier": 0.24669438887624426,
+      "mean_field_size": 13.263385146804836,
+      "autostart_fraction": 0.38773747841105355,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 168,
+        "spring": 430,
+        "summer": 461,
+        "autumn": 99
+      }
+    },
+    "OTHER_TRACKS | <2100": {
+      "n": 99,
+      "weeks": 31,
+      "hits": 49,
+      "hit_rate": 0.494949494949495,
+      "mean_prediction": 0.47788042324931773,
+      "prediction_minus_observed": -0.01706907170017724,
+      "hit_rate_week_bootstrap95": [
+        0.40677500465636063,
+        0.5764705882352941
+      ],
+      "bias_week_bootstrap95": [
+        -0.10035527483810197,
+        0.07408948664882016
+      ],
+      "selected_ticket_brier": 0.24887600500042292,
+      "mean_field_size": 12.717171717171718,
+      "autostart_fraction": 0.7171717171717171,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 14,
+        "spring": 20,
+        "summer": 48,
+        "autumn": 17
+      }
+    },
+    "OTHER_TRACKS | >=2800": {
+      "n": 1057,
+      "weeks": 40,
+      "hits": 529,
+      "hit_rate": 0.5004730368968779,
+      "mean_prediction": 0.5062403877666173,
+      "prediction_minus_observed": 0.0057673508697393405,
+      "hit_rate_week_bootstrap95": [
+        0.4663311482247126,
+        0.5336322869955157
+      ],
+      "bias_week_bootstrap95": [
+        -0.02856739570158102,
+        0.04127453650229377
+      ],
+      "selected_ticket_brier": 0.24081612329565757,
+      "mean_field_size": 13.4077578051088,
+      "autostart_fraction": 0.026490066225165563,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 153,
+        "spring": 414,
+        "summer": 360,
+        "autumn": 130
+      }
+    },
+    "VINCENNES | 2100-2399": {
+      "n": 136,
+      "weeks": 29,
+      "hits": 57,
+      "hit_rate": 0.41911764705882354,
+      "mean_prediction": 0.4745564072173418,
+      "prediction_minus_observed": 0.055438760158518285,
+      "hit_rate_week_bootstrap95": [
+        0.3361327317812371,
+        0.5078125
+      ],
+      "bias_week_bootstrap95": [
+        -0.030997998882830776,
+        0.13654121790514373
+      ],
+      "selected_ticket_brier": 0.25405530654852243,
+      "mean_field_size": 13.139705882352942,
+      "autostart_fraction": 0.7058823529411765,
+      "vincennes_fraction": 1.0,
+      "seasons": {
+        "winter": 53,
+        "spring": 43,
+        "summer": 21,
+        "autumn": 19
+      }
+    },
+    "VINCENNES | 2400-2799": {
+      "n": 158,
+      "weeks": 30,
+      "hits": 71,
+      "hit_rate": 0.44936708860759494,
+      "mean_prediction": 0.4864671658586582,
+      "prediction_minus_observed": 0.037100077251063235,
+      "hit_rate_week_bootstrap95": [
+        0.3780452353942144,
+        0.5263157894736842
+      ],
+      "bias_week_bootstrap95": [
+        -0.04270193120875837,
+        0.11138289538453781
+      ],
+      "selected_ticket_brier": 0.24638272339395378,
+      "mean_field_size": 13.08860759493671,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 1.0,
+      "seasons": {
+        "winter": 60,
+        "spring": 54,
+        "summer": 21,
+        "autumn": 23
+      }
+    },
+    "VINCENNES | >=2800": {
+      "n": 87,
+      "weeks": 28,
+      "hits": 37,
+      "hit_rate": 0.42528735632183906,
+      "mean_prediction": 0.49045060436040794,
+      "prediction_minus_observed": 0.06516324803856888,
+      "hit_rate_week_bootstrap95": [
+        0.3146067415730337,
+        0.5250063131313132
+      ],
+      "bias_week_bootstrap95": [
+        -0.039686162173082754,
+        0.18683476767302165
+      ],
+      "selected_ticket_brier": 0.24931565372700107,
+      "mean_field_size": 13.126436781609195,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 1.0,
+      "seasons": {
+        "winter": 32,
+        "spring": 25,
+        "summer": 18,
+        "autumn": 12
+      }
+    }
+  },
+  "distance_start": {
+    "2100-2399 | AUTOSTART": {
+      "n": 363,
+      "weeks": 40,
+      "hits": 162,
+      "hit_rate": 0.4462809917355372,
+      "mean_prediction": 0.4984029604316513,
+      "prediction_minus_observed": 0.052121968696114074,
+      "hit_rate_week_bootstrap95": [
+        0.39878319185454997,
+        0.4924936130160011
+      ],
+      "bias_week_bootstrap95": [
+        0.005996363914711919,
+        0.10052599320754292
+      ],
+      "selected_ticket_brier": 0.2440991626253977,
+      "mean_field_size": 13.030303030303031,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.2644628099173554,
+      "seasons": {
+        "winter": 77,
+        "spring": 122,
+        "summer": 129,
+        "autumn": 35
+      }
+    },
+    "2100-2399 | NON_PRECISE": {
+      "n": 93,
+      "weeks": 34,
+      "hits": 51,
+      "hit_rate": 0.5483870967741935,
+      "mean_prediction": 0.47232828944204336,
+      "prediction_minus_observed": -0.07605880733215015,
+      "hit_rate_week_bootstrap95": [
+        0.43564356435643564,
+        0.6666666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.1949149186463487,
+        0.03701501654901758
+      ],
+      "selected_ticket_brier": 0.26141520190810486,
+      "mean_field_size": 12.118279569892474,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.43010752688172044,
+      "seasons": {
+        "winter": 22,
+        "spring": 33,
+        "summer": 26,
+        "autumn": 12
+      }
+    },
+    "2400-2799 | AUTOSTART": {
+      "n": 449,
+      "weeks": 40,
+      "hits": 225,
+      "hit_rate": 0.5011135857461024,
+      "mean_prediction": 0.48773271560996784,
+      "prediction_minus_observed": -0.013380870136134593,
+      "hit_rate_week_bootstrap95": [
+        0.45364735475494966,
+        0.5523194391087207
+      ],
+      "bias_week_bootstrap95": [
+        -0.061607801159834254,
+        0.03186852043572992
+      ],
+      "selected_ticket_brier": 0.24553711824436322,
+      "mean_field_size": 13.015590200445434,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 63,
+        "spring": 178,
+        "summer": 166,
+        "autumn": 42
+      }
+    },
+    "2400-2799 | NON_PRECISE": {
+      "n": 867,
+      "weeks": 40,
+      "hits": 426,
+      "hit_rate": 0.4913494809688581,
+      "mean_prediction": 0.4993378305788892,
+      "prediction_minus_observed": 0.007988349610031087,
+      "hit_rate_week_bootstrap95": [
+        0.45138845594347465,
+        0.5296268026550477
+      ],
+      "bias_week_bootstrap95": [
+        -0.032720505613217,
+        0.04836486908574307
+      ],
+      "selected_ticket_brier": 0.247236916405094,
+      "mean_field_size": 13.359861591695502,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.18223760092272204,
+      "seasons": {
+        "winter": 165,
+        "spring": 306,
+        "summer": 316,
+        "autumn": 80
+      }
+    },
+    "<2100 | AUTOSTART": {
+      "n": 71,
+      "weeks": 27,
+      "hits": 37,
+      "hit_rate": 0.5211267605633803,
+      "mean_prediction": 0.49060678784911066,
+      "prediction_minus_observed": -0.030519972714269594,
+      "hit_rate_week_bootstrap95": [
+        0.43103448275862066,
+        0.5970149253731343
+      ],
+      "bias_week_bootstrap95": [
+        -0.10677336619280701,
+        0.06542942944047668
+      ],
+      "selected_ticket_brier": 0.24354887236187459,
+      "mean_field_size": 12.661971830985916,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 11,
+        "spring": 15,
+        "summer": 33,
+        "autumn": 12
+      }
+    },
+    "<2100 | NON_PRECISE": {
+      "n": 28,
+      "weeks": 13,
+      "hits": 12,
+      "hit_rate": 0.42857142857142855,
+      "mean_prediction": 0.4456099987284142,
+      "prediction_minus_observed": 0.017038570156985677,
+      "hit_rate_week_bootstrap95": [
+        0.2857142857142857,
+        0.5883021390374334
+      ],
+      "bias_week_bootstrap95": [
+        -0.14371969625685282,
+        0.15352578169182088
+      ],
+      "selected_ticket_brier": 0.2623840913338848,
+      "mean_field_size": 12.857142857142858,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 3,
+        "spring": 5,
+        "summer": 15,
+        "autumn": 5
+      }
+    },
+    ">=2800 | AUTOSTART": {
+      "n": 28,
+      "weeks": 15,
+      "hits": 14,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.47816463894666755,
+      "prediction_minus_observed": -0.021835361053332447,
+      "hit_rate_week_bootstrap95": [
+        0.3029545454545455,
+        0.7222701149425289
+      ],
+      "bias_week_bootstrap95": [
+        -0.24125333058807102,
+        0.173253050442239
+      ],
+      "selected_ticket_brier": 0.2481718470287059,
+      "mean_field_size": 13.142857142857142,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 3,
+        "spring": 11,
+        "summer": 11,
+        "autumn": 3
+      }
+    },
+    ">=2800 | NON_PRECISE": {
+      "n": 1116,
+      "weeks": 40,
+      "hits": 552,
+      "hit_rate": 0.4946236559139785,
+      "mean_prediction": 0.5057138732600029,
+      "prediction_minus_observed": 0.011090217346024445,
+      "hit_rate_week_bootstrap95": [
+        0.4613956018703072,
+        0.5266545622283056
+      ],
+      "bias_week_bootstrap95": [
+        -0.020711291887035944,
+        0.04602693130232167
+      ],
+      "selected_ticket_brier": 0.24129416888974498,
+      "mean_field_size": 13.39247311827957,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.07795698924731183,
+      "seasons": {
+        "winter": 182,
+        "spring": 428,
+        "summer": 367,
+        "autumn": 139
+      }
+    }
+  },
+  "venue": {
+    "AGEN LA GARENNE": {
+      "n": 78,
+      "weeks": 14,
+      "hits": 33,
+      "hit_rate": 0.4230769230769231,
+      "mean_prediction": 0.4726684673439945,
+      "prediction_minus_observed": 0.04959154426707141,
+      "hit_rate_week_bootstrap95": [
+        0.3142857142857143,
+        0.5189873417721519
+      ],
+      "bias_week_bootstrap95": [
+        -0.047938533677526415,
+        0.16133773773954058
+      ],
+      "selected_ticket_brier": 0.23757336503670423,
+      "mean_field_size": 13.448717948717949,
+      "autostart_fraction": 0.6282051282051282,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 22,
+        "spring": 38,
+        "summer": 11,
+        "autumn": 7
+      }
+    },
+    "AGON-COUTAINVILLE": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.743278213952606,
+      "prediction_minus_observed": 0.743278213952606,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.743278213952606,
+        0.743278213952606
+      ],
+      "selected_ticket_brier": 0.5524625033365759,
+      "mean_field_size": 18.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "AIX LES BAINS": {
+      "n": 27,
+      "weeks": 3,
+      "hits": 11,
+      "hit_rate": 0.4074074074074074,
+      "mean_prediction": 0.4740373084622592,
+      "prediction_minus_observed": 0.06662990105485184,
+      "hit_rate_week_bootstrap95": [
+        0.2222222222222222,
+        0.5
+      ],
+      "bias_week_bootstrap95": [
+        -0.05179938701392758,
+        0.27128095037305144
+      ],
+      "selected_ticket_brier": 0.2679621810941691,
+      "mean_field_size": 12.777777777777779,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 27
+      }
+    },
+    "AMIENS": {
+      "n": 72,
+      "weeks": 14,
+      "hits": 31,
+      "hit_rate": 0.4305555555555556,
+      "mean_prediction": 0.48384434079233973,
+      "prediction_minus_observed": 0.05328878523678415,
+      "hit_rate_week_bootstrap95": [
+        0.3181818181818182,
+        0.5344827586206896
+      ],
+      "bias_week_bootstrap95": [
+        -0.050270813421867136,
+        0.15909458719112288
+      ],
+      "selected_ticket_brier": 0.24761986196914051,
+      "mean_field_size": 12.791666666666666,
+      "autostart_fraction": 0.5555555555555556,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 4,
+        "spring": 28,
+        "summer": 28,
+        "autumn": 12
+      }
+    },
+    "ANGERS": {
+      "n": 31,
+      "weeks": 8,
+      "hits": 12,
+      "hit_rate": 0.3870967741935484,
+      "mean_prediction": 0.4908484694766081,
+      "prediction_minus_observed": 0.10375169528305972,
+      "hit_rate_week_bootstrap95": [
+        0.21739130434782608,
+        0.5428571428571428
+      ],
+      "bias_week_bootstrap95": [
+        -0.07763079385277181,
+        0.28824656555574885
+      ],
+      "selected_ticket_brier": 0.25013913316783715,
+      "mean_field_size": 13.774193548387096,
+      "autostart_fraction": 0.22580645161290322,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 15,
+        "spring": 10,
+        "autumn": 6
+      }
+    },
+    "ARGENTAN": {
+      "n": 53,
+      "weeks": 11,
+      "hits": 19,
+      "hit_rate": 0.3584905660377358,
+      "mean_prediction": 0.4804883268522698,
+      "prediction_minus_observed": 0.12199776081453395,
+      "hit_rate_week_bootstrap95": [
+        0.2553191489361702,
+        0.4528301886792453
+      ],
+      "bias_week_bootstrap95": [
+        0.028398595041753308,
+        0.22134308546338993
+      ],
+      "selected_ticket_brier": 0.23492118541376486,
+      "mean_field_size": 14.584905660377359,
+      "autostart_fraction": 0.3584905660377358,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 19,
+        "spring": 18,
+        "summer": 10,
+        "autumn": 6
+      }
+    },
+    "AVIGNON": {
+      "n": 5,
+      "weeks": 5,
+      "hits": 3,
+      "hit_rate": 0.6,
+      "mean_prediction": 0.6246570434605723,
+      "prediction_minus_observed": 0.024657043460572292,
+      "hit_rate_week_bootstrap95": [
+        0.2,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.4002674269889801,
+        0.4479014604236175
+      ],
+      "selected_ticket_brier": 0.24420131620959468,
+      "mean_field_size": 16.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 3,
+        "summer": 2
+      }
+    },
+    "BEAUMONT DE LOMAGNE": {
+      "n": 50,
+      "weeks": 11,
+      "hits": 25,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.4812920403114647,
+      "prediction_minus_observed": -0.01870795968853528,
+      "hit_rate_week_bootstrap95": [
+        0.41509433962264153,
+        0.5778333333333335
+      ],
+      "bias_week_bootstrap95": [
+        -0.1028429812212131,
+        0.06851525505896074
+      ],
+      "selected_ticket_brier": 0.24878211389520216,
+      "mean_field_size": 13.88,
+      "autostart_fraction": 0.44,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 27,
+        "summer": 12,
+        "autumn": 11
+      }
+    },
+    "BERNAY": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.7427949060967886,
+      "prediction_minus_observed": -0.25720509390321145,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.25720509390321145,
+        -0.25720509390321145
+      ],
+      "selected_ticket_brier": 0.06615446032975981,
+      "mean_field_size": 18.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1
+      }
+    },
+    "BIARRITZ": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.42518960330251865,
+      "prediction_minus_observed": 0.42518960330251865,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.42518960330251865,
+        0.42518960330251865
+      ],
+      "selected_ticket_brier": 0.1807861987565532,
+      "mean_field_size": 13.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "BOLLENE": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.5189067663245109,
+      "prediction_minus_observed": -0.48109323367548906,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.48109323367548906,
+        -0.48109323367548906
+      ],
+      "selected_ticket_brier": 0.2314506994883387,
+      "mean_field_size": 15.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "BORELY": {
+      "n": 74,
+      "weeks": 15,
+      "hits": 48,
+      "hit_rate": 0.6486486486486487,
+      "mean_prediction": 0.5828627692199277,
+      "prediction_minus_observed": -0.06578587942872094,
+      "hit_rate_week_bootstrap95": [
+        0.5256410256410257,
+        0.7837837837837838
+      ],
+      "bias_week_bootstrap95": [
+        -0.20542219289270502,
+        0.0549556585999344
+      ],
+      "selected_ticket_brier": 0.22393954621993217,
+      "mean_field_size": 12.567567567567568,
+      "autostart_fraction": 0.43243243243243246,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 47,
+        "summer": 20,
+        "autumn": 7
+      }
+    },
+    "CABOURG": {
+      "n": 85,
+      "weeks": 12,
+      "hits": 40,
+      "hit_rate": 0.47058823529411764,
+      "mean_prediction": 0.5032116290424193,
+      "prediction_minus_observed": 0.0326233937483017,
+      "hit_rate_week_bootstrap95": [
+        0.3420969353764157,
+        0.5700357142857143
+      ],
+      "bias_week_bootstrap95": [
+        -0.07974749161564512,
+        0.17594589726413987
+      ],
+      "selected_ticket_brier": 0.25414633056848135,
+      "mean_field_size": 13.541176470588235,
+      "autostart_fraction": 0.29411764705882354,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 2,
+        "summer": 71,
+        "autumn": 12
+      }
+    },
+    "CAEN": {
+      "n": 66,
+      "weeks": 14,
+      "hits": 24,
+      "hit_rate": 0.36363636363636365,
+      "mean_prediction": 0.5006867846231101,
+      "prediction_minus_observed": 0.13705042098674647,
+      "hit_rate_week_bootstrap95": [
+        0.22580645161290322,
+        0.5172733077905494
+      ],
+      "bias_week_bootstrap95": [
+        -0.016661435054768886,
+        0.2728418898866979
+      ],
+      "selected_ticket_brier": 0.2534007322758276,
+      "mean_field_size": 14.0,
+      "autostart_fraction": 0.3939393939393939,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 52,
+        "summer": 13,
+        "autumn": 1
+      }
+    },
+    "CAGNES/MER": {
+      "n": 151,
+      "weeks": 17,
+      "hits": 76,
+      "hit_rate": 0.5033112582781457,
+      "mean_prediction": 0.5613958949765204,
+      "prediction_minus_observed": 0.058084636698374714,
+      "hit_rate_week_bootstrap95": [
+        0.40880388376256716,
+        0.5931196120689656
+      ],
+      "bias_week_bootstrap95": [
+        -0.030032440149611105,
+        0.14829303624940762
+      ],
+      "selected_ticket_brier": 0.24122716898371063,
+      "mean_field_size": 12.152317880794701,
+      "autostart_fraction": 0.4768211920529801,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 68,
+        "spring": 19,
+        "summer": 64
+      }
+    },
+    "CARPENTRAS": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 2,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.45374088376633914,
+      "prediction_minus_observed": -0.5462591162336609,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5719013571590652,
+        -0.5206168753082566
+      ],
+      "selected_ticket_brier": 0.2990565465880567,
+      "mean_field_size": 15.5,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 2
+      }
+    },
+    "CASTILLONNES": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.4908624707906706,
+      "prediction_minus_observed": 0.4908624707906706,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.4908624707906706,
+        0.4908624707906706
+      ],
+      "selected_ticket_brier": 0.24094596523072193,
+      "mean_field_size": 14.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1
+      }
+    },
+    "CAVAILLON": {
+      "n": 19,
+      "weeks": 6,
+      "hits": 5,
+      "hit_rate": 0.2631578947368421,
+      "mean_prediction": 0.5140984668940349,
+      "prediction_minus_observed": 0.25094057215719284,
+      "hit_rate_week_bootstrap95": [
+        0.14285714285714285,
+        0.375
+      ],
+      "bias_week_bootstrap95": [
+        0.12148307258644035,
+        0.377231350126816
+      ],
+      "selected_ticket_brier": 0.2811419231851715,
+      "mean_field_size": 13.157894736842104,
+      "autostart_fraction": 0.3157894736842105,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 13,
+        "summer": 2,
+        "autumn": 4
+      }
+    },
+    "CHARTRES": {
+      "n": 41,
+      "weeks": 9,
+      "hits": 21,
+      "hit_rate": 0.5121951219512195,
+      "mean_prediction": 0.526232783369029,
+      "prediction_minus_observed": 0.014037661417809488,
+      "hit_rate_week_bootstrap95": [
+        0.37209302325581395,
+        0.627906976744186
+      ],
+      "bias_week_bootstrap95": [
+        -0.11142498906776026,
+        0.14236351620271004
+      ],
+      "selected_ticket_brier": 0.21585267970302058,
+      "mean_field_size": 12.560975609756097,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 29,
+        "summer": 8,
+        "autumn": 4
+      }
+    },
+    "CHATEAUBRIANT": {
+      "n": 30,
+      "weeks": 6,
+      "hits": 19,
+      "hit_rate": 0.6333333333333333,
+      "mean_prediction": 0.5527632619529057,
+      "prediction_minus_observed": -0.0805700713804276,
+      "hit_rate_week_bootstrap95": [
+        0.39285714285714285,
+        0.8529411764705882
+      ],
+      "bias_week_bootstrap95": [
+        -0.29766250407577044,
+        0.1531245342564319
+      ],
+      "selected_ticket_brier": 0.24497350533830026,
+      "mean_field_size": 13.3,
+      "autostart_fraction": 0.23333333333333334,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 8,
+        "spring": 7,
+        "summer": 10,
+        "autumn": 5
+      }
+    },
+    "CHATEAUROUX": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 1,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.5840632822315617,
+      "prediction_minus_observed": 0.08406328223156168,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.6162106810931753,
+        0.7843372455562987
+      ],
+      "selected_ticket_brier": 0.4974502591300783,
+      "mean_field_size": 14.5,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "autumn": 2
+      }
+    },
+    "CHATELAILLON": {
+      "n": 29,
+      "weeks": 8,
+      "hits": 17,
+      "hit_rate": 0.5862068965517241,
+      "mean_prediction": 0.563312129662997,
+      "prediction_minus_observed": -0.022894766888727047,
+      "hit_rate_week_bootstrap95": [
+        0.45454545454545453,
+        0.6666666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.10585398997460455,
+        0.11028495221127532
+      ],
+      "selected_ticket_brier": 0.2273245352514952,
+      "mean_field_size": 12.241379310344827,
+      "autostart_fraction": 0.4827586206896552,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 22,
+        "summer": 7
+      }
+    },
+    "CHATILLON/CHALARONNE": {
+      "n": 3,
+      "weeks": 3,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.48877209992827186,
+      "prediction_minus_observed": 0.48877209992827186,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.4621352359813669,
+        0.5326909111047923
+      ],
+      "selected_ticket_brier": 0.2398771824003366,
+      "mean_field_size": 15.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 3
+      }
+    },
+    "CHERBOURG": {
+      "n": 27,
+      "weeks": 6,
+      "hits": 13,
+      "hit_rate": 0.48148148148148145,
+      "mean_prediction": 0.4654622728249966,
+      "prediction_minus_observed": -0.016019208656484873,
+      "hit_rate_week_bootstrap95": [
+        0.25806451612903225,
+        0.75
+      ],
+      "bias_week_bootstrap95": [
+        -0.2659883524538858,
+        0.18964500307422036
+      ],
+      "selected_ticket_brier": 0.24510228515637633,
+      "mean_field_size": 14.703703703703704,
+      "autostart_fraction": 0.07407407407407407,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 4,
+        "spring": 13,
+        "summer": 10
+      }
+    },
+    "CHOLET": {
+      "n": 45,
+      "weeks": 7,
+      "hits": 21,
+      "hit_rate": 0.4666666666666667,
+      "mean_prediction": 0.4807598288267219,
+      "prediction_minus_observed": 0.01409316216005524,
+      "hit_rate_week_bootstrap95": [
+        0.3617021276595745,
+        0.5813953488372093
+      ],
+      "bias_week_bootstrap95": [
+        -0.09577016628364683,
+        0.12975863533149684
+      ],
+      "selected_ticket_brier": 0.23823605713304227,
+      "mean_field_size": 13.88888888888889,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 20,
+        "summer": 7,
+        "autumn": 18
+      }
+    },
+    "CLAIREFONTAINE": {
+      "n": 15,
+      "weeks": 2,
+      "hits": 11,
+      "hit_rate": 0.7333333333333333,
+      "mean_prediction": 0.509842796945011,
+      "prediction_minus_observed": -0.22349053638832228,
+      "hit_rate_week_bootstrap95": [
+        0.7,
+        0.8
+      ],
+      "bias_week_bootstrap95": [
+        -0.24159737830117045,
+        -0.2144371154318982
+      ],
+      "selected_ticket_brier": 0.22327060404262952,
+      "mean_field_size": 13.066666666666666,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 15
+      }
+    },
+    "CORDEMAIS": {
+      "n": 19,
+      "weeks": 5,
+      "hits": 9,
+      "hit_rate": 0.47368421052631576,
+      "mean_prediction": 0.5139751260327289,
+      "prediction_minus_observed": 0.040290915506413116,
+      "hit_rate_week_bootstrap95": [
+        0.35,
+        0.5714285714285714
+      ],
+      "bias_week_bootstrap95": [
+        -0.07238250524021231,
+        0.15061165999694362
+      ],
+      "selected_ticket_brier": 0.23244231179991937,
+      "mean_field_size": 13.105263157894736,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 10,
+        "spring": 9
+      }
+    },
+    "CRAON": {
+      "n": 12,
+      "weeks": 5,
+      "hits": 6,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.4710983898469774,
+      "prediction_minus_observed": -0.028901610153022617,
+      "hit_rate_week_bootstrap95": [
+        0.4,
+        0.7142857142857143
+      ],
+      "bias_week_bootstrap95": [
+        -0.22866029649980602,
+        0.12109266867882133
+      ],
+      "selected_ticket_brier": 0.21629926701135635,
+      "mean_field_size": 16.75,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 6,
+        "autumn": 6
+      }
+    },
+    "DIVONNE LES BAINS": {
+      "n": 26,
+      "weeks": 3,
+      "hits": 16,
+      "hit_rate": 0.6153846153846154,
+      "mean_prediction": 0.5350537490552795,
+      "prediction_minus_observed": -0.08033086632933595,
+      "hit_rate_week_bootstrap95": [
+        0.3333333333333333,
+        0.7647058823529411
+      ],
+      "bias_week_bootstrap95": [
+        -0.21738081513173618,
+        0.254608452628328
+      ],
+      "selected_ticket_brier": 0.2396134685771893,
+      "mean_field_size": 13.076923076923077,
+      "autostart_fraction": 0.6923076923076923,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 26
+      }
+    },
+    "EAUZE": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.42191184278654026,
+      "prediction_minus_observed": -0.5780881572134597,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5780881572134597,
+        -0.5780881572134597
+      ],
+      "selected_ticket_brier": 0.33418591751045373,
+      "mean_field_size": 16.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "ECOMMOY": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.7617680430307014,
+      "prediction_minus_observed": -0.23823195696929855,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.23823195696929855,
+        -0.23823195696929855
+      ],
+      "selected_ticket_brier": 0.05675446532142172,
+      "mean_field_size": 18.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1
+      }
+    },
+    "ENGHIEN": {
+      "n": 139,
+      "weeks": 18,
+      "hits": 58,
+      "hit_rate": 0.4172661870503597,
+      "mean_prediction": 0.491250733857247,
+      "prediction_minus_observed": 0.07398454680688726,
+      "hit_rate_week_bootstrap95": [
+        0.32846442967643535,
+        0.5051800941835307
+      ],
+      "bias_week_bootstrap95": [
+        -0.011463807312497281,
+        0.1672853232892984
+      ],
+      "selected_ticket_brier": 0.24482534341807236,
+      "mean_field_size": 12.726618705035971,
+      "autostart_fraction": 0.381294964028777,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 34,
+        "summer": 99,
+        "autumn": 6
+      }
+    },
+    "ERBRAY": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.9016026094188202,
+      "prediction_minus_observed": -0.0983973905811798,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.0983973905811798,
+        -0.0983973905811798
+      ],
+      "selected_ticket_brier": 0.009682046473185251,
+      "mean_field_size": 16.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "FEURS": {
+      "n": 48,
+      "weeks": 9,
+      "hits": 28,
+      "hit_rate": 0.5833333333333334,
+      "mean_prediction": 0.5090915696700536,
+      "prediction_minus_observed": -0.07424176366327973,
+      "hit_rate_week_bootstrap95": [
+        0.40474924012158053,
+        0.75
+      ],
+      "bias_week_bootstrap95": [
+        -0.23350557175220651,
+        0.09810499202601719
+      ],
+      "selected_ticket_brier": 0.21284880327376718,
+      "mean_field_size": 12.5625,
+      "autostart_fraction": 0.25,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 12,
+        "summer": 21,
+        "autumn": 15
+      }
+    },
+    "GRAIGNES": {
+      "n": 85,
+      "weeks": 18,
+      "hits": 46,
+      "hit_rate": 0.5411764705882353,
+      "mean_prediction": 0.47642650569512507,
+      "prediction_minus_observed": -0.06474996489311019,
+      "hit_rate_week_bootstrap95": [
+        0.41975308641975306,
+        0.651685393258427
+      ],
+      "bias_week_bootstrap95": [
+        -0.18835932882562248,
+        0.06541635772597693
+      ],
+      "selected_ticket_brier": 0.2659672961347747,
+      "mean_field_size": 13.105882352941176,
+      "autostart_fraction": 0.2235294117647059,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 16,
+        "spring": 40,
+        "summer": 29
+      }
+    },
+    "HYERES": {
+      "n": 54,
+      "weeks": 16,
+      "hits": 33,
+      "hit_rate": 0.6111111111111112,
+      "mean_prediction": 0.5199345984282887,
+      "prediction_minus_observed": -0.09117651268282245,
+      "hit_rate_week_bootstrap95": [
+        0.5,
+        0.7241594827586207
+      ],
+      "bias_week_bootstrap95": [
+        -0.20191372773122013,
+        0.013575444434737035
+      ],
+      "selected_ticket_brier": 0.234428634558806,
+      "mean_field_size": 12.11111111111111,
+      "autostart_fraction": 0.7037037037037037,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 5,
+        "spring": 16,
+        "summer": 29,
+        "autumn": 4
+      }
+    },
+    "JULLIANGES": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 1,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.5366823225735667,
+      "prediction_minus_observed": 0.03668232257356674,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.479419514808902,
+        0.5527841599560355
+      ],
+      "selected_ticket_brier": 0.2677066993389514,
+      "mean_field_size": 14.5,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 2
+      }
+    },
+    "LA CAPELLE": {
+      "n": 77,
+      "weeks": 15,
+      "hits": 49,
+      "hit_rate": 0.6363636363636364,
+      "mean_prediction": 0.5066363720093783,
+      "prediction_minus_observed": -0.12972726435425808,
+      "hit_rate_week_bootstrap95": [
+        0.5372952311612669,
+        0.7362637362637363
+      ],
+      "bias_week_bootstrap95": [
+        -0.23169787337513553,
+        -0.030417634725589213
+      ],
+      "selected_ticket_brier": 0.24308963176179635,
+      "mean_field_size": 12.922077922077921,
+      "autostart_fraction": 0.4025974025974026,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 31,
+        "summer": 35,
+        "autumn": 11
+      }
+    },
+    "LA CEPIERE": {
+      "n": 83,
+      "weeks": 20,
+      "hits": 42,
+      "hit_rate": 0.5060240963855421,
+      "mean_prediction": 0.466886004120482,
+      "prediction_minus_observed": -0.039138092265060154,
+      "hit_rate_week_bootstrap95": [
+        0.4085844651952462,
+        0.6119402985074627
+      ],
+      "bias_week_bootstrap95": [
+        -0.13734251933773928,
+        0.057243466934030734
+      ],
+      "selected_ticket_brier": 0.2317299522578222,
+      "mean_field_size": 12.987951807228916,
+      "autostart_fraction": 0.5542168674698795,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 30,
+        "spring": 40,
+        "summer": 5,
+        "autumn": 8
+      }
+    },
+    "LA CLAYETTE": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.3990714367470206,
+      "prediction_minus_observed": 0.3990714367470206,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.3990714367470206,
+        0.3990714367470206
+      ],
+      "selected_ticket_brier": 0.15925801162733128,
+      "mean_field_size": 14.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "LA GACILLY": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.45039097689367463,
+      "prediction_minus_observed": -0.5496090231063253,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5496090231063253,
+        -0.5496090231063253
+      ],
+      "selected_ticket_brier": 0.30207007827988924,
+      "mean_field_size": 16.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "LANGON-LIBOURNE": {
+      "n": 7,
+      "weeks": 1,
+      "hits": 3,
+      "hit_rate": 0.42857142857142855,
+      "mean_prediction": 0.4474950639508609,
+      "prediction_minus_observed": 0.01892363537943237,
+      "hit_rate_week_bootstrap95": [
+        0.42857142857142855,
+        0.42857142857142855
+      ],
+      "bias_week_bootstrap95": [
+        0.01892363537943233,
+        0.01892363537943233
+      ],
+      "selected_ticket_brier": 0.20181893629162603,
+      "mean_field_size": 13.714285714285714,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 7
+      }
+    },
+    "LAVAL": {
+      "n": 99,
+      "weeks": 20,
+      "hits": 51,
+      "hit_rate": 0.5151515151515151,
+      "mean_prediction": 0.4910436720386557,
+      "prediction_minus_observed": -0.02410784311285946,
+      "hit_rate_week_bootstrap95": [
+        0.44535480859010274,
+        0.5909090909090909
+      ],
+      "bias_week_bootstrap95": [
+        -0.09919334939004791,
+        0.048258669290990895
+      ],
+      "selected_ticket_brier": 0.2590515800766683,
+      "mean_field_size": 13.929292929292929,
+      "autostart_fraction": 0.09090909090909091,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 13,
+        "spring": 31,
+        "summer": 36,
+        "autumn": 19
+      }
+    },
+    "LE BOUSCAT": {
+      "n": 31,
+      "weeks": 8,
+      "hits": 11,
+      "hit_rate": 0.3548387096774194,
+      "mean_prediction": 0.48312794523891683,
+      "prediction_minus_observed": 0.12828923556149746,
+      "hit_rate_week_bootstrap95": [
+        0.18181818181818182,
+        0.5863665389527464
+      ],
+      "bias_week_bootstrap95": [
+        -0.08047681785956654,
+        0.28751333440312654
+      ],
+      "selected_ticket_brier": 0.23685454391130625,
+      "mean_field_size": 13.387096774193548,
+      "autostart_fraction": 0.41935483870967744,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 24,
+        "spring": 7
+      }
+    },
+    "LE CROISE LAROCHE": {
+      "n": 68,
+      "weeks": 12,
+      "hits": 31,
+      "hit_rate": 0.45588235294117646,
+      "mean_prediction": 0.45643875524053273,
+      "prediction_minus_observed": 0.0005564022993562734,
+      "hit_rate_week_bootstrap95": [
+        0.3827069716775599,
+        0.55
+      ],
+      "bias_week_bootstrap95": [
+        -0.09523874114555482,
+        0.0776735574886604
+      ],
+      "selected_ticket_brier": 0.25686979056934967,
+      "mean_field_size": 13.705882352941176,
+      "autostart_fraction": 0.5441176470588235,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 5,
+        "spring": 36,
+        "summer": 11,
+        "autumn": 16
+      }
+    },
+    "LE MANS": {
+      "n": 24,
+      "weeks": 4,
+      "hits": 12,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.4632232932268802,
+      "prediction_minus_observed": -0.03677670677311978,
+      "hit_rate_week_bootstrap95": [
+        0.2857142857142857,
+        0.6666666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.21524214842010214,
+        0.19019601419739923
+      ],
+      "selected_ticket_brier": 0.2547822659367048,
+      "mean_field_size": 13.958333333333334,
+      "autostart_fraction": 0.20833333333333334,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 13,
+        "summer": 11
+      }
+    },
+    "LE MONT SAINT MICHEL": {
+      "n": 43,
+      "weeks": 8,
+      "hits": 20,
+      "hit_rate": 0.46511627906976744,
+      "mean_prediction": 0.4733044248740243,
+      "prediction_minus_observed": 0.008188145804256863,
+      "hit_rate_week_bootstrap95": [
+        0.34782608695652173,
+        0.6111111111111112
+      ],
+      "bias_week_bootstrap95": [
+        -0.14153128482663477,
+        0.11721686039733402
+      ],
+      "selected_ticket_brier": 0.2846264672418311,
+      "mean_field_size": 13.581395348837209,
+      "autostart_fraction": 0.06976744186046512,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 3,
+        "spring": 24,
+        "summer": 10,
+        "autumn": 6
+      }
+    },
+    "LE TOUQUET": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 1,
+      "hit_rate": 1.0,
+      "mean_prediction": 0.7179832545875169,
+      "prediction_minus_observed": -0.2820167454124831,
+      "hit_rate_week_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.2820167454124831,
+        -0.2820167454124831
+      ],
+      "selected_ticket_brier": 0.07953344469304932,
+      "mean_field_size": 16.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1
+      }
+    },
+    "LES SABLES D OLONNE": {
+      "n": 66,
+      "weeks": 10,
+      "hits": 40,
+      "hit_rate": 0.6060606060606061,
+      "mean_prediction": 0.5222682060221709,
+      "prediction_minus_observed": -0.08379240003843513,
+      "hit_rate_week_bootstrap95": [
+        0.5070422535211268,
+        0.731718205574913
+      ],
+      "bias_week_bootstrap95": [
+        -0.21955327938243097,
+        0.017411562332440494
+      ],
+      "selected_ticket_brier": 0.24149183577531044,
+      "mean_field_size": 13.106060606060606,
+      "autostart_fraction": 0.5303030303030303,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 55,
+        "autumn": 11
+      }
+    },
+    "LIGNIERES": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 1,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.4295066354560224,
+      "prediction_minus_observed": -0.07049336454397759,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5769996287325025,
+        0.4360128996445474
+      ],
+      "selected_ticket_brier": 0.26151791010694597,
+      "mean_field_size": 14.5,
+      "autostart_fraction": 1.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1,
+        "summer": 1
+      }
+    },
+    "LISIEUX": {
+      "n": 54,
+      "weeks": 11,
+      "hits": 27,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.5012059128471635,
+      "prediction_minus_observed": 0.0012059128471635372,
+      "hit_rate_week_bootstrap95": [
+        0.40350877192982454,
+        0.6041666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.11663079806645972,
+        0.11241432681739093
+      ],
+      "selected_ticket_brier": 0.26653614748646326,
+      "mean_field_size": 13.777777777777779,
+      "autostart_fraction": 0.2962962962962963,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 19,
+        "summer": 30,
+        "autumn": 5
+      }
+    },
+    "LYON LA SOIE": {
+      "n": 44,
+      "weeks": 9,
+      "hits": 20,
+      "hit_rate": 0.45454545454545453,
+      "mean_prediction": 0.5357569687640372,
+      "prediction_minus_observed": 0.08121151421858269,
+      "hit_rate_week_bootstrap95": [
+        0.32608695652173914,
+        0.5777777777777777
+      ],
+      "bias_week_bootstrap95": [
+        -0.06984544508080717,
+        0.23091723960345514
+      ],
+      "selected_ticket_brier": 0.2698042043758453,
+      "mean_field_size": 12.886363636363637,
+      "autostart_fraction": 0.2727272727272727,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 39,
+        "spring": 5
+      }
+    },
+    "LYON-PARILLY": {
+      "n": 53,
+      "weeks": 10,
+      "hits": 31,
+      "hit_rate": 0.5849056603773585,
+      "mean_prediction": 0.4764266245914103,
+      "prediction_minus_observed": -0.1084790357859482,
+      "hit_rate_week_bootstrap95": [
+        0.45614035087719296,
+        0.7358738828202582
+      ],
+      "bias_week_bootstrap95": [
+        -0.25488133657092094,
+        0.01556351077962561
+      ],
+      "selected_ticket_brier": 0.2650862216326905,
+      "mean_field_size": 13.358490566037736,
+      "autostart_fraction": 0.2830188679245283,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 36,
+        "summer": 8,
+        "autumn": 9
+      }
+    },
+    "MACON-CLUNY": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.4369344957420296,
+      "prediction_minus_observed": 0.4369344957420296,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.3400287631568772,
+        0.5338402283271819
+      ],
+      "selected_ticket_brier": 0.2003024745772067,
+      "mean_field_size": 13.5,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 2
+      }
+    },
+    "MAUQUENCHY": {
+      "n": 53,
+      "weeks": 12,
+      "hits": 25,
+      "hit_rate": 0.4716981132075472,
+      "mean_prediction": 0.5061872027224915,
+      "prediction_minus_observed": 0.03448908951494434,
+      "hit_rate_week_bootstrap95": [
+        0.3136948529411765,
+        0.6730769230769231
+      ],
+      "bias_week_bootstrap95": [
+        -0.15722795930941308,
+        0.19597036740158852
+      ],
+      "selected_ticket_brier": 0.24152619941344358,
+      "mean_field_size": 13.433962264150944,
+      "autostart_fraction": 0.4528301886792453,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 20,
+        "spring": 12,
+        "summer": 17,
+        "autumn": 4
+      }
+    },
+    "MAURE DE BRETAGNE": {
+      "n": 19,
+      "weeks": 5,
+      "hits": 9,
+      "hit_rate": 0.47368421052631576,
+      "mean_prediction": 0.494676769551839,
+      "prediction_minus_observed": 0.020992559025523216,
+      "hit_rate_week_bootstrap95": [
+        0.3333333333333333,
+        0.6
+      ],
+      "bias_week_bootstrap95": [
+        -0.10464946880382034,
+        0.15917304554055167
+      ],
+      "selected_ticket_brier": 0.2260384753645432,
+      "mean_field_size": 13.842105263157896,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 7,
+        "spring": 12
+      }
+    },
+    "MESLAY DU MAINE": {
+      "n": 40,
+      "weeks": 8,
+      "hits": 24,
+      "hit_rate": 0.6,
+      "mean_prediction": 0.4975374106246746,
+      "prediction_minus_observed": -0.10246258937532537,
+      "hit_rate_week_bootstrap95": [
+        0.4284954407294833,
+        0.7954545454545454
+      ],
+      "bias_week_bootstrap95": [
+        -0.2658306802587396,
+        0.04702518377139547
+      ],
+      "selected_ticket_brier": 0.22932559809956957,
+      "mean_field_size": 13.55,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 28,
+        "summer": 12
+      }
+    },
+    "MONTAUBAN": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.5140909292072624,
+      "prediction_minus_observed": 0.5140909292072624,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.5140909292072624,
+        0.5140909292072624
+      ],
+      "selected_ticket_brier": 0.2642894834931865,
+      "mean_field_size": 15.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1
+      }
+    },
+    "MONTIER EN DER": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.6477478564106123,
+      "prediction_minus_observed": 0.6477478564106123,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.6477478564106123,
+        0.6477478564106123
+      ],
+      "selected_ticket_brier": 0.4195772854845432,
+      "mean_field_size": 16.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 1
+      }
+    },
+    "MONTLUCON": {
+      "n": 3,
+      "weeks": 3,
+      "hits": 1,
+      "hit_rate": 0.3333333333333333,
+      "mean_prediction": 0.4911216333643682,
+      "prediction_minus_observed": 0.1577883000310349,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.5063248295162749,
+        0.5212086457526932
+      ],
+      "selected_ticket_brier": 0.24607606321548103,
+      "mean_field_size": 15.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 2,
+        "summer": 1
+      }
+    },
+    "NANCY-BRABOIS": {
+      "n": 20,
+      "weeks": 5,
+      "hits": 6,
+      "hit_rate": 0.3,
+      "mean_prediction": 0.45354318778636643,
+      "prediction_minus_observed": 0.15354318778636644,
+      "hit_rate_week_bootstrap95": [
+        0.11538461538461539,
+        0.5
+      ],
+      "bias_week_bootstrap95": [
+        -0.045545926619736075,
+        0.3236225677602245
+      ],
+      "selected_ticket_brier": 0.22932533296346294,
+      "mean_field_size": 12.5,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 16,
+        "summer": 2,
+        "autumn": 2
+      }
+    },
+    "NANTES": {
+      "n": 42,
+      "weeks": 8,
+      "hits": 18,
+      "hit_rate": 0.42857142857142855,
+      "mean_prediction": 0.5305519899385827,
+      "prediction_minus_observed": 0.10198056136715411,
+      "hit_rate_week_bootstrap95": [
+        0.2619047619047619,
+        0.6046511627906976
+      ],
+      "bias_week_bootstrap95": [
+        -0.0638121959658125,
+        0.26789924691158545
+      ],
+      "selected_ticket_brier": 0.25324987332548776,
+      "mean_field_size": 13.380952380952381,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 23,
+        "spring": 6,
+        "summer": 7,
+        "autumn": 6
+      }
+    },
+    "NIMES": {
+      "n": 2,
+      "weeks": 2,
+      "hits": 1,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.601992326630485,
+      "prediction_minus_observed": 0.10199232663048496,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        1.0
+      ],
+      "bias_week_bootstrap95": [
+        -0.31227877171122187,
+        0.5162634249721917
+      ],
+      "selected_ticket_brier": 0.1820229776127436,
+      "mean_field_size": 13.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1,
+        "autumn": 1
+      }
+    },
+    "ORAISON": {
+      "n": 3,
+      "weeks": 3,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.4030842104064207,
+      "prediction_minus_observed": 0.4030842104064207,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.39013220768556994,
+        0.4185269869377306
+      ],
+      "selected_ticket_brier": 0.16261435990418482,
+      "mean_field_size": 15.666666666666666,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 2,
+        "autumn": 1
+      }
+    },
+    "PARAY LE MONIAL": {
+      "n": 3,
+      "weeks": 2,
+      "hits": 1,
+      "hit_rate": 0.3333333333333333,
+      "mean_prediction": 0.4367785184163915,
+      "prediction_minus_observed": 0.10344518508305817,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.5
+      ],
+      "bias_week_bootstrap95": [
+        -0.005811379328472921,
+        0.3219583139061203
+      ],
+      "selected_ticket_brier": 0.17553014130924993,
+      "mean_field_size": 15.666666666666666,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 1,
+        "spring": 2
+      }
+    },
+    "PONT DE VIVAUX": {
+      "n": 14,
+      "weeks": 4,
+      "hits": 5,
+      "hit_rate": 0.35714285714285715,
+      "mean_prediction": 0.4811968644518198,
+      "prediction_minus_observed": 0.12405400730896265,
+      "hit_rate_week_bootstrap95": [
+        0.2222222222222222,
+        0.5555555555555556
+      ],
+      "bias_week_bootstrap95": [
+        -0.07129923878750875,
+        0.25585336184319374
+      ],
+      "selected_ticket_brier": 0.22596581392772566,
+      "mean_field_size": 11.857142857142858,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 7,
+        "summer": 7
+      }
+    },
+    "PONTCHATEAU": {
+      "n": 31,
+      "weeks": 6,
+      "hits": 19,
+      "hit_rate": 0.6129032258064516,
+      "mean_prediction": 0.5005450303240049,
+      "prediction_minus_observed": -0.11235819548244674,
+      "hit_rate_week_bootstrap95": [
+        0.5357142857142857,
+        0.6875
+      ],
+      "bias_week_bootstrap95": [
+        -0.18969426537487688,
+        -0.036797622082157706
+      ],
+      "selected_ticket_brier": 0.23419449364049302,
+      "mean_field_size": 14.32258064516129,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 6,
+        "spring": 20,
+        "summer": 5
+      }
+    },
+    "PORNICHET": {
+      "n": 69,
+      "weeks": 10,
+      "hits": 35,
+      "hit_rate": 0.5072463768115942,
+      "mean_prediction": 0.5255128735415662,
+      "prediction_minus_observed": 0.018266496729971937,
+      "hit_rate_week_bootstrap95": [
+        0.4153846153846154,
+        0.5915492957746479
+      ],
+      "bias_week_bootstrap95": [
+        -0.062147933504313954,
+        0.09650955211922474
+      ],
+      "selected_ticket_brier": 0.22999340760862994,
+      "mean_field_size": 13.043478260869565,
+      "autostart_fraction": 0.11594202898550725,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "summer": 63,
+        "autumn": 6
+      }
+    },
+    "RAMBOUILLET": {
+      "n": 41,
+      "weeks": 8,
+      "hits": 17,
+      "hit_rate": 0.4146341463414634,
+      "mean_prediction": 0.44503768588417175,
+      "prediction_minus_observed": 0.030403539542708358,
+      "hit_rate_week_bootstrap95": [
+        0.27906976744186046,
+        0.5715178571428574
+      ],
+      "bias_week_bootstrap95": [
+        -0.14512398730755655,
+        0.15981126529151002
+      ],
+      "selected_ticket_brier": 0.23343825472250224,
+      "mean_field_size": 14.804878048780488,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 23,
+        "summer": 7,
+        "autumn": 11
+      }
+    },
+    "REIMS": {
+      "n": 39,
+      "weeks": 10,
+      "hits": 27,
+      "hit_rate": 0.6923076923076923,
+      "mean_prediction": 0.502449425109147,
+      "prediction_minus_observed": -0.18985826719854526,
+      "hit_rate_week_bootstrap95": [
+        0.5714285714285714,
+        0.8518790849673203
+      ],
+      "bias_week_bootstrap95": [
+        -0.354159952809693,
+        -0.06365462571082993
+      ],
+      "selected_ticket_brier": 0.24985076874468845,
+      "mean_field_size": 11.846153846153847,
+      "autostart_fraction": 0.46153846153846156,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 30,
+        "summer": 7,
+        "autumn": 2
+      }
+    },
+    "SAINT BRIEUC": {
+      "n": 14,
+      "weeks": 4,
+      "hits": 7,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.5105433562560473,
+      "prediction_minus_observed": 0.010543356256047298,
+      "hit_rate_week_bootstrap95": [
+        0.375,
+        0.6666666666666666
+      ],
+      "bias_week_bootstrap95": [
+        -0.17233570846405252,
+        0.1477026547961222
+      ],
+      "selected_ticket_brier": 0.24945654516860388,
+      "mean_field_size": 13.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 9,
+        "spring": 5
+      }
+    },
+    "SAINT GALMIER": {
+      "n": 46,
+      "weeks": 10,
+      "hits": 18,
+      "hit_rate": 0.391304347826087,
+      "mean_prediction": 0.47132085639683535,
+      "prediction_minus_observed": 0.08001650857074838,
+      "hit_rate_week_bootstrap95": [
+        0.25,
+        0.5319148936170213
+      ],
+      "bias_week_bootstrap95": [
+        -0.06114261482040417,
+        0.21804156365792324
+      ],
+      "selected_ticket_brier": 0.2398366943729931,
+      "mean_field_size": 13.304347826086957,
+      "autostart_fraction": 0.30434782608695654,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 17,
+        "spring": 10,
+        "summer": 19
+      }
+    },
+    "SAINT MALO": {
+      "n": 43,
+      "weeks": 7,
+      "hits": 20,
+      "hit_rate": 0.46511627906976744,
+      "mean_prediction": 0.44628412636802856,
+      "prediction_minus_observed": -0.01883215270173888,
+      "hit_rate_week_bootstrap95": [
+        0.3424657534246575,
+        0.6774193548387096
+      ],
+      "bias_week_bootstrap95": [
+        -0.24232037185286542,
+        0.1149953158994903
+      ],
+      "selected_ticket_brier": 0.2523937247482051,
+      "mean_field_size": 13.348837209302326,
+      "autostart_fraction": 0.09302325581395349,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 19,
+        "summer": 23,
+        "autumn": 1
+      }
+    },
+    "SALON DE PROVENCE": {
+      "n": 20,
+      "weeks": 4,
+      "hits": 13,
+      "hit_rate": 0.65,
+      "mean_prediction": 0.484516793619097,
+      "prediction_minus_observed": -0.16548320638090303,
+      "hit_rate_week_bootstrap95": [
+        0.6,
+        0.7058823529411765
+      ],
+      "bias_week_bootstrap95": [
+        -0.18924794218492705,
+        -0.14038087190045717
+      ],
+      "selected_ticket_brier": 0.23923299621335908,
+      "mean_field_size": 12.1,
+      "autostart_fraction": 0.4,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 10,
+        "summer": 6,
+        "autumn": 4
+      }
+    },
+    "STRASBOURG": {
+      "n": 21,
+      "weeks": 5,
+      "hits": 13,
+      "hit_rate": 0.6190476190476191,
+      "mean_prediction": 0.5124110478414705,
+      "prediction_minus_observed": -0.10663657120614856,
+      "hit_rate_week_bootstrap95": [
+        0.4,
+        0.8636363636363636
+      ],
+      "bias_week_bootstrap95": [
+        -0.34609275893112695,
+        0.10862438746239614
+      ],
+      "selected_ticket_brier": 0.22549274204059022,
+      "mean_field_size": 11.476190476190476,
+      "autostart_fraction": 0.19047619047619047,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 12,
+        "summer": 9
+      }
+    },
+    "VICHY": {
+      "n": 96,
+      "weeks": 14,
+      "hits": 52,
+      "hit_rate": 0.5416666666666666,
+      "mean_prediction": 0.49755005822947407,
+      "prediction_minus_observed": -0.04411660843719256,
+      "hit_rate_week_bootstrap95": [
+        0.4326923076923077,
+        0.6760904134484327
+      ],
+      "bias_week_bootstrap95": [
+        -0.17353099023926255,
+        0.059048734600810254
+      ],
+      "selected_ticket_brier": 0.25946988340815064,
+      "mean_field_size": 12.510416666666666,
+      "autostart_fraction": 0.4270833333333333,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 25,
+        "summer": 57,
+        "autumn": 14
+      }
+    },
+    "VINCENNES": {
+      "n": 381,
+      "weeks": 30,
+      "hits": 165,
+      "hit_rate": 0.4330708661417323,
+      "mean_prediction": 0.4831251605422099,
+      "prediction_minus_observed": 0.050054294400477595,
+      "hit_rate_week_bootstrap95": [
+        0.3858667430009031,
+        0.48248376197963466
+      ],
+      "bias_week_bootstrap95": [
+        0.0004939170942163248,
+        0.0995805805231411
+      ],
+      "selected_ticket_brier": 0.2497912174831833,
+      "mean_field_size": 13.115485564304462,
+      "autostart_fraction": 0.25196850393700787,
+      "vincennes_fraction": 1.0,
+      "seasons": {
+        "winter": 145,
+        "spring": 122,
+        "summer": 60,
+        "autumn": 54
+      }
+    },
+    "VIRE": {
+      "n": 58,
+      "weeks": 9,
+      "hits": 29,
+      "hit_rate": 0.5,
+      "mean_prediction": 0.47882288815274004,
+      "prediction_minus_observed": -0.021177111847259955,
+      "hit_rate_week_bootstrap95": [
+        0.38461538461538464,
+        0.6521739130434783
+      ],
+      "bias_week_bootstrap95": [
+        -0.1764838325262802,
+        0.09869220062853816
+      ],
+      "selected_ticket_brier": 0.21601364547757346,
+      "mean_field_size": 14.39655172413793,
+      "autostart_fraction": 0.15517241379310345,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "winter": 4,
+        "spring": 30,
+        "summer": 13,
+        "autumn": 11
+      }
+    },
+    "VITTEAUX": {
+      "n": 1,
+      "weeks": 1,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "mean_prediction": 0.46320731273366283,
+      "prediction_minus_observed": 0.46320731273366283,
+      "hit_rate_week_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bias_week_bootstrap95": [
+        0.46320731273366283,
+        0.46320731273366283
+      ],
+      "selected_ticket_brier": 0.2145610145699413,
+      "mean_field_size": 11.0,
+      "autostart_fraction": 0.0,
+      "vincennes_fraction": 0.0,
+      "seasons": {
+        "spring": 1
+      }
+    }
+  },
+  "adjusted_venue": [
+    {
+      "strata_fields": [
+        "band"
+      ],
+      "strata": 3,
+      "n_common_support": 2916,
+      "n_by_group": [
+        381,
+        2535
+      ],
+      "vincennes_standardized_hit": 0.4351898049720858,
+      "other_standardized_hit": 0.49862057488053907,
+      "standardized_predictions": [
+        0.48616735368635416,
+        0.5010612580964924
+      ],
+      "other_minus_vincennes": 0.06343076990845326,
+      "difference_week_bootstrap95": [
+        0.01210673710692652,
+        0.11773784531499928
+      ],
+      "valid_bootstrap_replicates": 3000,
+      "note": "Pooled weights on overlapping strata with >=10 races per group; descriptive, not causal."
+    },
+    {
+      "strata_fields": [
+        "band",
+        "start",
+        "field_band",
+        "season"
+      ],
+      "strata": 13,
+      "n_common_support": 1131,
+      "n_by_group": [
+        203,
+        928
+      ],
+      "vincennes_standardized_hit": 0.4937873620632242,
+      "other_standardized_hit": 0.5021987688376061,
+      "standardized_predictions": [
+        0.49810379482168277,
+        0.5113682872812414
+      ],
+      "other_minus_vincennes": 0.008411406774381847,
+      "difference_week_bootstrap95": [
+        -0.07990882158386754,
+        0.07143256623889024
+      ],
+      "valid_bootstrap_replicates": 2899,
+      "note": "Pooled weights on overlapping strata with >=10 races per group; descriptive, not causal."
+    }
+  ],
+  "limits": [
+    "No causal distance effect: distance, track geometry, race class, start method, season and field composition may confound.",
+    "2026 results previously inspected; subgroup discovery exploratory, intervals not corrected for multiple comparisons.",
+    "No price dataset joined: hit rates and calibration cannot establish value or ROI.",
+    "Only classic maximum-probability place tickets, 10-20 runners, no non-runners, unique known top4.",
+    "Weekly blocks retain some dependence through repeated horses; tiny cells and few-week intervals unreliable.",
+    "UNKNOWN start type is never assumed to be a volte start."
+  ]
+}
