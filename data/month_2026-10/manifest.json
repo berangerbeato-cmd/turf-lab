@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "status": "RUNNING",
+  "status": "COLLECTED",
   "days": [
     {
       "date": "2026-10-01",
@@ -2149,5 +2149,95 @@
   },
   "participants": 3310,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
-  "model_status": "NO BET; no training in this experiment"
+  "model_status": "NO BET; no training in this experiment",
+  "field_availability_retained_participants": {
+    "idCheval": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    },
+    "nomMere": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    },
+    "nomPere": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    },
+    "driver": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    },
+    "entraineur": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    },
+    "musique": {
+      "nonempty": 3263,
+      "denominator": 3310,
+      "fraction": 0.9858006042296072
+    },
+    "ferrure": {
+      "nonempty": 0,
+      "denominator": 3310,
+      "fraction": 0.0
+    },
+    "reductionKilometrique": {
+      "nonempty": 2423,
+      "denominator": 3310,
+      "fraction": 0.73202416918429
+    },
+    "tempsObtenu": {
+      "nonempty": 2423,
+      "denominator": 3310,
+      "fraction": 0.73202416918429
+    },
+    "age": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    },
+    "sexe": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    },
+    "gainsParticipant": {
+      "nonempty": 3310,
+      "denominator": 3310,
+      "fraction": 1.0
+    }
+  },
+  "requests_this_run": 27,
+  "venues": {
+    "CABOURG": 15,
+    "VINCENNES": 24,
+    "BORELY": 7,
+    "GRAIGNES": 14,
+    "LAVAL": 7,
+    "AMIENS": 8,
+    "BEAUMONT DE LOMAGNE": 8,
+    "AGEN LA GARENNE": 8,
+    "LYON-PARILLY": 15,
+    "NIMES": 1,
+    "CORDEMAIS": 9,
+    "ENGHIEN": 30,
+    "CAEN": 15,
+    "LA CAPELLE": 7,
+    "HYERES": 7,
+    "REIMS": 13,
+    "PONTCHATEAU": 7,
+    "LA CEPIERE": 7,
+    "RAMBOUILLET": 7,
+    "CAVAILLON": 4,
+    "PARAY LE MONIAL": 1,
+    "LISIEUX": 9,
+    "LE CROISE LAROCHE": 6,
+    "CHARTRES": 7
+  },
+  "candidate_races": 236
 }
