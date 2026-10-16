@@ -109,6 +109,16 @@
       "venue": "REIMS",
       "distance_m": 2550,
       "start_type": "NON_PRECISE"
+    },
+    "2026-10-15_R3C1": {
+      "status": "QUARANTINE",
+      "reason": "field_changed_or_identity_mismatch",
+      "prediction_file": "predictions/2026-10-15/2026-10-15_R3C1_20261014T070403953647Z/prediction.json",
+      "evaluated_at": "2026-10-16T06:55:29.054176+00:00",
+      "date": "2026-10-15",
+      "venue": "CHARTRES",
+      "distance_m": 2825,
+      "start_type": "NON_PRECISE"
     }
   },
   "capture_log": {
@@ -139,6 +149,11 @@
       "status": "CAPTURED",
       "returncode": 0,
       "log": "200 2026-10-16_programme\n200 2026-10-16_R2C1_participants\n200 2026-10-16_R2C1_performances_pretty\npredictions/2026-10-16/2026-10-16_R2C1_20261015T065626202817Z\n"
+    },
+    "2026-10-17_R10C1": {
+      "status": "CAPTURED",
+      "returncode": 0,
+      "log": "200 2026-10-17_programme\n200 2026-10-17_R10C1_participants\n200 2026-10-17_R10C1_performances_pretty\npredictions/2026-10-17/2026-10-17_R10C1_20261016T065532740786Z\n"
     }
   },
   "summary": {
@@ -155,5 +170,5 @@
     },
     "note": "No result exists before the race; no ROI, no tuning, no automatic promotion."
   },
-  "updated_at": "2026-10-15T06:56:20.822013+00:00"
+  "updated_at": "2026-10-16T06:55:29.054176+00:00"
 }
