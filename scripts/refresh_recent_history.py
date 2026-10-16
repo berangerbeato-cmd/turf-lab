@@ -84,21 +84,9 @@ def require_fresh(today):
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--today', default=datetime.now(ZoneInfo('Europe/Paris')).date().isoformat())
-    args = parser.parse_args()
-    today = date.fromisoformat(args.today)
-    if today > datetime.now(ZoneInfo('Europe/Paris')).date(): raise ValueError('Future refresh forbidden')
-    pending = [d for d in required_days(today) if not read_day(d) or read_day(d)['status'] != 'COMPLETE']
-    if len(pending)>7: raise ValueError('More than seven days to recover: explicit bounded recovery needed')
-    reports = []
-    for day in pending:
-        r = refresh_day(day)
-        reports.append(dict(date=day,status=r['status'],retained=len(r['records']),excluded=len(r['exclusions'])))
-    dump('reports/recent_history_status.json', dict(checked_on=today.isoformat(),days=reports,
-        required_through=(today-timedelta(days=1)).isoformat(),models_retrained=False))
-    records = require_fresh(today)
-    print(json.dumps(dict(status='FRESH',through=(today-timedelta(days=1)).isoformat(),races=len(records))))
+    # Keep the existing command as a compatibility entrypoint for the strict full calendar sync.
+    from scripts.sync_history import main as sync
+    sync()
 
 
 if __name__ == '__main__': main()
