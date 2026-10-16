@@ -71,6 +71,11 @@
       "date": "2026-10-14",
       "status": "OK",
       "candidate_races": 12
+    },
+    {
+      "date": "2026-10-15",
+      "status": "OK",
+      "candidate_races": 13
     }
   ],
   "partitions": [
@@ -2021,24 +2026,128 @@
       "venue": "CABOURG",
       "start_type": "AUTOSTART",
       "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R3C1",
+      "file": "data/month_2026-10/races/2026-10-15_R3C1.json.gz",
+      "sha256": "e4dbd50df7ffefdb7e0ac963aa5a321a54a07c20e82c660eeecccf0802f0ad63",
+      "venue": "CHARTRES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R3C2",
+      "file": "data/month_2026-10/races/2026-10-15_R3C2.json.gz",
+      "sha256": "138d27bd5a847eb22b7795c7ced527fc64b8be8eedf7f7744eb3627513e568a3",
+      "venue": "CHARTRES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R3C3",
+      "file": "data/month_2026-10/races/2026-10-15_R3C3.json.gz",
+      "sha256": "23fd598276cf2229fb3b269461c2b21cada62dcb82e7cb95062d7adbf7dd9053",
+      "venue": "CHARTRES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R3C5",
+      "file": "data/month_2026-10/races/2026-10-15_R3C5.json.gz",
+      "sha256": "0818944b0c65285b1b6c5eb6a2569d0b90789903b80d6980c508f9eb154dd0e7",
+      "venue": "CHARTRES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R3C6",
+      "file": "data/month_2026-10/races/2026-10-15_R3C6.json.gz",
+      "sha256": "4cc1c939bfb1c4d7c64075531f55b104313e1eb30981c87bcb1a084e8c9577ac",
+      "venue": "CHARTRES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R3C7",
+      "file": "data/month_2026-10/races/2026-10-15_R3C7.json.gz",
+      "sha256": "0052e7eece6e0d1453be6890fc5122753dcd681d9fe6157a00a02d94ef3068c0",
+      "venue": "CHARTRES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R3C8",
+      "file": "data/month_2026-10/races/2026-10-15_R3C8.json.gz",
+      "sha256": "0308a718b67c7365bfdc237d6f9bb1ac96ff77b78634419d5deef418f7dd0203",
+      "venue": "CHARTRES",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R4C1",
+      "file": "data/month_2026-10/races/2026-10-15_R4C1.json.gz",
+      "sha256": "9444a6218099c4379c2d050a6ffb10be42c50c0099e45267164442f76990c619",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R4C4",
+      "file": "data/month_2026-10/races/2026-10-15_R4C4.json.gz",
+      "sha256": "754808a1679792a9a58e5b631d77dbd7eaf83e22f2e0ac4085cafde002cc1b2a",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R4C5",
+      "file": "data/month_2026-10/races/2026-10-15_R4C5.json.gz",
+      "sha256": "807390f31eac970e2890833f43c399cf860858884ef2d1b68fe56e309161d7f8",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R4C6",
+      "file": "data/month_2026-10/races/2026-10-15_R4C6.json.gz",
+      "sha256": "e0079e7afb6225f9459cc4371ea6774b1848a5232e1fdb1141963603796e5f70",
+      "venue": "ENGHIEN",
+      "start_type": "NON_PRECISE",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R4C7",
+      "file": "data/month_2026-10/races/2026-10-15_R4C7.json.gz",
+      "sha256": "4705f7cc7244af7d91bf73594469b2eb0197628d4635e560b0bbc6bfe6ac55b2",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
+    },
+    {
+      "race_id": "2026-10-15_R4C8",
+      "file": "data/month_2026-10/races/2026-10-15_R4C8.json.gz",
+      "sha256": "5071938f3b3b6f6286f75996b5d66b0046b03810130b79a496b4b1f05453106b",
+      "venue": "ENGHIEN",
+      "start_type": "AUTOSTART",
+      "warnings": []
     }
   ],
   "quarantine": [],
   "fields_nonempty": {
-    "idCheval": 3129,
-    "nomMere": 3129,
-    "nomPere": 3129,
-    "driver": 3129,
-    "entraineur": 3129,
-    "musique": 3083,
+    "idCheval": 3310,
+    "nomMere": 3310,
+    "nomPere": 3310,
+    "driver": 3310,
+    "entraineur": 3310,
+    "musique": 3263,
     "ferrure": 0,
-    "reductionKilometrique": 2287,
-    "tempsObtenu": 2287,
-    "age": 3129,
-    "sexe": 3129,
-    "gainsParticipant": 3129
+    "reductionKilometrique": 2423,
+    "tempsObtenu": 2423,
+    "age": 3310,
+    "sexe": 3310,
+    "gainsParticipant": 3310
   },
-  "participants": 3129,
+  "participants": 3310,
   "historical_snapshot": "Retrospective; original pre-race publication unproven",
   "model_status": "NO BET; no training in this experiment"
 }
