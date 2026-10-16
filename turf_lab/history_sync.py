@@ -63,7 +63,9 @@ class History:
         records, problems = {}, []
         overlay = OVERLAYS / (day+'.json')
         recent = Path('data/recent_history') / (day+'.json')
-        value = json.loads(overlay.read_text()) if overlay.exists() else None
+        compressed = overlay.with_suffix('.json.gz')
+        value = (json.loads(gzip.decompress(compressed.read_bytes())) if compressed.exists()
+                 else json.loads(overlay.read_text()) if overlay.exists() else None)
         if value:
             if value['date'] != day: raise ValueError('Overlay date mismatch')
             programme = value['programme']
@@ -178,7 +180,7 @@ class Collector:
                 raise ValueError('Invalid programme')
             records = {r['race_id']:r for r in state['records']}
             cancellations = dict(state['cancellations'])
-            dump(OVERLAYS/(day+'.json'), dict(date=day, programme=programme,
+            save_day(day, dict(date=day, programme=programme,
                  records=list(records.values()), cancellations=cancellations))
             for meeting, course in races(programme):
                 rn, cn = meeting['numOfficiel'], course['numOrdre']
@@ -193,13 +195,22 @@ class Collector:
                         records[rid] = record
                         self.recovered += 1
                 # Atomic checkpoint after each race, including incomplete source responses.
-                dump(OVERLAYS/(day+'.json'), dict(date=day, programme=programme,
+                save_day(day, dict(date=day, programme=programme,
                      records=list(records.values()), cancellations=cancellations))
-            dump(OVERLAYS/(day+'.json'), dict(date=day, programme=programme,
+            save_day(day, dict(date=day, programme=programme,
                  records=list(records.values()), cancellations=cancellations))
         except (ValueError, RuntimeError, OSError, KeyError, TypeError) as error:
             state['issues'].append(str(error))
         return state
+
+
+def save_day(day, value):
+    path = OVERLAYS/(day+'.json.gz')
+    path.parent.mkdir(parents=True, exist_ok=True)
+    raw = json.dumps(value, ensure_ascii=False, sort_keys=True).encode()
+    temporary = path.with_suffix('.tmp')
+    temporary.write_bytes(gzip.compress(raw, mtime=0))
+    temporary.replace(path)
 
 
 def summarize(states, today, collector=None):
