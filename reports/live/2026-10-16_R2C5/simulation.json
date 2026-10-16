@@ -8,10 +8,21 @@
   "stake_eur": 1,
   "stake_basis": "Reference unit; user did not specify stake",
   "requested_at": "2026-10-16T13:28:13+02:00",
-  "status": "HYPOTHETICAL_PENDING_SETTLEMENT",
+  "status": "HYPOTHETICAL_PROVISIONALLY_PLACED_AWAITING_OFFICIAL_ZETURF_PAYOUT",
   "real_bet": false,
   "prospective_validation_eligible": false,
   "reason": "Requested after scheduled start, forecast completed 13:26:20 with history through Oct 13",
   "paid_return": null,
-  "net_profit": null
+  "net_profit": null,
+  "provisional_arrival": [
+    13,
+    9,
+    14,
+    11,
+    8
+  ],
+  "provisional_rank": 3,
+  "provisional_placed": true,
+  "result_source": "https://offline.turfinfo.api.pmu.fr/rest/client/7/programme/16102026/R2/C5",
+  "result_source_status": "ARRIVEE_PROVISOIRE"
 }
