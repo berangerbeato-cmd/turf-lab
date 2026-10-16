@@ -1,17 +1,17 @@
 {
   "status": "PARTIEL",
-  "checked_at": "2026-10-16T15:04:53.433715+00:00",
+  "checked_at": "2026-10-16T17:02:32.226431+00:00",
   "required_through": "2026-10-15",
   "last_complete_day": "2026-10-15",
   "last_collected_day": "2026-10-15",
   "complete_continuously_through": "2023-01-21",
-  "verified_races": 30384,
-  "recovered_races": 374,
-  "requests": 800,
-  "missing_days": 10,
-  "unknown_programme_days": 4,
-  "missing_races": 30,
-  "cancelled_races": 110,
+  "verified_races": 30466,
+  "recovered_races": 82,
+  "requests": 199,
+  "missing_days": 6,
+  "unknown_programme_days": 1,
+  "missing_races": 21,
+  "cancelled_races": 119,
   "scope": "PMU-listed French harness races, 2022-01-01 through yesterday",
   "days": [
     {
@@ -9533,7 +9533,9 @@
       "date": "2024-11-07",
       "pending": [],
       "issues": [
-        "programme_unavailable"
+        "programme_unavailable",
+        "programme_unavailable",
+        "Source unavailable; batch stopped, evidence preserved"
       ],
       "status": "PARTIEL",
       "expected": null,
@@ -9543,101 +9545,37 @@
     {
       "date": "2024-11-08",
       "pending": [],
-      "issues": [
-        "programme_unavailable"
-      ],
-      "status": "PARTIEL",
-      "expected": null,
-      "verified_races": 0,
+      "issues": [],
+      "expected": 14,
+      "status": "OK",
+      "verified_races": 14,
       "cancelled_races": 0
     },
     {
       "date": "2024-11-09",
       "pending": [],
-      "issues": [
-        "programme_unavailable"
-      ],
-      "status": "PARTIEL",
-      "expected": null,
-      "verified_races": 0,
+      "issues": [],
+      "expected": 40,
+      "status": "OK",
+      "verified_races": 40,
       "cancelled_races": 0
     },
     {
       "date": "2024-11-10",
       "pending": [],
-      "issues": [
-        "programme_unavailable"
-      ],
-      "status": "PARTIEL",
-      "expected": null,
-      "verified_races": 0,
-      "cancelled_races": 0
+      "issues": [],
+      "expected": 28,
+      "status": "OK",
+      "verified_races": 19,
+      "cancelled_races": 9
     },
     {
       "date": "2024-11-11",
-      "pending": [
-        {
-          "race_id": "2024-11-11_R10C7",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R10C8",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R11C2",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R11C3",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R11C4",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R11C5",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R11C6",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R11C7",
-          "reasons": [
-            "missing_record"
-          ]
-        },
-        {
-          "race_id": "2024-11-11_R11C8",
-          "reasons": [
-            "missing_record"
-          ]
-        }
-      ],
-      "issues": [
-        "programme_unavailable",
-        "Request budget exhausted or source unavailable"
-      ],
+      "pending": [],
+      "issues": [],
       "expected": 34,
-      "status": "PARTIEL",
-      "verified_races": 25,
+      "status": "OK",
+      "verified_races": 34,
       "cancelled_races": 0
     },
     {
