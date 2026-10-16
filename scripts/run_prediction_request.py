@@ -12,6 +12,15 @@ def main():
     if not any(values):
         data=json.loads(Path('config/prediction_request.json').read_text())
         values=[str(data[k]) for k in ('date','reunion','course')]
-    subprocess.run([sys.executable,'-m','scripts.predict_race','--date',values[0],'--reunion',values[1],'--course',values[2]],check=True)
+    from scripts.predict_operational import run
+    path=run(values[0],int(values[1]),int(values[2]))
+    request=json.loads(Path('config/prediction_request.json').read_text())
+    if request.get('quotes') and not any(os.environ.get(k) for k in ('RACE_DATE','RACE_MEETING','RACE_NUMBER')):
+        from turf_lab.operational_quotes import compare
+        from turf_lab.evidence import dump
+        result=compare(json.loads(path.read_text()),request['quotes'])
+        dump(path.parent/'quotes.json',request['quotes'])
+        dump(path.parent/'comparison.json',result)
+        dump('reports/operational/latest_comparison.json',result)
 
 if __name__=='__main__':main()

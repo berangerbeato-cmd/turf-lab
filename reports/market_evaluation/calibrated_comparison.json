@@ -1,0 +1,956 @@
+{
+  "status": "EXPLORATORY_SELECTED_TICKET_CALIBRATION_NO_VALUE_PROOF",
+  "frozen": {
+    "calibrators": {
+      "win": {
+        "slope": 0.784208549733548,
+        "intercept": -0.2577558997079275,
+        "ridge": 0.001,
+        "validation_tickets": 4487
+      },
+      "place3": {
+        "slope": 0.607087871598863,
+        "intercept": -0.3148290475478152,
+        "ridge": 0.001,
+        "validation_tickets": 4487
+      },
+      "pair_place3": {
+        "slope": 0.7934116967730933,
+        "intercept": -0.6007139792159012,
+        "ridge": 0.001,
+        "validation_tickets": 4487
+      },
+      "pair_top4": {
+        "slope": 0.617344741291378,
+        "intercept": -0.7726042006697212,
+        "ridge": 0.001,
+        "validation_tickets": 4487
+      }
+    },
+    "validation_sha256": "093aeb9b156698cab6a507812e63424514feaa841d8c78d63baf4526c60ab9f5",
+    "classic_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
+    "selection": "classic maximum-probability ticket only, one per race and market; no value selection",
+    "fit_year": 2025,
+    "test_year": 2026,
+    "validation_exclusions": {
+      "field_or_nonrunner": 1841,
+      "missing_or_tied_top4": 70
+    }
+  },
+  "markets": {
+    "win": {
+      "overall": {
+        "races": 3015,
+        "race_weighted_binary_brier": 0.18826748078477154,
+        "race_weighted_binary_logloss": 0.562772687930719,
+        "top_probability_hit_rate": 0.2593698175787728,
+        "top_probability_mean_prediction": 0.24858243674608999,
+        "longest_loss_streak": 31,
+        "ece": 0.021621517065990473,
+        "calibration": [
+          {
+            "weight": 851.0,
+            "prediction": 0.17526165390517962,
+            "frequency": 0.19741480611045828
+          },
+          {
+            "weight": 1568.0,
+            "prediction": 0.24266335745906611,
+            "frequency": 0.25892857142857145
+          },
+          {
+            "weight": 461.0,
+            "prediction": 0.34051879314859446,
+            "frequency": 0.3123644251626898
+          },
+          {
+            "weight": 107.0,
+            "prediction": 0.43709225866057144,
+            "frequency": 0.4766355140186916
+          },
+          {
+            "weight": 19.0,
+            "prediction": 0.53658156858914,
+            "frequency": 0.5263157894736842
+          },
+          {
+            "weight": 8.0,
+            "prediction": 0.6447808658771295,
+            "frequency": 0.25
+          },
+          {
+            "weight": 1.0,
+            "prediction": 0.7309027719468254,
+            "frequency": 1.0
+          }
+        ]
+      },
+      "season": {
+        "winter": {
+          "races": 526,
+          "race_weighted_binary_brier": 0.1928899477753341,
+          "race_weighted_binary_logloss": 0.5740286031368151,
+          "top_probability_hit_rate": 0.26425855513307983,
+          "top_probability_mean_prediction": 0.25015772615987864,
+          "longest_loss_streak": 22,
+          "ece": 0.03360834180815657,
+          "calibration": [
+            {
+              "weight": 138.0,
+              "prediction": 0.1771130461295075,
+              "frequency": 0.2246376811594203
+            },
+            {
+              "weight": 286.0,
+              "prediction": 0.24247873497344233,
+              "frequency": 0.25874125874125875
+            },
+            {
+              "weight": 78.0,
+              "prediction": 0.33984136411034127,
+              "frequency": 0.28205128205128205
+            },
+            {
+              "weight": 16.0,
+              "prediction": 0.43019790650477496,
+              "frequency": 0.5
+            },
+            {
+              "weight": 7.0,
+              "prediction": 0.5398290017357048,
+              "frequency": 0.5714285714285714
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.6228494749866134,
+              "frequency": 0.0
+            }
+          ]
+        },
+        "spring": {
+          "races": 1098,
+          "race_weighted_binary_brier": 0.18158402063568124,
+          "race_weighted_binary_logloss": 0.5475410643417794,
+          "top_probability_hit_rate": 0.25045537340619306,
+          "top_probability_mean_prediction": 0.2464219742317764,
+          "longest_loss_streak": 31,
+          "ece": 0.007733760639700631,
+          "calibration": [
+            {
+              "weight": 328.0,
+              "prediction": 0.17327639808996947,
+              "frequency": 0.18902439024390244
+            },
+            {
+              "weight": 558.0,
+              "prediction": 0.24203232187000334,
+              "frequency": 0.24014336917562723
+            },
+            {
+              "weight": 161.0,
+              "prediction": 0.3400556044148518,
+              "frequency": 0.33540372670807456
+            },
+            {
+              "weight": 43.0,
+              "prediction": 0.4416119557735331,
+              "frequency": 0.46511627906976744
+            },
+            {
+              "weight": 4.0,
+              "prediction": 0.5571276325469943,
+              "frequency": 0.5
+            },
+            {
+              "weight": 3.0,
+              "prediction": 0.6616512727769815,
+              "frequency": 0.6666666666666666
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.7309027719468254,
+              "frequency": 1.0
+            }
+          ]
+        },
+        "summer": {
+          "races": 1063,
+          "race_weighted_binary_brier": 0.19510290026818894,
+          "race_weighted_binary_logloss": 0.5782619497621898,
+          "top_probability_hit_rate": 0.2699905926622766,
+          "top_probability_mean_prediction": 0.25188443438470376,
+          "longest_loss_streak": 17,
+          "ece": 0.027970949251329508,
+          "calibration": [
+            {
+              "weight": 283.0,
+              "prediction": 0.1774885628409465,
+              "frequency": 0.2049469964664311
+            },
+            {
+              "weight": 557.0,
+              "prediction": 0.24400026515013598,
+              "frequency": 0.27289048473967686
+            },
+            {
+              "weight": 179.0,
+              "prediction": 0.3415465379673097,
+              "frequency": 0.3240223463687151
+            },
+            {
+              "weight": 33.0,
+              "prediction": 0.4355335265386328,
+              "frequency": 0.45454545454545453
+            },
+            {
+              "weight": 8.0,
+              "prediction": 0.5234670326069686,
+              "frequency": 0.5
+            },
+            {
+              "weight": 3.0,
+              "prediction": 0.6395232818491885,
+              "frequency": 0.0
+            }
+          ]
+        },
+        "autumn": {
+          "races": 328,
+          "race_weighted_binary_brier": 0.18107531827194434,
+          "race_weighted_binary_logloss": 0.5455124012703481,
+          "top_probability_hit_rate": 0.24695121951219512,
+          "top_probability_mean_prediction": 0.24258719930468495,
+          "longest_loss_streak": 14,
+          "ece": 0.04009434747608108,
+          "calibration": [
+            {
+              "weight": 102.0,
+              "prediction": 0.17296220833272455,
+              "frequency": 0.16666666666666666
+            },
+            {
+              "weight": 167.0,
+              "prediction": 0.2406290000079228,
+              "frequency": 0.2754491017964072
+            },
+            {
+              "weight": 43.0,
+              "prediction": 0.33920359613850715,
+              "frequency": 0.23255813953488372
+            },
+            {
+              "weight": 15.0,
+              "prediction": 0.434918979904528,
+              "frequency": 0.5333333333333333
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.6318737881519123,
+              "frequency": 0.0
+            }
+          ]
+        }
+      },
+      "weekly_bootstrap_95": {
+        "mean_prediction_minus_frequency": [
+          -0.02763557631215736,
+          0.004772133112434631
+        ],
+        "brier_calibrated_minus_raw": [
+          -0.0015424351479452856,
+          -0.00023101517930215713
+        ]
+      }
+    },
+    "place3": {
+      "overall": {
+        "races": 3015,
+        "race_weighted_binary_brier": 0.24490613967436473,
+        "race_weighted_binary_logloss": 0.6829402986069755,
+        "top_probability_hit_rate": 0.490547263681592,
+        "top_probability_mean_prediction": 0.49812276893065527,
+        "longest_loss_streak": 10,
+        "ece": 0.022938082148997563,
+        "calibration": [
+          {
+            "weight": 2.0,
+            "prediction": 0.2972967060639381,
+            "frequency": 0.0
+          },
+          {
+            "weight": 488.0,
+            "prediction": 0.3710536976999149,
+            "frequency": 0.4180327868852459
+          },
+          {
+            "weight": 1249.0,
+            "prediction": 0.4506375265763466,
+            "frequency": 0.44915932746196957
+          },
+          {
+            "weight": 809.0,
+            "prediction": 0.5426266351041247,
+            "frequency": 0.5278121137206427
+          },
+          {
+            "weight": 319.0,
+            "prediction": 0.6434923636075696,
+            "frequency": 0.5611285266457681
+          },
+          {
+            "weight": 115.0,
+            "prediction": 0.7373188926807354,
+            "frequency": 0.6956521739130435
+          },
+          {
+            "weight": 26.0,
+            "prediction": 0.8371811863765525,
+            "frequency": 0.8461538461538461
+          },
+          {
+            "weight": 7.0,
+            "prediction": 0.9296692068936556,
+            "frequency": 0.8571428571428571
+          }
+        ]
+      },
+      "season": {
+        "winter": {
+          "races": 526,
+          "race_weighted_binary_brier": 0.24698876929539013,
+          "race_weighted_binary_logloss": 0.687213177285466,
+          "top_probability_hit_rate": 0.4619771863117871,
+          "top_probability_mean_prediction": 0.5006058790679639,
+          "longest_loss_streak": 7,
+          "ece": 0.04878953584333236,
+          "calibration": [
+            {
+              "weight": 1.0,
+              "prediction": 0.2979223852976027,
+              "frequency": 0.0
+            },
+            {
+              "weight": 73.0,
+              "prediction": 0.37256758588698,
+              "frequency": 0.3561643835616438
+            },
+            {
+              "weight": 223.0,
+              "prediction": 0.45077431833394127,
+              "frequency": 0.4618834080717489
+            },
+            {
+              "weight": 149.0,
+              "prediction": 0.5404866351304629,
+              "frequency": 0.47651006711409394
+            },
+            {
+              "weight": 53.0,
+              "prediction": 0.6428211251701312,
+              "frequency": 0.4528301886792453
+            },
+            {
+              "weight": 19.0,
+              "prediction": 0.7312426156930526,
+              "frequency": 0.631578947368421
+            },
+            {
+              "weight": 7.0,
+              "prediction": 0.8430815769336296,
+              "frequency": 0.8571428571428571
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.9034542410739406,
+              "frequency": 1.0
+            }
+          ]
+        },
+        "spring": {
+          "races": 1098,
+          "race_weighted_binary_brier": 0.24217059951969022,
+          "race_weighted_binary_logloss": 0.6772920154210735,
+          "top_probability_hit_rate": 0.4918032786885246,
+          "top_probability_mean_prediction": 0.493757668638377,
+          "longest_loss_streak": 10,
+          "ece": 0.020806841957770404,
+          "calibration": [
+            {
+              "weight": 1.0,
+              "prediction": 0.29667102683027347,
+              "frequency": 0.0
+            },
+            {
+              "weight": 203.0,
+              "prediction": 0.369579793090827,
+              "frequency": 0.4088669950738916
+            },
+            {
+              "weight": 449.0,
+              "prediction": 0.45023720405741463,
+              "frequency": 0.44097995545657015
+            },
+            {
+              "weight": 282.0,
+              "prediction": 0.5425341652060078,
+              "frequency": 0.5390070921985816
+            },
+            {
+              "weight": 109.0,
+              "prediction": 0.6440237386035045,
+              "frequency": 0.5871559633027523
+            },
+            {
+              "weight": 43.0,
+              "prediction": 0.7414268982874455,
+              "frequency": 0.7674418604651163
+            },
+            {
+              "weight": 8.0,
+              "prediction": 0.8429936529818544,
+              "frequency": 1.0
+            },
+            {
+              "weight": 3.0,
+              "prediction": 0.9498395242663782,
+              "frequency": 0.6666666666666666
+            }
+          ]
+        },
+        "summer": {
+          "races": 1063,
+          "race_weighted_binary_brier": 0.24948069498084915,
+          "race_weighted_binary_logloss": 0.6924104569969628,
+          "top_probability_hit_rate": 0.5051740357478833,
+          "top_probability_mean_prediction": 0.5043246322522648,
+          "longest_loss_streak": 8,
+          "ece": 0.03975069869082212,
+          "calibration": [
+            {
+              "weight": 150.0,
+              "prediction": 0.3738481411558008,
+              "frequency": 0.49333333333333335
+            },
+            {
+              "weight": 438.0,
+              "prediction": 0.4509074604962261,
+              "frequency": 0.4589041095890411
+            },
+            {
+              "weight": 298.0,
+              "prediction": 0.544901105256791,
+              "frequency": 0.5201342281879194
+            },
+            {
+              "weight": 123.0,
+              "prediction": 0.6435617130857513,
+              "frequency": 0.5609756097560976
+            },
+            {
+              "weight": 42.0,
+              "prediction": 0.7339794007999926,
+              "frequency": 0.6904761904761905
+            },
+            {
+              "weight": 10.0,
+              "prediction": 0.8310283486580087,
+              "frequency": 0.7
+            },
+            {
+              "weight": 2.0,
+              "prediction": 0.9231784085949204,
+              "frequency": 1.0
+            }
+          ]
+        },
+        "autumn": {
+          "races": 328,
+          "race_weighted_binary_brier": 0.23589823607186672,
+          "race_weighted_binary_logloss": 0.6643046351456317,
+          "top_probability_hit_rate": 0.4847560975609756,
+          "top_probability_mean_prediction": 0.4886538161191449,
+          "longest_loss_streak": 8,
+          "ece": 0.04265135719438537,
+          "calibration": [
+            {
+              "weight": 62.0,
+              "prediction": 0.3673363151129201,
+              "frequency": 0.3387096774193548
+            },
+            {
+              "weight": 139.0,
+              "prediction": 0.45086061428964835,
+              "frequency": 0.4244604316546763
+            },
+            {
+              "weight": 80.0,
+              "prediction": 0.5384659401272431,
+              "frequency": 0.6125
+            },
+            {
+              "weight": 34.0,
+              "prediction": 0.6425842982196577,
+              "frequency": 0.6470588235294118
+            },
+            {
+              "weight": 11.0,
+              "prediction": 0.7445065000142506,
+              "frequency": 0.5454545454545454
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.8109070968200369,
+              "frequency": 1.0
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.9083548171926735,
+              "frequency": 1.0
+            }
+          ]
+        }
+      },
+      "weekly_bootstrap_95": {
+        "mean_prediction_minus_frequency": [
+          -0.011258999824560805,
+          0.025811704702920987
+        ],
+        "brier_calibrated_minus_raw": [
+          -0.022456562372844626,
+          -0.013770688255210392
+        ]
+      }
+    },
+    "pair_place3": {
+      "overall": {
+        "races": 3015,
+        "race_weighted_binary_brier": 0.14506054550630815,
+        "race_weighted_binary_logloss": 0.46258013763172173,
+        "top_probability_hit_rate": 0.18109452736318407,
+        "top_probability_mean_prediction": 0.1911070803526989,
+        "longest_loss_streak": 33,
+        "ece": 0.01227091887730682,
+        "calibration": [
+          {
+            "weight": 193.0,
+            "prediction": 0.08738547883713921,
+            "frequency": 0.09844559585492228
+          },
+          {
+            "weight": 1677.0,
+            "prediction": 0.15130000954596629,
+            "frequency": 0.1520572450805009
+          },
+          {
+            "weight": 863.0,
+            "prediction": 0.2374172987380788,
+            "frequency": 0.21552723059096177
+          },
+          {
+            "weight": 231.0,
+            "prediction": 0.338823937060137,
+            "frequency": 0.2987012987012987
+          },
+          {
+            "weight": 46.0,
+            "prediction": 0.42832968565513874,
+            "frequency": 0.3695652173913043
+          },
+          {
+            "weight": 5.0,
+            "prediction": 0.5459420054486752,
+            "frequency": 0.0
+          }
+        ]
+      },
+      "season": {
+        "winter": {
+          "races": 526,
+          "race_weighted_binary_brier": 0.1390333366009333,
+          "race_weighted_binary_logloss": 0.4462216164185657,
+          "top_probability_hit_rate": 0.17490494296577946,
+          "top_probability_mean_prediction": 0.19249125547333426,
+          "longest_loss_streak": 21,
+          "ece": 0.02036782254356681,
+          "calibration": [
+            {
+              "weight": 28.0,
+              "prediction": 0.08784967859690118,
+              "frequency": 0.07142857142857142
+            },
+            {
+              "weight": 293.0,
+              "prediction": 0.15138975205833344,
+              "frequency": 0.13651877133105803
+            },
+            {
+              "weight": 157.0,
+              "prediction": 0.23723101058992915,
+              "frequency": 0.2229299363057325
+            },
+            {
+              "weight": 38.0,
+              "prediction": 0.3399915921584528,
+              "frequency": 0.2631578947368421
+            },
+            {
+              "weight": 10.0,
+              "prediction": 0.42684628605288727,
+              "frequency": 0.5
+            }
+          ]
+        },
+        "spring": {
+          "races": 1098,
+          "race_weighted_binary_brier": 0.13825235055879773,
+          "race_weighted_binary_logloss": 0.4452313827747791,
+          "top_probability_hit_rate": 0.17122040072859745,
+          "top_probability_mean_prediction": 0.1848335251949351,
+          "longest_loss_streak": 33,
+          "ece": 0.020909107573171243,
+          "calibration": [
+            {
+              "weight": 91.0,
+              "prediction": 0.0878180455060632,
+              "frequency": 0.06593406593406594
+            },
+            {
+              "weight": 631.0,
+              "prediction": 0.15106271226188833,
+              "frequency": 0.15213946117274169
+            },
+            {
+              "weight": 290.0,
+              "prediction": 0.23600768243420872,
+              "frequency": 0.18620689655172415
+            },
+            {
+              "weight": 67.0,
+              "prediction": 0.338416922941742,
+              "frequency": 0.3880597014925373
+            },
+            {
+              "weight": 16.0,
+              "prediction": 0.43089158934114297,
+              "frequency": 0.375
+            },
+            {
+              "weight": 3.0,
+              "prediction": 0.5415899710865704,
+              "frequency": 0.0
+            }
+          ]
+        },
+        "summer": {
+          "races": 1063,
+          "race_weighted_binary_brier": 0.14885038897311093,
+          "race_weighted_binary_logloss": 0.47298788275169606,
+          "top_probability_hit_rate": 0.18438381937911572,
+          "top_probability_mean_prediction": 0.19975075288311592,
+          "longest_loss_streak": 27,
+          "ece": 0.020707600833852306,
+          "calibration": [
+            {
+              "weight": 47.0,
+              "prediction": 0.08854117689752597,
+              "frequency": 0.14893617021276595
+            },
+            {
+              "weight": 566.0,
+              "prediction": 0.1520525462221097,
+              "frequency": 0.14664310954063603
+            },
+            {
+              "weight": 322.0,
+              "prediction": 0.23849080563230948,
+              "frequency": 0.22981366459627328
+            },
+            {
+              "weight": 109.0,
+              "prediction": 0.3399783687237036,
+              "frequency": 0.24770642201834864
+            },
+            {
+              "weight": 18.0,
+              "prediction": 0.42598592827737003,
+              "frequency": 0.2777777777777778
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.592445525374619,
+              "frequency": 0.0
+            }
+          ]
+        },
+        "autumn": {
+          "races": 328,
+          "race_weighted_binary_brier": 0.16523465017516129,
+          "race_weighted_binary_logloss": 0.5131596557064502,
+          "top_probability_hit_rate": 0.21341463414634146,
+          "top_probability_mean_prediction": 0.18187556678543285,
+          "longest_loss_streak": 25,
+          "ece": 0.03466403436462251,
+          "calibration": [
+            {
+              "weight": 27.0,
+              "prediction": 0.08343440591182073,
+              "frequency": 0.14814814814814814
+            },
+            {
+              "weight": 187.0,
+              "prediction": 0.14968238532902758,
+              "frequency": 0.1925133689839572
+            },
+            {
+              "weight": 94.0,
+              "prediction": 0.23839992371084018,
+              "frequency": 0.24468085106382978
+            },
+            {
+              "weight": 17.0,
+              "prediction": 0.3304160547582361,
+              "frequency": 0.35294117647058826
+            },
+            {
+              "weight": 2.0,
+              "prediction": 0.43634527057827804,
+              "frequency": 0.5
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.5124945886090456,
+              "frequency": 0.0
+            }
+          ]
+        }
+      },
+      "weekly_bootstrap_95": {
+        "mean_prediction_minus_frequency": [
+          -0.005100698843240149,
+          0.02282619699364667
+        ],
+        "brier_calibrated_minus_raw": [
+          -0.010248763536245728,
+          -0.005454916698480097
+        ]
+      }
+    },
+    "pair_top4": {
+      "overall": {
+        "races": 3015,
+        "race_weighted_binary_brier": 0.186741556596566,
+        "race_weighted_binary_logloss": 0.5590665501057874,
+        "top_probability_hit_rate": 0.2583747927031509,
+        "top_probability_mean_prediction": 0.27644899352710817,
+        "longest_loss_streak": 28,
+        "ece": 0.018074200823957224,
+        "calibration": [
+          {
+            "weight": 489.0,
+            "prediction": 0.17512831756837632,
+            "frequency": 0.16973415132924335
+          },
+          {
+            "weight": 1531.0,
+            "prediction": 0.24934237501812978,
+            "frequency": 0.23709993468321358
+          },
+          {
+            "weight": 748.0,
+            "prediction": 0.33838251675795517,
+            "frequency": 0.30213903743315507
+          },
+          {
+            "weight": 205.0,
+            "prediction": 0.44041677460451945,
+            "frequency": 0.43414634146341463
+          },
+          {
+            "weight": 38.0,
+            "prediction": 0.5290411517884019,
+            "frequency": 0.47368421052631576
+          },
+          {
+            "weight": 4.0,
+            "prediction": 0.6534167359255284,
+            "frequency": 0.0
+          }
+        ]
+      },
+      "season": {
+        "winter": {
+          "races": 526,
+          "race_weighted_binary_brier": 0.1816815172483916,
+          "race_weighted_binary_logloss": 0.5468212732355157,
+          "top_probability_hit_rate": 0.25285171102661597,
+          "top_probability_mean_prediction": 0.27814204678595733,
+          "longest_loss_streak": 15,
+          "ece": 0.02679299353375751,
+          "calibration": [
+            {
+              "weight": 77.0,
+              "prediction": 0.17559629098462734,
+              "frequency": 0.09090909090909091
+            },
+            {
+              "weight": 277.0,
+              "prediction": 0.250566054625697,
+              "frequency": 0.24548736462093862
+            },
+            {
+              "weight": 131.0,
+              "prediction": 0.3402685625674839,
+              "frequency": 0.29770992366412213
+            },
+            {
+              "weight": 35.0,
+              "prediction": 0.445851457295101,
+              "frequency": 0.45714285714285713
+            },
+            {
+              "weight": 6.0,
+              "prediction": 0.5325037284350392,
+              "frequency": 0.5
+            }
+          ]
+        },
+        "spring": {
+          "races": 1098,
+          "race_weighted_binary_brier": 0.18243823627977213,
+          "race_weighted_binary_logloss": 0.5494489296473775,
+          "top_probability_hit_rate": 0.24772313296903462,
+          "top_probability_mean_prediction": 0.26903624378258173,
+          "longest_loss_streak": 28,
+          "ece": 0.027385638930444274,
+          "calibration": [
+            {
+              "weight": 202.0,
+              "prediction": 0.1736407101715662,
+              "frequency": 0.15841584158415842
+            },
+            {
+              "weight": 570.0,
+              "prediction": 0.24812712637703468,
+              "frequency": 0.24035087719298245
+            },
+            {
+              "weight": 254.0,
+              "prediction": 0.33631826335040843,
+              "frequency": 0.27165354330708663
+            },
+            {
+              "weight": 56.0,
+              "prediction": 0.4404675368539876,
+              "frequency": 0.5
+            },
+            {
+              "weight": 13.0,
+              "prediction": 0.5282195056383195,
+              "frequency": 0.46153846153846156
+            },
+            {
+              "weight": 3.0,
+              "prediction": 0.6453452185276901,
+              "frequency": 0.0
+            }
+          ]
+        },
+        "summer": {
+          "races": 1063,
+          "race_weighted_binary_brier": 0.19351183875471603,
+          "race_weighted_binary_logloss": 0.574591207890972,
+          "top_probability_hit_rate": 0.270931326434619,
+          "top_probability_mean_prediction": 0.28645761803079184,
+          "longest_loss_streak": 15,
+          "ece": 0.021617484122099052,
+          "calibration": [
+            {
+              "weight": 150.0,
+              "prediction": 0.1784168744831346,
+              "frequency": 0.2
+            },
+            {
+              "weight": 513.0,
+              "prediction": 0.2508325892774546,
+              "frequency": 0.23586744639376217
+            },
+            {
+              "weight": 283.0,
+              "prediction": 0.3392674920681718,
+              "frequency": 0.3215547703180212
+            },
+            {
+              "weight": 101.0,
+              "prediction": 0.44076444562934114,
+              "frequency": 0.38613861386138615
+            },
+            {
+              "weight": 15.0,
+              "prediction": 0.5238171961968093,
+              "frequency": 0.4666666666666667
+            },
+            {
+              "weight": 1.0,
+              "prediction": 0.6776312881190434,
+              "frequency": 0.0
+            }
+          ]
+        },
+        "autumn": {
+          "races": 328,
+          "race_weighted_binary_brier": 0.1873202653492101,
+          "race_weighted_binary_logloss": 0.5605862198358055,
+          "top_probability_hit_rate": 0.2621951219512195,
+          "top_probability_mean_prediction": 0.2661120586427156,
+          "longest_loss_streak": 23,
+          "ece": 0.02967227221464063,
+          "calibration": [
+            {
+              "weight": 60.0,
+              "prediction": 0.1713146376332176,
+              "frequency": 0.23333333333333334
+            },
+            {
+              "weight": 171.0,
+              "prediction": 0.24694034319996583,
+              "frequency": 0.21637426900584794
+            },
+            {
+              "weight": 80.0,
+              "prediction": 0.33871752115391845,
+              "frequency": 0.3375
+            },
+            {
+              "weight": 13.0,
+              "prediction": 0.42286513201624515,
+              "frequency": 0.46153846153846156
+            },
+            {
+              "weight": 4.0,
+              "prediction": 0.5461074702746852,
+              "frequency": 0.5
+            }
+          ]
+        }
+      },
+      "weekly_bootstrap_95": {
+        "mean_prediction_minus_frequency": [
+          0.001590445201734869,
+          0.03356113214599013
+        ],
+        "brier_calibrated_minus_raw": [
+          -0.035579382287124914,
+          -0.024245398312412753
+        ]
+      }
+    }
+  },
+  "limits": [
+    "This calibrator applies ONLY to the classic maximum-probability ticket selection, not arbitrary tickets or EV-selected tickets.",
+    "Probabilities across distinct markets are calibrated separately and are not a coherent joint arrival distribution.",
+    "2026 already inspected: exploratory reused holdout; requires prospective validation.",
+    "No ZEturf prices joined; no demonstrated value or profitability. Historical raw source publication timing unproven.",
+    "The 2025 winner-temperature selection and placement calibration reuse validation; no nested calibration claim.",
+    "Baseline and calibrator checked on the same restricted common cohort; exclusions may bias generalization."
+  ]
+}

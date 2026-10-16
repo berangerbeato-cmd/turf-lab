@@ -22,7 +22,7 @@ concurrency:
 jobs:
   predict:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,6 +31,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: pip install -r requirements-v5.txt
       - name: Collect a fresh snapshot and calculate independent probabilities
         env:
           RACE_DATE: ${{ inputs.date }}
@@ -42,8 +43,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          mkdir -p predictions evidence
-          git add predictions evidence
+          mkdir -p predictions_operational data/prediction_inputs reports/operational
+          git add predictions_operational data/prediction_inputs reports/operational
           if ! git diff --cached --quiet; then
             git commit -m 'Archive prospective race snapshot and experimental prediction'
             git pull --rebase origin main
