@@ -1,3 +1,15 @@
+test_delayed_recovery_preserves_original_and_uses_digest_cache (test_backfill_recovery.RecoveryTests.test_delayed_recovery_preserves_original_and_uses_digest_cache) ... 200 day
+ok
+test_empty_response_gets_one_delayed_recovery (test_backfill_recovery.RecoveryTests.test_empty_response_gets_one_delayed_recovery) ... 200 day
+ok
+test_failed_recovery_is_not_retried_across_runs (test_backfill_recovery.RecoveryTests.test_failed_recovery_is_not_retried_across_runs) ... error day
+ok
+test_no_retry_for_denial_rate_limit_recent_or_invalid_payload (test_backfill_recovery.RecoveryTests.test_no_retry_for_denial_rate_limit_recent_or_invalid_payload) ... ok
+test_nonempty_invalid_json_is_not_retried (test_backfill_recovery.RecoveryTests.test_nonempty_invalid_json_is_not_retried) ... ok
+test_url_mismatch_and_exhausted_budget_never_fetch (test_backfill_recovery.RecoveryTests.test_url_mismatch_and_exhausted_budget_never_fetch) ... ok
+test_reject_changed_field_and_unsupported_selection (test_compare_place_quote.PlaceQuoteTests.test_reject_changed_field_and_unsupported_selection) ... ok
+test_reject_noncomparable_or_unverifiable_quotes (test_compare_place_quote.PlaceQuoteTests.test_reject_noncomparable_or_unverifiable_quotes) ... ok
+test_unit_normalization_and_range_crossing_break_even (test_compare_place_quote.PlaceQuoteTests.test_unit_normalization_and_range_crossing_break_even) ... ok
 test_changes_and_unknown_people (test_connections.ConnectionsTests.test_changes_and_unknown_people) ... ok
 test_fast_optimizer_matches_existing_reference (test_connections.ConnectionsTests.test_fast_optimizer_matches_existing_reference) ... skipped 'V5 workflow installs numpy'
 test_missing_equipment_never_means_shod_or_no_change (test_connections.ConnectionsTests.test_missing_equipment_never_means_shod_or_no_change) ... ok
@@ -35,12 +47,34 @@ test_resume_checks_integrity_without_network (test_evidence.EvidenceTests.test_r
 test_end_to_end_freezes_test_and_fits_only_training_period (test_extension.ExtensionTests.test_end_to_end_freezes_test_and_fits_only_training_period) ... ok
 test_missing_programme_blocks_training (test_extension.ExtensionTests.test_missing_programme_blocks_training) ... ok
 test_protocol_has_disjoint_unseen_test_and_warmup (test_extension.ExtensionTests.test_protocol_has_disjoint_unseen_test_and_warmup) ... ok
+test_bounded_exclusion_does_not_waive_other_gaps_or_integrity (test_full_history.FullHistoryTests.test_bounded_exclusion_does_not_waive_other_gaps_or_integrity) ... ok
+test_chronological_overlap_rejected (test_full_history.FullHistoryTests.test_chronological_overlap_rejected) ... ok
+test_elo_continues_across_new_year_and_excludes_today (test_full_history.FullHistoryTests.test_elo_continues_across_new_year_and_excludes_today) ... ok
+test_full_feature_pipeline_ignores_future_outcomes (test_full_history.FullHistoryTests.test_full_feature_pipeline_ignores_future_outcomes) ... ok
+test_gap_buffer_boundary_and_no_mutation (test_full_history.FullHistoryTests.test_gap_buffer_boundary_and_no_mutation) ... ok
+test_missing_months_stop_full_retest (test_full_history.FullHistoryTests.test_missing_months_stop_full_retest) ... ok
+test_race_quarantine_preserves_sources_and_excludes_entire_race (test_full_history.FullHistoryTests.test_race_quarantine_preserves_sources_and_excludes_entire_race) ... ok
+test_seasonal_interactions_preserve_missing (test_full_history.FullHistoryTests.test_seasonal_interactions_preserve_missing) ... ok
+test_training_calibration_prediction_and_uncertainty (test_full_history.NumericalPipelineTests.test_training_calibration_prediction_and_uncertainty) ... skipped 'Numerical dependencies installed in evaluation job'
+test_http_429_stops_collection_without_retry (test_full_history.RateLimitTests.test_http_429_stops_collection_without_retry) ... ok
 test_cannot_leak_target_or_future_race (test_history.HistoryTests.test_cannot_leak_target_or_future_race) ... ok
 test_conflicting_duplicates_fail (test_history.HistoryTests.test_conflicting_duplicates_fail) ... ok
 test_disqualification_not_imputed_rank_or_speed (test_history.HistoryTests.test_disqualification_not_imputed_rank_or_speed) ... ok
 test_distanced_horse_cannot_keep_a_winning_rank (test_history.HistoryTests.test_distanced_horse_cannot_keep_a_winning_rank) ... ok
 test_non_runner_does_not_count_as_performance (test_history.HistoryTests.test_non_runner_does_not_count_as_performance) ... ok
 test_source_time_units (test_history.HistoryTests.test_source_time_units) ... ok
+test_dates_from_wrong_month_rejected (test_history_inventory.CalendarIntegrityTests.test_dates_from_wrong_month_rejected) ... ok
+test_duplicate_dates_rejected (test_history_inventory.CalendarIntegrityTests.test_duplicate_dates_rejected) ... ok
+test_full_calendar_without_source_proof_not_complete (test_history_inventory.CalendarIntegrityTests.test_full_calendar_without_source_proof_not_complete) ... ok
+test_missing_months_not_assumed_complete (test_history_inventory.HistoryInventoryTests.test_missing_months_not_assumed_complete) ... ok
+test_partial_month_is_not_complete (test_history_inventory.HistoryInventoryTests.test_partial_month_is_not_complete) ... ok
+test_calendar_no_seven_day_limit (test_history_sync.HistorySyncTests.test_calendar_no_seven_day_limit) ... ok
+test_cancel_requires_unambiguous_evidence (test_history_sync.HistorySyncTests.test_cancel_requires_unambiguous_evidence) ... ok
+test_complete_day_no_download (test_history_sync.HistorySyncTests.test_complete_day_no_download) ... ok
+test_dead_heat_is_archived (test_history_sync.HistorySyncTests.test_dead_heat_is_archived) ... ok
+test_gap_blocks_ok_even_when_yesterday_complete (test_history_sync.HistorySyncTests.test_gap_blocks_ok_even_when_yesterday_complete) ... ok
+test_repair_skips_verified_race_and_is_idempotent (test_history_sync.HistorySyncTests.test_repair_skips_verified_race_and_is_idempotent) ... ok
+test_unknown_programme_not_zero_races (test_history_sync.HistorySyncTests.test_unknown_programme_not_zero_races) ... ok
 test_frozen_model_tampering_blocks_evaluation (test_holdout_opposition.HoldoutOppositionTests.test_frozen_model_tampering_blocks_evaluation) ... ok
 test_holdout_is_disjoint_and_chosen_before_collection (test_holdout_opposition.HoldoutOppositionTests.test_holdout_is_disjoint_and_chosen_before_collection) ... ok
 test_ambiguous_odds_rejected (test_manual_value.ManualValueTests.test_ambiguous_odds_rejected) ... ok
@@ -50,6 +84,8 @@ test_missing_and_duplicate_quotes_fail_closed (test_manual_value.ManualValueTest
 test_non_runner_requires_updated_probabilities (test_manual_value.ManualValueTests.test_non_runner_requires_updated_probabilities) ... ok
 test_quote_cannot_change_probability (test_manual_value.ManualValueTests.test_quote_cannot_change_probability) ... ok
 test_wrong_horse_number_rejected (test_manual_value.ManualValueTests.test_wrong_horse_number_rejected) ... ok
+test_market_calibration (unittest.loader._FailedTest.test_market_calibration) ... ERROR
+test_market_probabilities (unittest.loader._FailedTest.test_market_probabilities) ... ERROR
 test_budget_pause_retains_checkpoint (test_month.MonthTests.test_budget_pause_retains_checkpoint) ... ok
 test_checkpoint_rebases_again_after_concurrent_push (test_month.MonthTests.test_checkpoint_rebases_again_after_concurrent_push) ... ok
 test_complete_cache_is_verified_without_network_or_checkpoint (test_month.MonthTests.test_complete_cache_is_verified_without_network_or_checkpoint) ... ok
@@ -68,6 +104,11 @@ test_conservative_ceiling (test_next_features_audit.NextFeatureTests.test_conser
 test_disqualification_not_a_valid_chrono (test_next_features_audit.NextFeatureTests.test_disqualification_not_a_valid_chrono) ... ok
 test_expiry_and_nonrunner (test_next_features_audit.NextFeatureTests.test_expiry_and_nonrunner) ... ok
 test_same_day_target_and_future_excluded (test_next_features_audit.NextFeatureTests.test_same_day_target_and_future_excluded) ... ok
+test_duplicate (test_operational_quotes.Quotes.test_duplicate) ... ok
+test_ev (test_operational_quotes.Quotes.test_ev) ... ok
+test_late (test_operational_quotes.Quotes.test_late) ... ok
+test_mismatch (test_operational_quotes.Quotes.test_mismatch) ... ok
+test_nonrunner (test_operational_quotes.Quotes.test_nonrunner) ... ok
 test_extended_fit_has_all_dimensions_and_normalized_probabilities (test_opposition.OppositionTests.test_extended_fit_has_all_dimensions_and_normalized_probabilities) ... ok
 test_new_year_resets_and_inputs_unchanged (test_opposition.OppositionTests.test_new_year_resets_and_inputs_unchanged) ... ok
 test_target_future_and_same_day_do_not_change_features (test_opposition.OppositionTests.test_target_future_and_same_day_do_not_change_features) ... ok
@@ -91,10 +132,15 @@ test_retry_budget_and_restart (test_pmu_cohort.SchedulingTests.test_retry_budget
 test_departure_window (test_pmu_quotes.QuoteTests.test_departure_window) ... ok
 test_stale_future_wrong_market_and_field (test_pmu_quotes.QuoteTests.test_stale_future_wrong_market_and_field) ... ok
 test_valid_timestamped_pair (test_pmu_quotes.QuoteTests.test_valid_timestamped_pair) ... ok
+test_only_known_old_gap_allowed (test_prediction_history_exceptions.PredictionHistoryExceptions.test_only_known_old_gap_allowed) ... ok
+test_yesterday_cannot_be_waived (test_prediction_history_exceptions.PredictionHistoryExceptions.test_yesterday_cannot_be_waived) ... ok
 test_freeze_and_tamper (test_prospective_cohort.CohortTests.test_freeze_and_tamper) ... ok
 test_no_network_outside_dates (test_prospective_cohort.CohortTests.test_no_network_outside_dates) ... ok
 test_paired_score_reused_without_result_refetch (test_prospective_cohort.CohortTests.test_paired_score_reused_without_result_refetch) ... ok
 test_sampling_fixed_unique_endpoints_and_sorted (test_prospective_cohort.CohortTests.test_sampling_fixed_unique_endpoints_and_sorted) ... ok
+test_complete_history_accepted (test_recent_history.RecentHistoryTests.test_complete_history_accepted) ... ok
+test_missing_and_incomplete_fail_closed (test_recent_history.RecentHistoryTests.test_missing_and_incomplete_fail_closed) ... ok
+test_yesterday_only (test_recent_history.RecentHistoryTests.test_yesterday_only) ... ok
 test_changed_field_never_renormalized_after_result (test_shadow.ShadowTests.test_changed_field_never_renormalized_after_result) ... ok
 test_correct_scoring_and_dq (test_shadow.ShadowTests.test_correct_scoring_and_dq) ... ok
 test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_rejected) ... ok
@@ -131,10 +177,42 @@ test_temporal_and_overlap_guards (test_xgb_rank.RankSelectionTests.test_temporal
 test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests.test_both_objectives_and_result_blind_inference) ... skipped 'optional XGBoost dependencies absent'
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
+======================================================================
+ERROR: test_market_calibration (unittest.loader._FailedTest.test_market_calibration)
 ----------------------------------------------------------------------
-Ran 129 tests in 0.117s
+ImportError: Failed to import test module: test_market_calibration
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_market_calibration.py", line 2, in <module>
+    from scripts.calibrate_market_tickets import fit_calibration,apply_calibration
+  File "/home/runner/work/turf-lab/turf-lab/scripts/calibrate_market_tickets.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
 
-OK (skipped=6)
+
+======================================================================
+ERROR: test_market_probabilities (unittest.loader._FailedTest.test_market_probabilities)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_market_probabilities
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_market_probabilities.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+----------------------------------------------------------------------
+Ran 172 tests in 0.108s
+
+FAILED (errors=2, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
