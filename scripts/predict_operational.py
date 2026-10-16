@@ -43,9 +43,13 @@ def load_history(today, target_day):
 
 
 def compute_all(history, target):
+    lock_files=json.loads(Path('config/operational_frozen.json').read_text())['files_sha256']
+    if any(digest(f)!=sha for f,sha in lock_files.items()):raise ValueError('Operational frozen dependency changed')
     legacy_history=[r for r in history if r['date'][:4]==target['date'][:4]]
     lock6, pair6 = compute_v6(legacy_history, target)
+    print('Frozen V5/V6 computed',flush=True)
     lock7, pair7 = compute_v7(legacy_history, target)
+    print('Frozen V7 computed',flush=True)
     if pair6['v6']['probabilities'] != pair7['v6']['probabilities']:
         raise ValueError('V6 engines disagree')
     output = {k:pair6[k] for k in ('v5','v6')}
@@ -73,6 +77,7 @@ def compute_all(history, target):
     p = probabilities(row,json.loads(Path(files['classic_full']).read_text()))
     t = lock['temperatures']['classic']; p={n:v**(1/t) for n,v in p.items()}
     z=sum(p.values()); p={n:v/z for n,v in p.items()}
+    print('Frozen Classic full computed',flush=True)
     output['classic_full']={'probabilities':p,'runners':row['runners']}
     active={r['numPmu'] for r in target['participants'] if r['statut']=='PARTANT'}
     all_numbers={r['numPmu'] for r in target['participants']}
@@ -128,7 +133,9 @@ def run(day,reunion,course):
         code_sha256={str(f):digest(f) for folder in ('scripts','turf_lab') for f in Path(folder).glob('*.py')})
     dump(root/'prediction.json',output)
     dump('reports/operational/latest.json',{'prediction':str(root/'prediction.json'),'race_id':rid,'predicted_at':finished.isoformat(),
-        'models':{n:{k:v for k,v in m.items() if k!='runners'} for n,m in models.items()},'place':place})
+        'models':{n:{k:v for k,v in m.items() if k!='runners'} for n,m in models.items()},'place':place,
+        'scheduled_start':start.isoformat(),'history_through':coverage['last_collected_day'],
+        'runners':[{'number':p['numPmu'],'name':p['nom'],'status':p['statut']} for p in target['participants']]} )
     print(str(root/'prediction.json'),flush=True)
     return root/'prediction.json'
 
