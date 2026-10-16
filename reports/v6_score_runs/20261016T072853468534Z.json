@@ -1,0 +1,141 @@
+{
+  "status": "OBSERVATION_ONLY_NO_BET",
+  "checked_at": "2026-10-16T07:28:53.468534+00:00",
+  "scored": 5,
+  "planned": 6,
+  "races": [
+    {
+      "race_id": "2026-10-14_R1C1",
+      "snapshot": "predictions_v6/2026-10-14/2026-10-14_R1C1_20261014T061830010380Z/prediction.json",
+      "snapshot_sha256": "ec1ef381b1fa37317faafa06c4609a236891cedb6ebc7087fa3a2ae753cbadb7",
+      "snapshot_count": 2,
+      "history_gap_days": 0,
+      "status": "SCORED",
+      "winner": 10,
+      "models": {
+        "v5": {
+          "log_loss": 3.7874980626644668,
+          "brier_multiclass": 1.2010355980003007,
+          "top1_hit": 0
+        },
+        "v6": {
+          "log_loss": 3.580346086100525,
+          "brier_multiclass": 1.1962855110398767,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 16
+    },
+    {
+      "race_id": "2026-10-14_R1C2",
+      "snapshot": "predictions_v6/2026-10-14/2026-10-14_R1C2_20261014T061830010380Z/prediction.json",
+      "snapshot_sha256": "3ef87fc15cca89004467c89e0fa7240b443b2c0c3480be071e12e604d00c4a70",
+      "snapshot_count": 2,
+      "history_gap_days": 0,
+      "status": "SCORED",
+      "winner": 6,
+      "models": {
+        "v5": {
+          "log_loss": 2.5558253897700682,
+          "brier_multiclass": 0.9693098688337226,
+          "top1_hit": 0
+        },
+        "v6": {
+          "log_loss": 2.2862313694653604,
+          "brier_multiclass": 0.9206722418012363,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 11
+    },
+    {
+      "race_id": "2026-10-14_R1C3",
+      "snapshot": "predictions_v6/2026-10-14/2026-10-14_R1C3_20261014T061830010380Z/prediction.json",
+      "snapshot_sha256": "71bbbcb392bae1f783b97ff59241ce264f31f250c7d173eb25883b34eb5849a7",
+      "snapshot_count": 2,
+      "history_gap_days": 0,
+      "status": "SCORED",
+      "winner": 7,
+      "models": {
+        "v5": {
+          "log_loss": 3.290315256085941,
+          "brier_multiclass": 1.0218026564765297,
+          "top1_hit": 0
+        },
+        "v6": {
+          "log_loss": 3.2468478475945775,
+          "brier_multiclass": 1.017105189140259,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 16
+    },
+    {
+      "race_id": "2026-10-14_R1C4",
+      "snapshot": "predictions_v6/2026-10-14/2026-10-14_R1C4_20261014T061830010380Z/prediction.json",
+      "snapshot_sha256": "6f81a56d0af8ce5a6648e6153fdf7171cc6384db798b99e402389b549929d212",
+      "snapshot_count": 2,
+      "history_gap_days": 0,
+      "status": "SCORED",
+      "winner": 4,
+      "models": {
+        "v5": {
+          "log_loss": 3.5467215074876726,
+          "brier_multiclass": 1.0536563568589095,
+          "top1_hit": 0
+        },
+        "v6": {
+          "log_loss": 3.252143936668841,
+          "brier_multiclass": 1.0331382782293024,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 14
+    },
+    {
+      "race_id": "2026-10-14_R1C5",
+      "snapshot": "predictions_v6/2026-10-14/2026-10-14_R1C5_20261014T061830010380Z/prediction.json",
+      "snapshot_sha256": "51331dd982b09fff0c046127153ef3b2f86c593818a6aa5ff63a85ac5fb1c8e7",
+      "snapshot_count": 2,
+      "history_gap_days": 0,
+      "status": "SCORED",
+      "winner": 5,
+      "models": {
+        "v5": {
+          "log_loss": 1.7318722030693905,
+          "brier_multiclass": 0.7824937818982588,
+          "top1_hit": 0
+        },
+        "v6": {
+          "log_loss": 1.7892186163493633,
+          "brier_multiclass": 0.8118448769205786,
+          "top1_hit": 0
+        }
+      },
+      "active_runners": 9
+    },
+    {
+      "race_id": "2026-10-14_R4C1",
+      "snapshot": "predictions_v6/2026-10-14/2026-10-14_R4C1_20261014T061830010380Z/prediction.json",
+      "snapshot_sha256": "9d37ce381aff013cca7b9b0ce458da3a6d5547267437937eadc7e8951eef1bf3",
+      "snapshot_count": 2,
+      "history_gap_days": 0,
+      "status": "QUARANTINE",
+      "reason": "field_identity_driver_trainer_or_equipment_changed"
+    }
+  ],
+  "metrics": {
+    "v5": {
+      "log_loss": 2.982446483815508,
+      "brier_multiclass": 1.0056596524135442,
+      "top1_hit": 0
+    },
+    "v6": {
+      "log_loss": 2.8309575712357335,
+      "brier_multiclass": 0.9958092194262506,
+      "top1_hit": 0
+    }
+  },
+  "evidence_manifest": "evidence/v6_results/20261016T072853468534Z/manifest.json",
+  "limits": "Six selected races only, no profitability claim, no post-result probability changes."
+}
