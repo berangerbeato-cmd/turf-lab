@@ -42,6 +42,22 @@ def load_history(today, target_day):
     return compact, coverage
 
 
+def classic_frame(records, race_id):
+    rows=build_history(records,lookback_days=60)
+    # Raw history lists are not read by any subsequent Classic feature function.
+    for row in rows:
+        for runner in row['runners']:runner.pop('history',None)
+    rows=augment_continuous(rows)
+    target_day=next(r['date'] for r in rows if r['race_id']==race_id)
+    cutoff=(datetime.fromisoformat(target_day).date()-timedelta(days=60)).isoformat()
+    # Elo is continuous from the entire archive. Connection/tandem inputs older than
+    # their maximum 60-day window cannot affect the target and need no output frame.
+    rows=[r for r in rows if r['date']>=cutoff]
+    rows=augment_connections(rows,records,window=30,strength=20,equipment_days=60)
+    rows=demographics(rows,records,window=60,strength=20)
+    return candidate([next(r for r in rows if r['race_id']==race_id)],'combined')[0]
+
+
 def compute_all(history, target):
     lock_files=json.loads(Path('config/operational_frozen.json').read_text())['files_sha256']
     if any(digest(f)!=sha for f,sha in lock_files.items()):raise ValueError('Operational frozen dependency changed')
@@ -67,13 +83,7 @@ def compute_all(history, target):
     if digest('config/full_history_protocol.json') != lock['provenance']['protocol_sha256']:
         raise ValueError('Full-history protocol hash mismatch')
     records=full_history+[target]
-    rows=build_history(records,lookback_days=60)
-    rows=augment_continuous(rows)
-    rows=augment_connections(rows,records,window=30,strength=20,equipment_days=60)
-    rows=demographics(rows,records,window=60,strength=20)
-    # Transform only the target: candidate is a stateless per-row concatenation.
-    row=candidate([next(r for r in rows if r['race_id']==target['race_id'])],'combined')[0]
-    del rows
+    row=classic_frame(records,target['race_id'])
     p = probabilities(row,json.loads(Path(files['classic_full']).read_text()))
     t = lock['temperatures']['classic']; p={n:v**(1/t) for n,v in p.items()}
     z=sum(p.values()); p={n:v/z for n,v in p.items()}
