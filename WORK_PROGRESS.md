@@ -249,11 +249,11 @@ Prochaine action pour ces axes : après contrôle de l'extension historique, ét
 <!-- CLOUD_CHECKPOINT -->
 ## Dernière exécution Actions observée automatiquement
 
-- Horodatage UTC : 2026-10-16T06:55:35.099443+00:00.
-- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/38863973294
-- Commit déclencheur : `0b165f59afdc07fe48dbf3e82284b9e93616ce8c`.
-- Commit réellement extrait et exécuté : `0b165f59afdc07fe48dbf3e82284b9e93616ce8c`.
-- Statut avant sauvegarde : **success**.
+- Horodatage UTC : 2026-10-17T06:51:19.075120+00:00.
+- Run : https://github.com/berangerbeato-cmd/turf-lab/actions/runs/39011429131
+- Commit déclencheur : `3365186716bd6a425f6875acfde36eb594554603`.
+- Commit réellement extrait et exécuté : `3365186716bd6a425f6875acfde36eb594554603`.
+- Statut avant sauvegarde : **failure**.
 - La sauvegarde Git se fait à l'étape suivante ; confirmer son résultat dans le run.
 - Une exécution d'audit réussie ne valide pas un modèle prédictif.
 - En cas d'échec, les rapports précédents peuvent être périmés ; utiliser le journal
