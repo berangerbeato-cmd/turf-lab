@@ -11,7 +11,7 @@ test_reject_changed_field_and_unsupported_selection (test_compare_place_quote.Pl
 test_reject_noncomparable_or_unverifiable_quotes (test_compare_place_quote.PlaceQuoteTests.test_reject_noncomparable_or_unverifiable_quotes) ... ok
 test_unit_normalization_and_range_crossing_break_even (test_compare_place_quote.PlaceQuoteTests.test_unit_normalization_and_range_crossing_break_even) ... ok
 test_changes_and_unknown_people (test_connections.ConnectionsTests.test_changes_and_unknown_people) ... ok
-test_fast_optimizer_matches_existing_reference (test_connections.ConnectionsTests.test_fast_optimizer_matches_existing_reference) ... skipped 'V5 workflow installs numpy'
+test_fast_optimizer_matches_existing_reference (test_connections.ConnectionsTests.test_fast_optimizer_matches_existing_reference) ... ok
 test_missing_equipment_never_means_shod_or_no_change (test_connections.ConnectionsTests.test_missing_equipment_never_means_shod_or_no_change) ... ok
 test_no_target_same_day_or_future_leakage (test_connections.ConnectionsTests.test_no_target_same_day_or_future_leakage) ... ok
 test_np_dq_and_expiry (test_connections.ConnectionsTests.test_np_dq_and_expiry) ... ok
@@ -19,7 +19,7 @@ test_bounded_completed_history (test_connections_audit.AuditTest.test_bounded_co
 test_empty_calibration (test_connections_audit.AuditTest.test_empty_calibration) ... ok
 test_weighted_calibration (test_connections_audit.AuditTest.test_weighted_calibration) ... ok
 test_missing_month_blocks_instead_of_shortening_validation (test_connections_pipeline.ConnectionsPipelineTests.test_missing_month_blocks_instead_of_shortening_validation) ... ok
-test_selection_is_frozen_before_independent_evaluation (test_connections_pipeline.ConnectionsPipelineTests.test_selection_is_frozen_before_independent_evaluation) ... skipped 'V5 workflow installs numpy'
+test_selection_is_frozen_before_independent_evaluation (test_connections_pipeline.ConnectionsPipelineTests.test_selection_is_frozen_before_independent_evaluation) ... ok
 test_live_rejects_results_and_duplicates (test_connections_shadow.ShadowConnectionsTests.test_live_rejects_results_and_duplicates) ... ok
 test_normalized_and_target_labels_do_not_change_features (test_connections_shadow.ShadowConnectionsTests.test_normalized_and_target_labels_do_not_change_features) ... ok
 test_partial_collection_stops_and_expands_from_cache (test_connections_shadow.ShadowConnectionsTests.test_partial_collection_stops_and_expands_from_cache) ... ok
@@ -85,7 +85,9 @@ test_non_runner_requires_updated_probabilities (test_manual_value.ManualValueTes
 test_quote_cannot_change_probability (test_manual_value.ManualValueTests.test_quote_cannot_change_probability) ... ok
 test_wrong_horse_number_rejected (test_manual_value.ManualValueTests.test_wrong_horse_number_rejected) ... ok
 test_market_calibration (unittest.loader._FailedTest.test_market_calibration) ... ERROR
-test_market_probabilities (unittest.loader._FailedTest.test_market_probabilities) ... ERROR
+test_bad_input_and_ev (test_market_probabilities.MarketTests.test_bad_input_and_ev) ... ok
+test_matches_independent_permutation_enumeration (test_market_probabilities.MarketTests.test_matches_independent_permutation_enumeration) ... ok
+test_uniform_and_mass (test_market_probabilities.MarketTests.test_uniform_and_mass) ... ok
 test_budget_pause_retains_checkpoint (test_month.MonthTests.test_budget_pause_retains_checkpoint) ... ok
 test_checkpoint_rebases_again_after_concurrent_push (test_month.MonthTests.test_checkpoint_rebases_again_after_concurrent_push) ... ok
 test_complete_cache_is_verified_without_network_or_checkpoint (test_month.MonthTests.test_complete_cache_is_verified_without_network_or_checkpoint) ... ok
@@ -141,6 +143,7 @@ test_sampling_fixed_unique_endpoints_and_sorted (test_prospective_cohort.CohortT
 test_complete_history_accepted (test_recent_history.RecentHistoryTests.test_complete_history_accepted) ... ok
 test_missing_and_incomplete_fail_closed (test_recent_history.RecentHistoryTests.test_missing_and_incomplete_fail_closed) ... ok
 test_yesterday_only (test_recent_history.RecentHistoryTests.test_yesterday_only) ... ok
+test_failure_cannot_be_reported_as_previous_success (test_request_status.RequestStatus.test_failure_cannot_be_reported_as_previous_success) ... ok
 test_changed_field_never_renormalized_after_result (test_shadow.ShadowTests.test_changed_field_never_renormalized_after_result) ... ok
 test_correct_scoring_and_dq (test_shadow.ShadowTests.test_correct_scoring_and_dq) ... ok
 test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_rejected) ... ok
@@ -189,30 +192,15 @@ Traceback (most recent call last):
     __import__(name)
   File "/home/runner/work/turf-lab/turf-lab/tests/test_market_calibration.py", line 2, in <module>
     from scripts.calibrate_market_tickets import fit_calibration,apply_calibration
-  File "/home/runner/work/turf-lab/turf-lab/scripts/calibrate_market_tickets.py", line 6, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-
-======================================================================
-ERROR: test_market_probabilities (unittest.loader._FailedTest.test_market_probabilities)
-----------------------------------------------------------------------
-ImportError: Failed to import test module: test_market_probabilities
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
-    module = self._get_module_from_name(name)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
-    __import__(name)
-  File "/home/runner/work/turf-lab/turf-lab/tests/test_market_probabilities.py", line 2, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
+  File "/home/runner/work/turf-lab/turf-lab/scripts/calibrate_market_tickets.py", line 7, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
 
 
 ----------------------------------------------------------------------
-Ran 172 tests in 0.173s
+Ran 175 tests in 0.339s
 
-FAILED (errors=2, skipped=7)
+FAILED (errors=1, skipped=5)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
