@@ -1,30 +1,8 @@
 {
-  "prediction": "predictions_operational/2026-10-17/2026-10-17_R5C1_20261017T064652115054Z/prediction.json",
+  "prediction": "predictions_operational/2026-10-17/2026-10-17_R5C1_20261017T074942407958Z/prediction.json",
   "race_id": "2026-10-17_R5C1",
-  "predicted_at": "2026-10-17T06:48:24.272217+00:00",
+  "predicted_at": "2026-10-17T07:50:54.613492+00:00",
   "models": {
-    "v5": {
-      "probabilities": {
-        "1": 0.07624552286519717,
-        "2": 0.020400013133397236,
-        "3": 0.031171667065266046,
-        "4": 0.10405460424247974,
-        "5": 0.06349502932040665,
-        "6": 0.04114544715077903,
-        "7": 0.0696147067651436,
-        "8": 0.052811509944336095,
-        "9": 0.35190591348769146,
-        "10": 0.042952477573377834,
-        "11": 0.06413317628870656,
-        "12": 0.024458056563000607,
-        "13": 0.02079500986457008,
-        "14": 0.036816865735647845
-      },
-      "model_file": "models/connections_v5_candidates.json",
-      "model_sha256": "f537cc13991ed401533f7af782952ad298b0d3de120f25d9909435dd69d8d950",
-      "version": "v5@f537cc13991e",
-      "calculated_at": "2026-10-17T06:48:24.272217+00:00"
-    },
     "v6": {
       "probabilities": {
         "1": 0.07082376455002488,
@@ -45,29 +23,7 @@
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-10-17T06:48:24.272217+00:00"
-    },
-    "v7": {
-      "probabilities": {
-        "1": 0.05509736729795876,
-        "2": 0.019259657030690904,
-        "3": 0.02003663220791043,
-        "4": 0.06997820852015063,
-        "5": 0.06704525658593626,
-        "6": 0.04146811327663127,
-        "7": 0.05471997166256976,
-        "8": 0.10404151549390464,
-        "9": 0.3407927644470737,
-        "10": 0.07824391842554711,
-        "11": 0.0634025430161082,
-        "12": 0.017502959080472606,
-        "13": 0.020457508025953218,
-        "14": 0.04795358492909252
-      },
-      "model_file": "models/speed_v7_candidates.json",
-      "model_sha256": "97f565c8f0e2c80cb94c830da249237c178535bb993f5bef44caa3eee3fd58e9",
-      "version": "v7@97f565c8f0e2",
-      "calculated_at": "2026-10-17T06:48:24.272217+00:00"
+      "calculated_at": "2026-10-17T07:50:54.613492+00:00"
     },
     "classic_full": {
       "probabilities": {
@@ -89,12 +45,12 @@
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-10-17T06:48:24.272217+00:00"
+      "calculated_at": "2026-10-17T07:50:54.613492+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
-    "reason": "No evidenced prestart place quote; V5/V6/V7 have no calibrated placement model.",
+    "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
     "number": 9,
     "model": "classic_full",
     "probability": 0.5999256413583101,
@@ -177,5 +133,5 @@
       "status": "PARTANT"
     }
   ],
-  "request_id": "operational-e2e-20261017-refresh"
+  "request_id": "two-active-models-20261017"
 }
