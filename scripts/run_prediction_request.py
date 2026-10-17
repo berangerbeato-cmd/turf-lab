@@ -1,26 +1,37 @@
-"""Use explicit workflow inputs, or the versioned request for a push trigger."""
-import json
-import os
-import subprocess
-import sys
+"""Run explicit inputs or the versioned ChatGPT request; never silently use V1."""
+import json,os
+from datetime import datetime,timezone
 from pathlib import Path
+from turf_lab.evidence import dump
 
 
 def main():
     values=[os.environ.get(k,'') for k in ('RACE_DATE','RACE_MEETING','RACE_NUMBER')]
     if any(values) and not all(values):raise ValueError('All three explicit inputs required')
-    if not any(values):
-        data=json.loads(Path('config/prediction_request.json').read_text())
-        values=[str(data[k]) for k in ('date','reunion','course')]
-    from scripts.predict_operational import run
-    path=run(values[0],int(values[1]),int(values[2]))
-    request=json.loads(Path('config/prediction_request.json').read_text())
-    if request.get('quotes') and not any(os.environ.get(k) for k in ('RACE_DATE','RACE_MEETING','RACE_NUMBER')):
-        from turf_lab.operational_quotes import compare
-        from turf_lab.evidence import dump
-        result=compare(json.loads(path.read_text()),request['quotes'])
-        dump(path.parent/'quotes.json',request['quotes'])
-        dump(path.parent/'comparison.json',result)
-        dump('reports/operational/latest_comparison.json',result)
+    explicit=any(values)
+    data=json.loads(Path('config/prediction_request.json').read_text()) if not explicit else {}
+    if not explicit:values=[str(data[k]) for k in ('date','reunion','course')]
+    state={'request_id':data.get('request_id',os.getenv('GITHUB_RUN_ID','explicit-local')),
+           'race_id':f'{values[0]}_R{int(values[1])}C{int(values[2])}',
+           'started_at':datetime.now(timezone.utc).isoformat(),'status':'RUNNING',
+           'github_run_id':os.getenv('GITHUB_RUN_ID')}
+    dump('reports/operational/request_status.json',state)
+    try:
+        from scripts.predict_operational import run
+        path=run(values[0],int(values[1]),int(values[2]))
+        if data.get('quotes'):
+            from turf_lab.operational_quotes import compare
+            result=compare(json.loads(path.read_text()),data['quotes'])
+            dump(path.parent/'quotes.json',data['quotes'])
+            dump(path.parent/'comparison.json',result)
+            dump('reports/operational/latest_comparison.json',dict(result,request_id=state['request_id']))
+        state.update(status='SUCCESS',prediction=str(path),quotes_compared=bool(data.get('quotes')))
+        latest=json.loads(Path('reports/operational/latest.json').read_text())
+        dump('reports/operational/latest.json',dict(latest,request_id=state['request_id']))
+    except Exception as error:
+        state.update(status='FAILED',error=str(error));raise
+    finally:
+        state['completed_at']=datetime.now(timezone.utc).isoformat()
+        dump('reports/operational/request_status.json',state)
 
 if __name__=='__main__':main()
