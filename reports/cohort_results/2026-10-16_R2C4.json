@@ -1,0 +1,22 @@
+{
+  "race_id": "2026-10-16_R2C4",
+  "snapshot": "predictions_cohort/2026-10-16/2026-10-16_R2C4.json",
+  "snapshot_sha256": "4f50476fc2ea4d2dba565c77b00068193396da0b2479096e404442d8f5d0aecd",
+  "status": "SCORED",
+  "winner": 11,
+  "models": {
+    "v6": {
+      "log_loss": 2.9914749247451278,
+      "brier_multiclass": 1.0959538608789525,
+      "top1_hit": 0
+    },
+    "v7_speed": {
+      "log_loss": 2.767658092042322,
+      "brier_multiclass": 1.033781252405779,
+      "top1_hit": 0
+    }
+  },
+  "active_runners": 12,
+  "evidence_manifest": "evidence/cohort_results/20261017T064509945392Z/manifest.json",
+  "checked_at": "2026-10-17T06:45:09.945392+00:00"
+}

@@ -84,7 +84,8 @@ test_missing_and_duplicate_quotes_fail_closed (test_manual_value.ManualValueTest
 test_non_runner_requires_updated_probabilities (test_manual_value.ManualValueTests.test_non_runner_requires_updated_probabilities) ... ok
 test_quote_cannot_change_probability (test_manual_value.ManualValueTests.test_quote_cannot_change_probability) ... ok
 test_wrong_horse_number_rejected (test_manual_value.ManualValueTests.test_wrong_horse_number_rejected) ... ok
-test_market_calibration (unittest.loader._FailedTest.test_market_calibration) ... ERROR
+test_future_rows_rejected (test_market_calibration.CalibrationTests.test_future_rows_rejected) ... ok
+test_overconfidence_reduced_and_monotonic (test_market_calibration.CalibrationTests.test_overconfidence_reduced_and_monotonic) ... ok
 test_bad_input_and_ev (test_market_probabilities.MarketTests.test_bad_input_and_ev) ... ok
 test_matches_independent_permutation_enumeration (test_market_probabilities.MarketTests.test_matches_independent_permutation_enumeration) ... ok
 test_uniform_and_mass (test_market_probabilities.MarketTests.test_uniform_and_mass) ... ok
@@ -180,27 +181,10 @@ test_temporal_and_overlap_guards (test_xgb_rank.RankSelectionTests.test_temporal
 test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests.test_both_objectives_and_result_blind_inference) ... skipped 'optional XGBoost dependencies absent'
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
-======================================================================
-ERROR: test_market_calibration (unittest.loader._FailedTest.test_market_calibration)
 ----------------------------------------------------------------------
-ImportError: Failed to import test module: test_market_calibration
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
-    module = self._get_module_from_name(name)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
-    __import__(name)
-  File "/home/runner/work/turf-lab/turf-lab/tests/test_market_calibration.py", line 2, in <module>
-    from scripts.calibrate_market_tickets import fit_calibration,apply_calibration
-  File "/home/runner/work/turf-lab/turf-lab/scripts/calibrate_market_tickets.py", line 7, in <module>
-    from scipy.optimize import minimize
-ModuleNotFoundError: No module named 'scipy'
+Ran 176 tests in 0.324s
 
-
-----------------------------------------------------------------------
-Ran 175 tests in 0.312s
-
-FAILED (errors=1, skipped=5)
+OK (skipped=5)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
