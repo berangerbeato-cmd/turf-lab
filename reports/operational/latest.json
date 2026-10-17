@@ -1,137 +1,109 @@
 {
-  "prediction": "predictions_operational/2026-10-17/2026-10-17_R5C1_20261017T074942407958Z/prediction.json",
-  "race_id": "2026-10-17_R5C1",
-  "predicted_at": "2026-10-17T07:50:54.613492+00:00",
+  "prediction": "predictions_operational/2026-10-17/2026-10-17_R5C6_20261017T165856393180Z/prediction.json",
+  "race_id": "2026-10-17_R5C6",
+  "predicted_at": "2026-10-17T16:59:59.362290+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.07082376455002488,
-        "2": 0.022689554561663657,
-        "3": 0.03317531559536713,
-        "4": 0.09962078231152537,
-        "5": 0.06522571184117688,
-        "6": 0.04040394777138439,
-        "7": 0.07393700761146911,
-        "8": 0.053136421123516464,
-        "9": 0.35058188598003803,
-        "10": 0.04245382747924724,
-        "11": 0.058368045225269755,
-        "12": 0.025887024786368416,
-        "13": 0.02235815784189595,
-        "14": 0.04133855332105275
+        "1": 0.03046407483928371,
+        "2": 0.04357340864256199,
+        "3": 0.04720874762565674,
+        "4": 0.3835845272286781,
+        "5": 0.10175964919880803,
+        "6": 0.14555832069179714,
+        "7": 0.05100656565914349,
+        "8": 0.08434015382816852,
+        "9": 0.07171185811831902,
+        "10": 0.040792694167583236
       },
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-10-17T07:50:54.613492+00:00"
+      "calculated_at": "2026-10-17T16:59:59.362290+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.0851183272979901,
-        "2": 0.026754899980486496,
-        "3": 0.042639870717231375,
-        "4": 0.08779351005075894,
-        "5": 0.06328276554700193,
-        "6": 0.03446516155528437,
-        "7": 0.08853463031560478,
-        "8": 0.045355937637825396,
-        "9": 0.359360126970652,
-        "10": 0.0407409979961758,
-        "11": 0.03954506865620202,
-        "12": 0.022998386322906218,
-        "13": 0.02122737809477956,
-        "14": 0.04218293885710105
+        "1": 0.027253858887150782,
+        "2": 0.06175498920677291,
+        "3": 0.06136743535575217,
+        "4": 0.37461150195879095,
+        "5": 0.0889297552617937,
+        "6": 0.14021534925438317,
+        "7": 0.06508580803998126,
+        "8": 0.08560902203052077,
+        "9": 0.058596914584514395,
+        "10": 0.03657536542033985
       },
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-10-17T07:50:54.613492+00:00"
+      "calculated_at": "2026-10-17T16:59:59.362290+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
     "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
-    "number": 9,
+    "number": 4,
     "model": "classic_full",
-    "probability": 0.5999256413583101,
+    "probability": 0.625642360201153,
     "paid_places": 3,
-    "fair_odds": 1.6668732440504948,
+    "fair_odds": 1.5983572462684361,
     "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
     "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places."
   },
-  "scheduled_start": "2026-10-17T14:07:00+00:00",
+  "scheduled_start": "2026-10-17T17:20:00+00:00",
   "history_through": "2026-10-16",
   "runners": [
     {
       "number": 1,
-      "name": "LA LA LAND",
+      "name": "NECK OUEST",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "LUCIA DU CHATELET",
+      "name": "NASCO DE MIRE",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "LADY MAJOR",
+      "name": "NEMO DU DIGEON",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "L'ELITE DU CHOQUEL",
+      "name": "NABUCCO JOSSELYN",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "LADY BOSSE",
+      "name": "NOAH DES MALBERAUX",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "LILY ROSE MYSTIC",
+      "name": "NOBELL DALLAUCH",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "LINE MAJYC",
+      "name": "NEW DREAM OF GLORY",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "LEELY DE BLARY",
+      "name": "NAZARINO",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "LOKA LOKA",
+      "name": "NEW CHAPTER",
       "status": "PARTANT"
     },
     {
       "number": 10,
-      "name": "LILYROSE WIND",
-      "status": "PARTANT"
-    },
-    {
-      "number": 11,
-      "name": "LUNE DU DOUET",
-      "status": "PARTANT"
-    },
-    {
-      "number": 12,
-      "name": "LOVELY GODIVA",
-      "status": "PARTANT"
-    },
-    {
-      "number": 13,
-      "name": "LADY ANGELE",
-      "status": "PARTANT"
-    },
-    {
-      "number": 14,
-      "name": "LADY DU VALLON",
+      "name": "NAOS DES MARETTES",
       "status": "PARTANT"
     }
   ],
-  "request_id": "two-active-models-20261017"
+  "request_id": "screenshots-20261017-1857-r5c6"
 }
