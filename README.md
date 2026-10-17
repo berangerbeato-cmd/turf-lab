@@ -1,7 +1,7 @@
 # État opérationnel — reprise du 16 octobre 2026
 
 Voir [audit complet](reports/OPERATIONAL_MODEL_AUDIT.md) et [mode opératoire](docs/OPERATIONAL_USAGE.md).
-Le point unique est `scripts.predict_operational` : V6 principal, V5/V7 et Classic full comparateurs, aucun réentraînement. La collecte quotidienne et la prédiction utilisent désormais les mêmes archives réconciliées. Les captures de cotes sont traitées par ChatGPT, puis comparées aux sorties réelles. Les sections ci-dessous décrivent l'ancien pilote et sont conservées pour traçabilité ; elles ne donnent pas la taille actuelle de l'historique.
+Le point unique est `scripts.predict_operational` : V6 principal et Classic full seul comparateur (V5/V7 archivés), aucun réentraînement. La collecte quotidienne et la prédiction utilisent désormais les mêmes archives réconciliées. Les captures de cotes sont traitées par ChatGPT, puis comparées aux sorties réelles. Les sections ci-dessous décrivent l'ancien pilote et sont conservées pour traçabilité ; elles ne donnent pas la taille actuelle de l'historique.
 
 # Turf Lab
 

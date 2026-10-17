@@ -1,10 +1,7 @@
-name: Turf Lab V5 first prospective snapshots
+name: Archived - Turf Lab V5 first prospective snapshots
+# Archived by decision of 2026-10-17: only V6 and Classic remain active.
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ['Turf Lab V5 prospective history preparation']
-    types: [completed]
-    branches: [main]
 permissions:
   contents: write
 concurrency:
@@ -12,7 +9,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   capture:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 90
     concurrency:

@@ -1,3 +1,5 @@
+> Décision du 17 octobre 2026 : seuls V6 (principal) et Classic full (comparateur) restent actifs. V5 et V7 sont désormais archivés ; les statuts opérationnels ci-dessous décrivent la situation lors de l’audit initial. Aucun poids ni résultat historique modifié.
+
 # Audit du 16 octobre 2026
 
 Sources examinées : main 9a8f61bb7 et research/full-year-history-2022-2026 10a55afcc.

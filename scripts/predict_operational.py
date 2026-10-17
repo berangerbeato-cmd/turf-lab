@@ -4,8 +4,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from scripts.shadow_connections import live_record
-from scripts.shadow_v6 import compute as compute_v6
-from scripts.shadow_v7 import compute as compute_v7
+from scripts.v6_holdout import verify as verify_v6
+from turf_lab.opposition import augment as opposition
 from turf_lab.evidence import EvidenceStore, dump, races
 from turf_lab.history_sync import audit, summarize
 from turf_lab.full_history_features import augment_continuous
@@ -58,21 +58,30 @@ def classic_frame(records, race_id):
     return candidate([next(r for r in rows if r['race_id']==race_id)],'combined')[0]
 
 
+def compute_reference(history, target):
+    # Original V6 feature pipeline and frozen verification; no V5/V7 inference.
+    _, lock, p, models = verify_v6()
+    if any(r['date'] >= target['date'] for r in history):
+        raise ValueError('History must precede target day')
+    records = history + [target]
+    rows = augment_connections(opposition(build_history(records, lookback_days=p['lookback_days'])), records,
+        window=p['connections_window_days'], strength=p['connections_prior_strength'],
+        equipment_days=p['equipment_history_days'])
+    v6p = json.loads(Path('config/demographics_tandem_v6_protocol.json').read_text())
+    rows = demographics(rows, records, v6p['tandem_window_days'], v6p['prior_strength'])
+    row = next(r for r in rows if r['race_id'] == target['race_id'])
+    frame = candidate([row], 'combined')[0]
+    return lock, {'probabilities': probabilities(frame, models['v6']), 'runners': frame['runners']}
+
+
 def compute_all(history, target):
     lock_files=json.loads(Path('config/operational_frozen.json').read_text())['files_sha256']
     if any(digest(f)!=sha for f,sha in lock_files.items()):raise ValueError('Operational frozen dependency changed')
     legacy_history=[r for r in history if r['date'][:4]==target['date'][:4]]
-    lock6, pair6 = compute_v6(legacy_history, target)
-    print('Frozen V5/V6 computed',flush=True)
-    lock7, pair7 = compute_v7(legacy_history, target)
-    print('Frozen V7 computed',flush=True)
-    if pair6['v6']['probabilities'] != pair7['v6']['probabilities']:
-        raise ValueError('V6 engines disagree')
-    output = {k:pair6[k] for k in ('v5','v6')}
-    output['v7'] = pair7['v7_speed']
-    files = {'v5':'models/connections_v5_candidates.json',
-             'v6':'models/demographics_tandem_v6_candidates.json',
-             'v7':'models/speed_v7_candidates.json',
+    lock6, reference = compute_reference(legacy_history, target)
+    print('Frozen V6 computed',flush=True)
+    output = {'v6': reference}
+    files = {'v6':'models/demographics_tandem_v6_candidates.json',
              'classic_full':'models/full_history/classic.json'}
     policy = json.loads(Path('config/full_history_protocol.json').read_text())
     full_history = [r for r in history if r['date'][:7] not in policy['excluded_months']
@@ -99,7 +108,7 @@ def compute_all(history, target):
             raise ValueError('Invalid nonrunner normalization: '+name)
         result['model_file']=files[name];result['model_sha256']=digest(files[name])
         result['version']=name+'@'+result['model_sha256'][:12]
-    place={'status':'EV placé non calculable','reason':'No evidenced prestart place quote; V5/V6/V7 have no calibrated placement model.'}
+    place={'status':'EV placé non calculable','reason':'No evidenced prestart place quote; V6 has no calibrated placement model.'}
     if 10<=len(active)<=20 and len(active)==len(all_numbers):
         cf='reports/market_evaluation/calibration_frozen.json'
         cal=json.loads(Path(cf).read_text())
@@ -110,7 +119,7 @@ def compute_all(history, target):
         place.update(number=best,model='classic_full',probability=q,paid_places=3,
             fair_odds=1/q,calibration_sha256=digest(cf),
             scope='Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places.')
-    return output,place,{'v6':lock6,'v7':lock7,'classic_full':lock}
+    return output,place,{'v6':lock6,'classic_full':lock}
 
 
 def run(day,reunion,course):
