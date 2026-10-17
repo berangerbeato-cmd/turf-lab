@@ -1,11 +1,11 @@
 # Audit du 16 octobre 2026
 
 Sources examinées : main 9a8f61bb7 et research/full-year-history-2022-2026 10a55afcc.
-Le README de main décrit encore le pilote V1. La branche recherche contient les archives étendues et d'autres modèles : l'audit ne doit pas se limiter à main.
+À l'ouverture de l'audit, le README de main décrivait encore le pilote V1 (corrigé depuis). La branche recherche contient les archives étendues et d'autres modèles : l'audit ne doit pas se limiter à main.
 
 | Modèle | Variables principales | Courses entraînement | Courses test | Log loss | Brier multiclasses | Top-1 | Statut |
 |---|---|---:|---:|---:|---:|---:|---|
-| V1 | cinq statistiques des sorties antérieures | 14 | 14 | 2,4845 | 0,8960 | 7,1 % | pilote entraîné/testé ; ancien moteur manuel à remplacer |
+| V1 | cinq statistiques des sorties antérieures | 14 | 14 | 2,4845 | 0,8960 | 7,1 % | pilote entraîné/testé ; archivé, retiré du workflow manuel |
 | V2 | historique antérieur des cinq dernières sorties | 496 | 488 | 2,4308 | 0,8988 | 19,9 % | entraîné/testé, archive |
 | V3 combined | V2 + Elo relatif + DQ régularisée | 496 | 528 | 2,44106 | 0,89959 | 17,8 % | entraîné/testé, archive |
 | V4 combined | V3 + départ + aptitude parcours | 496 | aucun indépendant | — | — | — | validation 537 courses ; non retenu |
