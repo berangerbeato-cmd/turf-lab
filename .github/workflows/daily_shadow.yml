@@ -23,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-v5.txt scipy==1.17.0
       - name: Test prospective scoring safeguards
         run: python -m unittest discover -s tests -v
       - name: Observe bounded sample with fixed model
