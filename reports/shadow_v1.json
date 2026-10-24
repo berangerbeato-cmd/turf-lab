@@ -119,6 +119,87 @@
       "venue": "CHARTRES",
       "distance_m": 2825,
       "start_type": "NON_PRECISE"
+    },
+    "2026-10-16_R1C1": {
+      "status": "SCORED",
+      "winner": 10,
+      "log_loss": 1.793797962084078,
+      "brier_multiclass": 0.7813230848976329,
+      "top1_hit": 1,
+      "uniform_log_loss": 2.302585092994046,
+      "uniform_brier_multiclass": 0.9,
+      "uniform_top1_hit": 0,
+      "probabilities": {
+        "1": 0.10723264996086145,
+        "2": 0.10865521685463224,
+        "3": 0.040573771532105556,
+        "4": 0.08285921140940007,
+        "5": 0.03560183299515807,
+        "6": 0.09789823057288974,
+        "7": 0.132602805589459,
+        "8": 0.11164340543739976,
+        "9": 0.11660561173818616,
+        "10": 0.16632726390990799
+      },
+      "active_runners": 10,
+      "prediction_file": "predictions/2026-10-16/2026-10-16_R1C1_20261015T065623781474Z/prediction.json",
+      "evaluated_at": "2026-10-24T23:26:04.710428+00:00",
+      "date": "2026-10-16",
+      "venue": "VINCENNES",
+      "distance_m": 2200,
+      "start_type": "NON_PRECISE"
+    },
+    "2026-10-16_R1C3": {
+      "status": "SCORED",
+      "winner": 2,
+      "log_loss": 2.720631885059601,
+      "brier_multiclass": 0.9807808303601975,
+      "top1_hit": 0,
+      "uniform_log_loss": 2.5649493574615367,
+      "uniform_brier_multiclass": 0.9230769230769231,
+      "uniform_top1_hit": 0,
+      "probabilities": {
+        "1": 0.1246853077534077,
+        "2": 0.06583314230170054,
+        "3": 0.0383980620452551,
+        "4": 0.14840761816737555,
+        "5": 0.03547996690919018,
+        "6": 0.04386629097474419,
+        "7": 0.18367174704700037,
+        "8": 0.10872528008210045,
+        "9": 0.022302293873218984,
+        "10": 0.11409687956581316,
+        "11": 0.027185304592987146,
+        "12": 0.010069734823561481,
+        "13": 0.07727837186364518
+      },
+      "active_runners": 13,
+      "prediction_file": "predictions/2026-10-16/2026-10-16_R1C3_20261016T153510640061Z/prediction.json",
+      "evaluated_at": "2026-10-24T23:26:04.710428+00:00",
+      "date": "2026-10-16",
+      "venue": "VINCENNES",
+      "distance_m": 2850,
+      "start_type": "NON_PRECISE"
+    },
+    "2026-10-16_R2C1": {
+      "status": "QUARANTINE",
+      "reason": "field_changed_or_identity_mismatch",
+      "prediction_file": "predictions/2026-10-16/2026-10-16_R2C1_20261015T065626202817Z/prediction.json",
+      "evaluated_at": "2026-10-24T23:26:04.710428+00:00",
+      "date": "2026-10-16",
+      "venue": "BORELY",
+      "distance_m": 3000,
+      "start_type": "NON_PRECISE"
+    },
+    "2026-10-17_R10C1": {
+      "status": "QUARANTINE",
+      "reason": "field_changed_or_identity_mismatch",
+      "prediction_file": "predictions/2026-10-17/2026-10-17_R10C1_20261016T065532740786Z/prediction.json",
+      "evaluated_at": "2026-10-24T23:26:04.710428+00:00",
+      "date": "2026-10-17",
+      "venue": "LA CAPELLE",
+      "distance_m": 2000,
+      "start_type": "NON_PRECISE"
     }
   },
   "capture_log": {
@@ -154,21 +235,26 @@
       "status": "CAPTURED",
       "returncode": 0,
       "log": "200 2026-10-17_programme\n200 2026-10-17_R10C1_participants\n200 2026-10-17_R10C1_performances_pretty\npredictions/2026-10-17/2026-10-17_R10C1_20261016T065532740786Z\n"
+    },
+    "2026-10-26_R7C1": {
+      "status": "CAPTURED",
+      "returncode": 0,
+      "log": "200 2026-10-26_programme\n200 2026-10-26_R7C1_participants\n200 2026-10-26_R7C1_performances_pretty\npredictions/2026-10-26/2026-10-26_R7C1_20261024T232614358931Z\n"
     }
   },
   "summary": {
-    "scored_races": 3,
-    "days": 2,
+    "scored_races": 5,
+    "days": 3,
     "status": "EXPERIMENTAL_NO_BET",
     "metrics": {
-      "log_loss": 2.101680358876954,
-      "brier_multiclass": 0.8513110035877333,
-      "top1_hit": 0.3333333333333333,
-      "uniform_log_loss": 2.655181857709997,
-      "uniform_brier_multiclass": 0.9291666666666667,
+      "log_loss": 2.1638941847549082,
+      "brier_multiclass": 0.863207385204206,
+      "top1_hit": 0.4,
+      "uniform_log_loss": 2.566616004717115,
+      "uniform_brier_multiclass": 0.9221153846153847,
       "uniform_top1_hit": 0
     },
     "note": "No result exists before the race; no ROI, no tuning, no automatic promotion."
   },
-  "updated_at": "2026-10-16T06:55:29.054176+00:00"
+  "updated_at": "2026-10-24T23:26:04.710428+00:00"
 }

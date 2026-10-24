@@ -1,0 +1,614 @@
+{
+  "race_id": "2026-10-26_R7C1",
+  "venue": "VIRE",
+  "distance_m": 2800,
+  "start_type": "NON_PRECISE",
+  "scheduled_start": "2026-10-26T12:20:00+00:00",
+  "predicted_at": "2026-10-24T23:26:16.586996+00:00",
+  "feature_cutoff": "2026-10-24T23:26:14.358931+00:00",
+  "validation_status": "experimental",
+  "uncertainty": "high",
+  "data_quality_pass": true,
+  "status": "NO BET",
+  "model_sha256": "0e22333bc5f8c86b0896c1a3bd57f1516fa6da0f25342357db3ddd5b8b3cee54",
+  "evidence_manifest": "evidence/predictions/20261024T232614358931Z_2026-10-26_R7C1/manifest.json",
+  "runners": [
+    {
+      "number": 1,
+      "horse_id": "NABAB DE JAFA-FEERIE DE MARS-FAKIR DU LORAULT",
+      "name": "NABAB DE JAFA",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        5.056245805348308,
+        0.6
+      ],
+      "history": [
+        {
+          "date": "2026-05-23",
+          "venue": "SAINT MALO",
+          "distance_m": 2950,
+          "field_size": 14,
+          "rank": 10,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-05-08",
+          "venue": "LE MANS",
+          "distance_m": 2200,
+          "field_size": 16,
+          "rank": 11,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-04-25",
+          "venue": "AMIENS",
+          "distance_m": 2400,
+          "field_size": 12,
+          "rank": 9,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.03722700411554858
+    },
+    {
+      "number": 2,
+      "horse_id": "NARLHEY DU RIB-DARLHEY DU RIB-HOHNECK",
+      "name": "NARLHEY DU RIB",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        3.6109179126442243,
+        0.2
+      ],
+      "history": [
+        {
+          "date": "2026-09-20",
+          "venue": "VIRE",
+          "distance_m": 2800,
+          "field_size": 12,
+          "rank": 10,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.014622348229532862
+    },
+    {
+      "number": 3,
+      "horse_id": "NEROLI D'OURVILLE-CALLAS DE TILLARD-EARL SIMON",
+      "name": "NEROLI D'OURVILLE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.75,
+        3.091042453358316,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-10-05",
+          "venue": "CAEN",
+          "distance_m": 2450,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-28",
+          "venue": "CAEN",
+          "distance_m": 2200,
+          "field_size": 18,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-06",
+          "venue": "EVREUX",
+          "distance_m": 2725,
+          "field_size": 12,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-07-12",
+          "venue": "ABBEVILLE",
+          "distance_m": 2300,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.12274261969950856
+    },
+    {
+      "number": 4,
+      "horse_id": "NEW DESTIN-GALILEA DES BOSC-FIFTY KALOUMA",
+      "name": "NEW DESTIN",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.2,
+        3.091042453358316,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-05",
+          "venue": "CAEN",
+          "distance_m": 2450,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-27",
+          "venue": "GOURNAY EN BRAY",
+          "distance_m": 2550,
+          "field_size": 12,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-03-16",
+          "venue": "CAEN",
+          "distance_m": 2450,
+          "field_size": 11,
+          "rank": 9,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2025-10-02",
+          "venue": "CABOURG",
+          "distance_m": 2050,
+          "field_size": 8,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2025-09-28",
+          "venue": "EVREUX",
+          "distance_m": 2100,
+          "field_size": 12,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.06576193862033364
+    },
+    {
+      "number": 5,
+      "horse_id": "NIAMOR-AVENTURE MAGIC-GOLDEN BRIDGE",
+      "name": "NIAMOR",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        null,
+        null,
+        null,
+        null,
+        0.0
+      ],
+      "history": [],
+      "probability": 0.026438498968701134
+    },
+    {
+      "number": 6,
+      "horse_id": "NARVAL DU RELAIS-QUEVA TONNEVILLE-BALTIC CHARM",
+      "name": "NARVAL DU RELAIS",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.75,
+        2.772588722239781,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-10-11",
+          "venue": "BIHOREL LES ROUEN",
+          "distance_m": 2500,
+          "field_size": 12,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-10-04",
+          "venue": "ARRAS",
+          "distance_m": 2900,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-20",
+          "venue": "LE TOUQUET",
+          "distance_m": 2100,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-08-16",
+          "venue": "ROCHEFORT SUR LOIRE",
+          "distance_m": 2425,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.11489310644202733
+    },
+    {
+      "number": 7,
+      "horse_id": "NEYRAC DE LA DIVE-UNA FAFA-CLIF DU POMMEREUX",
+      "name": "NEYRAC DE LA DIVE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.5,
+        3.091042453358316,
+        0.4
+      ],
+      "history": [
+        {
+          "date": "2026-10-05",
+          "venue": "CAEN",
+          "distance_m": 2450,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-27",
+          "venue": "GOURNAY EN BRAY",
+          "distance_m": 2550,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.042422440404651866
+    },
+    {
+      "number": 8,
+      "horse_id": "NEWTON DU PARC-BAIE DU PARC-DISCOURS JOYEUX",
+      "name": "NEWTON DU PARC",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        2.1972245773362196,
+        0.2
+      ],
+      "history": [
+        {
+          "date": "2026-10-18",
+          "venue": "ALENCON",
+          "distance_m": 2650,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.010904470339010281
+    },
+    {
+      "number": 9,
+      "horse_id": "NAO D'OR DU VINOIS-VICTORY CLASSIC-FOXTROT SEA",
+      "name": "NAO D'OR DU VINOIS",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        5.3230099791384085,
+        0.2
+      ],
+      "history": [
+        {
+          "date": "2026-04-05",
+          "venue": "CHATELAILLON",
+          "distance_m": 2625,
+          "field_size": 10,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.0208604455404256
+    },
+    {
+      "number": 10,
+      "horse_id": "NO NAME DU THANA-COOLRASTA DU THANA-FALCAO DE LAURMA",
+      "name": "NO NAME DU THANA",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        2.70805020110221,
+        0.2
+      ],
+      "history": [
+        {
+          "date": "2026-10-12",
+          "venue": "NUILLE-SUR-VICOIN",
+          "distance_m": 2850,
+          "field_size": 13,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.012123945517358369
+    },
+    {
+      "number": 11,
+      "horse_id": "NASDAQ DU BOCAGE-PRETTY DE DRAMARD-SCIPION DU GOUTIER",
+      "name": "NASDAQ DU BOCAGE",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.25,
+        3.091042453358316,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-10-05",
+          "venue": "CAEN",
+          "distance_m": 2450,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-21",
+          "venue": "LE MONT SAINT MICHEL",
+          "distance_m": 2675,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-03-08",
+          "venue": "LE MONT SAINT MICHEL",
+          "distance_m": 2675,
+          "field_size": 12,
+          "rank": 7,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-02-15",
+          "venue": "LE MONT SAINT MICHEL",
+          "distance_m": 2675,
+          "field_size": 12,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.05216154682816757
+    },
+    {
+      "number": 12,
+      "horse_id": "NASH PAULCA-HIMALAYA PAULCA-GIROLAMO",
+      "name": "NASH PAULCA",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.4,
+        2.772588722239781,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-10-11",
+          "venue": "BIHOREL LES ROUEN",
+          "distance_m": 2500,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-10-07",
+          "venue": "GOURNAY EN BRAY",
+          "distance_m": 2550,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-21",
+          "venue": "LE MONT SAINT MICHEL",
+          "distance_m": 2675,
+          "field_size": 12,
+          "rank": 6,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-14",
+          "venue": "LISIEUX",
+          "distance_m": 2725,
+          "field_size": 12,
+          "rank": 5,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-30",
+          "venue": "LE SAP",
+          "distance_m": 2625,
+          "field_size": 12,
+          "rank": null,
+          "status": "NON_PLACE",
+          "dq": false
+        }
+      ],
+      "probability": 0.0866824468029897
+    },
+    {
+      "number": 13,
+      "horse_id": "NIL DAIRPET-SOURCE DE CELLAND-DIJON",
+      "name": "NIL DAIRPET",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.0,
+        0.8,
+        4.709530201312334,
+        1.0
+      ],
+      "history": [
+        {
+          "date": "2026-07-08",
+          "venue": "PORNICHET",
+          "distance_m": 2725,
+          "field_size": 13,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-06-14",
+          "venue": "CHERBOURG",
+          "distance_m": 2550,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-05-23",
+          "venue": "SAINT MALO",
+          "distance_m": 2950,
+          "field_size": 14,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-04-23",
+          "venue": "REIMS",
+          "distance_m": 2500,
+          "field_size": 11,
+          "rank": 4,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-03-26",
+          "venue": "LISIEUX",
+          "distance_m": 2725,
+          "field_size": 11,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.2569322736755977
+    },
+    {
+      "number": 14,
+      "horse_id": "NICKY DES LANDES-RENATE DES LANDES-OPIUM",
+      "name": "NICKY DES LANDES",
+      "status": "PARTANT",
+      "non_runner": false,
+      "features": [
+        0.0,
+        0.25,
+        0.5,
+        3.1354942159291497,
+        0.8
+      ],
+      "history": [
+        {
+          "date": "2026-10-04",
+          "venue": "BIHOREL LES ROUEN",
+          "distance_m": 2500,
+          "field_size": 12,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        },
+        {
+          "date": "2026-09-21",
+          "venue": "LE MONT SAINT MICHEL",
+          "distance_m": 2675,
+          "field_size": 12,
+          "rank": 8,
+          "status": "NON_PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-09-06",
+          "venue": "EVREUX",
+          "distance_m": 2725,
+          "field_size": 12,
+          "rank": 3,
+          "status": "PLACE",
+          "dq": false
+        },
+        {
+          "date": "2026-08-23",
+          "venue": "LAVAL",
+          "distance_m": 2850,
+          "field_size": 16,
+          "rank": null,
+          "status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+          "dq": true
+        }
+      ],
+      "probability": 0.13622691481614682
+    }
+  ]
+}
