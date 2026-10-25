@@ -1,130 +1,136 @@
 {
-  "prediction": "predictions_operational/2026-10-18/2026-10-18_R4C3_20261018T151425283326Z/prediction.json",
-  "race_id": "2026-10-18_R4C3",
-  "predicted_at": "2026-10-18T15:15:49.386690+00:00",
+  "prediction": "predictions_operational/2026-10-25/2026-10-25_R5C5_20261025T115333085000Z/prediction.json",
+  "race_id": "2026-10-25_R5C5",
+  "predicted_at": "2026-10-25T11:54:54.262696+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.05928587725907449,
-        "2": 0.1443674012743998,
-        "4": 0.07070165063979215,
-        "5": 0.0921084077091209,
-        "6": 0.04504166585727726,
-        "7": 0.06310988601923188,
-        "8": 0.07183916730676454,
-        "9": 0.0338573876231894,
-        "10": 0.06180281169111775,
-        "11": 0.03921138589418982,
-        "12": 0.1734392859931564,
-        "13": 0.08245614054416933,
-        "14": 0.06277893218851632,
-        "3": 0.0
+        "1": 0.012953432434205448,
+        "2": 0.02307639512157774,
+        "3": 0.04510009327594394,
+        "4": 0.03917060400385088,
+        "5": 0.025348884710237243,
+        "6": 0.050728199826254546,
+        "7": 0.03415851618656474,
+        "8": 0.03771420129006075,
+        "9": 0.19683546608151936,
+        "10": 0.026783768998966343,
+        "11": 0.2914065769162018,
+        "12": 0.04112845169689375,
+        "13": 0.10060670922711289,
+        "14": 0.0749887002306106
       },
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-10-18T15:15:49.386690+00:00"
+      "calculated_at": "2026-10-25T11:54:54.262696+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.0743149093966544,
-        "2": 0.130424331776296,
-        "4": 0.09329374895411718,
-        "5": 0.07355280336092508,
-        "6": 0.02802950346571289,
-        "7": 0.07395718780974171,
-        "8": 0.07048954906520882,
-        "9": 0.01766230337365552,
-        "10": 0.04702563054520769,
-        "11": 0.0368525586684341,
-        "12": 0.21514799111703042,
-        "13": 0.07311538290162968,
-        "14": 0.06613409956538657,
-        "3": 0.0
+        "1": 0.00922611913069904,
+        "2": 0.011550959454887575,
+        "3": 0.061156359019937656,
+        "4": 0.02358360419599759,
+        "5": 0.024741344918178334,
+        "6": 0.03807670305671726,
+        "7": 0.014841726961111926,
+        "8": 0.02640464987937266,
+        "9": 0.159234177386834,
+        "10": 0.018238133600803112,
+        "11": 0.4172245336914753,
+        "12": 0.04562616698901026,
+        "13": 0.08467633155113069,
+        "14": 0.06541919016384456
       },
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-10-18T15:15:49.386690+00:00"
+      "calculated_at": "2026-10-25T11:54:54.262696+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
-    "reason": "No evidenced prestart place quote; V6 has no calibrated placement model."
+    "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
+    "number": 11,
+    "model": "classic_full",
+    "probability": 0.6658260616928705,
+    "paid_places": 3,
+    "fair_odds": 1.5018937490333262,
+    "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
+    "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places."
   },
-  "scheduled_start": "2026-10-18T15:19:00+00:00",
-  "history_through": "2026-10-17",
+  "scheduled_start": "2026-10-25T15:07:00+00:00",
+  "history_through": "2026-10-24",
   "runners": [
     {
       "number": 1,
-      "name": "KOLMI DES EPINES",
+      "name": "KUROKO LAUAR",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "KENNEDY TEXAN",
+      "name": "KIDAM DU METZ",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "KENAVO TUILERIE",
-      "status": "NON_PARTANT"
+      "name": "KRUGER DU NORD",
+      "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "KSAR UNICK",
+      "name": "KLARCK DE VANDEL",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "KRACDARCHE",
+      "name": "KRUNCHY",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "KIRSCH DES PRES",
+      "name": "KOKA DU DOUET",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "KEL BAMBOIS",
+      "name": "KOCKTAIL WOOD",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "KING GEORGES ELLIS",
+      "name": "KNOK",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "KAZACHOK D'ETANG",
+      "name": "KERVELEAN",
       "status": "PARTANT"
     },
     {
       "number": 10,
-      "name": "KYROC D'ERPION",
+      "name": "KERNO",
       "status": "PARTANT"
     },
     {
       "number": 11,
-      "name": "KILLER D'ENFER",
+      "name": "KELLER DE L'ITON",
       "status": "PARTANT"
     },
     {
       "number": 12,
-      "name": "KADOR DU RABUTIN",
+      "name": "KING FROMENTRO",
       "status": "PARTANT"
     },
     {
       "number": 13,
-      "name": "KINGSTON DU MINON",
+      "name": "KOUROUX",
       "status": "PARTANT"
     },
     {
       "number": 14,
-      "name": "KASHMIR PRESTANCE",
+      "name": "KENTUCKY WOOD",
       "status": "PARTANT"
     }
-  ],
-  "request_id": "screenshots-20261018-1712-r4c3"
+  ]
 }
