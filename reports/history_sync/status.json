@@ -1,13 +1,13 @@
 {
   "status": "PARTIEL",
-  "checked_at": "2026-10-24T16:55:19.971441+00:00",
-  "required_through": "2026-10-23",
-  "last_complete_day": "2026-10-23",
-  "last_collected_day": "2026-10-23",
+  "checked_at": "2026-10-25T05:19:46.382490+00:00",
+  "required_through": "2026-10-24",
+  "last_complete_day": "2026-10-24",
+  "last_collected_day": "2026-10-24",
   "complete_continuously_through": "2023-01-21",
-  "verified_races": 30605,
-  "recovered_races": 0,
-  "requests": 23,
+  "verified_races": 30627,
+  "recovered_races": 22,
+  "requests": 68,
   "missing_days": 6,
   "unknown_programme_days": 1,
   "missing_races": 21,
@@ -16137,6 +16137,15 @@
       "expected": 14,
       "status": "OK",
       "verified_races": 14,
+      "cancelled_races": 0
+    },
+    {
+      "date": "2026-10-24",
+      "pending": [],
+      "issues": [],
+      "expected": 22,
+      "status": "OK",
+      "verified_races": 22,
       "cancelled_races": 0
     }
   ],
