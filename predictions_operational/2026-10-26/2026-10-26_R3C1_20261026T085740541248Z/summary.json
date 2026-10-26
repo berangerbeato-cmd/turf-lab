@@ -1,0 +1,150 @@
+{
+  "prediction": "predictions_operational/2026-10-26/2026-10-26_R3C1_20261026T085740541248Z/prediction.json",
+  "race_id": "2026-10-26_R3C1",
+  "predicted_at": "2026-10-26T08:59:10.465176+00:00",
+  "models": {
+    "v6": {
+      "probabilities": {
+        "1": 0.009600915018115335,
+        "2": 0.060661622915966315,
+        "3": 0.06766530232196478,
+        "4": 0.027287137564302805,
+        "5": 0.011539061820673673,
+        "6": 0.26546826246217525,
+        "7": 0.05875810446576402,
+        "8": 0.041620542112721017,
+        "9": 0.14537007318048475,
+        "10": 0.01991155807182008,
+        "11": 0.023806440766348264,
+        "12": 0.06444861503761888,
+        "13": 0.06513548841324596,
+        "14": 0.01752706340644308,
+        "15": 0.07386241427408771,
+        "16": 0.04733739816826804
+      },
+      "model_file": "models/demographics_tandem_v6_candidates.json",
+      "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
+      "version": "v6@fb2aea565cfb",
+      "calculated_at": "2026-10-26T08:59:10.465176+00:00"
+    },
+    "classic_full": {
+      "probabilities": {
+        "1": 0.0051959372159331415,
+        "2": 0.0534311570529399,
+        "3": 0.08136730623277524,
+        "4": 0.02016516685698206,
+        "5": 0.010545907902976789,
+        "6": 0.2999094780031456,
+        "7": 0.07377042006219203,
+        "8": 0.02710912876615769,
+        "9": 0.1200774125160123,
+        "10": 0.016027223843107435,
+        "11": 0.01661630708270932,
+        "12": 0.0700402475937128,
+        "13": 0.05049948352743784,
+        "14": 0.019124540589115262,
+        "15": 0.08352920526370118,
+        "16": 0.05259107749110144
+      },
+      "model_file": "models/full_history/classic.json",
+      "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
+      "version": "classic_full@1c5e0e8f4900",
+      "calculated_at": "2026-10-26T08:59:10.465176+00:00"
+    }
+  },
+  "place": {
+    "status": "EV placé non calculable",
+    "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
+    "number": 6,
+    "model": "classic_full",
+    "probability": 0.5433238146685954,
+    "paid_places": 3,
+    "fair_odds": 1.840523041696521,
+    "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
+    "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places."
+  },
+  "scheduled_start": "2026-10-26T15:35:00+00:00",
+  "history_through": "2026-10-25",
+  "runners": [
+    {
+      "number": 1,
+      "name": "KISS MELODY",
+      "status": "PARTANT"
+    },
+    {
+      "number": 2,
+      "name": "KELLE BLEUE",
+      "status": "PARTANT"
+    },
+    {
+      "number": 3,
+      "name": "KARIDY DU DOME",
+      "status": "PARTANT"
+    },
+    {
+      "number": 4,
+      "name": "KALA DES RACQUES",
+      "status": "PARTANT"
+    },
+    {
+      "number": 5,
+      "name": "KARA DU VAUTOUR",
+      "status": "PARTANT"
+    },
+    {
+      "number": 6,
+      "name": "KATHARINA DE MAI",
+      "status": "PARTANT"
+    },
+    {
+      "number": 7,
+      "name": "KIBORA BUISSONAY",
+      "status": "PARTANT"
+    },
+    {
+      "number": 8,
+      "name": "KHALEESI LA VIE",
+      "status": "PARTANT"
+    },
+    {
+      "number": 9,
+      "name": "KRACOTTE VERGNIER",
+      "status": "PARTANT"
+    },
+    {
+      "number": 10,
+      "name": "KHARA DRY",
+      "status": "PARTANT"
+    },
+    {
+      "number": 11,
+      "name": "KIM DE BEAUM",
+      "status": "PARTANT"
+    },
+    {
+      "number": 12,
+      "name": "KAMTCHATKA",
+      "status": "PARTANT"
+    },
+    {
+      "number": 13,
+      "name": "KINJAL DE BELLANDE",
+      "status": "PARTANT"
+    },
+    {
+      "number": 14,
+      "name": "KELLE BELLE JASMA",
+      "status": "PARTANT"
+    },
+    {
+      "number": 15,
+      "name": "KRONA VIKING",
+      "status": "PARTANT"
+    },
+    {
+      "number": 16,
+      "name": "KOREA",
+      "status": "PARTANT"
+    }
+  ]
+}
