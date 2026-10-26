@@ -1,136 +1,151 @@
 {
-  "prediction": "predictions_operational/2026-10-25/2026-10-25_R5C5_20261025T115333085000Z/prediction.json",
-  "race_id": "2026-10-25_R5C5",
-  "predicted_at": "2026-10-25T11:54:54.262696+00:00",
+  "prediction": "predictions_operational/2026-10-26/2026-10-26_R3C2_20261026T085753881610Z/prediction.json",
+  "race_id": "2026-10-26_R3C2",
+  "predicted_at": "2026-10-26T08:59:09.813443+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.012953432434205448,
-        "2": 0.02307639512157774,
-        "3": 0.04510009327594394,
-        "4": 0.03917060400385088,
-        "5": 0.025348884710237243,
-        "6": 0.050728199826254546,
-        "7": 0.03415851618656474,
-        "8": 0.03771420129006075,
-        "9": 0.19683546608151936,
-        "10": 0.026783768998966343,
-        "11": 0.2914065769162018,
-        "12": 0.04112845169689375,
-        "13": 0.10060670922711289,
-        "14": 0.0749887002306106
+        "1": 0.03817624693257158,
+        "2": 0.0687536694534112,
+        "3": 0.10530999060476469,
+        "4": 0.047852629855542124,
+        "5": 0.030373928097912388,
+        "6": 0.31526536322278353,
+        "7": 0.018240504960549277,
+        "8": 0.015697778072620412,
+        "9": 0.04350562348041054,
+        "10": 0.05177238577861943,
+        "11": 0.042455122675379556,
+        "12": 0.06150012100508793,
+        "13": 0.12854974271147146,
+        "14": 0.00436862649835406,
+        "15": 0.012649956545396362,
+        "16": 0.015528310105125427
       },
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-10-25T11:54:54.262696+00:00"
+      "calculated_at": "2026-10-26T08:59:09.813443+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.00922611913069904,
-        "2": 0.011550959454887575,
-        "3": 0.061156359019937656,
-        "4": 0.02358360419599759,
-        "5": 0.024741344918178334,
-        "6": 0.03807670305671726,
-        "7": 0.014841726961111926,
-        "8": 0.02640464987937266,
-        "9": 0.159234177386834,
-        "10": 0.018238133600803112,
-        "11": 0.4172245336914753,
-        "12": 0.04562616698901026,
-        "13": 0.08467633155113069,
-        "14": 0.06541919016384456
+        "1": 0.032005428495073596,
+        "2": 0.07528531895629338,
+        "3": 0.16570114674705494,
+        "4": 0.04809067254423395,
+        "5": 0.02921183029569539,
+        "6": 0.2757908838036703,
+        "7": 0.028025296744850357,
+        "8": 0.008299003548887931,
+        "9": 0.06433730979410085,
+        "10": 0.030674060491762568,
+        "11": 0.01897682498636949,
+        "12": 0.04911399507623164,
+        "13": 0.13366426345474372,
+        "14": 0.00722074489107856,
+        "15": 0.014438647098220627,
+        "16": 0.019164573071732697
       },
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-10-25T11:54:54.262696+00:00"
+      "calculated_at": "2026-10-26T08:59:09.813443+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
     "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
-    "number": 11,
+    "number": 6,
     "model": "classic_full",
-    "probability": 0.6658260616928705,
+    "probability": 0.5252523767403643,
     "paid_places": 3,
-    "fair_odds": 1.5018937490333262,
+    "fair_odds": 1.9038466921479664,
     "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
     "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places."
   },
-  "scheduled_start": "2026-10-25T15:07:00+00:00",
-  "history_through": "2026-10-24",
+  "scheduled_start": "2026-10-26T16:10:00+00:00",
+  "history_through": "2026-10-25",
   "runners": [
     {
       "number": 1,
-      "name": "KUROKO LAUAR",
+      "name": "LUC PAASLOO",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "KIDAM DU METZ",
+      "name": "LITTLEKING FOXGLEN",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "KRUGER DU NORD",
+      "name": "LE BIG JANJAN",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "KLARCK DE VANDEL",
+      "name": "LONE RANGER",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "KRUNCHY",
+      "name": "LE BOSS DE LUBEL",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "KOKA DU DOUET",
+      "name": "LARGO DU PONT",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "KOCKTAIL WOOD",
+      "name": "LOZANO",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "KNOK",
+      "name": "LATINO LA MAZURE",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "KERVELEAN",
+      "name": "LEPIDOPTERISTE",
       "status": "PARTANT"
     },
     {
       "number": 10,
-      "name": "KERNO",
+      "name": "LIPTON TONIC",
       "status": "PARTANT"
     },
     {
       "number": 11,
-      "name": "KELLER DE L'ITON",
+      "name": "LUCKY CHARM",
       "status": "PARTANT"
     },
     {
       "number": 12,
-      "name": "KING FROMENTRO",
+      "name": "LIGHT FEELING",
       "status": "PARTANT"
     },
     {
       "number": 13,
-      "name": "KOUROUX",
+      "name": "LAMPARO",
       "status": "PARTANT"
     },
     {
       "number": 14,
-      "name": "KENTUCKY WOOD",
+      "name": "LE GRAND DE VIRY",
+      "status": "PARTANT"
+    },
+    {
+      "number": 15,
+      "name": "LOVER DES RACQUES",
+      "status": "PARTANT"
+    },
+    {
+      "number": 16,
+      "name": "LEOLIO",
       "status": "PARTANT"
     }
-  ]
+  ],
+  "request_id": "chat-20261026-r3c2-1793005052288"
 }
