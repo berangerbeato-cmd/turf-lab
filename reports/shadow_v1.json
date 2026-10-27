@@ -200,6 +200,39 @@
       "venue": "LA CAPELLE",
       "distance_m": 2000,
       "start_type": "NON_PRECISE"
+    },
+    "2026-10-26_R7C1": {
+      "status": "SCORED",
+      "winner": 3,
+      "log_loss": 2.0976656387626544,
+      "brier_multiclass": 0.8867115851955792,
+      "top1_hit": 0,
+      "uniform_log_loss": 2.6390573296152584,
+      "uniform_brier_multiclass": 0.9285714285714286,
+      "uniform_top1_hit": 0,
+      "probabilities": {
+        "1": 0.03722700411554858,
+        "2": 0.014622348229532862,
+        "3": 0.12274261969950856,
+        "4": 0.06576193862033364,
+        "5": 0.026438498968701134,
+        "6": 0.11489310644202733,
+        "7": 0.042422440404651866,
+        "8": 0.010904470339010281,
+        "9": 0.0208604455404256,
+        "10": 0.012123945517358369,
+        "11": 0.05216154682816757,
+        "12": 0.0866824468029897,
+        "13": 0.2569322736755977,
+        "14": 0.13622691481614682
+      },
+      "active_runners": 14,
+      "prediction_file": "predictions/2026-10-26/2026-10-26_R7C1_20261024T232614358931Z/prediction.json",
+      "evaluated_at": "2026-10-27T06:55:54.088276+00:00",
+      "date": "2026-10-26",
+      "venue": "VIRE",
+      "distance_m": 2800,
+      "start_type": "NON_PRECISE"
     }
   },
   "capture_log": {
@@ -242,18 +275,18 @@
     }
   },
   "summary": {
-    "scored_races": 5,
-    "days": 3,
+    "scored_races": 6,
+    "days": 4,
     "status": "EXPERIMENTAL_NO_BET",
     "metrics": {
-      "log_loss": 2.1638941847549082,
-      "brier_multiclass": 0.863207385204206,
-      "top1_hit": 0.4,
-      "uniform_log_loss": 2.566616004717115,
-      "uniform_brier_multiclass": 0.9221153846153847,
+      "log_loss": 2.152856093756199,
+      "brier_multiclass": 0.8671247518694349,
+      "top1_hit": 0.3333333333333333,
+      "uniform_log_loss": 2.5786895588668055,
+      "uniform_brier_multiclass": 0.923191391941392,
       "uniform_top1_hit": 0
     },
     "note": "No result exists before the race; no ROI, no tuning, no automatic promotion."
   },
-  "updated_at": "2026-10-26T07:00:17.635742+00:00"
+  "updated_at": "2026-10-27T06:55:54.088276+00:00"
 }
