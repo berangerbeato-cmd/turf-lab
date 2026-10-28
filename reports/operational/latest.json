@@ -1,151 +1,130 @@
 {
-  "prediction": "predictions_operational/2026-10-26/2026-10-26_R3C5_20261026T152342402907Z/prediction.json",
-  "race_id": "2026-10-26_R3C5",
-  "predicted_at": "2026-10-26T15:25:02.213939+00:00",
+  "prediction": "predictions_operational/2026-10-28/2026-10-28_R3C3_20261028T095048842805Z/prediction.json",
+  "race_id": "2026-10-28_R3C3",
+  "predicted_at": "2026-10-28T09:52:06.599635+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.1061959831135175,
-        "2": 0.009491310919987641,
-        "3": 0.01403904170558146,
-        "4": 0.09779467596581964,
-        "5": 0.018809673754251525,
-        "6": 0.05611278038780155,
-        "7": 0.019742047618975248,
-        "8": 0.019131544380304507,
-        "9": 0.043282886855867626,
-        "10": 0.055610650435323726,
-        "11": 0.04734723330079391,
-        "12": 0.047853174932868274,
-        "13": 0.07258596749277059,
-        "14": 0.30012232766433405,
-        "15": 0.0613777672092858,
-        "16": 0.030502934262516934
+        "1": 0.037749879904849355,
+        "2": 0.11050501098848116,
+        "3": 0.026766015133780217,
+        "4": 0.027445461607405915,
+        "5": 0.18251918221440805,
+        "6": 0.02646661436387085,
+        "7": 0.07354671305941354,
+        "8": 0.01624261092107808,
+        "9": 0.0180563447930534,
+        "10": 0.013994689876324514,
+        "11": 0.11361690491137817,
+        "12": 0.1446228398226206,
+        "13": 0.20846773240333608
       },
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-10-26T15:25:02.213939+00:00"
+      "calculated_at": "2026-10-28T09:52:06.599635+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.07822092910931173,
-        "2": 0.015561860065308115,
-        "3": 0.017195060453329573,
-        "4": 0.10536207250097586,
-        "5": 0.019563637187110797,
-        "6": 0.09992840077833517,
-        "7": 0.019732168462278567,
-        "8": 0.016231026792224837,
-        "9": 0.04150122805149511,
-        "10": 0.06431268916576212,
-        "11": 0.07839790714378159,
-        "12": 0.039672708689062815,
-        "13": 0.045857702239577046,
-        "14": 0.2608858459630303,
-        "15": 0.053925004414814424,
-        "16": 0.0436517589836019
+        "1": 0.030076155049695578,
+        "2": 0.12012927168059273,
+        "3": 0.05121181641584621,
+        "4": 0.03670620693894881,
+        "5": 0.13526978850501706,
+        "6": 0.03570568612887803,
+        "7": 0.08718738391174796,
+        "8": 0.0248070866773262,
+        "9": 0.01835068609055263,
+        "10": 0.020345638547133487,
+        "11": 0.10569724382036952,
+        "12": 0.17960981193408154,
+        "13": 0.15490322429981027
       },
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-10-26T15:25:02.213939+00:00"
+      "calculated_at": "2026-10-28T09:52:06.599635+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
     "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
-    "number": 14,
+    "number": 12,
     "model": "classic_full",
-    "probability": 0.5007220693228144,
+    "probability": 0.4171101577967502,
     "paid_places": 3,
-    "fair_odds": 1.997115887766677,
+    "fair_odds": 2.3974482071646905,
     "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
     "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places."
   },
-  "scheduled_start": "2026-10-26T17:55:00+00:00",
-  "history_through": "2026-10-25",
+  "scheduled_start": "2026-10-28T16:45:00+00:00",
+  "history_through": "2026-10-27",
   "runners": [
     {
       "number": 1,
-      "name": "MELIUS AVIS",
+      "name": "KEMEUNEUR",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "MAFIA RINGEAT",
+      "name": "KALINA VENDEENNE",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "MILLIUM QUESNOT",
+      "name": "IBERNATUS",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "MAKE FOR JUMP",
+      "name": "JUSTIFY MY LOVE",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "MARISA DU CHATELET",
+      "name": "KATE METEOR",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "MAKIAVEL DE BUSSET",
+      "name": "KEL COPAIN",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "MURPHY DU PONCELET",
+      "name": "KRAC GAILLARD",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "MENTHE FRAICHE",
+      "name": "KOUGAR DE SIMM",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "MERRY",
+      "name": "JOSE DU CHERISAY",
       "status": "PARTANT"
     },
     {
       "number": 10,
-      "name": "MYSTIC D'YVEL",
+      "name": "HOUSTON D'ARIANE",
       "status": "PARTANT"
     },
     {
       "number": 11,
-      "name": "MARS COBBA",
+      "name": "KIROMAN",
       "status": "PARTANT"
     },
     {
       "number": 12,
-      "name": "MEYDAN VOIRONS",
+      "name": "KISS ME JULRY",
       "status": "PARTANT"
     },
     {
       "number": 13,
-      "name": "MUST DREAM",
-      "status": "PARTANT"
-    },
-    {
-      "number": 14,
-      "name": "MAVERICK DE FAEL",
-      "status": "PARTANT"
-    },
-    {
-      "number": 15,
-      "name": "MYSTIC DES FORGES",
-      "status": "PARTANT"
-    },
-    {
-      "number": 16,
-      "name": "MISTER BARRA",
+      "name": "KRAK DE BUSSIERES",
       "status": "PARTANT"
     }
   ],
-  "request_id": "chat-20261026-r3c5-1793028122285"
+  "request_id": "chat-20261028-r3c3-1793181026477"
 }
