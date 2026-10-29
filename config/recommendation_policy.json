@@ -1,0 +1,18 @@
+{
+  "status": "SUSPENDED",
+  "recommendations_allowed": false,
+  "effective_date_paris": "2026-10-29",
+  "audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "scope": "All real-money win/place recommendations. Frozen model calculation and paper observation continue; no automatic resumption.",
+  "resumption_requires": [
+    "resolve individual history blind spots without rewriting historical evidence",
+    "version and validate any feature or calibration changes on separate chronological data",
+    "evaluate market-conditional calibration and selected bets on timestamped prestart quotes",
+    "explicit reviewed resumption decision; no automatic switch from positive EV"
+  ]
+}
