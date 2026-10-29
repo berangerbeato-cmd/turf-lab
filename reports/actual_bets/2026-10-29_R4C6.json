@@ -1,0 +1,58 @@
+{
+  "race_id": "2026-10-29_R4C6",
+  "venue": "Graignes",
+  "bet_type": "simple_gagnant",
+  "result_reported_by_user": [
+    10,
+    9,
+    3
+  ],
+  "result_status": "USER_REPORTED_UNVERIFIED",
+  "bets": [
+    {
+      "number": 7,
+      "horse": "NEVADA DU CHATELET",
+      "stake_eur": 4,
+      "observed_early_odds": 10,
+      "status": "LOST",
+      "return_eur": 0
+    },
+    {
+      "number": 3,
+      "horse": "NORDIC VICKING",
+      "stake_eur": 3,
+      "observed_early_odds": 19.1,
+      "finish_position": 3,
+      "status": "LOST",
+      "return_eur": 0
+    },
+    {
+      "number": 6,
+      "horse": "NAPOLI BASC",
+      "stake_eur": 2,
+      "observed_early_odds": 26.9,
+      "status": "LOST",
+      "return_eur": 0
+    },
+    {
+      "number": 5,
+      "horse": "NADJO BY LENA",
+      "stake_eur": 1,
+      "observed_early_odds": 49,
+      "status": "LOST",
+      "return_eur": 0
+    }
+  ],
+  "stake_total_eur": 10,
+  "return_total_eur": 0,
+  "profit_loss_eur": -10,
+  "prediction": {
+    "request_id": "chat-20261029-r4c6-1915-zeturf",
+    "model_names": [
+      "v6",
+      "classic_full"
+    ],
+    "predicted_at": "2026-10-29T18:20:07.619121+00:00"
+  },
+  "notes": "Les cotes mentionnees proviennent des captures anterieures, pas de tickets avec rapports verifies. Resultat 10-9-3 declare par l'utilisateur, non encore confirme par source officielle. Simple gagnant n°3 termine 3e et perd."
+}
