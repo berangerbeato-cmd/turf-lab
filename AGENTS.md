@@ -13,3 +13,16 @@ When the user sends horse-race odds screenshots:
 Code and workflows are backed by this repository. Do not copy the repository to a second document store. An ordinary ChatGPT session without connected tools/runtime cannot execute the models; state that limitation rather than inventing predictions.
 
 Decision 2026-10-17: only V6 (primary) and Classic full (challenger) are active. V5/V7 predictions and model files are archived; do not reactivate their workflows. Output columns: cheval, cote, P V6, EV V6, P Classic, EV Classic.
+
+
+## Decision 2026-10-29 — recommendations suspended
+
+Read `config/recommendation_policy.json` and `reports/value_audit_2026-10-29/RESULTS.md`
+before any odds analysis. Do not recommend a horse, ticket, stake, or real-money
+strategy while suspended, even when both models agree or an EV is very large.
+Frozen calculations, all-runner tables and paper observation remain available as
+research only. Positive EV is not an eligibility signal. Do not convert archived
+PMU post-race prices into executable prestart prices or a betting ROI.
+Do not silently resume recommendations; resumption needs a separately validated
+protocol and explicit review. Do not alter model weights or archived forecasts
+to repair the losing race. Track confirmed stakes separately from suggested ones.

@@ -1,3 +1,9 @@
+> **29 octobre 2026 — recommandations de paris suspendues.** L’audit face aux cotes
+> confirme une sous-estimation des favoris et une surestimation des outsiders.
+> Les calculs figés continuent uniquement pour la recherche, sans conseil de mise.
+> Voir [résultats et limites](reports/value_audit_2026-10-29/RESULTS.md) et
+> [politique de suspension](config/recommendation_policy.json).
+
 # État opérationnel — reprise du 16 octobre 2026
 
 Voir [audit complet](reports/OPERATIONAL_MODEL_AUDIT.md) et [mode opératoire](docs/OPERATIONAL_USAGE.md).

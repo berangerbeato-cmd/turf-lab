@@ -1,6 +1,7 @@
 """Compare independently computed probabilities with verified screenshot quotes."""
 import math, re, unicodedata
 from datetime import datetime, timezone
+from turf_lab.recommendation_policy import recommendation_state
 
 
 def stamp(s):
@@ -46,5 +47,6 @@ def compare(prediction,quotes):
         pr=place['probability'];place_result={'status':'PRESTART_PRICE_SCENARIOS_ONLY','number':place['number'],'probability':pr,'ev_low':pr*low-1,'ev_high':pr*high-1,'note':'Probable range is not a guaranteed final payout interval; only classic top selection calibrated.'}
     return {'race_id':prediction['race_id'],'observed_at':quotes['observed_at'],'calculated_at':now.isoformat(),
         'status':'PRESTART_ESTIMATE' if now<start else 'RETROSPECTIVE_QUOTE_COMPARISON',
+        **recommendation_state(),
         'rows':sorted(rows,key=lambda r:-r['models'][prediction['primary_model']]['ev']),
-        'place':place_result,'limits':'Observed odds may change; field must be rechecked; positive estimated EV is not guaranteed.'}
+        'place':place_result,'limits':'Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only.'}

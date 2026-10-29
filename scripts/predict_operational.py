@@ -14,6 +14,7 @@ from turf_lab.connections import augment_connections
 from turf_lab.demographics_tandem import augment as demographics, candidate
 from turf_lab.pilot import probabilities
 from turf_lab.market_probabilities import markets
+from turf_lab.recommendation_policy import recommendation_state
 
 
 def digest(path):
@@ -144,14 +145,14 @@ def run(day,reunion,course):
     for m in models.values():m['calculated_at']=finished.isoformat()
     sha=hashlib.sha256(json.dumps(history,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
     source_tree=subprocess.check_output(['git','rev-parse','HEAD^{tree}'],text=True).strip()
-    output=dict(status='PRESTART_RESEARCH',race_id=rid,predicted_at=finished.isoformat(),scheduled_start=start.isoformat(),
+    output=dict(**recommendation_state(),status='PRESTART_RESEARCH',race_id=rid,predicted_at=finished.isoformat(),scheduled_start=start.isoformat(),
         primary_model='v6',models=models,place=place,target_snapshot=target,history_sha256=sha,history_source_tree=source_tree,history_loader='scripts.predict_operational.load_history',
         history_coverage=coverage,history_gap_days=(datetime.fromisoformat(day).date()-datetime.fromisoformat(coverage['last_collected_day']).date()).days-1,
         frozen=locks,code_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
         requires_runner_recheck=True,odds_used_as_features=False,
         code_sha256={str(f):digest(f) for folder in ('scripts','turf_lab') for f in Path(folder).glob('*.py')})
     dump(root/'prediction.json',output)
-    dump('reports/operational/latest.json',{'prediction':str(root/'prediction.json'),'race_id':rid,'predicted_at':finished.isoformat(),
+    dump('reports/operational/latest.json',{**recommendation_state(),'prediction':str(root/'prediction.json'),'race_id':rid,'predicted_at':finished.isoformat(),
         'models':{n:{k:v for k,v in m.items() if k!='runners'} for n,m in models.items()},'place':place,
         'scheduled_start':start.isoformat(),'history_through':coverage['last_collected_day'],
         'runners':[{'number':p['numPmu'],'name':p['nom'],'status':p['statut']} for p in target['participants']]} )
