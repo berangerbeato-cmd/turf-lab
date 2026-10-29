@@ -1,95 +1,123 @@
 {
-  "prediction": "predictions_operational/2026-10-28/2026-10-28_R3C7_20261028T095231848377Z/prediction.json",
-  "race_id": "2026-10-28_R3C7",
-  "predicted_at": "2026-10-28T09:53:53.703539+00:00",
+  "prediction": "predictions_operational/2026-10-29/2026-10-29_R4C6_20261029T181842641212Z/prediction.json",
+  "race_id": "2026-10-29_R4C6",
+  "predicted_at": "2026-10-29T18:20:07.619121+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.17319940564683692,
-        "2": 0.2339682742598075,
-        "3": 0.1690480629782986,
-        "4": 0.057590915831845856,
-        "5": 0.020778076078826584,
-        "6": 0.14005641082764414,
-        "7": 0.12472235404612969,
-        "8": 0.05138511676490396,
-        "9": 0.029251383565706755
+        "1": 0.02897152541487244,
+        "2": 0.06326253434871518,
+        "3": 0.10120254678227633,
+        "4": 0.04557067009667457,
+        "5": 0.048853596796981896,
+        "6": 0.051960484673408885,
+        "7": 0.11767606876036893,
+        "8": 0.06573563428160613,
+        "9": 0.08624573366740555,
+        "10": 0.11205181614801162,
+        "11": 0.06893218286998493,
+        "12": 0.2095372061596935
       },
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-10-28T09:53:53.703539+00:00"
+      "calculated_at": "2026-10-29T18:20:07.619121+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.18991925938384788,
-        "2": 0.18391801944977648,
-        "3": 0.18490338489401464,
-        "4": 0.057619518606148674,
-        "5": 0.03463935671225888,
-        "6": 0.12410266268076309,
-        "7": 0.14009776607842161,
-        "8": 0.058859276015003806,
-        "9": 0.02594075617976497
+        "1": 0.027203490831727926,
+        "2": 0.06407343515653298,
+        "3": 0.09247988124212257,
+        "4": 0.042618102161842523,
+        "5": 0.03590341375829118,
+        "6": 0.05315665658925004,
+        "7": 0.14763952186536675,
+        "8": 0.058347015288133665,
+        "9": 0.05169691649911901,
+        "10": 0.0887711104609163,
+        "11": 0.06674482608548309,
+        "12": 0.27136563006121395
       },
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-10-28T09:53:53.703539+00:00"
+      "calculated_at": "2026-10-29T18:20:07.619121+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
-    "reason": "No evidenced prestart place quote; V6 has no calibrated placement model."
+    "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
+    "number": 12,
+    "model": "classic_full",
+    "probability": 0.5174828699258932,
+    "paid_places": 3,
+    "fair_odds": 1.9324311163057557,
+    "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
+    "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places."
   },
-  "scheduled_start": "2026-10-28T18:59:00+00:00",
-  "history_through": "2026-10-27",
+  "scheduled_start": "2026-10-29T18:27:00+00:00",
+  "history_through": "2026-10-28",
   "runners": [
     {
       "number": 1,
-      "name": "NELSON D'HERMES",
+      "name": "NAOR DE SASSY",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "NIRVANA D'HERMES",
+      "name": "NIMOKO STAR",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "NORMAND VILLETOT",
+      "name": "NORDIC VICKING",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "NICKEL CHROME",
+      "name": "NO STRESS JERSOP",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "NORIA DE BERTRANGE",
+      "name": "NADJO BY LENA",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "NOVELTY",
+      "name": "NAPOLI BASC",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "NATALIA JAMES",
+      "name": "NEVADA DU CHATELET",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "NIGHT OF CARLESS",
+      "name": "NOTTINGHAM PLACE",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "NOT ALONE",
+      "name": "NORIGANO",
+      "status": "PARTANT"
+    },
+    {
+      "number": 10,
+      "name": "NIACK DU CORTA",
+      "status": "PARTANT"
+    },
+    {
+      "number": 11,
+      "name": "NOBEL CHANTEREINE",
+      "status": "PARTANT"
+    },
+    {
+      "number": 12,
+      "name": "NEO MIO",
       "status": "PARTANT"
     }
   ],
-  "request_id": "chat-20261028-r3c7-1793181065044"
+  "request_id": "chat-20261029-r4c6-1915-zeturf"
 }
