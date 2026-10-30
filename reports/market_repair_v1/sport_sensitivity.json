@@ -1,0 +1,95 @@
+{
+  "race_id": "2026-10-29_R4C8",
+  "status": "RETROSPECTIVE_SENSITIVITY_NOT_VALIDATION",
+  "models": {
+    "v6": {
+      "status": "FEATURE_REPAIR_SENSITIVITY_NOT_RETRAINED",
+      "market_informed": false,
+      "recommendations_allowed": false,
+      "probabilities": {
+        "1": 0.018380606332781064,
+        "2": 0.19701176020203687,
+        "3": 0.07825601022111311,
+        "4": 0.08239283413826123,
+        "5": 0.07998036197641771,
+        "6": 0.07642410301914697,
+        "7": 0.03369211999657269,
+        "8": 0.038733400197726225,
+        "9": 0.08869051750204912,
+        "10": 0.09540466377333201,
+        "11": 0.12181325717836365,
+        "12": 0.0892203654621993
+      },
+      "changed_runners": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "changed_features": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage"
+      ],
+      "limits": [
+        "Old fitted weights applied to enriched features: distribution shift, research sensitivity only.",
+        "Elo, driver, trainer and tandem features are not rebuilt from incomplete individual race fields.",
+        "No validation or economic advantage established."
+      ]
+    },
+    "classic_full": {
+      "status": "FEATURE_REPAIR_SENSITIVITY_NOT_RETRAINED",
+      "market_informed": false,
+      "recommendations_allowed": false,
+      "probabilities": {
+        "1": 0.020247126719062394,
+        "2": 0.18704264190004352,
+        "3": 0.06857403766946328,
+        "4": 0.08948128033911397,
+        "5": 0.07485543931786633,
+        "6": 0.08216620063059146,
+        "7": 0.0386719172992569,
+        "8": 0.03422426297787371,
+        "9": 0.10447269863250476,
+        "10": 0.11264621262561801,
+        "11": 0.09437621828549904,
+        "12": 0.09324196360310653
+      },
+      "changed_runners": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "changed_features": [
+        "win_rate",
+        "top3_rate",
+        "dq_rate",
+        "log_rest",
+        "history_coverage"
+      ],
+      "limits": [
+        "Old fitted weights applied to enriched features: distribution shift, research sensitivity only.",
+        "Elo, driver, trainer and tandem features are not rebuilt from incomplete individual race fields.",
+        "No validation or economic advantage established."
+      ]
+    }
+  },
+  "source_sha256": "20451f841ac90082e326601e128e0a9589f03fcfb9c4900925b847ac63051c5a",
+  "training_status": "BLOCKED_NO_REPRESENTATIVE_ENRICHED_TRAIN_AND_TEST_DATA",
+  "training_reason": "Twelve individual histories collected retrospectively for one selected race cannot train or validate a general model."
+}
