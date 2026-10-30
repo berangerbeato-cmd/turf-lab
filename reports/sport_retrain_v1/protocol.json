@@ -1,0 +1,38 @@
+{
+  "version": "sport-retrain-v1",
+  "train": [
+    "2022-03-02",
+    "2024-12-31"
+  ],
+  "validation": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "evaluation": [
+    "2026-01-01",
+    "2026-09-30"
+  ],
+  "source": "verified existing full_history datasets and their original monthly partitions",
+  "repair": "Rebuild the last five observed starts within 60 days; unknown outcomes excluded from win/top3/DQ rate denominators and represented by an explicit unknown fraction; stopped/fallen count as nonwins, non-top3 and non-DQ with a separate fraction. No inferred missing starts.",
+  "unchanged": "Other 33 frozen sporting features retained. No individual-history enrichment extrapolated from the 34-race convenience sample. No correction claimed for missing non-PMU starts or long-memory Elo.",
+  "l2": 0.1,
+  "iterations": 800,
+  "learning_rate": 0.03,
+  "temperatures": [
+    1.0,
+    0.75,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "selection": "Temperature chosen solely on 2025 log loss, separately for baseline and repaired model; no evaluation-driven tuning. Fixed single repaired candidate.",
+  "excluded_months": [
+    "2024-11"
+  ],
+  "excluded_races": [
+    "2026-07-04_R6C7"
+  ],
+  "evaluation_status": "EXPLORATORY_REUSED_HOLDOUT",
+  "recommendations_allowed": false,
+  "production_changes": false
+}
