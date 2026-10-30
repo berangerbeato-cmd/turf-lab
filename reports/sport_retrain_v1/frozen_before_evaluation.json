@@ -1,0 +1,19 @@
+{
+  "model_hashes": {
+    "baseline": "62230bcda09e932c20c3048e58eb499a0d7fc9ce43b2653bb39125e34ac93547",
+    "repaired": "e3a5cba53237928fe4338097674aa093dfbe3c750660f84a47570f1e6db28c3b"
+  },
+  "temperatures": {
+    "baseline": 1.0,
+    "repaired": 1.0
+  },
+  "protocol_sha256": "1ff30c3c1a7deea7d7cd1451de683fd85e4446a202f5dfd278f4674550bbc118",
+  "source_manifest_sha256": "246403718b42d07a4040e652caaddd0c299c35b86bf8a723fc033af24b93a6b9",
+  "code_sha256": {
+    "scripts/retrain_sport_v1.py": "b0040a33a111278538c1440911ced400aba10dc253fc03760b1a1a30ea00ace2",
+    "turf_lab/sport_retrain.py": "79aa0a7ac75321c292565e7bdd64e51002e9e0853282ec9d9953d0be052d1f55",
+    "turf_lab/fast_logit.py": "e6396d6a7d98ab55cdca23acdc767ce1839abf065312dc870d608960a8961e60",
+    "turf_lab/pilot.py": "a5997e8dfaea58b13d8e0903c147834bad1ce93d463a5e2f126fb45d5d81cd77",
+    "turf_lab/full_history_evaluation.py": "f6ea81cdf7eced051742e2a7433b7cd84ebf44be76bcb1081b5f19f4264e62e2"
+  }
+}
