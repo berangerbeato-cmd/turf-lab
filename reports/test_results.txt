@@ -86,6 +86,7 @@ test_quote_cannot_change_probability (test_manual_value.ManualValueTests.test_qu
 test_wrong_horse_number_rejected (test_manual_value.ManualValueTests.test_wrong_horse_number_rejected) ... ok
 test_market_calibration (unittest.loader._FailedTest.test_market_calibration) ... ERROR
 test_market_probabilities (unittest.loader._FailedTest.test_market_probabilities) ... ERROR
+test_market_repair (unittest.loader._FailedTest.test_market_repair) ... ERROR
 test_budget_pause_retains_checkpoint (test_month.MonthTests.test_budget_pause_retains_checkpoint) ... ok
 test_checkpoint_rebases_again_after_concurrent_push (test_month.MonthTests.test_checkpoint_rebases_again_after_concurrent_push) ... ok
 test_complete_cache_is_verified_without_network_or_checkpoint (test_month.MonthTests.test_complete_cache_is_verified_without_network_or_checkpoint) ... ok
@@ -163,6 +164,10 @@ test_v6_paired_scoring_and_field_changes (test_shadow_v6.V6ShadowTests.test_v6_p
 test_capture_immutable_and_baseline_checked (test_shadow_v7.V7ShadowTests.test_capture_immutable_and_baseline_checked) ... ok
 test_freeze_and_tamper (test_shadow_v7.V7ShadowTests.test_freeze_and_tamper) ... ok
 test_missing_v7_refresh_only_before_start (test_shadow_v7.V7ShadowTests.test_missing_v7_refresh_only_before_start) ... ok
+test_conflict_blocks (test_sport_history_repair.Repair.test_conflict_blocks) ... ok
+test_market_free_and_no_recommendation (test_sport_history_repair.Repair.test_market_free_and_no_recommendation) ... ok
+test_missing_blocks (test_sport_history_repair.Repair.test_missing_blocks) ... ok
+test_only_recent_features_change (test_sport_history_repair.Repair.test_only_recent_features_change) ... ok
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
 test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synthetic_evaluation_is_idempotent) ... ok
@@ -218,6 +223,23 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_market_repair (unittest.loader._FailedTest.test_market_repair)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_market_repair
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_market_repair.py", line 3, in <module>
+    from turf_lab.market_repair import predict,fit
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_failure_cannot_be_reported_as_previous_success (test_request_status.RequestStatus.test_failure_cannot_be_reported_as_previous_success)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -233,9 +255,9 @@ Traceback (most recent call last):
 AttributeError: module 'scripts' has no attribute 'predict_operational'
 
 ----------------------------------------------------------------------
-Ran 180 tests in 0.948s
+Ran 185 tests in 0.198s
 
-FAILED (errors=3, skipped=7)
+FAILED (errors=4, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
