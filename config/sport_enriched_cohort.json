@@ -1,0 +1,11 @@
+{
+  "version": "sport-history-coverage-v1",
+  "dates": ["2026-10-20", "2026-10-22", "2026-10-26", "2026-10-28"],
+  "selection": "All French harness races in each archived daily programme, without replacement of missing fields. Dates fixed before individual retrieval; convenience sample, not representative validation.",
+  "features": ["win_rate", "top3_rate", "dq_rate", "log_rest", "history_coverage"],
+  "history": "Latest five returned dated harness starts in previous 60 days; exclude target day and later. Unknown completeness. No current snapshot career counters or prices as features.",
+  "source_mode": "Retrospective individual light-performances retrieved after target dates; not original prestart snapshots",
+  "purpose": "Coverage feasibility, not model promotion",
+  "training": false,
+  "recommendations_allowed": false
+}

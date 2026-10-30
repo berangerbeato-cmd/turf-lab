@@ -1,0 +1,2185 @@
+{
+  "protocol": {
+    "version": "sport-history-coverage-v1",
+    "dates": [
+      "2026-10-20",
+      "2026-10-22",
+      "2026-10-26",
+      "2026-10-28"
+    ],
+    "selection": "All French harness races in each archived daily programme, without replacement of missing fields. Dates fixed before individual retrieval; convenience sample, not representative validation.",
+    "features": [
+      "win_rate",
+      "top3_rate",
+      "dq_rate",
+      "log_rest",
+      "history_coverage"
+    ],
+    "history": "Latest five returned dated harness starts in previous 60 days; exclude target day and later. Unknown completeness. No current snapshot career counters or prices as features.",
+    "source_mode": "Retrospective individual light-performances retrieved after target dates; not original prestart snapshots",
+    "purpose": "Coverage feasibility, not model promotion",
+    "training": false,
+    "recommendations_allowed": false
+  },
+  "source_sha256": {
+    "data/history_updates/2026-10-20.json.gz": "877bcde9c60c951d107730fc1429197571a3ebde3c1f3418c91f6bb9fe6ed7ef",
+    "data/history_updates/2026-10-22.json.gz": "de40dd0142d625e95ea69819763ecdf5cf34d74328a4f8d46adb44ea00bdedb6",
+    "data/history_updates/2026-10-26.json.gz": "b5ee1e3e8e7cb5c40b030a45845db33be2502fa867349334f376045bdc98d4fd",
+    "data/history_updates/2026-10-28.json.gz": "5c54d92704cc97012fa2690a8860b4b59315649f425e957ac0b37f4422da1644"
+  },
+  "planned_races": 34,
+  "complete_fields": 34,
+  "supported_fields": 12,
+  "runner_rows": 467,
+  "coverage_by_age": {
+    "4": {
+      "runners": 134,
+      "unsupported_windows": 6
+    },
+    "5": {
+      "runners": 59,
+      "unsupported_windows": 0
+    },
+    "3": {
+      "runners": 133,
+      "unsupported_windows": 25
+    },
+    "6": {
+      "runners": 76,
+      "unsupported_windows": 0
+    },
+    "2": {
+      "runners": 28,
+      "unsupported_windows": 23
+    },
+    "7": {
+      "runners": 25,
+      "unsupported_windows": 1
+    },
+    "8": {
+      "runners": 6,
+      "unsupported_windows": 0
+    },
+    "9": {
+      "runners": 5,
+      "unsupported_windows": 0
+    },
+    "10": {
+      "runners": 1,
+      "unsupported_windows": 0
+    }
+  },
+  "ledger": [
+    {
+      "race_id": "2026-10-20_R4C1",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-20_R4C3",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-20_R4C5",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-20_R4C7",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-20_R4C8",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-22_R3C1",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-22_R3C2",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_UNSUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-22_R3C3",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_UNSUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-22_R3C4",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-22_R3C6",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-22_R3C7",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-26_R3C1",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-26_R3C2",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R3C3",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R3C4",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R3C5",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R3C6",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R3C7",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_UNSUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R3C8",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C1",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C2",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C3",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 17,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C4",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 17,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C5",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C6",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C7",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 17,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 18,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-26_R7C8",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 16,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 17,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 18,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-28_R3C1",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-28_R3C2",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 14,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 15,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-28_R3C3",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-28_R3C4",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_UNSUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 12,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 13,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": false
+    },
+    {
+      "race_id": "2026-10-28_R3C5",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-28_R3C7",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    },
+    {
+      "race_id": "2026-10-28_R3C8",
+      "runners": [
+        {
+          "number": 1,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 2,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 3,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 4,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 5,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 6,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 7,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 8,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 9,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 10,
+          "status": "WINDOW_SUPPORTED"
+        },
+        {
+          "number": 11,
+          "status": "WINDOW_SUPPORTED"
+        }
+      ],
+      "status": "EXPLORATORY_COMPLETE_FIELD",
+      "all_windows_supported": true
+    }
+  ],
+  "training_status": "BLOCKED_COVERAGE_REVIEW_AND_REPRESENTATIVE_SPLITS_REQUIRED",
+  "recommendations_allowed": false,
+  "retrospective": true,
+  "dataset_sha256": "7e90a41649713b24a4044bfc60d4526291bd7fa1258207b4bb4f466492b11219",
+  "evidence_manifest_sha256": "6a727f5bdd8e31b179b2499453d8d7b7c64ececc5fcafea71ce6d39eaceb3fbf"
+}
