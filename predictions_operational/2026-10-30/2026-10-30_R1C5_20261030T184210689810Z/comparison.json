@@ -1,0 +1,411 @@
+{
+  "race_id": "2026-10-30_R1C5",
+  "observed_at": "2026-10-30T19:37:00+01:00",
+  "calculated_at": "2026-10-30T18:43:49.556162+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 2,
+      "name": "MYGIRL DES FORGES",
+      "odds": 258,
+      "models": {
+        "v6": {
+          "probability": 0.031279569629420176,
+          "fair_odds": 31.969749323515128,
+          "ev": 7.070128964390406,
+          "implied_raw": 0.003875968992248062,
+          "difference_pp": 2.7403600637172114,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0314014592928627,
+          "fair_odds": 31.845653753655075,
+          "ev": 7.101576497558577,
+          "implied_raw": 0.003875968992248062,
+          "difference_pp": 2.7525490300614637,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "name": "MERRY RIVER",
+      "odds": 41,
+      "models": {
+        "v6": {
+          "probability": 0.13318277521829025,
+          "fair_odds": 7.50847846773708,
+          "ev": 4.4604937839499,
+          "implied_raw": 0.024390243902439025,
+          "difference_pp": 10.879253131585124,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.11116029576084921,
+          "fair_odds": 8.996017806136507,
+          "ev": 3.5575721261948177,
+          "implied_raw": 0.024390243902439025,
+          "difference_pp": 8.677005185841018,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "name": "MERIDA DU GRANIT",
+      "odds": 219,
+      "models": {
+        "v6": {
+          "probability": 0.020011467131660222,
+          "fair_odds": 49.97134859831921,
+          "ev": 3.3825113018335884,
+          "implied_raw": 0.0045662100456621,
+          "difference_pp": 1.5445257085998123,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.027869464557885863,
+          "fair_odds": 35.88156485471634,
+          "ev": 5.103412738177004,
+          "implied_raw": 0.0045662100456621,
+          "difference_pp": 2.330325451222376,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "MA LIBERTE",
+      "odds": 61.3,
+      "models": {
+        "v6": {
+          "probability": 0.05487086457614354,
+          "fair_odds": 18.224608045173294,
+          "ev": 2.363583998517599,
+          "implied_raw": 0.016313213703099513,
+          "difference_pp": 3.8557650873044027,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.06674841789851899,
+          "fair_odds": 14.981628501223067,
+          "ev": 3.0916780171792135,
+          "implied_raw": 0.016313213703099513,
+          "difference_pp": 5.043520419541947,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "MOON DES ARRIS",
+      "odds": 28.6,
+      "models": {
+        "v6": {
+          "probability": 0.10736761026604007,
+          "fair_odds": 9.313795822801282,
+          "ev": 2.0707136536087463,
+          "implied_raw": 0.03496503496503496,
+          "difference_pp": 7.240257530100511,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09925157569665803,
+          "fair_odds": 10.075406793100129,
+          "ev": 1.8385950649244198,
+          "implied_raw": 0.03496503496503496,
+          "difference_pp": 6.428654073162307,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "MILANTERA",
+      "odds": 35.6,
+      "models": {
+        "v6": {
+          "probability": 0.0760499656418404,
+          "fair_odds": 13.149249859093034,
+          "ev": 1.7073787768495183,
+          "implied_raw": 0.028089887640449437,
+          "difference_pp": 4.796007800139096,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.07755758687405828,
+          "fair_odds": 12.893645100431604,
+          "ev": 1.761050092716475,
+          "implied_raw": 0.028089887640449437,
+          "difference_pp": 4.946769923360884,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "MI FA SOL",
+      "odds": 16.4,
+      "models": {
+        "v6": {
+          "probability": 0.10269018418755793,
+          "fair_odds": 9.738029081470488,
+          "ev": 0.68411902067595,
+          "implied_raw": 0.06097560975609757,
+          "difference_pp": 4.1714574431460365,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.07693638102310764,
+          "fair_odds": 12.997751995894538,
+          "ev": 0.2617566487789651,
+          "implied_raw": 0.06097560975609757,
+          "difference_pp": 1.5960771267010072,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "MAHIZ DE GUEZ",
+      "odds": 95.7,
+      "models": {
+        "v6": {
+          "probability": 0.01210669133468471,
+          "fair_odds": 82.59895064269784,
+          "ev": 0.15861036072932677,
+          "implied_raw": 0.01044932079414838,
+          "difference_pp": 0.16573705405363293,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.009411076667110269,
+          "fair_odds": 106.25776788056454,
+          "ev": -0.09935996295754723,
+          "implied_raw": 0.01044932079414838,
+          "difference_pp": -0.10382441270381115,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "name": "MY HAPPY STORY",
+      "odds": 57,
+      "models": {
+        "v6": {
+          "probability": 0.016439745912772426,
+          "fair_odds": 60.82819073396241,
+          "ev": -0.06293448297197168,
+          "implied_raw": 0.017543859649122806,
+          "difference_pp": -0.11041137363503803,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.023441286774788097,
+          "fair_odds": 42.659774167155966,
+          "ev": 0.3361533461629216,
+          "implied_raw": 0.017543859649122806,
+          "difference_pp": 0.5897427125665291,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "name": "MIA DE SIMM",
+      "odds": 15.8,
+      "models": {
+        "v6": {
+          "probability": 0.05852436920044018,
+          "fair_odds": 17.086899246621503,
+          "ev": -0.07531496663304516,
+          "implied_raw": 0.06329113924050632,
+          "difference_pp": -0.47667700400661417,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.05513804354760465,
+          "fair_odds": 18.136298201016654,
+          "ev": -0.12881891194784656,
+          "implied_raw": 0.06329113924050632,
+          "difference_pp": -0.8153095692901673,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "name": "MORNING NEWS",
+      "odds": 31.1,
+      "models": {
+        "v6": {
+          "probability": 0.0245450737737883,
+          "fair_odds": 40.74137275838627,
+          "ev": -0.23664820563518374,
+          "implied_raw": 0.03215434083601286,
+          "difference_pp": -0.7609267062224558,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03168359473567247,
+          "fair_odds": 31.562075210932516,
+          "ev": -0.014640203720586165,
+          "implied_raw": 0.03215434083601286,
+          "difference_pp": -0.04707461003403898,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 16,
+      "name": "MOONLIGHT STAR",
+      "odds": 9,
+      "models": {
+        "v6": {
+          "probability": 0.06652065597817414,
+          "fair_odds": 15.032924514877102,
+          "ev": -0.40131409619643277,
+          "implied_raw": 0.1111111111111111,
+          "difference_pp": -4.459045513293697,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09982537870595573,
+          "fair_odds": 10.017492675340469,
+          "ev": -0.1015715916463984,
+          "implied_raw": 0.1111111111111111,
+          "difference_pp": -1.1285732405155375,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "name": "MELODICA BELLA",
+      "odds": 2.9,
+      "models": {
+        "v6": {
+          "probability": 0.1752469821006286,
+          "fair_odds": 5.706232358545209,
+          "ev": -0.491783751908177,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -16.958060410626796,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.14877594344389072,
+          "fair_odds": 6.721516777859583,
+          "ev": -0.5685497640127168,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -19.605164276300584,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 17,
+      "name": "MOUNTAIN",
+      "odds": 9,
+      "models": {
+        "v6": {
+          "probability": 0.05376054717599749,
+          "fair_odds": 18.601001152876485,
+          "ev": -0.5161550754160226,
+          "implied_raw": 0.1111111111111111,
+          "difference_pp": -5.735056393511361,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.04390342522661388,
+          "fair_odds": 22.77726612077202,
+          "ev": -0.604869172960475,
+          "implied_raw": 0.1111111111111111,
+          "difference_pp": -6.7207685884497215,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "MISSLADY DU VICLAU",
+      "odds": 15,
+      "models": {
+        "v6": {
+          "probability": 0.03146839361307621,
+          "fair_odds": 31.777916988570563,
+          "ev": -0.5279740958038568,
+          "implied_raw": 0.06666666666666667,
+          "difference_pp": -3.5198273053590454,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03133498872001026,
+          "fair_odds": 31.91320759472329,
+          "ev": -0.5299751691998461,
+          "implied_raw": 0.06666666666666667,
+          "difference_pp": -3.5331677946656406,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 15,
+      "name": "MARIE DI LEONE",
+      "odds": 15.4,
+      "models": {
+        "v6": {
+          "probability": 0.026710433463314608,
+          "fair_odds": 37.43855379110369,
+          "ev": -0.588659324664955,
+          "implied_raw": 0.06493506493506493,
+          "difference_pp": -3.822463147175032,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.051591616886106355,
+          "fair_odds": 19.38299398926767,
+          "ev": -0.20548909995396214,
+          "implied_raw": 0.06493506493506493,
+          "difference_pp": -1.3343448048958575,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    },
+    {
+      "number": 13,
+      "name": "MOUSKIE DE GUEZ",
+      "odds": 9.7,
+      "models": {
+        "v6": {
+          "probability": 0.009224670796170665,
+          "fair_odds": 108.40495255560978,
+          "ev": -0.9105206932771446,
+          "implied_raw": 0.10309278350515465,
+          "difference_pp": -9.386811270898399,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.013969464188306906,
+          "fair_odds": 71.58470693794017,
+          "ev": -0.8644961973734231,
+          "implied_raw": 0.10309278350515465,
+          "difference_pp": -8.912331931684776,
+          "version": "classic_full@1c5e0e8f4900"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
