@@ -164,6 +164,13 @@ test_v6_paired_scoring_and_field_changes (test_shadow_v6.V6ShadowTests.test_v6_p
 test_capture_immutable_and_baseline_checked (test_shadow_v7.V7ShadowTests.test_capture_immutable_and_baseline_checked) ... ok
 test_freeze_and_tamper (test_shadow_v7.V7ShadowTests.test_freeze_and_tamper) ... ok
 test_missing_v7_refresh_only_before_start (test_shadow_v7.V7ShadowTests.test_missing_v7_refresh_only_before_start) ... ok
+test_archived_feature_mismatch_rejected (test_sport_history_cohort.Cohort.test_archived_feature_mismatch_rejected) ... ok
+test_conflicting_history_rejected (test_sport_history_cohort.Cohort.test_conflicting_history_rejected) ... ok
+test_future_and_same_day_rejected (test_sport_history_cohort.Cohort.test_future_and_same_day_rejected) ... ok
+test_identity_and_missing_runner_rejected (test_sport_history_cohort.Cohort.test_identity_and_missing_runner_rejected) ... ok
+test_imprecise_nonplaced_keeps_known_rank (test_sport_history_cohort.Cohort.test_imprecise_nonplaced_keeps_known_rank) ... ok
+test_repair_does_not_mutate_or_change_other_inputs (test_sport_history_cohort.Cohort.test_repair_does_not_mutate_or_change_other_inputs) ... ok
+test_sampling_independent_of_outcome_and_input_order (test_sport_history_cohort.Cohort.test_sampling_independent_of_outcome_and_input_order) ... ok
 test_conflict_blocks (test_sport_history_repair.Repair.test_conflict_blocks) ... ok
 test_market_free_and_no_recommendation (test_sport_history_repair.Repair.test_market_free_and_no_recommendation) ... ok
 test_missing_blocks (test_sport_history_repair.Repair.test_missing_blocks) ... ok
@@ -255,7 +262,7 @@ Traceback (most recent call last):
 AttributeError: module 'scripts' has no attribute 'predict_operational'
 
 ----------------------------------------------------------------------
-Ran 185 tests in 0.198s
+Ran 192 tests in 0.209s
 
 FAILED (errors=4, skipped=7)
 Outside fixed cohort dates; no requests
