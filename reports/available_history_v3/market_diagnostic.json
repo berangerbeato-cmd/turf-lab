@@ -1,0 +1,779 @@
+{
+  "races": 2578,
+  "excluded": {
+    "nonrunner_price_field_uncertain": 1135,
+    "incomplete_price": 876,
+    "not_prestart_or_stale": 25,
+    "inconsistent_underround_board": 47
+  },
+  "models": {
+    "classic_recalibrated": {
+      "metrics": {
+        "races": 2578,
+        "log_loss": 2.1145281489619343,
+        "brier_multiclass": 0.8446281366837342,
+        "top1_accuracy": 0.2657098525989139,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 23478,
+            "mean_probability": 0.04225943354854145,
+            "win_frequency": 0.04310418263906636
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 5850,
+            "mean_probability": 0.13873490758719167,
+            "win_frequency": 0.1441025641025641
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1649,
+            "mean_probability": 0.2415601085201748,
+            "win_frequency": 0.2498483929654336
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 567,
+            "mean_probability": 0.3420852822535028,
+            "win_frequency": 0.291005291005291
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 234,
+            "mean_probability": 0.44237638810410906,
+            "win_frequency": 0.3162393162393162
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 98,
+            "mean_probability": 0.5369657435308913,
+            "win_frequency": 0.5
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 26,
+            "mean_probability": 0.6362753199607329,
+            "win_frequency": 0.6923076923076923
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 8,
+            "mean_probability": 0.7417766685987061,
+            "win_frequency": 0.375
+          },
+          {
+            "bin": [
+              0.8,
+              0.9
+            ],
+            "count": 4,
+            "mean_probability": 0.8306866061534699,
+            "win_frequency": 0.5
+          }
+        ],
+        "runner_ece": 0.004158553142415676
+      },
+      "by_odds": {
+        "20-50": {
+          "participations": 9534,
+          "mean_predicted": 0.044795121181298525,
+          "observed": 0.02160688063771764
+        },
+        "10-20": {
+          "participations": 8017,
+          "mean_predicted": 0.07634302872625531,
+          "observed": 0.05837595110390421
+        },
+        "1-3": {
+          "participations": 1485,
+          "mean_predicted": 0.2571435413532957,
+          "observed": 0.4074074074074074
+        },
+        "5-10": {
+          "participations": 5484,
+          "mean_predicted": 0.11981546401233806,
+          "observed": 0.1389496717724289
+        },
+        "80+": {
+          "participations": 2227,
+          "mean_predicted": 0.017504891022681913,
+          "observed": 0.000898069151324652
+        },
+        "3-5": {
+          "participations": 2183,
+          "mean_predicted": 0.1744294066174607,
+          "observed": 0.2368300503893724
+        },
+        "50-80": {
+          "participations": 2984,
+          "mean_predicted": 0.0268740961301527,
+          "observed": 0.006032171581769437
+        }
+      }
+    },
+    "last5_available": {
+      "metrics": {
+        "races": 2578,
+        "log_loss": 2.108942996503665,
+        "brier_multiclass": 0.8432391321349922,
+        "top1_accuracy": 0.2726920093095423,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 23583,
+            "mean_probability": 0.04207864175240991,
+            "win_frequency": 0.04265784675401772
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 5745,
+            "mean_probability": 0.13938548130919562,
+            "win_frequency": 0.14656222802436902
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1606,
+            "mean_probability": 0.24165035532519002,
+            "win_frequency": 0.24221668742216687
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 581,
+            "mean_probability": 0.34085514778996745,
+            "win_frequency": 0.31841652323580033
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 239,
+            "mean_probability": 0.4415200646513776,
+            "win_frequency": 0.33472803347280333
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 115,
+            "mean_probability": 0.5468025104702744,
+            "win_frequency": 0.41739130434782606
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 29,
+            "mean_probability": 0.6280598371599015,
+            "win_frequency": 0.6206896551724138
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 13,
+            "mean_probability": 0.740946664090489,
+            "win_frequency": 0.6923076923076923
+          },
+          {
+            "bin": [
+              0.8,
+              0.9
+            ],
+            "count": 3,
+            "mean_probability": 0.8369546155959627,
+            "win_frequency": 0.3333333333333333
+          }
+        ],
+        "runner_ece": 0.0034968559741388205
+      },
+      "by_odds": {
+        "20-50": {
+          "participations": 9534,
+          "mean_predicted": 0.044039277660855455,
+          "observed": 0.02160688063771764
+        },
+        "10-20": {
+          "participations": 8017,
+          "mean_predicted": 0.07525028053411528,
+          "observed": 0.05837595110390421
+        },
+        "1-3": {
+          "participations": 1485,
+          "mean_predicted": 0.26771347978948984,
+          "observed": 0.4074074074074074
+        },
+        "5-10": {
+          "participations": 5484,
+          "mean_predicted": 0.11940338093155985,
+          "observed": 0.1389496717724289
+        },
+        "80+": {
+          "participations": 2227,
+          "mean_predicted": 0.017187060573107305,
+          "observed": 0.000898069151324652
+        },
+        "3-5": {
+          "participations": 2183,
+          "mean_predicted": 0.1762935994965542,
+          "observed": 0.2368300503893724
+        },
+        "50-80": {
+          "participations": 2984,
+          "mean_predicted": 0.026595461670927387,
+          "observed": 0.006032171581769437
+        }
+      }
+    },
+    "last5_available_dq20": {
+      "metrics": {
+        "races": 2578,
+        "log_loss": 2.108413332187318,
+        "brier_multiclass": 0.8431756826162513,
+        "top1_accuracy": 0.2719162141194725,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 23593,
+            "mean_probability": 0.04199711911692366,
+            "win_frequency": 0.04268215148561014
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 5705,
+            "mean_probability": 0.13927561825718504,
+            "win_frequency": 0.14496056091148116
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1646,
+            "mean_probability": 0.24172928405915733,
+            "win_frequency": 0.2503037667071689
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 572,
+            "mean_probability": 0.34245106570201705,
+            "win_frequency": 0.3041958041958042
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 232,
+            "mean_probability": 0.44163535853955455,
+            "win_frequency": 0.34051724137931033
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 120,
+            "mean_probability": 0.5449122814577331,
+            "win_frequency": 0.4083333333333333
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 32,
+            "mean_probability": 0.6331483145665167,
+            "win_frequency": 0.65625
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 11,
+            "mean_probability": 0.7477323045003866,
+            "win_frequency": 0.7272727272727273
+          },
+          {
+            "bin": [
+              0.8,
+              0.9
+            ],
+            "count": 3,
+            "mean_probability": 0.8304923341732996,
+            "win_frequency": 0.3333333333333333
+          }
+        ],
+        "runner_ece": 0.003976149582608275
+      },
+      "by_odds": {
+        "20-50": {
+          "participations": 9534,
+          "mean_predicted": 0.04387478643190642,
+          "observed": 0.02160688063771764
+        },
+        "10-20": {
+          "participations": 8017,
+          "mean_predicted": 0.07515616518866862,
+          "observed": 0.05837595110390421
+        },
+        "1-3": {
+          "participations": 1485,
+          "mean_predicted": 0.26859829766646226,
+          "observed": 0.4074074074074074
+        },
+        "5-10": {
+          "participations": 5484,
+          "mean_predicted": 0.11947635910771003,
+          "observed": 0.1389496717724289
+        },
+        "80+": {
+          "participations": 2227,
+          "mean_predicted": 0.017095542183816013,
+          "observed": 0.000898069151324652
+        },
+        "3-5": {
+          "participations": 2183,
+          "mean_predicted": 0.17675077680419965,
+          "observed": 0.2368300503893724
+        },
+        "50-80": {
+          "participations": 2984,
+          "mean_predicted": 0.026533266170356444,
+          "observed": 0.006032171581769437
+        }
+      }
+    },
+    "classic_operational": {
+      "metrics": {
+        "races": 2578,
+        "log_loss": 2.115081695054861,
+        "brier_multiclass": 0.8439111320303914,
+        "top1_accuracy": 0.2657098525989139,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 23421,
+            "mean_probability": 0.0438490085677345,
+            "win_frequency": 0.04312369241279194
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 6036,
+            "mean_probability": 0.1380820332387409,
+            "win_frequency": 0.14396951623591783
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1627,
+            "mean_probability": 0.24011153456796425,
+            "win_frequency": 0.2569145666871543
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 533,
+            "mean_probability": 0.3419887161362206,
+            "win_frequency": 0.30393996247654786
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 202,
+            "mean_probability": 0.44479555979683616,
+            "win_frequency": 0.31683168316831684
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 69,
+            "mean_probability": 0.5376228295067015,
+            "win_frequency": 0.5507246376811594
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 16,
+            "mean_probability": 0.6329795425742325,
+            "win_frequency": 0.8125
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 8,
+            "mean_probability": 0.7376296111049313,
+            "win_frequency": 0.25
+          },
+          {
+            "bin": [
+              0.8,
+              0.9
+            ],
+            "count": 2,
+            "mean_probability": 0.81718868921141,
+            "win_frequency": 1.0
+          }
+        ],
+        "runner_ece": 0.004199871863966437
+      },
+      "by_odds": {
+        "20-50": {
+          "participations": 9534,
+          "mean_predicted": 0.046399012983400365,
+          "observed": 0.02160688063771764
+        },
+        "10-20": {
+          "participations": 8017,
+          "mean_predicted": 0.07710820143872585,
+          "observed": 0.05837595110390421
+        },
+        "1-3": {
+          "participations": 1485,
+          "mean_predicted": 0.247969870658497,
+          "observed": 0.4074074074074074
+        },
+        "5-10": {
+          "participations": 5484,
+          "mean_predicted": 0.11862004149861101,
+          "observed": 0.1389496717724289
+        },
+        "80+": {
+          "participations": 2227,
+          "mean_predicted": 0.018949700672572463,
+          "observed": 0.000898069151324652
+        },
+        "3-5": {
+          "participations": 2183,
+          "mean_predicted": 0.1700924815627052,
+          "observed": 0.2368300503893724
+        },
+        "50-80": {
+          "participations": 2984,
+          "mean_predicted": 0.028550577455274995,
+          "observed": 0.006032171581769437
+        }
+      }
+    },
+    "v6_operational": {
+      "metrics": {
+        "races": 2578,
+        "log_loss": 2.161164881061535,
+        "brier_multiclass": 0.852479349787799,
+        "top1_accuracy": 0.2552366175329713,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 23424,
+            "mean_probability": 0.04650319219854279,
+            "win_frequency": 0.04491120218579235
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 6326,
+            "mean_probability": 0.13723474356548032,
+            "win_frequency": 0.1466961745178628
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1463,
+            "mean_probability": 0.23892230653052882,
+            "win_frequency": 0.23991797676008203
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 474,
+            "mean_probability": 0.341158623422172,
+            "win_frequency": 0.31645569620253167
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 152,
+            "mean_probability": 0.43882389536829053,
+            "win_frequency": 0.3684210526315789
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 54,
+            "mean_probability": 0.5351845932702077,
+            "win_frequency": 0.48148148148148145
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 17,
+            "mean_probability": 0.6354201697659325,
+            "win_frequency": 0.8235294117647058
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 4,
+            "mean_probability": 0.7265932928096026,
+            "win_frequency": 0.25
+          }
+        ],
+        "runner_ece": 0.004042585377237973
+      },
+      "by_odds": {
+        "20-50": {
+          "participations": 9534,
+          "mean_predicted": 0.05074458921035851,
+          "observed": 0.02160688063771764
+        },
+        "10-20": {
+          "participations": 8017,
+          "mean_predicted": 0.07911815270214587,
+          "observed": 0.05837595110390421
+        },
+        "1-3": {
+          "participations": 1485,
+          "mean_predicted": 0.22561817818208774,
+          "observed": 0.4074074074074074
+        },
+        "5-10": {
+          "participations": 5484,
+          "mean_predicted": 0.11383587219341088,
+          "observed": 0.1389496717724289
+        },
+        "80+": {
+          "participations": 2227,
+          "mean_predicted": 0.022808403690655968,
+          "observed": 0.000898069151324652
+        },
+        "3-5": {
+          "participations": 2183,
+          "mean_predicted": 0.16057312033535853,
+          "observed": 0.2368300503893724
+        },
+        "50-80": {
+          "participations": 2984,
+          "mean_predicted": 0.03326625396618453,
+          "observed": 0.006032171581769437
+        }
+      }
+    },
+    "market_normalized": {
+      "metrics": {
+        "races": 2578,
+        "log_loss": 1.941194228406985,
+        "brier_multiclass": 0.8020753755754073,
+        "top1_accuracy": 0.3359193173002327,
+        "calibration": [
+          {
+            "bin": [
+              0.0,
+              0.1
+            ],
+            "count": 24331,
+            "mean_probability": 0.040239176903248235,
+            "win_frequency": 0.036003452385845215
+          },
+          {
+            "bin": [
+              0.1,
+              0.2
+            ],
+            "count": 4697,
+            "mean_probability": 0.13876377451523583,
+            "win_frequency": 0.15861187992335532
+          },
+          {
+            "bin": [
+              0.2,
+              0.3
+            ],
+            "count": 1533,
+            "mean_probability": 0.24098090191262056,
+            "win_frequency": 0.2563600782778865
+          },
+          {
+            "bin": [
+              0.3,
+              0.4
+            ],
+            "count": 671,
+            "mean_probability": 0.3411018338487446,
+            "win_frequency": 0.36959761549925485
+          },
+          {
+            "bin": [
+              0.4,
+              0.5
+            ],
+            "count": 388,
+            "mean_probability": 0.4463626806861181,
+            "win_frequency": 0.4329896907216495
+          },
+          {
+            "bin": [
+              0.5,
+              0.6
+            ],
+            "count": 184,
+            "mean_probability": 0.5517362462906749,
+            "win_frequency": 0.5271739130434783
+          },
+          {
+            "bin": [
+              0.6,
+              0.7
+            ],
+            "count": 82,
+            "mean_probability": 0.6430599721485566,
+            "win_frequency": 0.5
+          },
+          {
+            "bin": [
+              0.7,
+              0.8
+            ],
+            "count": 23,
+            "mean_probability": 0.7460719732372184,
+            "win_frequency": 0.34782608695652173
+          },
+          {
+            "bin": [
+              0.8,
+              0.9
+            ],
+            "count": 5,
+            "mean_probability": 0.8530644400216765,
+            "win_frequency": 0.4
+          }
+        ],
+        "runner_ece": 0.008518111045771735
+      },
+      "by_odds": {
+        "20-50": {
+          "participations": 9534,
+          "mean_predicted": 0.029058914002479525,
+          "observed": 0.02160688063771764
+        },
+        "10-20": {
+          "participations": 8017,
+          "mean_predicted": 0.06232752628505486,
+          "observed": 0.05837595110390421
+        },
+        "1-3": {
+          "participations": 1485,
+          "mean_predicted": 0.4150586777983838,
+          "observed": 0.4074074074074074
+        },
+        "5-10": {
+          "participations": 5484,
+          "mean_predicted": 0.1188449861543891,
+          "observed": 0.1389496717724289
+        },
+        "80+": {
+          "participations": 2227,
+          "mean_predicted": 0.00762806878888691,
+          "observed": 0.000898069151324652
+        },
+        "3-5": {
+          "participations": 2183,
+          "mean_predicted": 0.21763461834590153,
+          "observed": 0.2368300503893724
+        },
+        "50-80": {
+          "participations": 2984,
+          "mean_predicted": 0.013766894782121801,
+          "observed": 0.006032171581769437
+        }
+      }
+    }
+  },
+  "interpretation": "Retrospective archived PMU reference prices, no executable ZEturf/ROI claim. No market inputs to sports models; no selection from this diagnostic.",
+  "source_map_sha256": "eea2129041f63cab1265077426d7812740fd01055c7b0fa5db9857f9b46038c8",
+  "price_protocol_sha256": "c8121a3bbbdb94760f4cbb0078c515e9b18067704a1035016ca16aa70b4fd321"
+}
