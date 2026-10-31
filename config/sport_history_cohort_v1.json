@@ -1,0 +1,17 @@
+{
+  "version": "sport-history-cohort-v1",
+  "selection": "12 smallest SHA256(version:race_id) per month; no outcomes or prices used",
+  "races_per_month": 12,
+  "train": ["2024-01-01", "2024-12-31"],
+  "validation": ["2025-01-01", "2025-12-31"],
+  "test": ["2026-01-01", "2026-09-30"],
+  "minimum_races": {"train": 80, "validation": 80, "test": 60},
+  "minimum_month_fraction": 0.5,
+  "l2_candidates": [0.1, 1.0],
+  "iterations": 800,
+  "learning_rate": 0.03,
+  "history_days": 60,
+  "max_previous_starts": 5,
+  "status": "EXPLORATORY_REUSED_EVALUATION_NO_PROMOTION",
+  "limits": ["Small stratified feasibility cohort, not population representativeness established", "Historical pretty responses are retrospective and may be truncated", "2025 and 2026 results already examined in earlier experiments", "Only five recent-form inputs repaired; other 33 inputs remain archived", "No odds inputs, no ROI, no automatic deployment"]
+}
