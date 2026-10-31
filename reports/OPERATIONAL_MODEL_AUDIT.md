@@ -1,3 +1,13 @@
+# Modèle de base — décision du 31 octobre 2026
+
+À la demande explicite de l’utilisateur, le modèle de base est désormais **available_history_v3 / last5_available_dq20**. Le point d’entrée reste `scripts.predict_operational`. La configuration et les empreintes sont dans `config/active_model.json`. V6 et Classic sont conservés comme références de comparaison. La calibration et les variables du nouveau modèle sont celles de l’expérience sauvegardée, sans réentraînement lors d’une prédiction.
+
+Les recommandations restent suspendues. Cette activation ne démontre pas une rentabilité et ne valide pas le simple placé pour ce modèle. Les sorties historiques ne sont pas réécrites.
+
+---
+
+Archive des audits précédents :
+
 > Décision du 17 octobre 2026 : seuls V6 (principal) et Classic full (comparateur) restent actifs. V5 et V7 sont désormais archivés ; les statuts opérationnels ci-dessous décrivent la situation lors de l’audit initial. Aucun poids ni résultat historique modifié.
 
 # Audit du 16 octobre 2026

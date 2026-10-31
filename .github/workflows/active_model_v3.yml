@@ -1,0 +1,34 @@
+name: Validate active available-history V3
+on:
+  push:
+    branches: [activate/available-history-v3, main]
+    paths:
+      - config/active_model.json
+      - turf_lab/available_history_operational.py
+      - scripts/predict_operational.py
+      - scripts/validate_active_history_v3.py
+      - tests/test_available_history_operational.py
+      - .github/workflows/active_model_v3.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
+      - run: python -m unittest discover -s tests
+      - name: Reproduce archived prediction through operational path
+        run: python -u -m scripts.validate_active_history_v3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: active-v3-validation
+          path: reports/available_history_v3/activation_validation.json
