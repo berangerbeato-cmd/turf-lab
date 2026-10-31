@@ -1,0 +1,55 @@
+name: Available history V3 full-data research
+on:
+  push:
+    branches: [research/available-history-v3]
+    paths:
+      - config/available_history_v3.json
+      - turf_lab/available_history_research.py
+      - scripts/train_available_history_v3.py
+      - tests/test_available_history_research.py
+      - .github/workflows/available_history_v3.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: available-history-v3
+  cancel-in-progress: false
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/available-history-v3
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Tests
+        run: python -m unittest discover -s tests
+      - name: Offline experiment
+        run: python -u -m scripts.train_available_history_v3
+      - name: Preserve research results even after a failure
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for path in reports/available_history_v3 models/available_history_v3; do
+            if [ -d "$path" ]; then git add "$path"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save available-history-v3 experiment results'
+            git push origin HEAD:research/available-history-v3
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: available-history-v3
+          path: |
+            reports/available_history_v3
+            models/available_history_v3
+          retention-days: 90
