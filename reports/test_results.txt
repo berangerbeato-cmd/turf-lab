@@ -147,6 +147,9 @@ test_freeze_and_tamper (test_prospective_cohort.CohortTests.test_freeze_and_tamp
 test_no_network_outside_dates (test_prospective_cohort.CohortTests.test_no_network_outside_dates) ... ok
 test_paired_score_reused_without_result_refetch (test_prospective_cohort.CohortTests.test_paired_score_reused_without_result_refetch) ... ok
 test_sampling_fixed_unique_endpoints_and_sorted (test_prospective_cohort.CohortTests.test_sampling_fixed_unique_endpoints_and_sorted) ... ok
+test_duplicates_rejected (test_rank45.Rank45Tests.test_duplicates_rejected) ... ok
+test_normalized_joint_distributions (test_rank45.Rank45Tests.test_normalized_joint_distributions) ... ok
+test_uniform_and_order (test_rank45.Rank45Tests.test_uniform_and_order) ... ok
 test_complete_history_accepted (test_recent_history.RecentHistoryTests.test_complete_history_accepted) ... ok
 test_missing_and_incomplete_fail_closed (test_recent_history.RecentHistoryTests.test_missing_and_incomplete_fail_closed) ... ok
 test_yesterday_only (test_recent_history.RecentHistoryTests.test_yesterday_only) ... ok
@@ -281,7 +284,7 @@ Traceback (most recent call last):
 AttributeError: module 'scripts' has no attribute 'predict_operational'
 
 ----------------------------------------------------------------------
-Ran 200 tests in 0.229s
+Ran 203 tests in 0.178s
 
 FAILED (errors=5, skipped=7)
 Outside fixed cohort dates; no requests
