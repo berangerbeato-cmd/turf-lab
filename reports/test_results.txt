@@ -1,3 +1,7 @@
+test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference) ... ok
+test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark) ... ok
+test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature) ... ok
+test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected) ... ok
 test_fail_closed_on_changed_archive (test_available_history_research.AvailableHistoryTests.test_fail_closed_on_changed_archive) ... ok
 test_old_history_and_day_cutoff (test_available_history_research.AvailableHistoryTests.test_old_history_and_day_cutoff) ... ok
 test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization) ... ERROR
@@ -277,7 +281,7 @@ Traceback (most recent call last):
 AttributeError: module 'scripts' has no attribute 'predict_operational'
 
 ----------------------------------------------------------------------
-Ran 196 tests in 0.137s
+Ran 200 tests in 0.229s
 
 FAILED (errors=5, skipped=7)
 Outside fixed cohort dates; no requests
