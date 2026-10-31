@@ -3,16 +3,16 @@
 When the user sends horse-race odds screenshots:
 1. Read the screenshot directly, identify Paris date / official meeting / race, runner numbers/names and decimal total-return odds. Do not ask them to type visible odds. Keep unreadable fields unknown. Never infer model probabilities from prices.
 2. Read reports/OPERATIONAL_MODEL_AUDIT.md and reports/operational/latest.json if present. Reference engine is scripts.predict_operational, NEVER scripts.predict_race (archived V1).
-3. With a runtime, execute `python -m scripts.predict_operational --date YYYY-MM-DD --reunion R --course C` from repository root. It loads verified existing history, frozen V6 and Classic full only, checks SHA-256 and rejects post-start targets. No training.
+3. With a runtime, execute `python -m scripts.predict_operational --date YYYY-MM-DD --reunion R --course C` from repository root. It loads verified existing history, frozen available_history_v3 primary, V6 and Classic full benchmarks, checks SHA-256 and rejects post-start targets. No training.
 4. Without a runtime but with connected GitHub write tools, update config/prediction_request.json on main with date/reunion/course and a unique request_id. Optional quotes object: race_id, operator, source_evidence (image hash or private file reference; no account balance/image publication), verified, observed_at with timezone, odds_format DECIMAL_TOTAL_RETURN, quotes [{number,name,decimal_odds}]. A push triggers predict_race.yml. Poll the run and reports/operational/latest.json; check request_status.json is SUCCESS with matching request_id, plus matching race/date/time, never reuse another request. Do not claim success while queued, failed or blocked. Workflow dispatch is not required.
-5. Execute scripts.compare_operational_quotes on the actual output and transcribed quotes. Return all runners with P by model and EV by model, primary V6, implied 1/C, fair 1/P, disagreement and limitations. Do not create an ensemble probability. Quotes remain separate from features. No automated bets.
+5. Execute scripts.compare_operational_quotes on the actual output and transcribed quotes. Return all runners with primary available_history_v3 probabilities and EV; add benchmark columns only when useful/requested. Include implied 1/C, fair 1/P, disagreement and limitations. Do not create an ensemble probability. Quotes remain separate from features. No automated bets.
 6. State the actual prediction time, exact model versions/hashes and history-through date. Recheck nonrunners/declarations when odds are newer than the field snapshot. Early tomorrow predictions omit today's results; rerun on race day.
-7. For placement use only the documented calibrated Classic top choice, 10–20 runners, no nonrunner, operator-confirmed 3 paid places. No extrapolation to arbitrary horses or V6. Without a verified probable quote return EV placé non calculable.
+7. For placement use only the documented calibrated Classic top choice, 10–20 runners, no nonrunner, operator-confirmed 3 paid places. This remains a legacy Classic benchmark, not a placement prediction from the new base. No extrapolation to arbitrary horses, V6 or available_history_v3. Without a verified probable quote return EV placé non calculable.
 8. The daily recent_history workflow updates verified results through yesterday with visible gaps, checkpoints and prospective scoring. Do not refit weights or require perfect 2022–present continuity. Archived source files and model locks must remain intact.
 
 Code and workflows are backed by this repository. Do not copy the repository to a second document store. An ordinary ChatGPT session without connected tools/runtime cannot execute the models; state that limitation rather than inventing predictions.
 
-Decision 2026-10-17: only V6 (primary) and Classic full (challenger) are active. V5/V7 predictions and model files are archived; do not reactivate their workflows. Output columns: cheval, cote, P V6, EV V6, P Classic, EV Classic.
+Decision 2026-10-17 (superseded for primary designation on 2026-10-31): V6 and Classic full remain frozen benchmarks. V5/V7 predictions and model files are archived; do not reactivate their workflows. Default output columns: cheval, cote, P modèle de base V3, EV modèle de base V3. Include benchmark columns only when useful/requested.
 
 
 ## Decision 2026-10-29 — recommendations suspended
@@ -26,3 +26,7 @@ PMU post-race prices into executable prestart prices or a betting ROI.
 Do not silently resume recommendations; resumption needs a separately validated
 protocol and explicit review. Do not alter model weights or archived forecasts
 to repair the losing race. Track confirmed stakes separately from suggested ones.
+
+## Decision 2026-10-31 — user-selected base model
+
+The user explicitly selected `available_history_v3` (`last5_available_dq20`) as the base model for subsequent work and predictions. `config/active_model.json` is authoritative. Execute `scripts.predict_operational` as before; it now computes this primary with its exact frozen feature variant, weights and late-2025 temperature. V6 and Classic are historical benchmarks, not the primary. No ensemble or silent fallback. A model promotion does not lift the recommendation suspension. The new base has no validated placement calibrator: any retained Classic placement output is explicitly a legacy benchmark. Old prediction files retain their original model labels and probabilities.

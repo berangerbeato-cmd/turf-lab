@@ -16,6 +16,7 @@ from turf_lab.pilot import probabilities
 from turf_lab.market_probabilities import markets
 from turf_lab.recommendation_policy import recommendation_state
 from turf_lab.individual_history_check import check_all
+from turf_lab.available_history_operational import compute as compute_available, verify_active
 
 
 def digest(path):
@@ -77,6 +78,7 @@ def compute_reference(history, target):
 
 
 def compute_all(history, target):
+    active_policy, _ = verify_active()
     lock_files=json.loads(Path('config/operational_frozen.json').read_text())['files_sha256']
     if any(digest(f)!=sha for f,sha in lock_files.items()):raise ValueError('Operational frozen dependency changed')
     legacy_history=[r for r in history if r['date'][:4]==target['date'][:4]]
@@ -84,7 +86,8 @@ def compute_all(history, target):
     print('Frozen V6 computed',flush=True)
     output = {'v6': reference}
     files = {'v6':'models/demographics_tandem_v6_candidates.json',
-             'classic_full':'models/full_history/classic.json'}
+             'classic_full':'models/full_history/classic.json',
+             'available_history_v3':active_policy['model_file']}
     policy = json.loads(Path('config/full_history_protocol.json').read_text())
     full_history = [r for r in history if r['date'][:7] not in policy['excluded_months']
                     and r['race_id'] not in policy['excluded_races']]
@@ -100,6 +103,9 @@ def compute_all(history, target):
     z=sum(p.values()); p={n:v/z for n,v in p.items()}
     print('Frozen Classic full computed',flush=True)
     output['classic_full']={'probabilities':p,'runners':row['runners']}
+    output['available_history_v3'], active_lock = compute_available(records, row)
+    output['v6']['role'] = output['classic_full']['role'] = 'benchmark'
+    print('Frozen available-history V3 primary computed',flush=True)
     active={r['numPmu'] for r in target['participants'] if r['statut']=='PARTANT'}
     all_numbers={r['numPmu'] for r in target['participants']}
     for name,result in output.items():
@@ -121,7 +127,8 @@ def compute_all(history, target):
         place.update(number=best,model='classic_full',probability=q,paid_places=3,
             fair_odds=1/q,calibration_sha256=digest(cf),
             scope='Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places.')
-    return output,place,{'v6':lock6,'classic_full':lock}
+    place['role']='legacy_classic_benchmark_only'
+    return output,place,{'v6':lock6,'classic_full':lock,'available_history_v3':active_lock}
 
 
 def run(day,reunion,course):
@@ -148,13 +155,13 @@ def run(day,reunion,course):
     sha=hashlib.sha256(json.dumps(history,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
     source_tree=subprocess.check_output(['git','rev-parse','HEAD^{tree}'],text=True).strip()
     output=dict(**recommendation_state(),status='PRESTART_RESEARCH',race_id=rid,predicted_at=finished.isoformat(),scheduled_start=start.isoformat(),
-        primary_model='v6',models=models,place=place,individual_history_check=history_check,target_snapshot=target,history_sha256=sha,history_source_tree=source_tree,history_loader='scripts.predict_operational.load_history',
+        primary_model='available_history_v3',models=models,place=place,individual_history_check=history_check,target_snapshot=target,history_sha256=sha,history_source_tree=source_tree,history_loader='scripts.predict_operational.load_history',
         history_coverage=coverage,history_gap_days=(datetime.fromisoformat(day).date()-datetime.fromisoformat(coverage['last_collected_day']).date()).days-1,
         frozen=locks,code_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
         requires_runner_recheck=True,odds_used_as_features=False,
         code_sha256={str(f):digest(f) for folder in ('scripts','turf_lab') for f in Path(folder).glob('*.py')})
     dump(root/'prediction.json',output)
-    dump('reports/operational/latest.json',{**recommendation_state(),'prediction':str(root/'prediction.json'),'race_id':rid,'predicted_at':finished.isoformat(),
+    dump('reports/operational/latest.json',{**recommendation_state(),'primary_model':'available_history_v3','prediction':str(root/'prediction.json'),'race_id':rid,'predicted_at':finished.isoformat(),
         'models':{n:{k:v for k,v in m.items() if k!='runners'} for n,m in models.items()},'place':place,
         'scheduled_start':start.isoformat(),'history_through':coverage['last_collected_day'],'individual_history_check':history_check,
         'runners':[{'number':p['numPmu'],'name':p['nom'],'status':p['statut']} for p in target['participants']]} )

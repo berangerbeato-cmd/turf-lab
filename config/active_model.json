@@ -1,0 +1,28 @@
+{
+  "primary_model": "available_history_v3",
+  "variant": "last5_available_dq20",
+  "model_file": "models/available_history_v3/last5_available_dq20.json",
+  "selection_file": "reports/available_history_v3/selection_frozen_before_test.json",
+  "effective_date": "2026-10-31",
+  "authorization": "Explicit user decision: this becomes the base model for subsequent use.",
+  "benchmarks": [
+    "v6",
+    "classic_full"
+  ],
+  "recommendations_allowed": false,
+  "files_sha256": {
+    "models/available_history_v3/last5_available_dq20.json": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "reports/available_history_v3/selection_frozen_before_test.json": "8d4f3173456433504eb7375bd65e05e03f7c0e3d080c149679ade2eea15a59c6",
+    "config/available_history_v3.json": "a29fe802c9ab33dae2b323712d4ca4d2ed71cb3ab018844cbfd76302c74f859e",
+    "turf_lab/available_history_research.py": "25b4fb8a44081ffa248b9e8614b6a7be4bade456ec62e41917f1dc50d6aa8d5f",
+    "turf_lab/available_history_operational.py": "9f70feaa40acfd635d34221a997a6d81bf9ae4c3ba6060e7a14517477e4992d6",
+    "scripts/predict_operational.py": "6c6877753eb853b7af115a946b457337a148b4f9c405b9bd447d61024a264d07",
+    "turf_lab/full_history_evaluation.py": "f6ea81cdf7eced051742e2a7433b7cd84ebf44be76bcb1081b5f19f4264e62e2",
+    "turf_lab/pilot.py": "a5997e8dfaea58b13d8e0903c147834bad1ce93d463a5e2f126fb45d5d81cd77",
+    "turf_lab/month_history.py": "e617b1f180e111e098871506caa62a6c57e6c22fcb698d78286b4463882f1990",
+    "turf_lab/full_history_features.py": "86440438ef970cf59e17576f1e822233d4c50ee1226b918e932c6346e8b0a856",
+    "turf_lab/connections.py": "8cb77d6a4111c103dce0e47570dde7770db025d52457e1a6add7f0a069e65ef3",
+    "turf_lab/demographics_tandem.py": "953bad3b6974b5356def7a5090009f8ca454cdd5cb037eec0f6138c9a86f9425",
+    "turf_lab/xgb_model.py": "6b60f458ff7e6797109015e86dfae5f4482d8ca0df90875e337caa644821c5be"
+  }
+}
