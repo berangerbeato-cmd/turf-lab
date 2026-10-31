@@ -1,0 +1,270 @@
+{
+  "status": "EXPLORATORY_RANKING_BASELINE",
+  "base_model": "available_history_v3",
+  "prediction_sha256": "28ce7b4628c125fa2611da0ad625e0613a6a537bccbacdf583f63b2335f9518f",
+  "recommendations_allowed": false,
+  "limitations": [
+    "Previously examined 2026 test, not virgin validation",
+    "Win probabilities do not establish calibrated finish probabilities",
+    "Plackett-Luce assumes constant relative strength after each place; DQ dependence not modeled",
+    "All eligible archived harness races, not restricted to official Quarte/Quinte events",
+    "Exact four/five finishes only; no bonus payouts, settlements, stakes or ROI",
+    "No new collection or refit"
+  ],
+  "scores": {
+    "4": {
+      "overall": {
+        "races": 4621,
+        "ordered_hit": 0.002813243886604631,
+        "unordered_hit": 0.02488638822765635,
+        "found": 2.0041116641419605,
+        "predicted_unordered": 0.06049380081473403,
+        "unordered_brier": 0.026405736838536996,
+        "ordered_log_loss": 8.924166416286443,
+        "unordered_log_loss": 5.868381371420688,
+        "uniform_ordered_log_loss": 9.457385544343062,
+        "uniform_unordered_log_loss": 6.2793317139951155
+      },
+      "excluded": {
+        "missing_or_tied_top_k": 40
+      },
+      "by_month": {
+        "2026-01": {
+          "races": 488,
+          "ordered_hit": 0.006147540983606557,
+          "unordered_hit": 0.02663934426229508,
+          "found": 2.0163934426229506,
+          "predicted_unordered": 0.0695141254124776,
+          "unordered_brier": 0.02890240917302484,
+          "ordered_log_loss": 8.777453337501427,
+          "unordered_log_loss": 5.731069728325071,
+          "uniform_ordered_log_loss": 9.234953420698876,
+          "uniform_unordered_log_loss": 6.0568995903509295
+        },
+        "2026-02": {
+          "races": 455,
+          "ordered_hit": 0.002197802197802198,
+          "unordered_hit": 0.02197802197802198,
+          "found": 1.9494505494505494,
+          "predicted_unordered": 0.058530155128004004,
+          "unordered_brier": 0.02442973440546621,
+          "ordered_log_loss": 8.936655709007328,
+          "unordered_log_loss": 5.860635588536219,
+          "uniform_ordered_log_loss": 9.405578407739343,
+          "uniform_unordered_log_loss": 6.227524577391397
+        },
+        "2026-03": {
+          "races": 522,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.019157088122605363,
+          "found": 2.0057471264367814,
+          "predicted_unordered": 0.05493317641768846,
+          "unordered_brier": 0.021198268550299607,
+          "ordered_log_loss": 9.002493554561159,
+          "unordered_log_loss": 5.953832237905238,
+          "uniform_ordered_log_loss": 9.652663575607821,
+          "uniform_unordered_log_loss": 6.474609745259877
+        },
+        "2026-04": {
+          "races": 523,
+          "ordered_hit": 0.0038240917782026767,
+          "unordered_hit": 0.032504780114722756,
+          "found": 2.005736137667304,
+          "predicted_unordered": 0.05340518232846885,
+          "unordered_brier": 0.030936488882424153,
+          "ordered_log_loss": 9.054979670252768,
+          "unordered_log_loss": 5.981474415794133,
+          "uniform_ordered_log_loss": 9.681183627283556,
+          "uniform_unordered_log_loss": 6.503129796935609
+        },
+        "2026-05": {
+          "races": 528,
+          "ordered_hit": 0.001893939393939394,
+          "unordered_hit": 0.015151515151515152,
+          "found": 1.9753787878787878,
+          "predicted_unordered": 0.05331431014536897,
+          "unordered_brier": 0.017472587262864967,
+          "ordered_log_loss": 8.989682710664312,
+          "unordered_log_loss": 5.928175139850161,
+          "uniform_ordered_log_loss": 9.532815954403784,
+          "uniform_unordered_log_loss": 6.354762124055838
+        },
+        "2026-06": {
+          "races": 550,
+          "ordered_hit": 0.005454545454545455,
+          "unordered_hit": 0.02727272727272727,
+          "found": 2.021818181818182,
+          "predicted_unordered": 0.058955252949208725,
+          "unordered_brier": 0.02849824682336497,
+          "ordered_log_loss": 8.796555533904089,
+          "unordered_log_loss": 5.764555489097671,
+          "uniform_ordered_log_loss": 9.460465572649396,
+          "uniform_unordered_log_loss": 6.282411742301449
+        },
+        "2026-07": {
+          "races": 544,
+          "ordered_hit": 0.001838235294117647,
+          "unordered_hit": 0.034926470588235295,
+          "found": 2.0294117647058822,
+          "predicted_unordered": 0.06736466587177893,
+          "unordered_brier": 0.03606183632675342,
+          "ordered_log_loss": 8.88163142716222,
+          "unordered_log_loss": 5.8283764059435965,
+          "uniform_ordered_log_loss": 9.301363559619805,
+          "uniform_unordered_log_loss": 6.123309729271859
+        },
+        "2026-08": {
+          "races": 525,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.01904761904761905,
+          "found": 2.057142857142857,
+          "predicted_unordered": 0.07621523709803539,
+          "unordered_brier": 0.02336032355451445,
+          "ordered_log_loss": 8.86486796137074,
+          "unordered_log_loss": 5.804429441187857,
+          "uniform_ordered_log_loss": 9.208916817740675,
+          "uniform_unordered_log_loss": 6.030862987392731
+        },
+        "2026-09": {
+          "races": 486,
+          "ordered_hit": 0.00411522633744856,
+          "unordered_hit": 0.026748971193415638,
+          "found": 1.9650205761316872,
+          "predicted_unordered": 0.05174277519135092,
+          "unordered_brier": 0.02628468019686131,
+          "ordered_log_loss": 9.019794731200834,
+          "unordered_log_loss": 5.966426615596661,
+          "uniform_ordered_log_loss": 9.636271064651966,
+          "uniform_unordered_log_loss": 6.45821723430402
+        }
+      }
+    },
+    "5": {
+      "overall": {
+        "races": 4574,
+        "ordered_hit": 0.0006558810668998689,
+        "unordered_hit": 0.017271534761696544,
+        "found": 2.7818102317446436,
+        "predicted_unordered": 0.057090994027813494,
+        "unordered_brier": 0.019396742167439814,
+        "ordered_log_loss": 11.178782047541988,
+        "unordered_log_loss": 6.592140079841909,
+        "uniform_ordered_log_loss": 11.571530158839012,
+        "uniform_unordered_log_loss": 6.784038416056967
+      },
+      "excluded": {
+        "missing_or_tied_top_k": 87
+      },
+      "by_month": {
+        "2026-01": {
+          "races": 483,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.020703933747412008,
+          "found": 2.8530020703933747,
+          "predicted_unordered": 0.07206649110534398,
+          "unordered_brier": 0.024764835077725984,
+          "ordered_log_loss": 10.970957283227593,
+          "unordered_log_loss": 6.392414124574761,
+          "uniform_ordered_log_loss": 11.259277611662059,
+          "uniform_unordered_log_loss": 6.471785868880014
+        },
+        "2026-02": {
+          "races": 449,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.0200445434298441,
+          "found": 2.7416481069042318,
+          "predicted_unordered": 0.056573490797857465,
+          "unordered_brier": 0.020811483926091636,
+          "ordered_log_loss": 11.191660729522338,
+          "unordered_log_loss": 6.59436149279439,
+          "uniform_ordered_log_loss": 11.502630789331484,
+          "uniform_unordered_log_loss": 6.71513904654944
+        },
+        "2026-03": {
+          "races": 519,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.007707129094412331,
+          "found": 2.7341040462427744,
+          "predicted_unordered": 0.05016490371926726,
+          "unordered_brier": 0.012072768163372244,
+          "ordered_log_loss": 11.269707313081295,
+          "unordered_log_loss": 6.667157901660877,
+          "uniform_ordered_log_loss": 11.822687958581907,
+          "uniform_unordered_log_loss": 7.0351962157998615
+        },
+        "2026-04": {
+          "races": 518,
+          "ordered_hit": 0.0019305019305019305,
+          "unordered_hit": 0.009652509652509652,
+          "found": 2.781853281853282,
+          "predicted_unordered": 0.04533963258931034,
+          "unordered_brier": 0.012091025165623177,
+          "ordered_log_loss": 11.325158737294045,
+          "unordered_log_loss": 6.718387208209956,
+          "uniform_ordered_log_loss": 11.878375652721449,
+          "uniform_unordered_log_loss": 7.090883909939402
+        },
+        "2026-05": {
+          "races": 523,
+          "ordered_hit": 0.0019120458891013384,
+          "unordered_hit": 0.015296367112810707,
+          "found": 2.7418738049713194,
+          "predicted_unordered": 0.04959078402338093,
+          "unordered_brier": 0.015009984203329841,
+          "ordered_log_loss": 11.290264502375946,
+          "unordered_log_loss": 6.7111774758268865,
+          "uniform_ordered_log_loss": 11.67874938912382,
+          "uniform_unordered_log_loss": 6.891257646341773
+        },
+        "2026-06": {
+          "races": 542,
+          "ordered_hit": 0.0018450184501845018,
+          "unordered_hit": 0.027675276752767528,
+          "found": 2.830258302583026,
+          "predicted_unordered": 0.05415634391264778,
+          "unordered_brier": 0.02693648414068948,
+          "ordered_log_loss": 11.005689970976244,
+          "unordered_log_loss": 6.43102679592356,
+          "uniform_ordered_log_loss": 11.584129922488502,
+          "uniform_unordered_log_loss": 6.796638179706457
+        },
+        "2026-07": {
+          "races": 536,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.024253731343283583,
+          "found": 2.8227611940298507,
+          "predicted_unordered": 0.06324742225870464,
+          "unordered_brier": 0.02467176734951498,
+          "ordered_log_loss": 11.096446856570822,
+          "unordered_log_loss": 6.503331842223316,
+          "uniform_ordered_log_loss": 11.37718672398224,
+          "uniform_unordered_log_loss": 6.589694981200193
+        },
+        "2026-08": {
+          "races": 521,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.01727447216890595,
+          "found": 2.7927063339731286,
+          "predicted_unordered": 0.07441840324587039,
+          "unordered_brier": 0.023887616328082284,
+          "ordered_log_loss": 11.174002832171999,
+          "unordered_log_loss": 6.609205224230247,
+          "uniform_ordered_log_loss": 11.233849760086956,
+          "uniform_unordered_log_loss": 6.44635801730491
+        },
+        "2026-09": {
+          "races": 483,
+          "ordered_hit": 0.0,
+          "unordered_hit": 0.012422360248447204,
+          "found": 2.730848861283644,
+          "predicted_unordered": 0.048533653277204616,
+          "unordered_brier": 0.014009726267212835,
+          "ordered_log_loss": 11.289994697722083,
+          "unordered_log_loss": 6.705840031975481,
+          "uniform_ordered_log_loss": 11.79855246275985,
+          "uniform_unordered_log_loss": 7.011060719977804
+        }
+      }
+    }
+  }
+}
