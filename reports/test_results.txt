@@ -1,3 +1,7 @@
+test_fail_closed_on_changed_archive (test_available_history_research.AvailableHistoryTests.test_fail_closed_on_changed_archive) ... ok
+test_old_history_and_day_cutoff (test_available_history_research.AvailableHistoryTests.test_old_history_and_day_cutoff) ... ok
+test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization) ... ERROR
+test_unknown_and_nonrunner_not_safe_results (test_available_history_research.AvailableHistoryTests.test_unknown_and_nonrunner_not_safe_results) ... ok
 test_delayed_recovery_preserves_original_and_uses_digest_cache (test_backfill_recovery.RecoveryTests.test_delayed_recovery_preserves_original_and_uses_digest_cache) ... 200 day
 ok
 test_empty_response_gets_one_delayed_recovery (test_backfill_recovery.RecoveryTests.test_empty_response_gets_one_delayed_recovery) ... 200 day
@@ -198,6 +202,17 @@ test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
 ======================================================================
+ERROR: test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_research.py", line 41, in test_temperature_preserves_ranking_and_normalization
+    temp=calibrate_temperature(rows,pred)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/available_history_research.py", line 93, in calibrate_temperature
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+======================================================================
 ERROR: test_market_calibration (unittest.loader._FailedTest.test_market_calibration)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_market_calibration
@@ -262,9 +277,9 @@ Traceback (most recent call last):
 AttributeError: module 'scripts' has no attribute 'predict_operational'
 
 ----------------------------------------------------------------------
-Ran 192 tests in 0.209s
+Ran 196 tests in 0.137s
 
-FAILED (errors=4, skipped=7)
+FAILED (errors=5, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
