@@ -1,0 +1,47 @@
+name: Correct active model SG value
+on:
+  push:
+    branches: [main]
+    paths: ['config/value_correction_v2.json','scripts/train_value_correction_v2.py','.github/workflows/value_correction_v2.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: value-correction-v2
+  cancel-in-progress: false
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
+      - run: python -m unittest discover -s tests
+      - run: python -u -m scripts.train_value_correction_v2
+      - name: Save experiment
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for path in reports/value_correction_v2 models/value_correction_v2; do
+            if [ -d "$path" ]; then git add "$path"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save active model market correction experiment'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: value-correction-v2
+          path: |
+            reports/value_correction_v2
+            models/value_correction_v2

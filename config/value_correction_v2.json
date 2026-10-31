@@ -1,0 +1,51 @@
+{
+  "version": "active-market-correction-v2",
+  "fit": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "evaluate": [
+    "2026-01-01",
+    "2026-09-30"
+  ],
+  "price": "dernierRapportReference",
+  "require_all_prices_timestamped_before_start": true,
+  "max_price_age_hours": 24,
+  "score": "a*log(normalized_market_probability)+b*log(frozen_available_history_v3_probability)",
+  "constraints": {
+    "a": [
+      0,
+      3
+    ],
+    "b": [
+      0,
+      1
+    ]
+  },
+  "ridge": 0.001,
+  "ridge_anchor": [
+    1,
+    0
+  ],
+  "iterations": 150,
+  "baselines": [
+    "sport",
+    "market_normalized",
+    "market_calibrated"
+  ],
+  "bootstrap_days": 400,
+  "seed": 20261029,
+  "no_automatic_promotion": true,
+  "recommendations_allowed": false,
+  "limitations": [
+    "2026 evaluation outcomes already examined: reused chronological evaluation, not a virgin holdout",
+    "PMU archive retrieval is retrospective even when the internal quote timestamp precedes departure",
+    "PMU reference prices do not establish ZEturf live execution or settlement returns",
+    "No odds-selected ROI claim and no new hyperparameter search after evaluation",
+    "Individual histories are supplemental diagnostics; frozen model vectors remain unchanged",
+    "2025 sports selection and calibration already used this development period"
+  ],
+  "require_no_nonrunners": true,
+  "minimum_inverse_odds_sum": 1,
+  "data_quality_revision": "Initial v1 preserved separately. Exclude nonrunner races and complete boards implying a negative overround; these are inconsistent price/field snapshots, not executable markets. No parameter tuning."
+}
