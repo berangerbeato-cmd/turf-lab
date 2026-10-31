@@ -1,0 +1,35 @@
+name: Quarté Quinté ranking baseline
+on:
+  push:
+    branches: [main]
+    paths: ['turf_lab/rank45.py', 'scripts/evaluate_rank45.py', 'tests/test_rank45.py', '.github/workflows/rank45.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
+      - run: python -m unittest discover -s tests
+      - run: python -m scripts.evaluate_rank45
+      - name: Save results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/rank45_v1
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save top-four top-five ranking baseline evaluation'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
