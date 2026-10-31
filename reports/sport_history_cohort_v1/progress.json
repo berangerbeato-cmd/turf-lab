@@ -1,16 +1,32 @@
 {
-  "attempted": 64,
+  "attempted": 128,
   "selected": 384,
-  "eligible": 45,
+  "eligible": 92,
   "requests_this_run": 64,
   "production_changed": false,
   "latest": {
-    "race_id": "2024-06-09_R14C7",
-    "status": "QUARANTINED",
-    "reason": "Individual history unavailable"
+    "race_id": "2024-12-11_R4C5",
+    "status": "ELIGIBLE",
+    "changed_runners": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "added_starts": 25
   },
   "quarantine_reasons": {
-    "Individual history unavailable": 13,
-    "Ambiguous historical identity": 6
+    "Individual history unavailable": 27,
+    "Ambiguous historical identity": 7,
+    "Conflicting historical outcome": 2
   }
 }
