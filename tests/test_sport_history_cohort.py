@@ -41,4 +41,20 @@ class Cohort(unittest.TestCase):
         self.frame['runners'][0]['features'][0]=.5
         with self.assertRaises(ValueError):repair(self.frame,self.baseline,self.payload)
 
+    def test_imprecise_nonplaced_keeps_known_rank(self):
+        prior={'date':'2025-03-01','venue':'LAVAL','rank':10,'status':'','dq':False}
+        self.baseline['runners'][0]['history']=[prior]
+        values=features([prior],self.frame['date'])
+        self.baseline['runners'][0]['features']=values
+        self.frame['runners'][0]['features'][:5]=values
+        self.payload['participants'][0]['coursesCourues'][0]['participants'][0]['place'].update(place=None,statusArrivee='NON_PLACE')
+        out,stats=repair(self.frame,self.baseline,self.payload)
+        self.assertEqual(out['runners'][0]['features'],self.frame['runners'][0]['features'])
+        self.assertEqual(stats['added_starts'],0)
+        prior['rank']=1
+        values=features([prior],self.frame['date'])
+        self.baseline['runners'][0]['features']=values
+        self.frame['runners'][0]['features'][:5]=values
+        with self.assertRaises(ValueError):repair(self.frame,self.baseline,self.payload)
+
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,66 @@
+name: Enriched sport-history retraining
+on:
+  workflow_dispatch:
+  push:
+    branches: [research/sport-history-cohort-v1]
+    paths:
+      - '.github/workflows/sport_history_cohort.yml'
+      - 'config/sport_history_cohort_v1.json'
+      - 'scripts/train_sport_history_cohort.py'
+      - 'turf_lab/sport_history_cohort.py'
+      - 'tests/test_sport_history_cohort.py'
+permissions:
+  contents: write
+concurrency:
+  group: enriched-sport-history
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/sport-history-cohort-v1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt
+      - run: python -m unittest discover -s tests
+      - name: Collect bounded batches, checkpoint and train
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for batch in 1 2 3 4 5 6; do
+            code=0
+            python -m scripts.train_sport_history_cohort --max-requests 64 || code=$?
+            git add evidence/sport_history_cohort_v1 reports/sport_history_cohort_v1
+            if [ -d models/sport_history_cohort_v1 ]; then git add models/sport_history_cohort_v1; fi
+            if ! git diff --cached --quiet; then
+              git commit -m "Checkpoint enriched sport-history batch $batch"
+              git push origin HEAD:research/sport-history-cohort-v1
+            fi
+            if [ "$code" -ne 0 ]; then exit "$code"; fi
+            state=$(python -c "import json;print(json.load(open('reports/sport_history_cohort_v1/status.json'))['status'])")
+            if [ "$state" != 'COLLECTION_PARTIAL' ]; then break; fi
+          done
+      - name: Require completed research evaluation
+        run: |
+          python - <<'PY'
+          import json
+          state=json.load(open('reports/sport_history_cohort_v1/status.json'))
+          assert state['status']=='COMPLETED_EXPLORATORY', state
+          assert not state['production_changed']
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: enriched-history-checkpoint
+          path: |
+            evidence/sport_history_cohort_v1/
+            reports/sport_history_cohort_v1/
+            models/sport_history_cohort_v1/
+          retention-days: 90

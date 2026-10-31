@@ -59,7 +59,11 @@ def repair(frame, baseline, payload):
                 raise ValueError('Unknown historical outcome')
             if key in merged:
                 existing = merged[key]
-                if existing['rank'] != prior['rank'] or bool(existing['dq']) != bool(prior['dq']):
+                weaker_nonplaced = (prior['rank'] is None and prior['status'] == 'NON_PLACE'
+                                    and isinstance(existing['rank'], int) and existing['rank'] > 3)
+                rank_agrees = (existing['rank'] == prior['rank'] or
+                               (existing['dq'] and prior['dq']) or weaker_nonplaced)
+                if not rank_agrees or bool(existing['dq']) != bool(prior['dq']):
                     raise ValueError('Conflicting historical outcome')
             else:
                 merged[key] = prior

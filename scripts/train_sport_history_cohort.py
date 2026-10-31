@@ -95,7 +95,8 @@ def run(max_requests):
         except (ValueError, KeyError, TypeError) as error:
             audit.append({'race_id':rid,'status':'QUARANTINED','reason':str(error)})
         dump(ROOT/'progress.json', {'attempted':len(audit),'selected':len(chosen),'eligible':len(repaired),
-              'requests_this_run':store.requests,'production_changed':False})
+              'requests_this_run':store.requests,'production_changed':False,'latest':audit[-1],
+              'quarantine_reasons':dict(Counter(a.get('reason') for a in audit if a['status']=='QUARANTINED'))})
     dump(ROOT/'collection.json', {'audit':audit,'pending':pending,'evidence_manifest':str(store.manifest_path),
          'recommendations_allowed':False})
     if pending:
