@@ -1,0 +1,40 @@
+name: Audit active model apparent SG value
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/audit_active_value.py', 'config/value_scope.json', '.github/workflows/value_active.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: active-value-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
+      - run: python -m unittest discover -s tests
+      - run: python -m scripts.audit_active_value
+      - name: Save audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/value_active_v1
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save active model apparent SG value diagnostic'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: active-value-audit
+          path: reports/value_active_v1

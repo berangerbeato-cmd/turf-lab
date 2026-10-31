@@ -1,0 +1,16 @@
+{
+  "allowed": [
+    "simple_gagnant",
+    "tierce",
+    "quarte",
+    "quinte"
+  ],
+  "excluded": [
+    "simple_place",
+    "couple",
+    "2sur4"
+  ],
+  "objective": "Value and total combination cost, not ranking accuracy alone",
+  "first_step": "Audit active-model apparent SG value",
+  "recommendations_allowed": false
+}

@@ -30,3 +30,6 @@ to repair the losing race. Track confirmed stakes separately from suggested ones
 ## Decision 2026-10-31 — user-selected base model
 
 The user explicitly selected `available_history_v3` (`last5_available_dq20`) as the base model for subsequent work and predictions. `config/active_model.json` is authoritative. Execute `scripts.predict_operational` as before; it now computes this primary with its exact frozen feature variant, weights and late-2025 temperature. V6 and Classic are historical benchmarks, not the primary. No ensemble or silent fallback. A model promotion does not lift the recommendation suspension. The new base has no validated placement calibrator: any retained Classic placement output is explicitly a legacy benchmark. Old prediction files retain their original model labels and probabilities.
+
+## Scope decision — 2026-10-31
+Only simple gagnant, tiercé, quarté and quinté are in scope. Do not propose or develop simple placé, couplés or 2sur4. Historical placement artifacts are archival only. Prioritize calibrated value and total combination cost. An archived price is not an executable quote or a settlement. Recommendations remain suspended. Start with the active-model SG value diagnostic in reports/value_active_v1.
