@@ -1,0 +1,183 @@
+{
+  "status": "COMPLETED_EXPLORATORY",
+  "selected_before_test": {
+    "3": "top4",
+    "4": "v3",
+    "5": "rank"
+  },
+  "results": {
+    "3": {
+      "v3": {
+        "races": 4574,
+        "ordered_hit": 0.013336248360297332,
+        "unordered_hit": 0.05203323130738959,
+        "found": 1.3430257979886313,
+        "predicted_unordered": 0.0767622935604427,
+        "selection_brier": 0.04898083727669008,
+        "ordered_log_loss": 6.6247926926166745,
+        "unordered_log_loss": 4.895122361046671
+      },
+      "rank": {
+        "races": 4574,
+        "ordered_hit": 0.012461740271097508,
+        "unordered_hit": 0.047879317883690424,
+        "found": 1.3445561871447311,
+        "predicted_unordered": 0.047456650044469514,
+        "selection_brier": 0.04441993183170954,
+        "ordered_log_loss": 6.563285789542412,
+        "unordered_log_loss": 4.8113939029857935
+      },
+      "top3": {
+        "races": 4574,
+        "ordered_hit": 0.010494097070397902,
+        "unordered_hit": 0.040664626147791864,
+        "found": 1.315697420201137,
+        "predicted_unordered": 0.044790123011382056,
+        "selection_brier": 0.03807381998007865,
+        "ordered_log_loss": 6.598867051050126,
+        "unordered_log_loss": 4.845220779682319
+      },
+      "top4": {
+        "races": 4574,
+        "ordered_hit": 0.00940096195889812,
+        "unordered_hit": 0.04263226934849147,
+        "found": 1.3218189768255357,
+        "predicted_unordered": 0.04491348660996009,
+        "selection_brier": 0.03971273584263915,
+        "ordered_log_loss": 6.599721332793976,
+        "unordered_log_loss": 4.8418886559476135
+      },
+      "top5": {
+        "races": 4574,
+        "ordered_hit": 0.010712724092697858,
+        "unordered_hit": 0.04285089637079143,
+        "found": 1.3159160472234368,
+        "predicted_unordered": 0.04391804626061671,
+        "selection_brier": 0.0400037478915348,
+        "ordered_log_loss": 6.619355711934358,
+        "unordered_log_loss": 4.8566264938746295
+      }
+    },
+    "4": {
+      "v3": {
+        "races": 4574,
+        "ordered_hit": 0.0028421512898994315,
+        "unordered_hit": 0.025142107564494972,
+        "found": 2.006121556624399,
+        "predicted_unordered": 0.05940193069882184,
+        "selection_brier": 0.02620759684656448,
+        "ordered_log_loss": 8.923663277818317,
+        "unordered_log_loss": 5.867870868556582
+      },
+      "rank": {
+        "races": 4574,
+        "ordered_hit": 0.0026235242675994755,
+        "unordered_hit": 0.026453869698294708,
+        "found": 2.034543069523393,
+        "predicted_unordered": 0.031523921588544584,
+        "selection_brier": 0.025172955348091736,
+        "ordered_log_loss": 8.735029158151763,
+        "unordered_log_loss": 5.63761259407425
+      },
+      "top3": {
+        "races": 4574,
+        "ordered_hit": 0.0013117621337997377,
+        "unordered_hit": 0.021862702229995628,
+        "found": 2.0021862702229996,
+        "predicted_unordered": 0.029658759541514323,
+        "selection_brier": 0.020999066215648676,
+        "ordered_log_loss": 8.785773054703684,
+        "unordered_log_loss": 5.684331364054091
+      },
+      "top4": {
+        "races": 4574,
+        "ordered_hit": 0.0010931351114997813,
+        "unordered_hit": 0.023830345430695232,
+        "found": 2.020332313073896,
+        "predicted_unordered": 0.030075458439590596,
+        "selection_brier": 0.022714861543711353,
+        "ordered_log_loss": 8.770523025630274,
+        "unordered_log_loss": 5.663254489389972
+      },
+      "top5": {
+        "races": 4574,
+        "ordered_hit": 0.0021862702229995625,
+        "unordered_hit": 0.026672496720594664,
+        "found": 2.0126803672933975,
+        "predicted_unordered": 0.029647016822084805,
+        "selection_brier": 0.025305922301091417,
+        "ordered_log_loss": 8.775546272602723,
+        "unordered_log_loss": 5.660097457896155
+      }
+    },
+    "5": {
+      "v3": {
+        "races": 4574,
+        "ordered_hit": 0.0006558810668998689,
+        "unordered_hit": 0.017271534761696544,
+        "found": 2.7818102317446436,
+        "predicted_unordered": 0.0570909940278135,
+        "selection_brier": 0.019396742167439814,
+        "ordered_log_loss": 11.178782047541988,
+        "unordered_log_loss": 6.592140079841908
+      },
+      "rank": {
+        "races": 4574,
+        "ordered_hit": 0.0006558810668998689,
+        "unordered_hit": 0.019239177962396152,
+        "found": 2.818539571491036,
+        "predicted_unordered": 0.027018805878976836,
+        "selection_brier": 0.018031835589632016,
+        "ordered_log_loss": 10.836406236474872,
+        "unordered_log_loss": 6.182399808798423
+      },
+      "top3": {
+        "races": 4574,
+        "ordered_hit": 0.00043725404459991256,
+        "unordered_hit": 0.019676432006996064,
+        "found": 2.778312199387844,
+        "predicted_unordered": 0.025912524418811627,
+        "selection_brier": 0.018545398489443293,
+        "ordered_log_loss": 10.897623566861695,
+        "unordered_log_loss": 6.235014881603194
+      },
+      "top4": {
+        "races": 4574,
+        "ordered_hit": 0.0006558810668998689,
+        "unordered_hit": 0.020550940096195888,
+        "found": 2.7933974639265413,
+        "predicted_unordered": 0.026518138248213773,
+        "selection_brier": 0.019468714129866845,
+        "ordered_log_loss": 10.87051098413352,
+        "unordered_log_loss": 6.2026736328928065
+      },
+      "top5": {
+        "races": 4574,
+        "ordered_hit": 0.0010931351114997813,
+        "unordered_hit": 0.019676432006996064,
+        "found": 2.79973764757324,
+        "predicted_unordered": 0.02654653597598348,
+        "selection_brier": 0.018316909371566166,
+        "ordered_log_loss": 10.86446581864458,
+        "unordered_log_loss": 6.187018323044162
+      }
+    }
+  },
+  "counts": {
+    "train": 17335,
+    "validation": 6319,
+    "test": 4574,
+    "selection": 3114,
+    "calibration": 3205
+  },
+  "recommendations_allowed": false,
+  "production_changed": false,
+  "limitations": [
+    "Reused 2026 evaluation, not virgin holdout",
+    "Joint PL projection of ranking/classifier margins; not independent marginal multiplication",
+    "No odds input, no payout data, no ROI",
+    "Exact arrival events, not official product eligibility, dead-heat or bonus settlement",
+    "Common cohort requires unique complete first five finishers; excludes ambiguous results",
+    "No automatic promotion; no new data collection"
+  ]
+}

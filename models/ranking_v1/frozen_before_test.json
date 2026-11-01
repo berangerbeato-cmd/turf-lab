@@ -1,0 +1,200 @@
+{
+  "selected": {
+    "3": "top4",
+    "4": "v3",
+    "5": "rank"
+  },
+  "temperatures": {
+    "3": {
+      "v3": 0.9411457597147692,
+      "rank": 0.31264221759515914,
+      "top3": 0.8613573755341442,
+      "top4": 0.7859094097829489,
+      "top5": 0.7328093565098674
+    },
+    "4": {
+      "v3": 0.9411457597147692,
+      "rank": 0.33849180506295257,
+      "top3": 0.954317365950065,
+      "top4": 0.8609193472818963,
+      "top5": 0.797117626563683
+    },
+    "5": {
+      "v3": 0.9411457597147692,
+      "rank": 0.37915695155737394,
+      "top3": 1.0751711086104623,
+      "top4": 0.9613783552442916,
+      "top5": 0.8808149707414867
+    }
+  },
+  "development": {
+    "3": {
+      "v3": {
+        "races": 3114,
+        "ordered_hit": 0.010597302504816955,
+        "unordered_hit": 0.042068079640333975,
+        "found": 1.289980732177264,
+        "predicted_unordered": 0.06654781413741516,
+        "selection_brier": 0.03976838584325736,
+        "ordered_log_loss": 6.73169861487657,
+        "unordered_log_loss": 4.985802633546079
+      },
+      "rank": {
+        "races": 3114,
+        "ordered_hit": 0.008670520231213872,
+        "unordered_hit": 0.04174694926140013,
+        "found": 1.29383429672447,
+        "predicted_unordered": 0.01061175177554226,
+        "selection_brier": 0.04063664964492648,
+        "ordered_log_loss": 7.006710687788336,
+        "unordered_log_loss": 5.223996227477437
+      },
+      "top3": {
+        "races": 3114,
+        "ordered_hit": 0.00899165061014772,
+        "unordered_hit": 0.04110468850353243,
+        "found": 1.2797045600513808,
+        "predicted_unordered": 0.032109672431618164,
+        "selection_brier": 0.03874731687686334,
+        "ordered_log_loss": 6.732031725201523,
+        "unordered_log_loss": 4.966001984888739
+      },
+      "top4": {
+        "races": 3114,
+        "ordered_hit": 0.010918432883750802,
+        "unordered_hit": 0.04271034039820167,
+        "found": 1.275529865125241,
+        "predicted_unordered": 0.02792185902396626,
+        "selection_brier": 0.04039750402797339,
+        "ordered_log_loss": 6.7482086231392335,
+        "unordered_log_loss": 4.977504513452053
+      },
+      "top5": {
+        "races": 3114,
+        "ordered_hit": 0.005780346820809248,
+        "unordered_hit": 0.03500321130378934,
+        "found": 1.2485549132947977,
+        "predicted_unordered": 0.024635829040616397,
+        "selection_brier": 0.03318072627373287,
+        "ordered_log_loss": 6.784901819807558,
+        "unordered_log_loss": 5.010395232800436
+      }
+    },
+    "4": {
+      "v3": {
+        "races": 3114,
+        "ordered_hit": 0.00224791265253693,
+        "unordered_hit": 0.02697495183044316,
+        "found": 1.9637122671804752,
+        "predicted_unordered": 0.04971466272402009,
+        "selection_brier": 0.02600690017457635,
+        "ordered_log_loss": 9.016288269825065,
+        "unordered_log_loss": 5.940649578386946
+      },
+      "rank": {
+        "races": 3114,
+        "ordered_hit": 0.0012845215157353885,
+        "unordered_hit": 0.025048169556840076,
+        "found": 1.9881181759794477,
+        "predicted_unordered": 0.006555689712236689,
+        "selection_brier": 0.02442083032687796,
+        "ordered_log_loss": 9.202401354432418,
+        "unordered_log_loss": 6.046429268408275
+      },
+      "top3": {
+        "races": 3114,
+        "ordered_hit": 0.00224791265253693,
+        "unordered_hit": 0.026653821451509314,
+        "found": 1.9563262684649967,
+        "predicted_unordered": 0.023373056047715283,
+        "selection_brier": 0.025193252777803165,
+        "ordered_log_loss": 8.9222654988869,
+        "unordered_log_loss": 5.804645819477012
+      },
+      "top4": {
+        "races": 3114,
+        "ordered_hit": 0.0012845215157353885,
+        "unordered_hit": 0.023442517662170842,
+        "found": 1.959858702633269,
+        "predicted_unordered": 0.020024903394322398,
+        "selection_brier": 0.022201568463235625,
+        "ordered_log_loss": 8.921025754911025,
+        "unordered_log_loss": 5.794091963633547
+      },
+      "top5": {
+        "races": 3114,
+        "ordered_hit": 0.0009633911368015414,
+        "unordered_hit": 0.022157996146435453,
+        "found": 1.9601798330122029,
+        "predicted_unordered": 0.017371826815449812,
+        "selection_brier": 0.02104772945762944,
+        "ordered_log_loss": 8.945796826729781,
+        "unordered_log_loss": 5.80976994681165
+      }
+    },
+    "5": {
+      "v3": {
+        "races": 3114,
+        "ordered_hit": 0.0009633911368015414,
+        "unordered_hit": 0.01991008349389852,
+        "found": 2.7430956968529223,
+        "predicted_unordered": 0.045791711260633305,
+        "selection_brier": 0.02024354855070312,
+        "ordered_log_loss": 11.287406943988557,
+        "unordered_log_loss": 6.676571931217986
+      },
+      "rank": {
+        "races": 3114,
+        "ordered_hit": 0.0006422607578676942,
+        "unordered_hit": 0.023121387283236993,
+        "found": 2.791907514450867,
+        "predicted_unordered": 0.006464101703443902,
+        "selection_brier": 0.022275084806537,
+        "ordered_log_loss": 11.306081982681029,
+        "unordered_log_loss": 6.56185552082555
+      },
+      "top3": {
+        "races": 3114,
+        "ordered_hit": 0.0,
+        "unordered_hit": 0.01894669235709698,
+        "found": 2.733140655105973,
+        "predicted_unordered": 0.022991036724991976,
+        "selection_brier": 0.018208431661115423,
+        "ordered_log_loss": 11.062807557357493,
+        "unordered_log_loss": 6.387407227535267
+      },
+      "top4": {
+        "races": 3114,
+        "ordered_hit": 0.0,
+        "unordered_hit": 0.01798330122029544,
+        "found": 2.7578676942838793,
+        "predicted_unordered": 0.019714297475413194,
+        "selection_brier": 0.017143864695913728,
+        "ordered_log_loss": 11.03847275098314,
+        "unordered_log_loss": 6.3483275291844485
+      },
+      "top5": {
+        "races": 3114,
+        "ordered_hit": 0.0003211303789338471,
+        "unordered_hit": 0.019588953114964676,
+        "found": 2.770391779062299,
+        "predicted_unordered": 0.017074392829052785,
+        "selection_brier": 0.018626694412357734,
+        "ordered_log_loss": 11.045164484092073,
+        "unordered_log_loss": 6.339704692570244
+      }
+    }
+  },
+  "models_sha256": {
+    "rank": "67f2ea878c11367e4433d72665cbc008d7839e3b2af727541c139640f195edcf",
+    "top3": "5d16a16ea7e5769abe5521d44c8b419bcd2673662944b54ff20e2c761acde878",
+    "top4": "79c4bea55908b1afc6bce6f70e7812a56f16145f88273776368a0085e78716bf",
+    "top5": "e8dc7db669c67036b491e2da117d28c4c78f15c388b8e572b641bfd445c4d162"
+  },
+  "protocol_sha256": "c542567e008ba5a91531f31cd32c983a29eb5565f6a0451545bdf9400e2b53ef",
+  "active_policy_sha256": "ab3b80c349da58984f54fd06433abfb940a372d02ef3178a146dd56ed6496294",
+  "code_sha256": {
+    "scripts/train_ranking_v1.py": "ba47724f70a5dd08b1b5ac053fd679cd47d3da9caed8bf70ec7a82054d203c27",
+    "turf_lab/ranking_research.py": "58a11f84e3f6f2ab40131da283e76ff606ee254ff287257cd35d8e1a7a6600e5"
+  }
+}
