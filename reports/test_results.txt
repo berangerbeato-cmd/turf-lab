@@ -1,5 +1,5 @@
 test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference) ... ok
-test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark) ... ok
+test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark) ... ERROR
 test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature) ... ok
 test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected) ... ok
 test_fail_closed_on_changed_archive (test_available_history_research.AvailableHistoryTests.test_fail_closed_on_changed_archive) ... ok
@@ -114,7 +114,7 @@ test_disqualification_not_a_valid_chrono (test_next_features_audit.NextFeatureTe
 test_expiry_and_nonrunner (test_next_features_audit.NextFeatureTests.test_expiry_and_nonrunner) ... ok
 test_same_day_target_and_future_excluded (test_next_features_audit.NextFeatureTests.test_same_day_target_and_future_excluded) ... ok
 test_duplicate (test_operational_quotes.Quotes.test_duplicate) ... ok
-test_ev (test_operational_quotes.Quotes.test_ev) ... ok
+test_ev (test_operational_quotes.Quotes.test_ev) ... ERROR
 test_late (test_operational_quotes.Quotes.test_late) ... ok
 test_mismatch (test_operational_quotes.Quotes.test_mismatch) ... ok
 test_nonrunner (test_operational_quotes.Quotes.test_nonrunner) ... ok
@@ -195,10 +195,11 @@ test_scope_guard_before_network (test_v7_holdout.V7HoldoutTests.test_scope_guard
 test_bad_probability_and_wrong_market_rejected (test_value_market_audit.Audit.test_bad_probability_and_wrong_market_rejected) ... ok
 test_band_edges (test_value_market_audit.Audit.test_band_edges) ... ok
 test_dq_is_loss_and_market_normalizes (test_value_market_audit.Audit.test_dq_is_loss_and_market_normalizes) ... ok
-test_high_ev_does_not_resume_recommendation (test_value_market_audit.Audit.test_high_ev_does_not_resume_recommendation) ... ok
+test_high_ev_does_not_resume_recommendation (test_value_market_audit.Audit.test_high_ev_does_not_resume_recommendation) ... ERROR
 test_missing_price_excludes_whole_race (test_value_market_audit.Audit.test_missing_price_excludes_whole_race) ... ok
 test_nonrunner_not_market_or_loser (test_value_market_audit.Audit.test_nonrunner_not_market_or_loser) ... ok
 test_policy_fail_closed (test_value_market_audit.Audit.test_policy_fail_closed) ... ok
+test_value_shadow (unittest.loader._FailedTest.test_value_shadow) ... ERROR
 test_metrics_reproduce_existing_and_reject_invalid (test_xgb_model.XGBProbabilityTests.test_metrics_reproduce_existing_and_reject_invalid) ... ok
 test_normalization_shift_and_nonrunner (test_xgb_model.XGBProbabilityTests.test_normalization_shift_and_nonrunner) ... ok
 test_saved_model_and_inference_ignore_results (test_xgb_model.XGBTrainingTests.test_saved_model_and_inference_ignore_results) ... skipped 'optional XGBoost dependencies absent'
@@ -207,6 +208,21 @@ test_temperature_normalization_and_ties (test_xgb_rank.RankSelectionTests.test_t
 test_temporal_and_overlap_guards (test_xgb_rank.RankSelectionTests.test_temporal_and_overlap_guards) ... ok
 test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests.test_both_objectives_and_result_blind_inference) ... skipped 'optional XGBoost dependencies absent'
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
+
+======================================================================
+ERROR: test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_operational.py", line 36, in test_comparison_uses_new_primary_not_benchmark
+    result=compare(p,q)
+           ^^^^^^^^^^^^
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/operational_quotes.py", line 48, in compare
+    from turf_lab.value_shadow import shadow
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/value_shadow.py", line 5, in <module>
+    from turf_lab.market_repair import predict
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
 
 ======================================================================
 ERROR: test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization)
@@ -269,6 +285,21 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_ev (test_operational_quotes.Quotes.test_ev)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_operational_quotes.py", line 9, in test_ev
+    r=compare(self.p,self.q);self.assertEqual(r['rows'][0]['models']['v6']['ev'],.25);self.assertEqual(r['status'],'RETROSPECTIVE_QUOTE_COMPARISON')
+      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/operational_quotes.py", line 48, in compare
+    from turf_lab.value_shadow import shadow
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/value_shadow.py", line 5, in <module>
+    from turf_lab.market_repair import predict
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+======================================================================
 ERROR: test_failure_cannot_be_reported_as_previous_success (test_request_status.RequestStatus.test_failure_cannot_be_reported_as_previous_success)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -283,10 +314,44 @@ Traceback (most recent call last):
              ^^^^^^^^^^^^^^^^^^
 AttributeError: module 'scripts' has no attribute 'predict_operational'
 
+======================================================================
+ERROR: test_high_ev_does_not_resume_recommendation (test_value_market_audit.Audit.test_high_ev_does_not_resume_recommendation)
 ----------------------------------------------------------------------
-Ran 203 tests in 0.263s
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_value_market_audit.py", line 58, in test_high_ev_does_not_resume_recommendation
+    result=compare(fixture.p,fixture.q)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/operational_quotes.py", line 48, in compare
+    from turf_lab.value_shadow import shadow
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/value_shadow.py", line 5, in <module>
+    from turf_lab.market_repair import predict
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
 
-FAILED (errors=5, skipped=7)
+======================================================================
+ERROR: test_value_shadow (unittest.loader._FailedTest.test_value_shadow)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_value_shadow
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_value_shadow.py", line 4, in <module>
+    from turf_lab.value_shadow import shadow
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/value_shadow.py", line 5, in <module>
+    from turf_lab.market_repair import predict
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+----------------------------------------------------------------------
+Ran 204 tests in 0.226s
+
+FAILED (errors=9, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
