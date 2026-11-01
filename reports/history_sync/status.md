@@ -4,7 +4,7 @@
 Dernière journée complète : 2026-10-31
 Dernière journée collectée : 2026-10-31
 Continuité complète depuis 2022-01-01 : 2023-01-21
-Courses récupérées : 38 ; vérifiées : 30791
+Courses récupérées : 0 ; vérifiées : 30791
 Journées incomplètes : 6 ; courses connues manquantes : 21
 Journées sans programme vérifiable : 1 (nombre de courses inconnu)
 Cible : 2026-10-31
