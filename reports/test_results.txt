@@ -150,6 +150,9 @@ test_sampling_fixed_unique_endpoints_and_sorted (test_prospective_cohort.CohortT
 test_duplicates_rejected (test_rank45.Rank45Tests.test_duplicates_rejected) ... ok
 test_normalized_joint_distributions (test_rank45.Rank45Tests.test_normalized_joint_distributions) ... ok
 test_uniform_and_order (test_rank45.Rank45Tests.test_uniform_and_order) ... ok
+test_duplicates_rejected (test_ranking_research.RankingTests.test_duplicates_rejected) ... ok
+test_joint_mass_and_cost (test_ranking_research.RankingTests.test_joint_mass_and_cost) ... ok
+test_ties_and_dq (test_ranking_research.RankingTests.test_ties_and_dq) ... ok
 test_complete_history_accepted (test_recent_history.RecentHistoryTests.test_complete_history_accepted) ... ok
 test_missing_and_incomplete_fail_closed (test_recent_history.RecentHistoryTests.test_missing_and_incomplete_fail_closed) ... ok
 test_yesterday_only (test_recent_history.RecentHistoryTests.test_yesterday_only) ... ok
@@ -349,7 +352,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 204 tests in 0.226s
+Ran 207 tests in 0.243s
 
 FAILED (errors=9, skipped=7)
 Outside fixed cohort dates; no requests
