@@ -1,0 +1,48 @@
+name: Train ranking and Top3 Top4 Top5
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/train_ranking_v1.py','turf_lab/ranking_research.py','config/ranking_v1.json','tests/test_ranking_research.py','.github/workflows/ranking_v1.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ranking-v1
+  cancel-in-progress: false
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0 xgboost==3.0.5
+      - run: python -m unittest discover -s tests
+      - run: python -u -m scripts.train_ranking_v1
+      - name: Save research
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for path in reports/ranking_v1 models/ranking_v1; do
+            if [ -d "$path" ]; then git add "$path"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save ranking and joint combination experiment'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ranking-v1
+          path: |
+            reports/ranking_v1
+            models/ranking_v1

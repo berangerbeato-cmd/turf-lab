@@ -1,0 +1,25 @@
+{
+  "xgboost_version": "3.0.5",
+  "rounds": 200,
+  "params": {
+    "tree_method": "hist",
+    "max_depth": 3,
+    "eta": 0.03,
+    "min_child_weight": 5,
+    "lambda": 5,
+    "subsample": 1,
+    "colsample_bytree": 1,
+    "seed": 42,
+    "nthread": 1
+  },
+  "selection": "Max exact unordered top-k hit on Jan-Jun 2025; tie break ordered log loss. V3 eligible as incumbent.",
+  "calibration": "PL temperature on Jul-Dec 2025; frozen V3 temperature unchanged",
+  "limitations": [
+    "Reused 2026 evaluation, not virgin holdout",
+    "Joint PL projection of ranking/classifier margins; not independent marginal multiplication",
+    "No odds input, no payout data, no ROI",
+    "Exact arrival events, not official product eligibility, dead-heat or bonus settlement",
+    "Common cohort requires unique complete first five finishers; excludes ambiguous results",
+    "No automatic promotion; no new data collection"
+  ]
+}
