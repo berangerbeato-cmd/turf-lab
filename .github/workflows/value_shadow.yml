@@ -1,0 +1,17 @@
+name: Validate prospective value shadow
+on:
+  push:
+    branches: [main]
+    paths: ['turf_lab/value_shadow.py','turf_lab/operational_quotes.py','tests/test_value_shadow.py','.github/workflows/value_shadow.yml']
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
+      - run: python -m unittest discover -s tests

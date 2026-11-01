@@ -33,3 +33,6 @@ The user explicitly selected `available_history_v3` (`last5_available_dq20`) as 
 
 ## Scope decision — 2026-10-31
 Only simple gagnant, tiercé, quarté and quinté are in scope. Do not propose or develop simple placé, couplés or 2sur4. Historical placement artifacts are archival only. Prioritize calibrated value and total combination cost. An archived price is not an executable quote or a settlement. Recommendations remain suspended. Start with the active-model SG value diagnostic in reports/value_active_v1.
+
+## 2026-11-01 — prospective SG correction shadow
+Operational quote comparisons include a separate value_shadow block when the complete fresh field qualifies. Never present this market-informed correction as the independent sports primary. PRESTART_SHADOW only qualifies for prospective evaluation; retrospective replays do not. Recommendations remain suspended. Read reports/value_correction_v2/PROSPECTIVE.md for scope and limitations.

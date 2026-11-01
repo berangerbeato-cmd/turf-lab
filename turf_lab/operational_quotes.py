@@ -45,7 +45,9 @@ def compare(prediction,quotes):
         if not all(isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) for v in (low,high)) or not 1<=low<=high:
             raise ValueError('Invalid probable place range')
         pr=place['probability'];place_result={'status':'PRESTART_PRICE_SCENARIOS_ONLY','number':place['number'],'probability':pr,'ev_low':pr*low-1,'ev_high':pr*high-1,'note':'Probable range is not a guaranteed final payout interval; only classic top selection calibrated.'}
-    return {'primary_model':prediction['primary_model'],'race_id':prediction['race_id'],'observed_at':quotes['observed_at'],'calculated_at':now.isoformat(),
+    from turf_lab.value_shadow import shadow
+    correction = shadow(prediction,quotes,rows,now)
+    return {'value_shadow':correction,'primary_model':prediction['primary_model'],'race_id':prediction['race_id'],'observed_at':quotes['observed_at'],'calculated_at':now.isoformat(),
         'status':'PRESTART_ESTIMATE' if now<start else 'RETROSPECTIVE_QUOTE_COMPARISON',
         **recommendation_state(),
         'rows':sorted(rows,key=lambda r:-r['models'][prediction['primary_model']]['ev']),
