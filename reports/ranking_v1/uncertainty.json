@@ -1,0 +1,72 @@
+{
+  "status": "COMPLETED",
+  "report": {
+    "3": {
+      "model": "top4",
+      "races": 4574,
+      "hits": 195,
+      "baseline_hits": 238,
+      "expected_hits": 205.43428775395742,
+      "hit_delta": -0.00940096195889812,
+      "hit_delta_week_95": [
+        -0.014824746580650758,
+        -0.0035216425057456257
+      ],
+      "overprediction": 0.002281217261468612,
+      "overprediction_week_95": [
+        -0.0026740420397953434,
+        0.00726167366951885
+      ],
+      "promotion": "NOT_VALIDATED",
+      "combination_value": "UNVALIDATED_PROBABILITIES_AND_NO_PAYOUT_MODEL"
+    },
+    "4": {
+      "model": "v3",
+      "races": 4574,
+      "hits": 115,
+      "baseline_hits": 115,
+      "expected_hits": 271.70443101641115,
+      "hit_delta": 0.0,
+      "hit_delta_week_95": [
+        0.0,
+        0.0
+      ],
+      "overprediction": 0.03425982313432687,
+      "overprediction_week_95": [
+        0.02921917387750732,
+        0.03927705469425637
+      ],
+      "promotion": "NOT_VALIDATED",
+      "combination_value": "UNVALIDATED_PROBABILITIES_AND_NO_PAYOUT_MODEL"
+    },
+    "5": {
+      "model": "rank",
+      "races": 4574,
+      "hits": 88,
+      "baseline_hits": 79,
+      "expected_hits": 123.58401809044007,
+      "hit_delta": 0.0019676432006996065,
+      "hit_delta_week_95": [
+        -0.001660910544316914,
+        0.0060773520855017926
+      ],
+      "overprediction": 0.007779627916580687,
+      "overprediction_week_95": [
+        0.004022316841558453,
+        0.011586437162450686
+      ],
+      "promotion": "NOT_VALIDATED",
+      "combination_value": "UNVALIDATED_PROBABILITIES_AND_NO_PAYOUT_MODEL"
+    }
+  },
+  "recommendations_allowed": false,
+  "limitations": [
+    "Exploratory weekly block bootstrap; reused test and repeated horses across weeks",
+    "No selection of a different model after viewing 2026",
+    "Exact unordered finish events, not commercial settlements or bonus payouts"
+  ],
+  "input_sha256": {
+    "reports/ranking_v1/selected_combinations.jsonl.gz": "28b43cb2e9ed05acd631b7cea82c2170b195b565e577af497a845d27b4e6ac0c",
+    "reports/ranking_v1/evaluation.json": "dd899ced3b70182ae9628f93bd5b625a5d5553c16a7b4e3fc96d4dcf3cfa5af5"
+  }
+}
