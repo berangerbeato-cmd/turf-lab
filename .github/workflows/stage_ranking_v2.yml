@@ -1,0 +1,27 @@
+name: Conditional position ranking V2
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
+      - run: python -m unittest tests.test_stage_ranking -v
+      - name: Verify frozen experiment
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          p=Path('models/stage_ranking_v2/frozen_before_test.json')
+          if p.exists():
+              lock=json.loads(p.read_text())
+              files={**lock['code_sha256'],'models/stage_ranking_v2/model.json':lock['model_sha256'],'config/stage_ranking_v2.json':lock['protocol_sha256']}
+              for name,expected in files.items():
+                  assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==expected,name
+          PY

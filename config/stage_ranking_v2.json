@@ -1,0 +1,7 @@
+{
+  "ridge": 0.01,
+  "candidate": "Five conditional linear softmax models, one for each position; previous finishers removed from risk set",
+  "selection": "One prespecified candidate; greedy sequential choices; no test-driven hyperparameter search",
+  "calibration": "Independent positive temperatures per stage fitted on 2025 conditional log likelihood, bounds 0.25 to 4",
+  "limitations": ["2026 already inspected: exploratory only", "Complete unambiguous top-five cohort", "No odds or payout input", "No automatic promotion", "Temperature calibration may fail to improve joint calibration; measure rather than assume", "No interactions with identities of preceding finishers beyond their removal"]
+}
