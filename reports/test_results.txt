@@ -189,6 +189,7 @@ test_conflict_blocks (test_sport_history_repair.Repair.test_conflict_blocks) ...
 test_market_free_and_no_recommendation (test_sport_history_repair.Repair.test_market_free_and_no_recommendation) ... ok
 test_missing_blocks (test_sport_history_repair.Repair.test_missing_blocks) ... ok
 test_only_recent_features_change (test_sport_history_repair.Repair.test_only_recent_features_change) ... ok
+test_stage_ranking (unittest.loader._FailedTest.test_stage_ranking) ... ERROR
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
 test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synthetic_evaluation_is_idempotent) ... ok
@@ -243,10 +244,10 @@ ERROR: test_market_calibration (unittest.loader._FailedTest.test_market_calibrat
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_market_calibration
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
     module = self._get_module_from_name(name)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
     __import__(name)
   File "/home/runner/work/turf-lab/turf-lab/tests/test_market_calibration.py", line 2, in <module>
     from scripts.calibrate_market_tickets import fit_calibration,apply_calibration
@@ -260,10 +261,10 @@ ERROR: test_market_probabilities (unittest.loader._FailedTest.test_market_probab
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_market_probabilities
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
     module = self._get_module_from_name(name)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
     __import__(name)
   File "/home/runner/work/turf-lab/turf-lab/tests/test_market_probabilities.py", line 2, in <module>
     import numpy as np
@@ -275,10 +276,10 @@ ERROR: test_market_repair (unittest.loader._FailedTest.test_market_repair)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_market_repair
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
     module = self._get_module_from_name(name)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
     __import__(name)
   File "/home/runner/work/turf-lab/turf-lab/tests/test_market_repair.py", line 3, in <module>
     from turf_lab.market_repair import predict,fit
@@ -309,13 +310,28 @@ Traceback (most recent call last):
   File "/home/runner/work/turf-lab/turf-lab/tests/test_request_status.py", line 13, in test_failure_cannot_be_reported_as_previous_success
     with patch.dict(os.environ,{'RACE_DATE':'','RACE_MEETING':'','RACE_NUMBER':''}),patch('scripts.predict_operational.run',side_effect=ValueError('source unavailable')):
                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/mock.py", line 1451, in __enter__
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/mock.py", line 1451, in __enter__
     self.target = self.getter()
                   ^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/pkgutil.py", line 528, in resolve_name
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/pkgutil.py", line 528, in resolve_name
     result = getattr(result, p)
              ^^^^^^^^^^^^^^^^^^
 AttributeError: module 'scripts' has no attribute 'predict_operational'
+
+======================================================================
+ERROR: test_stage_ranking (unittest.loader._FailedTest.test_stage_ranking)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_stage_ranking
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_stage_ranking.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
 
 ======================================================================
 ERROR: test_high_ev_does_not_resume_recommendation (test_value_market_audit.Audit.test_high_ev_does_not_resume_recommendation)
@@ -337,10 +353,10 @@ ERROR: test_value_shadow (unittest.loader._FailedTest.test_value_shadow)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_value_shadow
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
     module = self._get_module_from_name(name)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
     __import__(name)
   File "/home/runner/work/turf-lab/turf-lab/tests/test_value_shadow.py", line 4, in <module>
     from turf_lab.value_shadow import shadow
@@ -352,9 +368,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 207 tests in 0.185s
+Ran 208 tests in 0.276s
 
-FAILED (errors=9, skipped=7)
+FAILED (errors=10, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
