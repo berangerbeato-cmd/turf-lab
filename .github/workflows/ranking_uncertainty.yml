@@ -1,0 +1,30 @@
+name: Finish ranking uncertainty audit
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/audit_ranking_uncertainty.py','.github/workflows/ranking_uncertainty.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt
+      - run: python -m scripts.audit_ranking_uncertainty
+      - name: Save decision
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/ranking_v1/uncertainty.json reports/ranking_v1/DECISION.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record paired ranking uncertainty and combination decision'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
