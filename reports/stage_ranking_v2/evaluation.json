@@ -1,0 +1,130 @@
+{
+  "status": "COMPLETED_EXPLORATORY",
+  "results": {
+    "3": {
+      "v3": {
+        "races": 4574,
+        "hits": 238,
+        "expected": 351.1107307454649,
+        "ordered_loss": 6.6247926926166745,
+        "unordered_loss": 4.895122361046672,
+        "fixed_event_brier": 0.04898083727669008
+      },
+      "stage_raw": {
+        "races": 4574,
+        "hits": 223,
+        "expected": 201.40330001376762,
+        "ordered_loss": 6.490053758258978,
+        "unordered_loss": 4.800875781900766,
+        "fixed_event_brier": 0.04803067501141663
+      },
+      "stage_calibrated": {
+        "races": 4574,
+        "hits": 223,
+        "expected": 214.93564671935425,
+        "ordered_loss": 6.4892327778149195,
+        "unordered_loss": 4.799271803328289,
+        "fixed_event_brier": 0.04798359950830884
+      },
+      "paired_weekly_95_ci": [
+        [
+          -0.009905617673589637,
+          -0.11215989407576746
+        ],
+        [
+          0.0035974853004785445,
+          -0.07975627262362563
+        ]
+      ]
+    },
+    "4": {
+      "v3": {
+        "races": 4574,
+        "hits": 115,
+        "expected": 271.70443101641104,
+        "ordered_loss": 8.923663277818317,
+        "unordered_loss": 5.867870868556582,
+        "fixed_event_brier": 0.02620759684656448
+      },
+      "stage_raw": {
+        "races": 4574,
+        "hits": 135,
+        "expected": 116.3737182506158,
+        "ordered_loss": 8.614521795025356,
+        "unordered_loss": 5.627950968489822,
+        "fixed_event_brier": 0.023780917921285304
+      },
+      "stage_calibrated": {
+        "races": 4574,
+        "hits": 135,
+        "expected": 127.49635108811869,
+        "ordered_loss": 8.614380304837336,
+        "unordered_loss": 5.626406049926536,
+        "fixed_event_brier": 0.023781053855502655
+      },
+      "paired_weekly_95_ci": [
+        [
+          -0.001256533299676941,
+          -0.26242298306568923
+        ],
+        [
+          0.009650802351700488,
+          -0.22067812380062682
+        ]
+      ]
+    },
+    "5": {
+      "v3": {
+        "races": 4574,
+        "hits": 79,
+        "expected": 261.13420668321885,
+        "ordered_loss": 11.178782047541988,
+        "unordered_loss": 6.592140079841909,
+        "fixed_event_brier": 0.01939674216743981
+      },
+      "stage_raw": {
+        "races": 4574,
+        "hits": 101,
+        "expected": 93.4447739366184,
+        "ordered_loss": 10.655252117594058,
+        "unordered_loss": 6.159600686117065,
+        "fixed_event_brier": 0.01573097884255823
+      },
+      "stage_calibrated": {
+        "races": 4574,
+        "hits": 101,
+        "expected": 99.47607317073799,
+        "ordered_loss": 10.655182612255672,
+        "unordered_loss": 6.1602762605092325,
+        "fixed_event_brier": 0.01573277344276679
+      },
+      "paired_weekly_95_ci": [
+        [
+          0.0,
+          -0.471269950859736
+        ],
+        [
+          0.00906558091579289,
+          -0.3946011786817585
+        ]
+      ]
+    }
+  },
+  "temperatures": [
+    0.9928864870350806,
+    0.9500455854267131,
+    0.9398159930456915,
+    0.908969843693589,
+    0.9922810400773655
+  ],
+  "production_changed": false,
+  "recommendations_allowed": false,
+  "limitations": [
+    "2026 already inspected: exploratory only",
+    "Complete unambiguous top-five cohort",
+    "No odds or payout input",
+    "No automatic promotion",
+    "Temperature calibration may fail to improve joint calibration; measure rather than assume",
+    "No interactions with identities of preceding finishers beyond their removal"
+  ]
+}
