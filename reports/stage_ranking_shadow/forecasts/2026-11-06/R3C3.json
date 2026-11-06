@@ -1,0 +1,151 @@
+{
+  "race_id": "2026-11-06_R3C3",
+  "date": "2026-11-06",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-06T00:45:36.046046+00:00",
+  "predicted_at": "2026-11-06T00:45:59.834436+00:00",
+  "scheduled_start": "2026-11-06T12:43:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NARSEO', 'DONATELLA DE LOU', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NIJNI NOVGOROD TEK', 'CHIBA CHATHO', \"UN AMOUR D'HAUFOR\")",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NAUSICAA GEDE', 'ISMA GEDE', 'GALIUS')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:(\"NATHALINA D'ARGENT\", \"SOURCE D'ARGENT\", \"URLANDO D'OR\")",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NEVER SEEN', 'VERONICA JET', 'GARIBALDI')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NOCTALIE MADRIK', 'BELLA MADRIK', 'REAL DE LOU')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:(\"NAKIM D'AMBOISE\", 'DOLINE DES EPINES', 'AKIM DU CAP VERT')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:(\"NUIT D'IVRESSE JAF\", 'FEOKTISTA GRAMMONT', 'BON COPAIN')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NESTOLA', 'ESTOLA', 'CARAT WILLIAMS')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NICO DU CAIEU', 'CIVELLE DU CAIEU', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NAIADE DE LA NADE', 'GOELANDE', 'GOSPEL PAT')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NOVIALO', 'VIA DE VILLENEUVE', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('NUANCE CASTELETS', 'EXQUISE DELO', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('NOBEL DU LEARD', 'ETOILE DU LEARD', 'CAPTAIN SPARROW')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('NIOSCO RED', 'FARCA SLY', 'IMPRESSIONIST')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "aec06130b4ceb50eefda96b2a00c6d56ccd01911b6e15640a97ce014db981b9a",
+  "history_through": "2026-11-05",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          15,
+          10,
+          4,
+          7
+        ],
+        "probabilities": {
+          "v3": 0.04698028237379036,
+          "stage_raw": 0.009371767246034496,
+          "stage_calibrated": 0.010317635771500707
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          15,
+          10,
+          7,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.023037651873260248,
+          "stage_raw": 0.008870931829392891,
+          "stage_calibrated": 0.009794128250942688
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          15,
+          10,
+          4,
+          7,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.028454701553732184,
+          "stage_raw": 0.00400050318592209,
+          "stage_calibrated": 0.004361435622626934
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          15,
+          10,
+          7,
+          12,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.003840118153639815,
+          "stage_raw": 0.002837586130814024,
+          "stage_calibrated": 0.003056006995435245
+        }
+      }
+    }
+  }
+}

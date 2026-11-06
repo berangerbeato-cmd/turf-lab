@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-06_R3C6",
+  "date": "2026-11-06",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-06T00:46:51.149942+00:00",
+  "predicted_at": "2026-11-06T00:47:15.612519+00:00",
+  "scheduled_start": "2026-11-06T14:27:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('LIKE A ROLLING JYL', 'GALACTICA JYL', 'UHLAN DU VAL')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('LYPSIE THONIC', 'OGYGIE TONIC', 'QUARLOS')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('LABEL DE CHENU', 'OASIS DE CHENU', 'NIKY')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('LUMIO ERCA', 'CYANA', 'BRISSAC')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('LOLITA DES LANDES', 'RENATE DES LANDES', 'OPIUM')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('LOVE ME HAUFOR', \"UNION D'HAUFOR\", \"UN AMOUR D'HAUFOR\")",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('LAVATER GEDE', 'CAPUCINE GEDE', 'ULSTER PERRINE')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('LAURENTINA TURGOT', 'QLOE TURGOT', 'DIABLE DE VAUVERT')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('LOOPING MIL', 'PAISY STED', 'DESIR CASTELETS')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:(\"L'ATHENIA BELLA\", 'SALSA BELLA', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:(\"L'AS DES CARAIBES\", \"MAYA DE L'HERMONT\", 'QUIDO DU GOUTIER')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('LADY DE SAFRAN', 'CLASSIC LADY', 'REAL DE LOU')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('LOLITA STEED', 'UNA PRIMA STEED', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('LUNE LUMALO', 'TESSY DES LANDES', 'VAUX LE VICOMTE')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:(\"LOVE'S SECRET\", 'INTENSE ACTION', 'PRODIGIOUS')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('LUGANO DE HOUELLE', 'BELLE DES LANDES', 'DUCATO BOURBON')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "aec06130b4ceb50eefda96b2a00c6d56ccd01911b6e15640a97ce014db981b9a",
+  "history_through": "2026-11-05",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          16,
+          6,
+          4,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.06319193130332182,
+          "stage_raw": 0.017584129935191112,
+          "stage_calibrated": 0.019488379131817044
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          16,
+          6,
+          12,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.02248601836097144,
+          "stage_raw": 0.021272433486508008,
+          "stage_calibrated": 0.024348200862736084
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          16,
+          6,
+          4,
+          1,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.03673828397266085,
+          "stage_raw": 0.005107297664448399,
+          "stage_calibrated": 0.005474779539003067
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          16,
+          6,
+          12,
+          1,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.008657213125464783,
+          "stage_raw": 0.010283493146244658,
+          "stage_calibrated": 0.011528758915456735
+        }
+      }
+    }
+  }
+}

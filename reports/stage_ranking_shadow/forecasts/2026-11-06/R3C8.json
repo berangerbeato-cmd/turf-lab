@@ -1,0 +1,151 @@
+{
+  "race_id": "2026-11-06_R3C8",
+  "date": "2026-11-06",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-06T00:47:42.052250+00:00",
+  "predicted_at": "2026-11-06T00:48:05.814236+00:00",
+  "scheduled_start": "2026-11-06T15:37:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('KARAMBA KARACHO', 'KARINA JET', 'VULCAIN DU VIVIER')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('KENAVO PAROYO', 'AMIE PAROYO', 'DUCATO BOURBON')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('KING EVOLUTION', 'UNE AUTRE HISTOIRE', \"UN AMOUR D'HAUFOR\")",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('JAZZ DES MANIS', 'RELODIE FOR ME', 'TROPIC JET')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('KARMEN DE MONTCEAU', 'TOSCANE PIERJI', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('KOEUR DE VANILLE', 'VANILLA GIRL', 'ALTO DE VIETTE')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('HORUS DE BOMO', 'VANELLA', 'OISEAU DE FEUX')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('KIMMERIDGIENNE', 'BELLE RAPIDE', 'BOCCADOR DE SIMM')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('KAMA HIGHLAND', 'VASALOPPET', 'DIJON')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('KHARTOUM DE LA FYE', 'UGOLINA DE LA FYE', 'DIJON')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('KEITHOS DU RHIN', 'BALANE DU RIED', 'CARAT WILLIAMS')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('JONGLEUSE DE BRY', 'ANNA DE LA LOGE', 'DIJON')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('KYRIA BELLA', 'CYRIANA BELLA', 'BRISSAC')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('KER POULGWEN', \"CROWN'S PRIDE\", 'DOBERMAN')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('ILLICO PRESTO FAC', 'THEBAIDE', 'QUAKER JET')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "aec06130b4ceb50eefda96b2a00c6d56ccd01911b6e15640a97ce014db981b9a",
+  "history_through": "2026-11-05",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          13,
+          6,
+          14,
+          2
+        ],
+        "probabilities": {
+          "v3": 0.028817920000478274,
+          "stage_raw": 0.00795426853743329,
+          "stage_calibrated": 0.008403121217825237
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          13,
+          3,
+          2,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.007450289649303176,
+          "stage_raw": 0.011537457123108004,
+          "stage_calibrated": 0.012713817340504493
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          13,
+          6,
+          14,
+          2,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.021268964317863303,
+          "stage_raw": 0.004196134672339758,
+          "stage_calibrated": 0.0044563309170481446
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          13,
+          3,
+          2,
+          9,
+          15
+        ],
+        "probabilities": {
+          "v3": 0.004507353710713035,
+          "stage_raw": 0.007134977747512352,
+          "stage_calibrated": 0.0078115734994445496
+        }
+      }
+    }
+  }
+}
