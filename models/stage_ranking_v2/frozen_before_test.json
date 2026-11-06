@@ -1,0 +1,11 @@
+{
+  "model_sha256": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d",
+  "protocol_sha256": "f369e9d25e2be4b2a311860fc38c0e4b484054b877847c01e0f7f9be3e959e73",
+  "active_policy_sha256": "ab3b80c349da58984f54fd06433abfb940a372d02ef3178a146dd56ed6496294",
+  "code_sha256": {
+    "scripts/train_stage_ranking_v2.py": "b306540a490e72e7a9361eaa1b73fcdcddd9ec87216551ddfb64ca77877880c7",
+    "turf_lab/stage_ranking.py": "da7a4aaca22276336e3d1f661a8b0c0987343fc69f1f985063aea9dddaa4efb0"
+  },
+  "calibration": "2025 only; conditional likelihood per position",
+  "test_status": "2026 previously inspected; exploratory only"
+}
