@@ -1,0 +1,584 @@
+{
+  "value_shadow": {
+    "status": "UNAVAILABLE",
+    "reason": "Quote more than 15 minutes before start",
+    "recommendations_allowed": false
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-06_R1C2",
+  "observed_at": "2026-11-06T17:08:00+01:00",
+  "calculated_at": "2026-11-06T16:12:40.041406+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 1,
+      "name": "LE TRESOR KRAAILO",
+      "odds": 60.2,
+      "models": {
+        "v6": {
+          "probability": 0.04875809511936574,
+          "fair_odds": 20.50941484797301,
+          "ev": 1.9352373261858178,
+          "implied_raw": 0.01661129568106312,
+          "difference_pp": 3.2146799438302622,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.044466000427933985,
+          "fair_odds": 22.489092573565262,
+          "ev": 1.6768532257616262,
+          "implied_raw": 0.01661129568106312,
+          "difference_pp": 2.7854704746870866,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.053098929020890646,
+          "fair_odds": 18.832771553764694,
+          "ev": 2.196555527057617,
+          "implied_raw": 0.01661129568106312,
+          "difference_pp": 3.6487633339827528,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 16,
+      "name": "LYS GEMA",
+      "odds": 23.3,
+      "models": {
+        "v6": {
+          "probability": 0.12950646076942382,
+          "fair_odds": 7.7216224894016845,
+          "ev": 2.0175005359275753,
+          "implied_raw": 0.04291845493562232,
+          "difference_pp": 8.658800583380149,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.11527762356944404,
+          "fair_odds": 8.674710399434918,
+          "ev": 1.6859686291680465,
+          "implied_raw": 0.04291845493562232,
+          "difference_pp": 7.2359168633821715,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.11658952058549703,
+          "fair_odds": 8.577100197154369,
+          "ev": 1.7165358296420807,
+          "implied_raw": 0.04291845493562232,
+          "difference_pp": 7.367106564987472,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "LOVING STAR",
+      "odds": 22,
+      "models": {
+        "v6": {
+          "probability": 0.12761294735519346,
+          "fair_odds": 7.836195470171491,
+          "ev": 1.8074848418142562,
+          "implied_raw": 0.045454545454545456,
+          "difference_pp": 8.215840190064801,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.11144473019700003,
+          "fair_odds": 8.973057750082102,
+          "ev": 1.4517840643340008,
+          "implied_raw": 0.045454545454545456,
+          "difference_pp": 6.599018474245458,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.1200617437102519,
+          "fair_odds": 8.329047780726272,
+          "ev": 1.6413583616255418,
+          "implied_raw": 0.045454545454545456,
+          "difference_pp": 7.460719825570644,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "name": "L'AMIRAL DE LUNE",
+      "odds": 44.9,
+      "models": {
+        "v6": {
+          "probability": 0.03424297149185853,
+          "fair_odds": 29.20307311057266,
+          "ev": 0.5375094199844479,
+          "implied_raw": 0.022271714922048998,
+          "difference_pp": 1.1971256569809532,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0356539029454295,
+          "fair_odds": 28.047420265056584,
+          "ev": 0.6008602422497844,
+          "implied_raw": 0.022271714922048998,
+          "difference_pp": 1.3382188023380501,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.041798468952254746,
+          "fair_odds": 23.92432127459675,
+          "ev": 0.876751255956238,
+          "implied_raw": 0.022271714922048998,
+          "difference_pp": 1.9526754030205749,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "name": "LORENZO GEDE",
+      "odds": 32.7,
+      "models": {
+        "v6": {
+          "probability": 0.06741896105301731,
+          "fair_odds": 14.832622520148512,
+          "ev": 1.2046000264336665,
+          "implied_raw": 0.030581039755351678,
+          "difference_pp": 3.6837921297665637,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.07135517042744906,
+          "fair_odds": 14.014401395295636,
+          "ev": 1.3333140729775845,
+          "implied_raw": 0.030581039755351678,
+          "difference_pp": 4.077413067209738,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05501512499553622,
+          "fair_odds": 18.17681955791498,
+          "ev": 0.7989945873540345,
+          "implied_raw": 0.030581039755351678,
+          "difference_pp": 2.443408524018454,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "LOBBY MESLOIS",
+      "odds": 59.6,
+      "models": {
+        "v6": {
+          "probability": 0.032151468958365986,
+          "fair_odds": 31.102777956893153,
+          "ev": 0.9162275499186128,
+          "implied_raw": 0.016778523489932886,
+          "difference_pp": 1.5372945468433101,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.026281567477895746,
+          "fair_odds": 38.049480908665565,
+          "ev": 0.5663814216825864,
+          "implied_raw": 0.016778523489932886,
+          "difference_pp": 0.950304398796286,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.029726534159870005,
+          "fair_odds": 33.63997950860926,
+          "ev": 0.7717014359282524,
+          "implied_raw": 0.016778523489932886,
+          "difference_pp": 1.294801066993712,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "name": "LOVER SIXTY ONE",
+      "odds": 103,
+      "models": {
+        "v6": {
+          "probability": 0.014765781958258619,
+          "fair_odds": 67.72414781871353,
+          "ev": 0.5208755417006377,
+          "implied_raw": 0.009708737864077669,
+          "difference_pp": 0.5057044094180949,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.01856607673481782,
+          "fair_odds": 53.8616754785169,
+          "ev": 0.9123059036862353,
+          "implied_raw": 0.009708737864077669,
+          "difference_pp": 0.8857338870740149,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.016210534572113477,
+          "fair_odds": 61.68828026931769,
+          "ev": 0.6696850609276881,
+          "implied_raw": 0.009708737864077669,
+          "difference_pp": 0.6501796708035807,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "name": "LEADER",
+      "odds": 12.9,
+      "models": {
+        "v6": {
+          "probability": 0.09846839220757413,
+          "fair_odds": 10.15554308931918,
+          "ev": 0.2702422594777063,
+          "implied_raw": 0.07751937984496124,
+          "difference_pp": 2.094901236261289,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.08754104248276717,
+          "fair_odds": 11.423213291032653,
+          "ev": 0.12927944802769664,
+          "implied_raw": 0.07751937984496124,
+          "difference_pp": 1.0021662637805933,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.11369349479351189,
+          "fair_odds": 8.795577986376285,
+          "ev": 0.4666460828363035,
+          "implied_raw": 0.07751937984496124,
+          "difference_pp": 3.6174114948550646,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 17,
+      "name": "LUCIANO ROYAL",
+      "odds": 55.3,
+      "models": {
+        "v6": {
+          "probability": 0.023362524859042465,
+          "fair_odds": 42.80359276377399,
+          "ev": 0.2919476247050483,
+          "implied_raw": 0.018083182640144666,
+          "difference_pp": 0.5279342218897799,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.02511790318230949,
+          "fair_odds": 39.81224040644837,
+          "ev": 0.3890200459817148,
+          "implied_raw": 0.018083182640144666,
+          "difference_pp": 0.7034720542164825,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.017815162821858258,
+          "fair_odds": 56.1319596121262,
+          "ev": -0.014821495951238384,
+          "implied_raw": 0.018083182640144666,
+          "difference_pp": -0.026801981828640867,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "LOVE DE CERIZE",
+      "odds": 7.4,
+      "models": {
+        "v6": {
+          "probability": 0.08317185106986082,
+          "fair_odds": 12.023298593655714,
+          "ev": -0.3845283020830299,
+          "implied_raw": 0.13513513513513511,
+          "difference_pp": -5.19632840652743,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.06889441969258038,
+          "fair_odds": 14.514963685915124,
+          "ev": -0.4901812942749052,
+          "implied_raw": 0.13513513513513511,
+          "difference_pp": -6.624071544255473,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.08626179829344671,
+          "fair_odds": 11.592617123494048,
+          "ev": -0.36166269262849426,
+          "implied_raw": 0.13513513513513511,
+          "difference_pp": -4.887333684168841,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "LAKOS DE BERLES",
+      "odds": 21.4,
+      "models": {
+        "v6": {
+          "probability": 0.02858221974301071,
+          "fair_odds": 34.98678580569421,
+          "ev": -0.3883404974995708,
+          "implied_raw": 0.04672897196261683,
+          "difference_pp": -1.8146752219606117,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0407474778764683,
+          "fair_odds": 24.5413962314831,
+          "ev": -0.1280039734435785,
+          "implied_raw": 0.04672897196261683,
+          "difference_pp": -0.598149408614853,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.029802671451266416,
+          "fair_odds": 33.554038993960944,
+          "ev": -0.36222283094289875,
+          "implied_raw": 0.04672897196261683,
+          "difference_pp": -1.6926300511350412,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "LILIUS DE GUEZ",
+      "odds": 137,
+      "models": {
+        "v6": {
+          "probability": 0.005093212130008664,
+          "fair_odds": 196.33975072589385,
+          "ev": -0.30222993818881305,
+          "implied_raw": 0.0072992700729927005,
+          "difference_pp": -0.22060579429840363,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.004819203069748213,
+          "fair_odds": 207.50318787712897,
+          "ev": -0.3397691794444949,
+          "implied_raw": 0.0072992700729927005,
+          "difference_pp": -0.2480067003244488,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.0044136408203765375,
+          "fair_odds": 226.57031704602727,
+          "ev": -0.39533120760841434,
+          "implied_raw": 0.0072992700729927005,
+          "difference_pp": -0.2885629252616163,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "LASCAR PILE",
+      "odds": 6.3,
+      "models": {
+        "v6": {
+          "probability": 0.08260075972413082,
+          "fair_odds": 12.106426179853429,
+          "ev": -0.4796152137379759,
+          "implied_raw": 0.15873015873015872,
+          "difference_pp": -7.6129399006027905,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.10516665112298108,
+          "fair_odds": 9.50871772868956,
+          "ev": -0.3374500979252192,
+          "implied_raw": 0.15873015873015872,
+          "difference_pp": -5.356350760717763,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.08905187923642224,
+          "fair_odds": 11.229409290118605,
+          "ev": -0.43897316081053983,
+          "implied_raw": 0.15873015873015872,
+          "difference_pp": -6.967827949373648,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 15,
+      "name": "L'AS DES ISLES",
+      "odds": 5.5,
+      "models": {
+        "v6": {
+          "probability": 0.07490540687210157,
+          "fair_odds": 13.350171125930416,
+          "ev": -0.5880202622034414,
+          "implied_raw": 0.18181818181818182,
+          "difference_pp": -10.691277494608025,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0795652838856491,
+          "fair_odds": 12.568295507337044,
+          "ev": -0.56239093862893,
+          "implied_raw": 0.18181818181818182,
+          "difference_pp": -10.225289793253273,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.0901560012938285,
+          "fair_odds": 11.091885017625039,
+          "ev": -0.5041419928839432,
+          "implied_raw": 0.18181818181818182,
+          "difference_pp": -9.166218052435331,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "name": "LET IT SNOW",
+      "odds": 5.9,
+      "models": {
+        "v6": {
+          "probability": 0.06163520312677016,
+          "fair_odds": 16.224494270639756,
+          "ev": -0.636352301552056,
+          "implied_raw": 0.1694915254237288,
+          "difference_pp": -10.785632229695864,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09010845812302658,
+          "fair_odds": 11.097737335985522,
+          "ev": -0.46836009707414317,
+          "implied_raw": 0.1694915254237288,
+          "difference_pp": -7.938306730070223,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.07222869951864741,
+          "fair_odds": 13.844912156307455,
+          "ev": -0.5738506728399803,
+          "implied_raw": 0.1694915254237288,
+          "difference_pp": -9.72628259050814,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "LIVE YOUR DREAMS",
+      "odds": 9.3,
+      "models": {
+        "v6": {
+          "probability": 0.05946768092616302,
+          "fair_odds": 16.815856687628898,
+          "ev": -0.4469505673866838,
+          "implied_raw": 0.1075268817204301,
+          "difference_pp": -4.805920079426707,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.045012337846192865,
+          "fair_odds": 22.21613112869186,
+          "ev": -0.5813852580304063,
+          "implied_raw": 0.1075268817204301,
+          "difference_pp": -6.251454387423723,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.04129370680527344,
+          "fair_odds": 24.216765152996494,
+          "ev": -0.6159685267109569,
+          "implied_raw": 0.1075268817204301,
+          "difference_pp": -6.623317491515665,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 13,
+      "name": "LEBOSS D'HAVAROCHE",
+      "odds": 18.1,
+      "models": {
+        "v6": {
+          "probability": 0.022943592674603722,
+          "fair_odds": 43.58515312673332,
+          "ev": -0.5847209725896726,
+          "implied_raw": 0.055248618784530384,
+          "difference_pp": -3.2305026109926667,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.028112767188404008,
+          "fair_odds": 35.57102697497817,
+          "ev": -0.4911589138898874,
+          "implied_raw": 0.055248618784530384,
+          "difference_pp": -2.7135851596126375,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.021049752263552,
+          "fair_odds": 47.50649734398617,
+          "ev": -0.6189994840297087,
+          "implied_raw": 0.055248618784530384,
+          "difference_pp": -3.419886652097838,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 18,
+      "name": "LABEL DE LARRE",
+      "odds": 93,
+      "models": {
+        "v6": {
+          "probability": 0.005312469961250495,
+          "fair_odds": 188.23635847243668,
+          "ev": -0.505940293603704,
+          "implied_raw": 0.010752688172043012,
+          "difference_pp": -0.5440218210792517,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0018693837499027001,
+          "fair_odds": 534.9356439265342,
+          "ev": -0.8261473112590489,
+          "implied_raw": 0.010752688172043012,
+          "difference_pp": -0.8883304422140312,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.0017323367054027042,
+          "fair_odds": 577.2549856394903,
+          "ev": -0.8388926863975485,
+          "implied_raw": 0.010752688172043012,
+          "difference_pp": -0.9020351466640307,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
