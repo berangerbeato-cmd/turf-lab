@@ -1,0 +1,643 @@
+{
+  "value_shadow": {
+    "status": "PRESTART_SHADOW",
+    "model": "value_correction_v2",
+    "model_sha256": "7d2a9e2e155352d14394c6ec03394c77507dab4980fe4c3ec15d6011fe743873",
+    "market_informed": true,
+    "operator": "ZEturf",
+    "source_evidence": "3 ZEturf screenshot captures at 14:21 Europe/Paris on 2026-11-07; SHA256 c7f43366b1c9cd449783dd64dfefa625a9a134529f967339ece91d3f38512221 / a00da391f9eb5e8aa9ba83e31c227b71e7a45d50b6b2b4f543c9fb67656611cf / 86f53b17c91d158357ce8b0371fc5b9cd8c32dbbc1e43b08d575a3ceeab73e66",
+    "observed_at": "2026-11-07T14:21:00+01:00",
+    "calculated_at": "2026-11-07T13:25:05.517090+00:00",
+    "recommendations_allowed": false,
+    "rows": [
+      {
+        "number": 1,
+        "probability": 0.27380905682694606,
+        "market_probability": 0.296245954364385,
+        "indicative_ev": -0.20595373520185645,
+        "break_even_total_return": 3.652180141842511
+      },
+      {
+        "number": 2,
+        "probability": 0.026444670586952972,
+        "market_probability": 0.03687181406252002,
+        "indicative_ev": -0.3838391753239957,
+        "break_even_total_return": 37.81480267307133
+      },
+      {
+        "number": 3,
+        "probability": 0.022975622945293733,
+        "market_probability": 0.0251939374679389,
+        "indicative_ev": -0.21653125756548364,
+        "break_even_total_return": 43.52439115061458
+      },
+      {
+        "number": 4,
+        "probability": 0.0777204917236355,
+        "market_probability": 0.07536081295234355,
+        "indicative_ev": -0.11398639435055524,
+        "break_even_total_return": 12.866619572555933
+      },
+      {
+        "number": 5,
+        "probability": 0.0025999464632144803,
+        "market_probability": 0.003422762022536719,
+        "indicative_ev": -0.34741343773316546,
+        "break_even_total_return": 384.62330442129024
+      },
+      {
+        "number": 6,
+        "probability": 0.007578311093023455,
+        "market_probability": 0.010143013785793582,
+        "indicative_ev": -0.35811705042091335,
+        "break_even_total_return": 131.95552250693345
+      },
+      {
+        "number": 7,
+        "probability": 0.011352575365442841,
+        "market_probability": 0.011768674899407075,
+        "indicative_ev": -0.17126199832267264,
+        "break_even_total_return": 88.08573982640036
+      },
+      {
+        "number": 8,
+        "probability": 0.04153612163286092,
+        "market_probability": 0.05966064358727198,
+        "indicative_ev": -0.4018798484868028,
+        "break_even_total_return": 24.075430268599252
+      },
+      {
+        "number": 9,
+        "probability": 0.20737174147499132,
+        "market_probability": 0.18279005694823755,
+        "indicative_ev": -0.025352815067540724,
+        "break_even_total_return": 4.822257810477028
+      },
+      {
+        "number": 10,
+        "probability": 0.265910036672705,
+        "market_probability": 0.22028545324531193,
+        "indicative_ev": 0.03704914302354956,
+        "break_even_total_return": 3.7606703850402177
+      },
+      {
+        "number": 11,
+        "probability": 0.006463455223630088,
+        "market_probability": 0.006508433845884216,
+        "indicative_ev": -0.14682391048082832,
+        "break_even_total_return": 154.71600953373158
+      },
+      {
+        "number": 12,
+        "probability": 0.006769256567220957,
+        "market_probability": 0.012343581431849375,
+        "indicative_ev": -0.5288597429214215,
+        "break_even_total_return": 147.7267097309238
+      },
+      {
+        "number": 13,
+        "probability": 0.015523666841209743,
+        "market_probability": 0.018595525273954902,
+        "indicative_ev": -0.2828065919361098,
+        "break_even_total_return": 64.41776999138891
+      },
+      {
+        "number": 14,
+        "probability": 0.012613697907459311,
+        "market_probability": 0.014536603513650024,
+        "indicative_ev": -0.2545304536691547,
+        "break_even_total_return": 79.27889246567686
+      },
+      {
+        "number": 15,
+        "probability": 0.01681005074623274,
+        "market_probability": 0.018317980120612292,
+        "indicative_ev": -0.21160862000168457,
+        "break_even_total_return": 59.48822017828279
+      },
+      {
+        "number": 16,
+        "probability": 0.004521297929180849,
+        "market_probability": 0.00795475247830293,
+        "indicative_ev": -0.5116998236484682,
+        "break_even_total_return": 221.17542698213123
+      }
+    ],
+    "limits": "Shadow SG only. Trained on archived PMU reference prices; other operators and live price snapshots are out-of-sample transfer. No profit, stakes or selection rule. Recalculate if odds or field change."
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-07_R2C8",
+  "observed_at": "2026-11-07T14:21:00+01:00",
+  "calculated_at": "2026-11-07T13:25:05.517090+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 11,
+      "name": "ICARE DU DOUET",
+      "odds": 132,
+      "models": {
+        "v6": {
+          "probability": 0.03700591808657436,
+          "fair_odds": 27.022704791718088,
+          "ev": 3.884781187427815,
+          "implied_raw": 0.007575757575757576,
+          "difference_pp": 2.943016051081678,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.054559661263700335,
+          "fair_odds": 18.328559540843788,
+          "ev": 6.201875286808444,
+          "implied_raw": 0.007575757575757576,
+          "difference_pp": 4.698390368794276,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.06338973111421078,
+          "fair_odds": 15.775425805139893,
+          "ev": 7.367444507075824,
+          "implied_raw": 0.007575757575757576,
+          "difference_pp": 5.581397353845321,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "name": "HAVANA MOST",
+      "odds": 251,
+      "models": {
+        "v6": {
+          "probability": 0.018555682233759776,
+          "fair_odds": 53.89184765088417,
+          "ev": 3.657476240673704,
+          "implied_raw": 0.00398406374501992,
+          "difference_pp": 1.4571618488739855,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.016618170842658868,
+          "fair_odds": 60.17509444739842,
+          "ev": 3.171160881507376,
+          "implied_raw": 0.00398406374501992,
+          "difference_pp": 1.2634107097638947,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.019569820404505195,
+          "fair_odds": 51.09908927778349,
+          "ev": 3.9120249215308043,
+          "implied_raw": 0.00398406374501992,
+          "difference_pp": 1.5585756659485275,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "IOLAS",
+      "odds": 73,
+      "models": {
+        "v6": {
+          "probability": 0.024599394046941062,
+          "fair_odds": 40.65140783922481,
+          "ev": 0.7957557654266976,
+          "implied_raw": 0.0136986301369863,
+          "difference_pp": 1.0900763909954763,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.04970852458497396,
+          "fair_odds": 20.117273814686563,
+          "ev": 2.628722294703099,
+          "implied_raw": 0.0136986301369863,
+          "difference_pp": 3.600989444798766,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.06135649648093213,
+          "fair_odds": 16.29819265040291,
+          "ev": 3.4790242431080456,
+          "implied_raw": 0.0136986301369863,
+          "difference_pp": 4.765786634394583,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 15,
+      "name": "JOUR D'ERABLE",
+      "odds": 46.9,
+      "models": {
+        "v6": {
+          "probability": 0.06272574121833445,
+          "fair_odds": 15.942418225385666,
+          "ev": 1.9418372631398855,
+          "implied_raw": 0.021321961620469083,
+          "difference_pp": 4.140377959786537,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.044477335476906556,
+          "fair_odds": 22.4833612283096,
+          "ev": 1.0859870338669175,
+          "implied_raw": 0.021321961620469083,
+          "difference_pp": 2.315537385643747,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.053429753744059526,
+          "fair_odds": 18.716163372008484,
+          "ev": 1.5058554505963917,
+          "implied_raw": 0.021321961620469083,
+          "difference_pp": 3.2107792123590437,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "name": "JADE THORIS",
+      "odds": 59.1,
+      "models": {
+        "v6": {
+          "probability": 0.029905183332686297,
+          "fair_odds": 33.43901921199735,
+          "ev": 0.7673963349617603,
+          "implied_raw": 0.01692047377326565,
+          "difference_pp": 1.2984709559420646,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.028551732449477157,
+          "fair_odds": 35.02414439367276,
+          "ev": 0.6874073877641,
+          "implied_raw": 0.01692047377326565,
+          "difference_pp": 1.1631258676211504,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.041222840000839,
+          "fair_odds": 24.258396558307172,
+          "ev": 1.4362698440495851,
+          "implied_raw": 0.01692047377326565,
+          "difference_pp": 2.430236622757335,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "JOLI DE CONNEE",
+      "odds": 34.1,
+      "models": {
+        "v6": {
+          "probability": 0.03903004852814365,
+          "fair_odds": 25.621285079338897,
+          "ev": 0.3309246548096987,
+          "implied_raw": 0.029325513196480937,
+          "difference_pp": 0.9704535331662715,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.05997059088070538,
+          "fair_odds": 16.67483987258386,
+          "ev": 1.0449971490320538,
+          "implied_raw": 0.029325513196480937,
+          "difference_pp": 3.064507768422444,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.054527863240563065,
+          "fair_odds": 18.33924787384854,
+          "ev": 0.8594001365032007,
+          "implied_raw": 0.029325513196480937,
+          "difference_pp": 2.520235004408213,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "HARLEY DE JANEIRO",
+      "odds": 84.7,
+      "models": {
+        "v6": {
+          "probability": 0.02575075447577803,
+          "fair_odds": 38.83381362439813,
+          "ev": 1.1810889040983992,
+          "implied_raw": 0.011806375442739079,
+          "difference_pp": 1.394437903303895,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.014956834879672804,
+          "fair_odds": 66.85906530659487,
+          "ev": 0.2668439143082866,
+          "implied_raw": 0.011806375442739079,
+          "difference_pp": 0.31504594369337247,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.02138679269439347,
+          "fair_odds": 46.75782920279342,
+          "ev": 0.811461341215127,
+          "implied_raw": 0.011806375442739079,
+          "difference_pp": 0.9580417251654393,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 13,
+      "name": "JASMINE DES ETANGS",
+      "odds": 46.2,
+      "models": {
+        "v6": {
+          "probability": 0.022327332003327177,
+          "fair_odds": 44.788154708810794,
+          "ev": 0.03152273855371557,
+          "implied_raw": 0.021645021645021644,
+          "difference_pp": 0.0682310358305533,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.027090448012529005,
+          "fair_odds": 36.9133799314619,
+          "ev": 0.25157869817884015,
+          "implied_raw": 0.021645021645021644,
+          "difference_pp": 0.5445426367507361,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03652454235050611,
+          "fair_odds": 27.37885092175955,
+          "ev": 0.6874338565933824,
+          "implied_raw": 0.021645021645021644,
+          "difference_pp": 1.4879520705484466,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "HECTOR DE CORDAY",
+      "odds": 11.4,
+      "models": {
+        "v6": {
+          "probability": 0.10527046607916164,
+          "fair_odds": 9.499340482144504,
+          "ev": 0.20008331330244267,
+          "implied_raw": 0.08771929824561403,
+          "difference_pp": 1.7551167833547612,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.08686702097251507,
+          "fair_odds": 11.511848671734723,
+          "ev": -0.009715960913328159,
+          "implied_raw": 0.08771929824561403,
+          "difference_pp": -0.08522772730989586,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.10487845823680912,
+          "fair_odds": 9.534846495760467,
+          "ev": 0.19561442389962402,
+          "implied_raw": 0.08771929824561403,
+          "difference_pp": 1.7159159991195092,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "name": "INCANTATOR",
+      "odds": 3.9,
+      "models": {
+        "v6": {
+          "probability": 0.23721601108821336,
+          "fair_odds": 4.2155670496800095,
+          "ev": -0.07485755675596795,
+          "implied_raw": 0.25641025641025644,
+          "difference_pp": -1.9194245322043084,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.32011892242648604,
+          "fair_odds": 3.1238390796146884,
+          "ev": 0.2484637974632955,
+          "implied_raw": 0.25641025641025644,
+          "difference_pp": 6.37086660162296,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.23104855342523722,
+          "fair_odds": 4.32809461550505,
+          "ev": -0.09891064164157481,
+          "implied_raw": 0.25641025641025644,
+          "difference_pp": -2.536170298501922,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "JIKAO",
+      "odds": 4.7,
+      "models": {
+        "v6": {
+          "probability": 0.2180928443426075,
+          "fair_odds": 4.5852031643416735,
+          "ev": 0.02503636841025525,
+          "implied_raw": 0.2127659574468085,
+          "difference_pp": 0.5326886895798993,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.14889554638007427,
+          "fair_odds": 6.716117602653988,
+          "ev": -0.3001909320136509,
+          "implied_raw": 0.2127659574468085,
+          "difference_pp": -6.387041106673425,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.1750510810450278,
+          "fair_odds": 5.7126182485144055,
+          "ev": -0.17725991908836924,
+          "implied_raw": 0.2127659574468085,
+          "difference_pp": -3.77148764017807,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 16,
+      "name": "JESSY DE DAUX",
+      "odds": 108,
+      "models": {
+        "v6": {
+          "probability": 0.010068769234621296,
+          "fair_odds": 99.31700456114503,
+          "ev": 0.08742707733909993,
+          "implied_raw": 0.009259259259259259,
+          "difference_pp": 0.08095099753620376,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0064907521902089,
+          "fair_odds": 154.0653487755193,
+          "ev": -0.2989987634574388,
+          "implied_raw": 0.009259259259259259,
+          "difference_pp": -0.2768507069050359,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.006839192914480902,
+          "fair_odds": 146.21608317008565,
+          "ev": -0.2613671652360626,
+          "implied_raw": 0.009259259259259259,
+          "difference_pp": -0.2420066344778357,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "JUDICIEUSE ZAILER",
+      "odds": 23.3,
+      "models": {
+        "v6": {
+          "probability": 0.020005838873433466,
+          "fair_odds": 49.98540707672794,
+          "ev": -0.5338639542490002,
+          "implied_raw": 0.04291845493562232,
+          "difference_pp": -2.2912616062188853,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.01840757567939735,
+          "fair_odds": 54.32545911622944,
+          "ev": -0.5711034866700417,
+          "implied_raw": 0.04291845493562232,
+          "difference_pp": -2.4510879256224967,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.021810129448612926,
+          "fair_odds": 45.85025514663315,
+          "ev": -0.49182398384731885,
+          "implied_raw": 0.04291845493562232,
+          "difference_pp": -2.110832548700939,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "name": "JOLIE NANA",
+      "odds": 69.6,
+      "models": {
+        "v6": {
+          "probability": 0.022850016445266987,
+          "fair_odds": 43.76364465186781,
+          "ev": 0.5903611445905821,
+          "implied_raw": 0.014367816091954025,
+          "difference_pp": 0.8482200353312963,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0060149404683280325,
+          "fair_odds": 166.25268450544934,
+          "ev": -0.5813601434043689,
+          "implied_raw": 0.014367816091954025,
+          "difference_pp": -0.8352875623625992,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.006302990542444729,
+          "fair_odds": 158.65484697556468,
+          "ev": -0.561311858245847,
+          "implied_raw": 0.014367816091954025,
+          "difference_pp": -0.8064825549509295,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "IBLISS MAYBE",
+      "odds": 14.4,
+      "models": {
+        "v6": {
+          "probability": 0.020721099605093947,
+          "fair_odds": 48.25998711739054,
+          "ev": -0.7016161656866471,
+          "implied_raw": 0.06944444444444445,
+          "difference_pp": -4.87233448393505,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.018522839686207517,
+          "fair_odds": 53.98740241457795,
+          "ev": -0.7332711085186118,
+          "implied_raw": 0.06944444444444445,
+          "difference_pp": -5.092160475823693,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.020722298477634134,
+          "fair_odds": 48.25719507318718,
+          "ev": -0.7015989019220685,
+          "implied_raw": 0.06944444444444445,
+          "difference_pp": -4.872214596681031,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "name": "JOY EASTER",
+      "odds": 2.9,
+      "models": {
+        "v6": {
+          "probability": 0.10587490040605704,
+          "fair_odds": 9.445109238967374,
+          "ev": -0.6929627888224346,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -23.895268580083954,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09874910380615873,
+          "fair_odds": 10.126674181904146,
+          "ev": -0.7136275989621397,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -24.607848240073785,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.0819394558797439,
+          "fair_odds": 12.204132786378535,
+          "ev": -0.7623755779487427,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -26.288813032715268,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
