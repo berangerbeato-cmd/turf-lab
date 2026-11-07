@@ -8,78 +8,78 @@
   ],
   "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
   "primary_model": "available_history_v3",
-  "prediction": "predictions_operational/2026-11-07/2026-11-07_R2C8_20261107T132335636727Z/prediction.json",
-  "race_id": "2026-11-07_R2C8",
-  "predicted_at": "2026-11-07T13:25:03.608692+00:00",
+  "prediction": "predictions_operational/2026-11-07/2026-11-07_R5C6_20261107T173445147003Z/prediction.json",
+  "race_id": "2026-11-07_R5C6",
+  "predicted_at": "2026-11-07T17:36:20.188319+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.10587490040605704,
-        "2": 0.020005838873433466,
-        "3": 0.03903004852814365,
-        "4": 0.10527046607916164,
-        "5": 0.018555682233759776,
-        "6": 0.02575075447577803,
-        "7": 0.024599394046941062,
-        "8": 0.020721099605093947,
-        "9": 0.2180928443426075,
-        "10": 0.23721601108821336,
-        "11": 0.03700591808657436,
-        "12": 0.022850016445266987,
-        "13": 0.022327332003327177,
-        "14": 0.029905183332686297,
-        "15": 0.06272574121833445,
-        "16": 0.010068769234621296
+        "1": 0.012738202150812653,
+        "2": 0.0321855904244424,
+        "3": 0.011307954161459322,
+        "4": 0.044066306612861005,
+        "5": 0.2812009615478028,
+        "6": 0.02723853847048196,
+        "7": 0.014633932045415576,
+        "8": 0.04065657023164481,
+        "9": 0.03639917924154064,
+        "10": 0.11492770939635825,
+        "11": 0.022899341065308904,
+        "12": 0.024270012187778127,
+        "13": 0.01764143142383826,
+        "14": 0.016637858197585252,
+        "15": 0.29483927349868655,
+        "16": 0.008357139343983432
       },
       "role": "benchmark",
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-11-07T13:25:03.608692+00:00"
+      "calculated_at": "2026-11-07T17:36:20.188319+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.09874910380615873,
-        "2": 0.01840757567939735,
-        "3": 0.05997059088070538,
-        "4": 0.08686702097251507,
-        "5": 0.016618170842658868,
-        "6": 0.014956834879672804,
-        "7": 0.04970852458497396,
-        "8": 0.018522839686207517,
-        "9": 0.14889554638007427,
-        "10": 0.32011892242648604,
-        "11": 0.054559661263700335,
-        "12": 0.0060149404683280325,
-        "13": 0.027090448012529005,
-        "14": 0.028551732449477157,
-        "15": 0.044477335476906556,
-        "16": 0.0064907521902089
+        "1": 0.012378557448423524,
+        "2": 0.031038849110271518,
+        "3": 0.009821053321042099,
+        "4": 0.034747281711628906,
+        "5": 0.3679048408991121,
+        "6": 0.0225843209937579,
+        "7": 0.011279726469650602,
+        "8": 0.027888496797333975,
+        "9": 0.030711953923659132,
+        "10": 0.09213345744125138,
+        "11": 0.015797440599959044,
+        "12": 0.02182954346514155,
+        "13": 0.009295487326289677,
+        "14": 0.012447585953335102,
+        "15": 0.292740965333516,
+        "16": 0.007400439205627532
       },
       "role": "benchmark",
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-11-07T13:25:03.608692+00:00"
+      "calculated_at": "2026-11-07T17:36:20.188319+00:00"
     },
     "available_history_v3": {
       "probabilities": {
-        "1": 0.0819394558797439,
-        "2": 0.021810129448612926,
-        "3": 0.054527863240563065,
-        "4": 0.10487845823680912,
-        "5": 0.019569820404505195,
-        "6": 0.02138679269439347,
-        "7": 0.06135649648093213,
-        "8": 0.020722298477634134,
-        "9": 0.1750510810450278,
-        "10": 0.23104855342523722,
-        "11": 0.06338973111421078,
-        "12": 0.006302990542444729,
-        "13": 0.03652454235050611,
-        "14": 0.041222840000839,
-        "15": 0.053429753744059526,
-        "16": 0.006839192914480902
+        "1": 0.011018547516676079,
+        "2": 0.027511338029180654,
+        "3": 0.008268924795414193,
+        "4": 0.03674875196940937,
+        "5": 0.3254446574139428,
+        "6": 0.0230022824416556,
+        "7": 0.013979803150394233,
+        "8": 0.021768753296978624,
+        "9": 0.030714412601339953,
+        "10": 0.0661219778278937,
+        "11": 0.017982275185892235,
+        "12": 0.023169541025402664,
+        "13": 0.009768698026003185,
+        "14": 0.015873271027082102,
+        "15": 0.35975245238718273,
+        "16": 0.008874313305551862
       },
       "temperature": 0.9411457597147692,
       "role": "primary",
@@ -88,22 +88,22 @@
       "model_file": "models/available_history_v3/last5_available_dq20.json",
       "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
       "version": "available_history_v3@c6ccc2335485",
-      "calculated_at": "2026-11-07T13:25:03.608692+00:00"
+      "calculated_at": "2026-11-07T17:36:20.188319+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
     "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
-    "number": 10,
+    "number": 5,
     "model": "classic_full",
-    "probability": 0.5679049604075056,
+    "probability": 0.6547609321509695,
     "paid_places": 3,
-    "fair_odds": 1.760858012725299,
+    "fair_odds": 1.5272749959513894,
     "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
     "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places.",
     "role": "legacy_classic_benchmark_only"
   },
-  "scheduled_start": "2026-11-07T13:26:00+00:00",
+  "scheduled_start": "2026-11-07T18:02:00+00:00",
   "history_through": "2026-11-06",
   "individual_history_check": {
     "status": "RESEARCH_HISTORY_WARNING",
@@ -111,190 +111,47 @@
       1,
       2,
       3,
-      4,
       5,
-      7,
       8,
       9,
       14,
+      15,
       16
     ],
     "runners": [
       {
         "number": 1,
-        "name": "JOY EASTER",
+        "name": "NABAKO DE GUEZ",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 60,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 59,
-        "missing_recent_starts": [
-          {
-            "date": "2026-10-12",
-            "venue": "LE CROISE-LAROCHE",
-            "racecourse_code": "CRO",
-            "race_number": 5,
-            "race_name": "PRIX DE FRETUN",
-            "discipline": "ATTELE",
-            "distance_m": 2700,
-            "distance_covered_m": 2700,
-            "handicap_m": 0,
-            "start_type": "AUTOSTART",
-            "rank": 2,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 73.6,
-            "race_time_seconds": 198.0,
-            "driver": "J. DENISOT",
-            "trainer": "Pavel TAMSIN",
-            "shoes_raw": "5",
-            "shoes": "PA",
-            "field_size": 14,
-            "purse_eur": 19000,
-            "race_type": "Course F",
-            "turn": "G",
-            "conditions": "PRIX DE FRETUN Race 5 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 19.000. - Harness. - 2.700 metres. 8.550, 4.750, 2.660, 1.520, 950, 380, 190.- allocated by the S.E.T.F. For horses aged 7, who have won less than €90.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-07",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-07-24",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          1.0,
-          0.0,
-          3.295836866004329,
-          0.6
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 2,
-        "name": "JUDICIEUSE ZAILER",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 103,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 94,
+        "snapshot_career_starts": 7,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 7,
         "missing_recent_starts": [
           {
             "date": "2026-10-18",
             "venue": "MACHECOUL",
             "racecourse_code": "MAL",
-            "race_number": 10,
-            "race_name": "PRIX DES AMATEURS",
+            "race_number": 7,
+            "race_name": "PRIX BELINA JOSSELYN (Gr B)",
             "discipline": "ATTELE",
             "distance_m": 2700,
-            "distance_covered_m": 2725,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": 10,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 77.5,
-            "race_time_seconds": 211.0,
-            "driver": "E. GLORIA",
-            "trainer": "J.M. BREHARD",
-            "shoes_raw": null,
-            "shoes": null,
-            "field_size": 14,
-            "purse_eur": 5500,
-            "race_type": "Course G",
-            "turn": "G",
-            "conditions": "PRIX DES AMATEURS Race 4 Class G Regional qualifying race AMATEURS 5.500. - Harness. - 2.700 metres. 2.475, 1.375, 770, 440, 275, 110, 55.- of which 5.300 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 6 and 10 inclusive, who have won less than €84.000. - 25 meters behind for horses who have won more than €42.000. In case of elimination, the horse driven by its owner will be maintained as a starter in priority.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-07",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-09-02",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-05-17",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-11-26",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-04-27",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-06-11",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2022-08-07",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          3.044522437723423,
-          0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 3,
-        "name": "JOLI DE CONNEE",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 69,
-        "model_recent_starts": 0,
-        "individual_prior_starts_returned": 47,
-        "missing_recent_starts": [
-          {
-            "date": "2026-09-26",
-            "venue": "ABBEVILLE",
-            "racecourse_code": "ABB",
-            "race_number": 8,
-            "race_name": "PRIX TIMOKO",
-            "discipline": "ATTELE",
-            "distance_m": 3150,
-            "distance_covered_m": 3150,
+            "distance_covered_m": 2700,
             "handicap_m": 0,
             "start_type": "NON_PRECISE",
-            "rank": null,
-            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
-            "disqualified": true,
-            "seconds_per_km": null,
-            "race_time_seconds": null,
-            "driver": "A. MALLET",
-            "trainer": "CH.A. MALLET",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 16,
-            "purse_eur": 20000,
+            "rank": 3,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 76.6,
+            "race_time_seconds": 206.0,
+            "driver": "A. ANGOT",
+            "trainer": "A. SOURICE",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 13,
+            "purse_eur": 16000,
             "race_type": "Course E",
             "turn": "G",
-            "conditions": "PRIX TIMOKO Race 6 Race E 20.000. - Harness. - 3.150 metres. 9.000, 5.000, 2.800, 1.600, 1.000, 400, 200.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than €177.000. - 25 meters behind for horses who have won more than €84.000.",
+            "conditions": "PRIX JARDY Race 1 Class E 16.000. - Harness. - 2.700 metres. 7.200, 4.000, 2.240, 1.280, 800, 320, 160.- allocated by the S.E.T.F. For 3 year olds, who have won less than €10.500. - 25 meters behind for horses who have won more than €5.100.",
             "track_condition": {
               "measureTimestamp": 0
             },
@@ -306,25 +163,13 @@
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2025-05-04",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-01-11",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-04-23",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
-          0.0,
           1.0,
-          3.7612001156935624,
+          0.0,
+          3.044522437723423,
           0.2
         ],
         "frozen_features_unchanged": true,
@@ -332,68 +177,38 @@
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 4,
-        "name": "HECTOR DE CORDAY",
+        "number": 2,
+        "name": "NARISSO DU LUPIN",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 113,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 100,
+        "snapshot_career_starts": 1,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 1,
         "missing_recent_starts": [
           {
-            "date": "2026-09-20",
-            "venue": "CHALONS-EN-CHAMPAGNE",
-            "racecourse_code": "CCH",
-            "race_number": 9,
-            "race_name": "PRIX L'ALSACIENNE, OT CHALONS, BOITUZAT",
-            "discipline": "ATTELE",
-            "distance_m": 2600,
-            "distance_covered_m": 2625,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": 5,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": null,
-            "race_time_seconds": null,
-            "driver": "S. HOSTE",
-            "trainer": "L. CANNAERT",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 15,
-            "purse_eur": 5000,
-            "race_type": null,
-            "turn": "G",
-            "conditions": "PRIX HAUMEA Race 8 Race H Challenge UNAT NIDFE - HIPPOMAT Tolteam AMATEURS 5.000. - Harness. - 2.600 metres. 2.250, 1.250, 700, 400, 250, 100, 50.- of which 4.800 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 7 and 10 inclusive, who have won less than €89.000. - 25 meters behind for horses who have won more than €43.000. In case of elimination, the horse driven by its owner will be maintained as a starter in priority.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          },
-          {
-            "date": "2026-09-14",
-            "venue": "LE CROISE-LAROCHE",
-            "racecourse_code": "CRO",
-            "race_number": 8,
-            "race_name": "PRIX DE L'UNAT",
+            "date": "2026-10-18",
+            "venue": "MACHECOUL",
+            "racecourse_code": "MAL",
+            "race_number": 7,
+            "race_name": "PRIX BELINA JOSSELYN (Gr B)",
             "discipline": "ATTELE",
             "distance_m": 2700,
             "distance_covered_m": 2700,
             "handicap_m": 0,
-            "start_type": "AUTOSTART",
-            "rank": null,
-            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
-            "disqualified": true,
-            "seconds_per_km": null,
-            "race_time_seconds": null,
-            "driver": "JEAN MAXIME LESNE",
-            "trainer": "L. CANNAERT",
-            "shoes_raw": "4",
-            "shoes": "P4",
-            "field_size": 10,
-            "purse_eur": 3000,
-            "race_type": "Course F",
+            "start_type": "NON_PRECISE",
+            "rank": 1,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.6,
+            "race_time_seconds": 204.0,
+            "driver": "A. WIELS",
+            "trainer": "J.P. MARMION",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 13,
+            "purse_eur": 16000,
+            "race_type": "Course E",
             "turn": "G",
-            "conditions": "PRIX DE L'UNAT Race 7 Race F Event of the Christophe BRIDAULT circuit - Courtier Challenge UNAT NIDFE - HIPPOMAT AMATEURS Autostart departure 3.000. - Harness. - 2.700 metres. 1.350, 750, 420, 240, 150, 60, 30.- of which 1.100 allocated by the U.N.A.T. (Ile-de-France North & East) and 1.900 by the Société des Courses du Croisé Laroche. For horses aged between 7 and 11 inclusive, who have won less than €110.000. Only amateurs who are members of the U.N.A.T. are eligible to drive. In case of elimination, the horse driven by a member of the U.N.A.T. (Regional Association Ile-de-France/North and East) will be maintained as a starter in priority.",
+            "conditions": "PRIX JARDY Race 1 Class E 16.000. - Harness. - 2.700 metres. 7.200, 4.000, 2.240, 1.280, 800, 320, 160.- allocated by the S.E.T.F. For 3 year olds, who have won less than €10.500. - 25 meters behind for horses who have won more than €5.100.",
             "track_condition": {
               "measureTimestamp": 0
             },
@@ -405,80 +220,52 @@
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-05-23",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-01-10",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-05-29",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-09-10",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-08-23",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-08-09",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-07-26",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
+          1.0,
+          1.0,
           0.0,
-          0.0,
-          0.6666666666666666,
-          3.8918202981106265,
-          0.6
+          3.044522437723423,
+          0.2
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 5,
-        "name": "HAVANA MOST",
+        "number": 3,
+        "name": "NEED YOU FOR MONEY",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 83,
+        "snapshot_career_starts": 4,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 70,
+        "individual_prior_starts_returned": 3,
         "missing_recent_starts": [
           {
-            "date": "2026-09-27",
-            "venue": "GOURNAY EN BRAY",
-            "racecourse_code": "GEB",
-            "race_number": 8,
-            "race_name": "PRIX ICI NORMANDIE ET PICARDIE",
+            "date": "2026-10-11",
+            "venue": "LAON",
+            "racecourse_code": "LAO",
+            "race_number": 1,
+            "race_name": "PRIX DE L'UPECT",
             "discipline": "ATTELE",
-            "distance_m": 2550,
-            "distance_covered_m": 2575,
-            "handicap_m": 25,
+            "distance_m": 2850,
+            "distance_covered_m": 2850,
+            "handicap_m": 0,
             "start_type": "NON_PRECISE",
-            "rank": 9,
+            "rank": 2,
             "arrival_status": "PLACE",
             "disqualified": false,
-            "seconds_per_km": null,
-            "race_time_seconds": null,
-            "driver": "E. PUNIERE",
-            "trainer": "G. MOINON",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 14,
-            "purse_eur": 5000,
-            "race_type": null,
-            "turn": "D",
-            "conditions": "PRIX ICI NORMANDIE Race 7 Race H AMATEURS 5.000. - Harness. - 2.550 metres. 2.250, 1.250, 700, 400, 250, 100, 50.- of which 4.800 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 6 and 10 inclusive, who have won less than €80.000. - 25 meters behind for horses who have won more than €40.000.",
+            "seconds_per_km": 77.6,
+            "race_time_seconds": 221.0,
+            "driver": "J.Y. RICART",
+            "trainer": "Guillaume JOUVE",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 12,
+            "purse_eur": 14500,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX DES SOUTERRAINS DE LAON Race 1 Class F 14.500. - Harness, males. - 2.850 metres. 6.525, 3.625, 2.030, 1.160, 725, 290, 145.- allocated by the S.E.T.F. For colts and geldings aged 3, who have won less than €4.500.",
             "track_condition": {
               "measureTimestamp": 0
             },
@@ -492,48 +279,34 @@
             "reason": "target_or_future_day"
           },
           {
-            "date": "2026-05-24",
+            "date": "2026-03-29",
             "reason": "unknown_outcome"
-          },
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.5,
+          0.0,
+          2.639057329615259,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 4,
+        "name": "NASH DES RIOULTS",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 8,
+        "model_recent_starts": 2,
+        "individual_prior_starts_returned": 8,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
           {
-            "date": "2025-11-01",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-06-29",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-07-30",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2022-08-28",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2022-06-26",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-10-11",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-05-01",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-04-05",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-08-09",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-07-26",
-            "reason": "unknown_outcome"
+            "date": "2026-11-07",
+            "reason": "target_or_future_day"
           }
         ],
         "supplemented_recent_features_for_research": [
@@ -548,13 +321,76 @@
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 6,
-        "name": "HARLEY DE JANEIRO",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 102,
+        "number": 5,
+        "name": "NIGHT KNIGHT",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 6,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 69,
-        "missing_recent_starts": [],
+        "individual_prior_starts_returned": 4,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-12",
+            "venue": "NUILLE-SUR-VICOIN",
+            "racecourse_code": "NUI",
+            "race_number": 1,
+            "race_name": "PX DE LA CAVE COSSEENNE (Gr A)",
+            "discipline": "ATTELE",
+            "distance_m": 2850,
+            "distance_covered_m": 2875,
+            "handicap_m": 25,
+            "start_type": "NON_PRECISE",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "W. BIGEON",
+            "trainer": "W. BIGEON",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 14,
+            "purse_eur": 13500,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX DU GALOI Race 1 Class F 13.500. - Harness, males. - 2.850 metres. 6.075, 3.375, 1.890, 1.080, 675, 270, 135.- allocated by the S.E.T.F. For colts and geldings aged 3, who have won less than €6.600. - 25 meters behind for horses who have won more than €3.300.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-09-27",
+            "venue": "MORLAIX",
+            "racecourse_code": "MOR",
+            "race_number": 1,
+            "race_name": "PRIX GROUPAMA",
+            "discipline": "ATTELE",
+            "distance_m": 2600,
+            "distance_covered_m": 2600,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 2,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "C. HERIVAUX",
+            "trainer": "W. BIGEON",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 16,
+            "purse_eur": 14000,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX GUILLAUME CAROFF Race 1 Race F 14.000. - Harness. - 2.600 metres. 6.300, 3.500, 1.960, 1.120, 700, 280, 140.- allocated by the S.E.T.F. For 3 year olds, who have won less than €5.000. - 25 meters behind for horses who have won more than €400.",
+            "track_condition": {
+              "label": "Bon",
+              "measure": "3,2",
+              "measureTimestamp": 1790510340
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
         "conflicts": [],
         "excluded": [
           {
@@ -562,39 +398,45 @@
             "reason": "target_or_future_day"
           },
           {
-            "date": "2026-08-16",
+            "date": "2026-03-22",
             "reason": "unknown_outcome"
           },
           {
-            "date": "2026-06-07",
+            "date": "2026-03-15",
             "reason": "unknown_outcome"
-          },
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.3333333333333333,
+          0.6666666666666666,
+          0.3333333333333333,
+          2.70805020110221,
+          0.6
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 6,
+        "name": "NAJA DU PONT",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 5,
+        "model_recent_starts": 1,
+        "individual_prior_starts_returned": 5,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
           {
-            "date": "2025-05-04",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2024-08-11",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-09-23",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-09-02",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-07-26",
-            "reason": "unknown_outcome"
+            "date": "2026-11-07",
+            "reason": "target_or_future_day"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
           0.0,
-          0.0,
-          2.0794415416798357,
+          1.0,
+          2.639057329615259,
           0.2
         ],
         "frozen_features_unchanged": true,
@@ -603,118 +445,25 @@
       },
       {
         "number": 7,
-        "name": "IOLAS",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 72,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 62,
-        "missing_recent_starts": [
-          {
-            "date": "2026-10-04",
-            "venue": "ALENCON",
-            "racecourse_code": "ALE",
-            "race_number": 2,
-            "race_name": "PRIX LE P'TIT COIN ALENCON",
-            "discipline": "ATTELE",
-            "distance_m": 2675,
-            "distance_covered_m": 2675,
-            "handicap_m": 0,
-            "start_type": "NON_PRECISE",
-            "rank": null,
-            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
-            "disqualified": true,
-            "seconds_per_km": null,
-            "race_time_seconds": null,
-            "driver": "ANTOINE BOUTIN",
-            "trainer": "E. VARIN",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 16,
-            "purse_eur": 10000,
-            "race_type": null,
-            "turn": "G",
-            "conditions": "PRIX ORNE ENCHERES Race 2 Class R Race \"A RECLAMER\" APPRENTIS-LADS-JOCKEYS 10.000. - Harness. - 2.675 metres. 4.500, 2.500, 1.400, 800, 500, 200, 100.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than €170.000, to be claimed for 5.000 or 8.000. - 25 meters ahead for horses to be claimed for 5.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          },
-          {
-            "date": "2026-09-19",
-            "venue": "LANGON-LIBOURNE",
-            "racecourse_code": "LAN",
-            "race_number": 7,
-            "race_name": "PRIX BERNARD TARTAS",
-            "discipline": "ATTELE",
-            "distance_m": 2825,
-            "distance_covered_m": 2825,
-            "handicap_m": 0,
-            "start_type": "NON_PRECISE",
-            "rank": 2,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 77.4,
-            "race_time_seconds": 218.0,
-            "driver": "L. MITRASSOF",
-            "trainer": "E. VARIN",
-            "shoes_raw": "1",
-            "shoes": "DA",
-            "field_size": 11,
-            "purse_eur": 5000,
-            "race_type": null,
-            "turn": "G",
-            "conditions": "PRIX BERNARD TARTAS Race 7 Race R AMATEURS Race \"A CLAIMING\" 5.000. - Harness. - 2.825 metres. 2.250, 1.250, 700, 400, 250, 100, 50.- of which 4.800 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 6 and 11 inclusive, who have won less than €95.000, to be claimed for 4.000 or 6.000. - 25 meters ahead for horses to be claimed for 4.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
+        "name": "NEW FRIEND",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 4,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 4,
+        "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-09-03",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-07-26",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-11-08",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-07-20",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-11-11",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2022-11-01",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2022-04-10",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-08-15",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.0,
-          0.3333333333333333,
-          0.3333333333333333,
-          2.0794415416798357,
-          0.6
+          null,
+          null,
+          null,
+          null,
+          0.0
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -722,152 +471,71 @@
       },
       {
         "number": 8,
-        "name": "IBLISS MAYBE",
+        "name": "NINO DE TIMBOEUF",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 74,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 67,
+        "snapshot_career_starts": 6,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 6,
         "missing_recent_starts": [
           {
-            "date": "2026-09-30",
-            "venue": "LE CROISE-LAROCHE",
-            "racecourse_code": "CRO",
-            "race_number": 7,
-            "race_name": "PRIX DE CROIX",
+            "date": "2026-10-12",
+            "venue": "NUILLE-SUR-VICOIN",
+            "racecourse_code": "NUI",
+            "race_number": 2,
+            "race_name": "PX TOITURE MEIGNAN/SALON DU CHEVAL(Gr B)",
             "discipline": "ATTELE",
-            "distance_m": 2825,
-            "distance_covered_m": 2850,
+            "distance_m": 2850,
+            "distance_covered_m": 2875,
             "handicap_m": 25,
             "start_type": "NON_PRECISE",
-            "rank": 4,
+            "rank": 2,
             "arrival_status": "PLACE",
             "disqualified": false,
-            "seconds_per_km": 76.4,
-            "race_time_seconds": 217.0,
-            "driver": "D. LEPERE",
-            "trainer": "Mlle C. LECLERCQ",
-            "shoes_raw": "6",
-            "shoes": "PA_DP",
-            "field_size": 16,
-            "purse_eur": 6000,
-            "race_type": "Course G",
-            "turn": "G",
-            "conditions": "PRIX DE CROIX Race 7 Race G CHALLENGE UNAT Challenge UNAT NIDFE - HIPPOMAT AMATEURS 6.000. - Harness. - 2.825 metres. 2.700, 1.500, 840, 480, 300, 120, 60.- of which 5.800 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 6 and 10 inclusive, who have won less than €83.000. - 25 meters behind for horses who have won more than €42.000. Only drivers who have won at least two races or who have raced at least thirty times are eligible to drive.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          },
-          {
-            "date": "2026-09-20",
-            "venue": "LE TOUQUET",
-            "racecourse_code": "TOU",
-            "race_number": 9,
-            "race_name": "PRIX DE LA CANCHE",
-            "discipline": "ATTELE",
-            "distance_m": 2600,
-            "distance_covered_m": 2625,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": 10,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 85.9,
-            "race_time_seconds": 225.0,
-            "driver": "M. BRIDAULT",
-            "trainer": "Mlle C. LECLERCQ",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 15,
-            "purse_eur": 5500,
-            "race_type": "Course G",
-            "turn": "D",
-            "conditions": "PRIX DE LA CANCHE Race 6 Race G Challenge UNAT NIDFE - HIPPOMAT Tolteam AMATEURS 5.500. - Harness. - 2.600 metres. 2.475, 1.375, 770, 440, 275, 110, 55.- of which 5.300 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 6 and 10 inclusive, who have won less than €81.000. - 25 meters behind for horses who have won more than €36.000. In case of elimination, the horse driven by its owner will be maintained as a starter in priority.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-07",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-07-24",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-03-07",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-12-15",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-05-29",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-09-03",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-05-27",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          3.6635616461296463,
-          0.6
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 9,
-        "name": "JIKAO",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 44,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 37,
-        "missing_recent_starts": [
-          {
-            "date": "2026-09-30",
-            "venue": "LE CROISE-LAROCHE",
-            "racecourse_code": "CRO",
-            "race_number": 7,
-            "race_name": "PRIX DE CROIX",
-            "discipline": "ATTELE",
-            "distance_m": 2825,
-            "distance_covered_m": 2850,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": 9,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 76.9,
-            "race_time_seconds": 219.0,
-            "driver": "P.M. ALLAIS",
-            "trainer": "Antonin ANDRE",
+            "seconds_per_km": 83.0,
+            "race_time_seconds": 238.0,
+            "driver": "A. CHARRIE",
+            "trainer": "K. LEBLANC",
             "shoes_raw": null,
             "shoes": null,
-            "field_size": 16,
-            "purse_eur": 6000,
-            "race_type": "Course G",
+            "field_size": 13,
+            "purse_eur": 13500,
+            "race_type": "Course F",
             "turn": "G",
-            "conditions": "PRIX DE CROIX Race 7 Race G CHALLENGE UNAT Challenge UNAT NIDFE - HIPPOMAT AMATEURS 6.000. - Harness. - 2.825 metres. 2.700, 1.500, 840, 480, 300, 120, 60.- of which 5.800 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 6 and 10 inclusive, who have won less than €83.000. - 25 meters behind for horses who have won more than €42.000. Only drivers who have won at least two races or who have raced at least thirty times are eligible to drive.",
+            "conditions": "PRIX DU GALOI Race 1 Class F 13.500. - Harness, males. - 2.850 metres. 6.075, 3.375, 1.890, 1.080, 675, 270, 135.- allocated by the S.E.T.F. For colts and geldings aged 3, who have won less than €6.600. - 25 meters behind for horses who have won more than €3.300.",
             "track_condition": {
               "measureTimestamp": 0
             },
-            "trainer_opinion_raw": 3
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-05",
+            "venue": "SEGRE",
+            "racecourse_code": "SEG",
+            "race_number": 1,
+            "race_name": "PRIX SARL SIGMA (Gr A)",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 1,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "A. CHARRIE",
+            "trainer": "K. LEBLANC",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 15,
+            "purse_eur": 14000,
+            "race_type": null,
+            "turn": "G",
+            "conditions": "PRIX SARL SIGMA Race 1 PRIX DE LA PERRAUDIERE Class F 14.000. - Harness, males. - 2.700 metres. 6.300, 3.500, 1.960, 1.120, 700, 280, 140.- allocated by the S.E.T.F. For colts and geldings aged 3, who have won less than €7.000. - 25 meters behind for horses who have won more than €3.500.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
           }
         ],
         "conflicts": [],
@@ -875,17 +543,13 @@
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2024-06-16",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
+          0.5,
+          1.0,
           0.0,
-          0.0,
-          0.0,
-          3.6635616461296463,
+          3.295836866004329,
           0.4
         ],
         "frozen_features_unchanged": true,
@@ -893,37 +557,82 @@
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
+        "number": 9,
+        "name": "NOIRAUD DES GLENAN",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 8,
+        "model_recent_starts": 3,
+        "individual_prior_starts_returned": 7,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-18",
+            "venue": "BORDEAUX-LE BOUSCAT",
+            "racecourse_code": "BOU",
+            "race_number": 2,
+            "race_name": "PRIX MICHEL-GUY BOURGUIGNON",
+            "discipline": "ATTELE",
+            "distance_m": 2550,
+            "distance_covered_m": 2550,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "N. PICARD",
+            "trainer": "K. LEBLANC",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 16,
+            "purse_eur": 17000,
+            "race_type": "Course E",
+            "turn": "D",
+            "conditions": "PRIX MICHEL-GUY BOURGUIGNON Race 2 Class E Autostart departure 17.000. - Harness. - 2.550 metres. 7.650, 4.250, 2.380, 1.360, 850, 340, 170.- allocated by the S.E.T.F. For 3 year olds, who have won less than €14.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-07",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.25,
+          0.5,
+          2.0794415416798357,
+          0.8
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
         "number": 10,
-        "name": "INCANTATOR",
+        "name": "NOTORIOUS ERCA",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 54,
+        "snapshot_career_starts": 5,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 51,
+        "individual_prior_starts_returned": 5,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-07-30",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-09-10",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-07-16",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           1.0,
           1.0,
           0.0,
-          4.07753744390572,
+          3.6109179126442243,
           0.2
         ],
         "frozen_features_unchanged": true,
@@ -932,53 +641,17 @@
       },
       {
         "number": 11,
-        "name": "ICARE DU DOUET",
+        "name": "NICKY LARSON",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 85,
+        "snapshot_career_starts": 6,
         "model_recent_starts": 0,
-        "individual_prior_starts_returned": 77,
+        "individual_prior_starts_returned": 6,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-09-20",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-04-20",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-03-22",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2024-07-28",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2024-06-30",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-08-14",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-06-25",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-08-01",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-05-13",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
@@ -994,33 +667,17 @@
       },
       {
         "number": 12,
-        "name": "JOLIE NANA",
+        "name": "NAPRIUS",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 65,
+        "snapshot_career_starts": 3,
         "model_recent_starts": 0,
-        "individual_prior_starts_returned": 52,
+        "individual_prior_starts_returned": 3,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2025-06-28",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-05-18",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-01-11",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2023-08-15",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
@@ -1036,21 +693,17 @@
       },
       {
         "number": 13,
-        "name": "JASMINE DES ETANGS",
+        "name": "NINO DES VES",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 40,
+        "snapshot_career_starts": 6,
         "model_recent_starts": 0,
-        "individual_prior_starts_returned": 38,
+        "individual_prior_starts_returned": 6,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-05-10",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
@@ -1066,21 +719,21 @@
       },
       {
         "number": 14,
-        "name": "JADE THORIS",
+        "name": "NOE SIBEY",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 67,
+        "snapshot_career_starts": 3,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 57,
+        "individual_prior_starts_returned": 3,
         "missing_recent_starts": [
           {
-            "date": "2026-09-20",
-            "venue": "NIORT",
-            "racecourse_code": "NIO",
-            "race_number": 6,
-            "race_name": "PRIX DU CREDIT MUTUEL",
+            "date": "2026-10-19",
+            "venue": "LES SABLES D'OLONNE",
+            "racecourse_code": "LSO",
+            "race_number": 5,
+            "race_name": "PRIX PIERRE TRICHET",
             "discipline": "ATTELE",
-            "distance_m": 3575,
-            "distance_covered_m": 3575,
+            "distance_m": 2775,
+            "distance_covered_m": 2775,
             "handicap_m": 0,
             "start_type": "NON_PRECISE",
             "rank": null,
@@ -1088,21 +741,19 @@
             "disqualified": true,
             "seconds_per_km": null,
             "race_time_seconds": null,
-            "driver": "ANDREA ROUSSEL",
-            "trainer": "J. ROUX",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 16,
-            "purse_eur": 23000,
-            "race_type": "Course E",
-            "turn": "D",
-            "conditions": "PRIX DU CREDIT MUTUEL Race 4 Race E 23.000. - Harness. - 3.575 metres. 10.350, 5.750, 3.220, 1.840, 1.150, 460, 230.- allocated by the S.E.T.F. For horses aged between 7 and 10 inclusive, who have won less than €196.000. - 25 meters behind for horses who have won more than €93.000.",
+            "driver": "Mlle CH. BANCEL",
+            "trainer": "J.M. BAUDOUIN",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 18,
+            "purse_eur": 30000,
+            "race_type": "Course B",
+            "turn": "G",
+            "conditions": "PRIX PIERRE TRICHET Race 6 Class B National Race LeTROT Open des Régions - Ouest - 3 years Qualifying Race 30.000. - Harness. - 2.775 metres. 13.500, 7.500, 4.200, 2.400, 1.500, 600, 300.- allocated by the S.E.T.F. For 3 years old, who have not been placed in the first three of a Group I race or first in a Group II race in the 6 months preceding the race. - 25 meters behind for horses who have won more than €20.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive. In case of elimination, colts and fillies trained in the Ouest Federation will be maintained as starters as a priority.",
             "track_condition": {
-              "label": "Très léger",
-              "measure": "2,2",
-              "measureTimestamp": 1789900200
+              "measureTimestamp": 0
             },
-            "trainer_opinion_raw": 1
+            "trainer_opinion_raw": 3
           }
         ],
         "conflicts": [],
@@ -1110,25 +761,13 @@
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-08-29",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2024-05-01",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2024-03-17",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
           0.0,
-          0.5,
-          3.367295829986474,
+          1.0,
+          2.995732273553991,
           0.4
         ],
         "frozen_features_unchanged": true,
@@ -1137,37 +776,58 @@
       },
       {
         "number": 15,
-        "name": "JOUR D'ERABLE",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 53,
-        "model_recent_starts": 0,
-        "individual_prior_starts_returned": 50,
-        "missing_recent_starts": [],
+        "name": "NICKEL GEMA",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 3,
+        "model_recent_starts": 2,
+        "individual_prior_starts_returned": 3,
+        "missing_recent_starts": [
+          {
+            "date": "2026-09-27",
+            "venue": "MORLAIX",
+            "racecourse_code": "MOR",
+            "race_number": 1,
+            "race_name": "PRIX GROUPAMA",
+            "discipline": "ATTELE",
+            "distance_m": 2600,
+            "distance_covered_m": 2600,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 3,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "ET. DELAUNAY",
+            "trainer": "M. SASSIER",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 16,
+            "purse_eur": 14000,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX GUILLAUME CAROFF Race 1 Race F 14.000. - Harness. - 2.600 metres. 6.300, 3.500, 1.960, 1.120, 700, 280, 140.- allocated by the S.E.T.F. For 3 year olds, who have won less than €5.000. - 25 meters behind for horses who have won more than €400.",
+            "track_condition": {
+              "label": "Bon",
+              "measure": "3,2",
+              "measureTimestamp": 1790510340
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
         "conflicts": [],
         "excluded": [
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-10-11",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-07-24",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-10-19",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
-          null,
-          null,
-          null,
-          null,
-          0.0
+          0.3333333333333333,
+          1.0,
+          0.0,
+          2.639057329615259,
+          0.6
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -1175,37 +835,67 @@
       },
       {
         "number": 16,
-        "name": "JESSY DE DAUX",
+        "name": "NEMROD GEDE",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 82,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 75,
+        "snapshot_career_starts": 8,
+        "model_recent_starts": 1,
+        "individual_prior_starts_returned": 8,
         "missing_recent_starts": [
           {
-            "date": "2026-10-12",
-            "venue": "LE CROISE-LAROCHE",
-            "racecourse_code": "CRO",
-            "race_number": 5,
-            "race_name": "PRIX DE FRETUN",
+            "date": "2026-10-27",
+            "venue": "PARIS-VINCENNES",
+            "racecourse_code": "VIN",
+            "race_number": 8,
+            "race_name": "PRIX POSIDONIUS",
             "discipline": "ATTELE",
-            "distance_m": 2700,
-            "distance_covered_m": 2700,
+            "distance_m": 2100,
+            "distance_covered_m": 2100,
             "handicap_m": 0,
             "start_type": "AUTOSTART",
-            "rank": 11,
+            "rank": 6,
             "arrival_status": "PLACE",
             "disqualified": false,
-            "seconds_per_km": 76.9,
-            "race_time_seconds": 207.0,
-            "driver": "A. THOLLAS",
-            "trainer": "G. LEFEBVRE",
-            "shoes_raw": "6",
-            "shoes": "PA_DP",
-            "field_size": 14,
-            "purse_eur": 19000,
-            "race_type": "Course F",
+            "seconds_per_km": 77.2,
+            "race_time_seconds": 162.0,
+            "driver": "A. PILLON",
+            "trainer": "A. PILLON",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 11,
+            "purse_eur": 35000,
+            "race_type": "Course E",
             "turn": "G",
-            "conditions": "PRIX DE FRETUN Race 5 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 19.000. - Harness. - 2.700 metres. 8.550, 4.750, 2.660, 1.520, 950, 380, 190.- allocated by the S.E.T.F. For horses aged 7, who have won less than €90.000.",
+            "conditions": "PRIX POSIDONIUS Race 1 Class E Autostart start 35.000. - Harness, males. - 2.100 metres (G. and P. P.) 15.750, 8.750, 4.900, 2.800, 1.750, 700, 350. For colts and geldings aged 3, who have not won 13.500.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-09-20",
+            "venue": "BLAIN",
+            "racecourse_code": "BLA",
+            "race_number": 2,
+            "race_name": "PRIX PIERRE LEMAITRE (Gr B)",
+            "discipline": "ATTELE",
+            "distance_m": 2600,
+            "distance_covered_m": 2625,
+            "handicap_m": 25,
+            "start_type": "NON_PRECISE",
+            "rank": 6,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "TH. RAFFIN",
+            "trainer": "A. PILLON",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 15,
+            "purse_eur": 15500,
+            "race_type": "Course E",
+            "turn": "D",
+            "conditions": "PRIX JEAN BONNET Race 1 Race E National Race LeTROT Open des Régions - Ouest - 3 years Qualifying race 15.500. - Harness. - 2.600 metres. 6.975, 3.875, 2.170, 1.240, 775, 310, 155.- allocated by the S.E.T.F. For 3 years, who have won less than €11.000. - 25 meters behind for horses who have won more than €4.600.",
             "track_condition": {
               "measureTimestamp": 0
             },
@@ -1217,33 +907,13 @@
           {
             "date": "2026-11-07",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-09-27",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2026-08-15",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2025-08-18",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2024-08-18",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2022-06-09",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
           0.0,
           0.0,
-          3.295836866004329,
+          2.4849066497880004,
           0.6
         ],
         "frozen_features_unchanged": true,
@@ -1251,7 +921,7 @@
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       }
     ],
-    "evidence_manifest": "predictions_operational/2026-11-07/2026-11-07_R2C8_20261107T132335636727Z/individual_history_evidence/manifest.json",
+    "evidence_manifest": "predictions_operational/2026-11-07/2026-11-07_R5C6_20261107T173445147003Z/individual_history_evidence/manifest.json",
     "market_independent": true,
     "frozen_features_changed": false,
     "recommendations_allowed": false
@@ -1259,84 +929,84 @@
   "runners": [
     {
       "number": 1,
-      "name": "JOY EASTER",
+      "name": "NABAKO DE GUEZ",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "JUDICIEUSE ZAILER",
+      "name": "NARISSO DU LUPIN",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "JOLI DE CONNEE",
+      "name": "NEED YOU FOR MONEY",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "HECTOR DE CORDAY",
+      "name": "NASH DES RIOULTS",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "HAVANA MOST",
+      "name": "NIGHT KNIGHT",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "HARLEY DE JANEIRO",
+      "name": "NAJA DU PONT",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "IOLAS",
+      "name": "NEW FRIEND",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "IBLISS MAYBE",
+      "name": "NINO DE TIMBOEUF",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "JIKAO",
+      "name": "NOIRAUD DES GLENAN",
       "status": "PARTANT"
     },
     {
       "number": 10,
-      "name": "INCANTATOR",
+      "name": "NOTORIOUS ERCA",
       "status": "PARTANT"
     },
     {
       "number": 11,
-      "name": "ICARE DU DOUET",
+      "name": "NICKY LARSON",
       "status": "PARTANT"
     },
     {
       "number": 12,
-      "name": "JOLIE NANA",
+      "name": "NAPRIUS",
       "status": "PARTANT"
     },
     {
       "number": 13,
-      "name": "JASMINE DES ETANGS",
+      "name": "NINO DES VES",
       "status": "PARTANT"
     },
     {
       "number": 14,
-      "name": "JADE THORIS",
+      "name": "NOE SIBEY",
       "status": "PARTANT"
     },
     {
       "number": 15,
-      "name": "JOUR D'ERABLE",
+      "name": "NICKEL GEMA",
       "status": "PARTANT"
     },
     {
       "number": 16,
-      "name": "JESSY DE DAUX",
+      "name": "NEMROD GEDE",
       "status": "PARTANT"
     }
   ],
-  "request_id": "chat-20261107-r2c8-1421-sg-top45"
+  "request_id": "chat-20261107-r5c6-1831-v3-ranking"
 }
