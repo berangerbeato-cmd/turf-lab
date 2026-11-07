@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-07_R5C3",
+  "date": "2026-11-07",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-07T15:41:46.623176+00:00",
+  "predicted_at": "2026-11-07T15:42:08.712384+00:00",
+  "scheduled_start": "2026-11-07T16:18:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:(\"IMAGE D'HERFRAIE\", \"OSMOSE D'HERFRAIE\", 'VOLTIGEUR DE MYRT')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('HERCULE DES SABLES', 'SIBONDA DE CHAMANT', 'ALDO DES CHAMPS')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('GITANO JACK', 'AZUELA JACK', 'VERY NICE MARCEAUX')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('ISOLEE DU BOUILLON', 'URGELE', 'DOLLAR MACKER')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('JUSTE SNOB', 'THALIS DU MESNIL', 'INSERT GEDE')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('JASPE DU DOLLAR', 'NYMPHE DU DOLLAR', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('JUSTICIA SMART', 'A STAR DU PRIEURE', 'OURAGAN DE CELLAND')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('JADE RENARDIER', 'DAISY CLOVER', 'ECU PIERJI')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('I KEEP CALM', 'CLAIREFONTAINE', 'DJANGO RIFF')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('JUNKIES MINDS', 'CLASS DE KA', 'VERY NICE MARCEAUX')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('ISSIA DE CHARLY', 'TISSIA DES TOUCHES', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('JAGUAR DJOB', 'AZIZA DJOB', 'TIMOKO')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:(\"JAIFA DE L'ITON\", \"UPSALA DE L'ITON\", 'RODRIGO JET')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('GISARO', 'ANIZA', 'SINGALO')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('IDEAL DANCER', 'BONNIE DANCER', 'DJANGO RIFF')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('IQUEM', 'CRISTA MARIS', 'READY CASH')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "7406bd244a0791eff5bb01285b55d1f7ae708f7e35312669a96bcb1015b8586c",
+  "history_through": "2026-11-06",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          12,
+          13,
+          6,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.048569888754626145,
+          "stage_raw": 0.016859354997252173,
+          "stage_calibrated": 0.0189142101025756
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          12,
+          6,
+          9,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.02913694433830557,
+          "stage_raw": 0.016310440908330812,
+          "stage_calibrated": 0.018419927961195567
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          12,
+          13,
+          6,
+          9,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.054345417669215565,
+          "stage_raw": 0.011170112613363,
+          "stage_calibrated": 0.012454737484172996
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          12,
+          6,
+          9,
+          8,
+          15
+        ],
+        "probabilities": {
+          "v3": 0.002865060197224191,
+          "stage_raw": 0.00563251703878978,
+          "stage_calibrated": 0.006138893605741685
+        }
+      }
+    }
+  }
+}

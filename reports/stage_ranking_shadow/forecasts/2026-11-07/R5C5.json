@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-07_R5C5",
+  "date": "2026-11-07",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-07T15:42:33.399918+00:00",
+  "predicted_at": "2026-11-07T15:42:55.740878+00:00",
+  "scheduled_start": "2026-11-07T17:27:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('KING DE LARRE', 'VALSE MIKA', 'UP AND QUICK')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('KLEMS DE JAVIE', 'TARA DE JAVIE', 'ENINO DU POMMEREUX')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('JAMSHIR', 'MANZIR', 'LOVE YOU')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('KELLISIA GIRL', 'POM GIRL', \"UN AMOUR D'HAUFOR\")",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('JAZZ VERONE', 'VIEW VERONE', 'ASTOR DU QUENNE')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('JALISCA FLIGNY', 'DELMONICA FLIGNY', 'CAPTAIN SPARROW')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('KREIZ DE PRAT GUEN', 'BREIZ DE PRAT GUEN', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('KELIA DES TOUCHES', 'CITADELLA', 'QUARO')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('JASMIN DAIRPET', 'TEXANE DAIRPET', 'TINO MADRIK')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('KRONOS MADRIK', 'DIVA DE FAEL', \"UN MEC D'HERIPRE\")",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('KOSETTE DU LINON', 'MASCOTTE DU LINON', 'DISCOURS JOYEUX')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:(\"JAINA D'ESSARTS\", \"URFA D'ESSARTS\", \"NI HO PED D'OMBREE\")",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('KOZMIC BLUES', 'AQUA LITTORAL', 'MEMPHIS DU RIB')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('KATINKA COTON', 'VENUS FORCE', 'UNICLOVE')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('KIWI DE CONNEE', 'ANAIS DE CONNEE', 'PARIS HAUFOR')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('KANGALA DE FAEL', 'CANDY DE FAEL', 'UNICLOVE')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "7406bd244a0791eff5bb01285b55d1f7ae708f7e35312669a96bcb1015b8586c",
+  "history_through": "2026-11-06",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          10,
+          7,
+          13,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.015595583792109152,
+          "stage_raw": 0.00499575976983457,
+          "stage_calibrated": 0.005436588157221662
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          10,
+          7,
+          2,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.010510604263141515,
+          "stage_raw": 0.00703585833843941,
+          "stage_calibrated": 0.007883773068300678
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          10,
+          7,
+          13,
+          9,
+          15
+        ],
+        "probabilities": {
+          "v3": 0.008690022211885428,
+          "stage_raw": 0.0021833210731117955,
+          "stage_calibrated": 0.002352858073194693
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          10,
+          7,
+          2,
+          9,
+          15
+        ],
+        "probabilities": {
+          "v3": 0.005712029259601165,
+          "stage_raw": 0.0036753434203967953,
+          "stage_calibrated": 0.00406862394441924
+        }
+      }
+    }
+  }
+}

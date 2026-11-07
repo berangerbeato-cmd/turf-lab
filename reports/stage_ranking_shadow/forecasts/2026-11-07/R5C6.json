@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-07_R5C6",
+  "date": "2026-11-07",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-07T15:42:56.449535+00:00",
+  "predicted_at": "2026-11-07T15:43:19.428821+00:00",
+  "scheduled_start": "2026-11-07T18:02:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NABAKO DE GUEZ', 'ARMESS DE GUEZ', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NARISSO DU LUPIN', 'HARISIA DU LUPIN', 'ALDO DES CHAMPS')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NEED YOU FOR MONEY', 'QUALITEUSE FOLLE', 'FIFTY KALOUMA')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NASH DES RIOULTS', 'DIVA DES RIOULTS', 'FEELING CASH')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NIGHT KNIGHT', 'ALTESSE DU MIREL', 'EXPRESS JET')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NAJA DU PONT', 'COCCINELLE DU PONT', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NEW FRIEND', 'ARETHUSE', 'INVINCIBLE CASH')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NINO DE TIMBOEUF', 'SANDY', 'GOSPEL PAT')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NOIRAUD DES GLENAN', 'ETINCELLE BLEUE', 'DUCATO BOURBON')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NOTORIOUS ERCA', \"VASSILIA D'ORGERES\", 'INVINCIBLE CASH')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NICKY LARSON', 'FATU HIVA', 'GOTLAND')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NAPRIUS', 'TRUST ME', 'GALIUS')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('NINO DES VES', 'DEIKA DE GUEGUE', 'EXPRESS JET')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('NOE SIBEY', \"VARADE D'HERMINE\", 'VIGOVE')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('NICKEL GEMA', 'ETOILE GEMA', 'BOLD EAGLE')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('NEMROD GEDE', 'ESMERALDA GEDE', 'HUSSARD DU LANDRET')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "7406bd244a0791eff5bb01285b55d1f7ae708f7e35312669a96bcb1015b8586c",
+  "history_through": "2026-11-06",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          15,
+          5,
+          10,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.050633825560713226,
+          "stage_raw": 0.018474675547103962,
+          "stage_calibrated": 0.021232969845894626
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          15,
+          5,
+          4,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.050633825560713226,
+          "stage_raw": 0.018474675547103962,
+          "stage_calibrated": 0.021232969845894626
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          15,
+          5,
+          10,
+          4,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.022285796349738728,
+          "stage_raw": 0.006820137812627684,
+          "stage_calibrated": 0.007660451760544095
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          15,
+          5,
+          4,
+          10,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.016174925949382975,
+          "stage_raw": 0.006156868731560169,
+          "stage_calibrated": 0.006881595619932601
+        }
+      }
+    }
+  }
+}
