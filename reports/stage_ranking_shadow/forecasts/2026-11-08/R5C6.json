@@ -1,0 +1,146 @@
+{
+  "race_id": "2026-11-08_R5C6",
+  "date": "2026-11-08",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-08T16:01:06.645239+00:00",
+  "predicted_at": "2026-11-08T16:01:30.462614+00:00",
+  "scheduled_start": "2026-11-08T18:02:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('KARA DES DUNES', \"BRISE D'URZY\", 'QUAKER JET')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('KETTINA DU CYGNE', 'UTOPIQUE FOLIE', 'EL VILLAGIO')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('KAROLINE CADE', 'BABETTE CADE', 'LONTZAC')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('KESA DES THIRONS', 'UMOOREA', 'ENINO DU POMMEREUX')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('KALINKA MOYA', 'DIVINE SEVEN', 'PARIS HAUFOR')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('KIARHA DE NAPPES', 'RIMINI', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('KISS ME TO LIVE', 'VALSE DE COURTISON', 'DRAGON DES RACQUES')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('KIARA MAURICIENNE', 'QUELLE FILLE', 'COBRA BLEU')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('KEVIVE DE MAIL', 'CHIPIE DE MAIL', 'ALTO DE VIETTE')",
+      "NON_PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('KALIFORNIE', \"DIVA D'IROISE\", 'NEUTRON DU CEBE')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('KILIANA DU VAUTOUR', 'SAEVA DU VAUTOUR', 'EL VILLAGIO')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('KASSIOPEE', 'DOCEANIDE', 'BIRD PARKER')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('KERIA FLEURY', 'ERYA KALOUMA', 'URIEL SPEED')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('KARAIBE DE TILLARD', 'QUALITY DE TILLARD', 'VAQUERO DU MONT')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "3ed9dc9aa50bd27a8e12d1a609aa51b1b5bae634e15cf88a8b9dd202228617ff",
+  "history_through": "2026-11-07",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          7,
+          4,
+          12,
+          2
+        ],
+        "probabilities": {
+          "v3": 0.03691388484621927,
+          "stage_raw": 0.017537460554953886,
+          "stage_calibrated": 0.019442005145194084
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          4,
+          2,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.019966294910219597,
+          "stage_raw": 0.016378772231907802,
+          "stage_calibrated": 0.018252281279468166
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          7,
+          4,
+          12,
+          2,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.042257496588238394,
+          "stage_raw": 0.009463988135242034,
+          "stage_calibrated": 0.010234646935484927
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          4,
+          2,
+          10,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.004532953636154065,
+          "stage_raw": 0.006928791930784338,
+          "stage_calibrated": 0.007462660285053824
+        }
+      }
+    }
+  }
+}

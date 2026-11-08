@@ -1,0 +1,131 @@
+{
+  "race_id": "2026-11-08_R5C5",
+  "date": "2026-11-08",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-08T16:00:42.110181+00:00",
+  "predicted_at": "2026-11-08T16:01:05.787325+00:00",
+  "scheduled_start": "2026-11-08T17:27:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:(\"NOBLE DE REVE D'OR\", 'FELINE SPEED', 'BOLD EAGLE')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:(\"NINA D'EOL\", 'EOLIATHIRA', 'CAPTAIN SPARROW')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:(\"NUMBER ONE D'ARBAZ\", 'USELESS', 'FABULOUS WOOD')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:(\"NOTRE SAXO D'AURE\", \"INSATIABLE D'AURE\", 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NOURKIS', 'BELLA DU VIVIER', 'SINGALO')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NEBRASKA MELOC', 'BANQUIERE', \"UN MEC D'HERIPRE\")",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NOUGAYORQUE', 'ENVIE DU VIVIER', 'BOCCADOR DE SIMM')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NANS DE FLEUR', 'ARIANE DES PRES', 'COUP DE POKER')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NORD CALITY', 'CALITY SAUTREUIL', 'DOLLAR MACKER')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NIGHT DU SAPTEL', 'TULA DE BASSIERE', 'URIEL SPEED')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NUROSEDA DE WARNOC', 'UROSIDA', 'GOLDEN BRIDGE')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "3ed9dc9aa50bd27a8e12d1a609aa51b1b5bae634e15cf88a8b9dd202228617ff",
+  "history_through": "2026-11-07",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          9,
+          1,
+          11,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.04665537605116564,
+          "stage_raw": 0.015300398018203296,
+          "stage_calibrated": 0.01625019618765963
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          9,
+          11,
+          6,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.012691893524709213,
+          "stage_raw": 0.014089000819122842,
+          "stage_calibrated": 0.01513518221276633
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          9,
+          1,
+          11,
+          10,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.04064996062958455,
+          "stage_raw": 0.010844548723734476,
+          "stage_calibrated": 0.011434892783401616
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          9,
+          11,
+          6,
+          4,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.005425538460778149,
+          "stage_raw": 0.009677457816863154,
+          "stage_calibrated": 0.01023718956580295
+        }
+      }
+    }
+  }
+}

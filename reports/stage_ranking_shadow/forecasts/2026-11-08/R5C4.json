@@ -1,0 +1,126 @@
+{
+  "race_id": "2026-11-08_R5C4",
+  "date": "2026-11-08",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-08T16:00:19.276439+00:00",
+  "predicted_at": "2026-11-08T16:00:41.317593+00:00",
+  "scheduled_start": "2026-11-08T16:52:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('MARSTON VICTORY', 'AMILKA', 'VERY NICE MARCEAUX')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('MY LADY DE CAHOT', 'UNICA DE CAHOT', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('MAEVA DES BAUX', 'DAPHNE DES BAUX', 'TAG WOOD')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('MAKE FOR JUMP', 'AMAZONE BLUE', 'SCIPION DU GOUTIER')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('MEDELLIN ELLIS', 'DONA MAZA', 'BOLD EAGLE')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('MARISA DU CHATELET', 'VENUS PETTEVINIERE', \"CYPRIN D'ERABLE\")",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('MARIANNE', 'CHANELLA', 'GOETMALS WOOD')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('MANGUE', 'FLOTILLA', 'URIEL SPEED')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('MAJOR DU BISTON', 'VENUS DU BISTON', 'HOHNECK')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('MISTER BARRA', \"DARLING D'ARDENNES\", 'OLITRO')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "3ed9dc9aa50bd27a8e12d1a609aa51b1b5bae634e15cf88a8b9dd202228617ff",
+  "history_through": "2026-11-07",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          8,
+          7,
+          4,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.11542267917898821,
+          "stage_raw": 0.048380987170305194,
+          "stage_calibrated": 0.05307998147449629
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          7,
+          4,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.052340739540043486,
+          "stage_raw": 0.04520461695890788,
+          "stage_calibrated": 0.04986403483363362
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          8,
+          7,
+          4,
+          9,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.08111254798708584,
+          "stage_raw": 0.04785084062203314,
+          "stage_calibrated": 0.052091072811141524
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          7,
+          4,
+          10,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.08111254798708584,
+          "stage_raw": 0.04785084062203314,
+          "stage_calibrated": 0.052091072811141524
+        }
+      }
+    }
+  }
+}

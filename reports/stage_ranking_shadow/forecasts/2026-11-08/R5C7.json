@@ -1,0 +1,136 @@
+{
+  "race_id": "2026-11-08_R5C7",
+  "date": "2026-11-08",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-08T16:01:31.157437+00:00",
+  "predicted_at": "2026-11-08T16:01:54.989682+00:00",
+  "scheduled_start": "2026-11-08T18:34:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('MICHKA', 'HOT MONEY', 'HOHNECK')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('MAEVA DES PRES', 'TRESSY DES PRES', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('MIA DU BLEQUIN', \"DAISY D'HARCOUEL\", 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('MISS FRANCE PIYA', 'GRANDE BISE PIYA', 'BIRD PARKER')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('MADAME DELO', 'DUBAI UNION', 'GOETMALS WOOD')",
+      "NON_PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('MY QUEEN DELO', 'BE MINE TONIGHT', 'BIRD PARKER')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('MAVINA DES ETANGS', 'TEKLA DES ETANGS', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:(\"MELODY DE L'EPINE\", 'FANNY BRIOLAISE', 'FEELING CASH')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('MYRTILLE DE SEE', 'FOLIE DE SEE', 'EXPRESS JET')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('MALICE DU CHATAULT', 'VODKA DU CHATAULT', 'QUARO')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('MARIE JOSE LABELLE', 'GASA VASTERBO', 'ALTO DE VIETTE')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('MADISON DE MAHEY', 'ESTRAMADURE', 'ENINO DU POMMEREUX')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "3ed9dc9aa50bd27a8e12d1a609aa51b1b5bae634e15cf88a8b9dd202228617ff",
+  "history_through": "2026-11-07",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          3,
+          8,
+          6,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.023534536348783032,
+          "stage_raw": 0.016430540874642924,
+          "stage_calibrated": 0.017711526304878312
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          3,
+          8,
+          6,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.011022875822332088,
+          "stage_raw": 0.013205390660173528,
+          "stage_calibrated": 0.014197468547543985
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          3,
+          8,
+          6,
+          11,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.025073959955856373,
+          "stage_raw": 0.010509074289366609,
+          "stage_calibrated": 0.011097166916992625
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          3,
+          8,
+          6,
+          1,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.011609829499217971,
+          "stage_raw": 0.012792994806431094,
+          "stage_calibrated": 0.01366406193909307
+        }
+      }
+    }
+  }
+}
