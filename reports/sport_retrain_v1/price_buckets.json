@@ -1,0 +1,168 @@
+{
+  "status": "DESCRIPTIVE_POSTRACE_PRICES_NOT_EXECUTABLE",
+  "races": 4661,
+  "missing_runner_prices": 619,
+  "buckets": {
+    "baseline": [
+      {
+        "range": [
+          1,
+          3
+        ],
+        "runners": 2877,
+        "sum_probability": 673.8141238925116,
+        "wins": 1179,
+        "mean_probability": 0.23420720329944789,
+        "observed_win_frequency": 0.4098018769551616
+      },
+      {
+        "range": [
+          3,
+          5
+        ],
+        "runners": 5075,
+        "sum_probability": 811.7058722121081,
+        "wins": 1177,
+        "mean_probability": 0.15994204378563706,
+        "observed_win_frequency": 0.23192118226600986
+      },
+      {
+        "range": [
+          5,
+          10
+        ],
+        "runners": 9835,
+        "sum_probability": 1100.6892379568098,
+        "wins": 1192,
+        "mean_probability": 0.11191553004136348,
+        "observed_win_frequency": 0.1211997966446365
+      },
+      {
+        "range": [
+          10,
+          20
+        ],
+        "runners": 11526,
+        "sum_probability": 889.6480448351978,
+        "wins": 693,
+        "mean_probability": 0.0771861916393543,
+        "observed_win_frequency": 0.0601249349297241
+      },
+      {
+        "range": [
+          20,
+          50
+        ],
+        "runners": 13541,
+        "sum_probability": 713.0275096890601,
+        "wins": 329,
+        "mean_probability": 0.05265693151828226,
+        "observed_win_frequency": 0.024296580754744848
+      },
+      {
+        "range": [
+          50,
+          80
+        ],
+        "runners": 6011,
+        "sum_probability": 226.5576326089813,
+        "wins": 43,
+        "mean_probability": 0.03769050617351211,
+        "observed_win_frequency": 0.0071535518216602895
+      },
+      {
+        "range": [
+          80,
+          null
+        ],
+        "runners": 8819,
+        "sum_probability": 221.26199694868023,
+        "wins": 45,
+        "mean_probability": 0.0250892387967661,
+        "observed_win_frequency": 0.005102619344596893
+      }
+    ],
+    "repaired": [
+      {
+        "range": [
+          1,
+          3
+        ],
+        "runners": 2877,
+        "sum_probability": 674.4496647058087,
+        "wins": 1179,
+        "mean_probability": 0.23442810730128907,
+        "observed_win_frequency": 0.4098018769551616
+      },
+      {
+        "range": [
+          3,
+          5
+        ],
+        "runners": 5075,
+        "sum_probability": 812.2432943287118,
+        "wins": 1177,
+        "mean_probability": 0.1600479397692043,
+        "observed_win_frequency": 0.23192118226600986
+      },
+      {
+        "range": [
+          5,
+          10
+        ],
+        "runners": 9835,
+        "sum_probability": 1101.533615823134,
+        "wins": 1192,
+        "mean_probability": 0.11200138442533136,
+        "observed_win_frequency": 0.1211997966446365
+      },
+      {
+        "range": [
+          10,
+          20
+        ],
+        "runners": 11526,
+        "sum_probability": 889.8511516737639,
+        "wins": 693,
+        "mean_probability": 0.07720381326338399,
+        "observed_win_frequency": 0.0601249349297241
+      },
+      {
+        "range": [
+          20,
+          50
+        ],
+        "runners": 13541,
+        "sum_probability": 712.4924540240503,
+        "wins": 329,
+        "mean_probability": 0.05261741777003547,
+        "observed_win_frequency": 0.024296580754744848
+      },
+      {
+        "range": [
+          50,
+          80
+        ],
+        "runners": 6011,
+        "sum_probability": 225.96205488058146,
+        "wins": 43,
+        "mean_probability": 0.03759142486783921,
+        "observed_win_frequency": 0.0071535518216602895
+      },
+      {
+        "range": [
+          80,
+          null
+        ],
+        "runners": 8819,
+        "sum_probability": 220.27576165269073,
+        "wins": 45,
+        "mean_probability": 0.024977408056774095,
+        "observed_win_frequency": 0.005102619344596893
+      }
+    ]
+  },
+  "used_for_training_or_selection": false,
+  "roi_calculated": false,
+  "source": "dernierRapportDirect; retrospective archive; price timestamps not prestart validated"
+}

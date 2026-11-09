@@ -1,0 +1,389 @@
+{
+  "counts": {
+    "UNRESOLVED_OFFICIAL_OUTCOME": 8,
+    "UNRESOLVED_NO_EXACT_ARCHIVE": 17,
+    "RESOLVED": 2
+  },
+  "affected_target_runners": 26,
+  "unique_prior_starts": 27,
+  "dataset_sha256": "7e90a41649713b24a4044bfc60d4526291bd7fa1258207b4bb4f466492b11219",
+  "individual_manifest_sha256": "6a727f5bdd8e31b179b2499453d8d7b7c64ececc5fcafea71ce6d39eaceb3fbf",
+  "ledger": [
+    {
+      "target_race": "2026-10-20_R4C5",
+      "number": 10,
+      "name": "LUCIUS DE PUCH",
+      "prior_date": "2026-08-25",
+      "track": "CAP",
+      "course": 6,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-08-25_R2C6",
+          "source": "data/month_2026-08/races/2026-08-25_R2C6.json.gz",
+          "sha256": "6a7232e8540d62a51ca46dd8c426d419f06171e72263637c2ac32def6596355f"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-22_R3C1",
+      "number": 9,
+      "name": "KING OF DAY",
+      "prior_date": "2026-09-23",
+      "track": "ARG",
+      "course": 8,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-09-23_R1C8",
+          "source": "data/month_2026-09/races/2026-09-23_R1C8.json.gz",
+          "sha256": "b8d7b3589d515c2a6b2cb627a31fcaf3a38f24bd75d36d9c720602b97252b2f1"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-22_R3C1",
+      "number": 11,
+      "name": "KARO DAIRPET",
+      "prior_date": "2026-08-30",
+      "track": "AGC",
+      "course": 6,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-22_R3C6",
+      "number": 4,
+      "name": "MAXIMUS DECIMUS",
+      "prior_date": "2026-10-18",
+      "track": "SMV",
+      "course": 7,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R3C2",
+      "number": 9,
+      "name": "LEPIDOPTERISTE",
+      "prior_date": "2026-09-27",
+      "track": "GEB",
+      "course": 2,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R3C3",
+      "number": 2,
+      "name": "KIDS DU BASSIN",
+      "prior_date": "2026-09-06",
+      "track": "ABB",
+      "course": 3,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R3C3",
+      "number": 6,
+      "name": "KINDER DE LA NAVE",
+      "prior_date": "2026-10-17",
+      "track": "CAP",
+      "course": 3,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-10-17_R10C3",
+          "source": "data/history_updates/2026-10-17.json.gz",
+          "sha256": "8c85e45725d47be8742b5dfc6ad24cfe1eae4206bdaf3bd43029d5e8f7157a25"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R3C3",
+      "number": 6,
+      "name": "KINDER DE LA NAVE",
+      "prior_date": "2026-09-06",
+      "track": "ABB",
+      "course": 6,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R3C4",
+      "number": 11,
+      "name": "JARVIS",
+      "prior_date": "2026-09-21",
+      "track": "CAP",
+      "course": 8,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-09-21_R1C8",
+          "source": "data/month_2026-09/races/2026-09-21_R1C8.json.gz",
+          "sha256": "21298fefc686ab08f2cefcdda1e8650168c2c8160ff0fcea9d26ee193b0b0376"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R3C5",
+      "number": 13,
+      "name": "MUST DREAM",
+      "prior_date": "2026-09-23",
+      "track": "ARG",
+      "course": 7,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-09-23_R1C7",
+          "source": "data/month_2026-09/races/2026-09-23_R1C7.json.gz",
+          "sha256": "e677412b1adc017b4f4c496f83df23193c49374c50de9425fd77bee1117aab25"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R3C8",
+      "number": 1,
+      "name": "NOUVELLE AVENTURE",
+      "prior_date": "2026-09-02",
+      "track": "CAP",
+      "course": 4,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-09-02_R1C4",
+          "source": "data/month_2026-09/races/2026-09-02_R1C4.json.gz",
+          "sha256": "bfdd874d5bc94ad296c93554656b2959af7abf86fef6a0e42431e6153e3702ae"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R3C8",
+      "number": 5,
+      "name": "NAMARA D'ECHAL",
+      "prior_date": "2026-09-26",
+      "track": "ENG",
+      "course": 6,
+      "individual_status": "ARRETE",
+      "status": "RESOLVED",
+      "outcome": {
+        "rank": null,
+        "dq": false,
+        "finished": false,
+        "incident": "ARRETE"
+      },
+      "evidence": [
+        {
+          "outcome": {
+            "rank": null,
+            "dq": false,
+            "finished": false,
+            "incident": "ARRETE"
+          },
+          "race_id": "2026-09-26_R4C6",
+          "source": "data/month_2026-09/races/2026-09-26_R4C6.json.gz",
+          "sha256": "74b90aa24ec7e743b779bc097c327127bfa2fe85443f2b809ba33baa86898827"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R7C1",
+      "number": 12,
+      "name": "NASH PAULCA",
+      "prior_date": "2026-08-30",
+      "track": "SAP",
+      "course": 2,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C2",
+      "number": 10,
+      "name": "NOMINE DU GOUTIER",
+      "prior_date": "2026-10-19",
+      "track": "CHE",
+      "course": 1,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-10-19_R9C1",
+          "source": "data/history_updates/2026-10-19.json.gz",
+          "sha256": "8809dd76fee39d09ed5982b562abe427ed3711a2254b04c3d0ea24c664d6dcad"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R7C3",
+      "number": 6,
+      "name": "MAGIQUE",
+      "prior_date": "2026-10-04",
+      "track": "ALE",
+      "course": 8,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C3",
+      "number": 7,
+      "name": "MADESKA",
+      "prior_date": "2026-08-29",
+      "track": "ABB",
+      "course": 4,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C3",
+      "number": 8,
+      "name": "MY WAY SKY",
+      "prior_date": "2026-08-29",
+      "track": "ABB",
+      "course": 5,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C3",
+      "number": 9,
+      "name": "MELINA BILOU",
+      "prior_date": "2026-09-13",
+      "track": "VLP",
+      "course": 6,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C4",
+      "number": 7,
+      "name": "MINA VALF ROCQ",
+      "prior_date": "2026-08-29",
+      "track": "ABB",
+      "course": 4,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C5",
+      "number": 9,
+      "name": "NUEE DE FLEURS",
+      "prior_date": "2026-08-29",
+      "track": "ABB",
+      "course": 2,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C5",
+      "number": 11,
+      "name": "NYX ERGEE",
+      "prior_date": "2026-09-14",
+      "track": "LIS",
+      "course": 8,
+      "individual_status": "TOMBE",
+      "status": "RESOLVED",
+      "outcome": {
+        "rank": null,
+        "dq": false,
+        "finished": false,
+        "incident": "TOMBE"
+      },
+      "evidence": [
+        {
+          "outcome": {
+            "rank": null,
+            "dq": false,
+            "finished": false,
+            "incident": "TOMBE"
+          },
+          "race_id": "2026-09-14_R8C8",
+          "source": "data/month_2026-09/races/2026-09-14_R8C8.json.gz",
+          "sha256": "2d84863d7a115a87c519429847151e568a19dafb7ba10c83b4021eeeb6cd91cc"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R7C6",
+      "number": 8,
+      "name": "NOUMEA DES LANDES",
+      "prior_date": "2026-08-29",
+      "track": "ABB",
+      "course": 2,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C7",
+      "number": 1,
+      "name": "MAJOR CRESS",
+      "prior_date": "2026-08-29",
+      "track": "ABB",
+      "course": 3,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C7",
+      "number": 18,
+      "name": "MUSTANG D'ARLINE",
+      "prior_date": "2026-09-13",
+      "track": "MLM",
+      "course": 7,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-26_R7C8",
+      "number": 11,
+      "name": "MILORD DE MONTI",
+      "prior_date": "2026-10-11",
+      "track": "LIS",
+      "course": 7,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_OFFICIAL_OUTCOME",
+      "reason": "official_rank_or_incident_not_reconciled",
+      "evidence": [
+        {
+          "race_id": "2026-10-11_R12C7",
+          "source": "data/month_2026-10/races/2026-10-11_R12C7.json.gz",
+          "sha256": "b648e964d8be9d6ab82fbd02df2069a57fbfd43bad8f41195af71a1cd68ebdec"
+        }
+      ]
+    },
+    {
+      "target_race": "2026-10-26_R7C8",
+      "number": 14,
+      "name": "MON DISCOURS",
+      "prior_date": "2026-09-13",
+      "track": "VLP",
+      "course": 6,
+      "individual_status": "PLACE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    },
+    {
+      "target_race": "2026-10-28_R3C2",
+      "number": 7,
+      "name": "KOLBY DE GORGERE",
+      "prior_date": "2026-09-21",
+      "track": "VFC",
+      "course": 6,
+      "individual_status": "ARRETE",
+      "status": "UNRESOLVED_NO_EXACT_ARCHIVE"
+    }
+  ],
+  "network_requests": 0,
+  "frozen_features_changed": false,
+  "training_performed": false,
+  "recommendations_allowed": false
+}
