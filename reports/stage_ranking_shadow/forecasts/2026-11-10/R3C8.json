@@ -1,0 +1,136 @@
+{
+  "race_id": "2026-11-10_R3C8",
+  "date": "2026-11-10",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-10T17:06:51.059502+00:00",
+  "predicted_at": "2026-11-10T17:07:15.350095+00:00",
+  "scheduled_start": "2026-11-10T20:00:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NASHWA', 'VOURGA', 'BRILLANTISSIME')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NEPTUNE MADRIK', 'TEQUILA DARA', 'GOTLAND')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NIKITA JAMES', 'EMILIA CEIJY', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NIGHTSHIFT', 'UFLORA', 'IMPRESSIONIST')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NOLWEN SOMOLLI', 'SCYLLA SOMOLLI', 'RODRIGO JET')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NYMPHE', 'PIN UP DE LA LOGE', 'GOTLAND')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NESKA DU GERS', \"FIRST LADY'S PARIS\", 'FACE TIME BOURBON')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NINA CHARENTAISE', 'STAR CHARENTAISE', 'UN CHARME FOU')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NESSENCE', 'ESSENCE ET SENS', 'QUAKER JET')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NIKITA JIEL', 'DUCHESSE DE JIEL', 'ATLAS DE JOUDES')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NAMI JIEL', 'ASHIMA', 'UN CHARME FOU')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NEBELINE LEMAN', 'DUKASS LEMAN', 'DOBERMAN')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "dec531703edbe30f9bcfcfe874f3cbbd9e0c84a1e18ea2811756c61fbcdff862",
+  "history_through": "2026-11-09",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          10,
+          11,
+          1,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.039010488845373836,
+          "stage_raw": 0.016327643737390905,
+          "stage_calibrated": 0.017810247767686194
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          11,
+          10,
+          1,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.033838847198899596,
+          "stage_raw": 0.021044936542405333,
+          "stage_calibrated": 0.0233933324355634
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          10,
+          11,
+          1,
+          6,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.04517000877581047,
+          "stage_raw": 0.01227494460622037,
+          "stage_calibrated": 0.013323403277751696
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          11,
+          10,
+          1,
+          4,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.014312994958093883,
+          "stage_raw": 0.011293569213184687,
+          "stage_calibrated": 0.012264758629976124
+        }
+      }
+    }
+  }
+}

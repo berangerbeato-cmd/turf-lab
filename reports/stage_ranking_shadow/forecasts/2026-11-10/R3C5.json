@@ -1,0 +1,136 @@
+{
+  "race_id": "2026-11-10_R3C5",
+  "date": "2026-11-10",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-10T17:06:00.786575+00:00",
+  "predicted_at": "2026-11-10T17:06:25.260983+00:00",
+  "scheduled_start": "2026-11-10T18:24:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('MEDOC DES GLENAN', 'DOLLY', 'COQUIN BEBE')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('MADEMOISELLE', 'RHAPSODIE DU CORTA', 'RODRIGO JET')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('MANDARINO FLEURY', 'GIRL STAR EMGE', \"NI HO PED D'OMBREE\")",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('MIKONOS DU ROSAY', 'UTOPIE DU ROSAY', 'DROLE DE JET')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('MILOR DES CAILLONS', 'DOUCE DES CAILLONS', \"FAIRPLAY D'URZY\")",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('MARKUS DES AGETS', 'CARA DES AGETS', 'BOEING DU BOCAGE')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('MASTER PIT', 'BELLA BOURBON', 'PRODIGIOUS')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('MONA VILI', 'GALAXIE CAUVELIERE', \"FRISBEE D'AM\")",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('MY KLY ERA', 'SOLITUDE DE DAIDOU', 'DJANGO RIFF')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('MILO DE NAPPES', 'VESPA DE NAPPES', 'FELICIANO')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('MIKI DU POMMEREUX', 'NOUNE DU POMMEREUX', 'GIROLAMO')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('MOLITA', 'SANTA SEVERA', 'HAND DU VIVIER')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "dec531703edbe30f9bcfcfe874f3cbbd9e0c84a1e18ea2811756c61fbcdff862",
+  "history_through": "2026-11-09",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          7,
+          9,
+          1,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.043331318232385285,
+          "stage_raw": 0.017167876627649292,
+          "stage_calibrated": 0.018457879549377054
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          1,
+          4,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.01526980796799674,
+          "stage_raw": 0.017643108317350394,
+          "stage_calibrated": 0.019286414769995062
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          7,
+          9,
+          1,
+          8,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.03451367620876326,
+          "stage_raw": 0.01161227794658196,
+          "stage_calibrated": 0.012389631794659762
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          1,
+          4,
+          5,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.008614071079203464,
+          "stage_raw": 0.012443084955920418,
+          "stage_calibrated": 0.013391089196714313
+        }
+      }
+    }
+  }
+}

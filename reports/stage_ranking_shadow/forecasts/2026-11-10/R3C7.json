@@ -1,0 +1,136 @@
+{
+  "race_id": "2026-11-10_R3C7",
+  "date": "2026-11-10",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-10T17:06:26.242726+00:00",
+  "predicted_at": "2026-11-10T17:06:49.987100+00:00",
+  "scheduled_start": "2026-11-10T19:28:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NOUGAYORK', 'VACATE MONEY', 'ROYAL DREAM')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NECTAR DE MONTCEAU', 'TOSCANE PIERJI', 'ROC MESLOIS')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NARCOS MIJO', 'TOPAZE DE FLORE', 'HELGAFELL')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NON STOP DE CONDE', 'BRATISLAVA', 'QUARO')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:(\"NEVER D'AVE\", \"EVIDENCE D'AVE\", 'IMPRESSIONIST')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NOXUS JIEL', 'VENTURA JIEL', 'FACE TIME BOURBON')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NINO SOLO', 'HARMONIE SOLO', 'ENINO DU POMMEREUX')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NELSON CHARENTAIS', 'FOUDRE CHARENTAISE', 'UN CHARME FOU')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:(\"NEW D'URZY\", 'OREE BOURBON', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NOOKER BERRY', 'BIMBO BERRY', 'HOOKER BERRY')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NOLAN DE PERVENCHE', 'SONG DE PERVENCHE', 'CARAT WILLIAMS')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NETWORK', 'DARGEVILLE', 'FIFTY KALOUMA')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "dec531703edbe30f9bcfcfe874f3cbbd9e0c84a1e18ea2811756c61fbcdff862",
+  "history_through": "2026-11-09",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          3,
+          6,
+          9,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.03376162581018602,
+          "stage_raw": 0.019404204490609082,
+          "stage_calibrated": 0.02151559866664165
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          3,
+          6,
+          9,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.03376162581018602,
+          "stage_raw": 0.019404204490609082,
+          "stage_calibrated": 0.02151559866664165
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          3,
+          6,
+          9,
+          8,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.024860351164141058,
+          "stage_raw": 0.008212519937308564,
+          "stage_calibrated": 0.008768836905428776
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          3,
+          6,
+          9,
+          8,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.012465625591722538,
+          "stage_raw": 0.010435849522181075,
+          "stage_calibrated": 0.011318241408385605
+        }
+      }
+    }
+  }
+}
