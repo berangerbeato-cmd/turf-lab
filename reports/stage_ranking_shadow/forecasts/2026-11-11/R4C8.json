@@ -1,0 +1,136 @@
+{
+  "race_id": "2026-11-11_R4C8",
+  "date": "2026-11-11",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-11T17:11:16.559916+00:00",
+  "predicted_at": "2026-11-11T17:11:35.379557+00:00",
+  "scheduled_start": "2026-11-11T19:06:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('KIMBRA DJOC', 'BEAUTIFUL MUSIC', 'ATLAS DE JOUDES')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('ISIS DE REYNALD', 'ALTESSE REYNALD', 'TONKIN DE BELLOUET')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('JALIX DE NIOUX', \"TWEENIE D'URZY\", 'OPUS VIERVIL')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('JOLIE ARCTIC', 'UNE VIE', 'VERY NICE MARCEAUX')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('JAIKA DES BORDES', 'ERA PASMARICK', 'VERY NICE MARCEAUX')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('KIYOUNI', 'BALINKA', 'EARL SIMON')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('KATE BRIONNAISE', 'PUPPET SMILING', 'SCIPION DU GOUTIER')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('JESCO DE LA VALLEE', 'PALME DE LA VALLEE', 'BOLERO LOVE')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('HYPOLIT DE BEL AIR', 'NARA DE BEL AIR', 'GOGO')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('ICE SCOTT', 'SISSI SCOTT', 'GOGO')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('INJECTABLE', \"TRUITE D'ASPE\", 'TABLER')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('HAMILTON FOUTEAU', 'ULKA FOUTEAU', 'SEDUISANT FOUTEAU')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "d00fb4335b504c1f5fd2896da930e2a32e6d2eae03554a93d5514f17aea62d48",
+  "history_through": "2026-11-10",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          8,
+          5,
+          7,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.03496046130944779,
+          "stage_raw": 0.013311947302320055,
+          "stage_calibrated": 0.014200101594604159
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          5,
+          6,
+          7
+        ],
+        "probabilities": {
+          "v3": 0.029585435820983642,
+          "stage_raw": 0.018694548630450676,
+          "stage_calibrated": 0.02042729160327113
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          8,
+          5,
+          7,
+          3,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.030489046667736143,
+          "stage_raw": 0.007800137531770998,
+          "stage_calibrated": 0.00825496720937116
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          5,
+          6,
+          7,
+          2
+        ],
+        "probabilities": {
+          "v3": 0.007464525361209761,
+          "stage_raw": 0.008325119884300056,
+          "stage_calibrated": 0.008889548509960012
+        }
+      }
+    }
+  }
+}

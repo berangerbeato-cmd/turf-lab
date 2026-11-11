@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-11_R4C7",
+  "date": "2026-11-11",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-11T17:10:58.351571+00:00",
+  "predicted_at": "2026-11-11T17:11:15.764591+00:00",
+  "scheduled_start": "2026-11-11T18:34:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NIKITA BOND', 'CERISELLA', \"GU D'HERIPRE\")",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NO MORE DREAM', 'HARVEST HOME', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NICE GALAXIE', 'GALAXIE DU NOYER', 'EARL SIMON')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NO COMMENT ONE', 'DAGANIE ONE', \"NI HO PED D'OMBREE\")",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NAMA MAHA', 'EMMY JOLIE', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NUIT DE LOISIR', 'GAZALA', 'EXCELLENT')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NEWTON MARCEAUX', 'HAVANA MARCEAUX', 'CHARLY DU NOYER')",
+      "NON_PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NOEMIE RIDGEHEAD', 'ELODIE RIDGEHEAD', 'EARL SIMON')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:(\"NINA D'ALRE\", 'DYNASTIE ALDO', 'GATSBY PERRINE')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NOVA JIEL', 'BORA BORA JIEL', 'LOVE YOU')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:(\"NO ONE D'AUBIGNY\", 'COSTA JULRY', 'DOBERMAN')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NEO WYNN', 'IVY CROWN', 'READY CASH')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('NATASHA CANTATE', 'ILE DE REVE', 'INVINCIBLE CASH')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('NOBLE COEUR', 'EPEE', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('NOBLE DE TESSEL', 'ECIJA DU VIVIER', 'REVE DE BEYLEV')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('NORIA DU VALLON', 'ANGIE DU VALLON', 'LOVE YOU')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "d00fb4335b504c1f5fd2896da930e2a32e6d2eae03554a93d5514f17aea62d48",
+  "history_through": "2026-11-10",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          14,
+          13,
+          15,
+          16
+        ],
+        "probabilities": {
+          "v3": 0.012793586856826699,
+          "stage_raw": 0.004465675140643031,
+          "stage_calibrated": 0.004796198078155936
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          14,
+          15,
+          13,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.007599215330722048,
+          "stage_raw": 0.005307340842590364,
+          "stage_calibrated": 0.005808950678089019
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          14,
+          13,
+          15,
+          16,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.010189472524288645,
+          "stage_raw": 0.0018406392059134033,
+          "stage_calibrated": 0.0019561585582748963
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          14,
+          15,
+          13,
+          8,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.0020287777170689136,
+          "stage_raw": 0.0020576324341733438,
+          "stage_calibrated": 0.00220813457201348
+        }
+      }
+    }
+  }
+}
