@@ -1,0 +1,146 @@
+{
+  "race_id": "2026-11-12_R4C5",
+  "date": "2026-11-12",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-12T17:37:30.425673+00:00",
+  "predicted_at": "2026-11-12T17:37:51.184781+00:00",
+  "scheduled_start": "2026-11-12T18:23:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('KING OF RACE', 'CLASSIC COLOR', 'VALKO JENILAT')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('KYMJO DE BELFOND', 'QUYMJA', 'REAL DE LOU')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('KERMES', 'EVA DREAM', 'PRODIGIOUS')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('KOOPER', 'ALCALINE', 'MEMPHIS DU RIB')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:(\"KING DE L'ORMERIE\", 'QUAKEMEMERE', 'EROS DU CHENE')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('JUST WINNER ROC', 'CORSICA ROC', 'OURAGAN DE CELLAND')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('KING PRESTIGE', 'VENOSA', 'CUPIDON DU VIVIER')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('KING STALLION', 'CARA MIA WOOD', 'READY CASH')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('KRISTOBAL', 'BARINA', 'GOETMALS WOOD')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:(\"KOUIDITCH D'ABOMEY\", \"ETOILE D'ABOMEY\", 'COCKTAIL MESLOIS')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('KSAR VRIE', 'NORKA DE VRIE', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('KIWI CHARENTAIS', 'DIVINE CHARENTAISE', 'ATLAS DE JOUDES')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('JOYEUX CORDIERE', 'BOLIVIA CORDIERE', 'ULEX GEDE')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('KAMARAN MADRIK', \"UBRIS D'ESPACE\", 'VALKO JENILAT')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "2d16cea3252716ce38bc65dcb2feda699f305063538dcf91772b6f1b986ce947",
+  "history_through": "2026-11-11",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          1,
+          7,
+          10,
+          14
+        ],
+        "probabilities": {
+          "v3": 0.03171086010869318,
+          "stage_raw": 0.006161903930232823,
+          "stage_calibrated": 0.006502992687899413
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          10,
+          4,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.01669670066073798,
+          "stage_raw": 0.01147609805846043,
+          "stage_calibrated": 0.012836860391644778
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          1,
+          7,
+          10,
+          14,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.02202457372193937,
+          "stage_raw": 0.002169029733894237,
+          "stage_calibrated": 0.0022487339598424036
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          10,
+          4,
+          1,
+          13
+        ],
+        "probabilities": {
+          "v3": 0.0036406554744893866,
+          "stage_raw": 0.004666173462647127,
+          "stage_calibrated": 0.0050578725923951205
+        }
+      }
+    }
+  }
+}
