@@ -1,0 +1,146 @@
+{
+  "race_id": "2026-11-13_R5C8",
+  "date": "2026-11-13",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-13T17:15:27.158851+00:00",
+  "predicted_at": "2026-11-13T17:15:51.994811+00:00",
+  "scheduled_start": "2026-11-13T18:15:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NABAB DES PLEIGNES', 'STAR DES PLEIGNES', 'HOOKER BERRY')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NACRE DU VALLON', 'PERLE DU VALLON', 'LOVE YOU')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NOCTAMBULE SEVEN', 'HAPPY FAMILY AR', 'HOOKER BERRY')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NARNIA PAN', 'POMONE DE VANDEL', 'TI PUNCH RIVER')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NABUCCO JIJI', 'CANDICE JIJI', 'EXCELLENT')",
+      "NON_PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NACRE GALAXY', 'GOLDEN GALAXY', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NAOMIE DUEM', \"ETOILE DE L'ELLE\", 'FOLLOW YOU')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NEVIDENCE ROC', 'VICTOIRE DES BOTS', 'REAL DE LOU')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NIKITA DE LAPENCHE', 'BELLE DE LAPENCHE', 'UZO JOSSELYN')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NINIA DOUNA', 'UNA CORDOBA', 'DJANGO RIFF')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NIKITA DE REVILLE', 'FORTUNA DE REVILLE', 'BILIBILI')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NIRVANA DANICA', 'CANA DE BAILLY', 'DOLLAR MACKER')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('NAVONA PIAZZA', 'CARMEN', 'GOTLAND')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('NOUNASSIMA', \"A L'ATTAQUE\", 'FASTISSIME')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "4398413c8ced51ff882730a8df18d70c471ab13bf1e81a4a84dcb701a302445b",
+  "history_through": "2026-11-12",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          12,
+          14,
+          1,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.03277894961310629,
+          "stage_raw": 0.012428395166254207,
+          "stage_calibrated": 0.013545836152264151
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          12,
+          1,
+          14,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.01675833528378915,
+          "stage_raw": 0.011967247886624944,
+          "stage_calibrated": 0.01316014608080889
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          12,
+          14,
+          1,
+          3,
+          7
+        ],
+        "probabilities": {
+          "v3": 0.02249598679649211,
+          "stage_raw": 0.0038221048511998205,
+          "stage_calibrated": 0.004015810162995745
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          12,
+          1,
+          14,
+          8,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.0037640230390990842,
+          "stage_raw": 0.005133247628301744,
+          "stage_calibrated": 0.005520863514667068
+        }
+      }
+    }
+  }
+}

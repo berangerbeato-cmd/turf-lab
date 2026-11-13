@@ -1,0 +1,126 @@
+{
+  "race_id": "2026-11-13_R1C3",
+  "date": "2026-11-13",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-13T17:15:52.942816+00:00",
+  "predicted_at": "2026-11-13T17:16:18.834710+00:00",
+  "scheduled_start": "2026-11-13T18:33:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('MILLE SABORDS DIVO', 'OTIKA VITA', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('MADISON SEVEN', 'VADAPOLINA', 'DAVIDSON DU PONT')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('MANHATTAN JIEL', 'VICKY JIEL', 'REAL DE LOU')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('MURO', 'GESIRA', 'LOVE YOU')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('MODERN STYLE', 'TRUE LIFE', 'FABULOUS WOOD')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('MIKADO CASTELETS', 'ETALIE PIERJI', 'HOHNECK')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('MISTHOS CHRISTAL', 'EPONA DE CHRISTAL', 'FELICIANO')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('MY DREAM', 'CHIC AVENTURE', 'FOLLOW YOU')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('MOZART SAUTONNE', 'AURORE SAUTONNE', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('MAMBO DE JAUDRAIS', 'FIESTA WINNER', 'ENINO DU POMMEREUX')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "4398413c8ced51ff882730a8df18d70c471ab13bf1e81a4a84dcb701a302445b",
+  "history_through": "2026-11-12",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          9,
+          6,
+          7,
+          2
+        ],
+        "probabilities": {
+          "v3": 0.19087734315579463,
+          "stage_raw": 0.050164058043179825,
+          "stage_calibrated": 0.054555289071207866
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          9,
+          6,
+          2,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.06150970038796988,
+          "stage_raw": 0.04469690596405984,
+          "stage_calibrated": 0.04878555401251401
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          9,
+          6,
+          7,
+          2,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.16221374570162575,
+          "stage_raw": 0.040664391585155814,
+          "stage_calibrated": 0.043669558715304334
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          9,
+          6,
+          2,
+          1,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.016379546445296777,
+          "stage_raw": 0.02450787615383735,
+          "stage_calibrated": 0.025888283934873364
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "race_id": "2026-11-13_R1C7",
+  "date": "2026-11-13",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-13T17:17:14.581077+00:00",
+  "predicted_at": "2026-11-13T17:17:40.992941+00:00",
+  "scheduled_start": "2026-11-13T21:00:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NOMINEE', 'COSETTE', 'VERY NICE MARCEAUX')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NARALIA', 'COMETE DE LA NOE', \"UN MEC D'HERIPRE\")",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NAPOLIA', 'EMOTTA', 'NEUTRON DU CEBE')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NIGHT DRESS', 'EMOTION', 'READY CASH')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NEWBELL DE HOUELLE', 'BELLE DES LANDES', 'ROYAL DREAM')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NATIVE DU TRIO', 'VOCALISE DU TRIO', 'ERIDAN')",
+      "NON_PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NIKITA DE BEAUM', 'QUINDA LOUISE', 'DAVIDSON DU PONT')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NOT ALLOWED', 'GLORIA DELLA MARIA', 'FABULOUS WOOD')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NIKITA DU POMMEAU', 'UNE LADY DE NAPPES', 'READY CASH')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:(\"NORA D'OLMEN\", \"DIVINE D'ECAJEUL\", 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NIKITA DE MONTCEAU', 'GLORIA DE MONTCEAU', 'UNICLOVE')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NYMPHE DAXEL', 'HYACINTHE DAXEL', 'NIKY')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('NINA DE LA DUNE', 'GEPEATA DU VIVIER', 'IN THE MONEY')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "4398413c8ced51ff882730a8df18d70c471ab13bf1e81a4a84dcb701a302445b",
+  "history_through": "2026-11-12",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          4,
+          12,
+          13,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.04682501246361662,
+          "stage_raw": 0.00940889018273612,
+          "stage_calibrated": 0.009850773375688621
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          4,
+          5,
+          10,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.003030653181079107,
+          "stage_raw": 0.006946662539867353,
+          "stage_calibrated": 0.007387386445986081
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          4,
+          12,
+          13,
+          5,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.04860075438316695,
+          "stage_raw": 0.003741422149310744,
+          "stage_calibrated": 0.003837679002746349
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          4,
+          5,
+          10,
+          11,
+          7
+        ],
+        "probabilities": {
+          "v3": 0.000276081472519099,
+          "stage_raw": 0.0034407006717511986,
+          "stage_calibrated": 0.003580967645961875
+        }
+      }
+    }
+  }
+}
