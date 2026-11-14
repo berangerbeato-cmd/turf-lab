@@ -8,69 +8,54 @@
   ],
   "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
   "primary_model": "available_history_v3",
-  "prediction": "predictions_operational/2026-11-14/2026-11-14_R1C7_20261114T151508361901Z/prediction.json",
-  "race_id": "2026-11-14_R1C7",
-  "predicted_at": "2026-11-14T15:16:38.686561+00:00",
+  "prediction": "predictions_operational/2026-11-14/2026-11-14_R1C9_20261114T164236307916Z/prediction.json",
+  "race_id": "2026-11-14_R1C9",
+  "predicted_at": "2026-11-14T16:44:08.746042+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.011698076480319447,
-        "2": 0.002034378900895007,
-        "3": 0.0403704016833754,
-        "4": 0.06726252047472137,
-        "5": 0.0372397421706603,
-        "6": 0.048612046377082024,
-        "7": 0.06469117433105487,
-        "8": 0.19913445265306529,
-        "9": 0.16587848807229216,
-        "10": 0.04217212835609358,
-        "11": 0.186211624221338,
-        "12": 0.11490139574268651,
-        "13": 0.019793570536415946
+        "1": 0.01751468147264687,
+        "2": 0.03225172086931169,
+        "3": 0.08321133910983894,
+        "4": 0.008997464732295499,
+        "5": 0.1030567939647208,
+        "6": 0.10511694202124564,
+        "7": 0.1257085508967553,
+        "8": 0.5241425069331853
       },
       "role": "benchmark",
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-11-14T15:16:38.686561+00:00"
+      "calculated_at": "2026-11-14T16:44:08.746042+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.003302991656313436,
-        "2": 0.0003088212118844145,
-        "3": 0.0789652425301037,
-        "4": 0.07327522284384784,
-        "5": 0.026159488726548306,
-        "6": 0.05513019528299284,
-        "7": 0.05935722216891859,
-        "8": 0.2984968978829426,
-        "9": 0.11761484647608483,
-        "10": 0.0247758932499533,
-        "11": 0.1731499480594383,
-        "12": 0.0622289922756129,
-        "13": 0.027234237635358947
+        "1": 0.019849346926071442,
+        "2": 0.024624995115612655,
+        "3": 0.03028092763750636,
+        "4": 0.01235968111492849,
+        "5": 0.11078827195459677,
+        "6": 0.057102147290388254,
+        "7": 0.18602003861717606,
+        "8": 0.55897459134372
       },
       "role": "benchmark",
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-11-14T15:16:38.686561+00:00"
+      "calculated_at": "2026-11-14T16:44:08.746042+00:00"
     },
     "available_history_v3": {
       "probabilities": {
-        "1": 0.0024177322167717816,
-        "2": 0.00026112716675013935,
-        "3": 0.0603346230336307,
-        "4": 0.06876366275903803,
-        "5": 0.025991970292232422,
-        "6": 0.048910361025101844,
-        "7": 0.06132562338598569,
-        "8": 0.2599700877299188,
-        "9": 0.1436841010608909,
-        "10": 0.03423307520349139,
-        "11": 0.19270181122919985,
-        "12": 0.06397188752191675,
-        "13": 0.037433937375071696
+        "1": 0.015008038049778157,
+        "2": 0.019006770629229945,
+        "3": 0.030645641185694333,
+        "4": 0.010209508397849268,
+        "5": 0.1097805776982883,
+        "6": 0.04344931056188454,
+        "7": 0.24715590888485572,
+        "8": 0.5247442445924196
       },
       "temperature": 0.9411457597147692,
       "role": "primary",
@@ -79,72 +64,32 @@
       "model_file": "models/available_history_v3/last5_available_dq20.json",
       "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
       "version": "available_history_v3@c6ccc2335485",
-      "calculated_at": "2026-11-14T15:16:38.686561+00:00"
+      "calculated_at": "2026-11-14T16:44:08.746042+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
     "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
-    "number": 8,
-    "model": "classic_full",
-    "probability": 0.5528386383034073,
-    "paid_places": 3,
-    "fair_odds": 1.80884607318489,
-    "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
-    "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places.",
     "role": "legacy_classic_benchmark_only"
   },
-  "scheduled_start": "2026-11-14T16:00:00+00:00",
+  "scheduled_start": "2026-11-14T17:10:00+00:00",
   "history_through": "2026-11-13",
   "individual_history_check": {
     "status": "RESEARCH_HISTORY_WARNING",
     "affected_runners": [
-      1,
-      2,
-      7,
-      10,
-      13
+      3,
+      4,
+      8
     ],
     "runners": [
       {
         "number": 1,
-        "name": "DIVA DEL RONCO",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 44,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 46,
-        "missing_recent_starts": [
-          {
-            "date": "2026-09-20",
-            "venue": "PARIS-VINCENNES",
-            "racecourse_code": "VIN",
-            "race_number": 4,
-            "race_name": "PRIX D'ANCENIS",
-            "discipline": "ATTELE",
-            "distance_m": 2700,
-            "distance_covered_m": 2700,
-            "handicap_m": 0,
-            "start_type": "NON_PRECISE",
-            "rank": 2,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 73.1,
-            "race_time_seconds": 197.0,
-            "driver": "F. LAGADEUC",
-            "trainer": "Vitale CIOTOLA",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 13,
-            "purse_eur": 59000,
-            "race_type": "Course D",
-            "turn": "G",
-            "conditions": "PRIX D'ANCENIS Race 3 Race D European Race 59.000. - Harness, mares. - 2.700 metres (G. P.) 26.550, 14.750, 8.260, 4.720, 2.950, 1.180, 590. For mares aged between 7 and 11 inclusive, who have won less than €231.000. Only mares who have not, in the 12 months preceding the race, been placed, at harness trot, 1st, 2nd or 3rd in a Group I race are eligible to participate in this event.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
+        "name": "JASMINE DE VAU",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 43,
+        "model_recent_starts": 2,
+        "individual_prior_starts_returned": 38,
+        "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
@@ -154,9 +99,9 @@
         ],
         "supplemented_recent_features_for_research": [
           0.0,
-          1.0,
           0.0,
-          4.02535169073515,
+          0.0,
+          2.639057329615259,
           0.4
         ],
         "frozen_features_unchanged": true,
@@ -165,162 +110,11 @@
       },
       {
         "number": 2,
-        "name": "HANNAH",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 106,
+        "name": "JANE AIMEE",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 48,
         "model_recent_starts": 2,
-        "individual_prior_starts_returned": 67,
-        "missing_recent_starts": [
-          {
-            "date": "2026-09-27",
-            "venue": "PARIS-VINCENNES",
-            "racecourse_code": "VIN",
-            "race_number": 4,
-            "race_name": "GRAND PRIX DU PORTUGAL (OVIDIUS NASO)",
-            "discipline": "ATTELE",
-            "distance_m": 2700,
-            "distance_covered_m": 2700,
-            "handicap_m": 0,
-            "start_type": "NON_PRECISE",
-            "rank": 9,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 73.1,
-            "race_time_seconds": 197.0,
-            "driver": "JULIEN RAFFESTIN",
-            "trainer": "Julien RAFFESTIN",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 15,
-            "purse_eur": 75000,
-            "race_type": "Course B",
-            "turn": "G",
-            "conditions": "PRIX OVIDIUS NASO Race 2 Race B European Race 75.000. - Harness. - 2.700 metres (G. P.) 33.750, 18.750, 10.500, 6.000, 3.750, 1.500, 750. For horses aged between 7 and 11 inclusive, who have won less than €420.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-14",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2022-07-22",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          3.4965075614664802,
-          0.6
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 3,
-        "name": "HURRICANE CARTER",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 49,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 47,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-14",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2021-08-22",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-08-14",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          3.828641396489095,
-          0.2
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 4,
-        "name": "INDUS VAL",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 68,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 67,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-14",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2021-09-27",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          3.4657359027997265,
-          0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 5,
-        "name": "INVICTUS MADIBA",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 82,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 72,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-14",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          3.828641396489095,
-          0.2
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 6,
-        "name": "HORATIUS D'ELA",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 95,
-        "model_recent_starts": 3,
-        "individual_prior_starts_returned": 92,
+        "individual_prior_starts_returned": 34,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
@@ -334,19 +128,19 @@
           0.0,
           0.0,
           2.3978952727983707,
-          0.6
+          0.4
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 7,
-        "name": "JANGO VICI",
+        "number": 3,
+        "name": "IVRIG VIKING",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 69,
-        "model_recent_starts": 3,
-        "individual_prior_starts_returned": 68,
+        "snapshot_career_starts": 61,
+        "model_recent_starts": 2,
+        "individual_prior_starts_returned": 48,
         "missing_recent_starts": [
           {
             "date": "2026-11-02",
@@ -356,18 +150,18 @@
             "race_name": "PRIX MEDUSA",
             "discipline": "ATTELE",
             "distance_m": 2850,
-            "distance_covered_m": 2875,
-            "handicap_m": 25,
+            "distance_covered_m": 2850,
+            "handicap_m": 0,
             "start_type": "NON_PRECISE",
-            "rank": 1,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 73.2,
-            "race_time_seconds": 210.0,
-            "driver": "K. ACHARD",
-            "trainer": "A. RIPOLL RIGO",
-            "shoes_raw": "6",
-            "shoes": "PA_DP",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "G. BAUDOUIN",
+            "trainer": "J.M. BAUDOUIN",
+            "shoes_raw": "3",
+            "shoes": "D4",
             "field_size": 16,
             "purse_eur": 54000,
             "race_type": "Course D",
@@ -384,27 +178,96 @@
           {
             "date": "2026-11-14",
             "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-03-20",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2024-06-30",
+            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.5,
-          0.5,
           0.0,
+          0.0,
+          1.0,
           2.5649493574615367,
-          0.8
+          0.6
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 8,
-        "name": "JILORD VIVA",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 66,
+        "number": 4,
+        "name": "INFERNO PIPER",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 34,
         "model_recent_starts": 2,
-        "individual_prior_starts_returned": 66,
-        "missing_recent_starts": [],
+        "individual_prior_starts_returned": 34,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-29",
+            "venue": "PARIS-VINCENNES",
+            "racecourse_code": "VIN",
+            "race_number": 8,
+            "race_name": "PRIX DE SOULAC",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 9,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 73.6,
+            "race_time_seconds": 198.0,
+            "driver": "S. FERRARA",
+            "trainer": "V. MARTENS",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 12,
+            "purse_eur": 68000,
+            "race_type": "Course C",
+            "turn": "G",
+            "conditions": "PRIX DE SOULAC Race 5 Class C 68.000. - Harness. - 2.700 metres (G. P.) 30.600, 17.000, 9.520, 5.440, 3.400, 1.360, 680. For horses aged between 7 and 10 inclusive, who have won less than €310.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 3
+          },
+          {
+            "date": "2026-10-02",
+            "venue": "MARSEILLE-BORELY",
+            "racecourse_code": "BOR",
+            "race_number": 8,
+            "race_name": "PRIX DES URSINIAS",
+            "discipline": "ATTELE",
+            "distance_m": 3000,
+            "distance_covered_m": 3000,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 9,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.0,
+            "race_time_seconds": 225.0,
+            "driver": "S. FERRARA",
+            "trainer": "V. MARTENS",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 12,
+            "purse_eur": 45000,
+            "race_type": "Course B",
+            "turn": "G",
+            "conditions": "PRIX DES URSINIAS Race 8 Class B European Race 45.000. - Harness. - 3.000 metres. 20.250, 11.250, 6.300, 3.600, 2.250, 900, 450.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than €410.000. Only drivers who have won at least ten races (and who hold a professional licence) are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 3
+          }
+        ],
         "conflicts": [],
         "excluded": [
           {
@@ -413,22 +276,22 @@
           }
         ],
         "supplemented_recent_features_for_research": [
-          1.0,
-          1.0,
           0.0,
-          3.828641396489095,
-          0.4
+          0.0,
+          0.0,
+          2.833213344056216,
+          0.8
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 9,
-        "name": "ISOFOU DU CHENE",
+        "number": 5,
+        "name": "JAPPELOUP TURGOT",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
         "snapshot_career_starts": 53,
-        "model_recent_starts": 1,
+        "model_recent_starts": 0,
         "individual_prior_starts_returned": 53,
         "missing_recent_starts": [],
         "conflicts": [],
@@ -439,10 +302,36 @@
           }
         ],
         "supplemented_recent_features_for_research": [
+          null,
+          null,
+          null,
+          null,
+          0.0
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 6,
+        "name": "KID BELLAY",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 40,
+        "model_recent_starts": 1,
+        "individual_prior_starts_returned": 25,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-14",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
           0.0,
           0.0,
           0.0,
-          2.639057329615259,
+          4.02535169073515,
           0.2
         ],
         "frozen_features_unchanged": true,
@@ -450,38 +339,72 @@
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 10,
-        "name": "HARLEM DE BUCY",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 54,
+        "number": 7,
+        "name": "JE TE CHERCHE",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 30,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 50,
+        "individual_prior_starts_returned": 28,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-14",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2022-08-15",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2022-06-12",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.0,
+          2.70805020110221,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 8,
+        "name": "JIZOU D'ETANG",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 47,
+        "model_recent_starts": 1,
+        "individual_prior_starts_returned": 47,
         "missing_recent_starts": [
           {
-            "date": "2026-10-24",
-            "venue": "SALON-DE-PROVENCE",
-            "racecourse_code": "SAL",
-            "race_number": 8,
-            "race_name": "GRAND PRIX DE SALON DE PROVENCE",
+            "date": "2026-10-02",
+            "venue": "PARIS-VINCENNES",
+            "racecourse_code": "VIN",
+            "race_number": 1,
+            "race_name": "PRIX CHARLEY MILLS",
             "discipline": "ATTELE",
-            "distance_m": 3000,
-            "distance_covered_m": 3025,
-            "handicap_m": 25,
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
             "start_type": "NON_PRECISE",
-            "rank": 4,
+            "rank": 1,
             "arrival_status": "PLACE",
             "disqualified": false,
-            "seconds_per_km": 73.8,
-            "race_time_seconds": 223.0,
-            "driver": "J.CH. SOREL",
-            "trainer": "D. ALEXANDRE",
+            "seconds_per_km": 71.3,
+            "race_time_seconds": 192.0,
+            "driver": "D. THOMAIN",
+            "trainer": "CH. BIGEON",
             "shoes_raw": "3",
             "shoes": "D4",
             "field_size": 13,
-            "purse_eur": 64000,
-            "race_type": null,
-            "turn": "D",
-            "conditions": "GRAND PRIX DE SALON DE PROVENCE Race 7 PRIX ROLAND JAFFRELOT - RACE AND CARE Group III European Race 64.000. - Harness. - 3.000 metres. 28.800, 16.000, 8.960, 5.120, 3.200, 1.280, 640.- allocated by the S.E.T.F. For horses aged between 6 and 11 inclusive, who have won less than €900.000. - 25 meters behind for horses who have won more than €260.000, 50 meters behind for horses who have won more than €600.000. Only drivers who have won at least ten races (and who hold a professional licence) are eligible to drive.",
+            "purse_eur": 75000,
+            "race_type": "Course B",
+            "turn": "G",
+            "conditions": "PRIX CHARLEY MILLS Race 1 Class B European Race 75.000. - Harness. - 2.700 metres (G. P.) 33.750, 18.750, 10.500, 6.000, 3.750, 1.500, 750. For horses aged between 6 and 11 inclusive, who have won less than €335.000.",
             "track_condition": {
               "measureTimestamp": 0
             },
@@ -493,184 +416,21 @@
           {
             "date": "2026-11-14",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2020-07-19",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          3.091042453358316,
-          0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 11,
-        "name": "IBISCUS MAN",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 81,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 68,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-14",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2023-02-16",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2021-07-04",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-07-20",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.5,
+          1.0,
           1.0,
           0.0,
-          2.3978952727983707,
+          3.784189633918261,
           0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 12,
-        "name": "KING OPERA",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 53,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 53,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-14",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.5,
-          0.5,
-          2.639057329615259,
-          0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 13,
-        "name": "HUBBLE DU VIVIER",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 72,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 69,
-        "missing_recent_starts": [
-          {
-            "date": "2026-11-02",
-            "venue": "PARIS-VINCENNES",
-            "racecourse_code": "VIN",
-            "race_number": 6,
-            "race_name": "PRIX MEDUSA",
-            "discipline": "ATTELE",
-            "distance_m": 2850,
-            "distance_covered_m": 2875,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": 13,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 74.7,
-            "race_time_seconds": 214.0,
-            "driver": "MARIUS METAYER",
-            "trainer": "N. BAZIRE",
-            "shoes_raw": null,
-            "shoes": null,
-            "field_size": 16,
-            "purse_eur": 54000,
-            "race_type": "Course D",
-            "turn": "G",
-            "conditions": "PRIX MEDUSA Race 2 Class D Challenge Marolles-en-Brie - ParisTurf APPRENTIS-LADS-JOCKEYS 54.000. - Harness. - 2.850 metres (G. P.) 24.300, 13.500, 7.560, 4.320, 2.700, 1.080, 540. For horses aged between 5 and 10 inclusive, who have won less than €700.000, and who have not won €20.000 since 31 May inclusive, horses aged 5 and 6 who have won at least €38.000. - 25 meters behind for horses who have won more than €325.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 3
-          },
-          {
-            "date": "2026-10-29",
-            "venue": "PARIS-VINCENNES",
-            "racecourse_code": "VIN",
-            "race_number": 1,
-            "race_name": "PRIX DES CEVENNES",
-            "discipline": "ATTELE",
-            "distance_m": 2850,
-            "distance_covered_m": 2850,
-            "handicap_m": 0,
-            "start_type": "NON_PRECISE",
-            "rank": 13,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 74.2,
-            "race_time_seconds": 211.0,
-            "driver": "Mme T. MATHIAS-MAISONNETTE",
-            "trainer": "N. BAZIRE",
-            "shoes_raw": null,
-            "shoes": null,
-            "field_size": 14,
-            "purse_eur": 90000,
-            "race_type": null,
-            "turn": "G",
-            "conditions": "PRIX DES CEVENNES Race 8 Group III European Race 90.000. - Harness. - 2.850 metres (G. P.) 40.500, 22.500, 12.600, 7.200, 4.500, 1.800, 900. For horses aged between 6 and 10 inclusive, who have won at least €130.000 but less than €1.200.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 3
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-14",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2023-04-23",
-            "reason": "unknown_outcome"
-          },
-          {
-            "date": "2020-07-19",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          2.5649493574615367,
-          0.8
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       }
     ],
-    "evidence_manifest": "predictions_operational/2026-11-14/2026-11-14_R1C7_20261114T151508361901Z/individual_history_evidence/manifest.json",
+    "evidence_manifest": "predictions_operational/2026-11-14/2026-11-14_R1C9_20261114T164236307916Z/individual_history_evidence/manifest.json",
     "market_independent": true,
     "frozen_features_changed": false,
     "recommendations_allowed": false
@@ -678,69 +438,44 @@
   "runners": [
     {
       "number": 1,
-      "name": "DIVA DEL RONCO",
+      "name": "JASMINE DE VAU",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "HANNAH",
+      "name": "JANE AIMEE",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "HURRICANE CARTER",
+      "name": "IVRIG VIKING",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "INDUS VAL",
+      "name": "INFERNO PIPER",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "INVICTUS MADIBA",
+      "name": "JAPPELOUP TURGOT",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "HORATIUS D'ELA",
+      "name": "KID BELLAY",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "JANGO VICI",
+      "name": "JE TE CHERCHE",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "JILORD VIVA",
-      "status": "PARTANT"
-    },
-    {
-      "number": 9,
-      "name": "ISOFOU DU CHENE",
-      "status": "PARTANT"
-    },
-    {
-      "number": 10,
-      "name": "HARLEM DE BUCY",
-      "status": "PARTANT"
-    },
-    {
-      "number": 11,
-      "name": "IBISCUS MAN",
-      "status": "PARTANT"
-    },
-    {
-      "number": 12,
-      "name": "KING OPERA",
-      "status": "PARTANT"
-    },
-    {
-      "number": 13,
-      "name": "HUBBLE DU VIVIER",
+      "name": "JIZOU D'ETANG",
       "status": "PARTANT"
     }
   ],
-  "request_id": "chat-20261114-r1c7-1613-v3-stage"
+  "request_id": "chat-20261114-r1c9-1741-v3-rank"
 }

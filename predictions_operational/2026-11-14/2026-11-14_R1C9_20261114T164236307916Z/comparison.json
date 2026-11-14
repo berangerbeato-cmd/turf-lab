@@ -1,0 +1,274 @@
+{
+  "value_shadow": {
+    "status": "UNAVAILABLE",
+    "reason": "Quote more than 15 minutes before start",
+    "recommendations_allowed": false
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-14_R1C9",
+  "observed_at": "2026-11-14T17:41:00+01:00",
+  "calculated_at": "2026-11-14T16:44:11.472455+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 5,
+      "name": "JAPPELOUP TURGOT",
+      "odds": 47.6,
+      "models": {
+        "v6": {
+          "probability": 0.1030567939647208,
+          "fair_odds": 9.70338743840923,
+          "ev": 3.9055033927207097,
+          "implied_raw": 0.021008403361344536,
+          "difference_pp": 8.204839060337626,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.11078827195459677,
+          "fair_odds": 9.026226173198367,
+          "ev": 4.273521745038806,
+          "implied_raw": 0.021008403361344536,
+          "difference_pp": 8.977986859325224,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.1097805776982883,
+          "fair_odds": 9.109079410643254,
+          "ev": 4.225555498438523,
+          "implied_raw": 0.021008403361344536,
+          "difference_pp": 8.877217433694378,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "JIZOU D'ETANG",
+      "odds": 2.1,
+      "models": {
+        "v6": {
+          "probability": 0.5241425069331853,
+          "fair_odds": 1.9078780804310425,
+          "ev": 0.10069926455968914,
+          "implied_raw": 0.47619047619047616,
+          "difference_pp": 4.7952030742709155,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.55897459134372,
+          "fair_odds": 1.7889900819929907,
+          "ev": 0.17384664182181186,
+          "implied_raw": 0.47619047619047616,
+          "difference_pp": 8.278411515324379,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.5247442445924196,
+          "fair_odds": 1.9056902677926881,
+          "ev": 0.10196291364408139,
+          "implied_raw": 0.47619047619047616,
+          "difference_pp": 4.855376840194348,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "KID BELLAY",
+      "odds": 22.1,
+      "models": {
+        "v6": {
+          "probability": 0.10511694202124564,
+          "fair_odds": 9.513214337969284,
+          "ev": 1.3230844186695285,
+          "implied_raw": 0.04524886877828054,
+          "difference_pp": 5.986807324296509,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.057102147290388254,
+          "fair_odds": 17.512476280700664,
+          "ev": 0.2619574551175805,
+          "implied_raw": 0.04524886877828054,
+          "difference_pp": 1.1853278512107712,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.04344931056188454,
+          "fair_odds": 23.015324916967494,
+          "ev": -0.03977023658235168,
+          "implied_raw": 0.04524886877828054,
+          "difference_pp": -0.1799558216396005,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "INFERNO PIPER",
+      "odds": 72.8,
+      "models": {
+        "v6": {
+          "probability": 0.008997464732295499,
+          "fair_odds": 111.14241953187103,
+          "ev": -0.34498456748888773,
+          "implied_raw": 0.013736263736263736,
+          "difference_pp": -0.4738799003968237,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.01235968111492849,
+          "fair_odds": 80.90823628064014,
+          "ev": -0.10021521483320606,
+          "implied_raw": 0.013736263736263736,
+          "difference_pp": -0.13765826213352467,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.010209508397849268,
+          "fair_odds": 97.94790905022025,
+          "ev": -0.2567477886365733,
+          "implied_raw": 0.013736263736263736,
+          "difference_pp": -0.3526755338414468,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "IVRIG VIKING",
+      "odds": 22.1,
+      "models": {
+        "v6": {
+          "probability": 0.08321133910983894,
+          "fair_odds": 12.017592923002962,
+          "ev": 0.8389705943274406,
+          "implied_raw": 0.04524886877828054,
+          "difference_pp": 3.7962470331558396,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03028092763750636,
+          "fair_odds": 33.02408737179461,
+          "ev": -0.3307914992111094,
+          "implied_raw": 0.04524886877828054,
+          "difference_pp": -1.4967941140774181,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.030645641185694333,
+          "fair_odds": 32.6310679532073,
+          "ev": -0.32273132979615515,
+          "implied_raw": 0.04524886877828054,
+          "difference_pp": -1.460322759258621,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "JANE AIMEE",
+      "odds": 33.5,
+      "models": {
+        "v6": {
+          "probability": 0.03225172086931169,
+          "fair_odds": 31.00609744367237,
+          "ev": 0.08043264912194159,
+          "implied_raw": 0.029850746268656716,
+          "difference_pp": 0.24009746006549737,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.024624995115612655,
+          "fair_odds": 40.60914511069216,
+          "ev": -0.1750626636269761,
+          "implied_raw": 0.029850746268656716,
+          "difference_pp": -0.522575115304406,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.019006770629229945,
+          "fair_odds": 52.612830422761554,
+          "ev": -0.3632731839207969,
+          "implied_raw": 0.029850746268656716,
+          "difference_pp": -1.084397563942677,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "JE TE CHERCHE",
+      "odds": 2,
+      "models": {
+        "v6": {
+          "probability": 0.1257085508967553,
+          "fair_odds": 7.954908340493894,
+          "ev": -0.7485828982064894,
+          "implied_raw": 0.5,
+          "difference_pp": -37.42914491032447,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.18602003861717606,
+          "fair_odds": 5.375764930669494,
+          "ev": -0.6279599227656478,
+          "implied_raw": 0.5,
+          "difference_pp": -31.39799613828239,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.24715590888485572,
+          "fair_odds": 4.0460291016787995,
+          "ev": -0.5056881822302886,
+          "implied_raw": 0.5,
+          "difference_pp": -25.284409111514428,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "name": "JASMINE DE VAU",
+      "odds": 23.7,
+      "models": {
+        "v6": {
+          "probability": 0.01751468147264687,
+          "fair_odds": 57.09495782505242,
+          "ev": -0.5849020490982693,
+          "implied_raw": 0.04219409282700422,
+          "difference_pp": -2.467941135435735,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.019849346926071442,
+          "fair_odds": 50.37949126107187,
+          "ev": -0.5295704778521069,
+          "implied_raw": 0.04219409282700422,
+          "difference_pp": -2.2344745900932774,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.015008038049778157,
+          "fair_odds": 66.63096113450896,
+          "ev": -0.6443094982202577,
+          "implied_raw": 0.04219409282700422,
+          "difference_pp": -2.718605477722606,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
