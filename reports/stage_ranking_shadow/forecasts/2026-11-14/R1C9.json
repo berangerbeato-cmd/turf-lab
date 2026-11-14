@@ -1,0 +1,116 @@
+{
+  "race_id": "2026-11-14_R1C9",
+  "date": "2026-11-14",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-14T15:50:51.676017+00:00",
+  "predicted_at": "2026-11-14T15:51:10.692359+00:00",
+  "scheduled_start": "2026-11-14T17:10:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('JASMINE DE VAU', \"VABELLE D'OSTAL\", 'SEDUISANT FOUTEAU')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('JANE AIMEE', 'ORANGE AMERE', 'PACHA DU PONT')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('IVRIG VIKING', 'TOUNA DU BIWETZ', 'ROCKLYN')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('INFERNO PIPER', 'TROIANA PIPER', 'COUP DE POKER')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('JAPPELOUP TURGOT', 'DOUCHKA TURGOT', 'UP AND QUICK')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('KID BELLAY', 'AUGUSTA', 'GOETMALS WOOD')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('JE TE CHERCHE', 'RETURN MONEY', 'LOVE YOU')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:(\"JIZOU D'ETANG\", 'NAZOULENE', 'PARIS HAUFOR')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "122f82072a512b565267f64b261862429931436882b5b2c9fe5d1c1bb64bf4a8",
+  "history_through": "2026-11-13",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          8,
+          7,
+          5,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.27676640723350976,
+          "stage_raw": 0.11269365723064344,
+          "stage_calibrated": 0.1193754251820853
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          7,
+          5,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.08929600233587848,
+          "stage_raw": 0.1366459943164825,
+          "stage_calibrated": 0.14869490043168984
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          8,
+          7,
+          5,
+          6,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.2589916996729072,
+          "stage_raw": 0.04874274070937063,
+          "stage_calibrated": 0.04916131695591455
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          7,
+          5,
+          1,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.02125950053189001,
+          "stage_raw": 0.08391520545349693,
+          "stage_calibrated": 0.08739247778516725
+        }
+      }
+    }
+  }
+}
