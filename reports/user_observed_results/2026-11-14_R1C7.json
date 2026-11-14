@@ -1,0 +1,99 @@
+{
+  "race_id": "2026-11-14_R1C7",
+  "venue": "Vincennes",
+  "discipline": "ATTELE",
+  "result_status": "USER_SCREENSHOT_UNVERIFIED_OFFICIAL",
+  "evidence": "User-provided results screenshot in this conversation (IMG_2579.jpeg), presented at approximately 17:30 Europe/Paris, 2026-11-14",
+  "arrival_first_7": [
+    11,
+    8,
+    3,
+    13,
+    5,
+    12,
+    7
+  ],
+  "forecast_sources": {
+    "winning_model": "predictions_operational/2026-11-14/2026-11-14_R1C7_20261114T151508361901Z/prediction.json",
+    "rank_model": "reports/stage_ranking_shadow/forecasts/2026-11-14/R1C7.json",
+    "quotes": "config/prediction_request.json (quotes captured 16:13 Europe/Paris on race day)"
+  },
+  "predictions": {
+    "v3_win_pick": 8,
+    "v3_win_pick_finish": 2,
+    "v3_top3": [
+      8,
+      11,
+      9
+    ],
+    "v3_top4": [
+      8,
+      11,
+      9,
+      4
+    ],
+    "v3_top5": [
+      8,
+      11,
+      9,
+      4,
+      12
+    ],
+    "stage_v2_top5": [
+      8,
+      11,
+      9,
+      4,
+      3
+    ],
+    "selected_ze5": [
+      8,
+      11,
+      9,
+      4,
+      3
+    ]
+  },
+  "evaluation": {
+    "win_pick_correct": false,
+    "v3_top3_hits": 2,
+    "v3_top4_hits": 2,
+    "v3_top5_hits": 3,
+    "stage_v2_top5_hits": 3,
+    "ze5_unordered_hit": false,
+    "v3_top5_unordered_hit": false,
+    "top3_8_11_9_unordered_hit": false,
+    "runners_in_exact_top5_ze5": [
+      11,
+      8,
+      3
+    ],
+    "note": "No exact Top4/Top5 combination success. Rank model top5 had 3/5 but missed 13 and 5. First two finishers were 11 and 8, reversed from V3 win ranks."
+  },
+  "stake_tracking": {
+    "actual_stakes_confirmed": false,
+    "actual_profit_eur": null,
+    "offered_example_win_tickets": [
+      {
+        "number": 8,
+        "stake_eur": 4
+      },
+      {
+        "number": 4,
+        "stake_eur": 3
+      },
+      {
+        "number": 3,
+        "stake_eur": 2
+      },
+      {
+        "number": 6,
+        "stake_eur": 1
+      }
+    ],
+    "offered_example_total_eur": 10,
+    "example_outcome_if_all_purchased": "-10 EUR on the four SG win bets. ZE5 ticket also loses if purchased; any ZE5 amount must not be double-counted within a shared 10 EUR budget.",
+    "note": "Suggested/example stakes are not confirmed bets. Bet settlement requires operator receipts."
+  },
+  "official_scoring": "Leave workflow's prospective scoring pending until independent official result ingestion."
+}
