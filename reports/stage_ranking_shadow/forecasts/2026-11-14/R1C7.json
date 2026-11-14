@@ -1,0 +1,157 @@
+{
+  "race_id": "2026-11-14_R1C7",
+  "date": "2026-11-14",
+  "status": "PRESTART_SHADOW",
+  "source": "On-demand frozen stage-ranking V2 on verified operational V3 features",
+  "request_id": "chat-20261114-r1c7-1613-v3-stage",
+  "predicted_at": "2026-11-14T15:16:38.686561+00:00",
+  "scheduled_start": "2026-11-14T16:00:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('DIVA DEL RONCO', 'MAGIC VISION LF', 'VARENNE')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('HANNAH', 'ROCCA CHICA', 'VULCAIN DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('HURRICANE CARTER', 'BE LOVED', 'NIKY')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('INDUS VAL', 'BAYADERE', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('INVICTUS MADIBA', 'BATIGNOLLES', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:(\"HORATIUS D'ELA\", \"ONDINE D'URZY\", 'BRILLANTISSIME')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('JANGO VICI', 'TABARKA VICI', 'DRAGON DES RACQUES')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('JILORD VIVA', 'UZA VIVA', 'VULCAIN DU VIVIER')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('ISOFOU DU CHENE', 'ALISA DU CHENE', 'UN CHARME FOU')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('HARLEM DE BUCY', 'ROMA DU HOULBET', 'LILIUM MADRIK')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('IBISCUS MAN', 'CATHY WOMAN', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('KING OPERA', 'UNLIMITED JET', 'READY CASH')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('HUBBLE DU VIVIER', 'MINNIE DU VIVIER', 'VULCAIN DU VIVIER')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "1e02fd5128a2bed46242c28deac38d9dbeb5fe28569eef49aa2842ca90021457",
+  "history_through": "2026-11-13",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          8,
+          11,
+          9,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.04531309800535789,
+          "stage_raw": 0.029179573154205267,
+          "stage_calibrated": 0.03262658907760019
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          11,
+          9,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.04531309800535789,
+          "stage_raw": 0.029179573154205267,
+          "stage_calibrated": 0.03262658907760019
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          8,
+          11,
+          9,
+          4,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.03089932248183627,
+          "stage_raw": 0.012754712273004398,
+          "stage_calibrated": 0.013714416886077288
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          8,
+          11,
+          9,
+          4,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.028806992915153668,
+          "stage_raw": 0.01858720456590398,
+          "stage_calibrated": 0.020356930059937592
+        }
+      }
+    }
+  },
+  "extra_top3": {
+    "v3": [
+      8,
+      11,
+      9
+    ],
+    "stage_raw": [
+      8,
+      11,
+      9
+    ],
+    "calibrated_probability": 0.0697569923124252
+  },
+  "recommendations_allowed": false,
+  "limitations": "Research only; stage ranking exploratory, frozen; no stake or payouts inferred."
+}
