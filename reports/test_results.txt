@@ -83,6 +83,10 @@ test_dead_heat_is_archived (test_history_sync.HistorySyncTests.test_dead_heat_is
 test_gap_blocks_ok_even_when_yesterday_complete (test_history_sync.HistorySyncTests.test_gap_blocks_ok_even_when_yesterday_complete) ... ok
 test_repair_skips_verified_race_and_is_idempotent (test_history_sync.HistorySyncTests.test_repair_skips_verified_race_and_is_idempotent) ... ok
 test_unknown_programme_not_zero_races (test_history_sync.HistorySyncTests.test_unknown_programme_not_zero_races) ... ok
+test_conflict_not_hidden_by_alias (test_history_venue_aliases.VenueAliases.test_conflict_not_hidden_by_alias) ... ok
+test_different_race_number_not_merged (test_history_venue_aliases.VenueAliases.test_different_race_number_not_merged) ... ok
+test_exact_aliases (test_history_venue_aliases.VenueAliases.test_exact_aliases) ... ok
+test_two_dqs_already_present_no_duplicates (test_history_venue_aliases.VenueAliases.test_two_dqs_already_present_no_duplicates) ... ok
 test_frozen_model_tampering_blocks_evaluation (test_holdout_opposition.HoldoutOppositionTests.test_frozen_model_tampering_blocks_evaluation) ... ok
 test_holdout_is_disjoint_and_chosen_before_collection (test_holdout_opposition.HoldoutOppositionTests.test_holdout_is_disjoint_and_chosen_before_collection) ... ok
 test_ambiguous_odds_rejected (test_manual_value.ManualValueTests.test_ambiguous_odds_rejected) ... ok
@@ -157,6 +161,17 @@ test_complete_history_accepted (test_recent_history.RecentHistoryTests.test_comp
 test_missing_and_incomplete_fail_closed (test_recent_history.RecentHistoryTests.test_missing_and_incomplete_fail_closed) ... ok
 test_yesterday_only (test_recent_history.RecentHistoryTests.test_yesterday_only) ... ok
 test_failure_cannot_be_reported_as_previous_success (test_request_status.RequestStatus.test_failure_cannot_be_reported_as_previous_success) ... ERROR
+test_actual_dividend_and_drawdown (test_sg_strategy_comparison.Strategies.test_actual_dividend_and_drawdown) ... ok
+test_after_start_rejected (test_sg_strategy_comparison.Strategies.test_after_start_rejected) ... ok
+test_dead_heat_actual_paid_reports (test_sg_strategy_comparison.Strategies.test_dead_heat_actual_paid_reports) ... ok
+test_exact_thresholds_and_rank_before_ev (test_sg_strategy_comparison.Strategies.test_exact_thresholds_and_rank_before_ev) ... ok
+test_missing_payout_pending (test_sg_strategy_comparison.Strategies.test_missing_payout_pending) ... ok
+test_missing_quote_rejected (test_sg_strategy_comparison.Strategies.test_missing_quote_rejected) ... ok
+test_model_change_rejected (test_sg_strategy_comparison.Strategies.test_model_change_rejected) ... ok
+test_old_quote_rejected (test_sg_strategy_comparison.Strategies.test_old_quote_rejected) ... ok
+test_partial_settlement_pending (test_sg_strategy_comparison.Strategies.test_partial_settlement_pending) ... ok
+test_seen_race_rejected (test_sg_strategy_comparison.Strategies.test_seen_race_rejected) ... ok
+test_wrong_operator_rejected (test_sg_strategy_comparison.Strategies.test_wrong_operator_rejected) ... ok
 test_changed_field_never_renormalized_after_result (test_shadow.ShadowTests.test_changed_field_never_renormalized_after_result) ... ok
 test_correct_scoring_and_dq (test_shadow.ShadowTests.test_correct_scoring_and_dq) ... ok
 test_late_prediction_rejected (test_shadow.ShadowTests.test_late_prediction_rejected) ... ok
@@ -368,7 +383,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 208 tests in 0.276s
+Ran 223 tests in 0.245s
 
 FAILED (errors=10, skipped=7)
 Outside fixed cohort dates; no requests
