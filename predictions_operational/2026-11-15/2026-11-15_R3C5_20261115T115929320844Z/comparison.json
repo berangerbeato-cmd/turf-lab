@@ -1,0 +1,460 @@
+{
+  "value_shadow": {
+    "status": "UNAVAILABLE",
+    "reason": "Nonrunner or uncertain field",
+    "recommendations_allowed": false
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-15_R3C5",
+  "observed_at": "2026-11-15T12:51:00+01:00",
+  "calculated_at": "2026-11-15T12:01:08.366072+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 14,
+      "name": "IRON D'ESPOIR",
+      "odds": 139,
+      "models": {
+        "v6": {
+          "probability": 0.028686756778738418,
+          "fair_odds": 34.8592909164679,
+          "ev": 2.98745919224464,
+          "implied_raw": 0.007194244604316547,
+          "difference_pp": 2.149251217442187,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03478650116303073,
+          "fair_odds": 28.7467829924427,
+          "ev": 3.8353236616612714,
+          "implied_raw": 0.007194244604316547,
+          "difference_pp": 2.7592256558714183,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03218079050103648,
+          "fair_odds": 31.07443864586832,
+          "ev": 3.4731298796440706,
+          "implied_raw": 0.007194244604316547,
+          "difference_pp": 2.498654589671993,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "name": "HELIOS D'ELA",
+      "odds": 51.9,
+      "models": {
+        "v6": {
+          "probability": 0.11319847723835326,
+          "fair_odds": 8.83404109663399,
+          "ev": 4.875000968670534,
+          "implied_raw": 0.01926782273603083,
+          "difference_pp": 9.393065450232244,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.07086219362109174,
+          "fair_odds": 14.111897316460658,
+          "ev": 2.677747848934661,
+          "implied_raw": 0.01926782273603083,
+          "difference_pp": 5.159437088506091,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.06328619154909054,
+          "fair_odds": 15.801235238247964,
+          "ev": 2.284553341397799,
+          "implied_raw": 0.01926782273603083,
+          "difference_pp": 4.401836881305972,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "name": "HOLDING GIRL",
+      "odds": 100,
+      "models": {
+        "v6": {
+          "probability": 0.020372232999111176,
+          "fair_odds": 49.08642071998829,
+          "ev": 1.0372232999111177,
+          "implied_raw": 0.01,
+          "difference_pp": 1.0372232999111175,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.027432187409587493,
+          "fair_odds": 36.45352756851253,
+          "ev": 1.7432187409587492,
+          "implied_raw": 0.01,
+          "difference_pp": 1.7432187409587492,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.028523704242195764,
+          "fair_odds": 35.05856011929465,
+          "ev": 1.8523704242195764,
+          "implied_raw": 0.01,
+          "difference_pp": 1.8523704242195764,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "ILTON CASH",
+      "odds": 25.1,
+      "models": {
+        "v6": {
+          "probability": 0.11714354452173716,
+          "fair_odds": 8.536535274587324,
+          "ev": 1.9403029674956027,
+          "implied_raw": 0.0398406374501992,
+          "difference_pp": 7.730290707153794,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09611866622496339,
+          "fair_odds": 10.403806453780001,
+          "ev": 1.412578522246581,
+          "implied_raw": 0.0398406374501992,
+          "difference_pp": 5.627802877476419,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.10155481269084005,
+          "fair_odds": 9.846899162172322,
+          "ev": 1.5490257985400855,
+          "implied_raw": 0.0398406374501992,
+          "difference_pp": 6.1714175240640845,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 15,
+      "name": "HOCKFELER DU MESLE",
+      "odds": 97,
+      "models": {
+        "v6": {
+          "probability": 0.019648562888157806,
+          "fair_odds": 50.894307420452634,
+          "ev": 0.9059106001513071,
+          "implied_raw": 0.010309278350515464,
+          "difference_pp": 0.9339284537642342,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.013265411761750149,
+          "fair_odds": 75.38401505812487,
+          "ev": 0.28674494088976443,
+          "implied_raw": 0.010309278350515464,
+          "difference_pp": 0.2956133411234685,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.01850590157736742,
+          "fair_odds": 54.03681608374015,
+          "ev": 0.7950724530046396,
+          "implied_raw": 0.010309278350515464,
+          "difference_pp": 0.8196623226851956,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "HAMIGO",
+      "odds": 14,
+      "models": {
+        "v6": {
+          "probability": 0.0794703084124288,
+          "fair_odds": 12.583315957581013,
+          "ev": 0.11258431777400313,
+          "implied_raw": 0.07142857142857142,
+          "difference_pp": 0.8041736983857378,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09525793825463998,
+          "fair_odds": 10.497812763140404,
+          "ev": 0.3336111355649596,
+          "implied_raw": 0.07142857142857142,
+          "difference_pp": 2.382936682606855,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.09824119651493175,
+          "fair_odds": 10.179029118889133,
+          "ev": 0.37537675120904446,
+          "implied_raw": 0.07142857142857142,
+          "difference_pp": 2.6812625086360327,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "HISTORIC DAY",
+      "odds": 8.4,
+      "models": {
+        "v6": {
+          "probability": 0.10088615488145303,
+          "fair_odds": 9.912162884739308,
+          "ev": -0.15255629899579448,
+          "implied_raw": 0.11904761904761904,
+          "difference_pp": -1.8161464166166015,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.15382754931135786,
+          "fair_odds": 6.500786136662225,
+          "ev": 0.292151414215406,
+          "implied_raw": 0.11904761904761904,
+          "difference_pp": 3.4779930263738823,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.1337776021921216,
+          "fair_odds": 7.475092867667588,
+          "ev": 0.1237318584138214,
+          "implied_raw": 0.11904761904761904,
+          "difference_pp": 1.4729983144502552,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "name": "HAPPY FACE",
+      "odds": 3.5,
+      "models": {
+        "v6": {
+          "probability": 0.2185169226729083,
+          "fair_odds": 4.576304607295204,
+          "ev": -0.23519077064482097,
+          "implied_raw": 0.2857142857142857,
+          "difference_pp": -6.719736304137741,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.3116599302570133,
+          "fair_odds": 3.208625501441076,
+          "ev": 0.09080975589954643,
+          "implied_raw": 0.2857142857142857,
+          "difference_pp": 2.5945644542727573,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.3201845414618302,
+          "fair_odds": 3.1231988759807505,
+          "ev": 0.12064589511640555,
+          "implied_raw": 0.2857142857142857,
+          "difference_pp": 3.4470255747544476,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "name": "ILOU FIRST RICHER",
+      "odds": 15.5,
+      "models": {
+        "v6": {
+          "probability": 0.08353911596864351,
+          "fair_odds": 11.970440295003254,
+          "ev": 0.29485629751397435,
+          "implied_raw": 0.06451612903225806,
+          "difference_pp": 1.9022986936385446,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.04837231733439164,
+          "fair_odds": 20.67298105830093,
+          "ev": -0.25022908131692967,
+          "implied_raw": 0.06451612903225806,
+          "difference_pp": -1.6143811697866426,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05115886242048162,
+          "fair_odds": 19.54695535996998,
+          "ev": -0.20703763248253493,
+          "implied_raw": 0.06451612903225806,
+          "difference_pp": -1.3357266611776442,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 16,
+      "name": "GRAHIKA",
+      "odds": 13.5,
+      "models": {
+        "v6": {
+          "probability": 0.07143424371936953,
+          "fair_odds": 13.99888831928444,
+          "ev": -0.03563770978851133,
+          "implied_raw": 0.07407407407407407,
+          "difference_pp": -0.26398303547045393,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.02638391388323134,
+          "fair_odds": 37.9018823524725,
+          "ev": -0.6438171625763769,
+          "implied_raw": 0.07407407407407407,
+          "difference_pp": -4.7690160190842725,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03402832863157331,
+          "fair_odds": 29.387279370287562,
+          "ev": -0.5406175634737602,
+          "implied_raw": 0.07407407407407407,
+          "difference_pp": -4.004574544250076,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "HALL BLACK MESS",
+      "odds": 17.7,
+      "models": {
+        "v6": {
+          "probability": 0.02089807936648616,
+          "fair_odds": 47.85128731033917,
+          "ev": -0.630103995213195,
+          "implied_raw": 0.05649717514124294,
+          "difference_pp": -3.5599095774756777,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.021205555391959174,
+          "fair_odds": 47.15745386132093,
+          "ev": -0.6246616695623226,
+          "implied_raw": 0.05649717514124294,
+          "difference_pp": -3.5291619749283765,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.020268369189220207,
+          "fair_odds": 49.3379605761204,
+          "ev": -0.6412498653508023,
+          "implied_raw": 0.05649717514124294,
+          "difference_pp": -3.6228805952022727,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "GENERAL DU NORD",
+      "odds": 26.3,
+      "models": {
+        "v6": {
+          "probability": 0.009712492300069129,
+          "fair_odds": 102.96018458546243,
+          "ev": -0.7445614525081818,
+          "implied_raw": 0.03802281368821293,
+          "difference_pp": -2.83103213881438,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.011130053987569584,
+          "fair_odds": 89.84682384441561,
+          "ev": -0.7072795801269199,
+          "implied_raw": 0.03802281368821293,
+          "difference_pp": -2.6892759700643345,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.011556022810222588,
+          "fair_odds": 86.53496245398449,
+          "ev": -0.6960766000911459,
+          "implied_raw": 0.03802281368821293,
+          "difference_pp": -2.6466790877990336,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "HYDROMEL",
+      "odds": 7.5,
+      "models": {
+        "v6": {
+          "probability": 0.048316184463696586,
+          "fair_odds": 20.696998554415483,
+          "ev": -0.6376286165222755,
+          "implied_raw": 0.13333333333333333,
+          "difference_pp": -8.501714886963674,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.02871101486918659,
+          "fair_odds": 34.82983811461245,
+          "ev": -0.7846673884811006,
+          "implied_raw": 0.13333333333333333,
+          "difference_pp": -10.462231846414674,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03160658908750563,
+          "fair_odds": 31.638972406399557,
+          "ev": -0.7629505818437078,
+          "implied_raw": 0.13333333333333333,
+          "difference_pp": -10.17267442458277,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "IBIS PETTEVINIERE",
+      "odds": 4.3,
+      "models": {
+        "v6": {
+          "probability": 0.0681769237888472,
+          "fair_odds": 14.667719580559694,
+          "ev": -0.706839227707957,
+          "implied_raw": 0.23255813953488372,
+          "difference_pp": -16.438121574603652,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.060986766530227075,
+          "fair_odds": 16.396999822975804,
+          "ev": -0.7377569039200236,
+          "implied_raw": 0.23255813953488372,
+          "difference_pp": -17.157137300465664,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05512708713158287,
+          "fair_odds": 18.139902759837458,
+          "ev": -0.7629535253341937,
+          "implied_raw": 0.23255813953488372,
+          "difference_pp": -17.743105240330085,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
