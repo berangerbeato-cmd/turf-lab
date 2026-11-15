@@ -25,6 +25,13 @@ def main():
             dump(path.parent/'quotes.json',data['quotes'])
             dump(path.parent/'comparison.json',result)
             dump('reports/operational/latest_comparison.json',dict(result,request_id=state['request_id']))
+            from turf_lab.sg_strategy_comparison import archive
+            try:
+                archive(json.loads(path.read_text()),data['quotes'])
+                state['sg_comparison_status']='ARCHIVED'
+            except ValueError as error:
+                state['sg_comparison_status']='INELIGIBLE'
+                state['sg_comparison_reason']=str(error)
         state.update(status='SUCCESS',prediction=str(path),quotes_compared=bool(data.get('quotes')))
         latest=json.loads(Path('reports/operational/latest.json').read_text())
         dump('reports/operational/latest.json',dict(latest,request_id=state['request_id']))

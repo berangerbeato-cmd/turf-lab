@@ -1,17 +1,19 @@
-# Comparatif SG — point de reprise du 15 novembre 2026
+# Comparatif SG — implémentation du 15 novembre 2026
 
-Protocole : `config/sg_ev_probability_comparison_v1.json`.
+Les cinq règles sont implémentées dans `turf_lab/sg_strategy_comparison.py` : top3, top4, P>=10%, P>=15%, P>=20%, toutes avec EV>=10%, 1 EUR fictif par cheval. Rang calculé avant filtrage EV, égalités par numéro. Date de début : 16 novembre ; Beaumont est exclu du suivi prospectif.
 
-## Réalisé
-- Cinq stratégies et mises fictives fixées avant les futures courses ; Beaumont du 15 novembre exclu du test prospectif.
-- Vérification du travail existant sur historiques enrichis : 312 courses exploitables, dont 102 de test. Le gain exploratoire ne justifie pas une promotion ; voir `reports/sport_history_cohort_v1/DECISION.md`.
-- Diagnostic Beaumont déjà archivé : 11 partants avec historiques incomplets, notamment deux disqualifications du 10. Les prédictions initiales restent inchangées.
+## Circuit opérationnel
 
-## À réaliser — pas encore automatisé
-1. Identifier et réconcilier les courses manquantes avec identités et sources vérifiées, puis reconstruire les variables concernées dans une version distincte.
-2. Élargir la validation du candidat enrichi et contrôler sa calibration ; ne pas modifier les poids V3 gelés.
-3. Implémenter l'archive avant départ des sélections des cinq stratégies et les tests de chronologie, complétude et règlement.
-4. Collecter les rapports SG réellement payés du même opérateur ; sans rapport, résultat financier en attente.
-5. Produire le tableau comparatif et les pertes maximales. Aucune stratégie déclarée rentable à ce stade.
+`scripts.run_prediction_request` archive la première sélection admissible avant départ dans `selections/`. Les prochaines demandes avec cotes complètes alimentent le comparatif ; aucune collecte autonome de cotes ZEturf. Une demande inéligible reste explicitement signalée dans request_status. Le workflow de prédiction sauvegarde les sélections sans modifier les modèles.
 
-Les captures utilisateur restent nécessaires pour les cotes ZEturf ; aucune surveillance autonome supplémentaire n'est créée.
+`scripts.score_sg_strategies` rapproche les sélections des fichiers `settlements/<race_id>.json`. L'absence de rapport payé laisse la course PENDING. Le workflow `sg_strategy_comparison.yml` exécute les tests et le scoreur lors de l'ajout de règlements. Pas de pari automatique.
+
+Un règlement doit contenir : race_id, operator (identique aux cotes), verified=true, final=true, source_evidence, observed_at (avec fuseau, après départ), winner_numbers, sg_total_return_per_eur (clés numéros sous forme de chaînes, rapport réel incluant mise ; perdant 0, remboursement 1). Tous les chevaux sélectionnés par au moins une règle doivent avoir un rapport. Un changement de partants doit être signalé avec field_changed=true et provoque REVIEW.
+
+Le résumé distingue toutes les courses et celles sans alerte d'historique : mises, retours, bénéfice net, ROI, fréquence gagnante, perte maximale cumulée par course. Les résultats futurs ne seront pas assimilés aux cotes capturées.
+
+## Validation et limites
+
+33 tests ciblés réussis localement : frontières de seuils, chronologie, cotes incomplètes, modèle modifié, opérateur, rapports manquants, ex aequo, drawdown, faux doublons d'hippodromes et contrôles existants. Aucun historique prospectif encore disponible pour ces nouvelles règles : zéro course n'est une preuve de rentabilité.
+
+Le diagnostic des historiques et la sensibilité corrigée sont dans `reports/history_reconciliation_2026-11-15/`. L'enrichissement est expérimental ; les poids V3 et les anciennes prévisions restent inchangés. Validation plus large nécessaire avant promotion. Premier bilan après 200 courses réglées purement descriptif, puis confirmation sur période distincte.

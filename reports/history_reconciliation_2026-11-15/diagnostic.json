@@ -1,0 +1,617 @@
+{
+  "race_id": "2026-11-15_R3C5",
+  "source_sha256": "37b241863968cd63cff3be8278f7eaf0748b35a9e6d4568c3ca1812215e1d1c4",
+  "checks": [
+    {
+      "number": 2,
+      "name": "HALL BLACK MESS",
+      "status": "MODEL_HISTORY_INCOMPLETE",
+      "snapshot_career_starts": 113,
+      "model_recent_starts": 1,
+      "individual_prior_starts_returned": 108,
+      "missing_recent_starts": [
+        {
+          "date": "2026-10-04",
+          "venue": "SEGRE",
+          "racecourse_code": "SEG",
+          "race_number": 5,
+          "race_name": "PRIX GENYBET",
+          "discipline": "ATTELE",
+          "distance_m": 2700,
+          "distance_covered_m": 2725,
+          "handicap_m": 25,
+          "start_type": "NON_PRECISE",
+          "rank": 7,
+          "arrival_status": "PLACE",
+          "disqualified": false,
+          "seconds_per_km": 76.2,
+          "race_time_seconds": 207.0,
+          "driver": "CH. CHALON",
+          "trainer": "CH. CHALON",
+          "shoes_raw": "1",
+          "shoes": "DA",
+          "field_size": 18,
+          "purse_eur": 26000,
+          "race_type": null,
+          "turn": "G",
+          "conditions": "PRIX GENYBET Race 5 PRIX ROI DU LUPIN Class D 26.000. - Harness. - 2.700 metres. 11.700, 6.500, 3.640, 2.080, 1.300, 520, 260.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than \u20ac285.000. - 25 meters behind for horses who have won more than \u20ac146.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+          "track_condition": {
+            "label": "Bon",
+            "measure": "3,0",
+            "measureTimestamp": 1791108000
+          },
+          "trainer_opinion_raw": 2
+        }
+      ],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2026-07-29",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2023-11-18",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2022-04-18",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2021-08-29",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        0.5,
+        3.367295829986474,
+        0.4
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 3,
+      "name": "HAMIGO",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 57,
+      "model_recent_starts": 0,
+      "individual_prior_starts_returned": 57,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        null,
+        null,
+        null,
+        null,
+        0.0
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 4,
+      "name": "IBIS PETTEVINIERE",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 79,
+      "model_recent_starts": 3,
+      "individual_prior_starts_returned": 53,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2026-08-28",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2023-04-17",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.0,
+        3.5553480614894135,
+        0.6
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 5,
+      "name": "HAPPY FACE",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 73,
+      "model_recent_starts": 3,
+      "individual_prior_starts_returned": 70,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2020-08-09",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2020-07-12",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        0.0,
+        2.4849066497880004,
+        0.6
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 6,
+      "name": "HYDROMEL",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 113,
+      "model_recent_starts": 1,
+      "individual_prior_starts_returned": 112,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2026-02-20",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        0.0,
+        3.367295829986474,
+        0.2
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 7,
+      "name": "GENERAL DU NORD",
+      "status": "MODEL_HISTORY_INCOMPLETE",
+      "snapshot_career_starts": 92,
+      "model_recent_starts": 2,
+      "individual_prior_starts_returned": 91,
+      "missing_recent_starts": [
+        {
+          "date": "2026-10-04",
+          "venue": "SEGRE",
+          "racecourse_code": "SEG",
+          "race_number": 5,
+          "race_name": "PRIX GENYBET",
+          "discipline": "ATTELE",
+          "distance_m": 2700,
+          "distance_covered_m": 2725,
+          "handicap_m": 25,
+          "start_type": "NON_PRECISE",
+          "rank": 4,
+          "arrival_status": "PLACE",
+          "disqualified": false,
+          "seconds_per_km": 75.9,
+          "race_time_seconds": 206.0,
+          "driver": "A. DABOUIS",
+          "trainer": "R. KUIPER",
+          "shoes_raw": "1",
+          "shoes": "DA",
+          "field_size": 18,
+          "purse_eur": 26000,
+          "race_type": null,
+          "turn": "G",
+          "conditions": "PRIX GENYBET Race 5 PRIX ROI DU LUPIN Class D 26.000. - Harness. - 2.700 metres. 11.700, 6.500, 3.640, 2.080, 1.300, 520, 260.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than \u20ac285.000. - 25 meters behind for horses who have won more than \u20ac146.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+          "track_condition": {
+            "label": "Bon",
+            "measure": "3,0",
+            "measureTimestamp": 1791108000
+          },
+          "trainer_opinion_raw": 2
+        }
+      ],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        0.0,
+        3.1780538303479458,
+        0.6
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 8,
+      "name": "HISTORIC DAY",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 66,
+      "model_recent_starts": 3,
+      "individual_prior_starts_returned": 64,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2023-07-23",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.6666666666666666,
+        0.0,
+        3.1354942159291497,
+        0.6
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 9,
+      "name": "ILTON CASH",
+      "status": "MODEL_HISTORY_INCOMPLETE",
+      "snapshot_career_starts": 63,
+      "model_recent_starts": 1,
+      "individual_prior_starts_returned": 61,
+      "missing_recent_starts": [
+        {
+          "date": "2026-10-12",
+          "venue": "CASTERA-VERDUZAN",
+          "racecourse_code": "CAS",
+          "race_number": 2,
+          "race_name": "PRIX DALLA VEDOVA",
+          "discipline": "ATTELE",
+          "distance_m": 2800,
+          "distance_covered_m": 2825,
+          "handicap_m": 25,
+          "start_type": "NON_PRECISE",
+          "rank": 2,
+          "arrival_status": "PLACE",
+          "disqualified": false,
+          "seconds_per_km": 75.5,
+          "race_time_seconds": 213.0,
+          "driver": "N.R. BROSSARD",
+          "trainer": "Nicolas Richard BROSSARD",
+          "shoes_raw": "6",
+          "shoes": "PA_DP",
+          "field_size": 16,
+          "purse_eur": 24000,
+          "race_type": "Course E",
+          "turn": "D",
+          "conditions": "GRAND PRIX DE L'ASTARAC Race 4 Class E 24.000. - Harness. - 2.800 metres. 10.800, 6.000, 3.360, 1.920, 1.200, 480, 240.- allocated by the S.E.T.F. For horses aged between 8 and 11 inclusive, who have won less than \u20ac188.000. - 25 meters behind for horses who have won more than \u20ac93.000.",
+          "track_condition": {
+            "measureTimestamp": 0
+          },
+          "trainer_opinion_raw": 1
+        }
+      ],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2023-08-15",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2022-03-28",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.5,
+        0.0,
+        2.772588722239781,
+        0.4
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 10,
+      "name": "HELIOS D'ELA",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 65,
+      "model_recent_starts": 2,
+      "individual_prior_starts_returned": 65,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2020-10-04",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        1.0,
+        3.258096538021482,
+        0.4
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 11,
+      "name": "ILOU FIRST RICHER",
+      "status": "MODEL_HISTORY_INCOMPLETE",
+      "snapshot_career_starts": 68,
+      "model_recent_starts": 2,
+      "individual_prior_starts_returned": 67,
+      "missing_recent_starts": [
+        {
+          "date": "2026-10-18",
+          "venue": "CASTELSARRASIN",
+          "racecourse_code": "CTS",
+          "race_number": 5,
+          "race_name": "GRAND PRIX RENAULT FAURIE CASTELSARRASIN",
+          "discipline": "ATTELE",
+          "distance_m": 2375,
+          "distance_covered_m": 2400,
+          "handicap_m": 25,
+          "start_type": "NON_PRECISE",
+          "rank": 3,
+          "arrival_status": "PLACE",
+          "disqualified": false,
+          "seconds_per_km": 75.9,
+          "race_time_seconds": 182.0,
+          "driver": "V. CABOS",
+          "trainer": "Mlle P. GAPTEAU",
+          "shoes_raw": "3",
+          "shoes": "D4",
+          "field_size": 14,
+          "purse_eur": 20000,
+          "race_type": "Course F",
+          "turn": "D",
+          "conditions": "GRAND PRIX V AND B CASTELSARRASIN Race 5 Class F 20.000. - Harness. - 2.375 metres. 9.000, 5.000, 2.800, 1.600, 1.000, 400, 200.- allocated by the S.E.T.F. For horses aged between 6 and 11 inclusive, who have won less than \u20ac141.000. - 25 meters behind for horses who have won more than \u20ac71.000.",
+          "track_condition": {
+            "measureTimestamp": 0
+          },
+          "trainer_opinion_raw": 2
+        }
+      ],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2022-06-18",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2021-05-13",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.0,
+        2.639057329615259,
+        0.6
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 12,
+      "name": "HOLDING GIRL",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 73,
+      "model_recent_starts": 2,
+      "individual_prior_starts_returned": 70,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2024-07-07",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2023-08-16",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2023-06-18",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2020-07-27",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        0.0,
+        1.9459101490553132,
+        0.4
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 14,
+      "name": "IRON D'ESPOIR",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 73,
+      "model_recent_starts": 2,
+      "individual_prior_starts_returned": 69,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        0.0,
+        3.8501476017100584,
+        0.4
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 15,
+      "name": "HOCKFELER DU MESLE",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 75,
+      "model_recent_starts": 1,
+      "individual_prior_starts_returned": 49,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2020-08-06",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2020-08-02",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        1.0,
+        2.0794415416798357,
+        0.2
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    },
+    {
+      "number": 16,
+      "name": "GRAHIKA",
+      "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+      "snapshot_career_starts": 85,
+      "model_recent_starts": 2,
+      "individual_prior_starts_returned": 65,
+      "missing_recent_starts": [],
+      "conflicts": [],
+      "excluded": [
+        {
+          "date": "2026-11-15",
+          "reason": "target_or_future_day"
+        },
+        {
+          "date": "2026-04-19",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2024-08-15",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2022-08-14",
+          "reason": "unknown_outcome"
+        },
+        {
+          "date": "2022-08-07",
+          "reason": "unknown_outcome"
+        }
+      ],
+      "supplemented_recent_features_for_research": [
+        0.0,
+        0.0,
+        0.0,
+        1.9459101490553132,
+        0.4
+      ],
+      "frozen_features_unchanged": true,
+      "recommendations_allowed": false,
+      "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+    }
+  ],
+  "affected_before": [
+    2,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14,
+    16
+  ],
+  "affected_after": [
+    2,
+    7,
+    9,
+    11
+  ]
+}

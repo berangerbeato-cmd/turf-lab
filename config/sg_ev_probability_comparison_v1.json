@@ -2,7 +2,7 @@
   "version": "sg_ev_probability_comparison_v1",
   "created_on": "2026-11-15",
   "first_eligible_race_date": "2026-11-16",
-  "status": "PROTOCOL_FROZEN_IMPLEMENTATION_PENDING",
+  "status": "IMPLEMENTED_PAPER_ONLY",
   "mode": "PAPER_ONLY",
   "stake_eur_per_runner": 1,
   "minimum_ev": 0.1,
@@ -43,9 +43,9 @@
     "First 200 settled races descriptive comparison only; no claim of sufficient power or automatic best-strategy promotion. Confirm any selected rule on a separate subsequent frozen period."
   ],
   "dependencies": [
-    "Complete history reconciliation and calibration validation",
-    "Implement selection archive and operator settlement ingestion",
-    "No automatic ZEturf odds collection currently configured; user screenshots remain input"
+    "Broader validation of enriched histories and probability calibration remains necessary",
+    "Verified complete prestart operator quotes supplied via existing prediction request",
+    "Actual same-operator SG payouts supplied in settlement files; no automatic ZEturf collection"
   ],
   "recommendations_allowed": false
 }

@@ -1,5 +1,6 @@
 """Dated supplemental history diagnostics. Never mutate frozen feature vectors."""
 import re
+import unicodedata
 from datetime import date,timedelta
 from urllib.parse import quote
 from pathlib import Path
@@ -10,6 +11,13 @@ from turf_lab.pilot import features
 
 
 def normalized_name(s):return ' '.join(str(s).upper().split())
+
+
+def venue_key(value):
+    """Exact, audited aliases only: never match races by horse/date alone."""
+    key = re.sub(r'[^A-Z0-9]', '', unicodedata.normalize('NFKD', str(value).upper()).encode('ascii', 'ignore').decode())
+    return {'PARISVINCENNES':'VINCENNES', 'TOULOUSE':'LACEPIERE',
+            'MARSEILLEBORELY':'BORELY', 'BORDEAUXLEBOUSCAT':'LEBOUSCAT'}.get(key, key)
 
 def normalize_history(payload, runner, target_day):
     if not isinstance(payload,dict) or not isinstance(payload.get('runner'),dict) or not isinstance(payload['runner'].get('racesRun'),list):
@@ -30,7 +38,7 @@ def normalize_history(payload, runner, target_day):
             excluded.append({'date':day,'reason':'unknown_outcome'});continue
         if not summary['venue'] or not isinstance(summary['race_number'],int):
             raise ValueError('Missing dated race identity')
-        key=(day,normalized_name(summary['venue']),summary['race_number'])
+        key=(day,venue_key(summary['venue']),summary['race_number'])
         if key in accepted and accepted[key]!=summary:raise ValueError('Conflicting individual history')
         accepted[key]=summary
     return sorted(accepted.values(),key=lambda r:r['date'],reverse=True),excluded
@@ -43,10 +51,10 @@ def reconcile(runner,frame,payload,target_day):
     prior=frame.get('history',[])
     def key_old(r):
         m=re.search(r'C(\d+)$',r.get('race_id',''))
-        return (r['date'],normalized_name(r['venue']),int(m.group(1)) if m else None)
+        return (r['date'],venue_key(r['venue']),int(m.group(1)) if m else None)
     merged={key_old(r):r for r in prior};missing=[];conflicts=[]
     for r in available:
-        key=(r['date'],normalized_name(r['venue']),r['race_number'])
+        key=(r['date'],venue_key(r['venue']),r['race_number'])
         row={'date':r['date'],'venue':r['venue'],'rank':r['rank'],'dq':r['disqualified'],
             'status':r['arrival_status'],'source':'PMU_INDIVIDUAL_HISTORY'}
         if key in merged:

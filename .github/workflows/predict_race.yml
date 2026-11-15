@@ -45,6 +45,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           mkdir -p predictions_operational data/prediction_inputs reports/operational
           git add predictions_operational data/prediction_inputs reports/operational
+          if [ -d reports/sg_ev_probability_comparison_v1 ]; then git add reports/sg_ev_probability_comparison_v1; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Archive prospective race snapshot and experimental prediction'
             git pull --rebase origin main
