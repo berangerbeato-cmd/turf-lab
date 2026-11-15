@@ -1,13 +1,13 @@
 # Historique des courses
 
 État de l’actualisation : PARTIEL
-Dernière journée complète : 2026-11-13
-Dernière journée collectée : 2026-11-13
+Dernière journée complète : 2026-11-14
+Dernière journée collectée : 2026-11-14
 Continuité complète depuis 2022-01-01 : 2023-01-21
-Courses récupérées : 0 ; vérifiées : 31063
+Courses récupérées : 21 ; vérifiées : 31084
 Journées incomplètes : 6 ; courses connues manquantes : 21
 Journées sans programme vérifiable : 1 (nombre de courses inconnu)
-Cible : 2026-11-13
+Cible : 2026-11-14
 
 Périmètre : trot attelé français répertorié par PMU. Les annulations sont justifiées par la source.
 Un résultat ex æquo est conservé ; les exclusions du modèle ne masquent pas les trous historiques.
