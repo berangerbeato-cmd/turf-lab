@@ -1,0 +1,51 @@
+{
+  "version": "sg_ev_probability_comparison_v1",
+  "created_on": "2026-11-15",
+  "first_eligible_race_date": "2026-11-16",
+  "status": "PROTOCOL_FROZEN_IMPLEMENTATION_PENDING",
+  "mode": "PAPER_ONLY",
+  "stake_eur_per_runner": 1,
+  "minimum_ev": 0.1,
+  "model": "available_history_v3",
+  "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+  "strategies": [
+    {
+      "id": "top3",
+      "max_rank": 3
+    },
+    {
+      "id": "top4",
+      "max_rank": 4
+    },
+    {
+      "id": "p10",
+      "min_probability": 0.1
+    },
+    {
+      "id": "p15",
+      "min_probability": 0.15
+    },
+    {
+      "id": "p20",
+      "min_probability": 0.2
+    }
+  ],
+  "rules": [
+    "Rank active runners by frozen V3 probability, ties by ascending number; apply EV >=0.10 inclusively.",
+    "Complete verified same-operator field and quotes required; observed within 15 minutes before departure. Prediction and selection must be archived before departure.",
+    "One fixed snapshot per race; use first qualifying archived selection, never select a snapshot using results.",
+    "Record history warnings before race. Report all eligible races and clean-history cohort separately; no outcome-based exclusions.",
+    "Incomplete or conflicting history blocks any production promotion; repaired candidate requires separate validation and model identity.",
+    "Settlements require official final result AND evidenced SG total-return payout per euro from the quote operator. Never settle at captured odds; unresolved settlements stay pending.",
+    "Cancelled or changed fields explicitly flagged; operator refunds required; dead heats require actual paid reports.",
+    "Same races and unit stake for all five strategies; report count, win frequency, turnover, net return, ROI and race-level maximum drawdown.",
+    "2026-11-15 and earlier races excluded from prospective comparison; examples only.",
+    "First 200 settled races descriptive comparison only; no claim of sufficient power or automatic best-strategy promotion. Confirm any selected rule on a separate subsequent frozen period."
+  ],
+  "dependencies": [
+    "Complete history reconciliation and calibration validation",
+    "Implement selection archive and operator settlement ingestion",
+    "No automatic ZEturf odds collection currently configured; user screenshots remain input"
+  ],
+  "recommendations_allowed": false
+}
