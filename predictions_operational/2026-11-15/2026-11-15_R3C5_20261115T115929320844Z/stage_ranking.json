@@ -1,0 +1,70 @@
+{
+  "race_id": "2026-11-15_R3C5",
+  "calculated_at": "2026-11-15T12:01:41.210748+00:00",
+  "source_prediction": "predictions_operational/2026-11-15/2026-11-15_R3C5_20261115T115929320844Z/prediction.json",
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          5,
+          8,
+          9,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.03937620875296424,
+          "stage_raw": 0.018102278329898896,
+          "stage_calibrated": 0.02034081537587642
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          5,
+          8,
+          9,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.03937620875296424,
+          "stage_raw": 0.018102278329898896,
+          "stage_calibrated": 0.02034081537587642
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          5,
+          8,
+          9,
+          3,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.026439613148391734,
+          "stage_raw": 0.006436154150110224,
+          "stage_calibrated": 0.006949797625007253
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          5,
+          8,
+          9,
+          3,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.010717662792964587,
+          "stage_raw": 0.009462758040294842,
+          "stage_calibrated": 0.010419184960107101
+        }
+      }
+    }
+  },
+  "recommendations_allowed": false
+}
