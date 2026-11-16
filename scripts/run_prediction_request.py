@@ -25,6 +25,17 @@ def main():
             dump(path.parent/'quotes.json',data['quotes'])
             dump(path.parent/'comparison.json',result)
             dump('reports/operational/latest_comparison.json',dict(result,request_id=state['request_id']))
+            # Independently record the daily paper-ticket rule, even when an early
+            # odds snapshot is not eligible for the prospective SG J-15 study.
+            try:
+                from turf_lab.daily_ticket import make_ticket,load_protocol
+                ticket=make_ticket(json.loads(path.read_text()),data['quotes'],result,load_protocol())
+                dump(path.parent/'daily_ticket.json',ticket)
+                dump('reports/operational/latest_ticket.json',dict(ticket,request_id=state['request_id']))
+                state['daily_ticket_status']='PAPER_RECORDED'
+            except ValueError as error:
+                state['daily_ticket_status']='UNAVAILABLE'
+                state['daily_ticket_reason']=str(error)
             from turf_lab.sg_strategy_comparison import archive
             try:
                 archive(json.loads(path.read_text()),data['quotes'])
