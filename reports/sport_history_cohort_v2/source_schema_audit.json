@@ -1,0 +1,27 @@
+{
+  "source_manifest": "evidence/sport_history_cohort_v1/manifest.json",
+  "source_manifest_sha256": "2d01fde1f8fd73b9f01f2943e67b283aac38fdcba7a90385ec16b25e41538da7",
+  "counts": {
+    "successful_responses": 335,
+    "historical_rows_with_repetitions": 20277,
+    "rows_with_declared_field_size": 20277,
+    "rows_with_fewer_listed_than_declared": 20204,
+    "listed_participants": 112143,
+    "participants_with_trainer_field": 0
+  },
+  "participant_keys": [
+    "corde",
+    "distanceAvecPrecedent",
+    "distanceParcourue",
+    "itsHim",
+    "nomCheval",
+    "nomJockey",
+    "numPmu",
+    "oeillere",
+    "place",
+    "poidsJockey",
+    "reductionKilometrique"
+  ],
+  "interpretation": "Rows and participants may repeat across horse and target histories. Counts are not unique races or people. Partial opponent lists and missing trainers do not support full Elo/connection reconstruction.",
+  "production_changed": false
+}
