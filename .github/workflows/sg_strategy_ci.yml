@@ -1,0 +1,32 @@
+name: Turf Lab SG strategy validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sg_strategy_ci.yml'
+      - 'config/sg_ev_probability_comparison_v2.json'
+      - 'config/daily_ticket_strategy_v2.json'
+      - 'turf_lab/sg_strategy_comparison.py'
+      - 'turf_lab/daily_ticket.py'
+      - 'tests/test_sg_strategy_comparison.py'
+      - 'tests/test_daily_ticket.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  strategy-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate strategy protocols
+        run: |
+          python -m json.tool config/sg_ev_probability_comparison_v2.json > /dev/null
+          python -m json.tool config/daily_ticket_strategy_v2.json > /dev/null
+      - name: Test SG top 1-4 prospective study
+        run: python -m unittest discover -s tests -p 'test_sg_strategy_comparison.py' -v
+      - name: Test daily SG and ZE5 ticket
+        run: python -m unittest discover -s tests -p 'test_daily_ticket.py' -v
