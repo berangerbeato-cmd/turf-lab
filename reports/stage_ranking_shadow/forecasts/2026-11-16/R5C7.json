@@ -1,0 +1,146 @@
+{
+  "race_id": "2026-11-16_R5C7",
+  "date": "2026-11-16",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-16T19:39:34.319631+00:00",
+  "predicted_at": "2026-11-16T19:40:01.381804+00:00",
+  "scheduled_start": "2026-11-16T20:42:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('KISS ME MENCOURT', 'CIABATTA', 'CARAT WILLIAMS')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('KATUDI', 'TASMANIE', 'DEXTER FROMENTRO')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('JOURNAC DIESCHOOT', 'ROUSSALKA', 'VOLTIGEUR DE MYRT')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('JALOUX', 'TOPAZE DE FLORE', 'REACH DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('JAVA DES TIGARDS', 'RIVALITE', 'VITTEL DE BREVOL')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('IDEAL DU MAXFRAN', 'VICTORIA ROAD', 'OURAGAN DE CELLAND')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('IMPERIAL MIJACK', 'POESIE VALTERNE', \"QUE JE T'AIME\")",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('KALINA DE LAURIERE', 'ELECTRA TWIN', 'DOBERMAN')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('JOYAU DE RIVERIE', 'QUELIA DE GAUTIERS', \"LET'S GO ALONG\")",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('KHALIFA CEKE', 'CILARIA PARADISE', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('KIPLING IRON', 'THESE DE VAUVERT', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('KEEP CONTROL', 'BAHAMA ISLAND', 'PRODIGIOUS')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('KAPTAIN DE CRISTAL', 'BELLA NONNA', 'DOLLAR MACKER')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('JULIANO DE GLANE', 'DAYLIGHT OF LOVE', \"QUISLING D'ANJOU\")",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "bb2819ed7e9a7d983125923186c10148828fd780c51a8b92af143c834cfeea27",
+  "history_through": "2026-11-15",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          1,
+          12,
+          2,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.014798803046753682,
+          "stage_raw": 0.008909395079297,
+          "stage_calibrated": 0.00980995596878433
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          1,
+          2,
+          3,
+          13
+        ],
+        "probabilities": {
+          "v3": 0.00312852472219386,
+          "stage_raw": 0.005109897248847367,
+          "stage_calibrated": 0.005551956297944245
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          1,
+          12,
+          2,
+          11,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.0139637327279475,
+          "stage_raw": 0.005687986432125832,
+          "stage_calibrated": 0.006233991182158631
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          1,
+          2,
+          3,
+          13,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.0038157565476006033,
+          "stage_raw": 0.004477413418890128,
+          "stage_calibrated": 0.0048758032494106655
+        }
+      }
+    }
+  }
+}
