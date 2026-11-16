@@ -11,7 +11,7 @@ from pathlib import Path
 
 from turf_lab.operational_quotes import stamp
 
-PROTOCOL = Path("config/daily_ticket_strategy_v1.json")
+PROTOCOL = Path("config/daily_ticket_strategy_v2.json")
 
 
 def make_ticket(prediction, quotes, comparison, protocol):
@@ -87,6 +87,8 @@ def make_ticket(prediction, quotes, comparison, protocol):
         "eligible_for_j15_prospective_sg_comparison": 0 < lead_seconds <= 900,
         "sg": {
             "selection": sg_selected,
+            "top1_selection": [r for r in sg_selected if r["rank"] <= 1],
+            "top2_selection": [r for r in sg_selected if r["rank"] <= 2],
             "top3_selection": [r for r in sg_selected if r["rank"] <= 3],
             "top4_selection": sg_selected,
             "minimum_ev": minimum_ev,
