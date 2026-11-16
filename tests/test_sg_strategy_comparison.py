@@ -6,14 +6,14 @@ from turf_lab.sg_strategy_comparison import select,settle,summarize
 class Strategies(unittest.TestCase):
     def setUp(self):
         self.now=datetime(2026,11,16,12,tzinfo=timezone.utc)
-        self.protocol=dict(first_eligible_race_date='2026-11-16',model='v3',model_sha256='abc',minimum_ev=.1,stake_eur_per_runner=1,strategies=[dict(id='top3',max_rank=3),dict(id='top4',max_rank=4),dict(id='p10',min_probability=.1),dict(id='p15',min_probability=.15),dict(id='p20',min_probability=.2)])
+        self.protocol=dict(first_eligible_race_date='2026-11-16',model='v3',model_sha256='abc',minimum_ev=.1,stake_eur_per_runner=1,strategies=[dict(id='top1',max_rank=1),dict(id='top2',max_rank=2),dict(id='top3',max_rank=3),dict(id='top4',max_rank=4),dict(id='p10',min_probability=.1),dict(id='p15',min_probability=.15),dict(id='p20',min_probability=.2)])
         self.p=dict(race_id='race',scheduled_start=(self.now+timedelta(minutes=2)).isoformat(),predicted_at=self.now.isoformat(),target_snapshot=dict(date='2026-11-16',participants=[dict(numPmu=n,statut='PARTANT') for n in range(1,6)]),models={'v3':{'model_sha256':'abc'}},individual_history_check={'status':'CHECKED_RETURNED_HISTORY_ONLY'})
         self.q=dict(operator='ZEturf',observed_at=self.now.isoformat(),quotes=[dict(number=n) for n in range(1,6)])
         self.rows=[dict(number=n,models={'v3':dict(probability=p,ev=e)}) for n,p,e in [(1,.4,.1),(2,.25,.09),(3,.15,.2),(4,.1,.1),(5,.1,.1)]]
     def choose(self):
         with patch('turf_lab.sg_strategy_comparison.compare',return_value={'rows':self.rows}):return select(self.p,self.q,self.protocol,self.now)
     def test_exact_thresholds_and_rank_before_ev(self):
-        self.assertEqual(self.choose()['strategies'],{'top3':[1,3],'top4':[1,3,4],'p10':[1,3,4,5],'p15':[1,3],'p20':[1]})
+        self.assertEqual(self.choose()['strategies'],{'top1':[1],'top2':[1],'top3':[1,3],'top4':[1,3,4],'p10':[1,3,4,5],'p15':[1,3],'p20':[1]})
     def test_after_start_rejected(self):
         self.p['scheduled_start']=self.now.isoformat()
         with self.assertRaises(ValueError):self.choose()
