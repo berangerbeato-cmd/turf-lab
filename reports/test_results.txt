@@ -43,6 +43,11 @@ test_past_only_and_day_batching (test_context_speed.SpeedTests.test_past_only_an
 test_source_date_guard (test_context_speed.SpeedTests.test_source_date_guard) ... ok
 test_only_explicit_noncontradictory_cancellation_is_excluded (test_coverage.CoverageTests.test_only_explicit_noncontradictory_cancellation_is_excluded) ... ok
 test_unresolved_remains_in_denominator (test_coverage.CoverageTests.test_unresolved_remains_in_denominator) ... ok
+test_j15_eligibility_without_changing_capture_time (test_daily_ticket.DailyTicket.test_j15_eligibility_without_changing_capture_time) ... ok
+test_missing_quote_rejected (test_daily_ticket.DailyTicket.test_missing_quote_rejected) ... ok
+test_model_mismatch_rejected (test_daily_ticket.DailyTicket.test_model_mismatch_rejected) ... ok
+test_sg_top3_top4_and_ze5_one_euro (test_daily_ticket.DailyTicket.test_sg_top3_top4_and_ze5_one_euro) ... ok
+test_ze5_not_offered (test_daily_ticket.DailyTicket.test_ze5_not_offered) ... ok
 test_dimensions_missing_and_expiry (test_demographics_tandem.V6Tests.test_dimensions_missing_and_expiry) ... ok
 test_no_same_day_target_future_leakage (test_demographics_tandem.V6Tests.test_no_same_day_target_future_leakage) ... ok
 test_nonrunner_never_updates_pair (test_demographics_tandem.V6Tests.test_nonrunner_never_updates_pair) ... ok
@@ -392,7 +397,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 232 tests in 0.256s
+Ran 237 tests in 0.204s
 
 FAILED (errors=10, skipped=7)
 Outside fixed cohort dates; no requests
