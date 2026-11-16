@@ -1,0 +1,150 @@
+{
+  "race_id": "2026-11-16_R1C7",
+  "venue": "VINCENNES",
+  "race_name": "PRIX DE PAIMPOL",
+  "date": "2026-11-16",
+  "evidence": {
+    "source": "User supplied screenshot of ZEturf TERMINÉS/results",
+    "screenshot": "IMG_2611.jpeg",
+    "screenshot_received_context": "2026-11-16 18:04 Europe/Paris",
+    "finality": "OPERATOR_TERMINATED_TAB_VISIBLE; NOT AN INDEPENDENT OFFICIAL FINAL-PAYOUT CERTIFICATION",
+    "result_positions": [
+      9,
+      13,
+      2,
+      10,
+      8,
+      1,
+      7
+    ]
+  },
+  "prediction": {
+    "request_id": "chat-20261116-r1c7-1637-v3",
+    "model": "available_history_v3",
+    "prediction_source": "reports/operational/latest_comparison.json",
+    "observed_at": "2026-11-16T16:37:00+01:00",
+    "scheduled_start": "2026-11-16T17:25:00+01:00",
+    "quote_minutes_before_start": 48,
+    "eligible_for_j15_prospective_comparison": false,
+    "ranked_top5": [
+      4,
+      10,
+      11,
+      2,
+      8
+    ],
+    "overlap_top5": [
+      2,
+      10,
+      8
+    ],
+    "overlap_count": 3,
+    "missed_top5": [
+      9,
+      13
+    ],
+    "excluded_predicted_top5": [
+      4,
+      11
+    ]
+  },
+  "simple_gagnant": {
+    "all_selected_numbers": [
+      10,
+      2
+    ],
+    "finish_positions": {
+      "2": 3,
+      "10": 4
+    },
+    "win_return_eur_per_eur": {
+      "2": 0,
+      "10": 0
+    },
+    "observed_real_ticket_stakes": {
+      "2": null,
+      "10": 1
+    },
+    "note": "SG #10 1 EUR visible in earlier prestart ticket screenshot. SG #2 selection visible but stake obscured, cannot confirm actual amount.",
+    "paper_strategies_1_eur_per_selection": {
+      "top1": {
+        "selected": [],
+        "bets": 0,
+        "stake_eur": 0,
+        "return_eur": 0,
+        "net_eur": 0
+      },
+      "top2": {
+        "selected": [
+          10
+        ],
+        "bets": 1,
+        "stake_eur": 1,
+        "return_eur": 0,
+        "net_eur": -1
+      },
+      "top3": {
+        "selected": [
+          10
+        ],
+        "bets": 1,
+        "stake_eur": 1,
+        "return_eur": 0,
+        "net_eur": -1
+      },
+      "top4": {
+        "selected": [
+          10,
+          2
+        ],
+        "bets": 2,
+        "stake_eur": 2,
+        "return_eur": 0,
+        "net_eur": -2
+      }
+    },
+    "paper_status": "RETROSPECTIVE_CASE_STUDY; NOT ELIGIBLE FOR J15 PROSPECTIVE COHORT"
+  },
+  "ze5": {
+    "bet_type": "ZE5 (non ordre)",
+    "selected_numbers": [
+      2,
+      4,
+      8,
+      10,
+      11
+    ],
+    "finish_first_five": [
+      9,
+      13,
+      2,
+      10,
+      8
+    ],
+    "matching_numbers": [
+      2,
+      10,
+      8
+    ],
+    "matches": 3,
+    "winning": false,
+    "reason": "ZE5 requires all five horses to be in first five; no consolation for 3/5",
+    "initial_ticket_stake_eur": 1,
+    "finished_screenshot_visible_identical_entries": 2,
+    "caveat": "Two apparently identical ZE5 rows are visible in screenshot but their identity as two distinct settled wagers is not established; do not double-book them.",
+    "amount_actually_staked_eur": null,
+    "win_return_eur_per_eur": 0
+  },
+  "settlement": {
+    "all_shown_bets_lost": true,
+    "confirmed_total_real_net_eur": null,
+    "scenario_one_ze5_two_1eur_sg_net_eur": -3,
+    "scenario_two_ze5_two_1eur_sg_net_eur": -4,
+    "note": "Only scenario calculations; SG #2 stake and duplicate ZE5 ticket must be confirmed before actual ROI."
+  },
+  "audit_notes": [
+    "User-supplied finished screenshot is enough for per-runner outcomes, not independently verified official payouts.",
+    "Frozen V3 scoring estimated #9 win 3.938% and #13 win 7.187%; winners/placing outside predicted top five illustrate model miss but not alone evidence for changing parameters.",
+    "Do not backdate the earlier quote or count this result as an eligible top1/top2/top3/top4 prospective record."
+  ]
+}
