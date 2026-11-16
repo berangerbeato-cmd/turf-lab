@@ -4,8 +4,8 @@ from datetime import datetime,timezone
 from pathlib import Path
 from turf_lab.operational_quotes import compare,stamp
 
-PROTOCOL=Path('config/sg_ev_probability_comparison_v1.json')
-ROOT=Path('reports/sg_ev_probability_comparison_v1')
+PROTOCOL=Path('config/sg_ev_probability_comparison_v2.json')
+ROOT=Path('reports/sg_ev_probability_comparison_v2')
 
 def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True).encode()).hexdigest()
 
