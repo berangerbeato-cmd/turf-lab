@@ -1,0 +1,460 @@
+{
+  "value_shadow": {
+    "status": "UNAVAILABLE",
+    "reason": "Quote more than 15 minutes before start",
+    "recommendations_allowed": false
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-16_R1C7",
+  "observed_at": "2026-11-16T16:37:00+01:00",
+  "calculated_at": "2026-11-16T15:41:52.999265+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 10,
+      "name": "LADY DES ARRIS",
+      "odds": 24.1,
+      "models": {
+        "v6": {
+          "probability": 0.08405699392516755,
+          "fair_odds": 11.896690011187628,
+          "ev": 1.025773553596538,
+          "implied_raw": 0.04149377593360996,
+          "difference_pp": 4.256321799155759,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.14107265385230142,
+          "fair_odds": 7.088546027119956,
+          "ev": 2.3998509578404645,
+          "implied_raw": 0.04149377593360996,
+          "difference_pp": 9.957887791869148,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.14690222665153785,
+          "fair_odds": 6.8072487585369865,
+          "ev": 2.5403436623020625,
+          "implied_raw": 0.04149377593360996,
+          "difference_pp": 10.54084507179279,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "LA STAR",
+      "odds": 30.1,
+      "models": {
+        "v6": {
+          "probability": 0.06471498572632557,
+          "fair_odds": 15.452371483614613,
+          "ev": 0.9479210703623997,
+          "implied_raw": 0.03322259136212624,
+          "difference_pp": 3.149239436419933,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09669188663585677,
+          "fair_odds": 10.342129363614719,
+          "ev": 1.910425787739289,
+          "implied_raw": 0.03322259136212624,
+          "difference_pp": 6.346929527373053,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.08784758282554633,
+          "fair_odds": 11.383352482058244,
+          "ev": 1.6442122430489445,
+          "implied_raw": 0.03322259136212624,
+          "difference_pp": 5.462499146342009,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "name": "LYLOU DES THUYAS",
+      "odds": 55.7,
+      "models": {
+        "v6": {
+          "probability": 0.04908028486518624,
+          "fair_odds": 20.374779868266877,
+          "ev": 1.7337718669908737,
+          "implied_raw": 0.017953321364452424,
+          "difference_pp": 3.112696350073381,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.026247860132005134,
+          "fair_odds": 38.09834382577563,
+          "ev": 0.462005809352686,
+          "implied_raw": 0.017953321364452424,
+          "difference_pp": 0.8294538767552709,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.027201341409155734,
+          "fair_odds": 36.76289286466618,
+          "ev": 0.5151147164899745,
+          "implied_raw": 0.017953321364452424,
+          "difference_pp": 0.924802004470331,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "LUNE LUMALO",
+      "odds": 21.5,
+      "models": {
+        "v6": {
+          "probability": 0.05209527882456116,
+          "fair_odds": 19.19559742385972,
+          "ev": 0.12004849472806489,
+          "implied_raw": 0.046511627906976744,
+          "difference_pp": 0.5583650917584414,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.05793393360331332,
+          "fair_odds": 17.26104094445278,
+          "ev": 0.2455795724712364,
+          "implied_raw": 0.046511627906976744,
+          "difference_pp": 1.1422305696336579,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.06456317569964853,
+          "fair_odds": 15.488705274536917,
+          "ev": 0.3881082775424436,
+          "implied_raw": 0.046511627906976744,
+          "difference_pp": 1.8051547792671792,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "LA MISS ROYALE",
+      "odds": 14.4,
+      "models": {
+        "v6": {
+          "probability": 0.12242372441899324,
+          "fair_odds": 8.168351393864771,
+          "ev": 0.7629016316335027,
+          "implied_raw": 0.06944444444444445,
+          "difference_pp": 5.297927997454879,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.15062815644271152,
+          "fair_odds": 6.638865027736899,
+          "ev": 1.169045452775046,
+          "implied_raw": 0.06944444444444445,
+          "difference_pp": 8.118371199826708,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.09324278106886806,
+          "fair_odds": 10.724690839727435,
+          "ev": 0.3426960473917,
+          "implied_raw": 0.06944444444444445,
+          "difference_pp": 2.3798336624423615,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "name": "LA CALLAS",
+      "odds": 26.3,
+      "models": {
+        "v6": {
+          "probability": 0.07870854564966862,
+          "fair_odds": 12.70510071995226,
+          "ev": 1.0700347505862848,
+          "implied_raw": 0.03802281368821293,
+          "difference_pp": 4.068573196145569,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03876486663829866,
+          "fair_odds": 25.796554631043836,
+          "ev": 0.019515992587254782,
+          "implied_raw": 0.03802281368821293,
+          "difference_pp": 0.07420529500857323,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.033572019562839166,
+          "fair_odds": 29.78670967733198,
+          "ev": -0.11705588549732993,
+          "implied_raw": 0.03802281368821293,
+          "difference_pp": -0.4450794125373761,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "LESPANA DU BOCAGE",
+      "odds": 3.4,
+      "models": {
+        "v6": {
+          "probability": 0.25304191033347995,
+          "fair_odds": 3.9519145215198375,
+          "ev": -0.13965750486616824,
+          "implied_raw": 0.29411764705882354,
+          "difference_pp": -4.107573672534359,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.18717302136439928,
+          "fair_odds": 5.342650306708156,
+          "ev": -0.3636117273610424,
+          "implied_raw": 0.29411764705882354,
+          "difference_pp": -10.694462569442425,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.2543942344302272,
+          "fair_odds": 3.930906697786307,
+          "ev": -0.13505960293722763,
+          "implied_raw": 0.29411764705882354,
+          "difference_pp": -3.9723412628596355,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "name": "LADY DU CHATELET",
+      "odds": 99,
+      "models": {
+        "v6": {
+          "probability": 0.008174097899412276,
+          "fair_odds": 122.33765882249843,
+          "ev": -0.19076430795818478,
+          "implied_raw": 0.010101010101010102,
+          "difference_pp": -0.19269122015978263,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.00952889420854519,
+          "fair_odds": 104.9439712640774,
+          "ev": -0.056639473354026304,
+          "implied_raw": 0.010101010101010102,
+          "difference_pp": -0.05721158924649125,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.007591751083733474,
+          "fair_odds": 131.72191619172787,
+          "ev": -0.2484166427103861,
+          "implied_raw": 0.010101010101010102,
+          "difference_pp": -0.25092590172766277,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "name": "LEONTINE CASH",
+      "odds": 6.6,
+      "models": {
+        "v6": {
+          "probability": 0.08063822084803392,
+          "fair_odds": 12.401067254255791,
+          "ev": -0.46778774240297616,
+          "implied_raw": 0.15151515151515152,
+          "difference_pp": -7.08769306671176,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.0831862634002125,
+          "fair_odds": 12.021215512337166,
+          "ev": -0.45097066155859755,
+          "implied_raw": 0.15151515151515152,
+          "difference_pp": -6.832888811493902,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.10951572483104448,
+          "fair_odds": 9.131108811476627,
+          "ev": -0.2771962161151065,
+          "implied_raw": 0.15151515151515152,
+          "difference_pp": -4.199942668410704,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "LOLITA STEED",
+      "odds": 81.3,
+      "models": {
+        "v6": {
+          "probability": 0.007512163871259931,
+          "fair_odds": 133.11743688470432,
+          "ev": -0.38926107726656767,
+          "implied_raw": 0.012300123001230012,
+          "difference_pp": -0.47879591299700813,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.007350371606438517,
+          "fair_odds": 136.0475433818959,
+          "ev": -0.40241478839654854,
+          "implied_raw": 0.012300123001230012,
+          "difference_pp": -0.4949751394791495,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.008548014827990188,
+          "fair_odds": 116.98622664124699,
+          "ev": -0.30504639448439774,
+          "implied_raw": 0.012300123001230012,
+          "difference_pp": -0.3752108173239824,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "LYRE D'ERABLE",
+      "odds": 14,
+      "models": {
+        "v6": {
+          "probability": 0.06500118515690231,
+          "fair_odds": 15.384334879220468,
+          "ev": -0.08998340780336767,
+          "implied_raw": 0.07142857142857142,
+          "difference_pp": -0.6427386271669111,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.05051902354070475,
+          "fair_odds": 19.794523526256775,
+          "ev": -0.29273367043013354,
+          "implied_raw": 0.07142857142857142,
+          "difference_pp": -2.0909547887866675,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03938055804495938,
+          "fair_odds": 25.393240970794157,
+          "ev": -0.4486721873705687,
+          "implied_raw": 0.07142857142857142,
+          "difference_pp": -3.2048013383612046,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "LILIE D'OMAHA",
+      "odds": 10.2,
+      "models": {
+        "v6": {
+          "probability": 0.05994472321407511,
+          "fair_odds": 16.68203548840807,
+          "ev": -0.3885638232164339,
+          "implied_raw": 0.09803921568627452,
+          "difference_pp": -3.8094492472199413,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.04876698470215791,
+          "fair_odds": 20.50567625018142,
+          "ev": -0.5025767560379895,
+          "implied_raw": 0.09803921568627452,
+          "difference_pp": -4.927223098411662,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.04122284423441067,
+          "fair_odds": 24.258394066978337,
+          "ev": -0.5795269888090111,
+          "implied_raw": 0.09803921568627452,
+          "difference_pp": -5.681637145186385,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 13,
+      "name": "LA KIFFANCE PIYA",
+      "odds": 4.8,
+      "models": {
+        "v6": {
+          "probability": 0.05754601874641188,
+          "fair_odds": 17.377396764956085,
+          "ev": -0.7237791100172231,
+          "implied_raw": 0.20833333333333334,
+          "difference_pp": -15.078731458692147,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.08682474069007501,
+          "fair_odds": 11.517454495712771,
+          "ev": -0.58324124468764,
+          "implied_raw": 0.20833333333333334,
+          "difference_pp": -12.150859264325833,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.07187386465296214,
+          "fair_odds": 13.913263254013529,
+          "ev": -0.6550054496657818,
+          "implied_raw": 0.20833333333333334,
+          "difference_pp": -13.64594686803712,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "name": "LOUBIANA DU BOURG",
+      "odds": 15.7,
+      "models": {
+        "v6": {
+          "probability": 0.017061866520522224,
+          "fair_odds": 58.61023463037808,
+          "ev": -0.732128695627801,
+          "implied_raw": 0.06369426751592357,
+          "difference_pp": -4.663240099540134,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.01531134318298012,
+          "fair_odds": 65.31105651864601,
+          "ev": -0.7596119120272121,
+          "implied_raw": 0.06369426751592357,
+          "difference_pp": -4.838292433294344,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.014143880677076755,
+          "fair_odds": 70.70195392843763,
+          "ev": -0.7779410733698949,
+          "implied_raw": 0.06369426751592357,
+          "difference_pp": -4.955038683884681,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
