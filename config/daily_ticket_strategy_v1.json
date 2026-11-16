@@ -1,0 +1,32 @@
+{
+  "version": "daily_ticket_strategy_v1",
+  "effective_date": "2026-11-16",
+  "mode": "PAPER_ONLY_NO_AUTOMATIC_WAGER",
+  "model": "available_history_v3",
+  "simple_gagnant": {
+    "odds_source": "user_verified_screenshot",
+    "selection_rule": "positive EV within rank 1..4 by frozen V3 winning probability",
+    "minimum_ev": 0.1,
+    "max_rank": 4,
+    "compare_top3": true,
+    "stake_eur": null,
+    "no_selection_if_no_qualifier": true
+  },
+  "ze5": {
+    "type": "ZE5_DESORDRE",
+    "selection_rule": "top 5 runners by V3 win probability, irrespective of SG EV",
+    "number_of_horses": 5,
+    "stake_eur_total": 1,
+    "only_when_offered": true,
+    "no_multi_or_field_expansion": true,
+    "not_a_calibrated_top5_model": true
+  },
+  "limitations": [
+    "Selection rules are a consistent paper research template, not proven profitable.",
+    "Top 5 by winning probability is not a trained finishing-top-five probability ranking.",
+    "Verify starters, odds and offer status before any real wager; quotes may change.",
+    "Record actual wagers and payouts only from user/operator evidence, never infer stakes or payouts.",
+    "Do not relax the prospective J-15 timing rule for the frozen SG EV experiment when earlier quotes are used to display a paper ticket.",
+    "No bets are submitted or placed automatically."
+  ]
+}
