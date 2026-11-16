@@ -200,6 +200,15 @@ test_identity_and_missing_runner_rejected (test_sport_history_cohort.Cohort.test
 test_imprecise_nonplaced_keeps_known_rank (test_sport_history_cohort.Cohort.test_imprecise_nonplaced_keeps_known_rank) ... ok
 test_repair_does_not_mutate_or_change_other_inputs (test_sport_history_cohort.Cohort.test_repair_does_not_mutate_or_change_other_inputs) ... ok
 test_sampling_independent_of_outcome_and_input_order (test_sport_history_cohort.Cohort.test_sampling_independent_of_outcome_and_input_order) ... ok
+test_alias_not_counted_twice (test_sport_history_cohort_v2.Cohort.test_alias_not_counted_twice) ... ok
+test_archived_feature_mismatch_rejected (test_sport_history_cohort_v2.Cohort.test_archived_feature_mismatch_rejected) ... ok
+test_conflicting_history_rejected (test_sport_history_cohort_v2.Cohort.test_conflicting_history_rejected) ... ok
+test_future_and_same_day_rejected (test_sport_history_cohort_v2.Cohort.test_future_and_same_day_rejected) ... ok
+test_identity_and_missing_runner_rejected (test_sport_history_cohort_v2.Cohort.test_identity_and_missing_runner_rejected) ... ok
+test_imprecise_nonplaced_keeps_known_rank (test_sport_history_cohort_v2.Cohort.test_imprecise_nonplaced_keeps_known_rank) ... ok
+test_nested_sample (test_sport_history_cohort_v2.Cohort.test_nested_sample) ... ok
+test_repair_does_not_mutate_or_change_other_inputs (test_sport_history_cohort_v2.Cohort.test_repair_does_not_mutate_or_change_other_inputs) ... ok
+test_sampling_independent_of_outcome_and_input_order (test_sport_history_cohort_v2.Cohort.test_sampling_independent_of_outcome_and_input_order) ... ok
 test_conflict_blocks (test_sport_history_repair.Repair.test_conflict_blocks) ... ok
 test_market_free_and_no_recommendation (test_sport_history_repair.Repair.test_market_free_and_no_recommendation) ... ok
 test_missing_blocks (test_sport_history_repair.Repair.test_missing_blocks) ... ok
@@ -383,7 +392,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 223 tests in 0.245s
+Ran 232 tests in 0.261s
 
 FAILED (errors=10, skipped=7)
 Outside fixed cohort dates; no requests
