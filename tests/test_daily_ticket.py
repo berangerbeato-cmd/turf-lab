@@ -5,7 +5,7 @@ class DailyTicket(unittest.TestCase):
     def setUp(self):
         self.model='available_history_v3'
         self.protocol={
-            'version':'daily_ticket_strategy_v1',
+            'version':'daily_ticket_strategy_v2',
             'model':self.model,
             'simple_gagnant':{'minimum_ev':.10,'max_rank':4},
             'ze5':{'number_of_horses':5,'type':'ZE5_DESORDRE','stake_eur_total':1.0},
@@ -35,6 +35,8 @@ class DailyTicket(unittest.TestCase):
 
     def test_sg_top3_top4_and_ze5_one_euro(self):
         ticket=make_ticket(self.p,self.q,self.c,self.protocol)
+        self.assertEqual([s['number'] for s in ticket['sg']['top1_selection']],[1])
+        self.assertEqual([s['number'] for s in ticket['sg']['top2_selection']],[1])
         self.assertEqual([s['number'] for s in ticket['sg']['top3_selection']],[1,3])
         self.assertEqual([s['number'] for s in ticket['sg']['top4_selection']],[1,3,4])
         self.assertEqual(ticket['ze5']['numbers'],[1,2,3,4,5])
