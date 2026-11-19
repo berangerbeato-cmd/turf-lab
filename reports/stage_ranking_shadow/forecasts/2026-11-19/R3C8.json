@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-19_R3C8",
+  "date": "2026-11-19",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-19T18:20:01.061004+00:00",
+  "predicted_at": "2026-11-19T18:20:20.544993+00:00",
+  "scheduled_start": "2026-11-19T19:05:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NYMPHADORA TONKS', 'ELODEE DES AS', 'FELICIANO')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:(\"NESSY D'AR\", \"SISSI D'AR\", 'HOOKER BERRY')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NEW GRASS', 'GREEN GRASS', 'CARAT WILLIAMS')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NAGOYA DE LOU', 'DIANA DU CHATELET', 'FACE TIME BOURBON')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NOCE ROYALE', 'DOLCE ROYALE', 'EXPRESS JET')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NATACHA CASTEL', 'ANAIS', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NEWMARKET', 'VIA MALA', 'FACE TIME BOURBON')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:(\"NINA D'EOL\", 'EOLIATHIRA', 'CAPTAIN SPARROW')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:(\"NUITEE D'AMOUR\", 'FULL DATE', 'REAL DE LOU')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NIEBLITA', 'FEE DU CITRUS', 'ERIDAN')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NOBLE INTENTION', 'TORRIDE AVENTURE', 'ROYAL DREAM')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NALA LEALMANI', 'BORN TO BE WILD', 'TORNADO BELLO')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('NOVA DE CELLAND', 'TOPAZE DE TILLARD', 'IMPRESSIONIST')",
+      "NON_PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('NESTOLA', 'ESTOLA', 'CARAT WILLIAMS')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:(\"NORA D'ELCE\", 'DORADA DE LOU', 'REAL DE LOU')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('NUT AND MONEY', 'AMARILLA DE RABUT', 'IN THE MONEY')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "9c4b783d279babb334ee05975756bb0eca207bd85e6c5cfd7622269221b2317d",
+  "history_through": "2026-11-18",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          3,
+          7,
+          1,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.04113517150232142,
+          "stage_raw": 0.006241662707919934,
+          "stage_calibrated": 0.006695252657606433
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          3,
+          7,
+          1,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.01698660434907286,
+          "stage_raw": 0.00578392950828373,
+          "stage_calibrated": 0.006261592306215509
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          3,
+          7,
+          1,
+          6,
+          14
+        ],
+        "probabilities": {
+          "v3": 0.01941384041164058,
+          "stage_raw": 0.0020587768847315584,
+          "stage_calibrated": 0.00218290075192967
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          3,
+          7,
+          1,
+          9,
+          16
+        ],
+        "probabilities": {
+          "v3": 0.006706639680410419,
+          "stage_raw": 0.002385181487817034,
+          "stage_calibrated": 0.0025621011547957047
+        }
+      }
+    }
+  }
+}

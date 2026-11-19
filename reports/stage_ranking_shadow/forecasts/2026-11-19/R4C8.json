@@ -1,0 +1,136 @@
+{
+  "race_id": "2026-11-19_R4C8",
+  "date": "2026-11-19",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-19T18:20:21.382858+00:00",
+  "predicted_at": "2026-11-19T18:20:40.939801+00:00",
+  "scheduled_start": "2026-11-19T19:47:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:(\"NONNE D'ERABLE\", \"GOUSSE D'ERABLE\", \"GU D'HERIPRE\")",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NAPOLI BASC', 'GALAXIA', 'QUAKER JET')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NOW WITH US', 'ETINCELLE DESTINEE', 'HOHNECK')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NADJA', 'GLORY NIGHT', 'BRIAC DARK')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NORRINGTON', 'BREIZH MABRO', 'CAPTAIN SPARROW')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NOVELINA', 'ANNAPOLIS', 'FELICIANO')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NORTON KEN', 'AUDACE REYOR', 'DJANGO RIFF')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NIGHT FOR MONEY', 'MISS DU BUISSON', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NOTTINGHAM PLACE', 'BLUE ISLAND', 'DOBERMAN')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NANOU DE PADD', 'VITA DE PADD', 'NIKY')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NIGHTWISH TOR', 'DIVINE ACTION JOB', 'DIABLE DE VAUVERT')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NASDAQ LYMM', 'HARMONIE LYMM', 'DREAM DARLING')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "9c4b783d279babb334ee05975756bb0eca207bd85e6c5cfd7622269221b2317d",
+  "history_through": "2026-11-18",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          4,
+          5,
+          3,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.12740225919458867,
+          "stage_raw": 0.01794652908361118,
+          "stage_calibrated": 0.019282895698081923
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          4,
+          3,
+          12,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.02489312436054613,
+          "stage_raw": 0.018533093335219582,
+          "stage_calibrated": 0.020400169216546152
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          4,
+          5,
+          3,
+          12,
+          9
+        ],
+        "probabilities": {
+          "v3": 0.10332956864775643,
+          "stage_raw": 0.011904631957328722,
+          "stage_calibrated": 0.012854266536541054
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          4,
+          3,
+          12,
+          9,
+          2
+        ],
+        "probabilities": {
+          "v3": 0.012071187360650786,
+          "stage_raw": 0.012375588971438456,
+          "stage_calibrated": 0.01348967128485102
+        }
+      }
+    }
+  }
+}
