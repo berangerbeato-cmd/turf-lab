@@ -1,0 +1,141 @@
+{
+  "race_id": "2026-11-20_R1C7",
+  "date": "2026-11-20",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-20T17:52:54.470311+00:00",
+  "predicted_at": "2026-11-20T17:53:16.973595+00:00",
+  "scheduled_start": "2026-11-20T21:00:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NEW WORLD', 'IN MEMORY', 'FOLLOW YOU')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:(\"NAPOLITANO D'AWA\", 'AWA VICTORIA', 'ITALIANO VERO')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NAMOUR DE MONTFORT', 'BILLIE DE MONTFORT', 'BOLD EAGLE')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NORD CALITY', 'CALITY SAUTREUIL', 'DOLLAR MACKER')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NOVATO BELLO', 'TWIGGY BELLA', 'LOVE YOU')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NAPOLEON DE GAGOU', \"BLOSSOM D'HERIPRE\", 'BRILLANTISSIME')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NEPTUNE DE JEAN', 'CASSIOPEE DE JEAN', 'HOHNECK')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NEWTON DE CORS', \"ANNE D'ORGERES\", 'EROS DU CHENE')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NOVO SUPREME', 'TOLIMA', 'DJANGO RIFF')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('NABAD DU ROCHER', 'DELNA DES PLAINES', 'DRAGON DES RACQUES')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NEGOCIABLE', 'HO LA DESTINEE', 'EARL SIMON')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NERPRUN', \"C'EST LA VERITE\", 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('NEW ATOUT', 'BLISS NEVELE', 'ORLANDO VICI')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "741b5ccdf6a1f9a9aa164a80aa1b9ae63e019e428f4e0e24206145995d3eb73b",
+  "history_through": "2026-11-19",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          7,
+          6,
+          3,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.02603697690656367,
+          "stage_raw": 0.009135312098933463,
+          "stage_calibrated": 0.009788377519069743
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          12,
+          4,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.004314440598104375,
+          "stage_raw": 0.007391159226412076,
+          "stage_calibrated": 0.007977240945300657
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          7,
+          6,
+          3,
+          12,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.022381981584207546,
+          "stage_raw": 0.003921311578494436,
+          "stage_calibrated": 0.004112396552073887
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          7,
+          12,
+          4,
+          8,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.0021783345637280483,
+          "stage_raw": 0.00493453791514018,
+          "stage_calibrated": 0.005284486679089545
+        }
+      }
+    }
+  }
+}
