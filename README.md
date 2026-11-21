@@ -1,3 +1,21 @@
+# Turf Lab V4 : chronos corrigés V7 INTÉGRÉS (22 novembre 2026)
+
+**Un seul modèle actif pour les nouvelles analyses : TURF LAB V4, version `turf_lab_v4_integrated_speed_1`, avec 43 variables.**
+
+La vitesse corrigée d'après les courses antérieures, héritée de V7, est désormais la **43e variable du vrai moteur V4**. Les trois nouveaux ensembles de poids `models/v4_speed/winner.json`, `models/v4_speed/ranking.json` et `models/v4_speed/market.json` sont utilisés par `turf_lab/v4_active_inference.py`. **Plus de modèle Speed parallèle à choisir**.
+
+Le pré-traitement `History Repair V1.1` et la preuve originale `v4_speed_context.json` sont **obligatoires**, obtenus avant le départ dans `scripts.predict_operational` ou le collecteur planifié. Pas de repli silencieux sur les anciens 42 coefficients. Les chevaux sans chrono antérieur ont une valeur manquante prévue par l'entraînement, pas un chrono inventé.
+
+**Comparaison exploratoire 2026, 4 661 courses gagnant** : log loss V4 précédente **2,11568** contre **2,10713** avec la 43e variable ; Top5 exact **103/4 574** contre **109/4 574** ; cotes PMU log loss **1,92499** contre **1,92412**. Ces données ont déjà été consultées, elles ne prouvent pas de gain indépendant ni de rentabilité. Surveillance originale pré-départ : `reports/v4_integrated/prospective_scores.json`.
+
+**Les mises réelles restent suspendues** (`config/recommendation_policy.json`). Une V4 intégrée n'est pas une preuve d'EV fiable sur ZEturf.
+
+[Mode d'emploi actuel](docs/V4_UNIQUE.md) | [Comparaison V4/Speed](reports/v4_speed/RESULTS.md) | [Modèle actif](config/v4_active.json).
+
+---
+
+## Historique de la V4 sans chrono (ancien état, conservé)
+
 # Turf Lab V4 — modèle unique réentraîné (21 novembre 2026)
 
 **Version visible pour les nouvelles courses : `turf_lab_v4_full_retrained_candidate_1`.**
