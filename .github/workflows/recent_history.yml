@@ -38,15 +38,13 @@ jobs:
       - name: Score paired prospective History Repair V1.1 (official results only)
         if: success() || failure()
         run: python -m scripts.score_history_repair_prospective
-      - name: Score genuinely prestart V4+Speed versus same-race V4
-        if: success() || failure()
-        run: python -m scripts.score_v4_speed_prospective
+
       - name: Score originally captured V3+V2 and History Repair+V2 comparison (no ROI)
         if: success() || failure()
         run: python -m scripts.score_value_history_pair
-      - name: Compare original prestart V4 and V3 on verified official results
+      - name: Score integrated 43-feature V4 prestart research forecasts
         if: success() || failure()
-        run: python -m scripts.score_v4_full_prospective
+        run: python -m scripts.score_v4_integrated_prospective
       - name: Preserve checkpoints and diagnostics even on partial results
         if: always()
         run: |
@@ -59,11 +57,8 @@ jobs:
           if [ -f reports/value_history_pair_v1/on_demand_prospective_scores.json ]; then
             git add -f reports/value_history_pair_v1/on_demand_prospective_scores.json
           fi
-          if [ -f reports/v4_full/prospective_scores.json ]; then
-            git add -f reports/v4_full/prospective_scores.json
-          fi
-          if [ -f reports/v4_speed/prospective_scores.json ]; then
-            git add -f reports/v4_speed/prospective_scores.json
+          if [ -f reports/v4_integrated/prospective_scores.json ]; then
+            git add -f reports/v4_integrated/prospective_scores.json
           fi
           if ! git diff --cached --quiet; then
             git commit -m 'Checkpoint incremental history and strict coverage report'
