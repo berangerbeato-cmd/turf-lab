@@ -1,7 +1,7 @@
-test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference) ... ERROR
+test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference) ... ok
 test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark) ... ERROR
-test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature) ... ERROR
-test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected) ... FAIL
+test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature) ... ok
+test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected) ... ok
 test_fail_closed_on_changed_archive (test_available_history_research.AvailableHistoryTests.test_fail_closed_on_changed_archive) ... ok
 test_old_history_and_day_cutoff (test_available_history_research.AvailableHistoryTests.test_old_history_and_day_cutoff) ... ok
 test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization) ... ERROR
@@ -273,17 +273,6 @@ test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
 ======================================================================
-ERROR: test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_operational.py", line 19, in test_bad_hash_blocks_inference
-    policy,_=verify_active(); policy['files_sha256'][policy['model_file']]='bad'
-             ^^^^^^^^^^^^^^^
-  File "/home/runner/work/turf-lab/turf-lab/turf_lab/available_history_operational.py", line 18, in verify_active
-    raise ValueError('Active model dependency changed: '+path)
-ValueError: Active model dependency changed: scripts/predict_operational.py
-
-======================================================================
 ERROR: test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -297,17 +286,6 @@ Traceback (most recent call last):
   File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
     import numpy as np
 ModuleNotFoundError: No module named 'numpy'
-
-======================================================================
-ERROR: test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_operational.py", line 12, in test_exact_selected_model_and_temperature
-    policy,t=verify_active()
-             ^^^^^^^^^^^^^^^
-  File "/home/runner/work/turf-lab/turf-lab/turf_lab/available_history_operational.py", line 18, in verify_active
-    raise ValueError('Active model dependency changed: '+path)
-ValueError: Active model dependency changed: scripts/predict_operational.py
 
 ======================================================================
 ERROR: test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization)
@@ -596,23 +574,10 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'numpy'
 
 
-======================================================================
-FAIL: test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected)
 ----------------------------------------------------------------------
-ValueError: Active model dependency changed: scripts/predict_operational.py
+Ran 267 tests in 0.187s
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_operational.py", line 27, in test_same_day_history_rejected
-    with self.assertRaisesRegex(ValueError,'precede target'):
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: "precede target" does not match "Active model dependency changed: scripts/predict_operational.py"
-
-----------------------------------------------------------------------
-Ran 267 tests in 0.242s
-
-FAILED (failures=1, errors=20, skipped=7)
+FAILED (errors=18, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
