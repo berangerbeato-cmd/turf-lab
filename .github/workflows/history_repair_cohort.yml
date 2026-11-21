@@ -1,0 +1,58 @@
+name: Turf Lab forward history-repair cohort
+on:
+  schedule:
+    - cron: '55 10,15 * * *'
+      timezone: Europe/Paris
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/history_repair_cohort.yml'
+      - 'scripts/capture_history_repair_prospective.py'
+      - 'scripts/score_history_repair_prospective.py'
+      - 'tests/test_history_repair_prospective.py'
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-v5.txt
+      - name: Test prospective selection, provenance and result-scoring
+        run: python -m unittest tests.test_history_repair_prospective tests.test_history_repair_shadow -v
+      - name: Capture two deterministic future harness races (no betting)
+        if: github.event_name != 'push'
+        run: python -m scripts.capture_history_repair_prospective
+      - name: Score only verified immutable prestart forecasts
+        if: github.event_name != 'push'
+        run: python -m scripts.score_history_repair_prospective
+      - name: Archive prestart evidence and paired scorecard
+        if: github.event_name != 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -d reports/history_repair_shadow_v1/prospective_forecasts ]; then
+            git add -f reports/history_repair_shadow_v1/prospective_forecasts
+          fi
+          if [ -f reports/history_repair_shadow_v1/prospective_scores.json ]; then
+            git add -f reports/history_repair_shadow_v1/prospective_scores.json
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive bounded forward history repair shadow cohort'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
