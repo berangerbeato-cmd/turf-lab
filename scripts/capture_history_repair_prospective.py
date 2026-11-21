@@ -117,7 +117,7 @@ def capture():
             # V4 is a parallel research-facing single output. Its failure never
             # destroys the locked V3/History Repair prospective cohort.
             try:
-                from turf_lab.v4_unified import record as record_v4
+                from turf_lab.v4_full_inference import record as record_v4
                 result = record_v4(dest/"prediction.json", sidecar_path)
                 if result["freshness"] != "PRESTART_RESEARCH":
                     raise ValueError("V4 finished after departure")
