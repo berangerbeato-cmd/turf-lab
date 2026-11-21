@@ -115,7 +115,7 @@ class ProspectiveSidecarIntegrationTests(unittest.TestCase):
                 record_history_repair_shadow(path, state)
             self.assertEqual(state['history_repair_shadow_status'], 'PRESTART_RECORDED')
             import json
-            report = json.loads((Path(tmp)/'history_repair_shadow_v1.json').read_text())
+            report = json.loads((Path(tmp)/'history_repair_shadow_v1_1.json').read_text())
             self.assertEqual(report['status'], 'PRESTART_HISTORY_REPAIR_SHADOW')
             self.assertEqual(report['source_request_id'], 'test-race')
             self.assertFalse(report['recommendations_allowed'])
