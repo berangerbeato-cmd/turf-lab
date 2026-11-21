@@ -114,6 +114,17 @@ def capture():
             sidecar["is_independent_prospective_validation"]=True
             sidecar["selection_rule"]="SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD"
             dump(sidecar_path,sidecar)
+            # V4 is a parallel research-facing single output. Its failure never
+            # destroys the locked V3/History Repair prospective cohort.
+            try:
+                from turf_lab.v4_unified import record as record_v4
+                result = record_v4(dest/"prediction.json", sidecar_path)
+                if result["freshness"] != "PRESTART_RESEARCH":
+                    raise ValueError("V4 finished after departure")
+                state.setdefault("v4_saved",[]).append(rid)
+            except (ValueError,KeyError,TypeError,OSError,RuntimeError) as error:
+                state.setdefault("v4_unavailable",[]).append(
+                    {"race_id":rid,"reason":str(error)})
             state["saved"].append(rid)
         except (ValueError,KeyError,TypeError,RuntimeError,OSError) as error:
             state["skipped"].append({"race_id":rid,"reason":str(error)})
