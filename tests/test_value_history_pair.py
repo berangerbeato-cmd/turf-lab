@@ -44,7 +44,8 @@ class MarketHistoryPairTests(unittest.TestCase):
 
     def test_mismatch_and_attempted_history_revision_blocked(self):
         p,h,q,r=self.fixture()
-        h["v3_baseline"]["probabilities"]["1"] *= 2
+        h["v3_baseline"]["probabilities"]["1"] += 0.005
+        h["v3_baseline"]["probabilities"]["2"] -= 0.005
         with self.assertRaisesRegex(ValueError, "changed"):
             paired(p,h,q,r)
         p,h,q,r=self.fixture()
