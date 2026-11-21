@@ -23,6 +23,8 @@ on:
       - 'turf_lab/v4_speed_data.py'
       - 'scripts/score_v4_integrated_prospective.py'
       - 'tests/test_v4_multifeature_inference.py'
+      - 'tests/test_capture_v4_context.py'
+      - 'scripts/capture_v4_context.py'
       - 'turf_lab/v4_multifeature_inference.py'
       - 'turf_lab/v4_multi_features.py'
       - 'turf_lab/v4_reliability_market.py'
@@ -46,7 +48,7 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements-v5.txt scipy==1.17.0
       - name: Test prospective selection, provenance and result-scoring
-        run: python -m unittest tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective tests.test_v4_full_inference tests.test_v4_speed tests.test_v4_speed_shadow tests.test_v4_multifeature tests.test_v4_multifeature_inference -v
+        run: python -m unittest tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective tests.test_v4_full_inference tests.test_v4_speed tests.test_v4_speed_shadow tests.test_v4_multifeature tests.test_v4_multifeature_inference tests.test_capture_v4_context -v
       - name: Capture two deterministic future harness races (no betting)
         if: github.event_name != 'push'
         run: python -m scripts.capture_history_repair_prospective
