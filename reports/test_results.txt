@@ -238,6 +238,7 @@ test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synth
 test_evaluation_no_refit_and_idempotent (test_v7_holdout.V7HoldoutTests.test_evaluation_no_refit_and_idempotent) ... ok
 test_freeze_and_tampering (test_v7_holdout.V7HoldoutTests.test_freeze_and_tampering) ... ok
 test_scope_guard_before_network (test_v7_holdout.V7HoldoutTests.test_scope_guard_before_network) ... ok
+test_value_history_pair (unittest.loader._FailedTest.test_value_history_pair) ... ERROR
 test_bad_probability_and_wrong_market_rejected (test_value_market_audit.Audit.test_bad_probability_and_wrong_market_rejected) ... ok
 test_band_edges (test_value_market_audit.Audit.test_band_edges) ... ok
 test_dq_is_loss_and_market_normalizes (test_value_market_audit.Audit.test_dq_is_loss_and_market_normalizes) ... ok
@@ -397,6 +398,25 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_value_history_pair (unittest.loader._FailedTest.test_value_history_pair)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_value_history_pair
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_value_history_pair.py", line 8, in <module>
+    from turf_lab.value_history_pair import paired
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/value_history_pair.py", line 13, in <module>
+    from turf_lab.market_repair import predict
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_high_ev_does_not_resume_recommendation (test_value_market_audit.Audit.test_high_ev_does_not_resume_recommendation)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -431,9 +451,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 250 tests in 0.200s
+Ran 251 tests in 0.210s
 
-FAILED (errors=11, skipped=7)
+FAILED (errors=12, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
