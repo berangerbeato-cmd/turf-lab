@@ -234,6 +234,11 @@ test_market_free_and_no_recommendation (test_sport_history_repair.Repair.test_ma
 test_missing_blocks (test_sport_history_repair.Repair.test_missing_blocks) ... ok
 test_only_recent_features_change (test_sport_history_repair.Repair.test_only_recent_features_change) ... ok
 test_stage_ranking (unittest.loader._FailedTest.test_stage_ranking) ... ERROR
+test_incomplete_archive_not_falsely_asserted_as_repaired (test_v4_full_training.V4HistoryTrainingTests.test_incomplete_archive_not_falsely_asserted_as_repaired) ... ERROR
+test_repair_may_not_erase_archived_known_starts (test_v4_full_training.V4HistoryTrainingTests.test_repair_may_not_erase_archived_known_starts) ... ok
+test_repaired_recent_five_is_the_only_change (test_v4_full_training.V4HistoryTrainingTests.test_repaired_recent_five_is_the_only_change) ... FAIL
+test_target_or_horse_identity_mismatch_fails_closed (test_v4_full_training.V4HistoryTrainingTests.test_target_or_horse_identity_mismatch_fails_closed) ... ok
+test_unknown_races_remain_archive_only (test_v4_full_training.V4HistoryTrainingTests.test_unknown_races_remain_archive_only) ... ERROR
 test_v4_unified (unittest.loader._FailedTest.test_v4_unified) ... ERROR
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
@@ -401,6 +406,24 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_incomplete_archive_not_falsely_asserted_as_repaired (test_v4_full_training.V4HistoryTrainingTests.test_incomplete_archive_not_falsely_asserted_as_repaired)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_full_training.py", line 36, in test_incomplete_archive_not_falsely_asserted_as_repaired
+    self.assertEqual(stats["runners_repaired"],0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'runners_repaired'
+
+======================================================================
+ERROR: test_unknown_races_remain_archive_only (test_v4_full_training.V4HistoryTrainingTests.test_unknown_races_remain_archive_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_full_training.py", line 43, in test_unknown_races_remain_archive_only
+    self.assertEqual(stats["runners_repaired"],0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'runners_repaired'
+
+======================================================================
 ERROR: test_v4_unified (unittest.loader._FailedTest.test_v4_unified)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_v4_unified
@@ -472,10 +495,30 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'numpy'
 
 
+======================================================================
+FAIL: test_repaired_recent_five_is_the_only_change (test_v4_full_training.V4HistoryTrainingTests.test_repaired_recent_five_is_the_only_change)
 ----------------------------------------------------------------------
-Ran 254 tests in 0.257s
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_full_training.py", line 28, in test_repaired_recent_five_is_the_only_change
+    self.assertEqual(a,original)
+AssertionError: {'rac[106 chars]_runner': False, 'available_recent': [0.2, 0.4, 0.2, 1.8, 1]}]} != {'rac[106 chars]_runner': False, 'available_recent': [0, 0.2, 0.2, 2, 1]}]}
+  {'date': '2024-04-03',
+   'race_id': '2024-04-03_R1C1',
+-  'runners': [{'available_recent': [0.2, 0.4, 0.2, 1.8, 1],
+?                                         -----     ^^^
 
-FAILED (errors=13, skipped=7)
++  'runners': [{'available_recent': [0, 0.2, 0.2, 2, 1],
+?                                    +++          ^
+
+                'horse_id': 'H1',
+                'non_runner': False,
+                'number': 1,
+                'won': 1}]}
+
+----------------------------------------------------------------------
+Ran 259 tests in 0.259s
+
+FAILED (failures=1, errors=15, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
