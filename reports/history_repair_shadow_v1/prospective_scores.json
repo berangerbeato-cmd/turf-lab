@@ -3,6 +3,7 @@
   "version": "history_repair_shadow_v1_1_nancy_alias",
   "recommendations_allowed": false,
   "prospective_start": "2026-11-22T00:00:00+01:00",
+  "selection_cohort": "Deterministic scheduled first-two-races, no user-selected forecasts",
   "eligible_forecasts": 0,
   "verified_results": 0,
   "pending_or_excluded_outcomes": 0,
@@ -15,7 +16,7 @@
   "awaiting_outcomes": [],
   "invalid_forecasts": [],
   "limitations": [
-    "Only original archived prospective sidecars and independent verified race outcomes.",
+    "Only predeclared scheduled cohort sidecars and independent verified race outcomes; no on-demand cherry-picking.",
     "This is a paired sample; formal promotion requires new independent test and reviewed gate.",
     "No historical PMU prices reused as executable bets; no ROI or automatic bets.",
     "Never replace the frozen original prediction with a retrospective replay."
