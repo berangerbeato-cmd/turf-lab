@@ -166,6 +166,8 @@ def run(day,reunion,course):
     # same official history already loaded for V3, without a second fetch.
     try:
         from turf_lab.v4_speed_data import prestart_target_context
+        from turf_lab.v4_multi_features import live_context
+        policy = json.loads(Path('config/full_history_protocol.json').read_text())
         speed_history = [r for r in history
                          if r['date'][:7] not in policy['excluded_months']
                          and r['race_id'] not in policy['excluded_races']]
@@ -175,7 +177,19 @@ def run(day,reunion,course):
             raise ValueError('43-feature chrono finished after the race started')
         speed_context['captured_at'] = speed_finished.isoformat()
         dump(root/'v4_speed_context.json',speed_context)
-        print('V4 speed context prepared for every runner',flush=True)
+        # Additional class/gains/form/R evidence is computed from these SAME
+        # strictly earlier official records. No results from the target day.
+        base_runners = [dict(r, features=list(r['features'])+[
+            speed_context['target_field'][str(r['number'])]['context_residual']
+        ]) for r in models['available_history_v3']['runners']]
+        aux = live_context(speed_history,target,{'race_id':rid,
+                     'date':day,'runners':base_runners})
+        aux_finished=datetime.now(timezone.utc)
+        if aux_finished>=start:
+            raise ValueError('V4 class/gains/form/R context completed after race start')
+        aux['captured_at']=aux_finished.isoformat()
+        dump(root/'v4_aux_context.json',aux)
+        print('V4 47 feature historic contexts recorded',flush=True)
     except (ValueError,OSError,TypeError,KeyError,RuntimeError) as error:
         dump(root/'v4_speed_context_error.json',{
             'race_id':rid,'status':'V4_SPEED_BLOCKED_NO_BET',
