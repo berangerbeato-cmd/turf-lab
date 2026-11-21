@@ -1,0 +1,58 @@
+name: Turf Lab V4 43-feature chrono integration audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_speed_integration.yml'
+      - 'config/v4_active.json'
+      - 'turf_lab/v4_active_inference.py'
+      - 'turf_lab/v4_speed_data.py'
+      - 'scripts/predict_operational.py'
+      - 'scripts/run_prediction_request.py'
+      - 'scripts/capture_history_repair_prospective.py'
+      - 'scripts/score_v4_integrated_prospective.py'
+      - 'tests/test_v4_speed_promoted.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-v4-active-integration-audit
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install existing V4 numerical dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Syntax and safety of the 43-feature prestart model
+        run: |
+          python -m py_compile turf_lab/v4_active_inference.py turf_lab/v4_speed_data.py scripts/predict_operational.py scripts/run_prediction_request.py scripts/capture_history_repair_prospective.py scripts/score_v4_integrated_prospective.py
+          python -m unittest tests.test_v4_speed_promoted tests.test_v4_speed tests.test_v4_full_inference tests.test_history_repair_shadow -v
+      - name: Initialize verified prestart-only integrated V4 tracking
+        run: python -m scripts.score_v4_integrated_prospective
+      - name: Store single V4 independent scoring state
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f reports/v4_integrated/prospective_scores.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Track newly integrated 43-feature V4 prospective results'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
