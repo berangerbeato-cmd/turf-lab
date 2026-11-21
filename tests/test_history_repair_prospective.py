@@ -44,6 +44,8 @@ class ForwardScoreTests(unittest.TestCase):
         report={
             "race_id":"2026-11-23_R1C3","status":"PRESTART_HISTORY_REPAIR_SHADOW",
             "candidate":CANDIDATE_VERSION,"recommendations_allowed":False,
+            "is_independent_prospective_validation":True,
+            "selection_rule":"SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD",
             "scheduled_start":start,"original_predicted_at":old,
             "shadow_calculated_at":"2026-11-23T16:02:00+00:00",
             "source_prediction":str(forecast.relative_to(root)),
