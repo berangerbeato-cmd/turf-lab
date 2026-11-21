@@ -23,7 +23,7 @@ def confirm(path):
     path=Path(path)
     saved=json.loads(path.read_text())
     sidecar,pred=validate_sidecar(path.parent/"history_repair_shadow_v1_1.json")
-    if (saved.get("version")!="turf_lab_v4_integrated_speed_1"
+    if (saved.get("version")!="turf_lab_v4_multifeature_1"
             or saved.get("model")!="TURF_LAB_V4"
             or saved.get("freshness")!="PRESTART_RESEARCH"
             or saved.get("recommendations_allowed") is not False
@@ -44,15 +44,23 @@ def confirm(path):
             or saved["evidence"]["speed_context"]!=(path.parent/"v4_speed_context.json").as_posix()
             or saved["evidence"]["quotes"] is not None):
         raise ValueError("Unexpected V4 source, quote or mismatched race")
-    from turf_lab.v4_active_inference import run,frame,load_active
+    aux_path=path.parent/"v4_aux_context.json"
+    if (saved["evidence"].get("aux_context")!=aux_path.as_posix()
+            or saved.get("reliability_R",{}).get("market_R_gate_fitted") is not True):
+        raise ValueError("Missing original class/gain/form/R evidence")
+    from turf_lab.v4_multifeature_inference import run,enhanced_frame,frozen
     reproduced=run(path.parent/"prediction.json",
                    path.parent/"history_repair_shadow_v1_1.json",
-                   path.parent/"v4_speed_context.json",now=generated)
-    for key in ("gagnant","top5","history_repair","context_speed","model_sha256"):
+                   path.parent/"v4_speed_context.json",
+                   aux_path,now=generated)
+    for key in ("gagnant","top5","history_repair","context_speed","model_sha256",
+                "relative_class_and_gains","weighted_recent_form","reliability_R"):
         if saved[key]!=reproduced[key]:
-            raise ValueError("Prestart V4 probabilities or inputs not reproducible")
-    objects,_,lock,_=load_active()
-    runners,_,active,_=frame(pred,sidecar,speed,path.parent/"prediction.json",generated)
+            raise ValueError("Original 47-feature V4 inputs or outputs not reproducible")
+    objects,lock=frozen()
+    aux=json.loads(aux_path.read_text())
+    runners,_,active,_,indices=enhanced_frame(
+        pred,sidecar,speed,aux,path.parent/"prediction.json",generated)
     from turf_lab.pilot import probabilities
     raw=probabilities({"runners":runners},objects["winner"]["model"])
     temp=objects["winner"]["temperature"]
@@ -109,8 +117,8 @@ def run(output=OUT):
     fields=("log_loss","brier","top1_correct","top5_overlap","top5_exact")
     averages={label:{m:mean(r["metrics"][label][m] for r in scores) for m in fields}
               for label in ("v4_integrated","v3_frozen")} if scores else {}
-    result={"version":"turf_lab_v4_integrated_speed_1",
-            "status":"SINGLE_43_FEATURE_V4_PRESTART_COHORT",
+    result={"version":"turf_lab_v4_multifeature_1",
+            "status":"SINGLE_47_FEATURE_V4_PRESTART_COHORT",
             "research_only":True,"recommendations_allowed":False,
             "original_captures":len(paths),"verified_results":len(scores),
             "pending_results":len(pending),"invalid_inputs":len(invalid),
@@ -119,7 +127,7 @@ def run(output=OUT):
             "roi":None,
             "limits":["2026 historical comparisons were non-independent; this cohort counts ONLY forecasts archived before actual race starts.",
                       "No ZEturf executable odds or betting settlement, so profitability cannot be claimed.",
-                      "The 43rd speed input is frozen at prediction time and cannot be recomputed from outcomes."]}
+                      "The speed and class/gains/form/R inputs are frozen before the race; the R market gate is not a certified bookmaker ROI."]}
     dump(output,result)
     print(json.dumps({k:result[k] for k in ("original_captures","verified_results","pending_results","invalid_inputs","mean")},indent=2))
     return result
