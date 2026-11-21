@@ -8,6 +8,8 @@ on:
       - 'scripts/evaluate_value_history_pair.py'
       - 'scripts/score_value_history_pair.py'
       - 'tests/test_value_history_pair.py'
+      - 'scripts/run_prediction_request.py'
+      - 'reports/value_history_pair_v1/PROTOCOL.md'
   workflow_dispatch:
 permissions:
   contents: write
@@ -29,7 +31,9 @@ jobs:
       - name: Install frozen scientific dependencies
         run: pip install -r requirements-v5.txt
       - name: Test frozen V2 reproduction, complete boards, chronology and failure modes
-        run: python -m unittest tests.test_value_history_pair -v
+        run: |
+          python -m py_compile turf_lab/value_history_pair.py scripts/run_prediction_request.py scripts/evaluate_value_history_pair.py scripts/score_value_history_pair.py
+          python -m unittest tests.test_value_history_pair -v
       - name: Replay archived prestart Reims market and sport history, retrospective only
         run: python -m scripts.evaluate_value_history_pair
       - name: Report genuinely prestart future on-demand price pairs separately
