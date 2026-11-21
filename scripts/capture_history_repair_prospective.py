@@ -114,27 +114,24 @@ def capture():
             sidecar["is_independent_prospective_validation"]=True
             sidecar["selection_rule"]="SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD"
             dump(sidecar_path,sidecar)
-            # V4 is a parallel research-facing single output. Its failure never
-            # destroys the locked V3/History Repair prospective cohort.
+            # ONE integrated V4: obtain the 43rd chrono feature from the
+            # already verified prestart history, then use all trained weights.
+            # Do not silently return to the former 42-feature V4.
             try:
-                from turf_lab.v4_full_inference import record as record_v4
-                result = record_v4(dest/"prediction.json", sidecar_path)
+                from turf_lab.v4_speed_data import prestart_target_context
+                from turf_lab.v4_active_inference import record as record_v4
+                speed_context = prestart_target_context(filtered,target)
+                speed_context["captured_at"] = datetime.now(timezone.utc).isoformat()
+                speed_file = dest/"v4_speed_context.json"
+                if datetime.fromisoformat(speed_context["captured_at"]).timestamp()*1000 >= course["heureDepart"]:
+                    raise ValueError("V4 chrono computed too late")
+                dump(speed_file,speed_context)
+                result = record_v4(dest/"prediction.json", sidecar_path,speed_file)
                 if result["freshness"] != "PRESTART_RESEARCH":
-                    raise ValueError("V4 finished after departure")
-                state.setdefault("v4_saved",[]).append(rid)
+                    raise ValueError("New integrated V4 finished after departure")
+                state.setdefault("v4_integrated_saved",[]).append(rid)
             except (ValueError,KeyError,TypeError,OSError,RuntimeError) as error:
-                state.setdefault("v4_unavailable",[]).append(
-                    {"race_id":rid,"reason":str(error)})
-            # Experimental V4+Speed from prior official timing only. Capture
-            # original prediction before departure; never alter public V4.
-            try:
-                from turf_lab.v4_speed_shadow import record as record_speed
-                speed = record_speed(dest/"prediction.json",sidecar_path,filtered)
-                if speed["status"] != "PRESTART_SHADOW_RESEARCH":
-                    raise ValueError("Speed-only forecast not captured prospectively")
-                state.setdefault("speed_v4_saved",[]).append(rid)
-            except (ValueError,KeyError,TypeError,OSError,RuntimeError) as error:
-                state.setdefault("speed_v4_unavailable",[]).append(
+                state.setdefault("v4_integrated_unavailable",[]).append(
                     {"race_id":rid,"reason":type(error).__name__+": "+str(error)})
             state["saved"].append(rid)
         except (ValueError,KeyError,TypeError,RuntimeError,OSError) as error:
