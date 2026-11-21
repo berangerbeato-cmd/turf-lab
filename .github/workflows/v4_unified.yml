@@ -1,0 +1,51 @@
+name: Turf Lab V4 single model interface research audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_unified.yml'
+      - 'config/v4_unified.json'
+      - 'turf_lab/v4_unified.py'
+      - 'scripts/replay_v4_unified.py'
+      - 'tests/test_v4_unified.py'
+      - 'scripts/run_prediction_request.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install established frozen dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Test mandatory history and one user-facing model pipeline
+        run: |
+          python -m py_compile turf_lab/v4_unified.py scripts/run_prediction_request.py scripts/replay_v4_unified.py
+          python -m unittest tests.test_v4_unified tests.test_history_repair_shadow tests.test_value_history_pair tests.test_stage_ranking -v
+      - name: Reproduce one V4 result from prestart historical evidence, not for prospective scoring
+        run: python -m scripts.replay_v4_unified
+      - name: Archive immutable postrace demonstration and research only
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f reports/v4/reims_2026-11-21_R4C5_replay_only.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive V4 historical interface demonstration, no betting'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
