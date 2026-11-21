@@ -107,6 +107,13 @@ def capture():
             record_history_repair_shadow(dest/"prediction.json",status)
             if status.get("history_repair_shadow_status")!="PRESTART_RECORDED":
                 raise ValueError(status.get("history_repair_shadow_reason","No prestart sidecar"))
+            # This forecast is from the predeclared non-selective scheduled cohort,
+            # unlike user-selected on-demand sidecars.
+            sidecar_path=dest/"history_repair_shadow_v1_1.json"
+            sidecar=json.loads(sidecar_path.read_text())
+            sidecar["is_independent_prospective_validation"]=True
+            sidecar["selection_rule"]="SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD"
+            dump(sidecar_path,sidecar)
             state["saved"].append(rid)
         except (ValueError,KeyError,TypeError,RuntimeError,OSError) as error:
             state["skipped"].append({"race_id":rid,"reason":str(error)})
