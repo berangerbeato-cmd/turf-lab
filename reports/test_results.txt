@@ -81,6 +81,14 @@ test_duplicate_dates_rejected (test_history_inventory.CalendarIntegrityTests.tes
 test_full_calendar_without_source_proof_not_complete (test_history_inventory.CalendarIntegrityTests.test_full_calendar_without_source_proof_not_complete) ... ok
 test_missing_months_not_assumed_complete (test_history_inventory.HistoryInventoryTests.test_missing_months_not_assumed_complete) ... ok
 test_partial_month_is_not_complete (test_history_inventory.HistoryInventoryTests.test_partial_month_is_not_complete) ... ok
+test_combine_individual_and_archived_recent_by_race_identity (test_history_repair_shadow.HistoryRepairShadowTests.test_combine_individual_and_archived_recent_by_race_identity) ... ok
+test_disagreeing_archive_and_individual_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_disagreeing_archive_and_individual_abstains) ... ok
+test_fewer_than_five_known_starts_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_fewer_than_five_known_starts_abstains) ... ok
+test_future_start_rejected (test_history_repair_shadow.HistoryRepairShadowTests.test_future_start_rejected) ... ok
+test_old_unknown_result_does_not_poison_recent_five (test_history_repair_shadow.HistoryRepairShadowTests.test_old_unknown_result_does_not_poison_recent_five) ... ok
+test_same_day_multiple_starts_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_same_day_multiple_starts_abstains) ... ok
+test_stamps_must_precede_start_and_be_aware (test_history_repair_shadow.HistoryRepairShadowTests.test_stamps_must_precede_start_and_be_aware) ... ok
+test_unresolved_recent_result_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_unresolved_recent_result_abstains) ... ok
 test_calendar_no_seven_day_limit (test_history_sync.HistorySyncTests.test_calendar_no_seven_day_limit) ... ok
 test_cancel_requires_unambiguous_evidence (test_history_sync.HistorySyncTests.test_cancel_requires_unambiguous_evidence) ... ok
 test_complete_day_no_download (test_history_sync.HistorySyncTests.test_complete_day_no_download) ... ok
@@ -397,7 +405,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 237 tests in 0.215s
+Ran 245 tests in 0.276s
 
 FAILED (errors=10, skipped=7)
 Outside fixed cohort dates; no requests
