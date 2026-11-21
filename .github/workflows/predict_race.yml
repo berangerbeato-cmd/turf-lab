@@ -43,8 +43,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          mkdir -p predictions_operational data/prediction_inputs reports/operational
-          git add predictions_operational data/prediction_inputs reports/operational
+          mkdir -p predictions_operational data/prediction_inputs reports/operational reports/v4
+          git add predictions_operational data/prediction_inputs reports/operational reports/v4
           if [ -d reports/sg_ev_probability_comparison_v1 ]; then git add reports/sg_ev_probability_comparison_v1; fi
           if [ -d reports/sg_ev_probability_comparison_v2 ]; then git add reports/sg_ev_probability_comparison_v2; fi
           if ! git diff --cached --quiet; then
