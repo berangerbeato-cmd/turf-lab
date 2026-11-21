@@ -1,0 +1,23 @@
+{
+  "version": "v4_speed_challenger_1",
+  "status": "ORIGINAL_PRESTART_NONMARKET_V4_SPEED_VS_V4",
+  "sampling_rule": "Only deterministic scheduled captures; never retro or user-selected race",
+  "recommendations_allowed": false,
+  "captured": 0,
+  "verified_results": 0,
+  "pending_results": 0,
+  "invalid_original_captures": 0,
+  "minimum_races_before_review": 200,
+  "validation_ready": false,
+  "means": {},
+  "paired_differences": {},
+  "scored": [],
+  "pending": [],
+  "invalid": [],
+  "roi": null,
+  "limits": [
+    "PMU archived prices are not real ZEturf bets; this research cohort has no odds.",
+    "Race-level speed inputs must be captured before the race, not rebuilt after result.",
+    "No automatic candidate promotion to the one user-facing V4."
+  ]
+}
