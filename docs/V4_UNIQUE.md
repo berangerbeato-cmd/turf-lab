@@ -1,3 +1,29 @@
+# TURF LAB V4 : version active avec les chronos corrigés
+
+**Depuis le 22 novembre 2026, Turf Lab V4 utilise réellement 43 variables.** Le signal de vitesse contextualisée de notre V7 a été intégré aux trois ensembles de coefficients réentraînés. Il n'existe qu'**une seule V4 à utiliser**.
+
+## Fonctionnement actuel
+
+1. La course est capturée, avec les performances officiellement connues **avant le départ**.
+2. `History Repair V1.1` contrôle et réconcilie les cinq dernières performances.
+3. Le calcul `v4_speed_context.json` reconstitue la **43e variable** de chacun des partants : la médiane de ses récents écarts de réduction kilométrique au chrono attendu pour l'hippodrome, la catégorie de distance et le départ, à partir **des courses antérieures uniquement**. Une performance manquante reste `null`, conformément à l'entraînement.
+4. `turf_lab/v4_active_inference.py` applique les poids nouvellement entraînés de `models/v4_speed/` : probabilités de gagner, cinq positions de classement, puis correction des cotes si un tableau complet et vérifié existe.
+5. Un seul rapport `v4_integrated.json`, et un seul état `reports/v4/latest.json`. Si le contrôle historique ou le contexte chrono ne peut être établi, V4 répond `BLOCKED_NO_BET` plutôt que revenir à la V4 ancienne.
+
+**Les 42 variables précédentes sont conservées comme entrées, et la 43e les complète.** La V4 précédente, la V3, V2 Cotes et les autres références restent gelées à des fins d'audit, pas pour offrir plusieurs choix aux utilisateurs.
+
+## Résultats et limites
+
+Le réentraînement historique a porté sur 17 532 courses gagnant, 17 335 Top5 et 1 711 cotes. Sur l'évaluation 2026 déjà consultée, log loss gagnant **2,11568 → 2,10713** et Top5 exact **103 → 109 sur 4 574**. Correction cotes **1,92499 → 1,92412**. Ces améliorations sont **exploratoires**. Il n'existe encore aucune validation indépendante ZEturf ou ROI réel.
+
+La validation en conditions prospectives utilise désormais `scripts/score_v4_integrated_prospective.py` et `reports/v4_integrated/prospective_scores.json`. Les tests GitHub de la nouvelle entrée ont réussi.
+
+**Politique de mise inchangée : SUSPENDED / NO BET.** L'intégration a été explicitement demandée ; elle n'autorise pas à surestimer la qualité des probabilités ni à proposer des mises réelles.
+
+---
+
+## Ancienne documentation V4 (42 variables), conservée pour traçabilité
+
 # Turf Lab V4 : un seul résultat par course
 
 **Statut au 21 novembre 2026 : V4 effectivement réentraînée, mais encore expérimentale (NO BET).**
