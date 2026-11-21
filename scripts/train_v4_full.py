@@ -78,7 +78,7 @@ def fit_ranker(rows, calibration, config):
     mean = np.nanmean(combined,axis=0)
     mean = np.nan_to_num(mean)
     scale = np.nanstd(combined,axis=0)
-    scale = np.where(np.isfinite(scale)&(scale)>1e-8,scale,1)
+    scale = np.where(np.isfinite(scale) & (scale > 1e-8), scale, 1)
     train_x = [transform(x,mean,scale) for x in train_x]
     coef=[]; fits=[]
     for position in range(5):
