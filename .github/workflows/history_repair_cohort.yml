@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements-v5.txt
+      - run: pip install -r requirements-v5.txt scipy==1.17.0
       - name: Test prospective selection, provenance and result-scoring
         run: python -m unittest tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective -v
       - name: Capture two deterministic future harness races (no betting)
