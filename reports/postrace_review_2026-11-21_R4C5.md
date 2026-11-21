@@ -25,14 +25,14 @@ Displayed ranks 1–7: **2 – 1 – 11 – 9 – 4 – 3 – 7**.
 - ZEturf market normalized implied probability 10.5137% (not a validated real-world winning probability)
 - Screenshot decimal total-return win odds: 8.1
 
-Numbers 1 and 9 were 2nd and 4th, and were among the model-history-warning runners. This is a hypothesis for data-quality investigation, not causal evidence. The complete warning list for this race is **1,5,9,10,13**.
+Numbers 1 and 9 were 2nd and 4th; the original prestart warning listed **1,5,9,10,13**. IMPORTANT CORRECTION after the 21-Nov source audit: #1 and #13 were **false missing-start warnings**, because the same 15-Nov Nancy race was stored as NANCY-BRABOIS in the archive and NANCY in individual history. #9 does have a genuine unjoined 8-Nov Paray-le-Monial result. Do not treat the original five warnings as five real gaps.
 
 ## Reproducible operational diagnosis
 
 ### 1. Critical data coverage gap, already detected but not used
 - `scripts.predict_operational.run` calls `compute_all(history,target)` **before** `individual_history_check.check_all(target,models,...)`.
 - `turf_lab/individual_history_check.py` reconciles dated individual PMU performances and returns missing starts, but deliberately does not alter the frozen model feature vectors.
-- For R4C5, number 1 has a missing 2026-11-15 Nancy performance in the individual history window; number 9 also has a history warning (see saved prediction diagnostics for details).
+- For R4C5, the original warning for #1 on 2026-11-15 Nancy is a **venue-alias false positive**, not a genuinely missing performance. The same is true for #13. The mapping NANCY-BRABOIS -> NANCY has since been added to the individual-history checker. #9 has a genuine extra 2026-11-08 Paray-le-Monial result; #5 and #10 also have genuine discrepancies. Preserve the original snapshot and do not rewrite its flags.
 - **Research implementation candidate**: construct an explicitly versioned, time-corrected feature pipeline from verified individual histories for all runners, prior to prediction. Restrict data to timestamp strictly before the target. Never change historical V3 coefficients, model locks or post-hoc predictions.
 - **Controls**: horse ID + date + venue + race number identity, duplicate detection, ATTELE only, proper DQ mapping, no future/outcome leakage, source response checksum, missingness by track and month, explicit abstention when uncertain. Validate whether enhanced data *actually* improves log loss/calibration on a new chronological holdout against locked V3 before promotion.
 
