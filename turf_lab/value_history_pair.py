@@ -145,8 +145,8 @@ def paired(prediction, sidecar, quotes, reference, *, now=None):
     is_prestart = (
         sidecar["status"] == "PRESTART_HISTORY_REPAIR_SHADOW"
         and "shadow_calculated_at" in sidecar
-        and predicted <= stamp(sidecar["shadow_calculated_at"]) < start
-        and quote_at <= now < start
+        and predicted <= stamp(sidecar["shadow_calculated_at"]) <= now < start
+        and quote_at <= reference_at <= now < start
         and now-quote_at <= timedelta(minutes=5)
     )
     result = {
