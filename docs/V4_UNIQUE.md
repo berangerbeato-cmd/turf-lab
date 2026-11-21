@@ -1,3 +1,41 @@
+# Turf Lab V4 : un seul résultat par course
+
+**Statut au 21 novembre 2026 : V4 effectivement réentraînée, mais encore expérimentale (NO BET).**
+
+Pour l'utilisateur : **un seul moteur nommé Turf Lab V4**. La saisie reste une course avec, si disponibles, les cotes ZEturf complètes. La sortie produite par `scripts.run_prediction_request` est `v4_full_retrained.json`, avec copie lisible dans `reports/v4/latest.json`.
+
+## Modèles V4 (poids neufs)
+- **History Repair** : préalable obligatoire, rapproche les seules performances individuelles datées et vérifiables ; ne fabrique pas les départs manquants. 365 coureurs corrigés dans la base historique de 28 591 courses, répartis sur 157 courses. Les autres archives ne sont pas déclarées exhaustives.
+- **Gagnant V4** : nouveau modèle de 42 variables, entraîné sur 17 532 courses (2022–2024), calibré début 2025.
+- **Classement V4** : cinq nouveaux modèles de choix conditionnel (17 335 courses), calibrés début 2025 ; produit le Top 5 unique.
+- **Correction cotes V4** : nouveaux coefficients sur 1 711 courses de juillet–décembre 2025, appliqués uniquement si les cotes vérifiées du marché sont disponibles. Sans cotes : pas de value.
+- Les anciens V3, Stage V2 et V2 Cotes restent archivés comme témoins, **jamais utilisés comme coefficients V4**.
+
+## Performance exploratoire 2026 (données déjà inspectées)
+| Indicateur | Ancien | V4 réentraînée |
+|---|---:|---:|
+| Log loss gagnant | 2,11586 | 2,11568 |
+| Précision premier choix | 26,93 % | 26,95 % |
+| Top5 exact | 79/4 574 | 103/4 574 |
+| Log loss avec cotes PMU | 1,92489 | 1,92499 |
+
+**La V4 n'est pas encore prouvée meilleure.** Les améliorations gagnant sont marginales et les cotes légèrement moins bonnes. Les historiques détaillés d'avant 2026 ont été récupérés rétrospectivement et leur couverture est limitée ; aucune évaluation 2026 n'est vierge. Il faut une cohorte de prévisions réellement antérieures au départ pour valider.
+
+## Contrôles et données
+- `models/v4_full/` : nouveau gagnant, classement et marché et `frozen_before_test.json` avec empreintes SHA256.
+- `reports/v4_full/evaluation.json` et `reports/v4_full/RESULTS.md` : résultats, qualité des historiques et limites.
+- `scripts/train_v4_full.py` et `turf_lab/v4_retrain_data.py` : réentraînement chronologique. Ne réentraîne jamais automatiquement avec le test.
+- `turf_lab/v4_full_inference.py` : un seul pronostic public expérimenté, avec History Repair obligatoire et NO BET si défaut.
+- `scripts/score_v4_full_prospective.py` : scores des seules prévisions originales d'une cohorte future, sans fuite des arrivées.
+
+**Politique** : `config/recommendation_policy.json` toujours SUSPENDED. Aucun pari automatique ou montant recommandé. Les valeurs EV et Z5 sont des métriques d'étude, pas des conseils validés.
+
+---
+
+## Ancien prototype unifié : archive historique
+
+La suite ci-dessous décrit le prototype V4 antérieur au réentraînement. Il est conservé pour traçabilité uniquement. Ne plus le traiter comme le modèle de référence.
+
 # Turf Lab V4 : un seul résultat pour chaque course
 
 ## Ce qui change pour l'utilisateur
