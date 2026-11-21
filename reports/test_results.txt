@@ -1,7 +1,7 @@
-test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference) ... ok
+test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference) ... ERROR
 test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark) ... ERROR
-test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature) ... ok
-test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected) ... ok
+test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature) ... ERROR
+test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected) ... FAIL
 test_fail_closed_on_changed_archive (test_available_history_research.AvailableHistoryTests.test_fail_closed_on_changed_archive) ... ok
 test_old_history_and_day_cutoff (test_available_history_research.AvailableHistoryTests.test_old_history_and_day_cutoff) ... ok
 test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization) ... ERROR
@@ -243,6 +243,7 @@ test_unknown_races_remain_archive_only (test_v4_full_training.V4HistoryTrainingT
 test_mismatched_id_and_width_refuse_to_train (test_v4_speed.V4SpeedTests.test_mismatched_id_and_width_refuse_to_train) ... ok
 test_only_43rd_feature_is_added_without_mutating_v4 (test_v4_speed.V4SpeedTests.test_only_43rd_feature_is_added_without_mutating_v4) ... ok
 test_speed_uses_only_previous_days (test_v4_speed.V4SpeedTests.test_speed_uses_only_previous_days) ... ok
+test_v4_speed_shadow (unittest.loader._FailedTest.test_v4_speed_shadow) ... ERROR
 test_v4_unified (unittest.loader._FailedTest.test_v4_unified) ... ERROR
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
@@ -269,6 +270,17 @@ test_both_objectives_and_result_blind_inference (test_xgb_rank.RankTrainingTests
 test_exact_groups_and_equal_race_weights (test_xgb_rank.RankTrainingTests.test_exact_groups_and_equal_race_weights) ... skipped 'optional XGBoost dependencies absent'
 
 ======================================================================
+ERROR: test_bad_hash_blocks_inference (test_available_history_operational.ActiveModelTests.test_bad_hash_blocks_inference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_operational.py", line 19, in test_bad_hash_blocks_inference
+    policy,_=verify_active(); policy['files_sha256'][policy['model_file']]='bad'
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/available_history_operational.py", line 18, in verify_active
+    raise ValueError('Active model dependency changed: '+path)
+ValueError: Active model dependency changed: scripts/predict_operational.py
+
+======================================================================
 ERROR: test_comparison_uses_new_primary_not_benchmark (test_available_history_operational.ActiveModelTests.test_comparison_uses_new_primary_not_benchmark)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -282,6 +294,17 @@ Traceback (most recent call last):
   File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_repair.py", line 3, in <module>
     import numpy as np
 ModuleNotFoundError: No module named 'numpy'
+
+======================================================================
+ERROR: test_exact_selected_model_and_temperature (test_available_history_operational.ActiveModelTests.test_exact_selected_model_and_temperature)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_operational.py", line 12, in test_exact_selected_model_and_temperature
+    policy,t=verify_active()
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/available_history_operational.py", line 18, in verify_active
+    raise ValueError('Active model dependency changed: '+path)
+ValueError: Active model dependency changed: scripts/predict_operational.py
 
 ======================================================================
 ERROR: test_temperature_preserves_ranking_and_normalization (test_available_history_research.AvailableHistoryTests.test_temperature_preserves_ranking_and_normalization)
@@ -427,6 +450,23 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_v4_speed_shadow (unittest.loader._FailedTest.test_v4_speed_shadow)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_speed_shadow
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_speed_shadow.py", line 10, in <module>
+    from turf_lab.v4_speed_shadow import predict
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/v4_speed_shadow.py", line 13, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_v4_unified (unittest.loader._FailedTest.test_v4_unified)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_v4_unified
@@ -498,10 +538,23 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'numpy'
 
 
+======================================================================
+FAIL: test_same_day_history_rejected (test_available_history_operational.ActiveModelTests.test_same_day_history_rejected)
 ----------------------------------------------------------------------
-Ran 263 tests in 0.268s
+ValueError: Active model dependency changed: scripts/predict_operational.py
 
-FAILED (errors=14, skipped=7)
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_available_history_operational.py", line 27, in test_same_day_history_rejected
+    with self.assertRaisesRegex(ValueError,'precede target'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "precede target" does not match "Active model dependency changed: scripts/predict_operational.py"
+
+----------------------------------------------------------------------
+Ran 264 tests in 0.177s
+
+FAILED (failures=1, errors=17, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
