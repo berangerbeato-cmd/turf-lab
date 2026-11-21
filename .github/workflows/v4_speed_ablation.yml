@@ -1,0 +1,65 @@
+name: Turf Lab V4 speed correction isolated ablation
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_speed_ablation.yml'
+      - 'config/v4_speed_ablation.json'
+      - 'turf_lab/v4_speed_data.py'
+      - 'scripts/train_v4_speed.py'
+      - 'tests/test_v4_speed.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-v4-speed-isolated-writer
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install frozen V4 numerical dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Test past-only chrono and frozen V4 integrity
+        run: |
+          python -m py_compile turf_lab/v4_speed_data.py scripts/train_v4_speed.py
+          python -m unittest tests.test_v4_speed tests.test_v4_full_training -v
+      - name: Fit V4 plus contextual speed, ranker and market against frozen V4
+        run: python -m scripts.train_v4_speed
+      - name: Archive immutable exploratory models and paired report
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f models/v4_speed reports/v4_speed
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive V4 contextual speed ablation with unchanged production baseline'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - name: Preserve failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: turf-v4-speed-ablation-failure
+          if-no-files-found: ignore
+          path: |
+            reports/v4_speed/failure.json
+            reports/v4_speed/data_audit.json
+            models/v4_speed/frozen_before_test.json
