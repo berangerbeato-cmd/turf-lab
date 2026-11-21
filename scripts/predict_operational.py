@@ -161,6 +161,27 @@ def run(day,reunion,course):
         requires_runner_recheck=True,odds_used_as_features=False,
         code_sha256={str(f):digest(f) for folder in ('scripts','turf_lab') for f in Path(folder).glob('*.py')})
     dump(root/'prediction.json',output)
+    # V4 speed is now the single public model's 43rd input. Capture only
+    # a small, auditable per-horse prestart context sidecar from the very
+    # same official history already loaded for V3, without a second fetch.
+    try:
+        from turf_lab.v4_speed_data import prestart_target_context
+        speed_history = [r for r in history
+                         if r['date'][:7] not in policy['excluded_months']
+                         and r['race_id'] not in policy['excluded_races']]
+        speed_context = prestart_target_context(speed_history, target)
+        speed_finished = datetime.now(timezone.utc)
+        if speed_finished >= start:
+            raise ValueError('43-feature chrono finished after the race started')
+        speed_context['captured_at'] = speed_finished.isoformat()
+        dump(root/'v4_speed_context.json',speed_context)
+        print('V4 speed context prepared for every runner',flush=True)
+    except (ValueError,OSError,TypeError,KeyError,RuntimeError) as error:
+        dump(root/'v4_speed_context_error.json',{
+            'race_id':rid,'status':'V4_SPEED_BLOCKED_NO_BET',
+            'reason':type(error).__name__+': '+str(error),
+            'recommendations_allowed':False})
+        print('V4 speed input unavailable; no V4 fallback',flush=True)
     dump('reports/operational/latest.json',{**recommendation_state(),'primary_model':'available_history_v3','prediction':str(root/'prediction.json'),'race_id':rid,'predicted_at':finished.isoformat(),
         'models':{n:{k:v for k,v in m.items() if k!='runners'} for n,m in models.items()},'place':place,
         'scheduled_start':start.isoformat(),'history_through':coverage['last_collected_day'],'individual_history_check':history_check,
