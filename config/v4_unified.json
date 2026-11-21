@@ -1,0 +1,32 @@
+{
+  "version": "turf_lab_v4_research_1",
+  "status": "RESEARCH_PAPER_ONLY",
+  "single_public_output": "v4_unified.json",
+  "history_repair_required": "history_repair_shadow_v1_1_nancy_alias",
+  "win_probabilities": "history_repair_shadow_v1_1:research_candidate",
+  "ranking": "stage_ranking_v2:stage_raw_top5_from_history_repaired_features",
+  "value": "value_correction_v2:unchanged_weights_on_repaired_history_only_when_verified_quotes",
+  "simple_gagnant": {
+    "minimum_indicative_ev": 0.10,
+    "consider_only_top_n_by_win_probability": 4,
+    "no_quote_means_no_value": true
+  },
+  "ze5": {
+    "numbers": 5,
+    "offer_confirmation_required": true,
+    "validated_joint_probability": false
+  },
+  "recommendations_allowed": false,
+  "automatic_betting": false,
+  "history_unresolved_must_be_disclosed": true,
+  "no_fallback_to_uncorrected_v3": true,
+  "not_promoted": true,
+  "limitations": [
+    "Single user-facing workflow is NOT a newly jointly trained statistical model.",
+    "The frozen Stage V2 ranking was not trained on repaired five-start features.",
+    "The frozen V2 Cotes was fitted on uncorrected V3 probabilities and must be revalidated.",
+    "Top 5 and Z5 are experimental research displays, not proven profitable bets.",
+    "History anomalies and absent verified quotes must not be silently replaced with V3.",
+    "Prior source predictions are immutable and never overwritten."
+  ]
+}
