@@ -1,0 +1,46 @@
+{
+  "history_repair": {
+    "races_archive_only": 27973,
+    "runners_cohort_baseline_mismatch_abstained": 7081,
+    "runners_verified_unchanged": 473,
+    "races_cohort_available": 618,
+    "runners_repaired": 365,
+    "races_input": 28591,
+    "races_with_verified_repair": 157,
+    "cohort_eligible": 618,
+    "cohort_historical_detail_extra_starts": 6596
+  },
+  "speed_coverage_all": {
+    "active": 381817,
+    "with_speed": 235157,
+    "race_context_available": 28447,
+    "race_insufficient_times": 987
+  },
+  "speed_coverage_target": {
+    "total_active": 368988,
+    "with_past_context_speed": 229402,
+    "fraction": 0.6217058549329517,
+    "missing": 139586
+  },
+  "coverage_by_split": {
+    "train": {
+      "active_runners": 227644,
+      "with_context_speed": 144847,
+      "fraction": 0.6362873609671241
+    },
+    "validation": {
+      "active_runners": 83041,
+      "with_context_speed": 50687,
+      "fraction": 0.6103852313917222
+    },
+    "test": {
+      "active_runners": 58303,
+      "with_context_speed": 33868,
+      "fraction": 0.5808963518172306
+    }
+  },
+  "only_one_new_feature": true,
+  "history_repair_locked_sha256": "72d54e1466c3a31d9a153a7ea574766bcdd63ff9de046858d9f4b5669d0038ec",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "retrospective_timing_not_original_prestart_snapshot": true
+}
