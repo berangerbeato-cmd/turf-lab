@@ -45,8 +45,8 @@ def validate(path):
     if (source["race_id"] != report["race_id"] or quotes["race_id"] != report["race_id"] or
         sidecar["race_id"] != report["race_id"] or comparison["race_id"] != report["race_id"]):
         raise ValueError("Source race mismatch")
-    if sidecar["status"] != "PRESTART_HISTORY_REPAIR_SHADOW" or
-            aware(sidecar["shadow_calculated_at"]) >= start:
+    if (sidecar["status"] != "PRESTART_HISTORY_REPAIR_SHADOW"
+            or aware(sidecar["shadow_calculated_at"]) >= start):
         raise ValueError("History sidecar was not actually captured before start")
     if comparison["value_shadow"]["status"] != "PRESTART_SHADOW" or aware(comparison["calculated_at"]) >= start:
         raise ValueError("Original V2 comparison not prestart")
