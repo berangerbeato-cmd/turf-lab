@@ -8,6 +8,7 @@ on:
       - 'turf_lab/v4_unified.py'
       - 'scripts/replay_v4_unified.py'
       - 'tests/test_v4_unified.py'
+      - 'tests/test_score_v4_prospective.py'
       - 'scripts/score_v4_prospective.py'
       - 'scripts/capture_history_repair_prospective.py'
       - 'scripts/run_prediction_request.py'
@@ -34,7 +35,7 @@ jobs:
       - name: Test mandatory history and one user-facing model pipeline
         run: |
           python -m py_compile turf_lab/v4_unified.py scripts/run_prediction_request.py scripts/replay_v4_unified.py
-          python -m unittest tests.test_v4_unified tests.test_history_repair_shadow tests.test_value_history_pair tests.test_stage_ranking -v
+          python -m unittest tests.test_v4_unified tests.test_score_v4_prospective tests.test_history_repair_shadow tests.test_value_history_pair tests.test_stage_ranking -v
       - name: Reproduce one V4 result from prestart historical evidence, not for prospective scoring
         run: python -m scripts.replay_v4_unified
       - name: Initialize forward-only V4 study scorer (no retro backfill)
