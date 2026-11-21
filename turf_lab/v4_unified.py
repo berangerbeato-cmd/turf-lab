@@ -165,6 +165,7 @@ def assemble(prediction_file, repair_file, pair_file=None, quote_file=None, now=
         "evidence":{"sports":prediction_file.as_posix(),"repair":repair_file.as_posix(),
                     "market_pair":str(pair_file) if pair_file else None,
                     "v3_sha256":raw["model_sha256"],"ranking_sha256":hashes["stage"]},
+        **({"generated_at":now.isoformat()} if not historical else {}),
         "limitations":["One interface, not a new jointly fitted model.",
                        "V2 Cotes and ranking are not calibrated on repaired features.",
                        "Historical uncertainty and missing odds are shown, never hidden.",
