@@ -38,7 +38,7 @@ def load_history(today, target_day):
     if len({r['race_id'] for r in records}) != len(records):
         raise ValueError('Duplicate history')
     # Preserve exactly the fields read by the frozen feature engines, avoiding raw market payloads in RAM.
-    keys=('numPmu','nom','nomMere','nomPere','idCheval','statut','ordreArrivee','incident','driver','entraineur','deferre','age','sexe','reductionKilometrique','tempsObtenu','handicapDistance')
+    keys=('numPmu','nom','nomMere','nomPere','idCheval','statut','ordreArrivee','incident','driver','entraineur','deferre','age','sexe','reductionKilometrique','tempsObtenu','handicapDistance','gainsParticipant')
     compact=[{**{k:r[k] for k in ('date','race_id','venue','country','start_type','distance_m','scheduled_start_ms')},
               'course':{'conditions':r.get('course',{}).get('conditions')},
               'participants':[{k:p[k] for k in keys if k in p} for p in r['participants']]} for r in records]
