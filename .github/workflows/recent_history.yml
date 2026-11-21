@@ -26,6 +26,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install model dependencies for prospective V4 scores
+        run: pip install -r requirements-v5.txt scipy==1.17.0
       - name: Test strict coverage and incremental recovery
         run: python -m unittest discover -s tests -p 'test_history_sync.py'
       - name: Audit all dates and recover missing inputs only
