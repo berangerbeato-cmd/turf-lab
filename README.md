@@ -1,3 +1,14 @@
+# Turf Lab V4 — modèle unique réentraîné (21 novembre 2026)
+
+**Version visible pour les nouvelles courses : `turf_lab_v4_full_retrained_candidate_1`.**
+Le moteur utilise une réconciliation obligatoire des historiques, un **nouveau modèle gagnant**, un **nouveau classement conditionnel Top 5** et une **nouvelle correction des cotes**. Les trois ensembles de poids ont réellement été entraînés sur des périodes chronologiques séparées. Les modèles V3/V2 restent seulement des archives de contrôle.
+
+**Résultats vérifiés :** 17 532 courses gagnant, 17 335 courses pour le classement, 1 711 courses pour le marché ; 365 corrections historiques vérifiées sur 157 courses. Test 2026 déjà inspecté : gagnant log loss 2,11568 (V3 2,11586), Top5 exact 103/4 574 (référence 79/4 574), correction des cotes 1,92499 (ancienne 1,92489). Aucun gain de rentabilité démontré.
+
+**Statut : V4 entraînée mais non validée prospectivement. Pas de paris réels ni de conseil de mise.** Les cotes restent d'origine PMU sur le test historique ; ZEturf est hors validation. Détails : [mode unique V4](docs/V4_UNIQUE.md), [résultats complets](reports/v4_full/RESULTS.md), [suivi d'entraînement](reports/v4_full/status.json), [protocole de suspension](config/recommendation_policy.json).
+
+---
+
 > **29 octobre 2026 — recommandations de paris suspendues.** L’audit face aux cotes
 > confirme une sous-estimation des favoris et une surestimation des outsiders.
 > Les calculs figés continuent uniquement pour la recherche, sans conseil de mise.
