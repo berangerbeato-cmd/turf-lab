@@ -127,6 +127,13 @@ def predict(original_file, history_repair_file, history_records, now=None):
 
 def record(original_file,history_repair_file,history_records,output=None,now=None):
     report=predict(original_file,history_repair_file,history_records,now)
+    # A lengthy history reconstruction can finish after the start. Never
+    # label such a prediction PRESTART just because it *began* earlier.
+    if now is None:
+        finished=datetime.now(timezone.utc)
+        if finished>=stamp(report["scheduled_start"]):
+            raise ValueError("Speed shadow completed after race departure")
+        report["generated_at"]=finished.isoformat()
     dest=Path(output) if output else Path(original_file).parent/"v4_speed_shadow.json"
     if dest.exists() and json.loads(dest.read_text())!=report:
         raise ValueError("Immutable original prestart speed shadow would be changed")
