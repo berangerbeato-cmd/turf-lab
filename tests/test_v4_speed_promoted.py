@@ -25,6 +25,10 @@ def make_case(root):
     return p,h,path
 
 
+@unittest.skipUnless(
+    json.loads(Path('config/v4_active.json').read_text()).get('model_family')
+        == 'v4_speed_challenger_1',
+    'Historical 43-feature active-only tests superseded by 47-feature V4 tests.')
 class ActiveV4SpeedTests(unittest.TestCase):
     def test_actual_retrained_speed_models_are_in_the_one_V4(self):
         models,market,lock,cfg=load_active()
