@@ -1,0 +1,61 @@
+name: Turf Lab V4 full model RETRAIN (winner, Top5, market)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_full_train.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-v4-full-retraining-frozen
+  cancel-in-progress: false
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numerical dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Test full history enrichment and chronology safeguards
+        run: |
+          python -m py_compile turf_lab/v4_retrain_data.py scripts/train_v4_full.py
+          python -m unittest tests.test_v4_full_training -v
+      - name: Fully retrain on strictly date-limited corrected histories
+        run: python -m scripts.train_v4_full
+      - name: Archive V4 trained weights, source locks and descriptive results
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f models/v4_full reports/v4_full
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive complete retrained experimental V4 winner, top5 and market'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - name: Preserve V4 training diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-full-training-diagnostics
+          if-no-files-found: ignore
+          path: |
+            reports/v4_full/status.json
+            reports/v4_full/history_reconciliation_audit.json
+            models/v4_full/frozen_before_test.json
