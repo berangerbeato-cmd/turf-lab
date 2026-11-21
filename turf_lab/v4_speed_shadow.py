@@ -98,7 +98,7 @@ def predict(original_file, history_repair_file, history_records, now=None):
     return {
         "version":lock["version"],
         "status":"PRESTART_SHADOW_RESEARCH",
-        "source":"DETERMINISTIC_SCHEDULED_COORT_ONLY",
+        "source":"DETERMINISTIC_SCHEDULED_COHORT_ONLY",
         "generated_at":now.isoformat(),
         "race_id":pred["race_id"],
         "scheduled_start":pred["scheduled_start"],
@@ -106,6 +106,11 @@ def predict(original_file, history_repair_file, history_records, now=None):
         "top1":ranked[0],"top5":top5,
         "win_probabilities":{str(k):v for k,v in p.items()},
         "speed_in_target_field":cov,
+        "speed_input_by_runner":{
+            str(n):{"context_residual":entry[1],"prior_races_used":entry[2]}
+            for n,entry in sorted(timed[pred["race_id"]].items())
+        },
+        "speed_protocol_sha256":lock["old_speed_protocol_sha256"],
         "history_repair_unresolved":uncertain,
         "history_records_before_target":len(history_records),
         "prior_history_last_day":max(r["date"] for r in history_records),
