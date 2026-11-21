@@ -134,7 +134,7 @@ class ProspectiveSidecarIntegrationTests(unittest.TestCase):
                        return_value={'scheduled_start':start}):
                 record_history_repair_shadow(path, state)
             self.assertEqual(state['history_repair_shadow_status'], 'LATE_NOT_ARCHIVED')
-            self.assertFalse((Path(tmp)/'history_repair_shadow_v1.json').exists())
+            self.assertFalse((Path(tmp)/'history_repair_shadow_v1_1.json').exists())
 
     def test_shadow_failure_does_not_fail_production_prediction(self):
         from tempfile import TemporaryDirectory
@@ -147,7 +147,7 @@ class ProspectiveSidecarIntegrationTests(unittest.TestCase):
                 record_history_repair_shadow(Path(tmp)/'prediction.json', state)
             self.assertEqual(state['history_repair_shadow_status'], 'UNAVAILABLE')
             self.assertIn('invalid timestamp', state['history_repair_shadow_reason'])
-            self.assertFalse((Path(tmp)/'history_repair_shadow_v1.json').exists())
+            self.assertFalse((Path(tmp)/'history_repair_shadow_v1_1.json').exists())
 
 
 if __name__ == '__main__':
