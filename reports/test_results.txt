@@ -240,6 +240,9 @@ test_repair_may_not_erase_archived_known_starts (test_v4_full_training.V4History
 test_repaired_recent_five_is_the_only_change (test_v4_full_training.V4HistoryTrainingTests.test_repaired_recent_five_is_the_only_change) ... ok
 test_target_or_horse_identity_mismatch_fails_closed (test_v4_full_training.V4HistoryTrainingTests.test_target_or_horse_identity_mismatch_fails_closed) ... ok
 test_unknown_races_remain_archive_only (test_v4_full_training.V4HistoryTrainingTests.test_unknown_races_remain_archive_only) ... ok
+test_mismatched_id_and_width_refuse_to_train (test_v4_speed.V4SpeedTests.test_mismatched_id_and_width_refuse_to_train) ... ok
+test_only_43rd_feature_is_added_without_mutating_v4 (test_v4_speed.V4SpeedTests.test_only_43rd_feature_is_added_without_mutating_v4) ... ok
+test_speed_uses_only_previous_days (test_v4_speed.V4SpeedTests.test_speed_uses_only_previous_days) ... ok
 test_v4_unified (unittest.loader._FailedTest.test_v4_unified) ... ERROR
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
@@ -496,7 +499,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 260 tests in 0.200s
+Ran 263 tests in 0.261s
 
 FAILED (errors=14, skipped=7)
 Outside fixed cohort dates; no requests
