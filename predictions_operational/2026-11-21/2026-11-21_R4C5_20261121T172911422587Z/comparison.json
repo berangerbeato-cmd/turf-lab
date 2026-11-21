@@ -1,0 +1,567 @@
+{
+  "value_shadow": {
+    "status": "PRESTART_SHADOW",
+    "model": "value_correction_v2",
+    "model_sha256": "7d2a9e2e155352d14394c6ec03394c77507dab4980fe4c3ec15d6011fe743873",
+    "market_informed": true,
+    "operator": "ZEturf",
+    "source_evidence": "User screenshots IMG_2659.png, IMG_2660.png, IMG_2661.png, 2026-11-21 18:27 Europe/Paris, approximately 9m30s to start, all 14 horses shown. Nonrunner status not independently confirmed.",
+    "observed_at": "2026-11-21T18:27:00+01:00",
+    "calculated_at": "2026-11-21T17:30:25.343232+00:00",
+    "recommendations_allowed": false,
+    "rows": [
+      {
+        "number": 1,
+        "probability": 0.046178613322974724,
+        "market_probability": 0.05224593263475275,
+        "indicative_ev": -0.24728860283551202,
+        "break_even_total_return": 21.65504609257033
+      },
+      {
+        "number": 2,
+        "probability": 0.09796872019207413,
+        "market_probability": 0.10513687678351481,
+        "indicative_ev": -0.20645336644419954,
+        "break_even_total_return": 10.20733962880636
+      },
+      {
+        "number": 3,
+        "probability": 0.11386169752683974,
+        "market_probability": 0.11059853272032075,
+        "indicative_ev": -0.12326492904333397,
+        "break_even_total_return": 8.782584677031341
+      },
+      {
+        "number": 4,
+        "probability": 0.39800528621043735,
+        "market_probability": 0.3870948645211227,
+        "indicative_ev": -0.12438837033703776,
+        "break_even_total_return": 2.5125294428156666
+      },
+      {
+        "number": 5,
+        "probability": 0.05459129092364824,
+        "market_probability": 0.06126681308967409,
+        "indicative_ev": -0.24118105616128938,
+        "break_even_total_return": 18.31794015273621
+      },
+      {
+        "number": 6,
+        "probability": 0.1524413595945846,
+        "market_probability": 0.13101672337637998,
+        "indicative_ev": -0.009131162635200085,
+        "break_even_total_return": 6.559899509289895
+      },
+      {
+        "number": 7,
+        "probability": 0.0078069081877259125,
+        "market_probability": 0.009601000021944417,
+        "indicative_ev": -0.30752724374871154,
+        "break_even_total_return": 128.09168187378052
+      },
+      {
+        "number": 8,
+        "probability": 0.0028755467793293815,
+        "market_probability": 0.003623866816793489,
+        "indicative_ev": -0.3242465068575954,
+        "break_even_total_return": 347.7599485386269
+      },
+      {
+        "number": 9,
+        "probability": 0.03659130204999281,
+        "market_probability": 0.04554057229660267,
+        "indicative_ev": -0.3157426516651345,
+        "break_even_total_return": 27.32889905458274
+      },
+      {
+        "number": 10,
+        "probability": 0.028652794529110105,
+        "market_probability": 0.02967277707130557,
+        "indicative_ev": -0.17766479701453997,
+        "break_even_total_return": 34.90060974625144
+      },
+      {
+        "number": 11,
+        "probability": 0.011831845730971886,
+        "market_probability": 0.013223737607864437,
+        "indicative_ev": -0.23802913492541045,
+        "break_even_total_return": 84.51766721250671
+      },
+      {
+        "number": 12,
+        "probability": 0.025346767575690075,
+        "market_probability": 0.02412489240641558,
+        "indicative_ev": -0.10525910457814047,
+        "break_even_total_return": 39.45276244845886
+      },
+      {
+        "number": 13,
+        "probability": 0.016253394789643258,
+        "market_probability": 0.017274010181469977,
+        "indicative_ev": -0.19870763687058746,
+        "break_even_total_return": 61.52560821553445
+      },
+      {
+        "number": 14,
+        "probability": 0.007594472586977814,
+        "market_probability": 0.009579400471838806,
+        "indicative_ev": -0.32485138701767224,
+        "break_even_total_return": 131.6747132269188
+      }
+    ],
+    "limits": "Shadow SG only. Trained on archived PMU reference prices; other operators and live price snapshots are out-of-sample transfer. No profit, stakes or selection rule. Recalculate if odds or field change."
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-21_R4C5",
+  "observed_at": "2026-11-21T18:27:00+01:00",
+  "calculated_at": "2026-11-21T17:30:25.343232+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 8,
+      "name": "KALIE DU BLEQUIN",
+      "odds": 235,
+      "models": {
+        "v6": {
+          "probability": 0.0673491946875387,
+          "fair_odds": 14.847987487295454,
+          "ev": 14.827060751571594,
+          "implied_raw": 0.00425531914893617,
+          "difference_pp": 6.309387553860252,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.024500352660373814,
+          "fair_odds": 40.815739016580444,
+          "ev": 4.757582875187846,
+          "implied_raw": 0.00425531914893617,
+          "difference_pp": 2.0245033511437645,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.023643368168186053,
+          "fair_odds": 42.29515832458998,
+          "ev": 4.556191519523723,
+          "implied_raw": 0.00425531914893617,
+          "difference_pp": 1.9388049019249884,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "name": "KIPLING IRON",
+      "odds": 35.3,
+      "models": {
+        "v6": {
+          "probability": 0.09013131257134686,
+          "fair_odds": 11.094923301027176,
+          "ev": 2.181635333768544,
+          "implied_raw": 0.028328611898017,
+          "difference_pp": 6.1802700673329865,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09049702704140802,
+          "fair_odds": 11.050086756357617,
+          "ev": 2.194545054561703,
+          "implied_raw": 0.028328611898017,
+          "difference_pp": 6.2168415143391025,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.09646367491037638,
+          "fair_odds": 10.36659655491139,
+          "ev": 2.405167724336286,
+          "implied_raw": 0.028328611898017,
+          "difference_pp": 6.813506301235939,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "name": "KAPITAN TER BLEKTE",
+      "odds": 64.4,
+      "models": {
+        "v6": {
+          "probability": 0.0641508038181144,
+          "fair_odds": 15.588269210706724,
+          "ev": 3.1313117658865677,
+          "implied_raw": 0.015527950310559004,
+          "difference_pp": 4.862285350755539,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03951106678506824,
+          "fair_odds": 25.309364726591323,
+          "ev": 1.5445127009583945,
+          "implied_raw": 0.015527950310559004,
+          "difference_pp": 2.398311647450923,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.046239957030541325,
+          "fair_odds": 21.626317674549387,
+          "ev": 1.9778532327668614,
+          "implied_raw": 0.015527950310559004,
+          "difference_pp": 3.071200671998232,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 13,
+      "name": "KHEOPS DE L'EST",
+      "odds": 49.3,
+      "models": {
+        "v6": {
+          "probability": 0.07063356923150767,
+          "fair_odds": 14.157574236726067,
+          "ev": 2.482234963113328,
+          "implied_raw": 0.02028397565922921,
+          "difference_pp": 5.034959357227846,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.052586619248856076,
+          "fair_odds": 19.016244327624335,
+          "ev": 1.5925203289686043,
+          "implied_raw": 0.02028397565922921,
+          "difference_pp": 3.2302643589626867,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05887911456711594,
+          "fair_odds": 16.983951055515725,
+          "ev": 1.9027403481588157,
+          "implied_raw": 0.02028397565922921,
+          "difference_pp": 3.8595138907886732,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "KINDER DE LA NAVE",
+      "odds": 88.7,
+      "models": {
+        "v6": {
+          "probability": 0.047213821595588686,
+          "fair_odds": 21.18023845994777,
+          "ev": 3.187865975528717,
+          "implied_raw": 0.011273957158962795,
+          "difference_pp": 3.593986443662589,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.030782900854356015,
+          "fair_odds": 32.485567384676564,
+          "ev": 1.7304433057813786,
+          "implied_raw": 0.011273957158962795,
+          "difference_pp": 1.950894369539322,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.030007311231667902,
+          "fair_odds": 33.325211721890646,
+          "ev": 1.6616485062489428,
+          "implied_raw": 0.011273957158962795,
+          "difference_pp": 1.8733354072705106,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "name": "KISSME COOL D'EB",
+      "odds": 88.9,
+      "models": {
+        "v6": {
+          "probability": 0.02662973663882076,
+          "fair_odds": 37.55200487195967,
+          "ev": 1.3673835871911657,
+          "implied_raw": 0.01124859392575928,
+          "difference_pp": 1.5381142713061482,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.035667736212590236,
+          "fair_odds": 28.03654243823339,
+          "ev": 2.1708617492992723,
+          "implied_raw": 0.01124859392575928,
+          "difference_pp": 2.4419142286830957,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.027077933894656715,
+          "fair_odds": 36.93043951914403,
+          "ev": 1.4072283232349823,
+          "implied_raw": 0.01124859392575928,
+          "difference_pp": 1.5829339968897436,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "name": "KELLE BLEUE",
+      "odds": 28.7,
+      "models": {
+        "v6": {
+          "probability": 0.0526877239747685,
+          "fair_odds": 18.9797532434479,
+          "ev": 0.512137678075856,
+          "implied_raw": 0.03484320557491289,
+          "difference_pp": 1.7844518399855611,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.07566331277628195,
+          "fair_odds": 13.216444843708565,
+          "ev": 1.171537076679292,
+          "implied_raw": 0.03484320557491289,
+          "difference_pp": 4.082010720136906,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.07065157461242219,
+          "fair_odds": 14.153966213573629,
+          "ev": 1.0277001913765167,
+          "implied_raw": 0.03484320557491289,
+          "difference_pp": 3.5808369037509302,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "KUROSIO DES LOVES",
+      "odds": 6.5,
+      "models": {
+        "v6": {
+          "probability": 0.1476642006622338,
+          "fair_odds": 6.772122122459417,
+          "ev": -0.040182695695480386,
+          "implied_raw": 0.15384615384615385,
+          "difference_pp": -0.6181953183920064,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.1739544161007596,
+          "fair_odds": 5.7486324430002975,
+          "ev": 0.1307037046549373,
+          "implied_raw": 0.15384615384615385,
+          "difference_pp": 2.010826225460574,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.18567716311307872,
+          "fair_odds": 5.385691935582799,
+          "ev": 0.20690156023501172,
+          "implied_raw": 0.15384615384615385,
+          "difference_pp": 3.1831009266924863,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "name": "KALA DES RACQUES",
+      "odds": 16.3,
+      "models": {
+        "v6": {
+          "probability": 0.03296893338677044,
+          "fair_odds": 30.331584836811054,
+          "ev": -0.46260638579564184,
+          "implied_raw": 0.06134969325153374,
+          "difference_pp": -2.8380759864763303,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.04961368196678987,
+          "fair_odds": 20.155730442851922,
+          "ev": -0.1912969839413251,
+          "implied_raw": 0.06134969325153374,
+          "difference_pp": -1.1736011284743872,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05358432240382293,
+          "fair_odds": 18.662174963486258,
+          "ev": -0.12657554481768618,
+          "implied_raw": 0.06134969325153374,
+          "difference_pp": -0.7765370847710812,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "KELIADE DE L'ITON",
+      "odds": 7.7,
+      "models": {
+        "v6": {
+          "probability": 0.09431289265551454,
+          "fair_odds": 10.603004232439151,
+          "ev": -0.273790726552538,
+          "implied_raw": 0.12987012987012986,
+          "difference_pp": -3.555723721461532,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.1168017898036831,
+          "fair_odds": 8.561512641893328,
+          "ev": -0.10062621851164011,
+          "implied_raw": 0.12987012987012986,
+          "difference_pp": -1.3068340066446762,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.11051310396883315,
+          "fair_odds": 9.048700688761937,
+          "ev": -0.14904909943998468,
+          "implied_raw": 0.12987012987012986,
+          "difference_pp": -1.9357025901296705,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "name": "KORLEON",
+      "odds": 13.9,
+      "models": {
+        "v6": {
+          "probability": 0.061854983269754124,
+          "fair_odds": 16.16684618018449,
+          "ev": -0.14021573255041764,
+          "implied_raw": 0.07194244604316546,
+          "difference_pp": -1.008746277341134,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.04636467682139598,
+          "fair_odds": 21.568143434972214,
+          "ev": -0.3555309921825959,
+          "implied_raw": 0.07194244604316546,
+          "difference_pp": -2.5577769221769486,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.056641146404182635,
+          "fair_odds": 17.655009890939557,
+          "ev": -0.21268806498186132,
+          "implied_raw": 0.07194244604316546,
+          "difference_pp": -1.530129963898283,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "KAKI DE VAL",
+      "odds": 18.7,
+      "models": {
+        "v6": {
+          "probability": 0.0250556528643599,
+          "fair_odds": 39.911153200180124,
+          "ev": -0.5314592914364699,
+          "implied_raw": 0.053475935828877004,
+          "difference_pp": -2.8420282964517103,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.035565268967397534,
+          "fair_odds": 28.117318637929998,
+          "ev": -0.33492947030966613,
+          "implied_raw": 0.053475935828877004,
+          "difference_pp": -1.791066686147947,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03573810559558458,
+          "fair_odds": 27.981337660033926,
+          "ev": -0.3316974253625684,
+          "implied_raw": 0.053475935828877004,
+          "difference_pp": -1.7737830233292424,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "KLARISSA",
+      "odds": 8.1,
+      "models": {
+        "v6": {
+          "probability": 0.10889823408055202,
+          "fair_odds": 9.182885364883878,
+          "ev": -0.11792430394752873,
+          "implied_raw": 0.1234567901234568,
+          "difference_pp": -1.4558556042904778,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.07967187813571382,
+          "fair_odds": 12.55148018848747,
+          "ev": -0.35465778710071816,
+          "implied_raw": 0.1234567901234568,
+          "difference_pp": -4.378491198774298,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.07332910304702137,
+          "fair_odds": 13.63715030523096,
+          "ev": -0.406034265319127,
+          "implied_raw": 0.1234567901234568,
+          "difference_pp": -5.012768707643543,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "KONSPIRATOR GAME",
+      "odds": 2.2,
+      "models": {
+        "v6": {
+          "probability": 0.11044894056312965,
+          "fair_odds": 9.053957375249126,
+          "ev": -0.7570123307611147,
+          "implied_raw": 0.45454545454545453,
+          "difference_pp": -34.40965139823249,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.14881927262532585,
+          "fair_odds": 6.719559787915678,
+          "ev": -0.672597600224283,
+          "implied_raw": 0.45454545454545453,
+          "difference_pp": -30.572618192012868,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.13155412105251016,
+          "fair_odds": 7.601434238619158,
+          "ev": -0.7105809336844776,
+          "implied_raw": 0.45454545454545453,
+          "difference_pp": -32.299133349294436,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
