@@ -1,0 +1,403 @@
+{
+  "status": "COMPLETED_RETRAINED_FULL_V4_EXPLORATORY",
+  "model_family": "One integrated candidate trained from common 42-feature history data",
+  "training_races": 17532,
+  "historical_supplement_eligible_races": 618,
+  "repaired_runners": 365,
+  "repair_audit": {
+    "races_archive_only": 27973,
+    "runners_cohort_baseline_mismatch_abstained": 7081,
+    "runners_verified_unchanged": 473,
+    "races_cohort_available": 618,
+    "runners_repaired": 365,
+    "races_input": 28591,
+    "races_with_verified_repair": 157,
+    "cohort_eligible": 618,
+    "cohort_historical_detail_extra_starts": 6596
+  },
+  "ranking_train_races": 17335,
+  "ranking_calibration_races": 3114,
+  "market_training_races": 1711,
+  "test_races": 4661,
+  "test_is_reused_not_independent": true,
+  "win": {
+    "new_v4": {
+      "races": 4661,
+      "log_loss": 2.115675875239771,
+      "brier_multiclass": 0.8444368862461533,
+      "top1_accuracy": 0.2694700708002575,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 43507,
+          "mean_probability": 0.04247125006520751,
+          "win_frequency": 0.04254487783575057
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 10155,
+          "mean_probability": 0.13868185845638636,
+          "win_frequency": 0.14849827671097982
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 2908,
+          "mean_probability": 0.24135819346803478,
+          "win_frequency": 0.24312242090784045
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 1038,
+          "mean_probability": 0.34121748137692687,
+          "win_frequency": 0.313102119460501
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 411,
+          "mean_probability": 0.4423181026408386,
+          "win_frequency": 0.3309002433090024
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 190,
+          "mean_probability": 0.5457832511076157,
+          "win_frequency": 0.41578947368421054
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "count": 68,
+          "mean_probability": 0.6366890605009512,
+          "win_frequency": 0.5735294117647058
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 20,
+          "mean_probability": 0.7529215301548488,
+          "win_frequency": 0.65
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "count": 6,
+          "mean_probability": 0.8318056501888074,
+          "win_frequency": 0.5
+        }
+      ],
+      "runner_ece": 0.00370544994883187
+    },
+    "frozen_v3": {
+      "races": 4661,
+      "log_loss": 2.115859487138861,
+      "brier_multiclass": 0.8440002453617322,
+      "top1_accuracy": 0.26925552456554386,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 43443,
+          "mean_probability": 0.043294706875727916,
+          "win_frequency": 0.04242340538176461
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 10371,
+          "mean_probability": 0.13849777387876996,
+          "win_frequency": 0.1489730980619034
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 2874,
+          "mean_probability": 0.24132334266673897,
+          "win_frequency": 0.2487821851078636
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 990,
+          "mean_probability": 0.3415322600241988,
+          "win_frequency": 0.30808080808080807
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 369,
+          "mean_probability": 0.44203380710952034,
+          "win_frequency": 0.34417344173441733
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 180,
+          "mean_probability": 0.5432156113124714,
+          "win_frequency": 0.4388888888888889
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "count": 53,
+          "mean_probability": 0.6347160675548993,
+          "win_frequency": 0.6037735849056604
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 18,
+          "mean_probability": 0.7476343804920926,
+          "win_frequency": 0.6666666666666666
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "count": 5,
+          "mean_probability": 0.8241513527892099,
+          "win_frequency": 0.6
+        }
+      ],
+      "runner_ece": 0.004462079147867948
+    },
+    "paired_week": {
+      "block": "week",
+      "blocks": 40,
+      "metrics": {
+        "log_loss": {
+          "challenger_minus_classic": -0.0001836118990899612,
+          "interval_95": [
+            -0.0009549483919863732,
+            0.0007316602521119243
+          ]
+        },
+        "brier_multiclass": {
+          "challenger_minus_classic": 0.0004366408844211264,
+          "interval_95": [
+            0.00013078827053395842,
+            0.0007461070643600692
+          ]
+        },
+        "top1_accuracy": {
+          "challenger_minus_classic": 0.00021454623471358077,
+          "interval_95": [
+            0.0,
+            0.0006586591492579729
+          ]
+        }
+      },
+      "interpretation": "Exploratory paired cluster bootstrap, not corrected for model search; repeated horses can remain dependent across weeks."
+    }
+  },
+  "ranking": {
+    "new_v4_ranking": {
+      "races": 4574,
+      "top5_overlap_mean": 2.8115435067774377,
+      "top5_exact_count": 103,
+      "top5_exact_rate": 0.022518583296895496
+    },
+    "v3_win_top5_baseline": {
+      "races": 4574,
+      "top5_overlap_mean": 2.7818102317446436,
+      "top5_exact_count": 79,
+      "top5_exact_rate": 0.017271534761696544
+    }
+  },
+  "market": {
+    "v4_retrained": {
+      "races": 2578,
+      "log_loss": 1.924987244507959,
+      "brier": 0.8024373482499282,
+      "top1": 0.33747090768037236,
+      "by_odds": {
+        "20-50": {
+          "n": 9534,
+          "p": 0.024222434728928648,
+          "observed": 0.02160688063771764,
+          "expected_wins": 230.93669270560574,
+          "wins": 206
+        },
+        "10-20": {
+          "n": 8017,
+          "p": 0.057655721369441595,
+          "observed": 0.05837595110390421,
+          "expected_wins": 462.22591821881326,
+          "wins": 468
+        },
+        "1-3": {
+          "n": 1485,
+          "p": 0.4546214200471535,
+          "observed": 0.4074074074074074,
+          "expected_wins": 675.112808770023,
+          "wins": 605
+        },
+        "5-10": {
+          "n": 5484,
+          "p": 0.11978824985528475,
+          "observed": 0.1389496717724289,
+          "expected_wins": 656.9187622063815,
+          "wins": 762
+        },
+        "80+": {
+          "n": 2227,
+          "p": 0.005242609400123456,
+          "observed": 0.000898069151324652,
+          "expected_wins": 11.675291134074936,
+          "wins": 2
+        },
+        "3-5": {
+          "n": 2183,
+          "p": 0.23374659539596915,
+          "observed": 0.2368300503893724,
+          "expected_wins": 510.2688177494006,
+          "wins": 517
+        },
+        "50-80": {
+          "n": 2984,
+          "p": 0.010342395849765729,
+          "observed": 0.006032171581769437,
+          "expected_wins": 30.861709215700934,
+          "wins": 18
+        }
+      },
+      "positive_ev_diagnostic": {
+        "n": 2223,
+        "p": 0.20938882074098522,
+        "observed": 0.20332883490778228,
+        "expected_wins": 465.47134850721017,
+        "wins": 452
+      }
+    },
+    "frozen_v3_plus_frozen_v2": {
+      "races": 2578,
+      "log_loss": 1.9248913024790244,
+      "brier": 0.8027165087818903,
+      "top1": 0.3378588052754073,
+      "by_odds": {
+        "20-50": {
+          "n": 9534,
+          "p": 0.02378475644241842,
+          "observed": 0.02160688063771764,
+          "expected_wins": 226.7638679220172,
+          "wins": 206
+        },
+        "10-20": {
+          "n": 8017,
+          "p": 0.05715101648625265,
+          "observed": 0.05837595110390421,
+          "expected_wins": 458.1796991702875,
+          "wins": 468
+        },
+        "1-3": {
+          "n": 1485,
+          "p": 0.4591917569730257,
+          "observed": 0.4074074074074074,
+          "expected_wins": 681.8997591049432,
+          "wins": 605
+        },
+        "5-10": {
+          "n": 5484,
+          "p": 0.11968457452963416,
+          "observed": 0.1389496717724289,
+          "expected_wins": 656.3502067205137,
+          "wins": 762
+        },
+        "80+": {
+          "n": 2227,
+          "p": 0.005059731655909296,
+          "observed": 0.000898069151324652,
+          "expected_wins": 11.268022397710002,
+          "wins": 2
+        },
+        "3-5": {
+          "n": 2183,
+          "p": 0.23524247754816718,
+          "observed": 0.2368300503893724,
+          "expected_wins": 513.534328487649,
+          "wins": 517
+        },
+        "50-80": {
+          "n": 2984,
+          "p": 0.010054998725495768,
+          "observed": 0.006032171581769437,
+          "expected_wins": 30.004116196879373,
+          "wins": 18
+        }
+      },
+      "positive_ev_diagnostic": {
+        "n": 2124,
+        "p": 0.22384642148148373,
+        "observed": 0.2128060263653484,
+        "expected_wins": 475.4497992266715,
+        "wins": 452
+      }
+    },
+    "excluded_2025": {
+      "nonrunner_price_field_uncertain": 1410,
+      "incomplete_price": 1529,
+      "inconsistent_underround_board": 3,
+      "not_prestart_or_stale": 30
+    },
+    "excluded_2026": {
+      "nonrunner_price_field_uncertain": 1135,
+      "incomplete_price": 876,
+      "not_prestart_or_stale": 25,
+      "inconsistent_underround_board": 47
+    },
+    "market_fit_rows": 1711,
+    "market_test_rows": 2578
+  },
+  "model_lock": "models/v4_full/frozen_before_test.json",
+  "production_changed": false,
+  "recommendations_allowed": false,
+  "roi": null,
+  "limits": [
+    "2026 is reused historical evaluation, not an untouched or prospective holdout",
+    "The 618 verified historical-detail selections are a subset; unobserved historical starts cannot be invented, and remaining rows are archive-only",
+    "PMU historical detailed records were collected retrospectively; dated pre-target filtering is necessary but not proof of contemporaneous prestart availability",
+    "Only five recent-form inputs of matched historical cases are repaired; Elo, trainer and old DQ20 remain archive-based",
+    "The candidate uses genuinely new winner, Top5 and market weights, unlike the prior unified V4 wrapper",
+    "No paid operator odds, executed bets or verified ROI; all real-money recommendations remain suspended"
+  ]
+}
