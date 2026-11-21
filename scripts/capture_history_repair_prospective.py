@@ -119,14 +119,24 @@ def capture():
             # Do not silently return to the former 42-feature V4.
             try:
                 from turf_lab.v4_speed_data import prestart_target_context
-                from turf_lab.v4_active_inference import record as record_v4
+                from turf_lab.v4_multi_features import live_context
+                from turf_lab.v4_multifeature_inference import record as record_v4
                 speed_context = prestart_target_context(filtered,target)
                 speed_context["captured_at"] = datetime.now(timezone.utc).isoformat()
                 speed_file = dest/"v4_speed_context.json"
                 if datetime.fromisoformat(speed_context["captured_at"]).timestamp()*1000 >= course["heureDepart"]:
                     raise ValueError("V4 chrono computed too late")
                 dump(speed_file,speed_context)
-                result = record_v4(dest/"prediction.json", sidecar_path,speed_file)
+                base43={"race_id":rid,"date":day,"runners":[
+                    dict(r,features=list(r["features"])+[
+                        speed_context["target_field"][str(r["number"])]["context_residual"]
+                    ]) for r in v3["runners"]]}
+                aux=live_context(filtered,target,base43)
+                if datetime.fromisoformat(aux["captured_at"]).timestamp()*1000 >= course["heureDepart"]:
+                    raise ValueError("V4 monetary class/form/R evidence completed after departure")
+                aux_file=dest/"v4_aux_context.json"
+                dump(aux_file,aux)
+                result = record_v4(dest/"prediction.json", sidecar_path,speed_file,aux_file)
                 if result["freshness"] != "PRESTART_RESEARCH":
                     raise ValueError("New integrated V4 finished after departure")
                 state.setdefault("v4_integrated_saved",[]).append(rid)
