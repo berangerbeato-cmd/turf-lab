@@ -131,7 +131,10 @@ def capture():
                     dict(r,features=list(r["features"])+[
                         speed_context["target_field"][str(r["number"])]["context_residual"]
                     ]) for r in v3["runners"]]}
-                aux=live_context(filtered,target,base43)
+                from scripts.capture_v4_context import enrich_recent_money
+                money_filtered,money_diag=enrich_recent_money(filtered,day)
+                aux=live_context(money_filtered,target,base43)
+                aux["money_enrichment_audit"]=money_diag
                 if datetime.fromisoformat(aux["captured_at"]).timestamp()*1000 >= course["heureDepart"]:
                     raise ValueError("V4 monetary class/form/R evidence completed after departure")
                 aux_file=dest/"v4_aux_context.json"
