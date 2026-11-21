@@ -22,7 +22,7 @@ def record_history_repair_shadow(prediction_path, state):
         report['is_independent_prospective_validation'] = False
         report['research_only'] = True
         report['recommendations_allowed'] = False
-        dump(prediction_path.parent / 'history_repair_shadow_v1.json', report)
+        dump(prediction_path.parent / 'history_repair_shadow_v1_1.json', report)
         state['history_repair_shadow_status'] = 'PRESTART_RECORDED'
     except Exception as error:
         # The production frozen models and odds comparison remain usable.
