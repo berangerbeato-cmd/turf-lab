@@ -87,6 +87,29 @@ def main():
             except ValueError as error:
                 state['sg_comparison_status']='INELIGIBLE'
                 state['sg_comparison_reason']=str(error)
+        # The only user-facing V4 report. Required history repair cannot
+        # silently fall back to V3. Older frozen outputs stay untouched.
+        try:
+            from turf_lab.v4_unified import record as record_v4
+            repair_file = path.parent/'history_repair_shadow_v1_1.json'
+            if not repair_file.exists():
+                raise ValueError('Required History Repair V1.1 unavailable')
+            paired_file = path.parent/'value_history_pair_v1.json'
+            prices_file = path.parent/'quotes.json'
+            if not paired_file.exists():
+                paired_file = None
+                prices_file = None
+            v4 = record_v4(path,repair_file,paired_file,prices_file)
+            dump('reports/v4/latest.json',v4)
+            state['v4_status'] = v4['status']
+            state['v4_report'] = str(path.parent/'v4_unified.json')
+        except (ValueError,TypeError,KeyError,OSError,RuntimeError) as error:
+            state['v4_status'] = 'BLOCKED_NO_BET'
+            state['v4_reason'] = str(error)
+            dump('reports/v4/latest.json',{'version':'turf_lab_v4_research_1',
+                'race_id':state['race_id'],'status':'BLOCKED_NO_BET',
+                'recommendations_allowed':False,'decision':'NO BET',
+                'reason':str(error),'single_public_response':True})
         state.update(status='SUCCESS',prediction=str(path),quotes_compared=bool(data.get('quotes')))
         latest=json.loads(Path('reports/operational/latest.json').read_text())
         dump('reports/operational/latest.json',dict(latest,request_id=state['request_id']))
