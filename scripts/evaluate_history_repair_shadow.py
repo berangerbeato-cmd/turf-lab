@@ -10,7 +10,7 @@ from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 from turf_lab.evidence import dump
-from turf_lab.history_repair_shadow import replay
+from turf_lab.history_repair_shadow import replay, CANDIDATE_VERSION
 from turf_lab.history_sync import History
 from turf_lab.pilot import norm_name
 
@@ -96,7 +96,7 @@ def run():
         rid = prediction['race_id']
         try:
             report = replay(path)
-            output = OUTPUT / 'replays_corrected' / (path.parent.name+'.json')
+            output = OUTPUT / 'replays_nancy_alias_v1_1' / (path.parent.name+'.json')
             if output.exists():
                 if json.loads(output.read_text()) != report:
                     raise ValueError('Immutable research replay would change')
@@ -119,18 +119,21 @@ def run():
             sample.append(rec)
         except (ValueError,TypeError,KeyError,OSError) as error:
             errors.append({'race_id':rid,'path':str(path),'status':'REPLAY_FAILED','reason':str(error)})
+    if not sample:
+        raise RuntimeError('No replay succeeds; refusing to overwrite a valid evaluation with zero scores')
     keys = ('log_loss','brier','top1_correct','top4_overlap','top5_overlap','top4_exact','top5_exact')
     paired = {k:{metric:mean(r['comparisons'][k][metric] for r in scored)
                  for metric in keys} for k in ('v3_baseline','research_candidate')} if scored else {}
     report = {
       'status':'POSTRACE_EXPLORATORY_PAIRED_REPLAY',
-      'model':'history_repair_shadow_v1_recent5_only',
+      'model':CANDIDATE_VERSION,
       'research_only':True, 'recommendations_allowed':False,
       'prospective_independent_test':False,
       'selection_rule':'Earliest archived prestart V3 prediction per race with original horse evidence',
       'races_with_candidate_evidence':len(chosen),
       'races_replayed':len(sample),
       'races_with_results':len(scored),
+      'replay_version':CANDIDATE_VERSION,
       'races_without_verified_results':len(pending),
       'races_with_candidate_changes':sum(x['changed_runners']>0 for x in sample),
       'paired_metrics':paired,
