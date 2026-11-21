@@ -1,0 +1,26 @@
+{
+  "version": "turf_lab_v4_integrated_speed_1",
+  "active_user_model": "TURF_LAB_V4",
+  "model_family": "v4_speed_challenger_1",
+  "context_file": "v4_speed_context.json",
+  "output_file": "v4_integrated.json",
+  "winner": "models/v4_speed/winner.json",
+  "ranking": "models/v4_speed/ranking.json",
+  "market": "models/v4_speed/market.json",
+  "training_frozen": "models/v4_speed/frozen_before_test.json",
+  "mandatory_history_repair": "history_repair_shadow_v1_1_nancy_alias",
+  "historical_2026_reused": true,
+  "independent_validation_complete": false,
+  "ready_for_research_inference": true,
+  "promotion_reason": "Explicit user request to integrate the V7 contextual-speed 43rd feature into the sole Turf Lab V4, using all retrained weights",
+  "value_requires_verified_prestart_quotes": true,
+  "recommendations_allowed": false,
+  "real_money_betting": false,
+  "missing_context_behavior": "BLOCK_V4_IF_SNAPSHOT_MISSING; LEARNED_NONE_IF_A_HORSE_HAS_NO_PRIOR_TIMED_STARTS",
+  "limits": [
+    "No independent forward proof that speed improves live performance",
+    "Historical evaluation is retrospective and already inspected",
+    "Individual historical timing is only partially available",
+    "Never advise a real-money bet or claim ZEturf ROI"
+  ]
+}
