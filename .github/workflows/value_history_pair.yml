@@ -1,0 +1,50 @@
+name: Turf Lab V3+V2 vs History Repair+V2 paired audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/value_history_pair.yml'
+      - 'turf_lab/value_history_pair.py'
+      - 'scripts/evaluate_value_history_pair.py'
+      - 'scripts/score_value_history_pair.py'
+      - 'tests/test_value_history_pair.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-repository-writer
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install frozen scientific dependencies
+        run: pip install -r requirements-v5.txt
+      - name: Test frozen V2 reproduction, complete boards, chronology and failure modes
+        run: python -m unittest tests.test_value_history_pair -v
+      - name: Replay archived prestart Reims market and sport history, retrospective only
+        run: python -m scripts.evaluate_value_history_pair
+      - name: Report genuinely prestart future on-demand price pairs separately
+        run: python -m scripts.score_value_history_pair
+      - name: Archive experiment without modifying frozen model files
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f reports/value_history_pair_v1
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive paired market correction experiment'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
