@@ -53,6 +53,9 @@ def validate_sidecar(path):
         raise ValueError("Shadow model version mismatch")
     if sidecar.get("recommendations_allowed") is not False:
         raise ValueError("Not an isolated paper-only forecast")
+    if (sidecar.get("is_independent_prospective_validation") is not True
+            or sidecar.get("selection_rule") != "SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD"):
+        raise ValueError("Not a predeclared deterministic cohort capture")
     start = datetime.fromisoformat(sidecar["scheduled_start"])
     forecasted = datetime.fromisoformat(sidecar["shadow_calculated_at"])
     originally = datetime.fromisoformat(sidecar["original_predicted_at"])
