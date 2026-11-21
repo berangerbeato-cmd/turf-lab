@@ -241,6 +241,7 @@ test_repaired_recent_five_is_the_only_change (test_v4_full_training.V4HistoryTra
 test_target_or_horse_identity_mismatch_fails_closed (test_v4_full_training.V4HistoryTrainingTests.test_target_or_horse_identity_mismatch_fails_closed) ... ok
 test_unknown_races_remain_archive_only (test_v4_full_training.V4HistoryTrainingTests.test_unknown_races_remain_archive_only) ... ok
 test_v4_multifeature (unittest.loader._FailedTest.test_v4_multifeature) ... ERROR
+test_v4_multifeature_inference (unittest.loader._FailedTest.test_v4_multifeature_inference) ... ERROR
 test_mismatched_id_and_width_refuse_to_train (test_v4_speed.V4SpeedTests.test_mismatched_id_and_width_refuse_to_train) ... ok
 test_only_43rd_feature_is_added_without_mutating_v4 (test_v4_speed.V4SpeedTests.test_only_43rd_feature_is_added_without_mutating_v4) ... ok
 test_speed_uses_only_previous_days (test_v4_speed.V4SpeedTests.test_speed_uses_only_previous_days) ... ok
@@ -469,6 +470,25 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_v4_multifeature_inference (unittest.loader._FailedTest.test_v4_multifeature_inference)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_multifeature_inference
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_multifeature_inference.py", line 9, in <module>
+    from tests.test_v4_speed_shadow import fixture
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_speed_shadow.py", line 10, in <module>
+    from turf_lab.v4_speed_shadow import predict
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/v4_speed_shadow.py", line 13, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_v4_speed_promoted (unittest.loader._FailedTest.test_v4_speed_promoted)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_v4_speed_promoted
@@ -590,9 +610,9 @@ Traceback (most recent call last):
 AssertionError: "precede target" does not match "Active model dependency changed: scripts/predict_operational.py"
 
 ----------------------------------------------------------------------
-Ran 266 tests in 0.187s
+Ran 267 tests in 0.242s
 
-FAILED (failures=1, errors=19, skipped=7)
+FAILED (failures=1, errors=20, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
