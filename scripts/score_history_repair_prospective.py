@@ -139,9 +139,9 @@ def confidence_by_day(rows, metric, repeats=600):
 
 def run(source_paths=None, dest=OUT):
     if source_paths is None:
+        # Validation must NOT mix user-selected races with the deterministic
+        # scheduled sample. On-demand captures remain separately archived.
         source_paths = sorted(
-            Path("predictions_operational").glob("*/*/history_repair_shadow_v1_1.json")
-        ) + sorted(
             Path("reports/history_repair_shadow_v1/prospective_forecasts").glob(
                 "*/*/history_repair_shadow_v1_1.json")
         )
@@ -181,6 +181,7 @@ def run(source_paths=None, dest=OUT):
     report = {"status":"PROSPECTIVE_SCORECARD",
               "version":CANDIDATE_VERSION, "recommendations_allowed":False,
               "prospective_start":"2026-11-22T00:00:00+01:00",
+              "selection_cohort":"Deterministic scheduled first-two-races, no user-selected forecasts",
               "eligible_forecasts":len(chosen), "verified_results":len(scored),
               "pending_or_excluded_outcomes":len(pending),
               "candidate_changes":sum(x["runner_changes"]>0 for x in scored+pending),
@@ -190,7 +191,7 @@ def run(source_paths=None, dest=OUT):
               "scored":scored, "awaiting_outcomes":pending,
               "invalid_forecasts":exclusions,
               "limitations":[
-                "Only original archived prospective sidecars and independent verified race outcomes.",
+                "Only predeclared scheduled cohort sidecars and independent verified race outcomes; no on-demand cherry-picking.",
                 "This is a paired sample; formal promotion requires new independent test and reviewed gate.",
                 "No historical PMU prices reused as executable bets; no ROI or automatic bets.",
                 "Never replace the frozen original prediction with a retrospective replay."
