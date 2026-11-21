@@ -27,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install frozen model testing dependencies
+        run: pip install -r requirements-v5.txt
       - name: Test replay safeguards and compile operational integration
         run: |
           python -m unittest tests.test_history_repair_shadow tests.test_history_repair_prospective -v
