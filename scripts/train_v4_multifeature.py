@@ -72,8 +72,11 @@ def main():
     money_records=bring_historical_money(records)
     auxiliary,extra_audit=derive(base43,money_records)
     combined,attach_audit=attach(base43,auxiliary)
+    by_combined={r["race_id"]:r for r in combined}
+    if len(by_combined)!=len(combined):
+        raise ValueError("Duplicate transformed V4 race")
     groups={
-        name:[next(r for r in combined if r["race_id"]==x["race_id"]) for x in rows]
+        name:[by_combined[x["race_id"]] for x in rows]
         for name,rows in frames.items()
     }
     # Explicitly fail if any of the four new signals was accidentally omitted.
