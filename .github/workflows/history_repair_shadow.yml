@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/history_repair_shadow.yml'
+      - 'turf_lab/history_repair_shadow.py'
+      - 'turf_lab/individual_history_check.py'
+      - 'tests/test_history_repair_shadow.py'
+      - 'scripts/evaluate_history_repair_shadow.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,12 +28,8 @@ jobs:
           python-version: '3.12'
       - name: Test replay safeguards
         run: python -m unittest tests.test_history_repair_shadow -v
-      - name: Reproduce original Reims prestart V3 and replay evidence
-        run: |
-          python -m scripts.replay_history_repair \
-            --prediction predictions_operational/2026-11-21/2026-11-21_R4C5_20261121T172911422587Z/prediction.json \
-            --result-file reports/manual_bets/2026-11-21_R4C5_Z4.json \
-            --output reports/history_repair_shadow_v1/reims_2026-11-21_R4C5.json
+      - name: Paired replay from immutable prestart evidence across stored races
+        run: python -m scripts.evaluate_history_repair_shadow
       - name: Archive research-only report
         if: success()
         run: |
