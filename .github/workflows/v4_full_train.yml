@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/v4_full_train.yml'
+      - 'turf_lab/v4_retrain_data.py'
+      - 'scripts/train_v4_full.py'
+      - 'tests/test_v4_full_training.py'
+      - 'config/v4_full_training.json'
   workflow_dispatch:
 permissions:
   contents: write
