@@ -14,8 +14,28 @@ from statistics import mean
 from turf_lab.evidence import dump
 from turf_lab.history_sync import History
 from turf_lab.month_history import identity
-from scripts.evaluate_history_repair_shadow import score
-from turf_lab.history_repair_shadow import CANDIDATE_VERSION
+# Deliberately stdlib-only: daily settlement must not depend on inference code.
+CANDIDATE_VERSION = "history_repair_shadow_v1_1_nancy_alias"
+
+
+def score(sidecar, finish):
+    winner = finish[0]
+    result = {}
+    for version in ("v3_baseline", "research_candidate"):
+        p = {int(n): float(v) for n, v in sidecar[version]["probabilities"].items()}
+        order = sorted(p, key=lambda n: (-p[n], n))
+        result[version] = {
+            "winner_probability": p[winner],
+            "log_loss": -math.log(max(1e-15, p[winner])),
+            "brier": sum((v-int(n==winner))**2 for n,v in p.items()),
+            "top1_correct": int(order[0]==winner),
+            "top4_overlap": len(set(order[:4]) & set(finish[:4])),
+            "top5_overlap": len(set(order[:5]) & set(finish[:5])),
+            "top4_exact": int(set(order[:4]) == set(finish[:4])),
+            "top5_exact": int(set(order[:5]) == set(finish[:5])),
+        }
+    return result
+
 
 OUT = Path("reports/history_repair_shadow_v1/prospective_scores.json")
 BEGIN = datetime.fromisoformat("2026-11-22T00:00:00+01:00")
