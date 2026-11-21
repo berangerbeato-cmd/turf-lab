@@ -1,0 +1,91 @@
+{
+  "version": "turf_lab_v4_full_retrained_candidate_1",
+  "status": "RESEARCH_ONLY_NO_BET",
+  "freshness": "RETROSPECTIVE",
+  "generated_at": null,
+  "race_id": "2026-11-21_R4C5",
+  "recommendations_allowed": false,
+  "decision": "NO BET",
+  "gagnant": {
+    "number": 4,
+    "name": "KONSPIRATOR GAME",
+    "probability": 0.38684639340508054,
+    "basis": "V4_RETRAINED_MARKET_CORRECTION"
+  },
+  "top5": {
+    "numbers": [
+      6,
+      3,
+      10,
+      2,
+      1
+    ],
+    "names": [
+      "KUROSIO DES LOVES",
+      "KELIADE DE L'ITON",
+      "KELLE BLEUE",
+      "KLARISSA",
+      "KALA DES RACQUES"
+    ],
+    "method": "V4_RETRAINED_FIVE_CONDITIONAL_STAGES"
+  },
+  "value": {
+    "status": "RETROSPECTIVE",
+    "paper_candidates_not_bets": [],
+    "minimum_indicative_ev": 0.1
+  },
+  "history_repair": {
+    "required": true,
+    "runners_updated": 6,
+    "unresolved": [
+      {
+        "number": 4,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 6,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 7,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 8,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 11,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 14,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      }
+    ],
+    "quality": "INCOMPLETE"
+  },
+  "model_sha256": {
+    "winner.json": "5e7fb2e83a7f4c4a1e52f5d85c0bd3f9f48becec5ebadc145d8ab78da1f05479",
+    "ranking.json": "48c81ef2d78fffe0da139a2362ca2ce8a14eb424f5500cb6d2aaea68898d099c",
+    "market.json": "76b459d16ab9c322e7a57932499cda4065414e3430e83663003e607d62bead94"
+  },
+  "evidence": {
+    "original": "predictions_operational/2026-11-21/2026-11-21_R4C5_20261121T172911422587Z/prediction.json",
+    "history": "reports/history_repair_shadow_v1/replays_nancy_alias_v1_1/2026-11-21_R4C5_20261121T172911422587Z.json",
+    "quotes": "predictions_operational/2026-11-21/2026-11-21_R4C5_20261121T172911422587Z/quotes.json"
+  },
+  "limits": [
+    "New winner, ranking and market models trained together chronologically on 2022-2025.",
+    "Only a subset of historical runners had verifiable individual corrections.",
+    "2026 was reused for descriptive evaluation, not independent testing.",
+    "Real-money policy remains suspended: no advised SG or Z5 stakes."
+  ],
+  "postrace_demo": {
+    "winner": 2,
+    "predicted_first_won": false,
+    "top5_found": 2,
+    "not_a_prospective_validation": true,
+    "no_model_selection_on_reims": true
+  }
+}
