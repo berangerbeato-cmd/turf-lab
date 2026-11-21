@@ -18,6 +18,8 @@ from turf_lab.available_history_research import recent_values
 from turf_lab.individual_history_check import normalize_history, venue_key
 from turf_lab.pilot import probabilities
 
+CANDIDATE_VERSION = 'history_repair_shadow_v1_1_nancy_alias'
+
 
 def checked_prestart_stamp(value, start):
     stamp = datetime.fromisoformat(value.replace('Z', '+00:00'))
@@ -160,7 +162,7 @@ def replay(prediction_path, result_path=None):
         'research_only': True,
         'is_independent_prospective_validation': False,
         'recommendations_allowed': False,
-        'candidate': 'history_repair_shadow_v1_recent5_only',
+        'candidate': CANDIDATE_VERSION,
         'frozen_v3_model_sha256': original['model_sha256'],
         'original_predicted_at': frozen['predicted_at'],
         'scheduled_start': frozen['scheduled_start'],
@@ -170,7 +172,6 @@ def replay(prediction_path, result_path=None):
         'runner_audit': audit,
         'v3_baseline': {'probabilities': original_recomputed, 'top4': old_top[:4],
                         'top5': old_top[:5]},
-        'candidate': 'history_repair_shadow_v1_recent5_only',
         'research_candidate': {'probabilities': candidate_probs, 'top4': new_top[:4],
                                'top5': new_top[:5]},
         'limitations': [
