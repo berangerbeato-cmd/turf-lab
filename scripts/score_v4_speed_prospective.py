@@ -18,9 +18,6 @@ from scripts.score_v4_full_prospective import values,read_valid as v4_valid
 from turf_lab.evidence import dump
 from turf_lab.history_sync import History
 from turf_lab.pilot import probabilities
-from turf_lab.v4_full_inference import load as base_load,repaired_frame
-from turf_lab.v4_speed_shadow import frozen as speed_load
-from scripts.train_v4_full import rank_top5
 
 BASE=Path("reports/history_repair_shadow_v1/prospective_forecasts")
 OUT=Path("reports/v4_speed/prospective_scores.json")
@@ -29,6 +26,10 @@ METRICS=("log_loss","brier","top1_correct","top5_overlap","top5_exact")
 
 
 def input_check(path):
+    # Delayed scientific dependencies: the empty scorecard stays stdlib-only.
+    from turf_lab.v4_full_inference import load as base_load,repaired_frame
+    from turf_lab.v4_speed_shadow import frozen as speed_load
+    from scripts.train_v4_full import rank_top5
     path=Path(path)
     saved=json.loads(path.read_text())
     prior,source=validate_sidecar(path.parent/"history_repair_shadow_v1_1.json")
