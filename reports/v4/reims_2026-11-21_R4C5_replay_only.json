@@ -1,0 +1,101 @@
+{
+  "version": "turf_lab_v4_research_1",
+  "race_id": "2026-11-21_R4C5",
+  "status": "HISTORY_INCOMPLETE_NO_BET",
+  "freshness": "RETROSPECTIVE",
+  "recommendations_allowed": false,
+  "decision": "NO BET",
+  "gagnant": {
+    "number": 4,
+    "name": "KONSPIRATOR GAME",
+    "probability": 0.39281874477104045,
+    "basis": "REPAIRED_SPORT_PLUS_FROZEN_V2_COTES_TRANSFER"
+  },
+  "top5": {
+    "numbers": [
+      6,
+      3,
+      10,
+      2,
+      1
+    ],
+    "names": [
+      "KUROSIO DES LOVES",
+      "KELIADE DE L'ITON",
+      "KELLE BLEUE",
+      "KLARISSA",
+      "KALA DES RACQUES"
+    ],
+    "method": "STAGE_V2_REPAIRED_FEATURES_UNVALIDATED"
+  },
+  "value": {
+    "status": "RETROSPECTIVE_PAIRED_REPLAY",
+    "operator": "ZEturf",
+    "paper_candidates_not_bets": [],
+    "min_ev": 0.1
+  },
+  "ze5": {
+    "numbers": [
+      6,
+      3,
+      10,
+      2,
+      1
+    ],
+    "status": "PAPER_UNVALIDATED_OFFER_NOT_CONFIRMED",
+    "recommended_stake_eur": null
+  },
+  "history_repair": {
+    "required": true,
+    "runners_updated": 6,
+    "unresolved": [
+      {
+        "number": 4,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 6,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 7,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 8,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 11,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      },
+      {
+        "number": 14,
+        "reason": "UNRESOLVED_RECENT_OUTCOME"
+      }
+    ],
+    "quality": "INCOMPLETE"
+  },
+  "evidence": {
+    "sports": "predictions_operational/2026-11-21/2026-11-21_R4C5_20261121T172911422587Z/prediction.json",
+    "repair": "reports/history_repair_shadow_v1/replays_nancy_alias_v1_1/2026-11-21_R4C5_20261121T172911422587Z.json",
+    "market_pair": "reports/value_history_pair_v1/reims_r4c5_retrospective.json",
+    "v3_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "ranking_sha256": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "limitations": [
+    "One interface, not a new jointly fitted model.",
+    "V2 Cotes and ranking are not calibrated on repaired features.",
+    "Historical uncertainty and missing odds are shown, never hidden.",
+    "Real-money betting policy remains suspended."
+  ],
+  "postrace_diagnostic": {
+    "status": "AFTER_THE_FACT_REPLAY_NOT_PROSPECTIVE",
+    "race_id": "2026-11-21_R4C5",
+    "winner": 2,
+    "winner_ranked_top1": false,
+    "top5_correct_horses": 2,
+    "not_valid_for_model_selection": true,
+    "note": "Reims was analyzed before this V4 interface existed. No parameter tuning allowed."
+  }
+}
