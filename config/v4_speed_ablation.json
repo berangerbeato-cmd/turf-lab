@@ -1,0 +1,36 @@
+{
+  "version": "v4_speed_challenger_1",
+  "status": "EXPLORATORY_NOT_PROMOTED",
+  "base_model": "turf_lab_v4_full_retrained_candidate_1",
+  "candidate": "42_frozen_v4_features_plus_1_prior_only_context_speed",
+  "one_model_user_interface_unchanged": true,
+  "history_repair": "exact_same_immutable_v4_enrichment",
+  "chronological_periods": {
+    "sports_fit": ["2022-03-02", "2024-12-31"],
+    "sports_calibration": ["2025-01-01", "2025-06-30"],
+    "market_fit": ["2025-07-01", "2025-12-31"],
+    "descriptive_reused_test": ["2026-01-01", "2026-09-30"]
+  },
+  "speed_policy_file": "config/speed_v7_protocol.json",
+  "speed_input": "original PMU pretarget dated runners and raw verified prior finished reductionKilometrique; no target result may enter features",
+  "speed_features": 1,
+  "winner_l2": 0.1,
+  "winner_iterations": 800,
+  "winner_learning_rate": 0.03,
+  "ranker_ridge": 0.01,
+  "minimum_speed_coverage_train": 0.30,
+  "minimum_speed_coverage_test": 0.30,
+  "market_correction": "refit on 2025 Jul-Dec using speed V4 winner distribution",
+  "comparison": "paired 2026 same races versus exactly reproducible V4 full baseline",
+  "reused_test_not_independent": true,
+  "recommendations_allowed": false,
+  "production_changed": false,
+  "promotion": "requires later independent true prestart capture and live speed parity; never automatically replace V4",
+  "limitations": [
+    "2026 outcomes and previous V7 exploratory results have already been inspected; no virgin test",
+    "Original PMU timing and context are retrospective; capture availability at actual event date is not proved",
+    "Chrono residual includes unobserved track condition, performance class, and possible historical missing data",
+    "No ZEturf live accepted prices, payoffs or validated betting ROI",
+    "Old V4 training sources/model weights and one-model user interface remain unchanged"
+  ]
+}
