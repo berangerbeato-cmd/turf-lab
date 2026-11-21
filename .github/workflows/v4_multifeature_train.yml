@@ -1,0 +1,65 @@
+name: Turf Lab V4 all enhancements one-shot retraining
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_multifeature_train.yml'
+      - 'scripts/train_v4_multifeature.py'
+      - 'turf_lab/v4_multi_features.py'
+      - 'turf_lab/v4_reliability_market.py'
+      - 'tests/test_v4_multifeature.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-v4-joint-enhancement-training
+  cancel-in-progress: false
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scientific dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Test simultaneous class, gain, form, R research controls
+        run: |
+          python -m py_compile turf_lab/v4_multi_features.py turf_lab/v4_reliability_market.py scripts/train_v4_multifeature.py
+          python -m unittest tests.test_v4_multifeature tests.test_v4_speed tests.test_v4_full_training -v
+      - name: Retrain ALL four new signals in winner Top5 and market correction
+        run: python -m scripts.train_v4_multifeature
+      - name: Archive all newly frozen models and exploration
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f models/v4_multifeature reports/v4_multifeature
+          if ! git diff --cached --quiet; then
+            git commit -m 'Freeze and audit V4 all-features 47-variable retraining'
+            for n in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - name: Save failure diagnostics without inventing a trained model
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: turf-v4-multifeature-error
+          if-no-files-found: ignore
+          path: |
+            reports/v4_multifeature/failure.json
+            reports/v4_multifeature/feature_audit.json
+            models/v4_multifeature/frozen_before_test.json
