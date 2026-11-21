@@ -1,0 +1,310 @@
+{
+  "version": "turf_lab_v4_multifeature_1",
+  "status": "COMPLETE_ALL_FEATURES_EXPLORATORY_2026",
+  "features": 47,
+  "sources": {
+    "gain_asof_proven": false,
+    "gain_previous_race_only": true,
+    "one_model_promotion_deferred_to_integrity_tests": true
+  },
+  "train_races": 17532,
+  "ranking_train_races": 17335,
+  "ranking_calibration_races": 3114,
+  "market_training_races": 1711,
+  "test_races": 4661,
+  "rank_test_races": 4574,
+  "coverage": {
+    "train": {
+      "races": 17532,
+      "active_runners": 227644,
+      "valid_previous_gains": 190303,
+      "valid_weighted_form": 211175,
+      "with_context_speed": 144847,
+      "R_mean": 0.7776968380453689
+    },
+    "validation": {
+      "races": 6398,
+      "active_runners": 83041,
+      "valid_previous_gains": 73734,
+      "valid_weighted_form": 78577,
+      "with_context_speed": 50687,
+      "R_mean": 0.8154976818679928
+    },
+    "test": {
+      "races": 4661,
+      "active_runners": 58303,
+      "valid_previous_gains": 53877,
+      "valid_weighted_form": 55252,
+      "with_context_speed": 33868,
+      "R_mean": 0.818812239507401
+    }
+  },
+  "winner": {
+    "v4_speed_reference": {
+      "races": 4661,
+      "log_loss": 2.107134340992143,
+      "brier_multiclass": 0.842512095529364,
+      "top1_accuracy": 0.2707573482085389,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 43503,
+          "mean_probability": 0.041932424990494314,
+          "win_frequency": 0.04213502517067788
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 10091,
+          "mean_probability": 0.13901396927112547,
+          "win_frequency": 0.14953919334060053
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 2907,
+          "mean_probability": 0.24090700222507594,
+          "win_frequency": 0.24011007911936705
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 1073,
+          "mean_probability": 0.34130249008427743,
+          "win_frequency": 0.3066169617893756
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 430,
+          "mean_probability": 0.44181549819536453,
+          "win_frequency": 0.3558139534883721
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 183,
+          "mean_probability": 0.5433395929314389,
+          "win_frequency": 0.4098360655737705
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "count": 85,
+          "mean_probability": 0.6382346182376296,
+          "win_frequency": 0.5411764705882353
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 24,
+          "mean_probability": 0.7490308617134201,
+          "win_frequency": 0.5833333333333334
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "count": 7,
+          "mean_probability": 0.8358616332994336,
+          "win_frequency": 0.5714285714285714
+        }
+      ],
+      "runner_ece": 0.003945723263763455
+    },
+    "v4_joint_all_features": {
+      "races": 4661,
+      "log_loss": 2.102854353689767,
+      "brier_multiclass": 0.8416593097978597,
+      "top1_accuracy": 0.26625187727955374,
+      "calibration": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "count": 43478,
+          "mean_probability": 0.04170704165458638,
+          "win_frequency": 0.041653249919499515
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "count": 10060,
+          "mean_probability": 0.13915032115968246,
+          "win_frequency": 0.14920477137176938
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "count": 2973,
+          "mean_probability": 0.24113179864025128,
+          "win_frequency": 0.24419778002018164
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "count": 1073,
+          "mean_probability": 0.3434385262472203,
+          "win_frequency": 0.3168685927306617
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "count": 422,
+          "mean_probability": 0.44230486206964387,
+          "win_frequency": 0.33175355450236965
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "count": 187,
+          "mean_probability": 0.5420883364334506,
+          "win_frequency": 0.42780748663101603
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "count": 83,
+          "mean_probability": 0.643365168299671,
+          "win_frequency": 0.5662650602409639
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "count": 20,
+          "mean_probability": 0.7561780807879319,
+          "win_frequency": 0.6
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "count": 7,
+          "mean_probability": 0.8383706805254526,
+          "win_frequency": 0.5714285714285714
+        }
+      ],
+      "runner_ece": 0.0037824102285003505
+    },
+    "paired_weekly": {
+      "block": "week",
+      "blocks": 40,
+      "metrics": {
+        "log_loss": {
+          "challenger_minus_classic": -0.004279987302375906,
+          "interval_95": [
+            -0.006593409551502984,
+            -0.0022817636232595516
+          ]
+        },
+        "brier_multiclass": {
+          "challenger_minus_classic": -0.0008527857315042786,
+          "interval_95": [
+            -0.0015419013026119256,
+            -0.0002704052612259686
+          ]
+        },
+        "top1_accuracy": {
+          "challenger_minus_classic": -0.004505470928985196,
+          "interval_95": [
+            -0.008596897902922692,
+            -0.00043521914244323937
+          ]
+        }
+      },
+      "interpretation": "Exploratory paired cluster bootstrap, not corrected for model search; repeated horses can remain dependent across weeks."
+    }
+  },
+  "top5": {
+    "v4_speed_reference": {
+      "races": 4574,
+      "top5_overlap_mean": 2.8167905553126364,
+      "top5_exact_count": 109,
+      "top5_exact_rate": 0.023830345430695232
+    },
+    "v4_joint_all_features": {
+      "races": 4574,
+      "top5_overlap_mean": 2.824879755137735,
+      "top5_exact_count": 111,
+      "top5_exact_rate": 0.024267599475295148
+    }
+  },
+  "market": {
+    "v4_speed_reference": {
+      "races": 2578,
+      "log_loss": 1.924123357166284,
+      "brier": 0.80236370281111,
+      "top1": 0.33979829325058186,
+      "positive_ev_diagnostic": {
+        "n": 2337,
+        "p": 0.20523706134634734,
+        "observed": 0.19940094137783482,
+        "expected_wins": 479.63901236641374,
+        "wins": 466
+      }
+    },
+    "v4_joint_all_features": {
+      "races": 2578,
+      "log_loss": 1.9233232317491264,
+      "brier": 0.8022028073241075,
+      "top1": 0.3394103956555469,
+      "positive_ev_diagnostic": {
+        "count": 729,
+        "predicted_wins": 153.7923230342453,
+        "actual_wins": 141
+      },
+      "roi": null
+    }
+  },
+  "new_market_coefficients": [
+    0.9367687540189605,
+    0.25245985431577395,
+    0.03965934072383011
+  ],
+  "money_feature_is_historical_lagged_not_proven_prestart": true,
+  "test_not_independent": true,
+  "recommendations_allowed": false,
+  "roi": null,
+  "training_frozen_before_test": "models/v4_multifeature/frozen_before_test.json",
+  "limitations": [
+    "2026 is already inspected; all improvements exploratory",
+    "Career gain snapshots were gathered retrospectively, publication date not verified",
+    "Class points are nonmonetary proxy based only on prior recorded results",
+    "R is data-completeness index, not a certainty probability",
+    "No real bookmaker settlement available; no ROI evidence"
+  ]
+}
