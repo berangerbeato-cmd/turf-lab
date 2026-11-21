@@ -41,7 +41,7 @@ jobs:
         run: python -m scripts.score_value_history_pair
       - name: Compare original prestart V4 and V3 on verified official results
         if: success() || failure()
-        run: python -m scripts.score_v4_prospective
+        run: python -m scripts.score_v4_full_prospective
       - name: Preserve checkpoints and diagnostics even on partial results
         if: always()
         run: |
@@ -54,8 +54,8 @@ jobs:
           if [ -f reports/value_history_pair_v1/on_demand_prospective_scores.json ]; then
             git add -f reports/value_history_pair_v1/on_demand_prospective_scores.json
           fi
-          if [ -f reports/v4/prospective_scores.json ]; then
-            git add -f reports/v4/prospective_scores.json
+          if [ -f reports/v4_full/prospective_scores.json ]; then
+            git add -f reports/v4_full/prospective_scores.json
           fi
           if ! git diff --cached --quiet; then
             git commit -m 'Checkpoint incremental history and strict coverage report'
