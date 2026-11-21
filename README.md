@@ -1,3 +1,21 @@
+# TURF LAB V4 : toutes les pistes intégrées en une fois (22 novembre 2026)
+
+**UNE SEULE V4, 47 variables, poids réellement réentraînés :** les 43 variables précédentes (dont le chrono corrigé V7), les gains de carrière relatifs issus de la dernière course antérieure, la classe relative cumulée des résultats passés, la forme pondérée 35/25/18/12/10, et l'indice R de complétude des données. Le modèle de cotes apprend un coefficient de modulation selon R sur un sous-ensemble temporel distinct de 2025.
+
+Le seul moteur public est `turf_lab/v4_multifeature_inference.py`, et le seul point d'entrée d'une course `scripts/run_prediction_request.py`. `config/v4_active.json` pointe vers `models/v4_multifeature/` ; ses **nouveaux** modèles gagnant / cinq positions / marché sont figés par empreintes SHA. Les sources V3 sont conservées **exactement gelées** et les entrées supplémentaires passent par `scripts/capture_v4_context.py`, hors du code V3.
+
+**Test exploratoire 2026 déjà consulté :** log loss gagnant 2,107134 → 2,102854, top1 gagnant **27,08 % → 26,63 % (baisse)**, Top5 exact 109 → 111/4 574, cotes PMU log loss 1,924123 → 1,923323. **Ce n'est pas une validation indépendante, ni une preuve de rentabilité.**
+
+Les montants de gains récupérés lors de courses antérieures sont des archives rétrospectives ; leur disponibilité historique au moment exact du départ ne peut être entièrement certifiée. Les valeurs non vérifiables restent manquantes. L'indice R mesure la complétude, **pas** une probabilité de gagner.
+
+La validation des seules prochaines prévisions sauvegardées avant départ est dans `reports/v4_integrated/prospective_scores.json`. Les recommandations de mises restent suspendues (`NO BET`).
+
+[Configuration de la V4 active](config/v4_active.json) | [Rapport complet](reports/v4_multifeature/RESULTS.md) | [Mode d'emploi](docs/V4_UNIQUE.md)
+
+---
+
+## Archives techniques antérieures
+
 # Turf Lab V4 : chronos corrigés V7 INTÉGRÉS (22 novembre 2026)
 
 **Un seul modèle actif pour les nouvelles analyses : TURF LAB V4, version `turf_lab_v4_integrated_speed_1`, avec 43 variables.**
