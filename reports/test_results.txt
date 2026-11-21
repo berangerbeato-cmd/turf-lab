@@ -15,6 +15,9 @@ ok
 test_no_retry_for_denial_rate_limit_recent_or_invalid_payload (test_backfill_recovery.RecoveryTests.test_no_retry_for_denial_rate_limit_recent_or_invalid_payload) ... ok
 test_nonempty_invalid_json_is_not_retried (test_backfill_recovery.RecoveryTests.test_nonempty_invalid_json_is_not_retried) ... ok
 test_url_mismatch_and_exhausted_budget_never_fetch (test_backfill_recovery.RecoveryTests.test_url_mismatch_and_exhausted_budget_never_fetch) ... ok
+test_frozen_V3_source_still_authenticates (test_capture_v4_context.ImmutableV3V4CaptureTests.test_frozen_V3_source_still_authenticates) ... ok
+test_money_comes_from_official_previous_record_only (test_capture_v4_context.ImmutableV3V4CaptureTests.test_money_comes_from_official_previous_record_only) ... ok
+test_original_prediction_snapshot_remains_immutable (test_capture_v4_context.ImmutableV3V4CaptureTests.test_original_prediction_snapshot_remains_immutable) ... ERROR
 test_reject_changed_field_and_unsupported_selection (test_compare_place_quote.PlaceQuoteTests.test_reject_changed_field_and_unsupported_selection) ... ok
 test_reject_noncomparable_or_unverifiable_quotes (test_compare_place_quote.PlaceQuoteTests.test_reject_noncomparable_or_unverifiable_quotes) ... ok
 test_unit_normalization_and_range_crossing_break_even (test_compare_place_quote.PlaceQuoteTests.test_unit_normalization_and_range_crossing_break_even) ... ok
@@ -299,6 +302,21 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'numpy'
 
 ======================================================================
+ERROR: test_original_prediction_snapshot_remains_immutable (test_capture_v4_context.ImmutableV3V4CaptureTests.test_original_prediction_snapshot_remains_immutable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_capture_v4_context.py", line 66, in test_original_prediction_snapshot_remains_immutable
+    with patch("scripts.predict_operational.load_history",return_value=(history,{})):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/mock.py", line 1451, in __enter__
+    self.target = self.getter()
+                  ^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/pkgutil.py", line 528, in resolve_name
+    result = getattr(result, p)
+             ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'scripts' has no attribute 'predict_operational'
+
+======================================================================
 ERROR: test_history_repair_prospective (unittest.loader._FailedTest.test_history_repair_prospective)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_history_repair_prospective
@@ -575,9 +593,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 267 tests in 0.187s
+Ran 270 tests in 0.345s
 
-FAILED (errors=18, skipped=7)
+FAILED (errors=19, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
