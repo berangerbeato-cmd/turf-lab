@@ -1,0 +1,18 @@
+{
+  "version": "turf_lab_v4_full_retrained_candidate_1",
+  "status": "READY_FOR_PROSPECTIVE_RESEARCH",
+  "single_user_facing_model": true,
+  "winner_model": "models/v4_full/winner.json",
+  "top5_model": "models/v4_full/ranking.json",
+  "market_model": "models/v4_full/market.json",
+  "mandatory_history_repair": "history_repair_shadow_v1_1_nancy_alias",
+  "last_race_predicted": null,
+  "next_race_output": "predictions_operational/<date>/<race_batch>/v4_full_retrained.json",
+  "recommendations_allowed": false,
+  "decision": "NO BET",
+  "training_finished": true,
+  "training_status": "COMPLETED_EXPLORATORY",
+  "prospective_validation_started": false,
+  "source": "reports/v4_full/RESULTS.md",
+  "note": "Readiness statement, not a race forecast. Only prospective original captures count toward validation."
+}
