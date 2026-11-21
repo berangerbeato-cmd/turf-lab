@@ -1,6 +1,6 @@
 {
-  "version": "turf_lab_v4_integrated_speed_1",
-  "status": "SINGLE_43_FEATURE_V4_PRESTART_COHORT",
+  "version": "turf_lab_v4_multifeature_1",
+  "status": "SINGLE_47_FEATURE_V4_PRESTART_COHORT",
   "research_only": true,
   "recommendations_allowed": false,
   "original_captures": 0,
@@ -17,6 +17,6 @@
   "limits": [
     "2026 historical comparisons were non-independent; this cohort counts ONLY forecasts archived before actual race starts.",
     "No ZEturf executable odds or betting settlement, so profitability cannot be claimed.",
-    "The 43rd speed input is frozen at prediction time and cannot be recomputed from outcomes."
+    "The speed and class/gains/form/R inputs are frozen before the race; the R market gate is not a certified bookmaker ROI."
   ]
 }
