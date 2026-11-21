@@ -1,0 +1,58 @@
+{
+  "status": "PAPER_RESEARCH_ONLY",
+  "recommendations_allowed": false,
+  "race_id": "2026-11-21_R4C3",
+  "model": "available_history_v3",
+  "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+  "protocol_version": "daily_ticket_strategy_v2",
+  "protocol_sha256": "e82d349298b50488e67e2649497e151df9b49bb3dc3c8eed35f944d81f500254",
+  "observed_at": "2026-11-21T17:18:00+01:00",
+  "scheduled_start": "2026-11-21T16:27:00+00:00",
+  "eligible_for_j15_prospective_sg_comparison": true,
+  "sg": {
+    "selection": [
+      {
+        "rank": 4,
+        "number": 7,
+        "name": "JUSTAUCORPS",
+        "probability_win": 0.07022175760197163,
+        "observed_win_odds": 26.6,
+        "estimated_ev": 0.8678987522124455
+      }
+    ],
+    "top1_selection": [],
+    "top2_selection": [],
+    "top3_selection": [],
+    "top4_selection": [
+      {
+        "rank": 4,
+        "number": 7,
+        "name": "JUSTAUCORPS",
+        "probability_win": 0.07022175760197163,
+        "observed_win_odds": 26.6,
+        "estimated_ev": 0.8678987522124455
+      }
+    ],
+    "minimum_ev": 0.1,
+    "ranking_rule": "Frozen V3 winning probability, descending",
+    "stake_eur": null
+  },
+  "ze5": {
+    "numbers": [
+      1,
+      5,
+      3,
+      7,
+      2
+    ],
+    "type": "ZE5_DESORDRE",
+    "stake_eur_total": 1,
+    "status": "OFFER_UNVERIFIED",
+    "ranking_rule": "Top five by predicted win probability, not calibrated top-five finish chances"
+  },
+  "notes": [
+    "Quotes may change; no betting execution",
+    "Top-5 ZE5 ticket is a heuristic and can lose in full",
+    "Early quote snapshot is not an eligible J-15 prospective selection"
+  ]
+}
