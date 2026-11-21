@@ -1,4 +1,4 @@
-name: Turf Lab history repair shadow v1 replay
+name: Turf Lab history repair V1.1 replay audit
 on:
   push:
     branches: [main]
@@ -29,8 +29,8 @@ jobs:
           python-version: '3.12'
       - name: Test replay safeguards and compile operational integration
         run: |
-          python -m unittest tests.test_history_repair_shadow -v
-          python -m py_compile scripts/run_prediction_request.py turf_lab/history_repair_shadow.py
+          python -m unittest tests.test_history_repair_shadow tests.test_history_repair_prospective -v
+          python -m py_compile scripts/run_prediction_request.py turf_lab/history_repair_shadow.py scripts/evaluate_history_repair_shadow.py scripts/score_history_repair_prospective.py
       - name: Paired replay from immutable prestart evidence across stored races
         run: python -m scripts.evaluate_history_repair_shadow
       - name: Archive research-only report
@@ -40,7 +40,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add reports/history_repair_shadow_v1
           if ! git diff --cached --quiet; then
-            git commit -m 'Archive frozen prestart history repair replay for Reims'
+            git commit -m 'Archive V1.1 historical replay, preserving V1 original'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
