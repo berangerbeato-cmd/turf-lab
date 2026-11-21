@@ -90,6 +90,9 @@ test_old_unknown_result_does_not_poison_recent_five (test_history_repair_shadow.
 test_same_day_multiple_starts_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_same_day_multiple_starts_abstains) ... ok
 test_stamps_must_precede_start_and_be_aware (test_history_repair_shadow.HistoryRepairShadowTests.test_stamps_must_precede_start_and_be_aware) ... ok
 test_unresolved_recent_result_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_unresolved_recent_result_abstains) ... ok
+test_late_sidecar_must_not_be_mislabeled_prospective (test_history_repair_shadow.ProspectiveSidecarIntegrationTests.test_late_sidecar_must_not_be_mislabeled_prospective) ... ok
+test_prestart_sidecar_is_recorded_but_never_replaces_v3 (test_history_repair_shadow.ProspectiveSidecarIntegrationTests.test_prestart_sidecar_is_recorded_but_never_replaces_v3) ... ok
+test_shadow_failure_does_not_fail_production_prediction (test_history_repair_shadow.ProspectiveSidecarIntegrationTests.test_shadow_failure_does_not_fail_production_prediction) ... ok
 test_calendar_no_seven_day_limit (test_history_sync.HistorySyncTests.test_calendar_no_seven_day_limit) ... ok
 test_cancel_requires_unambiguous_evidence (test_history_sync.HistorySyncTests.test_cancel_requires_unambiguous_evidence) ... ok
 test_complete_day_no_download (test_history_sync.HistorySyncTests.test_complete_day_no_download) ... ok
@@ -406,7 +409,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 246 tests in 0.249s
+Ran 249 tests in 0.249s
 
 FAILED (errors=10, skipped=7)
 Outside fixed cohort dates; no requests
