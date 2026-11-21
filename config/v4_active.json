@@ -1,26 +1,37 @@
 {
-  "version": "turf_lab_v4_integrated_speed_1",
+  "version": "turf_lab_v4_multifeature_1",
   "active_user_model": "TURF_LAB_V4",
-  "model_family": "v4_speed_challenger_1",
+  "model_family": "turf_lab_v4_multifeature_1",
   "context_file": "v4_speed_context.json",
   "output_file": "v4_integrated.json",
-  "winner": "models/v4_speed/winner.json",
-  "ranking": "models/v4_speed/ranking.json",
-  "market": "models/v4_speed/market.json",
-  "training_frozen": "models/v4_speed/frozen_before_test.json",
+  "winner": "models/v4_multifeature/winner.json",
+  "ranking": "models/v4_multifeature/ranking.json",
+  "market": "models/v4_multifeature/market.json",
+  "training_frozen": "models/v4_multifeature/frozen_before_test.json",
   "mandatory_history_repair": "history_repair_shadow_v1_1_nancy_alias",
   "historical_2026_reused": true,
   "independent_validation_complete": false,
   "ready_for_research_inference": true,
-  "promotion_reason": "Explicit user request to integrate the V7 contextual-speed 43rd feature into the sole Turf Lab V4, using all retrained weights",
+  "promotion_reason": "Explicit user decision to integrate class, relative historical gains, weighted recent form and R in the SINGLE V4 at once; retrained winner, ranker and R-conditioned odds correction on separate chronological windows.",
   "value_requires_verified_prestart_quotes": true,
   "recommendations_allowed": false,
   "real_money_betting": false,
   "missing_context_behavior": "BLOCK_V4_IF_SNAPSHOT_MISSING; LEARNED_NONE_IF_A_HORSE_HAS_NO_PRIOR_TIMED_STARTS",
   "limits": [
-    "No independent forward proof that speed improves live performance",
-    "Historical evaluation is retrospective and already inspected",
-    "Individual historical timing is only partially available",
-    "Never advise a real-money bet or claim ZEturf ROI"
-  ]
+    "Historical 2026 comparison is reused/exploratory; first-choice accuracy decreased versus 43-feature V4",
+    "Lagged historical PMU career euro snapshots are not independently proven contemporaneous at past race date",
+    "Relative class also includes nonmonetary prior-place points",
+    "Market R-conditioned correction is not certified on executable ZEturf odds",
+    "No stake or ROI claim; real money betting policy remains SUSPENDED"
+  ],
+  "aux_context_file": "v4_aux_context.json",
+  "feature_count": 47,
+  "included_signals": [
+    "chronos_corriges_V7",
+    "relative_career_gains_from_last_PRIOR_race_only",
+    "relative_career_class_from_prior_finishes",
+    "weighted_recent_form_35_25_18_12_10",
+    "reliability_R_data_quality_and_learned_market_gate"
+  ],
+  "money_point_in_time_independently_proven": false
 }
