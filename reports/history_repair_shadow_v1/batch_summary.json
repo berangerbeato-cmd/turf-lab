@@ -6,425 +6,81 @@
   "prospective_independent_test": false,
   "selection_rule": "Earliest archived prestart V3 prediction per race with original horse evidence",
   "races_with_candidate_evidence": 11,
-  "races_replayed": 11,
-  "races_with_results": 9,
-  "races_without_verified_results": 2,
-  "races_with_candidate_changes": 8,
-  "paired_metrics": {
-    "v3_baseline": {
-      "log_loss": 1.9730614322800126,
-      "brier": 0.7680785731959427,
-      "top1_correct": 0.3333333333333333,
-      "top4_overlap": 1.5555555555555556,
-      "top5_overlap": 2.3333333333333335,
-      "top4_exact": 0,
-      "top5_exact": 0
-    },
-    "research_candidate": {
-      "log_loss": 1.9591356939253224,
-      "brier": 0.7649909601309223,
-      "top1_correct": 0.3333333333333333,
-      "top4_overlap": 1.7777777777777777,
-      "top5_overlap": 2.5555555555555554,
-      "top4_exact": 0,
-      "top5_exact": 0
-    }
-  },
-  "scored_races": [
+  "races_replayed": 0,
+  "races_with_results": 0,
+  "races_without_verified_results": 0,
+  "races_with_candidate_changes": 0,
+  "paired_metrics": {},
+  "scored_races": [],
+  "pending_results": [],
+  "excluded_or_failed": [
     {
       "race_id": "2026-11-06_R1C2",
-      "source_prediction": "predictions_operational/2026-11-06/2026-11-06_R1C2_20261106T161107483231Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-06_R1C2_20261106T161107483231Z.json",
-      "changed_runners": 9,
-      "runner_status_counts": {
-        "UNCHANGED": 9,
-        "UPDATED": 9
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        3,
-        13,
-        2,
-        6,
-        5
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.08626179829344671,
-          "log_loss": 2.450368440617736,
-          "brier": 0.9092430207006713,
-          "top1_correct": 0,
-          "top4_overlap": 1,
-          "top5_overlap": 1,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.1066097953513982,
-          "log_loss": 2.2385798826220253,
-          "brier": 0.8655766576756919,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-06/2026-11-06_R1C2_20261106T161107483231Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-07_R2C8",
-      "source_prediction": "predictions_operational/2026-11-07/2026-11-07_R2C8_20261107T132335636727Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-07_R2C8_20261107T132335636727Z.json",
-      "changed_runners": 5,
-      "runner_status_counts": {
-        "UNCHANGED": 1,
-        "UNRESOLVED_RECENT_OUTCOME": 10,
-        "UPDATED": 5
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        1,
-        3,
-        8,
-        10,
-        4
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.08193945587974388,
-          "log_loss": 2.5017746473572213,
-          "brier": 0.9563372079676445,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.0836977270520133,
-          "log_loss": 2.4805434577453602,
-          "brier": 0.9538828405928621,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-07/2026-11-07_R2C8_20261107T132335636727Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-07_R5C6",
-      "source_prediction": "predictions_operational/2026-11-07/2026-11-07_R5C6_20261107T173445147003Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-07_R5C6_20261107T173445147003Z.json",
-      "changed_runners": 5,
-      "runner_status_counts": {
-        "FEWER_THAN_FIVE_VERIFIED_STARTS": 7,
-        "UNCHANGED": 4,
-        "UPDATED": 5
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        15,
-        8,
-        5,
-        3,
-        14
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.3597524523871828,
-          "log_loss": 1.0223391163173035,
-          "brier": 0.5259285163517482,
-          "top1_correct": 1,
-          "top4_overlap": 2,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.3537757029247494,
-          "log_loss": 1.0390921742196653,
-          "brier": 0.5307214152414329,
-          "top1_correct": 1,
-          "top4_overlap": 3,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-07/2026-11-07_R5C6_20261107T173445147003Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-07_R5C7",
-      "source_prediction": "predictions_operational/2026-11-07/2026-11-07_R5C7_20261107T180323401567Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-07_R5C7_20261107T180323401567Z.json",
-      "changed_runners": 9,
-      "runner_status_counts": {
-        "FEWER_THAN_FIVE_VERIFIED_STARTS": 3,
-        "UNCHANGED": 3,
-        "UNRESOLVED_RECENT_OUTCOME": 1,
-        "UPDATED": 9
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        10,
-        4,
-        3,
-        13,
-        11
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.08163668128508611,
-          "log_loss": 2.505476592465892,
-          "brier": 0.9393929520553532,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.08030255648993925,
-          "log_loss": 2.52195382179972,
-          "brier": 0.9377993882221441,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-07/2026-11-07_R5C7_20261107T180323401567Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-14_R1C7",
-      "source_prediction": "predictions_operational/2026-11-14/2026-11-14_R1C7_20261114T151508361901Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-14_R1C7_20261114T151508361901Z.json",
-      "changed_runners": 0,
-      "runner_status_counts": {
-        "MULTIPLE_STARTS_SAME_DAY": 1,
-        "UNCHANGED": 12
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        11,
-        8,
-        3,
-        13,
-        5
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.19270181122919985,
-          "log_loss": 1.646611304388553,
-          "brier": 0.7618287981910741,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.19270181122919985,
-          "log_loss": 1.646611304388553,
-          "brier": 0.7618287981910741,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-14/2026-11-14_R1C7_20261114T151508361901Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-14_R1C9",
-      "source_prediction": "predictions_operational/2026-11-14/2026-11-14_R1C9_20261114T164236307916Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-14_R1C9_20261114T164236307916Z.json",
-      "changed_runners": 2,
-      "runner_status_counts": {
-        "UNCHANGED": 6,
-        "UPDATED": 2
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        8,
-        2,
-        7,
-        1,
-        3
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.5247442445924198,
-          "log_loss": 0.6448442882454593,
-          "brier": 0.30252358209406566,
-          "top1_correct": 1,
-          "top4_overlap": 2,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.5406957640762595,
-          "log_loss": 0.6148985167727112,
-          "brier": 0.28697612626227714,
-          "top1_correct": 1,
-          "top4_overlap": 2,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-14/2026-11-14_R1C9_20261114T164236307916Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-15_R3C5",
-      "source_prediction": "predictions_operational/2026-11-15/2026-11-15_R3C5_20261115T115929320844Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-15_R3C5_20261115T115929320844Z.json",
-      "changed_runners": 6,
-      "runner_status_counts": {
-        "NON_RUNNER": 2,
-        "UNCHANGED": 5,
-        "UNRESOLVED_RECENT_OUTCOME": 3,
-        "UPDATED": 6
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        5,
-        10,
-        4,
-        2,
-        9
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.32018454146183023,
-          "log_loss": 1.138857757343113,
-          "brier": 0.5145645096197964,
-          "top1_correct": 1,
-          "top4_overlap": 1,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.305300985621381,
-          "log_loss": 1.1864571508764505,
-          "brier": 0.5377881689775715,
-          "top1_correct": 1,
-          "top4_overlap": 1,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-15/2026-11-15_R3C5_20261115T115929320844Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-16_R1C7",
-      "source_prediction": "predictions_operational/2026-11-16/2026-11-16_R1C7_20261116T154014194966Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-16_R1C7_20261116T154014194966Z.json",
-      "changed_runners": 0,
-      "runner_status_counts": {
-        "UNCHANGED": 13,
-        "UNRESOLVED_RECENT_OUTCOME": 1
-      },
-      "result_source": "VERIFIED_ARCHIVE",
-      "finish_top5": [
-        9,
-        13,
-        2,
-        10,
-        8
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.03938055804495938,
-          "log_loss": 3.234483035100628,
-          "brier": 1.050722836021512,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.03938055804495938,
-          "log_loss": 3.234483035100628,
-          "brier": 1.050722836021512,
-          "top1_correct": 0,
-          "top4_overlap": 2,
-          "top5_overlap": 3,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
+      "path": "predictions_operational/2026-11-16/2026-11-16_R1C7_20261116T154014194966Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
-      "race_id": "2026-11-21_R4C5",
-      "source_prediction": "predictions_operational/2026-11-21/2026-11-21_R4C5_20261121T172911422587Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-21_R4C5_20261121T172911422587Z.json",
-      "changed_runners": 6,
-      "runner_status_counts": {
-        "UNCHANGED": 2,
-        "UNRESOLVED_RECENT_OUTCOME": 6,
-        "UPDATED": 6
-      },
-      "result_source": "ZETURF_SCREENSHOT",
-      "finish_top5": [
-        2,
-        1,
-        11,
-        9,
-        4
-      ],
-      "comparisons": {
-        "v3_baseline": {
-          "winner_probability": 0.07332910304702137,
-          "log_loss": 2.6127977086842065,
-          "brier": 0.9521657357616189,
-          "top1_correct": 0,
-          "top4_overlap": 0,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        },
-        "research_candidate": {
-          "winner_probability": 0.06927979998374453,
-          "log_loss": 2.669601901802787,
-          "brier": 0.9596224099937348,
-          "top1_correct": 0,
-          "top4_overlap": 0,
-          "top5_overlap": 2,
-          "top4_exact": 0,
-          "top5_exact": 0
-        }
-      }
-    }
-  ],
-  "pending_results": [
-    {
       "race_id": "2026-11-21_R2C6",
-      "source_prediction": "predictions_operational/2026-11-21/2026-11-21_R2C6_20261121T134005443303Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-21_R2C6_20261121T134005443303Z.json",
-      "changed_runners": 0,
-      "runner_status_counts": {
-        "MULTIPLE_STARTS_SAME_DAY": 3,
-        "UNCHANGED": 7,
-        "UNRESOLVED_RECENT_OUTCOME": 2
-      },
-      "result_status": "PENDING_OFFICIAL_RESULT"
+      "path": "predictions_operational/2026-11-21/2026-11-21_R2C6_20261121T134005443303Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     },
     {
       "race_id": "2026-11-21_R4C3",
-      "source_prediction": "predictions_operational/2026-11-21/2026-11-21_R4C3_20261121T161958475606Z/prediction.json",
-      "source_report": "reports/history_repair_shadow_v1/replays_corrected/2026-11-21_R4C3_20261121T161958475606Z.json",
-      "changed_runners": 7,
-      "runner_status_counts": {
-        "UNCHANGED": 3,
-        "UPDATED": 7
-      },
-      "result_status": "PENDING_OFFICIAL_RESULT"
+      "path": "predictions_operational/2026-11-21/2026-11-21_R4C3_20261121T161958475606Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
+    },
+    {
+      "race_id": "2026-11-21_R4C5",
+      "path": "predictions_operational/2026-11-21/2026-11-21_R4C5_20261121T172911422587Z/prediction.json",
+      "status": "REPLAY_FAILED",
+      "reason": "Immutable research replay would change"
     }
   ],
-  "excluded_or_failed": [],
   "caveats": [
     "Candidate was developed after reviewing Reims; earlier races are retrospective replays, NOT a virgin holdout.",
     "Frozen V3 benchmark and all archived predictions remain unchanged.",
