@@ -14,6 +14,9 @@ on:
       - 'turf_lab/v4_unified.py'
       - 'turf_lab/v4_full_inference.py'
       - 'scripts/score_v4_full_prospective.py'
+      - 'turf_lab/v4_speed_shadow.py'
+      - 'scripts/score_v4_speed_prospective.py'
+      - 'tests/test_v4_speed_shadow.py'
       - 'tests/test_v4_full_inference.py'
       - 'scripts/score_v4_prospective.py'
 permissions:
@@ -35,7 +38,7 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements-v5.txt scipy==1.17.0
       - name: Test prospective selection, provenance and result-scoring
-        run: python -m unittest tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective tests.test_v4_full_inference -v
+        run: python -m unittest tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective tests.test_v4_full_inference tests.test_v4_speed tests.test_v4_speed_shadow -v
       - name: Capture two deterministic future harness races (no betting)
         if: github.event_name != 'push'
         run: python -m scripts.capture_history_repair_prospective
@@ -45,6 +48,9 @@ jobs:
       - name: Score original V4 alongside V3 (verified results only)
         if: github.event_name != 'push'
         run: python -m scripts.score_v4_full_prospective
+      - name: Score original V4+Speed shadows versus same-race original V4
+        if: github.event_name != 'push'
+        run: python -m scripts.score_v4_speed_prospective
       - name: Archive prestart evidence and paired scorecard
         if: github.event_name != 'push'
         run: |
@@ -58,6 +64,9 @@ jobs:
           fi
           if [ -f reports/v4_full/prospective_scores.json ]; then
             git add -f reports/v4_full/prospective_scores.json
+          fi
+          if [ -f reports/v4_speed/prospective_scores.json ]; then
+            git add -f reports/v4_speed/prospective_scores.json
           fi
           if ! git diff --cached --quiet; then
             git commit -m 'Archive bounded forward history repair shadow cohort'
