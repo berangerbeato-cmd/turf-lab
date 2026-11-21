@@ -1,0 +1,136 @@
+{
+  "race_id": "2026-11-21_R4C7",
+  "date": "2026-11-21",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-21T16:50:44.878753+00:00",
+  "predicted_at": "2026-11-21T16:51:09.530645+00:00",
+  "scheduled_start": "2026-11-21T18:41:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('NARCOS PIYA', 'ETCHOLA', 'READY CASH')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('NEGUEV', 'AUMEVILLE', 'COUP DE POKER')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('NO EXPECTATIONS', 'DANSE MAJYC', 'EROS DU CHENE')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('NAMARIO BELLO', 'NAMARA', 'GALIUS')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('NUMBER ONE FLIGNY', 'FRONT LINE', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('NAUTIC FIX', 'GAIA FIX', 'MAGNIFICENT RODNEY')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('NORLANDO', 'CALENCIA', 'HOHNECK')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('NOMEN NESCIO', 'CHARMEUSE MAJYC', 'READY CASH')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('NAPOLEON DE NIELES', 'CILARIA PARADISE', 'ROCKLYN')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:(\"NOBLE DE REVE D'OR\", 'FELINE SPEED', 'BOLD EAGLE')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('NABUCCO CENE', 'VIGOGNE DU BOULAY', 'VERY NICE MARCEAUX')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('NUAGE DU RABUTIN', 'GLOIRE DU RABUTIN', 'BILIBILI')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "e4cff2603cec8b3c4c15a6a95294c6620516e3766971d5b4121766708156d08d",
+  "history_through": "2026-11-20",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          5,
+          10,
+          8,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.04116758401007947,
+          "stage_raw": 0.008294695323736284,
+          "stage_calibrated": 0.00860094972075493
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          5,
+          10,
+          2,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.007701694076184657,
+          "stage_raw": 0.010303570685667934,
+          "stage_calibrated": 0.011116765939018653
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          5,
+          10,
+          8,
+          4,
+          2
+        ],
+        "probabilities": {
+          "v3": 0.052008425919042485,
+          "stage_raw": 0.006864314102033265,
+          "stage_calibrated": 0.007262803798488199
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          5,
+          10,
+          2,
+          12,
+          7
+        ],
+        "probabilities": {
+          "v3": 0.0015818195087847337,
+          "stage_raw": 0.005140383244734622,
+          "stage_calibrated": 0.005439311106796584
+        }
+      }
+    }
+  }
+}

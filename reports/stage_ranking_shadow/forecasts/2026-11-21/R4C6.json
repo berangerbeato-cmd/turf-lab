@@ -1,0 +1,126 @@
+{
+  "race_id": "2026-11-21_R4C6",
+  "date": "2026-11-21",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-21T16:50:19.301061+00:00",
+  "predicted_at": "2026-11-21T16:50:43.770252+00:00",
+  "scheduled_start": "2026-11-21T18:09:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:(\"OPALE D'OURVILLE\", \"HANDY D'OURVILLE\", 'CUPIDON DU VIVIER')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('OSCAR DE VILLODON', 'GIGI DE VILLODON', 'TAG WOOD')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('OTSTEPPER', 'DIVINE MAX', 'ROYAL DREAM')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('OVERDOSE BOND', 'DONATELLA BOND', 'GO ON BOY')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('ORIENT COBB', 'DELICIOUS GIRL', 'COUP DE POKER')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('OSCAR PIYA', 'ETCHOLA', 'IDEAL DU POMMEAU')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('OLYMPE DU PRESSOIR', 'GRACIOSA DE LOU', 'ATLAS DE JOUDES')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('OKKAIDO FERFAY', 'FRANCE FERFAY', 'TONKIN DE BELLOUET')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('ONE MAN SHOW CENE', 'FEERIE DU BOULAY', \"ICI C'EST PARIS\")",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('ORMELLIA', 'HISTOIRE COMMUNE', 'FALCAO DE LAURMA')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "e4cff2603cec8b3c4c15a6a95294c6620516e3766971d5b4121766708156d08d",
+  "history_through": "2026-11-20",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          6,
+          9,
+          1,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.07637375885744091,
+          "stage_raw": 0.03902435093464064,
+          "stage_calibrated": 0.04272799471574198
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          6,
+          9,
+          10,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.07637375885744091,
+          "stage_raw": 0.03902435093464064,
+          "stage_calibrated": 0.04272799471574198
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          6,
+          9,
+          1,
+          10,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.06920739222579435,
+          "stage_raw": 0.02023344380667721,
+          "stage_calibrated": 0.02132551916361679
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          6,
+          9,
+          10,
+          1,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.01923065051273682,
+          "stage_raw": 0.02184155967558958,
+          "stage_calibrated": 0.02324377258312002
+        }
+      }
+    }
+  }
+}
