@@ -38,7 +38,7 @@ def load_history(today, target_day):
     if len({r['race_id'] for r in records}) != len(records):
         raise ValueError('Duplicate history')
     # Preserve exactly the fields read by the frozen feature engines, avoiding raw market payloads in RAM.
-    keys=('numPmu','nom','nomMere','nomPere','idCheval','statut','ordreArrivee','incident','driver','entraineur','deferre','age','sexe','reductionKilometrique','tempsObtenu','handicapDistance','gainsParticipant')
+    keys=('numPmu','nom','nomMere','nomPere','idCheval','statut','ordreArrivee','incident','driver','entraineur','deferre','age','sexe','reductionKilometrique','tempsObtenu','handicapDistance')
     compact=[{**{k:r[k] for k in ('date','race_id','venue','country','start_type','distance_m','scheduled_start_ms')},
               'course':{'conditions':r.get('course',{}).get('conditions')},
               'participants':[{k:p[k] for k in keys if k in p} for p in r['participants']]} for r in records]
@@ -161,41 +161,6 @@ def run(day,reunion,course):
         requires_runner_recheck=True,odds_used_as_features=False,
         code_sha256={str(f):digest(f) for folder in ('scripts','turf_lab') for f in Path(folder).glob('*.py')})
     dump(root/'prediction.json',output)
-    # V4 speed is now the single public model's 43rd input. Capture only
-    # a small, auditable per-horse prestart context sidecar from the very
-    # same official history already loaded for V3, without a second fetch.
-    try:
-        from turf_lab.v4_speed_data import prestart_target_context
-        from turf_lab.v4_multi_features import live_context
-        policy = json.loads(Path('config/full_history_protocol.json').read_text())
-        speed_history = [r for r in history
-                         if r['date'][:7] not in policy['excluded_months']
-                         and r['race_id'] not in policy['excluded_races']]
-        speed_context = prestart_target_context(speed_history, target)
-        speed_finished = datetime.now(timezone.utc)
-        if speed_finished >= start:
-            raise ValueError('43-feature chrono finished after the race started')
-        speed_context['captured_at'] = speed_finished.isoformat()
-        dump(root/'v4_speed_context.json',speed_context)
-        # Additional class/gains/form/R evidence is computed from these SAME
-        # strictly earlier official records. No results from the target day.
-        base_runners = [dict(r, features=list(r['features'])+[
-            speed_context['target_field'][str(r['number'])]['context_residual']
-        ]) for r in models['available_history_v3']['runners']]
-        aux = live_context(speed_history,target,{'race_id':rid,
-                     'date':day,'runners':base_runners})
-        aux_finished=datetime.now(timezone.utc)
-        if aux_finished>=start:
-            raise ValueError('V4 class/gains/form/R context completed after race start')
-        aux['captured_at']=aux_finished.isoformat()
-        dump(root/'v4_aux_context.json',aux)
-        print('V4 47 feature historic contexts recorded',flush=True)
-    except (ValueError,OSError,TypeError,KeyError,RuntimeError) as error:
-        dump(root/'v4_speed_context_error.json',{
-            'race_id':rid,'status':'V4_SPEED_BLOCKED_NO_BET',
-            'reason':type(error).__name__+': '+str(error),
-            'recommendations_allowed':False})
-        print('V4 speed input unavailable; no V4 fallback',flush=True)
     dump('reports/operational/latest.json',{**recommendation_state(),'primary_model':'available_history_v3','prediction':str(root/'prediction.json'),'race_id':rid,'predicted_at':finished.isoformat(),
         'models':{n:{k:v for k,v in m.items() if k!='runners'} for n,m in models.items()},'place':place,
         'scheduled_start':start.isoformat(),'history_through':coverage['last_collected_day'],'individual_history_check':history_check,
