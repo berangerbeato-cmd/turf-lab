@@ -1,0 +1,54 @@
+{
+  "version": "turf_lab_v4_multifeature_1",
+  "status": "RESEARCH_ONLY_NO_BET",
+  "base": "turf_lab_v4_integrated_speed_1",
+  "frozen_previous": "models/v4_speed/frozen_before_test.json",
+  "additions": [
+    "relative_career_gains_from_LAST_PRIOR_DATED_archived_PMU_race_ONLY_missing_if_stale_or_unverifiable",
+    "prior_career_finishing_prize_points_relative_current_field_NON_MONETARY_CLASS_PROXY",
+    "recent_five_form_weighted_35_25_18_12_10_official_past_starts_only",
+    "R_source_completeness_not_win_probability"
+  ],
+  "model_features": 47,
+  "winner_l2": 0.1,
+  "winner_iterations": 800,
+  "winner_learning_rate": 0.03,
+  "ranking_ridge": 0.01,
+  "market_fit": [
+    "2025-07-01",
+    "2025-12-31"
+  ],
+  "market_ridge": 0.02,
+  "minimum_market_rows": 300,
+  "chronological": {
+    "winner_fit": [
+      "2022-03-02",
+      "2024-12-31"
+    ],
+    "winner_rank_calibration": [
+      "2025-01-01",
+      "2025-06-30"
+    ],
+    "market_and_R_fit": [
+      "2025-07-01",
+      "2025-12-31"
+    ],
+    "reused_exploratory_test": [
+      "2026-01-01",
+      "2026-09-30"
+    ]
+  },
+  "original_historical_gain_snapshots": "Retrieved retrospectively. Date sequence mostly rises but point-in-time publication at past race is not independently proved; use only last previous race's snapshot (never target snapshot), no assumed unit/euro conversions; missing if >365d or decreasing.",
+  "money_asof_proven": false,
+  "history_repair_required": true,
+  "recommendations_allowed": false,
+  "real_money_betting": false,
+  "production_activation": "User requests single V4 with all four added inputs at once. Require all new models trained and code/feature integrity checks before changing config/v4_active.json.",
+  "limits": [
+    "2026 is already inspected; all improvements exploratory",
+    "Career gain snapshots were gathered retrospectively, publication date not verified",
+    "Class points are nonmonetary proxy based only on prior recorded results",
+    "R is data-completeness index, not a certainty probability",
+    "No real bookmaker settlement available; no ROI evidence"
+  ]
+}
