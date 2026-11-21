@@ -1,0 +1,35 @@
+name: V4 historical euros temporal audit
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/v4_gains_audit.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  money_history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check if PMU career euro snapshots are time-consistent
+        run: python -m scripts.audit_v4_gains_temporal
+      - name: Archive audit with explicit temporal-availability limitations
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f reports/v4_multifeature/gains_temporal_audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Audit historical PMU gains before admitting monetary V4 feature'
+            for n in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
