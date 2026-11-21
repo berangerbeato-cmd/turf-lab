@@ -119,3 +119,57 @@ def append_speed(rows, speed):
         out.append(copy)
     return out,{"total_active":total,"with_past_context_speed":available,
                 "fraction":available/max(1,total),"missing":total-available}
+
+
+def prestart_target_context(history, target, observed_at=None):
+    """Save only 43rd-feature evidence, computed from strictly prior dates.
+
+    The locked V4+Speed model remains valid when a horse lacks previous timed
+    starts: its 43rd feature is None, which was explicitly learned during fit.
+    No forecast may fabricate a speed or silently use the old 42-feature model.
+    """
+    from datetime import datetime, timezone
+    from turf_lab.month_history import identity
+
+    observed_at = observed_at or datetime.now(timezone.utc)
+    if observed_at.tzinfo is None:
+        raise ValueError("Chrono capture must have a timezone")
+    day = target["date"]
+    if (not history or len({x["race_id"] for x in history})!=len(history)
+            or any(x["date"]>=day for x in history)
+            or any(x["race_id"]==target["race_id"] for x in history)):
+        raise ValueError("Chrono requires unique strictly earlier races")
+    p=Path("config/speed_v7_protocol.json")
+    policy=json.loads(p.read_text())
+    result,diagnostics=dated_speed_features(list(history)+[target],policy)
+    entries=result[target["race_id"]]
+    actual={q["numPmu"]:identity(q) for q in target["participants"]}
+    if len(entries)!=len(actual) or set(entries)!=set(actual):
+        raise ValueError("Chrono does not cover every horse in the target")
+    for n,(horse,value,count) in entries.items():
+        if (horse!=actual[n] or not isinstance(count,int) or isinstance(count,bool)
+                or not 0<=count<=policy["last_starts"] or
+                (value is None)!=(count==0)):
+            raise ValueError("Chrono horse identity/count mismatch")
+    history_hash=hashlib.sha256(json.dumps(history,sort_keys=True,
+                             ensure_ascii=False).encode()).hexdigest()
+    return {
+        "version":"v4_speed_prior_only_context_v1",
+        "race_id":target["race_id"],"target_date":day,
+        "captured_at":observed_at.isoformat(),
+        "prior_races":len(history),
+        "last_prior_day":max(x["date"] for x in history),
+        "prior_history_sha256":history_hash,
+        "speed_protocol_sha256":hashlib.sha256(p.read_bytes()).hexdigest(),
+        "target_field":{str(n):{
+            "horse_id":horse,
+            "context_residual":value,
+            "prior_races_used":count}
+            for n,(horse,value,count) in sorted(entries.items())},
+        "target_participants":len(actual),
+        "coverage_active":sum(v[1] is not None for n,v in entries.items()
+                              if next(q for q in target["participants"] if q["numPmu"]==n)["statut"]=="PARTANT"),
+        "source":"VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+        "contains_target_outcome":False,
+        "note":"One 43rd contextual speed feature per horse, missing kept missing"
+    }
