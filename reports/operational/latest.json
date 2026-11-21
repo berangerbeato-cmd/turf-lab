@@ -8,72 +8,66 @@
   ],
   "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
   "primary_model": "available_history_v3",
-  "prediction": "predictions_operational/2026-11-16/2026-11-16_R1C7_20261116T154014194966Z/prediction.json",
-  "race_id": "2026-11-16_R1C7",
-  "predicted_at": "2026-11-16T15:41:50.170455+00:00",
+  "prediction": "predictions_operational/2026-11-21/2026-11-21_R2C6_20261121T134005443303Z/prediction.json",
+  "race_id": "2026-11-21_R2C6",
+  "predicted_at": "2026-11-21T13:41:41.995245+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.017061866520522224,
-        "2": 0.12242372441899324,
-        "3": 0.05994472321407511,
-        "4": 0.25304191033347995,
-        "5": 0.008174097899412276,
-        "6": 0.007512163871259931,
-        "7": 0.05209527882456116,
-        "8": 0.06471498572632557,
-        "9": 0.06500118515690231,
-        "10": 0.08405699392516755,
-        "11": 0.08063822084803392,
-        "12": 0.04908028486518624,
-        "13": 0.05754601874641188,
-        "14": 0.07870854564966862
+        "1": 0.030333534082085178,
+        "2": 0.026383168934325945,
+        "3": 0.020107828025455715,
+        "4": 0.03999333382022612,
+        "5": 0.17748300774220527,
+        "6": 0.33931581666133454,
+        "7": 0.14342480962033916,
+        "8": 0.0662070790149716,
+        "9": 0.05829404012209842,
+        "10": 0.02816085633662185,
+        "11": 0.024037936857792427,
+        "12": 0.04625858878254381
       },
       "role": "benchmark",
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-11-16T15:41:50.170455+00:00"
+      "calculated_at": "2026-11-21T13:41:41.995245+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.01531134318298012,
-        "2": 0.15062815644271152,
-        "3": 0.04876698470215791,
-        "4": 0.18717302136439928,
-        "5": 0.00952889420854519,
-        "6": 0.007350371606438517,
-        "7": 0.05793393360331332,
-        "8": 0.09669188663585677,
-        "9": 0.05051902354070475,
-        "10": 0.14107265385230142,
-        "11": 0.0831862634002125,
-        "12": 0.026247860132005134,
-        "13": 0.08682474069007501,
-        "14": 0.03876486663829866
+        "1": 0.03497026615030108,
+        "2": 0.024207643726293138,
+        "3": 0.01593375274808534,
+        "4": 0.049024046762411545,
+        "5": 0.10851525559779591,
+        "6": 0.34739450822242524,
+        "7": 0.15564402436739938,
+        "8": 0.044689950851710784,
+        "9": 0.059205191949788204,
+        "10": 0.045877073402822495,
+        "11": 0.051978898558730904,
+        "12": 0.06255938766223597
       },
       "role": "benchmark",
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-11-16T15:41:50.170455+00:00"
+      "calculated_at": "2026-11-21T13:41:41.995245+00:00"
     },
     "available_history_v3": {
       "probabilities": {
-        "1": 0.014143880677076755,
-        "2": 0.09324278106886806,
-        "3": 0.04122284423441067,
-        "4": 0.2543942344302272,
-        "5": 0.007591751083733474,
-        "6": 0.008548014827990188,
-        "7": 0.06456317569964853,
-        "8": 0.08784758282554633,
-        "9": 0.03938055804495938,
-        "10": 0.14690222665153785,
-        "11": 0.10951572483104448,
-        "12": 0.027201341409155734,
-        "13": 0.07187386465296214,
-        "14": 0.033572019562839166
+        "1": 0.03811561366884077,
+        "2": 0.018610309785256955,
+        "3": 0.012122028072476084,
+        "4": 0.04298747501507898,
+        "5": 0.10708848576907616,
+        "6": 0.37915526800885413,
+        "7": 0.13988168221664482,
+        "8": 0.0649089278227896,
+        "9": 0.05313946083778639,
+        "10": 0.039613319366583924,
+        "11": 0.0426732967855635,
+        "12": 0.061704132651048654
       },
       "temperature": 0.9411457597147692,
       "role": "primary",
@@ -82,52 +76,52 @@
       "model_file": "models/available_history_v3/last5_available_dq20.json",
       "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
       "version": "available_history_v3@c6ccc2335485",
-      "calculated_at": "2026-11-16T15:41:50.170455+00:00"
+      "calculated_at": "2026-11-21T13:41:41.995245+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
     "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
-    "number": 4,
+    "number": 6,
     "model": "classic_full",
-    "probability": 0.42471569543738263,
+    "probability": 0.5982418791121074,
     "paid_places": 3,
-    "fair_odds": 2.3545162346076602,
+    "fair_odds": 1.6715646879890287,
     "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
     "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places.",
     "role": "legacy_classic_benchmark_only"
   },
-  "scheduled_start": "2026-11-16T16:25:00+00:00",
-  "history_through": "2026-11-15",
+  "scheduled_start": "2026-11-21T13:50:00+00:00",
+  "history_through": "2026-11-20",
   "individual_history_check": {
-    "status": "CHECKED_RETURNED_HISTORY_ONLY",
-    "affected_runners": [],
+    "status": "RESEARCH_HISTORY_WARNING",
+    "affected_runners": [
+      8,
+      9,
+      11
+    ],
     "runners": [
       {
         "number": 1,
-        "name": "LOUBIANA DU BOURG",
+        "name": "LANNISTER",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 31,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 30,
+        "snapshot_career_starts": 16,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 16,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-03-28",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          2.772588722239781,
-          0.4
+          null,
+          null,
+          null,
+          null,
+          0.0
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -135,28 +129,24 @@
       },
       {
         "number": 2,
-        "name": "LA MISS ROYALE",
+        "name": "LAVAMA",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 25,
+        "snapshot_career_starts": 26,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 24,
+        "individual_prior_starts_returned": 26,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2024-08-21",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
-          1.0,
-          1.0,
           0.0,
-          3.6888794541139363,
+          0.0,
+          0.0,
+          3.367295829986474,
           0.2
         ],
         "frozen_features_unchanged": true,
@@ -165,25 +155,25 @@
       },
       {
         "number": 3,
-        "name": "LILIE D'OMAHA",
+        "name": "LOIC BARON",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 28,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 26,
+        "snapshot_career_starts": 20,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 19,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.5,
-          3.4011973816621555,
-          0.4
+          null,
+          null,
+          null,
+          null,
+          0.0
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -191,25 +181,25 @@
       },
       {
         "number": 4,
-        "name": "LESPANA DU BOCAGE",
+        "name": "LAWMAN",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 31,
-        "model_recent_starts": 3,
-        "individual_prior_starts_returned": 27,
+        "snapshot_career_starts": 30,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 23,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.3333333333333333,
-          0.6666666666666666,
-          0.0,
-          2.3978952727983707,
-          0.6
+          null,
+          null,
+          null,
+          null,
+          0.0
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -217,29 +207,25 @@
       },
       {
         "number": 5,
-        "name": "LADY DU CHATELET",
+        "name": "LETTY DE BEYLEV",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 25,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 18,
+        "snapshot_career_starts": 36,
+        "model_recent_starts": 3,
+        "individual_prior_starts_returned": 33,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-09-23",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
           0.0,
-          0.0,
-          4.007333185232471,
-          0.2
+          0.3333333333333333,
+          2.772588722239781,
+          0.6
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -247,25 +233,25 @@
       },
       {
         "number": 6,
-        "name": "LOLITA STEED",
+        "name": "L'AMIRAL FLOWER",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 16,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 16,
+        "snapshot_career_starts": 25,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 25,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.0,
-          2.3978952727983707,
-          0.2
+          null,
+          null,
+          null,
+          null,
+          0.0
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -273,23 +259,27 @@
       },
       {
         "number": 7,
-        "name": "LUNE LUMALO",
+        "name": "LIBERATA",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 40,
+        "snapshot_career_starts": 29,
         "model_recent_starts": 3,
-        "individual_prior_starts_returned": 40,
+        "individual_prior_starts_returned": 27,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-06-23",
+            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
+          0.3333333333333333,
+          0.6666666666666666,
           0.0,
-          0.3333333333333333,
-          0.3333333333333333,
           2.3978952727983707,
           0.6
         ],
@@ -299,25 +289,64 @@
       },
       {
         "number": 8,
-        "name": "LA STAR",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 23,
+        "name": "LOVELY LA CHENAIE",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 42,
         "model_recent_starts": 3,
-        "individual_prior_starts_returned": 23,
-        "missing_recent_starts": [],
+        "individual_prior_starts_returned": 40,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-31",
+            "venue": "MARSEILLE PONT DE VIVAUX",
+            "racecourse_code": "PON",
+            "race_number": 1,
+            "race_name": "PRIX DE LA SOCIETE DU TROTTEUR FRANCAIS",
+            "discipline": "ATTELE",
+            "distance_m": 2650,
+            "distance_covered_m": 2675,
+            "handicap_m": 25,
+            "start_type": "NON_PRECISE",
+            "rank": 5,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.2,
+            "race_time_seconds": 201.0,
+            "driver": "N. MORTAGNE",
+            "trainer": "R. LE VEXIER",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 13,
+            "purse_eur": 22000,
+            "race_type": "Course E",
+            "turn": "G",
+            "conditions": "PRIX DE LA SOCIETE DU TROTTEUR FRANCAIS Race 2 Class E 22.000. - Harness, mares. - 2.650 metres. 9.900, 5.500, 3.080, 1.760, 1.100, 440, 220.- allocated by the S.E.T.F. For mares aged 5, who have won less than €81.000. - 25 meters behind for horses who have won more than €35.500.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-03-27",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2026-03-07",
+            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
-          0.3333333333333333,
-          0.3333333333333333,
           0.0,
-          3.4011973816621555,
-          0.6
+          0.25,
+          0.25,
+          3.091042453358316,
+          0.8
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -325,25 +354,56 @@
       },
       {
         "number": 9,
-        "name": "LYRE D'ERABLE",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 23,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 22,
-        "missing_recent_starts": [],
+        "name": "LILIBETH SMART",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 37,
+        "model_recent_starts": 3,
+        "individual_prior_starts_returned": 36,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-31",
+            "venue": "MARSEILLE PONT DE VIVAUX",
+            "racecourse_code": "PON",
+            "race_number": 1,
+            "race_name": "PRIX DE LA SOCIETE DU TROTTEUR FRANCAIS",
+            "discipline": "ATTELE",
+            "distance_m": 2650,
+            "distance_covered_m": 2675,
+            "handicap_m": 25,
+            "start_type": "NON_PRECISE",
+            "rank": 6,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.3,
+            "race_time_seconds": 201.0,
+            "driver": "M. CINIER",
+            "trainer": "D. CINIER",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 13,
+            "purse_eur": 22000,
+            "race_type": "Course E",
+            "turn": "G",
+            "conditions": "PRIX DE LA SOCIETE DU TROTTEUR FRANCAIS Race 2 Class E 22.000. - Harness, mares. - 2.650 metres. 9.900, 5.500, 3.080, 1.760, 1.100, 440, 220.- allocated by the S.E.T.F. For mares aged 5, who have won less than €81.000. - 25 meters behind for horses who have won more than €35.500.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
-          0.5,
-          0.5,
-          3.4011973816621555,
-          0.4
+          0.25,
+          0.0,
+          2.0794415416798357,
+          0.8
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -351,25 +411,29 @@
       },
       {
         "number": 10,
-        "name": "LADY DES ARRIS",
+        "name": "L'ESPOIR",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 31,
-        "model_recent_starts": 3,
-        "individual_prior_starts_returned": 31,
+        "snapshot_career_starts": 27,
+        "model_recent_starts": 1,
+        "individual_prior_starts_returned": 26,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-03-08",
+            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
-          0.6666666666666666,
-          0.3333333333333333,
-          3.1354942159291497,
-          0.6
+          0.0,
+          0.0,
+          3.044522437723423,
+          0.2
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -377,25 +441,60 @@
       },
       {
         "number": 11,
-        "name": "LEONTINE CASH",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 18,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 18,
-        "missing_recent_starts": [],
+        "name": "LOVE ME TRUE",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 24,
+        "model_recent_starts": 3,
+        "individual_prior_starts_returned": 23,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-31",
+            "venue": "MARSEILLE PONT DE VIVAUX",
+            "racecourse_code": "PON",
+            "race_number": 1,
+            "race_name": "PRIX DE LA SOCIETE DU TROTTEUR FRANCAIS",
+            "discipline": "ATTELE",
+            "distance_m": 2650,
+            "distance_covered_m": 2675,
+            "handicap_m": 25,
+            "start_type": "NON_PRECISE",
+            "rank": 1,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.0,
+            "race_time_seconds": 200.0,
+            "driver": "TH. BRIAND",
+            "trainer": "E. PRUDHON",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 13,
+            "purse_eur": 22000,
+            "race_type": "Course E",
+            "turn": "G",
+            "conditions": "PRIX DE LA SOCIETE DU TROTTEUR FRANCAIS Race 2 Class E 22.000. - Harness, mares. - 2.650 metres. 9.900, 5.500, 3.080, 1.760, 1.100, 440, 220.- allocated by the S.E.T.F. For mares aged 5, who have won less than €81.000. - 25 meters behind for horses who have won more than €35.500.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
+          },
+          {
+            "date": "2023-11-11",
+            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
+          0.5,
+          0.5,
           0.0,
-          0.0,
-          0.0,
-          2.1972245773362196,
-          0.4
+          3.091042453358316,
+          0.8
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
@@ -403,84 +502,36 @@
       },
       {
         "number": 12,
-        "name": "LYLOU DES THUYAS",
+        "name": "L'AVENIR",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 37,
+        "snapshot_career_starts": 41,
         "model_recent_starts": 2,
-        "individual_prior_starts_returned": 37,
+        "individual_prior_starts_returned": 36,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-21",
             "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-11-15",
+            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
           0.0,
           0.0,
-          2.1972245773362196,
+          1.9459101490553132,
           0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 13,
-        "name": "LA KIFFANCE PIYA",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 20,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 20,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-16",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.5,
-          0.5,
-          3.4011973816621555,
-          0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 14,
-        "name": "LA CALLAS",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 44,
-        "model_recent_starts": 4,
-        "individual_prior_starts_returned": 44,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-16",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.25,
-          0.25,
-          0.5,
-          2.833213344056216,
-          0.8
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       }
     ],
-    "evidence_manifest": "predictions_operational/2026-11-16/2026-11-16_R1C7_20261116T154014194966Z/individual_history_evidence/manifest.json",
+    "evidence_manifest": "predictions_operational/2026-11-21/2026-11-21_R2C6_20261121T134005443303Z/individual_history_evidence/manifest.json",
     "market_independent": true,
     "frozen_features_changed": false,
     "recommendations_allowed": false
@@ -488,74 +539,64 @@
   "runners": [
     {
       "number": 1,
-      "name": "LOUBIANA DU BOURG",
+      "name": "LANNISTER",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "LA MISS ROYALE",
+      "name": "LAVAMA",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "LILIE D'OMAHA",
+      "name": "LOIC BARON",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "LESPANA DU BOCAGE",
+      "name": "LAWMAN",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "LADY DU CHATELET",
+      "name": "LETTY DE BEYLEV",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "LOLITA STEED",
+      "name": "L'AMIRAL FLOWER",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "LUNE LUMALO",
+      "name": "LIBERATA",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "LA STAR",
+      "name": "LOVELY LA CHENAIE",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "LYRE D'ERABLE",
+      "name": "LILIBETH SMART",
       "status": "PARTANT"
     },
     {
       "number": 10,
-      "name": "LADY DES ARRIS",
+      "name": "L'ESPOIR",
       "status": "PARTANT"
     },
     {
       "number": 11,
-      "name": "LEONTINE CASH",
+      "name": "LOVE ME TRUE",
       "status": "PARTANT"
     },
     {
       "number": 12,
-      "name": "LYLOU DES THUYAS",
-      "status": "PARTANT"
-    },
-    {
-      "number": 13,
-      "name": "LA KIFFANCE PIYA",
-      "status": "PARTANT"
-    },
-    {
-      "number": 14,
-      "name": "LA CALLAS",
+      "name": "L'AVENIR",
       "status": "PARTANT"
     }
   ],
-  "request_id": "chat-20261116-r1c7-1637-v3"
+  "request_id": "chat-20261121-r2c6-1438-v3"
 }

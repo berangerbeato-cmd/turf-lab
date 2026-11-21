@@ -1,0 +1,77 @@
+{
+  "status": "PAPER_RESEARCH_ONLY",
+  "recommendations_allowed": false,
+  "race_id": "2026-11-21_R2C6",
+  "model": "available_history_v3",
+  "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+  "protocol_version": "daily_ticket_strategy_v2",
+  "protocol_sha256": "e82d349298b50488e67e2649497e151df9b49bb3dc3c8eed35f944d81f500254",
+  "observed_at": "2026-11-21T14:38:00+01:00",
+  "scheduled_start": "2026-11-21T13:50:00+00:00",
+  "eligible_for_j15_prospective_sg_comparison": true,
+  "sg": {
+    "selection": [
+      {
+        "rank": 2,
+        "number": 7,
+        "name": "LIBERATA",
+        "probability_win": 0.13988168221664482,
+        "observed_win_odds": 9.6,
+        "estimated_ev": 0.34286414927979014
+      }
+    ],
+    "top1_selection": [],
+    "top2_selection": [
+      {
+        "rank": 2,
+        "number": 7,
+        "name": "LIBERATA",
+        "probability_win": 0.13988168221664482,
+        "observed_win_odds": 9.6,
+        "estimated_ev": 0.34286414927979014
+      }
+    ],
+    "top3_selection": [
+      {
+        "rank": 2,
+        "number": 7,
+        "name": "LIBERATA",
+        "probability_win": 0.13988168221664482,
+        "observed_win_odds": 9.6,
+        "estimated_ev": 0.34286414927979014
+      }
+    ],
+    "top4_selection": [
+      {
+        "rank": 2,
+        "number": 7,
+        "name": "LIBERATA",
+        "probability_win": 0.13988168221664482,
+        "observed_win_odds": 9.6,
+        "estimated_ev": 0.34286414927979014
+      }
+    ],
+    "minimum_ev": 0.1,
+    "ranking_rule": "Frozen V3 winning probability, descending",
+    "stake_eur": null
+  },
+  "ze5": {
+    "numbers": [
+      6,
+      7,
+      5,
+      8,
+      12
+    ],
+    "type": "ZE5_DESORDRE",
+    "stake_eur_total": 1,
+    "status": "OFFER_UNVERIFIED",
+    "ranking_rule": "Top five by predicted win probability, not calibrated top-five finish chances"
+  },
+  "notes": [
+    "Quotes may change; no betting execution",
+    "Top-5 ZE5 ticket is a heuristic and can lose in full",
+    "Early quote snapshot is not an eligible J-15 prospective selection"
+  ],
+  "request_id": "chat-20261121-r2c6-1438-v3"
+}
