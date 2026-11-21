@@ -1,0 +1,31 @@
+{
+  "version": "turf_lab_v4_full_retrained_candidate_1",
+  "status": "RESEARCH_NO_BET",
+  "historical_scope": {
+    "sports_training": "2022-03-02..2024-12-31",
+    "sports_ranking_calibration": "2025-01-01..2025-06-30",
+    "market_fit": "2025-07-01..2025-12-31",
+    "exploratory_test": "2026-01-01..2026-09-30"
+  },
+  "data_repair": "Apply only verified dated individual-history 5-start patches from locked 618-race cohort; strictly match archived V3 5-start baseline, preserve all other rows and mark archive-only. Historical individual data retrieved retrospectively.",
+  "winner_l2": 0.1,
+  "winner_iterations": 800,
+  "winner_learning_rate": 0.03,
+  "dq_prior_strength": 10,
+  "ranking_ridge": 0.01,
+  "minimum_verified_repaired_runners": 10,
+  "minimum_market_training_races": 200,
+  "model_selection": "All hyperparameters prespecified; no selecting via 2026 test",
+  "odds_fit": "2025 July-Dec PMU reference odds, strictly timestamped and complete; NOT executable ZEturf",
+  "promotion": "Forbidden until an independent forward prestart cohort and market settlements demonstrate improvement",
+  "production_changed": false,
+  "recommendations_allowed": false,
+  "limitations": [
+    "2026 is reused historical evaluation, not an untouched or prospective holdout",
+    "The 618 verified historical-detail selections are a subset; unobserved historical starts cannot be invented, and remaining rows are archive-only",
+    "PMU historical detailed records were collected retrospectively; dated pre-target filtering is necessary but not proof of contemporaneous prestart availability",
+    "Only five recent-form inputs of matched historical cases are repaired; Elo, trainer and old DQ20 remain archive-based",
+    "The candidate uses genuinely new winner, Top5 and market weights, unlike the prior unified V4 wrapper",
+    "No paid operator odds, executed bets or verified ROI; all real-money recommendations remain suspended"
+  ]
+}
