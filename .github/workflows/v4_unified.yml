@@ -8,6 +8,8 @@ on:
       - 'turf_lab/v4_unified.py'
       - 'scripts/replay_v4_unified.py'
       - 'tests/test_v4_unified.py'
+      - 'scripts/score_v4_prospective.py'
+      - 'scripts/capture_history_repair_prospective.py'
       - 'scripts/run_prediction_request.py'
   workflow_dispatch:
 permissions:
@@ -35,12 +37,14 @@ jobs:
           python -m unittest tests.test_v4_unified tests.test_history_repair_shadow tests.test_value_history_pair tests.test_stage_ranking -v
       - name: Reproduce one V4 result from prestart historical evidence, not for prospective scoring
         run: python -m scripts.replay_v4_unified
+      - name: Initialize forward-only V4 study scorer (no retro backfill)
+        run: python -m scripts.score_v4_prospective
       - name: Archive immutable postrace demonstration and research only
         if: success()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f reports/v4/reims_2026-11-21_R4C5_replay_only.json
+          git add -f reports/v4/reims_2026-11-21_R4C5_replay_only.json reports/v4/prospective_scores.json
           if ! git diff --cached --quiet; then
             git commit -m 'Archive V4 historical interface demonstration, no betting'
             for attempt in 1 2 3; do
