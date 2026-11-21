@@ -17,7 +17,7 @@ def venue_key(value):
     """Exact, audited aliases only: never match races by horse/date alone."""
     key = re.sub(r'[^A-Z0-9]', '', unicodedata.normalize('NFKD', str(value).upper()).encode('ascii', 'ignore').decode())
     return {'PARISVINCENNES':'VINCENNES', 'TOULOUSE':'LACEPIERE',
-            'MARSEILLEBORELY':'BORELY', 'BORDEAUXLEBOUSCAT':'LEBOUSCAT'}.get(key, key)
+            'MARSEILLEBORELY':'BORELY', 'BORDEAUXLEBOUSCAT':'LEBOUSCAT', 'NANCYBRABOIS':'NANCY'}.get(key, key)
 
 def normalize_history(payload, runner, target_day):
     if not isinstance(payload,dict) or not isinstance(payload.get('runner'),dict) or not isinstance(payload['runner'].get('racesRun'),list):
