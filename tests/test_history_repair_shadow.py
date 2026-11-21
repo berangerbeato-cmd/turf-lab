@@ -68,6 +68,19 @@ class HistoryRepairShadowTests(unittest.TestCase):
         self.assertIsNone(rows)
         self.assertEqual(reason, 'FEWER_THAN_FIVE_VERIFIED_STARTS')
 
+    def test_nancy_brabois_and_nancy_are_same_venue(self):
+        from turf_lab.individual_history_check import venue_key
+        self.assertEqual(venue_key('NANCY-BRABOIS'), venue_key('NANCY'))
+        official = [self.official('2026-11-15', 8, 5)]
+        official[0]['venue'] = 'NANCY'
+        archived = [self.archived('2026-11-15', 8, 5)]
+        archived[0]['venue'] = 'NANCY-BRABOIS'
+        dates = [20, 18, 16, 14]
+        official.extend(self.official(f'2026-11-{d:02d}', d, 4) for d in dates)
+        rows, reason = merged_recent(official, archived, [], '2026-11-21')
+        self.assertIsNone(reason)
+        self.assertEqual(len(rows), 5)
+
     def test_future_start_rejected(self):
         official = [self.official('2026-11-21', 1, 1)]
         with self.assertRaises(ValueError):
