@@ -44,6 +44,16 @@ def main():
     try:
         from scripts.predict_operational import run
         path=run(values[0],int(values[1]),int(values[2]))
+        # V4 source evidence lives OUTSIDE scripts/predict_operational.py
+        # because its original V3 SHA is permanently frozen.
+        try:
+            from scripts.capture_v4_context import capture_from_original
+            captured=capture_from_original(path)
+            state['v4_feature_status']=captured['status']
+            state['v4_money_evidence']=captured['money_evidence']
+        except (ValueError,KeyError,TypeError,OSError,RuntimeError) as error:
+            state['v4_feature_status']='BLOCKED_NO_BET'
+            state['v4_feature_reason']=type(error).__name__+': '+str(error)
         record_history_repair_shadow(path, state)
         if data.get('quotes'):
             from turf_lab.operational_quotes import compare
