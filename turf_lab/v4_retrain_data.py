@@ -64,7 +64,7 @@ def reconcile(augmented, cohorts, audit, window_dates=("2022-03-02","2026-09-30"
             continue
         prior = old[rid]
         updated = enriched[rid]
-        if rid != prior["race_id"] or rid != updated["race_id"] or row["date"] != prior["date"] != updated["date"]:
+        if rid != prior["race_id"] or rid != updated["race_id"] or not (row["date"] == prior["date"] == updated["date"]):
             raise ValueError("Supplemental race identity mismatch")
         a = {r["number"]:r for r in prior["runners"]}
         b = {r["number"]:r for r in updated["runners"]}
