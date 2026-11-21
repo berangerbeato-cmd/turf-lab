@@ -81,6 +81,7 @@ test_duplicate_dates_rejected (test_history_inventory.CalendarIntegrityTests.tes
 test_full_calendar_without_source_proof_not_complete (test_history_inventory.CalendarIntegrityTests.test_full_calendar_without_source_proof_not_complete) ... ok
 test_missing_months_not_assumed_complete (test_history_inventory.HistoryInventoryTests.test_missing_months_not_assumed_complete) ... ok
 test_partial_month_is_not_complete (test_history_inventory.HistoryInventoryTests.test_partial_month_is_not_complete) ... ok
+test_history_repair_prospective (unittest.loader._FailedTest.test_history_repair_prospective) ... ERROR
 test_combine_individual_and_archived_recent_by_race_identity (test_history_repair_shadow.HistoryRepairShadowTests.test_combine_individual_and_archived_recent_by_race_identity) ... ok
 test_disagreeing_archive_and_individual_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_disagreeing_archive_and_individual_abstains) ... ok
 test_fewer_than_five_known_starts_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_fewer_than_five_known_starts_abstains) ... ok
@@ -281,6 +282,27 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'numpy'
 
 ======================================================================
+ERROR: test_history_repair_prospective (unittest.loader._FailedTest.test_history_repair_prospective)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_history_repair_prospective
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_history_repair_prospective.py", line 9, in <module>
+    from scripts.capture_history_repair_prospective import select
+  File "/home/runner/work/turf-lab/turf-lab/scripts/capture_history_repair_prospective.py", line 12, in <module>
+    from scripts.predict_operational import classic_frame, load_history
+  File "/home/runner/work/turf-lab/turf-lab/scripts/predict_operational.py", line 16, in <module>
+    from turf_lab.market_probabilities import markets
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_probabilities.py", line 5, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_market_calibration (unittest.loader._FailedTest.test_market_calibration)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_market_calibration
@@ -409,9 +431,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 249 tests in 0.249s
+Ran 250 tests in 0.145s
 
-FAILED (errors=10, skipped=7)
+FAILED (errors=11, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
