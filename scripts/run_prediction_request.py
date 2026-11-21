@@ -90,23 +90,26 @@ def main():
         # The only user-facing V4 report. Required history repair cannot
         # silently fall back to V3. Older frozen outputs stay untouched.
         try:
-            from turf_lab.v4_full_inference import record as record_v4
+            from turf_lab.v4_active_inference import record as record_v4
             repair_file = path.parent/'history_repair_shadow_v1_1.json'
+            speed_file = path.parent/'v4_speed_context.json'
             if not repair_file.exists():
                 raise ValueError('Required History Repair V1.1 unavailable')
-            # The sole user-facing V4 uses freshly RETRAINED weights.
-            # Older paired V3+V2 outputs remain internal immutable references.
+            if not speed_file.exists():
+                raise ValueError('Required prestart contextual chrono unavailable')
+            # The sole user-facing V4 now uses 43-feature speed-trained winner,
+            # five conditional ranks and market correction, never the old 42-feature weights.
             prices_file = path.parent/'quotes.json'
             if not prices_file.exists():
                 prices_file = None
-            v4 = record_v4(path,repair_file,prices_file)
+            v4 = record_v4(path,repair_file,speed_file,prices_file)
             dump('reports/v4/latest.json',v4)
             state['v4_status'] = v4['status']
-            state['v4_report'] = str(path.parent/'v4_full_retrained.json')
+            state['v4_report'] = str(path.parent/'v4_integrated.json')
         except (ValueError,TypeError,KeyError,OSError,RuntimeError) as error:
             state['v4_status'] = 'BLOCKED_NO_BET'
             state['v4_reason'] = str(error)
-            dump('reports/v4/latest.json',{'version':'turf_lab_v4_full_retrained_candidate_1',
+            dump('reports/v4/latest.json',{'version':'turf_lab_v4_integrated_speed_1',
                 'race_id':state['race_id'],'status':'BLOCKED_NO_BET',
                 'recommendations_allowed':False,'decision':'NO BET',
                 'reason':str(error),'single_public_response':True})
