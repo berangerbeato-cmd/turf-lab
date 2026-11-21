@@ -179,6 +179,8 @@ test_complete_history_accepted (test_recent_history.RecentHistoryTests.test_comp
 test_missing_and_incomplete_fail_closed (test_recent_history.RecentHistoryTests.test_missing_and_incomplete_fail_closed) ... ok
 test_yesterday_only (test_recent_history.RecentHistoryTests.test_yesterday_only) ... ok
 test_failure_cannot_be_reported_as_previous_success (test_request_status.RequestStatus.test_failure_cannot_be_reported_as_previous_success) ... ERROR
+test_no_new_forecast_means_zero_results_no_retrospective_backfill (test_score_v4_prospective.ForwardV4Tests.test_no_new_forecast_means_zero_results_no_retrospective_backfill) ... ok
+test_one_race_paired_winner_and_top5 (test_score_v4_prospective.ForwardV4Tests.test_one_race_paired_winner_and_top5) ... ok
 test_actual_dividend_and_drawdown (test_sg_strategy_comparison.Strategies.test_actual_dividend_and_drawdown) ... ok
 test_after_start_rejected (test_sg_strategy_comparison.Strategies.test_after_start_rejected) ... ok
 test_dead_heat_actual_paid_reports (test_sg_strategy_comparison.Strategies.test_dead_heat_actual_paid_reports) ... ok
@@ -232,6 +234,7 @@ test_market_free_and_no_recommendation (test_sport_history_repair.Repair.test_ma
 test_missing_blocks (test_sport_history_repair.Repair.test_missing_blocks) ... ok
 test_only_recent_features_change (test_sport_history_repair.Repair.test_only_recent_features_change) ... ok
 test_stage_ranking (unittest.loader._FailedTest.test_stage_ranking) ... ERROR
+test_v4_unified (unittest.loader._FailedTest.test_v4_unified) ... ERROR
 test_freeze_and_tampering (test_v6_holdout.HoldoutTests.test_freeze_and_tampering) ... ok
 test_out_of_scope_month_before_network (test_v6_holdout.HoldoutTests.test_out_of_scope_month_before_network) ... ok
 test_synthetic_evaluation_is_idempotent (test_v6_holdout.HoldoutTests.test_synthetic_evaluation_is_idempotent) ... ok
@@ -398,6 +401,25 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_v4_unified (unittest.loader._FailedTest.test_v4_unified)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_unified
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_unified.py", line 8, in <module>
+    from turf_lab.v4_unified import assemble, prepare_features
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/v4_unified.py", line 12, in <module>
+    from scripts.stage_ranking_shadow import frozen, predict
+  File "/home/runner/work/turf-lab/turf-lab/scripts/stage_ranking_shadow.py", line 10, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_value_history_pair (unittest.loader._FailedTest.test_value_history_pair)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_value_history_pair
@@ -451,9 +473,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 251 tests in 0.257s
+Ran 254 tests in 0.270s
 
-FAILED (errors=12, skipped=7)
+FAILED (errors=13, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
