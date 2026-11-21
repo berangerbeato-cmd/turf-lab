@@ -50,6 +50,24 @@ def main():
             result=compare(json.loads(path.read_text()),data['quotes'])
             dump(path.parent/'quotes.json',data['quotes'])
             dump(path.parent/'comparison.json',result)
+            # Optional, isolated comparison: same frozen V2 weights applied to
+            # both sports histories on exactly this verified prestart board.
+            # Failure cannot alter existing market comparison or paper ticket.
+            try:
+                from turf_lab.value_history_pair import paired
+                candidate_path = path.parent/'history_repair_shadow_v1_1.json'
+                if not candidate_path.exists():
+                    raise ValueError('No eligible prestart History Repair V1.1 sidecar')
+                pair = paired(json.loads(path.read_text()),
+                              json.loads(candidate_path.read_text()),
+                              data['quotes'],result)
+                if pair['status'] != 'PRESTART_PAIRED_ON_DEMAND':
+                    raise ValueError('Candidate comparison was not computed before departure')
+                dump(path.parent/'value_history_pair_v1.json',pair)
+                state['value_history_pair_status']='PRESTART_RECORDED'
+            except (ValueError, KeyError, TypeError, OSError) as error:
+                state['value_history_pair_status']='UNAVAILABLE'
+                state['value_history_pair_reason']=str(error)
             dump('reports/operational/latest_comparison.json',dict(result,request_id=state['request_id']))
             # Independently record the daily paper-ticket rule, even when an early
             # odds snapshot is not eligible for the prospective SG J-15 study.
