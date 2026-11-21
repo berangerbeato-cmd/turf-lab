@@ -5,6 +5,31 @@ from pathlib import Path
 from turf_lab.evidence import dump
 
 
+def record_history_repair_shadow(prediction_path, state):
+    """Best-effort experimental forecast; never block or replace frozen V3."""
+    try:
+        from turf_lab.history_repair_shadow import replay
+        report = replay(prediction_path)
+        completed = datetime.now(timezone.utc)
+        start = datetime.fromisoformat(report['scheduled_start'])
+        if completed >= start:
+            state['history_repair_shadow_status'] = 'LATE_NOT_ARCHIVED'
+            state['history_repair_shadow_reason'] = 'Replay ended after start; not a prospective observation'
+            return
+        report['status'] = 'PRESTART_HISTORY_REPAIR_SHADOW'
+        report['shadow_calculated_at'] = completed.isoformat()
+        report['source_request_id'] = state['request_id']
+        report['is_independent_prospective_validation'] = False
+        report['research_only'] = True
+        report['recommendations_allowed'] = False
+        dump(prediction_path.parent / 'history_repair_shadow_v1.json', report)
+        state['history_repair_shadow_status'] = 'PRESTART_RECORDED'
+    except Exception as error:
+        # The production frozen models and odds comparison remain usable.
+        state['history_repair_shadow_status'] = 'UNAVAILABLE'
+        state['history_repair_shadow_reason'] = type(error).__name__ + ': ' + str(error)
+
+
 def main():
     values=[os.environ.get(k,'') for k in ('RACE_DATE','RACE_MEETING','RACE_NUMBER')]
     if any(values) and not all(values):raise ValueError('All three explicit inputs required')
@@ -19,6 +44,7 @@ def main():
     try:
         from scripts.predict_operational import run
         path=run(values[0],int(values[1]),int(values[2]))
+        record_history_repair_shadow(path, state)
         if data.get('quotes'):
             from turf_lab.operational_quotes import compare
             result=compare(json.loads(path.read_text()),data['quotes'])
