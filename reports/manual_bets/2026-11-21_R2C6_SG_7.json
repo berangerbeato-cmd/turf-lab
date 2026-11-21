@@ -5,7 +5,7 @@
   "runner_number": 7,
   "runner_name": "LIBERATA",
   "stake_eur": 2,
-  "status": "PENDING_RESULT",
+  "status": "USER_REPORTED_DISQUALIFIED_LOSS",
   "evidence_type": "user_statement_in_chat",
   "evidence_note": "User reported 'J’ai mis 2 euros on verra' immediately after discussing SG #7 Liberata.",
   "operator_receipt_verified": false,
@@ -17,6 +17,14 @@
   "primary_indicative_ev": 0.34286414927979014,
   "market_shadow_probability": 0.089205630139735,
   "market_shadow_indicative_ev": -0.1436259506585441,
-  "settlement": null,
-  "notes": "User-reported stake, not verified by operator receipt. Do not infer final payable odds or settlement until evidence."
+  "settlement": {
+    "status": "USER_REPORTED_UNVERIFIED",
+    "win_return_eur": 0,
+    "net_eur": -2,
+    "evidence": "User reports #7 disqualified; no operator settlement screenshot or official final result verified"
+  },
+  "notes": "User reported runner #7 disqualified and SG loss. Treat -2 EUR as user-reported realized loss, not independently verified settlement. Model weights and J-15 paper selection must not be changed based on one loss.",
+  "user_reported_incident": "DA (disqualified) for runner #7 Liberata",
+  "user_reported_win_return_eur": 0,
+  "user_reported_net_eur": -2
 }
