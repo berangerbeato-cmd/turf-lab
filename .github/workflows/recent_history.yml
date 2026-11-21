@@ -36,6 +36,9 @@ jobs:
       - name: Score paired prospective History Repair V1.1 (official results only)
         if: success() || failure()
         run: python -m scripts.score_history_repair_prospective
+      - name: Score genuinely prestart V4+Speed versus same-race V4
+        if: success() || failure()
+        run: python -m scripts.score_v4_speed_prospective
       - name: Score originally captured V3+V2 and History Repair+V2 comparison (no ROI)
         if: success() || failure()
         run: python -m scripts.score_value_history_pair
@@ -56,6 +59,9 @@ jobs:
           fi
           if [ -f reports/v4_full/prospective_scores.json ]; then
             git add -f reports/v4_full/prospective_scores.json
+          fi
+          if [ -f reports/v4_speed/prospective_scores.json ]; then
+            git add -f reports/v4_speed/prospective_scores.json
           fi
           if ! git diff --cached --quiet; then
             git commit -m 'Checkpoint incremental history and strict coverage report'
