@@ -85,6 +85,7 @@ test_combine_individual_and_archived_recent_by_race_identity (test_history_repai
 test_disagreeing_archive_and_individual_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_disagreeing_archive_and_individual_abstains) ... ok
 test_fewer_than_five_known_starts_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_fewer_than_five_known_starts_abstains) ... ok
 test_future_start_rejected (test_history_repair_shadow.HistoryRepairShadowTests.test_future_start_rejected) ... ok
+test_nancy_brabois_and_nancy_are_same_venue (test_history_repair_shadow.HistoryRepairShadowTests.test_nancy_brabois_and_nancy_are_same_venue) ... ok
 test_old_unknown_result_does_not_poison_recent_five (test_history_repair_shadow.HistoryRepairShadowTests.test_old_unknown_result_does_not_poison_recent_five) ... ok
 test_same_day_multiple_starts_abstains (test_history_repair_shadow.HistoryRepairShadowTests.test_same_day_multiple_starts_abstains) ... ok
 test_stamps_must_precede_start_and_be_aware (test_history_repair_shadow.HistoryRepairShadowTests.test_stamps_must_precede_start_and_be_aware) ... ok
@@ -405,7 +406,7 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 245 tests in 0.276s
+Ran 246 tests in 0.249s
 
 FAILED (errors=10, skipped=7)
 Outside fixed cohort dates; no requests
