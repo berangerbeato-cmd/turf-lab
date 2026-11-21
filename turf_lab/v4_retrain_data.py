@@ -9,6 +9,7 @@ import gzip
 import hashlib
 import json
 from collections import Counter
+from copy import deepcopy
 from pathlib import Path
 
 from turf_lab.available_history_research import variant
@@ -62,6 +63,8 @@ def reconcile(augmented, cohorts, audit, window_dates=("2022-03-02","2026-09-30"
             details["races_archive_only"] += 1
             result.append(row)
             continue
+        # Never mutate the original immutable feature archive.
+        row = deepcopy(row)
         prior = old[rid]
         updated = enriched[rid]
         if rid != prior["race_id"] or rid != updated["race_id"] or not (row["date"] == prior["date"] == updated["date"]):
@@ -99,6 +102,7 @@ def reconcile(augmented, cohorts, audit, window_dates=("2022-03-02","2026-09-30"
             details["runners_repaired"] += 1
         details["races_cohort_available"] += 1
         result.append(row)
+    details["runners_repaired"] = details["runners_repaired"]
     details["races_input"] = len(augmented)
     details["races_with_verified_repair"] = len({r["race_id"] for r in modifications})
     details["cohort_eligible"] = len(old)
