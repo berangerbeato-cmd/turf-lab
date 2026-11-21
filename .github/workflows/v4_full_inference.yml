@@ -1,0 +1,57 @@
+name: Turf Lab V4 FULL retrained single-output validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_full_inference.yml'
+      - 'turf_lab/v4_full_inference.py'
+      - 'scripts/replay_v4_full_retrained.py'
+      - 'scripts/score_v4_full_prospective.py'
+      - 'tests/test_v4_full_inference.py'
+      - 'scripts/run_prediction_request.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-v4-trained-inference-audit
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install inference dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Test new V4 winner, Top5, market, and history safeguards
+        run: |
+          python -m py_compile turf_lab/v4_full_inference.py scripts/replay_v4_full_retrained.py scripts/score_v4_full_prospective.py
+          python -m unittest tests.test_v4_full_inference tests.test_v4_full_training tests.test_history_repair_shadow -v
+      - name: Reproduce one genuine retrained V4 postrace demo on Reims
+        run: python -m scripts.replay_v4_full_retrained
+      - name: Initialize only new independently prospective paired evaluation
+        run: python -m scripts.score_v4_full_prospective
+      - name: Archive immutable postrace demo and forward-only score status
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f reports/v4_full/reims_r4c5_postrace_retrained_demo.json reports/v4_full/prospective_scores.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Validate fully retrained V4 from original Reims data and initialize forward-only scores'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
