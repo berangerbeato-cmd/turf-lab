@@ -1,3 +1,36 @@
+# Turf Lab V4 unique : 47 variables (version active)
+
+**La V4 47 variables est désormais la seule V4 présentée à l'utilisateur.** Les anciens modèles ne servent que de témoins scientifiques.
+
+## Les quatre ajouts d'un seul coup
+1. **Gains de carrière relatifs :** dernier montant de gains connu lors d'une course antérieure, relatif aux autres partants ; aucune valeur de la course cible ni montant inventé. PMU historique consulté rétrospectivement, publication précise de l'ancien montant non prouvée.
+2. **Classe relative :** indice construit sur les arrivées antérieures 1er à 5e et comparé au lot ; c'est un proxy ordinal, pas une somme de gains en euros.
+3. **Forme récente pondérée :** poids fixés avant le test à 35/25/18/12/10 % pour les cinq courses officiellement observées, avec disqualification traitée séparément ; inconnu conservé comme inconnu.
+4. **Indice R :** complétude des cinq dernières courses, des résultats explicites, des chronos et des gains antérieurs. Une nouvelle fonction de correction des cotes **apprend** sur 2025 H2 l'impact de R plutôt que d'appliquer une décote arbitraire.
+
+**Réentraînement conjoint des 3 composants sur 47 variables :** gagnant 17 532 courses, Top5 17 335 et cotes 1 711. Poids `models/v4_multifeature/\{winner,ranking,market\}.json` gelés par `models/v4_multifeature/frozen_before_test.json`. Les calculs 2026 demeurent exploratoires.
+
+## Une seule chaîne pour une course
+`scripts.predict_operational` produit la preuve V3 immuable ; `scripts.capture_v4_context` ajoute les preuves chronologiques des nouvelles variables, **sans toucher au code V3 figé** ; History Repair V1.1 est obligatoire ; `turf_lab.v4_multifeature_inference` calcule **une seule** sortie `v4_integrated.json` (gagnant, Top5, valeur théorique ou absence de cotes, indice R et état des sources).
+
+Si la preuve historique requise manque ou est produite après départ, le modèle V4 ne fait **aucun fallback** vers les anciennes versions : `BLOCKED_NO_BET`.
+
+## Résultats 2026 non indépendants
+| Mesure | V4 précédente 43 | V4 complète 47 |
+|---|---:|---:|
+| Log loss gagnant ↓ | 2,107134 | 2,102854 |
+| Top1 gagnant | **27,08 %** | 26,63 % |
+| Top5 exact / 4 574 | 109 | **111** |
+| Log loss cotes ↓ | 1,924123 | **1,923323** |
+
+**Ne pas assimiler la baisse de log loss à une meilleure précision du premier choix.** Les cotes testées sont PMU historiques, pas des prix ZEturf effectivement acceptés. La cohorte prospective indépendante démarre à zéro après intégration. La politique de paris réels reste `SUSPENDED` : décision **NO BET**.
+
+[Rapport détaillé](../reports/v4_multifeature/RESULTS.md) | [Suivi prospectif](../reports/v4_integrated/prospective_scores.json) | [Configuration active](../config/v4_active.json)
+
+---
+
+## Anciennes documentations conservées pour audit
+
 # TURF LAB V4 : version active avec les chronos corrigés
 
 **Depuis le 22 novembre 2026, Turf Lab V4 utilise réellement 43 variables.** Le signal de vitesse contextualisée de notre V7 a été intégré aux trois ensembles de coefficients réentraînés. Il n'existe qu'**une seule V4 à utiliser**.
