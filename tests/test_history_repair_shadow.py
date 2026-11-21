@@ -97,5 +97,58 @@ class HistoryRepairShadowTests(unittest.TestCase):
         self.assertEqual(reason, 'MULTIPLE_STARTS_SAME_DAY')
 
 
+
+class ProspectiveSidecarIntegrationTests(unittest.TestCase):
+    def test_prestart_sidecar_is_recorded_but_never_replaces_v3(self):
+        from datetime import timedelta
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        from unittest.mock import patch
+        from scripts.run_prediction_request import record_history_repair_shadow
+        start = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
+        with TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'prediction.json'
+            state = {'request_id': 'test-race'}
+            with patch('turf_lab.history_repair_shadow.replay',
+                       return_value={'scheduled_start':start,'status':'RETROSPECTIVE_REPLAY_OF_ORIGINAL_PRESTART_EVIDENCE',
+                                     'recommendations_allowed':False}):
+                record_history_repair_shadow(path, state)
+            self.assertEqual(state['history_repair_shadow_status'], 'PRESTART_RECORDED')
+            import json
+            report = json.loads((Path(tmp)/'history_repair_shadow_v1.json').read_text())
+            self.assertEqual(report['status'], 'PRESTART_HISTORY_REPAIR_SHADOW')
+            self.assertEqual(report['source_request_id'], 'test-race')
+            self.assertFalse(report['recommendations_allowed'])
+
+    def test_late_sidecar_must_not_be_mislabeled_prospective(self):
+        from datetime import timedelta
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        from unittest.mock import patch
+        from scripts.run_prediction_request import record_history_repair_shadow
+        start = (datetime.now(timezone.utc) - timedelta(minutes=1)).isoformat()
+        with TemporaryDirectory() as tmp:
+            path = Path(tmp)/'prediction.json'
+            state = {'request_id': 'test-race'}
+            with patch('turf_lab.history_repair_shadow.replay',
+                       return_value={'scheduled_start':start}):
+                record_history_repair_shadow(path, state)
+            self.assertEqual(state['history_repair_shadow_status'], 'LATE_NOT_ARCHIVED')
+            self.assertFalse((Path(tmp)/'history_repair_shadow_v1.json').exists())
+
+    def test_shadow_failure_does_not_fail_production_prediction(self):
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        from unittest.mock import patch
+        from scripts.run_prediction_request import record_history_repair_shadow
+        with TemporaryDirectory() as tmp:
+            state = {'request_id':'test-race'}
+            with patch('turf_lab.history_repair_shadow.replay', side_effect=ValueError('invalid timestamp')):
+                record_history_repair_shadow(Path(tmp)/'prediction.json', state)
+            self.assertEqual(state['history_repair_shadow_status'], 'UNAVAILABLE')
+            self.assertIn('invalid timestamp', state['history_repair_shadow_reason'])
+            self.assertFalse((Path(tmp)/'history_repair_shadow_v1.json').exists())
+
+
 if __name__ == '__main__':
     unittest.main()
