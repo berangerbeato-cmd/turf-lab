@@ -1,0 +1,149 @@
+{
+  "status": "TEMPORAL_AVAILABILITY_AUDIT_NOT_A_TRAINING_ASSERTION",
+  "counts": {
+    "participants": 384035,
+    "valid": 311499,
+    "unknown": 72536
+  },
+  "sequence": {
+    "horses_three_snapshots": 20507,
+    "increases": 20023,
+    "decreases": 293,
+    "constant_gains": 480,
+    "constant_despite_prior_win": 2
+  },
+  "examples_hashed": [
+    {
+      "horse_sha": "ca5b11c1c0",
+      "first": [
+        "2022-01-01",
+        2956000.0
+      ],
+      "last": [
+        "2024-07-01",
+        9169000.0
+      ],
+      "snapshots": 20,
+      "different_amounts": 12
+    },
+    {
+      "horse_sha": "22b011e389",
+      "first": [
+        "2022-01-01",
+        3777000.0
+      ],
+      "last": [
+        "2026-06-21",
+        81881000.0
+      ],
+      "snapshots": 49,
+      "different_amounts": 37
+    },
+    {
+      "horse_sha": "741c78c97e",
+      "first": [
+        "2022-01-01",
+        3798000.0
+      ],
+      "last": [
+        "2026-07-04",
+        12074000.0
+      ],
+      "snapshots": 28,
+      "different_amounts": 13
+    },
+    {
+      "horse_sha": "eaa013589a",
+      "first": [
+        "2022-01-01",
+        4064000.0
+      ],
+      "last": [
+        "2026-03-08",
+        104798000.0
+      ],
+      "snapshots": 42,
+      "different_amounts": 34
+    },
+    {
+      "horse_sha": "6e078e23e8",
+      "first": [
+        "2022-01-01",
+        4150000.0
+      ],
+      "last": [
+        "2026-05-10",
+        38575000.0
+      ],
+      "snapshots": 36,
+      "different_amounts": 27
+    },
+    {
+      "horse_sha": "79238004ea",
+      "first": [
+        "2022-01-01",
+        4289000.0
+      ],
+      "last": [
+        "2025-03-21",
+        11667000.0
+      ],
+      "snapshots": 17,
+      "different_amounts": 10
+    },
+    {
+      "horse_sha": "646f9dccfa",
+      "first": [
+        "2022-01-01",
+        4349000.0
+      ],
+      "last": [
+        "2024-09-03",
+        8615000.0
+      ],
+      "snapshots": 20,
+      "different_amounts": 12
+    },
+    {
+      "horse_sha": "63360c3de7",
+      "first": [
+        "2022-01-01",
+        4558000.0
+      ],
+      "last": [
+        "2023-11-22",
+        9847000.0
+      ],
+      "snapshots": 24,
+      "different_amounts": 18
+    },
+    {
+      "horse_sha": "910e591ef8",
+      "first": [
+        "2022-01-01",
+        4728000.0
+      ],
+      "last": [
+        "2026-01-31",
+        14756000.0
+      ],
+      "snapshots": 33,
+      "different_amounts": 21
+    },
+    {
+      "horse_sha": "1fe967f1f4",
+      "first": [
+        "2022-01-01",
+        4830000.0
+      ],
+      "last": [
+        "2026-09-02",
+        20074000.0
+      ],
+      "snapshots": 57,
+      "different_amounts": 37
+    }
+  ],
+  "money_asof_proven": false,
+  "policy": "Do not inject career euro gains into historical model without independent point-in-time validation; use prior-only performance class proxy instead."
+}
