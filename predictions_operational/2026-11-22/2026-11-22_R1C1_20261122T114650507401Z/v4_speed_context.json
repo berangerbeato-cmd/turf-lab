@@ -1,0 +1,87 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-22_R1C1",
+  "target_date": "2026-11-22",
+  "captured_at": "2026-11-22T11:48:57.850370+00:00",
+  "prior_races": 30583,
+  "last_prior_day": "2026-11-21",
+  "prior_history_sha256": "7faff3cae71769e629d05f7840923d8e5e98ca66767a5eb35834cf0e1b58f6c6",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('KARINA JOSSELYN', 'FAMILY JOSSELYN', 'LOVE YOU')",
+      "context_residual": -0.5588245567655249,
+      "prior_races_used": 4
+    },
+    "2": {
+      "horse_id": "pedigree:('IDUNN', 'TIFFY', 'LONTZAC')",
+      "context_residual": -1.6442268874341388,
+      "prior_races_used": 4
+    },
+    "3": {
+      "horse_id": "pedigree:('INTRIGUE DE VIETTE', 'ONDE DU BOUFFEY', 'CARAT WILLIAMS')",
+      "context_residual": -1.6580720965718645,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('KIMI DU DOME', 'VELINA', 'UNIVERS DE PAN')",
+      "context_residual": 1.339399418563422,
+      "prior_races_used": 3
+    },
+    "5": {
+      "horse_id": "pedigree:('JOYAU DU GRESSY', 'VALLEE DE CHAHAINS', 'CLASSIC WAY')",
+      "context_residual": -1.8369281362409384,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('GIORGIO DU VIVIER', 'QUILLE DU VIVIER', 'ORLANDO VICI')",
+      "context_residual": -1.3519851599318864,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('IMAGINE GIRL', 'TAHITIENNE GIRL', \"TIEGO D'ETANG\")",
+      "context_residual": -0.6379104222647585,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:(\"KRONOS D'ERPION\", \"DIVA D'ERPION\", 'DROLE DE JET')",
+      "context_residual": -0.6220301013626595,
+      "prior_races_used": 3
+    },
+    "9": {
+      "horse_id": "pedigree:('KLARCK DE VANDEL', 'CARLA DE VANDEL', 'BIRD PARKER')",
+      "context_residual": -1.7369281362409383,
+      "prior_races_used": 3
+    },
+    "10": {
+      "horse_id": "pedigree:('JOCONDE DE RHEVE', \"OUZAKA D'AUVILLIER\", 'VALKO JENILAT')",
+      "context_residual": 0.0012356411612417517,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('JUNON DES ROSES', \"NELLINE D'HARCOUEL\", 'VAILLANT CASH')",
+      "context_residual": -0.07181627793557709,
+      "prior_races_used": 3
+    },
+    "12": {
+      "horse_id": "pedigree:('HOKITOLOVE', 'OKITA', 'REPEAT LOVE')",
+      "context_residual": 0.7484589799593013,
+      "prior_races_used": 4
+    },
+    "13": {
+      "horse_id": "pedigree:('ILLINOIS', 'VOXNALE', 'JAG DE BELLOUET')",
+      "context_residual": 0.7188849185702857,
+      "prior_races_used": 3
+    },
+    "14": {
+      "horse_id": "pedigree:('JAB KISS', 'KELLE KISS', 'DAHLIA DU RIB')",
+      "context_residual": 0.781317077490683,
+      "prior_races_used": 4
+    }
+  },
+  "target_participants": 14,
+  "coverage_active": 14,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

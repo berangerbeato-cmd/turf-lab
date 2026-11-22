@@ -1,12 +1,24 @@
 {
-  "request_id": "chat-20261122-pmu-r13c2-1233-v4-sports-reuse",
-  "race_id": "2026-11-22_R13C2",
-  "started_at": "2026-11-22T11:33:56.078944+00:00",
+  "request_id": "chat-20261122-r1c1-vincennes-1244-v4-47f",
+  "race_id": "2026-11-22_R1C1",
+  "started_at": "2026-11-22T11:46:50.388400+00:00",
   "status": "SUCCESS",
-  "github_run_id": "45017904653",
-  "v4_status": "HISTORY_INCOMPLETE_NO_BET",
-  "v4_report": "predictions_operational/2026-11-22/2026-11-22_R13C2_20261122T112907504308Z/v4_integrated.json",
-  "reused_prestart_evidence": true,
-  "quotes_compared": false,
-  "completed_at": "2026-11-22T11:33:56.749760+00:00"
+  "github_run_id": "45018957205",
+  "v4_feature_status": "V4_PRESTART_47_FEATURE_CONTEXT_CAPTURED",
+  "v4_money_evidence": {
+    "recent_races": 6277,
+    "money_rows": 82157,
+    "missing_money_sources": 0
+  },
+  "history_repair_shadow_status": "PRESTART_RECORDED",
+  "value_history_pair_status": "UNAVAILABLE",
+  "value_history_pair_reason": "Quote not within frozen V2 fifteen-minute window",
+  "daily_ticket_status": "PAPER_RECORDED",
+  "sg_comparison_status": "INELIGIBLE",
+  "sg_comparison_reason": "Quote outside prestart window",
+  "v4_status": "BLOCKED_NO_BET",
+  "v4_reason": "No valid 15-minute prestart quote",
+  "prediction": "predictions_operational/2026-11-22/2026-11-22_R1C1_20261122T114650507401Z/prediction.json",
+  "quotes_compared": true,
+  "completed_at": "2026-11-22T11:49:04.462482+00:00"
 }

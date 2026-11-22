@@ -1,0 +1,92 @@
+{
+  "status": "PAPER_RESEARCH_ONLY",
+  "recommendations_allowed": false,
+  "race_id": "2026-11-22_R1C1",
+  "model": "available_history_v3",
+  "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+  "protocol_version": "daily_ticket_strategy_v2",
+  "protocol_sha256": "e82d349298b50488e67e2649497e151df9b49bb3dc3c8eed35f944d81f500254",
+  "observed_at": "2026-11-22T12:44:00+01:00",
+  "scheduled_start": "2026-11-22T12:23:00+00:00",
+  "eligible_for_j15_prospective_sg_comparison": false,
+  "sg": {
+    "selection": [
+      {
+        "rank": 2,
+        "number": 4,
+        "name": "KIMI DU DOME",
+        "probability_win": 0.10063682160611204,
+        "observed_win_odds": 12,
+        "estimated_ev": 0.20764185927334444
+      },
+      {
+        "rank": 4,
+        "number": 5,
+        "name": "JOYAU DU GRESSY",
+        "probability_win": 0.07631153110004506,
+        "observed_win_odds": 48.6,
+        "estimated_ev": 2.70874041146219
+      }
+    ],
+    "top1_selection": [],
+    "top2_selection": [
+      {
+        "rank": 2,
+        "number": 4,
+        "name": "KIMI DU DOME",
+        "probability_win": 0.10063682160611204,
+        "observed_win_odds": 12,
+        "estimated_ev": 0.20764185927334444
+      }
+    ],
+    "top3_selection": [
+      {
+        "rank": 2,
+        "number": 4,
+        "name": "KIMI DU DOME",
+        "probability_win": 0.10063682160611204,
+        "observed_win_odds": 12,
+        "estimated_ev": 0.20764185927334444
+      }
+    ],
+    "top4_selection": [
+      {
+        "rank": 2,
+        "number": 4,
+        "name": "KIMI DU DOME",
+        "probability_win": 0.10063682160611204,
+        "observed_win_odds": 12,
+        "estimated_ev": 0.20764185927334444
+      },
+      {
+        "rank": 4,
+        "number": 5,
+        "name": "JOYAU DU GRESSY",
+        "probability_win": 0.07631153110004506,
+        "observed_win_odds": 48.6,
+        "estimated_ev": 2.70874041146219
+      }
+    ],
+    "minimum_ev": 0.1,
+    "ranking_rule": "Frozen V3 winning probability, descending",
+    "stake_eur": null
+  },
+  "ze5": {
+    "numbers": [
+      13,
+      4,
+      8,
+      5,
+      9
+    ],
+    "type": "ZE5_DESORDRE",
+    "stake_eur_total": 1,
+    "status": "OFFER_UNVERIFIED",
+    "ranking_rule": "Top five by predicted win probability, not calibrated top-five finish chances"
+  },
+  "notes": [
+    "Quotes may change; no betting execution",
+    "Top-5 ZE5 ticket is a heuristic and can lose in full",
+    "Early quote snapshot is not an eligible J-15 prospective selection"
+  ]
+}
