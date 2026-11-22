@@ -245,6 +245,7 @@ test_target_or_horse_identity_mismatch_fails_closed (test_v4_full_training.V4His
 test_unknown_races_remain_archive_only (test_v4_full_training.V4HistoryTrainingTests.test_unknown_races_remain_archive_only) ... ok
 test_v4_multifeature (unittest.loader._FailedTest.test_v4_multifeature) ... ERROR
 test_v4_multifeature_inference (unittest.loader._FailedTest.test_v4_multifeature_inference) ... ERROR
+test_v4_next_bundle (unittest.loader._FailedTest.test_v4_next_bundle) ... ERROR
 test_mismatched_id_and_width_refuse_to_train (test_v4_speed.V4SpeedTests.test_mismatched_id_and_width_refuse_to_train) ... ok
 test_only_43rd_feature_is_added_without_mutating_v4 (test_v4_speed.V4SpeedTests.test_only_43rd_feature_is_added_without_mutating_v4) ... ok
 test_speed_uses_only_previous_days (test_v4_speed.V4SpeedTests.test_speed_uses_only_previous_days) ... ok
@@ -485,6 +486,23 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_v4_next_bundle (unittest.loader._FailedTest.test_v4_next_bundle)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_next_bundle
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_next_bundle.py", line 7, in <module>
+    from turf_lab.v4_next_research import (
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/v4_next_research.py", line 11, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_v4_speed_promoted (unittest.loader._FailedTest.test_v4_speed_promoted)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_v4_speed_promoted
@@ -593,9 +611,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 270 tests in 0.276s
+Ran 271 tests in 0.257s
 
-FAILED (errors=19, skipped=7)
+FAILED (errors=20, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
