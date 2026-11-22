@@ -12,6 +12,11 @@ on:
       - 'scripts/capture_history_repair_prospective.py'
       - 'scripts/score_v4_integrated_prospective.py'
       - 'tests/test_v4_multifeature_inference.py'
+      - 'tests/test_v4_next_inference.py'
+      - 'turf_lab/v4_next_inference.py'
+      - 'turf_lab/v4_next_research.py'
+      - 'turf_lab/history_repair_v2.py'
+      - 'scripts/score_v4_integrated_prospective.py'
       - 'tests/test_capture_v4_context.py'
       - 'scripts/capture_v4_context.py'
       - 'turf_lab/v4_multifeature_inference.py'
@@ -43,8 +48,8 @@ jobs:
         run: pip install -r requirements-v5.txt scipy==1.17.0
       - name: Syntax and safety of the 43-feature prestart model
         run: |
-          python -m py_compile scripts/capture_v4_context.py turf_lab/v4_multifeature_inference.py turf_lab/v4_multi_features.py turf_lab/v4_reliability_market.py turf_lab/v4_speed_data.py scripts/predict_operational.py scripts/run_prediction_request.py scripts/capture_history_repair_prospective.py scripts/score_v4_integrated_prospective.py
-          python -m unittest tests.test_capture_v4_context tests.test_v4_multifeature tests.test_v4_multifeature_inference tests.test_v4_speed tests.test_v4_full_inference tests.test_history_repair_shadow -v
+          python -m py_compile turf_lab/v4_next_inference.py turf_lab/history_repair_v2.py scripts/score_v4_integrated_prospective.py scripts/capture_v4_context.py turf_lab/v4_multifeature_inference.py turf_lab/v4_multi_features.py turf_lab/v4_reliability_market.py turf_lab/v4_speed_data.py scripts/predict_operational.py scripts/run_prediction_request.py scripts/capture_history_repair_prospective.py scripts/score_v4_integrated_prospective.py
+          python -m unittest tests.test_v4_next_bundle tests.test_v4_next_inference tests.test_capture_v4_context tests.test_v4_multifeature tests.test_v4_multifeature_inference tests.test_v4_speed tests.test_v4_full_inference tests.test_history_repair_shadow -v
       - name: Initialize verified prestart-only integrated V4 tracking
         run: python -m scripts.score_v4_integrated_prospective
       - name: Store single V4 independent scoring state
