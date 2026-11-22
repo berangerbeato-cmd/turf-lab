@@ -1,0 +1,88 @@
+{
+  "schema": "turf_lab_v4_official_outcome_comparison_v1",
+  "race_id": "2026-11-22_R10C1",
+  "course": "Prix des Jouvenceaux",
+  "venue": "Salon-de-Provence",
+  "date": "2026-11-22",
+  "status": "OFFICIAL_RESULT_VERIFIED",
+  "source_type": "published_definitive_arrival_crosschecked",
+  "sources": [
+    "https://www.geny.com/course/1699315-2026-11-22-salon-de-provence-prix-des-jouvenceaux/arrivee-rapports",
+    "https://www.oneturf.fr/arrive/FR/22-11-2026/228864%2C1906833%2CSALON-DE-PROVENCE%2C1-PRIX-DES-JOUVENCEAUX.html"
+  ],
+  "official_arrival": [
+    2,
+    12,
+    9,
+    10,
+    7,
+    8,
+    11,
+    3,
+    6
+  ],
+  "official_top5": [
+    2,
+    12,
+    9,
+    10,
+    7
+  ],
+  "disqualified": [
+    1,
+    4,
+    5
+  ],
+  "prestart_forecast_path": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/v4_integrated.json",
+  "prestart_forecast_generated_at": "2026-11-22T11:23:06.483111+00:00",
+  "forecast_model": "turf_lab_v4_fully_integrated_1",
+  "forecast_winner": 8,
+  "forecast_winner_probability": 0.18725189135895523,
+  "forecast_top5": [
+    5,
+    8,
+    9,
+    10,
+    11
+  ],
+  "forecast_top5_joint_probability": 0.012721944741886995,
+  "comparison": {
+    "winner_hit": false,
+    "winner_actual_rank": 6,
+    "top5_intersection": [
+      9,
+      10
+    ],
+    "top5_intersection_count": 2,
+    "top5_intersection_fraction": 0.4,
+    "top5_missed_forecast": [
+      5,
+      8,
+      11
+    ],
+    "top5_not_predicted": [
+      2,
+      12,
+      7
+    ],
+    "exact_unordered_top5_hit": false,
+    "forecast_top5_ranks": {
+      "5": "DQ",
+      "8": 6,
+      "9": 3,
+      "10": 4,
+      "11": 7
+    },
+    "forecast_top5_dq_count": 1
+  },
+  "limitations": [
+    "Single-race observation cannot validate win probability calibration or profitability.",
+    "Joint top5 probability 1.272% is uncalibrated; one miss does not invalidate a rare event probability.",
+    "Prestart V4 forecast has incomplete historical data for seven runners and did not include verified market odds.",
+    "Research-only; no stakes and no model changes."
+  ],
+  "model_modified": false,
+  "training_performed": false,
+  "stakes_published": false,
+  "notification_status": "not_recorded_by_repository"
+}
