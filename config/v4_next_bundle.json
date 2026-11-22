@@ -1,0 +1,43 @@
+{
+  "version": "turf_lab_v4_next_research_bundle_1",
+  "status": "RESEARCH_NO_BET",
+  "scope": "All five changes in ONE coordinated research run against locked single 47-feature V4",
+  "parts": [
+    "History Repair V2: exact matching and conflict quarantine",
+    "DQ binary risk regression separate from winner",
+    "Shrunk track/start/distance conditional temperatures",
+    "Odds band residual calibration and report, no unverified live activation",
+    "Coherent exact unordered Quinté probability and search"
+  ],
+  "dq_ridge": 0.003,
+  "context_min_races": 180,
+  "context_shrink_races": 600,
+  "market_band_prior": 100,
+  "quinte_shortlist_limit": 11,
+  "quinte_alternatives": 3,
+  "quinte_fixed_sampling_seed": "V4allfive_20261122_audit_independent_of_outcomes",
+  "quinte_reused_test_races": 250,
+  "windows": {
+    "DQ_fit": "2022-03-02..2024-12-31",
+    "context_fit": "2025-01-01..2025-06-30",
+    "odds_bias_fit": "2025-07-01..2025-10-31",
+    "odds_bias_diagnostic": "2025-11-01..2025-12-31",
+    "reused_2026_test": "2026-01-01..2026-09-30"
+  },
+  "prior_v4_model": "models/v4_multifeature/frozen_before_test.json",
+  "history_repair_v2_frozen_old_data_only": true,
+  "no_fake_individual_history_completion": true,
+  "avoid_double_counting_DQ_in_win_probability": true,
+  "max_unordered_quinte_suggested_selections": 3,
+  "no_real_money_bets": true,
+  "recommendations_allowed": false,
+  "automatic_model_promotion": false,
+  "prospective_validation_min_races": 200,
+  "limits": [
+    "DQ risk is not a validated conditional win rate and never used as automatic extra multiplier",
+    "Some source history windows differ, so unreconciled records are quarantined rather than blindly repaired",
+    "2026 has already been inspected and cannot validate model selection",
+    "The frozen market R model trained on part of 2025 used for odds-bin calibration, so historical gains cannot certify a new market strategy",
+    "ZE5 joint probabilities require prospective calibration; no executable ZEturf settlement is available"
+  ]
+}
