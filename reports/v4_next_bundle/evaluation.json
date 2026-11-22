@@ -1,0 +1,118 @@
+{
+  "version": "turf_lab_v4_next_research_bundle_1",
+  "status": "EXPLORATORY_ALL_FIVE_COMPONENTS",
+  "public_model_unchanged": "TURF_LAB_V4_47_FEATURE",
+  "source_history_v2": {
+    "archive_only_races": 27973,
+    "LONG_WINDOW_NOT_REPLACED": 6848,
+    "VERIFIED_UNCHANGED": 473,
+    "non_runners": 143,
+    "CANONICAL_ALREADY_MATCHES_INDIVIDUAL": 130,
+    "VERIFIED_UPDATED": 365,
+    "MULTI_SOURCE_CONFLICT_NO_PATCH": 103,
+    "cohort_races_examined": 618,
+    "archive_races_examined": 28591,
+    "supplemental_races_remaining_unexamined": 0
+  },
+  "disqualification": {
+    "horses": 57550,
+    "dq_frequency": 0.2174456993918332,
+    "log_loss": 0.5047351626828745,
+    "brier": 0.16375265720769044,
+    "calibration": [
+      {
+        "range": [
+          0.1,
+          0.2
+        ],
+        "count": 34479,
+        "p_mean": 0.16454700677184672,
+        "observed": 0.15850227674816555
+      },
+      {
+        "range": [
+          0.2,
+          0.3
+        ],
+        "count": 18598,
+        "p_mean": 0.24493461774903358,
+        "observed": 0.2837401871168943
+      },
+      {
+        "range": [
+          0.3,
+          0.4
+        ],
+        "count": 3322,
+        "p_mean": 0.33595027604879985,
+        "observed": 0.39554485249849486
+      },
+      {
+        "range": [
+          0.4,
+          0.5
+        ],
+        "count": 1151,
+        "p_mean": 0.4420935946166009,
+        "observed": 0.3979148566463944
+      }
+    ],
+    "constant_prior_brier": 0.17017328169229096
+  },
+  "context": {
+    "unchanged": {
+      "races": 4661,
+      "log_loss": 2.102854353689767,
+      "top1": 0.26625187727955374
+    },
+    "specialized": {
+      "races": 4661,
+      "log_loss": 2.102341650481551,
+      "top1": 0.26625187727955374
+    },
+    "applied": {
+      "AUTOSTART|sprint": 582,
+      "VINCENNES|NON_PRECISE|middle": 388,
+      "AUTOSTART|middle": 891,
+      "NON_PRECISE|middle": 2041,
+      "NON_PRECISE|long": 650,
+      "NON_PRECISE": 108,
+      "AUTOSTART": 1
+    },
+    "trained_on_2025H1_already_used_for_main_temperature": true
+  },
+  "odds_bands": {
+    "2025_Nov_Dec_validation": {
+      "races": 500,
+      "base_logloss": 2.092314098008717,
+      "band_logloss": 2.0839699650656667,
+      "market_model_was_previously_fitted_on_2025H2": true
+    },
+    "2026_reused_test": {
+      "races": 2578,
+      "base_logloss": 1.9233232317491267,
+      "band_logloss": 1.9179727640889668
+    }
+  },
+  "ze5": {
+    "races": 246,
+    "expected_exact": 5.313335680609369,
+    "actual_exact": 6,
+    "greedy_expected": 4.783089260663831,
+    "greedy_actual": 5,
+    "mean_probability": 0.021598925530932393,
+    "joint_calibration_validated": false,
+    "no_actual_ZEturf_payouts": true
+  },
+  "baseline_model_lock": "4f7bc2eb7186c8e9502fadf6b51775646aa562d5f9548dc82d1f7fc92b9ce488",
+  "locked_before_test": true,
+  "recommendations_allowed": false,
+  "provenance": [
+    "2026 has already been inspected in multiple V4 iterations",
+    "DQ model fitted on pre-2025 only",
+    "Context fitted on 2025 H1 previously used in main winner calibration",
+    "Odds-bin baseline itself was fitted with 2025 H2 so its calibration test is not virgin",
+    "No real-money strategy or payout validation yet"
+  ],
+  "decision": "DO_NOT_PROMOTE_ANY_PROBABILITY_ADJUSTMENT_AUTOMATICALLY"
+}

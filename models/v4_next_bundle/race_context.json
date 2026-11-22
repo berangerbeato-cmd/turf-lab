@@ -1,0 +1,71 @@
+{
+  "status": "RESEARCH_ONLY",
+  "minimum_races": 180,
+  "training_races": 3156,
+  "groups": {
+    "AUTOSTART|sprint": {
+      "temperature": 1.001575684266963,
+      "races": 332,
+      "prior_races": 600,
+      "clipped_range": [
+        0.8,
+        1.2
+      ]
+    },
+    "AUTOSTART": {
+      "temperature": 1.023562932803987,
+      "races": 926,
+      "prior_races": 600,
+      "clipped_range": [
+        0.8,
+        1.2
+      ]
+    },
+    "VINCENNES|NON_PRECISE|middle": {
+      "temperature": 1.0083272452804317,
+      "races": 311,
+      "prior_races": 600,
+      "clipped_range": [
+        0.8,
+        1.2
+      ]
+    },
+    "NON_PRECISE|middle": {
+      "temperature": 0.9763360205595274,
+      "races": 1733,
+      "prior_races": 600,
+      "clipped_range": [
+        0.8,
+        1.2
+      ]
+    },
+    "NON_PRECISE": {
+      "temperature": 0.9876596473468986,
+      "races": 2230,
+      "prior_races": 600,
+      "clipped_range": [
+        0.8,
+        1.2
+      ]
+    },
+    "AUTOSTART|middle": {
+      "temperature": 1.028085972766209,
+      "races": 593,
+      "prior_races": 600,
+      "clipped_range": [
+        0.8,
+        1.2
+      ]
+    },
+    "NON_PRECISE|long": {
+      "temperature": 1.010152401462171,
+      "races": 429,
+      "prior_races": 600,
+      "clipped_range": [
+        0.8,
+        1.2
+      ]
+    }
+  },
+  "policy": "Shrunk groupwise logit temperature, never venue-intercept"
+}

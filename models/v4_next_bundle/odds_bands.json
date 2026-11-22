@@ -1,0 +1,50 @@
+{
+  "status": "RESEARCH_ONLY_NOT_INDEPENDENT",
+  "bands": {
+    "1-4": {
+      "log_factor": -0.05714179619396637,
+      "count": 1091,
+      "observed_wins": 376,
+      "predicted_wins": 400.26851659051994,
+      "enabled": true
+    },
+    "4-8": {
+      "log_factor": 0.07766255220247757,
+      "count": 2274,
+      "observed_wins": 375,
+      "predicted_wins": 345.8422933796538,
+      "enabled": true
+    },
+    "8-20": {
+      "log_factor": 0.04315763454244886,
+      "count": 5244,
+      "observed_wins": 353,
+      "predicted_wins": 337.8173153696368,
+      "enabled": true
+    },
+    "20-50": {
+      "log_factor": -0.14784908156323712,
+      "count": 4529,
+      "observed_wins": 94,
+      "predicted_wins": 109.36252019697517,
+      "enabled": true
+    },
+    "50+": {
+      "log_factor": -0.24,
+      "count": 2146,
+      "observed_wins": 13,
+      "predicted_wins": 17.7093544632145,
+      "enabled": true
+    }
+  },
+  "prior": 100,
+  "races": 1211,
+  "limitations": [
+    "Previously fitted base market also used 2025 H2 outcomes.",
+    "These odds-bin corrections require virgin prospective validation."
+  ],
+  "fit_start": "2025-07-01",
+  "fit_end": "2025-10-31",
+  "validation_start": "2025-11-01",
+  "validation_end": "2025-12-31"
+}
