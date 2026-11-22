@@ -1,0 +1,25 @@
+{
+  "version": "turf_lab_v4_fully_integrated_1",
+  "status": "ACTIVATED_SINGLE_V4_ALL_COMPONENTS",
+  "model_name": "TURF_LAB_V4",
+  "features": 47,
+  "prior_bundle_lock_sha256": "63f76107eb34d7e8df2f05c7201a783ee69f56dcbc13b897963b1d21cea18526",
+  "v4_47f_lock_sha256": "4f7bc2eb7186c8e9502fadf6b51775646aa562d5f9548dc82d1f7fc92b9ce488",
+  "dq_residual_sha256": "1ff5456b23a7e109f20df1302c524f95e798af76310b11052a9519ab44804c7e",
+  "activation_policy_sha256": "c4feee394f548cb78223f9e2d91d862bff020990116aae8405e3c196f449c657",
+  "active_engine_sha256": "9b78676d42cad10806bb28ac9c83a6c28d10cf06e6fa16beaace9029bc754119",
+  "training_code_sha256": "8693716a72e4354c321527553bbd0e510c26dee47df289163ef8651fa397e8e1",
+  "all_applied": [
+    "history_repair_v2",
+    "disqualification_fitted_signed_residual",
+    "venue_start_distance_temperature",
+    "odds_band_after_R_market",
+    "quinte_max_unordered_joint",
+    "past_47_features"
+  ],
+  "dq_fitted_before_2026": true,
+  "2026_not_used_to_select_DQ_residual": true,
+  "prospective_independent_validation_done": false,
+  "recommendations_allowed": false,
+  "actual_betting_roi_known": false
+}

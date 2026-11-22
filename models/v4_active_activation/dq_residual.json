@@ -1,0 +1,18 @@
+{
+  "version": "dq_survival_residual_fit_2025h1",
+  "method": "AS_OF_LOG_DQ_SURVIVAL_RESIDUAL",
+  "coefficient": 0.020841862035709664,
+  "training_period": [
+    "2025-01-01",
+    "2025-06-30"
+  ],
+  "training_races": 3156,
+  "ridge": 0.08,
+  "fitting_brier_or_profit_not_claimed": true,
+  "fit_log_loss_at_zero": 2.161357302748171,
+  "fit_log_loss_fitted": 2.161321509533996,
+  "status": "FITTED_ACTIVE_IN_SINGLE_RESEARCH_V4",
+  "positive_weight_means_extra_risk_penalty": true,
+  "negative_weight_compensates_baseline_overpenalty": false,
+  "approved_stakes": false
+}
