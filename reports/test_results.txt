@@ -238,6 +238,7 @@ test_market_free_and_no_recommendation (test_sport_history_repair.Repair.test_ma
 test_missing_blocks (test_sport_history_repair.Repair.test_missing_blocks) ... ok
 test_only_recent_features_change (test_sport_history_repair.Repair.test_only_recent_features_change) ... ok
 test_stage_ranking (unittest.loader._FailedTest.test_stage_ranking) ... ERROR
+test_v4_all_active (unittest.loader._FailedTest.test_v4_all_active) ... ERROR
 test_v4_full_inference (unittest.loader._FailedTest.test_v4_full_inference) ... ERROR
 test_incomplete_archive_not_falsely_asserted_as_repaired (test_v4_full_training.V4HistoryTrainingTests.test_incomplete_archive_not_falsely_asserted_as_repaired) ... ok
 test_repair_may_not_erase_archived_known_starts (test_v4_full_training.V4HistoryTrainingTests.test_repair_may_not_erase_archived_known_starts) ... ok
@@ -456,6 +457,25 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ======================================================================
+ERROR: test_v4_all_active (unittest.loader._FailedTest.test_v4_all_active)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_v4_all_active
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_v4_all_active.py", line 4, in <module>
+    from turf_lab.v4_active_final import residual_dq,sport_v4,quotes_v4,quintet_v4
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/v4_active_final.py", line 18, in <module>
+    from turf_lab.v4_full_inference import sha
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/v4_full_inference.py", line 14, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_v4_full_inference (unittest.loader._FailedTest.test_v4_full_inference)
 ----------------------------------------------------------------------
 ImportError: Failed to import test module: test_v4_full_inference
@@ -653,9 +673,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 273 tests in 0.239s
+Ran 274 tests in 0.228s
 
-FAILED (errors=22, skipped=7)
+FAILED (errors=23, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
