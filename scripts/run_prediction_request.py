@@ -122,7 +122,7 @@ def main():
         except (ValueError,TypeError,KeyError,OSError,RuntimeError) as error:
             state['v4_status'] = 'BLOCKED_NO_BET'
             state['v4_reason'] = str(error)
-            dump('reports/v4/latest.json',{'version':'turf_lab_v4_multifeature_1',
+            dump('reports/v4/latest.json',{'version':'turf_lab_v4_fully_integrated_1',
                 'race_id':state['race_id'],'status':'BLOCKED_NO_BET',
                 'recommendations_allowed':False,'decision':'NO BET',
                 'reason':str(error),'single_public_response':True})
