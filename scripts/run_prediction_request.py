@@ -41,6 +41,32 @@ def main():
            'started_at':datetime.now(timezone.utc).isoformat(),'status':'RUNNING',
            'github_run_id':os.getenv('GITHUB_RUN_ID')}
     dump('reports/operational/request_status.json',state)
+    if not explicit and data.get('reuse_prestart_evidence'):
+        # Reuse immutable fresh prestart evidence; skip stale quote board entirely.
+        # No second PMU fetch and no retrospective reconstruction of the runners.
+        original_path = Path(data['reuse_prestart_evidence'])
+        original = json.loads(original_path.read_text())
+        if original['race_id'] != state['race_id']:
+            raise ValueError('Reused V4 evidence has a different race identity')
+        if datetime.now(timezone.utc) >= datetime.fromisoformat(original['scheduled_start']):
+            raise ValueError('Reused V4 evidence already passed race start')
+        from turf_lab.v4_multifeature_inference import record as record_v4
+        base = original_path.parent
+        try:
+            v4 = record_v4(original_path, base/'history_repair_shadow_v1_1.json',
+                           base/'v4_speed_context.json', base/'v4_aux_context.json',
+                           quotes_file=None)
+            dump('reports/v4/latest.json', v4)
+            state.update(status='SUCCESS',v4_status=v4['status'],
+                         v4_report=str(base/'v4_integrated.json'),
+                         reused_prestart_evidence=True,quotes_compared=False)
+        except Exception as error:
+            state.update(status='FAILED',error=type(error).__name__+': '+str(error))
+            raise
+        finally:
+            state['completed_at']=datetime.now(timezone.utc).isoformat()
+            dump('reports/operational/request_status.json',state)
+        return
     try:
         from scripts.predict_operational import run
         path=run(values[0],int(values[1]),int(values[2]))
