@@ -1,0 +1,87 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-22_R10C2",
+  "target_date": "2026-11-22",
+  "captured_at": "2026-11-22T11:28:32.838390+00:00",
+  "prior_races": 30583,
+  "last_prior_day": "2026-11-21",
+  "prior_history_sha256": "7faff3cae71769e629d05f7840923d8e5e98ca66767a5eb35834cf0e1b58f6c6",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('MAJOR CHANTEREINE', 'CHANTEREINE', 'ETONNANT')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('MACUMBA DESBOIS', 'QUIPHYLE COGLAIS', 'FALCAO DE LAURMA')",
+      "context_residual": -0.7703931498773454,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('MELIA DE MONGOCHY', 'HESTE DE BUSSET', 'ALTO DE VIETTE')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('MONA DU FER', 'EPONA DU FER', 'URIEL SPEED')",
+      "context_residual": 1.213489458339107,
+      "prior_races_used": 2
+    },
+    "5": {
+      "horse_id": "pedigree:('MOOREA', 'GRATINEE', 'TIMOKO')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "6": {
+      "horse_id": "pedigree:('MADGIC STRYCK', 'URIANE BEGONIA', 'LOOK DE STAR')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:('MISS MARGOT', 'FEERIQUE DU VIVIER', 'BLUE PASS')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "8": {
+      "horse_id": "pedigree:('MYSTERE TURGOT', 'EMERAUDE TURGOT', 'URIEL SPEED')",
+      "context_residual": -2.7362524028766346,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('MAMBA DES DURIEZ', 'DIOULA DES DURIEZ', 'VIGOVE')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('MAMBO DE CAHOT', 'SORAYA DE CAHOT', 'BRILLANTISSIME')",
+      "context_residual": 0.7175664063150471,
+      "prior_races_used": 1
+    },
+    "11": {
+      "horse_id": "pedigree:('MUSE DU VALLON', 'ANGIE DU VALLON', 'LOVE YOU')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:('MAFIOSO DREAM', 'VENUS CASTELETS', 'BOCCADOR DE SIMM')",
+      "context_residual": 1.117566406315047,
+      "prior_races_used": 1
+    },
+    "13": {
+      "horse_id": "pedigree:('MENHIR', 'BARTAVELLE', 'CAPTAIN SPARROW')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "14": {
+      "horse_id": "pedigree:('MISTER DES LOYAUX', 'FEMME DES LOYAUX', 'MAGNIFICENT RODNEY')",
+      "context_residual": 1.432548022447816,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 14,
+  "coverage_active": 6,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
