@@ -26,5 +26,16 @@
   "new_47_feature_top1_2026": 0.2662518773,
   "recommendations_allowed": false,
   "decision": "NO BET",
-  "note": "All 47-feature V4 weights are frozen and active for research inference. This is a model readiness statement, not a horse prediction or validated ZEturf profitability."
+  "note": "V4 uniquely active at 47 features. Five new research extensions are connected to its single report; independent validation incomplete. No actual race was forecast by this status update.",
+  "research_bundle": "turf_lab_v4_next_research_bundle_1",
+  "research_bundle_status": "TRAINED_FROZEN_AND_CONNECTED_TO_SINGLE_REPORT",
+  "research_parts": [
+    "History Repair V2 quality/conflict audit",
+    "DQ separately fitted",
+    "race context calibration research",
+    "odds-band market correction research",
+    "unordered Quinté joint probability"
+  ],
+  "research_models_lock": "models/v4_next_bundle/frozen_before_test.json",
+  "research_test_outcomes": "reports/v4_next_bundle/evaluation.json"
 }
