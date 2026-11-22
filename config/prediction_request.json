@@ -2,75 +2,7 @@
   "date": "2026-11-22",
   "reunion": 10,
   "course": 1,
-  "request_id": "chat-20261122-r10c1-salon-v4-47f-1256",
-  "quotes": {
-    "race_id": "2026-11-22_R10C1",
-    "operator": "ZEturf",
-    "source_evidence": "User-provided screenshots IMG_2671.png, IMG_2672.png, IMG_2673.png; ZEturf R12C1 Salon de Provence (PMU official R10C1), board observed 2026-11-22 12:55-12:56 Europe/Paris. Full field 12 runners, odds precisely transcribed. Original screenshots held in conversation, not public uploaded.",
-    "verified": true,
-    "observed_at": "2026-11-22T12:56:00+01:00",
-    "odds_format": "DECIMAL_TOTAL_RETURN",
-    "quotes": [
-      {
-        "number": 1,
-        "name": "NAGELE DE L'ETOILE",
-        "decimal_odds": 13.4
-      },
-      {
-        "number": 2,
-        "name": "NEPTUNE BLEU",
-        "decimal_odds": 8.1
-      },
-      {
-        "number": 3,
-        "name": "NEVADA DE BEYLEV",
-        "decimal_odds": 26.9
-      },
-      {
-        "number": 4,
-        "name": "NO LIMIT SMILE",
-        "decimal_odds": 21.1
-      },
-      {
-        "number": 5,
-        "name": "NINO DU CAP",
-        "decimal_odds": 20.9
-      },
-      {
-        "number": 6,
-        "name": "NEMESIA FLEURY",
-        "decimal_odds": 23.5
-      },
-      {
-        "number": 7,
-        "name": "NOISETTE",
-        "decimal_odds": 10.2
-      },
-      {
-        "number": 8,
-        "name": "NAFISA MENUET",
-        "decimal_odds": 2.9
-      },
-      {
-        "number": 9,
-        "name": "NOTHING GEKA",
-        "decimal_odds": 11.2
-      },
-      {
-        "number": 10,
-        "name": "NO DOUBT DU SAPTEL",
-        "decimal_odds": 21.1
-      },
-      {
-        "number": 11,
-        "name": "NOEMIE RIDGEHEAD",
-        "decimal_odds": 5
-      },
-      {
-        "number": 12,
-        "name": "NAMTSO DU VALO",
-        "decimal_odds": 84.1
-      }
-    ]
-  }
+  "request_id": "chat-20261122-r10c1-salon-v4-sport-reuse-1300",
+  "reuse_prestart_evidence": "predictions_operational/2026-11-22/2026-11-22_R10C1_20261122T115803493847Z/prediction.json",
+  "comment": "Reuse original prestart snapshot with original history repair, 47-feature sidecars, and trained V4 weights. 12:56 ZEturf quotes were outside mandatory 15m board window and must not be silently promoted; price-corrected EV unavailable."
 }
