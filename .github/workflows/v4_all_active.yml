@@ -1,0 +1,67 @@
+name: Turf Lab V4 one full active model (all five)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_all_active.yml'
+      - 'turf_lab/v4_active_final.py'
+      - 'scripts/calibrate_v4_active_final.py'
+      - 'config/v4_all_active_policy.json'
+      - 'tests/test_v4_all_active.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-v4-all-active-calibration
+  cancel-in-progress: false
+jobs:
+  single_active_v4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 105
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install frozen V4 scientific dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Verify one-V4 five-component arithmetic and old freeze integrity
+        run: |
+          python -m py_compile turf_lab/v4_active_final.py scripts/calibrate_v4_active_final.py
+          python -m unittest tests.test_v4_all_active tests.test_v4_next_bundle tests.test_v4_multifeature_inference -v
+      - name: Fit DQ residual from 2025 only and freeze all active blocks
+        run: python -m scripts.calibrate_v4_active_final
+      - name: Verify activation lock and model hashes
+        run: |
+          python -c "from turf_lab.v4_active_final import activated; m,b,l=activated(); print('LOCKED ONE V4 DQ weight',m['coefficient']); assert len(b)==4 and l['features']==47"
+      - name: Archive activation weights and signed protocol lock
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f models/v4_active_activation reports/v4_active_activation
+          if ! git diff --cached --quiet; then
+            git commit -m 'Freeze single V4 applied DQ residual and all five active components'
+            for i in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - name: Failure diagnostics rather than fake activation
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: turf-v4-active-fit-failure
+          if-no-files-found: ignore
+          path: |
+            reports/v4_active_activation/failure.json
+            models/v4_active_activation/dq_residual.json
