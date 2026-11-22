@@ -53,9 +53,32 @@ def validate_sidecar(path):
         raise ValueError("Shadow model version mismatch")
     if sidecar.get("recommendations_allowed") is not False:
         raise ValueError("Not an isolated paper-only forecast")
+    accepted_rules={"SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD",
+                    "SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2"}
     if (sidecar.get("is_independent_prospective_validation") is not True
-            or sidecar.get("selection_rule") != "SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD"):
+            or sidecar.get("selection_rule") not in accepted_rules):
         raise ValueError("Not a predeclared deterministic cohort capture")
+    if sidecar["selection_rule"]=="SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2":
+        plan_path=Path(sidecar.get("daily_cohort_plan",""))
+        if (not plan_path.as_posix().startswith(
+                    "reports/history_repair_shadow_v1/prospective_forecasts/")
+                or plan_path.name!="selection_plan.json"
+                or plan_path.parent!=Path(path).parent.parent):
+            raise ValueError("Missing same-day immutable ten-race selection plan")
+        plan=json.loads(plan_path.read_text())
+        scheduled=next((r for r in plan["selected"]
+                        if r["race_id"]==sidecar["race_id"]),None)
+        if (plan.get("selection_rule")!=sidecar["selection_rule"]
+                or plan.get("daily_target")!=10
+                or plan.get("date")!=sidecar["race_id"][:10]
+                or len(plan["selected"])>10 or len({r["race_id"] for r in plan["selected"]})!=len(plan["selected"])
+                or not scheduled
+                or scheduled["selection_index"]!=sidecar.get("selection_index")
+                or scheduled["start_ms"]!=int(datetime.fromisoformat(
+                    sidecar["scheduled_start"]).timestamp()*1000)
+                or datetime.fromisoformat(plan["created_at_utc"])>=datetime.fromisoformat(
+                    sidecar["original_predicted_at"])):
+            raise ValueError("Ten-race original prospective provenance does not match frozen plan")
     start = datetime.fromisoformat(sidecar["scheduled_start"])
     forecasted = datetime.fromisoformat(sidecar["shadow_calculated_at"])
     originally = datetime.fromisoformat(sidecar["original_predicted_at"])
@@ -184,7 +207,7 @@ def run(source_paths=None, dest=OUT):
     report = {"status":"PROSPECTIVE_SCORECARD",
               "version":CANDIDATE_VERSION, "recommendations_allowed":False,
               "prospective_start":"2026-11-22T00:00:00+01:00",
-              "selection_cohort":"Deterministic scheduled first-two-races, no user-selected forecasts",
+              "selection_cohort":"Deterministic predeclared first ten races per day, original two-race cohorts kept only for backward compatibility; no user-selected forecasts",
               "eligible_forecasts":len(chosen), "verified_results":len(scored),
               "pending_or_excluded_outcomes":len(pending),
               "candidate_changes":sum(x["runner_changes"]>0 for x in scored+pending),
