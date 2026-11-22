@@ -1,0 +1,87 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-22_R10C4",
+  "target_date": "2026-11-22",
+  "captured_at": "2026-11-22T12:27:44.960232+00:00",
+  "prior_races": 30583,
+  "last_prior_day": "2026-11-21",
+  "prior_history_sha256": "7faff3cae71769e629d05f7840923d8e5e98ca66767a5eb35834cf0e1b58f6c6",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('LASCO DE BERTRANGE', 'PHOEBE DU GOUTIER', \"NI HO PED D'OMBREE\")",
+      "context_residual": -0.3755289592557456,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('LOULOU CEMAX', 'FLAMME CEMAX', 'LAETENTER DIEM')",
+      "context_residual": 1.289603825119164,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('LITTLE KING ELEVEN', 'BARAKA DE CARSI', \"GU D'HERIPRE\")",
+      "context_residual": 0.00659656244602229,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('LINEA DE CRENNES', 'TRACE DE CRENNES', 'JAM PRIDEM')",
+      "context_residual": -1.8058866318804794,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('LOULOU DU SABLIER', 'PREUVE DU SABLIER', 'KIWI')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "6": {
+      "horse_id": "pedigree:('LINGFIELD', 'BAMBINA FLASH', 'DJANGO RIFF')",
+      "context_residual": 0.40659656244602227,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('LASER QUICK', 'ACTIVITY QUICK', 'UP AND QUICK')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "8": {
+      "horse_id": "pedigree:('LA QUICK', 'CHARLOTTE QUICK', 'UP AND QUICK')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:('LEADER WINNER', 'QUILLE VIRETAUTE', 'GOTLAND')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('LEIKA HIGHLAND', 'FRANCE LIBEREE', 'TAG WOOD')",
+      "context_residual": -0.6631608504931356,
+      "prior_races_used": 1
+    },
+    "11": {
+      "horse_id": "pedigree:(\"LOUNA D'AUVILLIER\", \"ACTION D'ALOUETTE\", 'VALKO JENILAT')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:('LEXKI DU GERS', 'TRAVIATA DE FLEUR', 'FACE TIME BOURBON')",
+      "context_residual": -0.2870090715766273,
+      "prior_races_used": 1
+    },
+    "13": {
+      "horse_id": "pedigree:('LAVINIA DES ILES', 'CARAVELLE PASSION', 'TRESOR WIC')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "14": {
+      "horse_id": "pedigree:('LOLA DU CHERISAY', 'ELLE DU CHERISAY', 'ALDO DES CHAMPS')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 14,
+  "coverage_active": 7,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
