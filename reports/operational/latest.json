@@ -8,72 +8,66 @@
   ],
   "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
   "primary_model": "available_history_v3",
-  "prediction": "predictions_operational/2026-11-22/2026-11-22_R10C2_20261122T112552463323Z/prediction.json",
-  "race_id": "2026-11-22_R10C2",
-  "predicted_at": "2026-11-22T11:27:34.008556+00:00",
+  "prediction": "predictions_operational/2026-11-22/2026-11-22_R13C2_20261122T112907504308Z/prediction.json",
+  "race_id": "2026-11-22_R13C2",
+  "predicted_at": "2026-11-22T11:30:40.954778+00:00",
   "models": {
     "v6": {
       "probabilities": {
-        "1": 0.07539462020496573,
-        "2": 0.05596099544927982,
-        "3": 0.013950314406808481,
-        "4": 0.08849779698426176,
-        "5": 0.023540247331577575,
-        "6": 0.07132308580664279,
-        "7": 0.00911069188842535,
-        "8": 0.04005332540233499,
-        "9": 0.010607987324065008,
-        "10": 0.019181158526756725,
-        "11": 0.0412693864594872,
-        "12": 0.013060926990615961,
-        "13": 0.10549132249417922,
-        "14": 0.4325581407305993
+        "1": 0.09677772234551961,
+        "2": 0.08540207818920613,
+        "3": 0.05368287216797263,
+        "4": 0.2250004145993596,
+        "5": 0.04948316052268339,
+        "6": 0.0328541169272334,
+        "7": 0.08336332332038238,
+        "8": 0.05801801200985973,
+        "9": 0.04030732112015458,
+        "10": 0.0763971980531644,
+        "11": 0.08214883219944066,
+        "12": 0.11656494854502343
       },
       "role": "benchmark",
       "model_file": "models/demographics_tandem_v6_candidates.json",
       "model_sha256": "fb2aea565cfba45597ec097d4a7906b89ea804f69f88e308e21468fd2948c994",
       "version": "v6@fb2aea565cfb",
-      "calculated_at": "2026-11-22T11:27:34.008556+00:00"
+      "calculated_at": "2026-11-22T11:30:40.954778+00:00"
     },
     "classic_full": {
       "probabilities": {
-        "1": 0.09365634041701607,
-        "2": 0.08854786238204665,
-        "3": 0.015214535778268243,
-        "4": 0.07829693184402879,
-        "5": 0.030655476675665736,
-        "6": 0.059383509661461935,
-        "7": 0.010592836793928874,
-        "8": 0.04643777943082932,
-        "9": 0.008416374776527997,
-        "10": 0.027445452441252172,
-        "11": 0.03648988386730859,
-        "12": 0.021220258128009387,
-        "13": 0.08689795207949061,
-        "14": 0.3967448057241656
+        "1": 0.10249229001247794,
+        "2": 0.09404895172148349,
+        "3": 0.06315874015991134,
+        "4": 0.17665826261285536,
+        "5": 0.05929697625712278,
+        "6": 0.03792402267565287,
+        "7": 0.07402660667909428,
+        "8": 0.047424212540965696,
+        "9": 0.041414839704979965,
+        "10": 0.06770487484254666,
+        "11": 0.09700409850209994,
+        "12": 0.13884612429080972
       },
       "role": "benchmark",
       "model_file": "models/full_history/classic.json",
       "model_sha256": "1c5e0e8f49001d00511d0f08a3fa7e05392bcfd85716c55534a49ecad57c0580",
       "version": "classic_full@1c5e0e8f4900",
-      "calculated_at": "2026-11-22T11:27:34.008556+00:00"
+      "calculated_at": "2026-11-22T11:30:40.954778+00:00"
     },
     "available_history_v3": {
       "probabilities": {
-        "1": 0.07625780584450376,
-        "2": 0.0722819361649116,
-        "3": 0.013514910756362372,
-        "4": 0.08231880081030164,
-        "5": 0.022338047604278436,
-        "6": 0.05927258390825289,
-        "7": 0.008356038337676227,
-        "8": 0.04226503341295429,
-        "9": 0.0068137413548188495,
-        "10": 0.023228672785863675,
-        "11": 0.025138523996714946,
-        "12": 0.018214259518605693,
-        "13": 0.10497370397925694,
-        "14": 0.4450259415254986
+        "1": 0.09841310744133817,
+        "2": 0.09200729497660898,
+        "3": 0.05956122871726154,
+        "4": 0.22830059489948748,
+        "5": 0.05613994854711858,
+        "6": 0.035193659882822526,
+        "7": 0.07080171392222362,
+        "8": 0.03936771189449192,
+        "9": 0.043066435734535134,
+        "10": 0.05990236841667917,
+        "11": 0.09349526568016316,
+        "12": 0.12375066988726972
       },
       "temperature": 0.9411457597147692,
       "role": "primary",
@@ -82,329 +76,38 @@
       "model_file": "models/available_history_v3/last5_available_dq20.json",
       "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
       "version": "available_history_v3@c6ccc2335485",
-      "calculated_at": "2026-11-22T11:27:34.008556+00:00"
+      "calculated_at": "2026-11-22T11:30:40.954778+00:00"
     }
   },
   "place": {
     "status": "EV placé non calculable",
     "reason": "No evidenced prestart place quote; V6 has no calibrated placement model.",
-    "number": 14,
+    "number": 4,
     "model": "classic_full",
-    "probability": 0.6392467626935011,
+    "probability": 0.40884715819151535,
     "paid_places": 3,
-    "fair_odds": 1.5643411251493013,
+    "fair_odds": 2.4459017996440915,
     "calibration_sha256": "44c17f2b94d39fdd096a0daf8993165d7d3d64117bef43e8f07ad53c54e95cd6",
     "scope": "Exploratory calibrated top selection only; 10-20 starters, no nonrunners; operator must confirm three paid places.",
     "role": "legacy_classic_benchmark_only"
   },
-  "scheduled_start": "2026-11-22T12:45:00+00:00",
+  "scheduled_start": "2026-11-22T11:35:00+00:00",
   "history_through": "2026-11-21",
   "individual_history_check": {
     "status": "RESEARCH_HISTORY_WARNING",
     "affected_runners": [
-      1,
       3,
       6,
-      9,
-      10
+      9
     ],
     "runners": [
       {
         "number": 1,
-        "name": "MAJOR CHANTEREINE",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 21,
+        "name": "NIKITA SPRINT",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 0,
         "model_recent_starts": 0,
-        "individual_prior_starts_returned": 20,
-        "missing_recent_starts": [
-          {
-            "date": "2026-10-05",
-            "venue": "CASTERA-VERDUZAN",
-            "racecourse_code": "CAS",
-            "race_number": 5,
-            "race_name": "PRIX SARL MARBRERIE CAHUZAC",
-            "discipline": "ATTELE",
-            "distance_m": 2800,
-            "distance_covered_m": 2800,
-            "handicap_m": 0,
-            "start_type": "AUTOSTART",
-            "rank": 1,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 75.4,
-            "race_time_seconds": 211.0,
-            "driver": "V. CABOS",
-            "trainer": "R. WESTERINK",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 16,
-            "purse_eur": 10000,
-            "race_type": null,
-            "turn": "D",
-            "conditions": "PRIX D'AYGUETINTE Race 5 Class R Race \"A RECLAMER\" Autostart departure 10.000. - Harness. - 2.800 metres. 4.500, 2.500, 1.400, 800, 500, 200, 100.- allocated by the S.E.T.F. For 4 year olds, who have won less than €33.000, to be claimed for €8.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 1
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2026-06-21",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          1.0,
-          1.0,
-          0.0,
-          3.8918202981106265,
-          0.2
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 2,
-        "name": "MACUMBA DESBOIS",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 19,
-        "model_recent_starts": 3,
-        "individual_prior_starts_returned": 19,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          2.70805020110221,
-          0.6
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 3,
-        "name": "MELIA DE MONGOCHY",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 20,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 20,
-        "missing_recent_starts": [
-          {
-            "date": "2026-11-11",
-            "venue": "NIMES",
-            "racecourse_code": "NIM",
-            "race_number": 2,
-            "race_name": "PRIX DE LA PORTE DE FRANCE",
-            "discipline": "ATTELE",
-            "distance_m": 2750,
-            "distance_covered_m": 2775,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": 8,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 86.4,
-            "race_time_seconds": 239.0,
-            "driver": "G. TOURON",
-            "trainer": "G. TOURON",
-            "shoes_raw": null,
-            "shoes": null,
-            "field_size": 13,
-            "purse_eur": 16000,
-            "race_type": "Course E",
-            "turn": "D",
-            "conditions": "PRIX DE LA PORTE DE FRANCE Race 1 Class E 16.000. - Harness. - 2.750 metres. 7.200, 4.000, 2.240, 1.280, 800, 320, 160.- allocated by the S.E.T.F. For 4 year olds, who have won less than €48.000. - 25 meters behind for horses who have won more than €23.000.",
-            "track_condition": {
-              "label": "Très souple",
-              "measure": "3,9",
-              "measureTimestamp": 1794394800
-            },
-            "trainer_opinion_raw": 2
-          },
-          {
-            "date": "2026-10-04",
-            "venue": "NIMES",
-            "racecourse_code": "NIM",
-            "race_number": 7,
-            "race_name": "PRIX DES COSTIERES (Gr B)",
-            "discipline": "ATTELE",
-            "distance_m": 2750,
-            "distance_covered_m": 2775,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": 9,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 83.2,
-            "race_time_seconds": 230.0,
-            "driver": "ST. CORBIN",
-            "trainer": "G. TOURON",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 14,
-            "purse_eur": 16000,
-            "race_type": "Course E",
-            "turn": "D",
-            "conditions": "PRIX DES COSTIERES Race 3 Class E 16.000. - Harness. - 2.750 metres. 7.200, 4.000, 2.240, 1.280, 800, 320, 160.- allocated by the S.E.T.F. For 4 year olds, who have won less than €36.000. - 25 meters behind for horses who have won more than €18.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.3333333333333333,
-          2.4849066497880004,
-          0.6
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 4,
-        "name": "MONA DU FER",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 24,
-        "model_recent_starts": 3,
-        "individual_prior_starts_returned": 23,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          },
-          {
-            "date": "2025-05-29",
-            "reason": "unknown_outcome"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.3333333333333333,
-          0.3333333333333333,
-          3.091042453358316,
-          0.6
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 5,
-        "name": "MOOREA",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 16,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 16,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          1.0,
-          3.367295829986474,
-          0.2
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 6,
-        "name": "MADGIC STRYCK",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 15,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 13,
-        "missing_recent_starts": [
-          {
-            "date": "2026-10-04",
-            "venue": "NIMES",
-            "racecourse_code": "NIM",
-            "race_number": 7,
-            "race_name": "PRIX DES COSTIERES (Gr B)",
-            "discipline": "ATTELE",
-            "distance_m": 2750,
-            "distance_covered_m": 2775,
-            "handicap_m": 25,
-            "start_type": "NON_PRECISE",
-            "rank": null,
-            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
-            "disqualified": true,
-            "seconds_per_km": null,
-            "race_time_seconds": null,
-            "driver": "M. CINIER",
-            "trainer": "D. CINIER",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 14,
-            "purse_eur": 16000,
-            "race_type": "Course E",
-            "turn": "D",
-            "conditions": "PRIX DES COSTIERES Race 3 Class E 16.000. - Harness. - 2.750 metres. 7.200, 4.000, 2.240, 1.280, 800, 320, 160.- allocated by the S.E.T.F. For 4 year olds, who have won less than €36.000. - 25 meters behind for horses who have won more than €18.000.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.0,
-          0.0,
-          0.5,
-          3.367295829986474,
-          0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 7,
-        "name": "MISS MARGOT",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 25,
-        "model_recent_starts": 0,
-        "individual_prior_starts_returned": 25,
+        "individual_prior_starts_returned": 0,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
@@ -425,12 +128,123 @@
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 8,
-        "name": "MYSTERE TURGOT",
+        "number": 2,
+        "name": "NOUVELLE DU PERCHE",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 19,
+        "snapshot_career_starts": 0,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 0,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-22",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          null,
+          null,
+          null,
+          null,
+          0.0
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 3,
+        "name": "NORA DU RIED",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 1,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 1,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-11",
+            "venue": "NUILLE-SUR-VICOIN",
+            "racecourse_code": "NUI",
+            "race_number": 1,
+            "race_name": "PX BAR DE L'ETANG/JARDINS DE MARCEAU",
+            "discipline": "ATTELE",
+            "distance_m": 2850,
+            "distance_covered_m": 2850,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 3,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 84.4,
+            "race_time_seconds": 240.0,
+            "driver": "L.G. RICHARD",
+            "trainer": "ARNAUD DESMOTTES",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 13,
+            "purse_eur": 13500,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX DE LIGONNIERE Race 1 Class F 13.500. - Harness, fillies. - 2.850 metres. 6.075, 3.375, 1.890, 1.080, 675, 270, 135.- allocated by the S.E.T.F. For fillies aged 3, who have won less than €6.600. - 25 meters behind for horses who have won more than €3.300.",
+            "track_condition": {
+              "label": "Bon",
+              "measure": "3,0",
+              "measureTimestamp": 1791728100
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-22",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          1.0,
+          0.0,
+          3.7612001156935624,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 4,
+        "name": "NAVIGA DU RIB",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 4,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 4,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-22",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          null,
+          null,
+          null,
+          null,
+          0.0
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 5,
+        "name": "NODESSA EMESS",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 5,
         "model_recent_starts": 3,
-        "individual_prior_starts_returned": 19,
+        "individual_prior_starts_returned": 5,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
@@ -441,9 +255,9 @@
         ],
         "supplemented_recent_features_for_research": [
           0.0,
+          0.3333333333333333,
           0.0,
-          0.6666666666666666,
-          2.4849066497880004,
+          3.091042453358316,
           0.6
         ],
         "frozen_features_unchanged": true,
@@ -451,42 +265,151 @@
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       },
       {
-        "number": 9,
-        "name": "MAMBA DES DURIEZ",
+        "number": 6,
+        "name": "NOBLESSE STORY",
         "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 35,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 35,
+        "snapshot_career_starts": 12,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 11,
         "missing_recent_starts": [
           {
-            "date": "2026-11-11",
-            "venue": "NIMES",
-            "racecourse_code": "NIM",
-            "race_number": 2,
-            "race_name": "PRIX DE LA PORTE DE FRANCE",
+            "date": "2026-10-11",
+            "venue": "NUILLE-SUR-VICOIN",
+            "racecourse_code": "NUI",
+            "race_number": 1,
+            "race_name": "PX BAR DE L'ETANG/JARDINS DE MARCEAU",
             "discipline": "ATTELE",
-            "distance_m": 2750,
-            "distance_covered_m": 2775,
-            "handicap_m": 25,
+            "distance_m": 2850,
+            "distance_covered_m": 2850,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 4,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 84.5,
+            "race_time_seconds": 240.0,
+            "driver": "F. PICOT",
+            "trainer": "A. DUBOIS",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 13,
+            "purse_eur": 13500,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX DE LIGONNIERE Race 1 Class F 13.500. - Harness, fillies. - 2.850 metres. 6.075, 3.375, 1.890, 1.080, 675, 270, 135.- allocated by the S.E.T.F. For fillies aged 3, who have won less than €6.600. - 25 meters behind for horses who have won more than €3.300.",
+            "track_condition": {
+              "label": "Bon",
+              "measure": "3,0",
+              "measureTimestamp": 1791728100
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-22",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.0,
+          3.7612001156935624,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 7,
+        "name": "NINA D'AUVILLIER",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 9,
+        "model_recent_starts": 2,
+        "individual_prior_starts_returned": 9,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-22",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.5,
+          0.5,
+          3.58351893845611,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 8,
+        "name": "NAVARONE KILY",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 10,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 2,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-22",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          null,
+          null,
+          null,
+          null,
+          0.0
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 9,
+        "name": "NAUSICAA DEUGE",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 13,
+        "model_recent_starts": 1,
+        "individual_prior_starts_returned": 13,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-11",
+            "venue": "DURTAL",
+            "racecourse_code": "DUR",
+            "race_number": 1,
+            "race_name": "PRIX DE LA ROCHEFOUCAULT",
+            "discipline": "ATTELE",
+            "distance_m": 2150,
+            "distance_covered_m": 2150,
+            "handicap_m": 0,
             "start_type": "NON_PRECISE",
             "rank": 6,
             "arrival_status": "PLACE",
             "disqualified": false,
-            "seconds_per_km": 85.0,
-            "race_time_seconds": 235.0,
-            "driver": "E. GOUT",
-            "trainer": "R. GOUT",
-            "shoes_raw": "3",
-            "shoes": "D4",
-            "field_size": 13,
-            "purse_eur": 16000,
-            "race_type": "Course E",
+            "seconds_per_km": 84.6,
+            "race_time_seconds": 181.0,
+            "driver": "E.G. BLOT",
+            "trainer": "E.G. BLOT",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 14,
+            "purse_eur": 14000,
+            "race_type": "Course F",
             "turn": "D",
-            "conditions": "PRIX DE LA PORTE DE FRANCE Race 1 Class E 16.000. - Harness. - 2.750 metres. 7.200, 4.000, 2.240, 1.280, 800, 320, 160.- allocated by the S.E.T.F. For 4 year olds, who have won less than €48.000. - 25 meters behind for horses who have won more than €23.000.",
+            "conditions": "PRIX DE LA ROCHEFOUCAULT Race 1 Class F 14.000. - Harness, mares. - 2.150 metres. 6.300, 3.500, 1.960, 1.120, 700, 280, 140.- allocated by the S.E.T.F. For fillies aged 3, who have won less than €4.600.",
             "track_condition": {
-              "label": "Très souple",
-              "measure": "3,9",
-              "measureTimestamp": 1794394800
+              "measureTimestamp": 0
             },
             "trainer_opinion_raw": 2
           }
@@ -511,68 +434,11 @@
       },
       {
         "number": 10,
-        "name": "MAMBO DE CAHOT",
-        "status": "MODEL_HISTORY_INCOMPLETE",
-        "snapshot_career_starts": 12,
-        "model_recent_starts": 1,
-        "individual_prior_starts_returned": 12,
-        "missing_recent_starts": [
-          {
-            "date": "2026-11-08",
-            "venue": "PARAY-LE-MONIAL",
-            "racecourse_code": "PAR",
-            "race_number": 3,
-            "race_name": "PRIX DU CENT-CINQUANTENAIRE DE LA SOCIET",
-            "discipline": "ATTELE",
-            "distance_m": 2650,
-            "distance_covered_m": 2650,
-            "handicap_m": 0,
-            "start_type": "NON_PRECISE",
-            "rank": 1,
-            "arrival_status": "PLACE",
-            "disqualified": false,
-            "seconds_per_km": 77.2,
-            "race_time_seconds": 204.0,
-            "driver": "ARNAUD DESMOTTES",
-            "trainer": "ARNAUD DESMOTTES",
-            "shoes_raw": "2",
-            "shoes": "DP",
-            "field_size": 15,
-            "purse_eur": 10000,
-            "race_type": null,
-            "turn": "D",
-            "conditions": "PRIX DU CENT-CINQUANTENAIRE DE LA SOCIETE Race 6 DES COURSES DE PARAY-LE-MONIAL Class R Claiming race 10.000. - Harness. - 2.650 metres. 4.500, 2.500, 1.400, 800, 500, 200, 100.- allocated by the S.E.T.F. For 4 year-olds, who have won less than €35.000, to be claimed for €6.500 or €11.000. - 25 meters ahead for colts and fillies to be claimed for €6.500.",
-            "track_condition": {
-              "measureTimestamp": 0
-            },
-            "trainer_opinion_raw": 2
-          }
-        ],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.5,
-          0.5,
-          0.0,
-          2.70805020110221,
-          0.4
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 11,
-        "name": "MUSE DU VALLON",
+        "name": "NADIA DES ARRIS",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 20,
+        "snapshot_career_starts": 6,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 20,
+        "individual_prior_starts_returned": 6,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
@@ -585,7 +451,33 @@
           0.0,
           0.0,
           1.0,
-          3.367295829986474,
+          3.6109179126442243,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 11,
+        "name": "NEPTUNE PACA",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 2,
+        "model_recent_starts": 1,
+        "individual_prior_starts_returned": 2,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-22",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          1.0,
+          0.0,
+          3.091042453358316,
           0.2
         ],
         "frozen_features_unchanged": true,
@@ -594,88 +486,32 @@
       },
       {
         "number": 12,
-        "name": "MAFIOSO DREAM",
+        "name": "NAIROBI MATIDY",
         "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 18,
+        "snapshot_career_starts": 4,
         "model_recent_starts": 1,
-        "individual_prior_starts_returned": 16,
+        "individual_prior_starts_returned": 4,
         "missing_recent_starts": [],
         "conflicts": [],
         "excluded": [
           {
             "date": "2026-11-22",
             "reason": "target_or_future_day"
-          },
-          {
-            "date": "2025-09-24",
-            "reason": "unknown_outcome"
           }
         ],
         "supplemented_recent_features_for_research": [
           0.0,
+          1.0,
           0.0,
-          0.0,
-          3.784189633918261,
+          3.9318256327243257,
           0.2
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 13,
-        "name": "MENHIR",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 11,
-        "model_recent_starts": 0,
-        "individual_prior_starts_returned": 11,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          null,
-          null,
-          null,
-          null,
-          0.0
-        ],
-        "frozen_features_unchanged": true,
-        "recommendations_allowed": false,
-        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
-      },
-      {
-        "number": 14,
-        "name": "MISTER DES LOYAUX",
-        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
-        "snapshot_career_starts": 11,
-        "model_recent_starts": 2,
-        "individual_prior_starts_returned": 11,
-        "missing_recent_starts": [],
-        "conflicts": [],
-        "excluded": [
-          {
-            "date": "2026-11-22",
-            "reason": "target_or_future_day"
-          }
-        ],
-        "supplemented_recent_features_for_research": [
-          0.5,
-          0.5,
-          0.0,
-          2.995732273553991,
-          0.4
         ],
         "frozen_features_unchanged": true,
         "recommendations_allowed": false,
         "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
       }
     ],
-    "evidence_manifest": "predictions_operational/2026-11-22/2026-11-22_R10C2_20261122T112552463323Z/individual_history_evidence/manifest.json",
+    "evidence_manifest": "predictions_operational/2026-11-22/2026-11-22_R13C2_20261122T112907504308Z/individual_history_evidence/manifest.json",
     "market_independent": true,
     "frozen_features_changed": false,
     "recommendations_allowed": false
@@ -683,73 +519,64 @@
   "runners": [
     {
       "number": 1,
-      "name": "MAJOR CHANTEREINE",
+      "name": "NIKITA SPRINT",
       "status": "PARTANT"
     },
     {
       "number": 2,
-      "name": "MACUMBA DESBOIS",
+      "name": "NOUVELLE DU PERCHE",
       "status": "PARTANT"
     },
     {
       "number": 3,
-      "name": "MELIA DE MONGOCHY",
+      "name": "NORA DU RIED",
       "status": "PARTANT"
     },
     {
       "number": 4,
-      "name": "MONA DU FER",
+      "name": "NAVIGA DU RIB",
       "status": "PARTANT"
     },
     {
       "number": 5,
-      "name": "MOOREA",
+      "name": "NODESSA EMESS",
       "status": "PARTANT"
     },
     {
       "number": 6,
-      "name": "MADGIC STRYCK",
+      "name": "NOBLESSE STORY",
       "status": "PARTANT"
     },
     {
       "number": 7,
-      "name": "MISS MARGOT",
+      "name": "NINA D'AUVILLIER",
       "status": "PARTANT"
     },
     {
       "number": 8,
-      "name": "MYSTERE TURGOT",
+      "name": "NAVARONE KILY",
       "status": "PARTANT"
     },
     {
       "number": 9,
-      "name": "MAMBA DES DURIEZ",
+      "name": "NAUSICAA DEUGE",
       "status": "PARTANT"
     },
     {
       "number": 10,
-      "name": "MAMBO DE CAHOT",
+      "name": "NADIA DES ARRIS",
       "status": "PARTANT"
     },
     {
       "number": 11,
-      "name": "MUSE DU VALLON",
+      "name": "NEPTUNE PACA",
       "status": "PARTANT"
     },
     {
       "number": 12,
-      "name": "MAFIOSO DREAM",
-      "status": "PARTANT"
-    },
-    {
-      "number": 13,
-      "name": "MENHIR",
-      "status": "PARTANT"
-    },
-    {
-      "number": 14,
-      "name": "MISTER DES LOYAUX",
+      "name": "NAIROBI MATIDY",
       "status": "PARTANT"
     }
-  ]
+  ],
+  "request_id": "chat-20261122-pmu-r13c2-1223-v4"
 }

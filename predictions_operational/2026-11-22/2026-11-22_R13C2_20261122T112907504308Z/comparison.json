@@ -1,0 +1,398 @@
+{
+  "value_shadow": {
+    "status": "UNAVAILABLE",
+    "reason": "Live quote older than five minutes",
+    "recommendations_allowed": false
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-22_R13C2",
+  "observed_at": "2026-11-22T12:23:00+01:00",
+  "calculated_at": "2026-11-22T11:31:45.004670+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 5,
+      "name": "NODESSA EMESS",
+      "odds": 60.1,
+      "models": {
+        "v6": {
+          "probability": 0.04948316052268339,
+          "fair_odds": 20.20889509556678,
+          "ev": 1.9739379474132717,
+          "implied_raw": 0.016638935108153077,
+          "difference_pp": 3.284422541453031,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.05929697625712278,
+          "fair_odds": 16.864266327237544,
+          "ev": 2.563748273053079,
+          "implied_raw": 0.016638935108153077,
+          "difference_pp": 4.26580411489697,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05613994854711858,
+          "fair_odds": 17.812627654275357,
+          "ev": 2.3740109076818268,
+          "implied_raw": 0.016638935108153077,
+          "difference_pp": 3.9501013438965504,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "NOUVELLE DU PERCHE",
+      "odds": 36.1,
+      "models": {
+        "v6": {
+          "probability": 0.08540207818920613,
+          "fair_odds": 11.709316930022775,
+          "ev": 2.083015022630341,
+          "implied_raw": 0.027700831024930747,
+          "difference_pp": 5.770124716427539,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09404895172148349,
+          "fair_odds": 10.632760724025925,
+          "ev": 2.395167157145554,
+          "implied_raw": 0.027700831024930747,
+          "difference_pp": 6.634812069655275,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.09200729497660898,
+          "fair_odds": 10.868703402857676,
+          "ev": 2.321463348655584,
+          "implied_raw": 0.027700831024930747,
+          "difference_pp": 6.430646395167823,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "NOBLESSE STORY",
+      "odds": 60.8,
+      "models": {
+        "v6": {
+          "probability": 0.0328541169272334,
+          "fair_odds": 30.437585713073332,
+          "ev": 0.9975303091757903,
+          "implied_raw": 0.01644736842105263,
+          "difference_pp": 1.6406748506180766,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03792402267565287,
+          "fair_odds": 26.368510760384012,
+          "ev": 1.3057805786796943,
+          "implied_raw": 0.01644736842105263,
+          "difference_pp": 2.1476654254600236,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.035193659882822526,
+          "fair_odds": 28.414208790148717,
+          "ev": 1.1397745208756094,
+          "implied_raw": 0.01644736842105263,
+          "difference_pp": 1.8746291461769895,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "name": "NADIA DES ARRIS",
+      "odds": 23.8,
+      "models": {
+        "v6": {
+          "probability": 0.0763971980531644,
+          "fair_odds": 13.089485288506332,
+          "ev": 0.818253313665313,
+          "implied_raw": 0.04201680672268907,
+          "difference_pp": 3.4380391330475333,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.06770487484254666,
+          "fair_odds": 14.769985208976216,
+          "ev": 0.6113760212526105,
+          "implied_raw": 0.04201680672268907,
+          "difference_pp": 2.5688068119857586,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05990236841667917,
+          "fair_odds": 16.69383075213368,
+          "ev": 0.4256763683169642,
+          "implied_raw": 0.04201680672268907,
+          "difference_pp": 1.7885561693990095,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "NAVARONE KILY",
+      "odds": 29.8,
+      "models": {
+        "v6": {
+          "probability": 0.05801801200985973,
+          "fair_odds": 17.236026629627666,
+          "ev": 0.72893675789382,
+          "implied_raw": 0.03355704697986577,
+          "difference_pp": 2.446096502999396,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.047424212540965696,
+          "fair_odds": 21.086275267853654,
+          "ev": 0.41324153372077777,
+          "implied_raw": 0.03355704697986577,
+          "difference_pp": 1.3867165561099923,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03936771189449192,
+          "fair_odds": 25.401527085954765,
+          "ev": 0.1731578144558592,
+          "implied_raw": 0.03355704697986577,
+          "difference_pp": 0.5810664914626146,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "NAUSICAA DEUGE",
+      "odds": 21.6,
+      "models": {
+        "v6": {
+          "probability": 0.04030732112015458,
+          "fair_odds": 24.809388771311255,
+          "ev": -0.12936186380466097,
+          "implied_raw": 0.046296296296296294,
+          "difference_pp": -0.5988975176141713,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.041414839704979965,
+          "fair_odds": 24.145934334734466,
+          "ev": -0.10543946237243274,
+          "implied_raw": 0.046296296296296294,
+          "difference_pp": -0.4881456591316329,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.043066435734535134,
+          "fair_odds": 23.219938751469424,
+          "ev": -0.06976498813404108,
+          "implied_raw": 0.046296296296296294,
+          "difference_pp": -0.322986056176116,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "NAVIGA DU RIB",
+      "odds": 3.9,
+      "models": {
+        "v6": {
+          "probability": 0.2250004145993596,
+          "fair_odds": 4.4444362548425556,
+          "ev": -0.1224983830624976,
+          "implied_raw": 0.25641025641025644,
+          "difference_pp": -3.140984181089684,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.17665826261285536,
+          "fair_odds": 5.660646636107188,
+          "ev": -0.3110327758098641,
+          "implied_raw": 0.25641025641025644,
+          "difference_pp": -7.975199379740109,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.22830059489948748,
+          "fair_odds": 4.380190075458471,
+          "ev": -0.10962767989199884,
+          "implied_raw": 0.25641025641025644,
+          "difference_pp": -2.8109661510768964,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "name": "NAIROBI MATIDY",
+      "odds": 7,
+      "models": {
+        "v6": {
+          "probability": 0.11656494854502343,
+          "fair_odds": 8.57890826086324,
+          "ev": -0.18404536018483597,
+          "implied_raw": 0.14285714285714285,
+          "difference_pp": -2.6292194312119417,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.13884612429080972,
+          "fair_odds": 7.202217599574657,
+          "ev": -0.02807712996433187,
+          "implied_raw": 0.14285714285714285,
+          "difference_pp": -0.40110185663331244,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.12375066988726972,
+          "fair_odds": 8.080764337768407,
+          "ev": -0.1337453107891119,
+          "implied_raw": 0.14285714285714285,
+          "difference_pp": -1.9106472969873125,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "NINA D'AUVILLIER",
+      "odds": 11.4,
+      "models": {
+        "v6": {
+          "probability": 0.08336332332038238,
+          "fair_odds": 11.995682995467858,
+          "ev": -0.049658114147640875,
+          "implied_raw": 0.08771929824561403,
+          "difference_pp": -0.4355974925231654,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.07402660667909428,
+          "fair_odds": 13.508656479892496,
+          "ev": -0.1560966838583252,
+          "implied_raw": 0.08771929824561403,
+          "difference_pp": -1.3692691566519755,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.07080171392222362,
+          "fair_odds": 14.12395187351693,
+          "ev": -0.1928604612866507,
+          "implied_raw": 0.08771929824561403,
+          "difference_pp": -1.691758432339041,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "name": "NEPTUNE PACA",
+      "odds": 6.8,
+      "models": {
+        "v6": {
+          "probability": 0.08214883219944066,
+          "fair_odds": 12.173027579652056,
+          "ev": -0.4413879410438035,
+          "implied_raw": 0.14705882352941177,
+          "difference_pp": -6.490999132997111,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09700409850209994,
+          "fair_odds": 10.308842775115858,
+          "ev": -0.34037213018572043,
+          "implied_raw": 0.14705882352941177,
+          "difference_pp": -5.005472502731183,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.09349526568016316,
+          "fair_odds": 10.695728737975761,
+          "ev": -0.36423219337489054,
+          "implied_raw": 0.14705882352941177,
+          "difference_pp": -5.356355784924862,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "name": "NIKITA SPRINT",
+      "odds": 5,
+      "models": {
+        "v6": {
+          "probability": 0.09677772234551961,
+          "fair_odds": 10.332956549956414,
+          "ev": -0.516111388272402,
+          "implied_raw": 0.2,
+          "difference_pp": -10.32222776544804,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.10249229001247794,
+          "fair_odds": 9.756831463891137,
+          "ev": -0.48753854993761037,
+          "implied_raw": 0.2,
+          "difference_pp": -9.750770998752207,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.09841310744133817,
+          "fair_odds": 10.161248089804271,
+          "ev": -0.5079344627933091,
+          "implied_raw": 0.2,
+          "difference_pp": -10.158689255866184,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "NORA DU RIED",
+      "odds": 7,
+      "models": {
+        "v6": {
+          "probability": 0.05368287216797263,
+          "fair_odds": 18.627915378130666,
+          "ev": -0.6242198948241916,
+          "implied_raw": 0.14285714285714285,
+          "difference_pp": -8.917427068917021,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.06315874015991134,
+          "fair_odds": 15.833121393303673,
+          "ev": -0.5578888188806206,
+          "implied_raw": 0.14285714285714285,
+          "difference_pp": -7.969840269723151,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.05956122871726154,
+          "fair_odds": 16.789445441883377,
+          "ev": -0.5830713989791692,
+          "implied_raw": 0.14285714285714285,
+          "difference_pp": -8.32959141398813,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}

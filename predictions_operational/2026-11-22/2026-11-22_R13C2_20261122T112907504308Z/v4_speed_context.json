@@ -1,0 +1,77 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-22_R13C2",
+  "target_date": "2026-11-22",
+  "captured_at": "2026-11-22T11:31:37.347188+00:00",
+  "prior_races": 30583,
+  "last_prior_day": "2026-11-21",
+  "prior_history_sha256": "7faff3cae71769e629d05f7840923d8e5e98ca66767a5eb35834cf0e1b58f6c6",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('NIKITA SPRINT', 'QUELLE BELLE FILLE', 'GANAY DE BANVILLE')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('NOUVELLE DU PERCHE', 'VANILLE DU PERCHE', 'DOBERMAN')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('NORA DU RIED', 'ENANIE DU RIED', 'GOTLAND')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('NAVIGA DU RIB', 'RIVIGA DU RIB', 'FACE TIME BOURBON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "5": {
+      "horse_id": "pedigree:('NODESSA EMESS', 'UDESSA DU VIVIER', 'QUAKER JET')",
+      "context_residual": -3.248245375935483,
+      "prior_races_used": 3
+    },
+    "6": {
+      "horse_id": "pedigree:('NOBLESSE STORY', 'ALTESSE STORY', \"TITAN D'OCCAGNES\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:(\"NINA D'AUVILLIER\", 'IOULIA SYGA', 'ALTO DE VIETTE')",
+      "context_residual": -1.2742197149801504,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('NAVARONE KILY', 'FLORA KILY', \"GU D'HERIPRE\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:('NAUSICAA DEUGE', 'GIGNIA LA RAVELLE', 'ERIDAN')",
+      "context_residual": -2.965219189987838,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('NADIA DES ARRIS', 'HIGH SOCIETY', \"UN MEC D'HERIPRE\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "11": {
+      "horse_id": "pedigree:('NEPTUNE PACA', 'VENUS DU LOIR', 'BOLERO LOVE')",
+      "context_residual": -2.148245375935483,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('NAIROBI MATIDY', 'GENNY MAUVAISVILLE', 'HOHNECK')",
+      "context_residual": -2.0487560585921165,
+      "prior_races_used": 1
+    }
+  },
+  "target_participants": 12,
+  "coverage_active": 5,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
