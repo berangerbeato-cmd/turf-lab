@@ -29,6 +29,10 @@ def frozen():
         raise ValueError("Changed five-part protocol")
     if sha("models/v4_multifeature/frozen_before_test.json")!=lock["base_lock_sha256"]:
         raise ValueError("Fitted 47-feature V4 model changed")
+    if sha("turf_lab/v4_next_research.py")!=lock["research_core_sha256"]:
+        raise ValueError("DQ/context/odds/Quinté calculation changed after fitting")
+    if sha("turf_lab/history_repair_v2.py")!=lock["history_v2_sha256"]:
+        raise ValueError("History Repair V2 rules changed after fitting")
     models={}
     for name in ("disqualification","race_context","odds_bands","quinte"):
         path=ROOT/(name+".json")
