@@ -54,9 +54,10 @@ def confirm(path):
                    path.parent/"v4_speed_context.json",
                    aux_path,now=generated)
     for key in ("gagnant","top5","history_repair","context_speed","model_sha256",
-                "relative_class_and_gains","weighted_recent_form","reliability_R"):
+                "relative_class_and_gains","weighted_recent_form","reliability_R",
+                "research_improvements","ze5"):
         if saved[key]!=reproduced[key]:
-            raise ValueError("Original 47-feature V4 inputs or outputs not reproducible")
+            raise ValueError("Original integrated V4 and its five research components not reproducible")
     objects,lock=frozen()
     aux=json.loads(aux_path.read_text())
     runners,_,active,_,indices=enhanced_frame(
@@ -111,12 +112,34 @@ def run(output=OUT):
             item["metrics"]={
                "v4_integrated":metrics(p4,saved["top5"]["numbers"],order),
                "v3_frozen":metrics(p3,v3_order,order)}
+            ze=saved["ze5"]
+            if (ze.get("status")!="UNVALIDATED_JOINT_PROBABILITY_NO_BET"
+                    or not 0<=ze.get("probability_unordered_paper",-1)<=1
+                    or len(set(ze.get("numbers",[])))!=5):
+                raise ValueError("No trustworthy original prestart ZE5 probability")
+            item["ze5_paper"]={
+                "predicted_joint_probability":ze["probability_unordered_paper"],
+                "actual_exact":int(set(ze["numbers"])==set(order[:5]))}
+            dq_predictions=saved["research_improvements"]["disqualification"]["probability_by_runner"]
+            official=next((r for r in cache[day].get("records",[])
+                           if r["race_id"]==rid),None)
+            if official is not None:
+                from turf_lab.v4_next_research import dq_label
+                labels={p["numPmu"]:dq_label(p) for p in official["participants"]}
+                dq_pairs=[(float(v),labels[int(n)]) for n,v in dq_predictions.items()
+                          if int(n) in labels and labels[int(n)] is not None]
+                if dq_pairs:
+                    item["dq_brier"]={
+                        "n":len(dq_pairs),
+                        "total_squared_error":sum((p-label)**2 for p,label in dq_pairs)}
             scores.append(item)
         except (ValueError,OSError,KeyError,TypeError) as e:
             invalid.append({"source":str(path),"error":str(e)})
     fields=("log_loss","brier","top1_correct","top5_overlap","top5_exact")
     averages={label:{m:mean(r["metrics"][label][m] for r in scores) for m in fields}
               for label in ("v4_integrated","v3_frozen")} if scores else {}
+    ze5_scores=[r["ze5_paper"] for r in scores if "ze5_paper" in r]
+    dq_scores=[r["dq_brier"] for r in scores if "dq_brier" in r]
     result={"version":"turf_lab_v4_multifeature_1",
             "status":"SINGLE_47_FEATURE_V4_PRESTART_COHORT",
             "research_only":True,"recommendations_allowed":False,
@@ -124,6 +147,15 @@ def run(output=OUT):
             "pending_results":len(pending),"invalid_inputs":len(invalid),
             "minimum_review_races":200,"validation_ready":len(scores)>=200,
             "mean":averages,"scored":scores,"pending":pending,"invalid":invalid,
+            "ze5_paper_validation":{
+                "races":len(ze5_scores),
+                "expected_exact":sum(r["predicted_joint_probability"] for r in ze5_scores),
+                "actual_exact":sum(r["actual_exact"] for r in ze5_scores),
+                "not_market_validated":True},
+            "disqualification_validation":{
+                "horses":sum(r["n"] for r in dq_scores),
+                "brier":(sum(r["total_squared_error"] for r in dq_scores)/
+                         sum(r["n"] for r in dq_scores)) if dq_scores else None},
             "roi":None,
             "limits":["2026 historical comparisons were non-independent; this cohort counts ONLY forecasts archived before actual race starts.",
                       "No ZEturf executable odds or betting settlement, so profitability cannot be claimed.",
