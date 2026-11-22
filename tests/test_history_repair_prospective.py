@@ -22,7 +22,7 @@ class ForwardScoreTests(unittest.TestCase):
                      {"numOfficiel":2,"pays":{"code":"BEL"},"courses":[race(1,50)]}]}}
         selected=select(programme,now,0)
         self.assertEqual([(m["numOfficiel"],c["numOrdre"]) for m,c in selected],[(1,3),(1,4)])
-        self.assertEqual(select(programme,now,4),[])
+        self.assertEqual(select(programme,now,10),[])
 
     def make_sidecar(self, root):
         folder=root/"predictions_operational/2026-11-23/race1"
