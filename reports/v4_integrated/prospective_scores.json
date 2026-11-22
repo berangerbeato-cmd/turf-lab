@@ -20,39 +20,34 @@
   "captured_planned_slots": 4,
   "original_captures": 4,
   "verified_results": 0,
-  "pending_results": 4,
-  "invalid_inputs": 0,
+  "pending_results": 1,
+  "invalid_inputs": 3,
   "minimum_review_races": 200,
   "validation_ready": false,
   "mean": {},
   "scored": [],
   "pending": [
     {
-      "race_id": "2026-11-22_R10C1",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
-      "prior_speed_coverage": 7
-    },
-    {
-      "race_id": "2026-11-22_R11C2",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R11C2/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
-      "prior_speed_coverage": 6
-    },
-    {
       "race_id": "2026-11-22_R12C3",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R12C3/v4_integrated.json",
       "outcome": "AWAITING_VERIFIED_RESULT",
       "prior_speed_coverage": 7
-    },
-    {
-      "race_id": "2026-11-22_R1C1",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R1C1/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
-      "prior_speed_coverage": 14
     }
   ],
-  "invalid": [],
+  "invalid": [
+    {
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/v4_integrated.json",
+      "error": "Original integrated V4 and its five research components not reproducible"
+    },
+    {
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R11C2/v4_integrated.json",
+      "error": "Original integrated V4 and its five research components not reproducible"
+    },
+    {
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R1C1/v4_integrated.json",
+      "error": "Original integrated V4 and its five research components not reproducible"
+    }
+  ],
   "ze5_paper_validation": {
     "races": 0,
     "expected_exact": 0,
