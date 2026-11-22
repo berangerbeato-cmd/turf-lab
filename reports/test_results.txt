@@ -172,6 +172,7 @@ test_freeze_and_tamper (test_prospective_cohort.CohortTests.test_freeze_and_tamp
 test_no_network_outside_dates (test_prospective_cohort.CohortTests.test_no_network_outside_dates) ... ok
 test_paired_score_reused_without_result_refetch (test_prospective_cohort.CohortTests.test_paired_score_reused_without_result_refetch) ... ok
 test_sampling_fixed_unique_endpoints_and_sorted (test_prospective_cohort.CohortTests.test_sampling_fixed_unique_endpoints_and_sorted) ... ok
+test_prospective_ten_daily (unittest.loader._FailedTest.test_prospective_ten_daily) ... ERROR
 test_duplicates_rejected (test_rank45.Rank45Tests.test_duplicates_rejected) ... ok
 test_normalized_joint_distributions (test_rank45.Rank45Tests.test_normalized_joint_distributions) ... ok
 test_uniform_and_order (test_rank45.Rank45Tests.test_uniform_and_order) ... ok
@@ -404,6 +405,27 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'numpy'
 
 ======================================================================
+ERROR: test_prospective_ten_daily (unittest.loader._FailedTest.test_prospective_ten_daily)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_prospective_ten_daily
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/runner/work/turf-lab/turf-lab/tests/test_prospective_ten_daily.py", line 13, in <module>
+    from scripts.capture_history_repair_prospective import (
+  File "/home/runner/work/turf-lab/turf-lab/scripts/capture_history_repair_prospective.py", line 12, in <module>
+    from scripts.predict_operational import classic_frame, load_history
+  File "/home/runner/work/turf-lab/turf-lab/scripts/predict_operational.py", line 16, in <module>
+    from turf_lab.market_probabilities import markets
+  File "/home/runner/work/turf-lab/turf-lab/turf_lab/market_probabilities.py", line 5, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
 ERROR: test_failure_cannot_be_reported_as_previous_success (test_request_status.RequestStatus.test_failure_cannot_be_reported_as_previous_success)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -631,9 +653,9 @@ ModuleNotFoundError: No module named 'numpy'
 
 
 ----------------------------------------------------------------------
-Ran 272 tests in 0.259s
+Ran 273 tests in 0.224s
 
-FAILED (errors=21, skipped=7)
+FAILED (errors=22, skipped=7)
 Outside fixed cohort dates; no requests
 Outside fixed cohort dates; no requests
 Existing holdout retained; no repeated selection
