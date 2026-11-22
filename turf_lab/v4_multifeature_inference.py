@@ -151,7 +151,7 @@ def run(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,now=Non
             value=winner[n]*odds[n]-1
             if value>=.10:
                 ev.append({"number":n,"indicative_ev":value})
-    return {
+    report = {
       "version":"turf_lab_v4_multifeature_1",
       "model":"TURF_LAB_V4",
       "status":"HISTORY_INCOMPLETE_NO_BET" if unresolved else "RESEARCH_NO_BET",
@@ -191,6 +191,13 @@ def run(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,now=Non
                 "2026 historical testing already seen; no independent prospective validation or real ROI.",
                 "Real-money betting policy remains suspended."]
     }
+    # One V4, one report. The DQ, contextual calibration, odds-band and
+    # coherent unordered ZE5 remain transparent research side diagnostics;
+    # the only winner and value fields keep their frozen 47-feature basis.
+    from turf_lab.v4_next_inference import augment
+    return augment(report,original,repair,runners,sports,
+                   calibrated=winner if odds is not None else None,
+                   odds=odds)
 
 
 def record(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,output=None,now=None):
