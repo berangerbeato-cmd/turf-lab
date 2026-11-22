@@ -33,5 +33,20 @@
     "weighted_recent_form_35_25_18_12_10",
     "reliability_R_data_quality_and_learned_market_gate"
   ],
-  "money_point_in_time_independently_proven": false
+  "money_point_in_time_independently_proven": false,
+  "research_bundle": {
+    "version": "turf_lab_v4_next_research_bundle_1",
+    "training_lock": "models/v4_next_bundle/frozen_before_test.json",
+    "components": {
+      "history_repair_v2": "SOURCE_RECONCILIATION_AND_QUARANTINE",
+      "disqualification": "INDIVIDUAL_PROBABILITY_DIAGNOSTIC_NOT_DOUBLE_COUNTED",
+      "race_context": "SHRUNK_TEMPERATURE_COMPARISON_NOT_AUTO_SUBSTITUTED",
+      "odds_bias": "PRIOR_PRICE_BAND_CALIBRATION_SHADOW_ONLY",
+      "ze5": "EXACT_UNORDERED_JOINT_PROBABILITY_PAPER_ONLY"
+    },
+    "all_components_in_single_V4_report": true,
+    "another_user_visible_model": false,
+    "independent_forward_validation_complete": false,
+    "recommendations_allowed": false
+  }
 }
