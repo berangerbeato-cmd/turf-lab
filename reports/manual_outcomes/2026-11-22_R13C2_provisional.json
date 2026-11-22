@@ -1,0 +1,61 @@
+{
+  "schema": "manual_provisional_result_observation_v1",
+  "official_pmu_race_id": "2026-11-22_R13C2",
+  "operator_race_id": "ZEturf R10C2",
+  "venue": "VIRE",
+  "scheduled_start_paris": "2026-11-22T12:35:00+01:00",
+  "provenance": {
+    "source": "User-provided ZEturf screenshot in conversation, IMG_2670.jpeg",
+    "label_on_image": "Arrivée provisoire",
+    "result_status": "PROVISIONAL_NOT_OFFICIALLY_VERIFIED",
+    "official_result_verification_pending": true
+  },
+  "provisional_finish_order_first_seven": [
+    4,
+    10,
+    7,
+    3,
+    5,
+    6,
+    2
+  ],
+  "disqualified_numbers": [
+    1,
+    8,
+    9,
+    12
+  ],
+  "prestart_prediction": {
+    "model": "turf_lab_v4_fully_integrated_1",
+    "source": "predictions_operational/2026-11-22/2026-11-22_R13C2_20261122T112907504308Z/v4_integrated.json",
+    "generated_at_utc": "2026-11-22T11:33:56.743672+00:00",
+    "research_status": "HISTORY_INCOMPLETE_NO_BET",
+    "predicted_winner_number": 4,
+    "predicted_winner_probability": 0.24415706011200056,
+    "predicted_unordered_top5": [
+      2,
+      4,
+      7,
+      11,
+      12
+    ],
+    "predicted_unordered_ze5_probability": 0.005951222765466642,
+    "real_bet_placed": false,
+    "quotes_fresh_for_v4_market": false
+  },
+  "provisional_comparison": {
+    "win_top1_correct": true,
+    "top5_overlap_numbers": [
+      4,
+      7
+    ],
+    "top5_overlap_count": 2,
+    "top5_exact": false,
+    "predicted_top5_disqualified": [
+      12
+    ],
+    "unexpected_second_place": 10,
+    "observed_finishing_position_of_predicted_2": 7
+  },
+  "validation_note": "This file records user-supplied provisional finish only. Not an official confirmed arrival. It must not alter immutable prestart forecasts, independent prospective scoring, recommendations_allowed, or live calibration until official result verification."
+}
