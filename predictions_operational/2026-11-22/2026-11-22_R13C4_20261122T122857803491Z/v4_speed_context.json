@@ -1,0 +1,92 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-22_R13C4",
+  "target_date": "2026-11-22",
+  "captured_at": "2026-11-22T12:31:43.097399+00:00",
+  "prior_races": 30583,
+  "last_prior_day": "2026-11-21",
+  "prior_history_sha256": "7faff3cae71769e629d05f7840923d8e5e98ca66767a5eb35834cf0e1b58f6c6",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:(\"LOLLIPOP D'UNEVIE\", 'BALI DU PORHOET', \"LET'S GO ALONG\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('LITTLE EXPRESS', 'SWEET SIXTEEN', 'GATSBY PERRINE')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('LOLITA DU MIREL', 'LISA DU MIREL', 'REAL DE LOU')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:(\"LUEUR D'HAUFOR\", \"FLEUR D'HAUFOR\", \"UN AMOUR D'HAUFOR\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "5": {
+      "horse_id": "pedigree:('LADY DE BEYLEV', 'EMINE DAIRPET', 'CLIF DU POMMEREUX')",
+      "context_residual": -0.1287824947484114,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:('LOLLIPOP STAR', 'STAR DE MELJAC', \"ROLLING D'HERIPRE\")",
+      "context_residual": 1.1279321745988418,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('LEWISIA DE LATOM', 'PEPITE GRANGELABBE', 'DOBERMAN')",
+      "context_residual": -1.048245375935483,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('LOLA DE LA DOUCE', 'VALSE DE LA DOUCE', \"CYPRIN D'ERABLE\")",
+      "context_residual": 0.251754624064517,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('LAURIANE DU RIED', 'ULENE DU RIED', 'EXPRESS JET')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('LOVELY FOUTEAU', 'DIVINE FOUTEAU', 'SEVERINO')",
+      "context_residual": -1.4413153413996187,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('LILI DU PRESSOIR', 'COQUERELLE', 'TRESOR WIC')",
+      "context_residual": 0.051754624064516974,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('LILI MARLEEN', 'CAPRI', 'DJANGO RIFF')",
+      "context_residual": 0.46678981937603387,
+      "prior_races_used": 1
+    },
+    "13": {
+      "horse_id": "pedigree:('LAURENTINA TURGOT', 'QLOE TURGOT', 'DIABLE DE VAUVERT')",
+      "context_residual": 2.6385527788592444,
+      "prior_races_used": 1
+    },
+    "14": {
+      "horse_id": "pedigree:('LADY SLAVE TEK', 'UNANIME PEARL', \"UN AMOUR D'HAUFOR\")",
+      "context_residual": -8.356119582542416,
+      "prior_races_used": 2
+    },
+    "15": {
+      "horse_id": "pedigree:('LITTLESNABE', 'ELITESNABE', 'EXCELLENT')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 15,
+  "coverage_active": 9,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
