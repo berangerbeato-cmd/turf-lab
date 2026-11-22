@@ -87,6 +87,25 @@ def metrics(p,top5,finish):
 
 
 def run(output=OUT):
+    # Report the planned sample alongside successfully saved original V4
+    # forecasts. Ten are a target, not ten invented observations.
+    daily_plans=[]
+    for plan_file in sorted(ROOT.glob("*/selection_plan.json")):
+        plan=json.loads(plan_file.read_text())
+        if (plan.get("daily_target")!=10
+                or plan.get("selection_rule")!="SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2"):
+            raise ValueError("Unexpected daily prospective plan")
+        folder=plan_file.parent
+        slots=plan["selected"]
+        if len(slots)>10 or len({p["race_id"] for p in slots})!=len(slots):
+            raise ValueError("Non-unique ten-race cohort")
+        captured=sum((folder/f"R{p['reunion']}C{p['course']}"/"v4_integrated.json").exists()
+                     for p in slots)
+        attempted=sum((folder/f"R{p['reunion']}C{p['course']}"/"attempt.json").exists()
+                      for p in slots)
+        daily_plans.append({"date":plan["date"],"selected":len(slots),
+                            "attempted":attempted,"v4_captured":captured,
+                            "missed_or_failed":attempted-captured})
     paths=sorted(ROOT.glob("*/*/v4_integrated.json"))
     history=History()
     scores=[];pending=[];invalid=[];already=set();cache={}
@@ -143,6 +162,13 @@ def run(output=OUT):
     result={"version":"turf_lab_v4_multifeature_1",
             "status":"SINGLE_47_FEATURE_V4_PRESTART_COHORT",
             "research_only":True,"recommendations_allowed":False,
+            "daily_target_races":10,
+            "daily_execution_cap":4,
+            "planned_days":len(daily_plans),
+            "daily_capture_plans":daily_plans,
+            "planned_slots":sum(row["selected"] for row in daily_plans),
+            "attempted_slots":sum(row["attempted"] for row in daily_plans),
+            "captured_planned_slots":sum(row["v4_captured"] for row in daily_plans),
             "original_captures":len(paths),"verified_results":len(scores),
             "pending_results":len(pending),"invalid_inputs":len(invalid),
             "minimum_review_races":200,"validation_ready":len(scores)>=200,
