@@ -1,0 +1,32 @@
+{
+  "version": "turf_lab_v4_fully_integrated_1",
+  "status": "SINGLE_V4_ALL_ACTIVE_NO_BET",
+  "features": 47,
+  "components": {
+    "history_repair": "V2_COMPARISON_AND_CONFLICT_QUARANTINE_APPLIED_AS_QUALITY_GATE",
+    "winning": "FROZEN_47F_WINNER_PLUS_CONTEXT_AND_FITTED_SIGNED_DQ_CORRECTION",
+    "top5": "MAX_UNORDERED_JOINT_PROBABILITY_FROM_FROZEN_5_STAGES",
+    "market": "FROZEN_2025H2_R_MODEL_PLUS_FROZEN_2025_ODDS_BIN_CORRECTION",
+    "value": "FINAL_ADJUSTED_MARKET_PROBABILITY_TIMES_VERIFIED_PRESTART_ODDS_MINUS_ONE"
+  },
+  "dq_residual_ridge": 0.08,
+  "dq_residual_bounds": [
+    -1,
+    1
+  ],
+  "dq_residual_fit": [
+    "2025-01-01",
+    "2025-06-30"
+  ],
+  "no_manual_model_selection_from_2026": true,
+  "history_v2_policy": "Apply verified corrections from history V1.1, quarantine remaining conflicts; do not fabricate historical rows",
+  "forecast_policy": "NO BET; 200 prospectively collected races needed for first independent performance review",
+  "recommendations_allowed": false,
+  "real_money_betting": false,
+  "warnings": [
+    "Already inspected 2025 and 2026 experimental windows; no independent model-performance proof",
+    "Conditional-win DQ calibration may have zero or negative fitted weight due to DQ already in baseline",
+    "Odds-band correction needs a fully verified <=15 minute before-start price board",
+    "Quinté joint probability is not validated as a betting payout or ROI"
+  ]
+}
