@@ -1,7 +1,7 @@
 {
-  "version": "turf_lab_v4_multifeature_1",
+  "version": "turf_lab_v4_fully_integrated_1",
   "model": "TURF_LAB_V4",
-  "status": "ACTIVE_SINGLE_RESEARCH_MODEL_READY",
+  "status": "ACTIVE_SINGLE_MODEL_ALL_FIVE_BLOCKS_APPLIED_RESEARCH_NO_BET",
   "single_user_facing_model": true,
   "historical_variables": 47,
   "contextual_speed_integrated": true,
@@ -26,9 +26,9 @@
   "new_47_feature_top1_2026": 0.2662518773,
   "recommendations_allowed": false,
   "decision": "NO BET",
-  "note": "V4 uniquely active at 47 features. Five new research extensions are connected to its single report; independent validation incomplete. No actual race was forecast by this status update.",
+  "note": "All five blocks are wired into the main prediction path, verified at integration level. This is model readiness, not a real new horse prediction. Future performance and executable-value ROI are not yet independently proved.",
   "research_bundle": "turf_lab_v4_next_research_bundle_1",
-  "research_bundle_status": "TRAINED_FROZEN_AND_CONNECTED_TO_SINGLE_REPORT",
+  "research_bundle_status": "ALL_COMPONENTS_ACTIVE_IN_ONE_MAIN_RESULT",
   "research_parts": [
     "History Repair V2 quality/conflict audit",
     "DQ separately fitted",
@@ -37,5 +37,13 @@
     "unordered Quinté joint probability"
   ],
   "research_models_lock": "models/v4_next_bundle/frozen_before_test.json",
-  "research_test_outcomes": "reports/v4_next_bundle/evaluation.json"
+  "research_test_outcomes": "reports/v4_next_bundle/evaluation.json",
+  "all_improvements_applied_in_primary_outputs": true,
+  "dq_residual_coefficient": 0.020841862035709664,
+  "dq_residual_training_races": 3156,
+  "winner_formula": "BASE47_PLUS_FITTED_DQ_RESIDUAL_PLUS_APPLIED_COURSE_CONTEXT",
+  "market_formula": "R_CONDITIONED_PROBABILITY_PLUS_ACTIVE_PRICE_BAND_CORRECTION_IF_VERIFIED_QUOTES",
+  "top5_formula": "MAX_UNORDERED_JOINT_PROBABILITY_FROM_5_STAGES",
+  "history_repair_v2": "APPLIED_SOURCE_CHECK_WITH_QUARANTINE_OF_UNRESOLVED",
+  "activation_lock": "models/v4_active_activation/frozen_activation.json"
 }
