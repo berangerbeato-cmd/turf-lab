@@ -1,3 +1,23 @@
+# TURF LAB V4 : une seule interface, cinq chantiers supplémentaires
+
+La V4 reste **un modèle utilisateur unique de 47 caractéristiques**. Son pipeline affiche maintenant aussi History Repair V2, le risque individuel de disqualification, la spécialisation des probabilités par parcours, la correction expérimentale favoris/outsiders et un Z5 sans ordre **avec probabilité de combinaison calculée par DP**.
+
+Les poids supplémentaires et leurs preuves datées sont figés dans `models/v4_next_bundle/frozen_before_test.json`. Les coefficients initiaux `models/v4_multifeature/` ne sont pas effacés. Aucun second modèle « V5 » à sélectionner.
+
+Les nouveaux calculs contextuels et de tranches de cotes sont **des hypothèses de recherche dans le même rapport**, pas des probabilités certifiées ni des ajustements forcés de la chance gagnant. Le modèle DQ est indépendant et ne soustrait jamais deux fois les disqualifications déjà comprises dans les 47 variables.
+
+L'étude 2026 donne : DQ Brier **0,16375** contre 0,17017 pour un risque constant ; contextes log loss **2,10285 → 2,10234** ; bandes de cotes **1,92332 → 1,91797** ; Z5 **5,31 attendus, 6 obtenus sur 246 courses**. Ces chiffres ne permettent pas de conclure à un avantage de pari parce que le test a déjà été consulté et aucune cote réellement prise n'a été validée.
+
+**History Repair V2 a clarifié les écarts, pas ajouté des milliers de corrections :** 6 848 divergences de fenêtres historiques, 103 conflits remis en quarantaine. Les premières captures originales de la nouvelle V4 n'ont pas encore de résultats vérifiés.
+
+**Politique de jeu réel : SUSPENDED / NO BET.**
+
+[Résultats](../reports/v4_next_bundle/RESULTS.md) | [Paramètres V4](../config/v4_active.json) | [Suivi des nouvelles courses](../reports/v4_integrated/prospective_scores.json)
+
+---
+
+## Historique des versions et calculs précédents
+
 # Turf Lab V4 unique : 47 variables (version active)
 
 **La V4 47 variables est désormais la seule V4 présentée à l'utilisateur.** Les anciens modèles ne servent que de témoins scientifiques.
