@@ -1,27 +1,17 @@
 {
   "date": "2026-11-22",
   "selected_races": [
-    "2026-11-22_R14C1",
-    "2026-11-22_R13C4",
-    "2026-11-22_R10C2",
-    "2026-11-22_R12C4"
+    "2026-11-22_R1C2",
+    "2026-11-22_R11C3"
   ],
   "saved": [],
   "skipped": [
     {
-      "race_id": "2026-11-22_R14C1",
+      "race_id": "2026-11-22_R1C2",
       "reason": "MISSED_PRESTART_NO_REPLACEMENT"
     },
     {
-      "race_id": "2026-11-22_R13C4",
-      "reason": "MISSED_PRESTART_NO_REPLACEMENT"
-    },
-    {
-      "race_id": "2026-11-22_R10C2",
-      "reason": "MISSED_PRESTART_NO_REPLACEMENT"
-    },
-    {
-      "race_id": "2026-11-22_R12C4",
+      "race_id": "2026-11-22_R11C3",
       "reason": "MISSED_PRESTART_NO_REPLACEMENT"
     }
   ],
@@ -36,9 +26,9 @@
     "date": "2026-11-22",
     "daily_target": 10,
     "selected": 10,
-    "attempted": 8,
+    "attempted": 10,
     "v4_prestart_captured": 4,
-    "failed_or_late": 4,
+    "failed_or_late": 6,
     "no_substitutions": true,
     "outcomes": [
       {
@@ -91,13 +81,13 @@
       },
       {
         "race_id": "2026-11-22_R1C2",
-        "attempt_status": "NOT_ATTEMPTED",
+        "attempt_status": "MISSED_PRESTART",
         "prestart_v4_saved": false,
         "record_path": null
       },
       {
         "race_id": "2026-11-22_R11C3",
-        "attempt_status": "NOT_ATTEMPTED",
+        "attempt_status": "MISSED_PRESTART",
         "prestart_v4_saved": false,
         "record_path": null
       }
