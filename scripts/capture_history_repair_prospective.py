@@ -19,9 +19,13 @@ from turf_lab.individual_history_check import check_all
 ROOT = Path("reports/history_repair_shadow_v1/prospective_forecasts")
 START = "2026-11-22"
 END = "2027-03-22"
-MAX_PER_RUN = 2
-MAX_PER_DAY = 4
+# Ten FIXED race slots per day, sampled without looking at form/odds.
+# Four at most per workflow avoids a burst of per-horse PMU requests.
+MAX_PER_RUN = 4
+MAX_PER_DAY = 10
 LEAD_MINUTES = 40
+SELECTION_RULE = "SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2"
+PLAN_FILE = "selection_plan.json"
 
 
 def select(programme, now, already, max_per_run=MAX_PER_RUN, max_per_day=MAX_PER_DAY):
@@ -37,6 +41,71 @@ def select(programme, now, already, max_per_run=MAX_PER_RUN, max_per_day=MAX_PER
     )
     return candidates[:min(max_per_run, max_per_day-already)]
 
+def plan_for_day(folder, programme, now):
+    """Choose ALL ten daily race IDs before any forecast/outcome inspection.
+
+    No failed, late, disqualified or unpopular horse/race is replaced by a
+    later race. The plan is persisted across scheduled GitHub executions.
+    """
+    path=folder/PLAN_FILE
+    if path.exists():
+        plan=json.loads(path.read_text())
+        if (plan.get("date")!=folder.name or plan.get("selection_rule")!=SELECTION_RULE
+                or plan.get("daily_target")!=MAX_PER_DAY):
+            raise ValueError("Frozen daily cohort selection has changed")
+        items=plan.get("selected",[])
+        if len(items)>MAX_PER_DAY or len({r["race_id"] for r in items})!=len(items):
+            raise ValueError("Duplicate or excessive selected daily races")
+        return plan
+    chosen=select(programme,now,0,max_per_run=MAX_PER_DAY,max_per_day=MAX_PER_DAY)
+    selected=[{"race_id":f"{folder.name}_R{meeting['numOfficiel']}C{course['numOrdre']}",
+               "reunion":meeting["numOfficiel"],"course":course["numOrdre"],
+               "start_ms":course["heureDepart"],"selection_index":i+1}
+              for i,(meeting,course) in enumerate(chosen)]
+    plan={"version":"prospective_10_per_day_v1","date":folder.name,
+          "created_at_utc":now.isoformat(),"selection_rule":SELECTION_RULE,
+          "daily_target":MAX_PER_DAY,"per_execution_max":MAX_PER_RUN,
+          "lead_minutes":LEAD_MINUTES,"selected":selected,
+          "no_replacements_after_error":True,"no_outcome_or_odds_filter":True,
+          "recommendations_allowed":False}
+    dump(path,plan)
+    return plan
+
+
+def next_planned(folder, plan, now, maximum=MAX_PER_RUN):
+    """Only untouched planned IDs, still at least 40 minutes prestart."""
+    pending=[]
+    for item in plan["selected"]:
+        name=f"R{item['reunion']}C{item['course']}"
+        dest=folder/name
+        if (dest/"attempt.json").exists() or (dest/"prediction.json").exists():
+            continue
+        pending.append(item)
+    return pending[:maximum]
+
+
+def daily_summary(folder, plan):
+    outcomes=[]
+    for item in plan["selected"]:
+        dest=folder/f"R{item['reunion']}C{item['course']}"
+        attempt=dest/"attempt.json"
+        evidence=dest/"v4_integrated.json"
+        data=json.loads(attempt.read_text()) if attempt.exists() else None
+        outcomes.append({"race_id":item["race_id"],
+                         "attempt_status":data.get("status") if data else "NOT_ATTEMPTED",
+                         "prestart_v4_saved":evidence.exists(),
+                         "record_path":str(evidence) if evidence.exists() else None})
+    report={"version":"prospective_10_per_day_v1","date":plan["date"],
+            "daily_target":MAX_PER_DAY,"selected":len(outcomes),
+            "attempted":sum(o["attempt_status"]!="NOT_ATTEMPTED" for o in outcomes),
+            "v4_prestart_captured":sum(o["prestart_v4_saved"] for o in outcomes),
+            "failed_or_late":sum(o["attempt_status"] in ("ERROR","MISSED_PRESTART","V4_UNAVAILABLE")
+                                 for o in outcomes),
+            "no_substitutions":True,"outcomes":outcomes,
+            "recommendations_allowed":False}
+    dump(folder/"daily_summary.json",report)
+    return report
+
 
 def capture():
     now = datetime.now(timezone.utc)
@@ -46,17 +115,23 @@ def capture():
         print("Outside registered independent cohort")
         return {"date":day,"status":"OUTSIDE_WINDOW","saved":[]}
     folder = ROOT/day
-    existing = {p.parent.name for p in folder.glob("*/prediction.json")}
     discovery = EvidenceStore(folder/"discovery",max_requests=1+MAX_PER_RUN)
     programme = discovery.programme(day)
     if not programme:
         raise ValueError("No race programme")
-    # Selection is fixed BEFORE looking at outcomes, price, ability or expected value.
-    picks = select(programme,datetime.now(timezone.utc),len(existing))
+    # The first invocation freezes all ten IDs for this day. Subsequent
+    # invocations process the SAME chosen slots, never fresh substitutes.
+    plan=plan_for_day(folder,programme,datetime.now(timezone.utc))
+    pairs={(f"{day}_R{m['numOfficiel']}C{c['numOrdre']}"):(m,c)
+           for m,c in races(programme)}
+    picks=next_planned(folder,plan,datetime.now(timezone.utc))
     state={"date":day,"selected_races":[],"saved":[],"skipped":[],"status":"PAPER_ONLY",
            "cohort_version":"history_repair_shadow_v1_1_nancy_alias",
-           "selection":"First two French harness races >=40 min in future at each predeclared execution; max four per day"}
+           "daily_target":MAX_PER_DAY,"per_execution_limit":MAX_PER_RUN,
+           "selection_rule":SELECTION_RULE,
+           "selection":"Ten fixed first French harness races selected daily before odds/results, 40 min prestart, max four attempted per execution; no failed-race replacement"}
     if not picks:
+        state["daily_summary"]=daily_summary(folder,plan)
         dump(folder/"capture_status.json",state)
         return state
 
@@ -66,13 +141,32 @@ def capture():
               and r["race_id"] not in exclusions["excluded_races"]]
     policy, _ = verify_active()
     history_sha=hashlib.sha256(json.dumps(filtered,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
-    for meeting, course in picks:
-        rn, cn = meeting["numOfficiel"],course["numOrdre"]
-        rid=f"{day}_R{rn}C{cn}"
+    for item in picks:
+        rn,cn=item["reunion"],item["course"]
+        rid=item["race_id"]
         state["selected_races"].append(rid)
         dest=folder/f"R{rn}C{cn}"
-        if (dest/"prediction.json").exists():
-            state["skipped"].append({"race_id":rid,"reason":"PREVIOUSLY_CAPTURED"})
+        dest.mkdir(parents=True,exist_ok=True)
+        if rid not in pairs:
+            dump(dest/"attempt.json",{"race_id":rid,"status":"ERROR",
+                 "reason":"Originally selected race absent from predeclared programme",
+                 "recommendations_allowed":False})
+            state["skipped"].append({"race_id":rid,"reason":"PLAN_RACE_NOT_FOUND"})
+            continue
+        meeting,course=pairs[rid]
+        if course["heureDepart"]!=item["start_ms"]:
+            dump(dest/"attempt.json",{"race_id":rid,"status":"ERROR",
+                 "reason":"Frozen start time differs from current programme",
+                 "recommendations_allowed":False})
+            state["skipped"].append({"race_id":rid,"reason":"START_TIME_CHANGED"})
+            continue
+        now_race=datetime.now(timezone.utc)
+        if datetime.fromtimestamp(item["start_ms"]/1000,timezone.utc)<now_race+timedelta(minutes=LEAD_MINUTES):
+            dump(dest/"attempt.json",{"race_id":rid,"status":"MISSED_PRESTART",
+                 "attempted_at":now_race.isoformat(),
+                 "reason":"Less than 40 minutes before originally scheduled departure; no replacement",
+                 "recommendations_allowed":False})
+            state["skipped"].append({"race_id":rid,"reason":"MISSED_PRESTART_NO_REPLACEMENT"})
             continue
         try:
             raw=discovery.race(day,rn,cn,"participants")
@@ -112,7 +206,9 @@ def capture():
             sidecar_path=dest/"history_repair_shadow_v1_1.json"
             sidecar=json.loads(sidecar_path.read_text())
             sidecar["is_independent_prospective_validation"]=True
-            sidecar["selection_rule"]="SCHEDULED_FIRST_TWO_FRENCH_HARNESS_WITH_40MIN_LEAD"
+            sidecar["selection_rule"]=SELECTION_RULE
+            sidecar["daily_cohort_plan"]=str(folder/PLAN_FILE)
+            sidecar["selection_index"]=item["selection_index"]
             dump(sidecar_path,sidecar)
             # ONE integrated V4: obtain the 43rd chrono feature from the
             # already verified prestart history, then use all trained weights.
@@ -146,10 +242,26 @@ def capture():
             except (ValueError,KeyError,TypeError,OSError,RuntimeError) as error:
                 state.setdefault("v4_integrated_unavailable",[]).append(
                     {"race_id":rid,"reason":type(error).__name__+": "+str(error)})
+            if rid in state.get("v4_integrated_saved",[]):
+                attempt_status="V4_CAPTURED"
+            else:
+                attempt_status="V4_UNAVAILABLE"
+            dump(dest/"attempt.json",{"race_id":rid,"status":attempt_status,
+                 "original_prestart_saved":True,
+                 "v4_prestart_saved":attempt_status=="V4_CAPTURED",
+                 "attempted_at":datetime.now(timezone.utc).isoformat(),
+                 "selection_index":item["selection_index"],
+                 "recommendations_allowed":False})
             state["saved"].append(rid)
         except (ValueError,KeyError,TypeError,RuntimeError,OSError) as error:
             state["skipped"].append({"race_id":rid,"reason":str(error)})
+            dump(dest/"attempt.json",{"race_id":rid,"status":"ERROR",
+                 "attempted_at":datetime.now(timezone.utc).isoformat(),
+                 "reason":type(error).__name__+": "+str(error),
+                 "selection_index":item["selection_index"],
+                 "recommendations_allowed":False})
         print(rid,"archived" if rid in state["saved"] else "skipped",flush=True)
+    state["daily_summary"]=daily_summary(folder,plan)
     dump(folder/"capture_status.json",state)
     return state
 
