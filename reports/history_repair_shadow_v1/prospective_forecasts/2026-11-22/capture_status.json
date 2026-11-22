@@ -1,38 +1,44 @@
 {
   "date": "2026-11-22",
   "selected_races": [
-    "2026-11-22_R10C1",
-    "2026-11-22_R12C3",
-    "2026-11-22_R1C1",
-    "2026-11-22_R11C2"
+    "2026-11-22_R14C1",
+    "2026-11-22_R13C4",
+    "2026-11-22_R10C2",
+    "2026-11-22_R12C4"
   ],
-  "saved": [
-    "2026-11-22_R10C1",
-    "2026-11-22_R12C3",
-    "2026-11-22_R1C1",
-    "2026-11-22_R11C2"
+  "saved": [],
+  "skipped": [
+    {
+      "race_id": "2026-11-22_R14C1",
+      "reason": "MISSED_PRESTART_NO_REPLACEMENT"
+    },
+    {
+      "race_id": "2026-11-22_R13C4",
+      "reason": "MISSED_PRESTART_NO_REPLACEMENT"
+    },
+    {
+      "race_id": "2026-11-22_R10C2",
+      "reason": "MISSED_PRESTART_NO_REPLACEMENT"
+    },
+    {
+      "race_id": "2026-11-22_R12C4",
+      "reason": "MISSED_PRESTART_NO_REPLACEMENT"
+    }
   ],
-  "skipped": [],
   "status": "PAPER_ONLY",
   "cohort_version": "history_repair_shadow_v1_1_nancy_alias",
   "daily_target": 10,
   "per_execution_limit": 4,
   "selection_rule": "SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2",
   "selection": "Ten fixed first French harness races selected daily before odds/results, 40 min prestart, max four attempted per execution; no failed-race replacement",
-  "v4_integrated_saved": [
-    "2026-11-22_R10C1",
-    "2026-11-22_R12C3",
-    "2026-11-22_R1C1",
-    "2026-11-22_R11C2"
-  ],
   "daily_summary": {
     "version": "prospective_10_per_day_v1",
     "date": "2026-11-22",
     "daily_target": 10,
     "selected": 10,
-    "attempted": 4,
+    "attempted": 8,
     "v4_prestart_captured": 4,
-    "failed_or_late": 0,
+    "failed_or_late": 4,
     "no_substitutions": true,
     "outcomes": [
       {
@@ -61,25 +67,25 @@
       },
       {
         "race_id": "2026-11-22_R14C1",
-        "attempt_status": "NOT_ATTEMPTED",
+        "attempt_status": "MISSED_PRESTART",
         "prestart_v4_saved": false,
         "record_path": null
       },
       {
         "race_id": "2026-11-22_R13C4",
-        "attempt_status": "NOT_ATTEMPTED",
+        "attempt_status": "MISSED_PRESTART",
         "prestart_v4_saved": false,
         "record_path": null
       },
       {
         "race_id": "2026-11-22_R10C2",
-        "attempt_status": "NOT_ATTEMPTED",
+        "attempt_status": "MISSED_PRESTART",
         "prestart_v4_saved": false,
         "record_path": null
       },
       {
         "race_id": "2026-11-22_R12C4",
-        "attempt_status": "NOT_ATTEMPTED",
+        "attempt_status": "MISSED_PRESTART",
         "prestart_v4_saved": false,
         "record_path": null
       },
