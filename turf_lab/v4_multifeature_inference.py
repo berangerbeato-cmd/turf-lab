@@ -126,10 +126,17 @@ def run(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,now=Non
     denom=sum(vals.values())
     if denom<=0:
         raise ValueError("Null V4 win distribution")
-    sports={n:v/denom for n,v in vals.items()}
-    top5=rank_top5({"runners":runners},models["ranking"])
+    raw_sports={n:v/denom for n,v in vals.items()}
+    # ALL FIVE components are active in the SINGLE V4 decision pipeline.
+    # History Repair V2 validates the source; DQ residual weight was fitted
+    # on 2025 H1 instead of penalizing risky horses twice by hand.
+    from turf_lab.v4_active_final import sport_v4,quotes_v4,quintet_v4,activated
+    sports,applied=sport_v4(original,repair,runners,raw_sports)
+    previous_greedy_top5=rank_top5({"runners":runners},models["ranking"])
+    joint=quintet_v4(runners,models["ranking"])
+    top5=joint["selection"]
     if len(top5)!=5 or len(set(top5))!=5 or not set(top5)<=active:
-        raise ValueError("Invalid 47-feature Top5")
+        raise ValueError("Invalid integrated V4 exact joint Top5")
     odds=None;state="NO_VERIFIED_PRESTART_QUOTES";operator=None
     winner=sports
     if quotes_file is not None:
@@ -142,7 +149,8 @@ def run(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,now=Non
                 [sports[n] for n in numbers],
                 [indices[n]["reliability_R"] for n in numbers],
                 models["market"]["weights"])
-        winner=dict(zip(numbers,corrected))
+        winner=quotes_v4(dict(zip(numbers,corrected)),odds)
+        applied["market_odds_bands"]["applied_to_final_probabilities"]=True
         operator=quotes["operator"]
     ranked=sorted(active,key=lambda n:(-winner[n],n))
     ev=[]
@@ -151,8 +159,12 @@ def run(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,now=Non
             value=winner[n]*odds[n]-1
             if value>=.10:
                 ev.append({"number":n,"indicative_ev":value})
+    # Applied price-band and course/DQ weights now determine a SINGLE winner.
+    # No quote board means NO market correction, not fictitious prices.
+    applied["market_odds_bands"].setdefault(
+        "applied_to_final_probabilities",False)
     report = {
-      "version":"turf_lab_v4_multifeature_1",
+      "version":"turf_lab_v4_fully_integrated_1",
       "model":"TURF_LAB_V4",
       "status":"HISTORY_INCOMPLETE_NO_BET" if unresolved else "RESEARCH_NO_BET",
       "freshness":"PRESTART_RESEARCH",
@@ -161,13 +173,17 @@ def run(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,now=Non
       "decision":"NO BET","recommendations_allowed":False,
       "gagnant":{"number":ranked[0],"name":names[ranked[0]],
                  "probability":winner[ranked[0]],
-                 "basis":"V4_47F_WINNER" if odds is None else "V4_47F_R_CALIBRATED_MARKET"},
+                 "basis":"V4_47F_CONTEXT_AND_FITTED_DQ" if odds is None else "V4_47F_CONTEXT_DQ_R_MARKET_AND_PRICE_BANDS"},
       "top5":{"numbers":top5,"names":[names[n] for n in top5],
-              "method":"V4_47F_RETRAINED_5_STAGE"},
+              "method":"V4_47F_MAX_JOINT_UNORDERED_FROM_5_STAGES",
+              "old_greedy_ranking_reference":previous_greedy_top5},
       "value":{"status":state,"operator":operator,
                "paper_candidates_not_bets":ev,
                "minimum_indicative_ev":.10},
-      "ze5":{"numbers":top5,"status":"RESEARCH_ONLY_NO_STAKE","stake_eur":None},
+      "ze5":{"numbers":top5,
+             "probability_unordered_paper":joint["joint_probability_unordered"],
+             "status":"UNVALIDATED_JOINT_PROBABILITY_NO_BET","stake_eur":None,
+             "method":"ACTUAL_SINGLE_V4_MAX_UNORDERED_JOINT"},
       "relative_class_and_gains":{"historical_money_is_prior_only":True,
                 "historical_money_original_capture_proven":False,
                 "runners_with_prior_career_gains":sum(v["relative_career_gains_prior"] is not None for
@@ -191,13 +207,27 @@ def run(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,now=Non
                 "2026 historical testing already seen; no independent prospective validation or real ROI.",
                 "Real-money betting policy remains suspended."]
     }
-    # One V4, one report. The DQ, contextual calibration, odds-band and
-    # coherent unordered ZE5 remain transparent research side diagnostics;
-    # the only winner and value fields keep their frozen 47-feature basis.
-    from turf_lab.v4_next_inference import augment
-    return augment(report,original,repair,runners,sports,
-                   calibrated=winner if odds is not None else None,
-                   odds=odds)
+    model,components,activation=activated()
+    applied["version"]=activation["version"]
+    applied["disqualification"]["probability_by_runner"]=applied[
+        "disqualification"]["p_dq_by_runner"]
+    applied["race_specialization"]={
+        "status":"APPLIED_TO_FINAL_WINNER",
+        "selected_group":applied["race_context"]["selected_group"],
+        "applied_to_winner":True}
+    applied["odds_bias"]={
+        "status":"APPLIED_TO_FINAL_VALUE" if odds is not None else "NO_VERIFIED_QUOTES",
+        "applied_to_winner":odds is not None}
+    applied["quinte_unordered"]={**joint,
+        "applied_to_final_top5":True,
+        "no_executable_ZEturf_price":True}
+    report["research_improvements"]=applied
+    report["model_activation_sha256"]={
+        "fitted_signed_DQ":activation["dq_residual_sha256"],
+        "all_five_bundle":activation["prior_bundle_lock_sha256"]}
+    report["limits"].append(
+        "All five components affect the sole V4 outputs; probability calibration remains unproven on new races.")
+    return report
 
 
 def record(prediction_file,repair_file,speed_file,aux_file,quotes_file=None,output=None,now=None):
