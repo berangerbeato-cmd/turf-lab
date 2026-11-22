@@ -5,20 +5,53 @@
   "recommendations_allowed": false,
   "daily_target_races": 10,
   "daily_execution_cap": 4,
-  "planned_days": 0,
-  "daily_capture_plans": [],
-  "planned_slots": 0,
-  "attempted_slots": 0,
-  "captured_planned_slots": 0,
-  "original_captures": 0,
+  "planned_days": 1,
+  "daily_capture_plans": [
+    {
+      "date": "2026-11-22",
+      "selected": 10,
+      "attempted": 4,
+      "v4_captured": 4,
+      "missed_or_failed": 0
+    }
+  ],
+  "planned_slots": 10,
+  "attempted_slots": 4,
+  "captured_planned_slots": 4,
+  "original_captures": 4,
   "verified_results": 0,
-  "pending_results": 0,
+  "pending_results": 4,
   "invalid_inputs": 0,
   "minimum_review_races": 200,
   "validation_ready": false,
   "mean": {},
   "scored": [],
-  "pending": [],
+  "pending": [
+    {
+      "race_id": "2026-11-22_R10C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 7
+    },
+    {
+      "race_id": "2026-11-22_R11C2",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R11C2/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 6
+    },
+    {
+      "race_id": "2026-11-22_R12C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R12C3/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 7
+    },
+    {
+      "race_id": "2026-11-22_R1C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R1C1/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 14
+    }
+  ],
   "invalid": [],
   "ze5_paper_validation": {
     "races": 0,

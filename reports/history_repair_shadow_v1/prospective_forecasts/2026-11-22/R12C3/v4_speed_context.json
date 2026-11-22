@@ -1,0 +1,87 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-22_R12C3",
+  "target_date": "2026-11-22",
+  "captured_at": "2026-11-22T11:23:46.414232+00:00",
+  "prior_races": 30583,
+  "last_prior_day": "2026-11-21",
+  "prior_history_sha256": "7faff3cae71769e629d05f7840923d8e5e98ca66767a5eb35834cf0e1b58f6c6",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('NELSON DES VES', 'REDOWA DU DANE', 'TAG WOOD')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('NORA EXCELLENCE', 'DIANA DES BIARDS', 'TAG WOOD')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('NEVOILA DE HOUELLE', 'CAYENNE DE HOUELLE', 'LOVE YOU')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('NAPOLI DEL PHEDO', 'ARENA DEL PHEDO', 'EARL SIMON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "5": {
+      "horse_id": "pedigree:('NIKITA PERRINE', 'ENIGMA PERRINE', 'BIRD PARKER')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "6": {
+      "horse_id": "pedigree:('NAPOLITA DE LOU', 'SABA DU VIVIER', 'LOVE YOU')",
+      "context_residual": -3.0790817045786243,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('NUMBER CASH', 'CHERIE CASH', \"GU D'HERIPRE\")",
+      "context_residual": -0.952559331875149,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:(\"NEWTON D'ARTHENAY\", 'VIVA DU GLAY', 'COUP DE POKER')",
+      "context_residual": -1.1690848735925248,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('NOJIRA TENSAU', 'ADRIENNE DU CITRUS', 'VILLAGE MYSTIC')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('NASH DELAROUE', 'AMELIA DU BIGNON', 'ENINO DU POMMEREUX')",
+      "context_residual": -1.8129027766231594,
+      "prior_races_used": 1
+    },
+    "11": {
+      "horse_id": "pedigree:('NOUMEA DES YVETS', \"HIMANY D'HERFRAIE\", 'SAXO DE VANDEL')",
+      "context_residual": -2.6588915396064405,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('NORBINA', 'CHANELLE DE KARA', 'GALA TEJY')",
+      "context_residual": -3.0143980258329686,
+      "prior_races_used": 3
+    },
+    "13": {
+      "horse_id": "pedigree:('NINO DE BOMO', 'CINOLANA', 'ORLANDO VICI')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "14": {
+      "horse_id": "pedigree:(\"NORPHEA D'ESPOIR\", \"CHANCE D'ESPOIR\", 'GELATI CUT')",
+      "context_residual": -2.6204571631709985,
+      "prior_races_used": 1
+    }
+  },
+  "target_participants": 14,
+  "coverage_active": 7,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

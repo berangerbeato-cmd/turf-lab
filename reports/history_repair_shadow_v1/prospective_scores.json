@@ -3,17 +3,46 @@
   "version": "history_repair_shadow_v1_1_nancy_alias",
   "recommendations_allowed": false,
   "prospective_start": "2026-11-22T00:00:00+01:00",
-  "selection_cohort": "Deterministic scheduled first-two-races, no user-selected forecasts",
-  "eligible_forecasts": 0,
+  "selection_cohort": "Deterministic predeclared first ten races per day, original two-race cohorts kept only for backward compatibility; no user-selected forecasts",
+  "eligible_forecasts": 4,
   "verified_results": 0,
-  "pending_or_excluded_outcomes": 0,
-  "candidate_changes": 0,
+  "pending_or_excluded_outcomes": 4,
+  "candidate_changes": 4,
   "validation_minimum_races": 200,
   "validation_ready": false,
   "means": {},
   "paired_differences": {},
   "scored": [],
-  "awaiting_outcomes": [],
+  "awaiting_outcomes": [
+    {
+      "race_id": "2026-11-22_R10C1",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 4
+    },
+    {
+      "race_id": "2026-11-22_R12C3",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R12C3/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 5
+    },
+    {
+      "race_id": "2026-11-22_R1C1",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R1C1/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 6
+    },
+    {
+      "race_id": "2026-11-22_R11C2",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R11C2/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 3
+    }
+  ],
   "invalid_forecasts": [],
   "limitations": [
     "Only predeclared scheduled cohort sidecars and independent verified race outcomes; no on-demand cherry-picking.",

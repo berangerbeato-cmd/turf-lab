@@ -1,0 +1,77 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-22_R10C1",
+  "target_date": "2026-11-22",
+  "captured_at": "2026-11-22T11:23:01.821016+00:00",
+  "prior_races": 30583,
+  "last_prior_day": "2026-11-21",
+  "prior_history_sha256": "7faff3cae71769e629d05f7840923d8e5e98ca66767a5eb35834cf0e1b58f6c6",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:(\"NAGELE DE L'ETOILE\", 'ELLAURENCE SPRINT', \"TITAN D'OCCAGNES\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('NEPTUNE BLEU', 'AURORE BLEUE', 'SCIPION DU GOUTIER')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('NEVADA DE BEYLEV', 'RAFALE DU PLESSIS', 'ELVIS DU VALLON')",
+      "context_residual": -2.9201609455069995,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('NO LIMIT SMILE', 'URSULA SMILING', 'GARIBALDI')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "5": {
+      "horse_id": "pedigree:('NINO DU CAP', 'GIRLY SAM', 'FEELING CASH')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "6": {
+      "horse_id": "pedigree:('NEMESIA FLEURY', 'FLEUR DES CHARMES', 'EARL SIMON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:('NOISETTE', 'GANADERIA', 'DREAM DARLING')",
+      "context_residual": -2.2526351252833265,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('NAFISA MENUET', 'FLORE MIKA', 'HOKKAIDO JIEL')",
+      "context_residual": -2.8904838932279384,
+      "prior_races_used": 2
+    },
+    "9": {
+      "horse_id": "pedigree:('NOTHING GEKA', 'HISQUE DU LOGIS', 'QUARO')",
+      "context_residual": -2.6325026288117805,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('NO DOUBT DU SAPTEL', 'DYNAMITE DU SAPTEL', 'URIEL SPEED')",
+      "context_residual": -2.1325026288117805,
+      "prior_races_used": 1
+    },
+    "11": {
+      "horse_id": "pedigree:('NOEMIE RIDGEHEAD', 'ELODIE RIDGEHEAD', 'EARL SIMON')",
+      "context_residual": -1.8522448330683692,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('NAMTSO DU VALO', 'GINNY DU VALO', 'ARTISTE DE JOUDES')",
+      "context_residual": -3.403585008541813,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 12,
+  "coverage_active": 7,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
