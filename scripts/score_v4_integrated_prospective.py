@@ -1,4 +1,4 @@
-"""Official-result evaluation of the ONE integrated 43-feature V4.
+"""Official-result evaluation of the ONE fully integrated 47-feature V4.
 
 Only original snapshots from the deterministic predeclared prospective cohort
 count. Frozen model and original captured 43rd inputs can be recomputed to
@@ -23,7 +23,7 @@ def confirm(path):
     path=Path(path)
     saved=json.loads(path.read_text())
     sidecar,pred=validate_sidecar(path.parent/"history_repair_shadow_v1_1.json")
-    if (saved.get("version")!="turf_lab_v4_multifeature_1"
+    if (saved.get("version")!="turf_lab_v4_fully_integrated_1"
             or saved.get("model")!="TURF_LAB_V4"
             or saved.get("freshness")!="PRESTART_RESEARCH"
             or saved.get("recommendations_allowed") is not False
@@ -55,7 +55,7 @@ def confirm(path):
                    aux_path,now=generated)
     for key in ("gagnant","top5","history_repair","context_speed","model_sha256",
                 "relative_class_and_gains","weighted_recent_form","reliability_R",
-                "research_improvements","ze5"):
+                "research_improvements","ze5","model_activation_sha256"):
         if saved[key]!=reproduced[key]:
             raise ValueError("Original integrated V4 and its five research components not reproducible")
     objects,lock=frozen()
@@ -67,9 +67,15 @@ def confirm(path):
     temp=objects["winner"]["temperature"]
     p={n:val**(1/temp) for n,val in raw.items()}
     total=sum(p.values())
-    v4={n:val/total for n,val in p.items()}
+    base47={n:val/total for n,val in p.items()}
+    from turf_lab.v4_active_final import sport_v4
+    v4,applied=sport_v4(pred,sidecar,runners,base47)
     if abs(v4[saved["gagnant"]["number"]]-saved["gagnant"]["probability"])>1e-10:
-        raise ValueError("Archived V4 winner was not from its frozen 43-feature model")
+        raise ValueError("Archived fully integrated V4 winner was not produced by applied DQ+context corrections")
+    if (saved["research_improvements"]["disqualification"]["applied_to_winner"] is not True
+            or saved["research_improvements"]["race_specialization"]["applied_to_winner"] is not True
+            or saved["research_improvements"]["quinte_unordered"]["applied_to_final_top5"] is not True):
+        raise ValueError("Original V4 did not really apply all components")
     v3={int(n):float(val) for n,val in pred["models"]["available_history_v3"]["probabilities"].items()}
     if set(v3)!=set(v4):
         raise ValueError("Frozen V3 field differs from V4")
@@ -159,8 +165,8 @@ def run(output=OUT):
               for label in ("v4_integrated","v3_frozen")} if scores else {}
     ze5_scores=[r["ze5_paper"] for r in scores if "ze5_paper" in r]
     dq_scores=[r["dq_brier"] for r in scores if "dq_brier" in r]
-    result={"version":"turf_lab_v4_multifeature_1",
-            "status":"SINGLE_47_FEATURE_V4_PRESTART_COHORT",
+    result={"version":"turf_lab_v4_fully_integrated_1",
+            "status":"SINGLE_47_FEATURE_ALL_COMPONENTS_APPLIED_PRESTART_COHORT",
             "research_only":True,"recommendations_allowed":False,
             "daily_target_races":10,
             "daily_execution_cap":4,
