@@ -1,3 +1,26 @@
+# TURF LAB V4 : TOUTES LES AMÉLIORATIONS SONT ACTIVES (22 novembre 2026)
+
+**Une seule version utilisateur : TURF LAB V4, moteur `turf_lab_v4_fully_integrated_1`, toujours 47 caractéristiques.** Le gagnant utilise maintenant réellement les 47 variables, la **température contextuelle hippodrome/départ/distance** et le **résiduel signé de risque de disqualification** calibré. Le poids DQ est **0,020841862**, appris sur **3 156 courses de janvier à juin 2025**, et non fixé arbitrairement. History Repair V2 contrôle les sources, confirme les corrections admissibles et conserve les conflits en quarantaine.
+
+**Value réelle du calcul modèle :** si une grille complète de cotes vérifiées est disponible avant la course, la V4 utilise désormais sa correction de marché conditionnelle à R, **puis applique la correction par tranche de cote** dans la probabilité gagnant et dans l'EV théorique affichée. Sans grille vérifiée, aucune value n'est inventée.
+
+**Top 5 / Quinté :** la **meilleure combinaison sans ordre** selon le modèle joint à cinq positions est désormais **le Top 5 et le Quinté uniques affichés**, et non un résultat alternatif laissé en observation. La probabilité jointe estimée est affichée avec ses limites de calibration.
+
+**Les cinq évolutions sont actives dans la sortie principale** :
+- History Repair V2 : audit de qualité, résolution prudente, conflits non réécrits
+- Disqualifications : poids résiduel appris et appliqué
+- Hippodrome / distance / départ : correction appliquée à la probabilité gagnant
+- Favoris / outsiders : biais par tranche de cotes appliqué au marché et à la value si cotes vérifiées
+- Quinté : meilleure combinaison de probabilité jointe sans ordre, utilisée comme sélection unique
+
+**L'entraînement est terminé et les calculs sont intégrés.** Ce n'est pas une validation de rentabilité : évaluations 2025/2026 réutilisées, attente des prochaines courses réellement enregistrées avant départ. `config/recommendation_policy.json` reste **SUSPENDED / NO BET**. Aucun ticket réel ni montant de mise n'est recommandé.
+
+[Configuration V4 active](config/v4_active.json) | [Gel des paramètres appliqués](models/v4_active_activation/frozen_activation.json) | [Rapport calibrage DQ](reports/v4_active_activation/RESULTS.md) | [Suivi de 10 courses par jour](reports/v4_integrated/prospective_scores.json)
+
+---
+
+## Archives et explications antérieures
+
 # Suivi prospectif V4 : objectif 10 courses par jour (22/11/2026)
 
 **Collecte automatique programmée**, sans intervention ni pari : **jusqu'à 10 courses françaises de trot attelé par jour**. La sélection des dix premières courses admissibles est enregistrée et figée dès la première exécution du jour, au moins 40 minutes avant départ. Une course impossible ou manquée reste visible comme échec : elle n'est jamais remplacée par une course choisie a posteriori.
