@@ -1,0 +1,324 @@
+{
+  "version": "turf_lab_v4_fully_integrated_1",
+  "model": "TURF_LAB_V4",
+  "status": "HISTORY_INCOMPLETE_NO_BET",
+  "freshness": "PRESTART_RESEARCH",
+  "generated_at": "2026-11-22T12:00:50.100291+00:00",
+  "race_id": "2026-11-22_R10C1",
+  "decision": "NO BET",
+  "recommendations_allowed": false,
+  "gagnant": {
+    "number": 8,
+    "name": "NAFISA MENUET",
+    "probability": 0.18725189135895523,
+    "basis": "V4_47F_CONTEXT_AND_FITTED_DQ"
+  },
+  "top5": {
+    "numbers": [
+      5,
+      8,
+      9,
+      10,
+      11
+    ],
+    "names": [
+      "NINO DU CAP",
+      "NAFISA MENUET",
+      "NOTHING GEKA",
+      "NO DOUBT DU SAPTEL",
+      "NOEMIE RIDGEHEAD"
+    ],
+    "method": "V4_47F_MAX_JOINT_UNORDERED_FROM_5_STAGES",
+    "old_greedy_ranking_reference": [
+      8,
+      11,
+      10,
+      9,
+      12
+    ]
+  },
+  "value": {
+    "status": "NO_VERIFIED_PRESTART_QUOTES",
+    "operator": null,
+    "paper_candidates_not_bets": [],
+    "minimum_indicative_ev": 0.1
+  },
+  "ze5": {
+    "numbers": [
+      5,
+      8,
+      9,
+      10,
+      11
+    ],
+    "probability_unordered_paper": 0.012721944741886995,
+    "status": "UNVALIDATED_JOINT_PROBABILITY_NO_BET",
+    "stake_eur": null,
+    "method": "ACTUAL_SINGLE_V4_MAX_UNORDERED_JOINT"
+  },
+  "relative_class_and_gains": {
+    "historical_money_is_prior_only": true,
+    "historical_money_original_capture_proven": false,
+    "runners_with_prior_career_gains": 12
+  },
+  "weighted_recent_form": {
+    "weights": [
+      0.35,
+      0.25,
+      0.18,
+      0.12,
+      0.1
+    ],
+    "runners_with_data": 12
+  },
+  "reliability_R": {
+    "index_is_completeness_not_win_probability": true,
+    "per_runner": {
+      "1": 0.28500000000000003,
+      "2": 0.28500000000000003,
+      "3": 0.64,
+      "4": 0.28500000000000003,
+      "5": 0.7699999999999999,
+      "6": 0.44000000000000006,
+      "7": 0.485,
+      "8": 0.7739999999999999,
+      "9": 0.88,
+      "10": 0.9699999999999999,
+      "11": 0.9999999999999999,
+      "12": 0.934
+    },
+    "market_R_gate_fitted": true
+  },
+  "history_repair": {
+    "required": true,
+    "unresolved": [
+      {
+        "number": 1,
+        "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+      },
+      {
+        "number": 2,
+        "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+      },
+      {
+        "number": 3,
+        "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+      },
+      {
+        "number": 4,
+        "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+      },
+      {
+        "number": 6,
+        "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+      },
+      {
+        "number": 7,
+        "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+      },
+      {
+        "number": 8,
+        "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+      }
+    ],
+    "runners_updated": 4
+  },
+  "context_speed": {
+    "required": true,
+    "dimension": 47,
+    "coverage": 7
+  },
+  "model_sha256": {
+    "winner.json": "925845345c264d584bc290c9ff6a0dbd5c430e7accdb4c120ab680324d4eaabc",
+    "ranking.json": "94a8cf7628d6561e05bf315d0250654793085f088bef83f96ccf1f0f0fedd7ba",
+    "market.json": "a2a8b0294281746cc09cde69a9f9cf79f13d7c244bccc60b1ad57454ef925f87"
+  },
+  "evidence": {
+    "original": "predictions_operational/2026-11-22/2026-11-22_R10C1_20261122T115803493847Z/prediction.json",
+    "history_repair": "predictions_operational/2026-11-22/2026-11-22_R10C1_20261122T115803493847Z/history_repair_shadow_v1_1.json",
+    "speed_context": "predictions_operational/2026-11-22/2026-11-22_R10C1_20261122T115803493847Z/v4_speed_context.json",
+    "aux_context": "predictions_operational/2026-11-22/2026-11-22_R10C1_20261122T115803493847Z/v4_aux_context.json",
+    "quotes": null
+  },
+  "limits": [
+    "All four feature additions are active; previous 43-feature V4 remains frozen as reference.",
+    "Historical career euros were retrieved retrospectively; use only lagged older race snapshots.",
+    "2026 historical testing already seen; no independent prospective validation or real ROI.",
+    "Real-money betting policy remains suspended.",
+    "All five components affect the sole V4 outputs; probability calibration remains unproven on new races."
+  ],
+  "research_improvements": {
+    "history_repair_v2": {
+      "version": "history_repair_v2",
+      "status": "QUARANTINED_UNCERTAINTY",
+      "quality_counts": {
+        "FEWER_THAN_FIVE_VERIFIED_STARTS": 7,
+        "UPDATED": 4,
+        "UNCHANGED": 1
+      },
+      "unresolved": [
+        {
+          "number": 1,
+          "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+        },
+        {
+          "number": 2,
+          "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+        },
+        {
+          "number": 3,
+          "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+        },
+        {
+          "number": 4,
+          "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+        },
+        {
+          "number": 6,
+          "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+        },
+        {
+          "number": 7,
+          "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+        },
+        {
+          "number": 8,
+          "reason": "FEWER_THAN_FIVE_VERIFIED_STARTS"
+        }
+      ],
+      "frozen_prior_evidence_reused": true,
+      "additional_verified_repair_count": 0,
+      "was_any_original_feature_rewritten": false
+    },
+    "disqualification": {
+      "applied_to_winner": true,
+      "model": "FROZEN_DQ_PRIOR47",
+      "survival_residual_weight_fitted": 0.020841862035709664,
+      "p_dq_by_runner": {
+        "1": 0.4424580608235063,
+        "2": 0.4424580608235063,
+        "3": 0.2748881220550684,
+        "4": 0.19782327625200635,
+        "5": 0.3346132377290998,
+        "6": 0.2811802360867093,
+        "7": 0.192895922924682,
+        "8": 0.17815167910679772,
+        "9": 0.20668159246645554,
+        "10": 0.23715256745578195,
+        "11": 0.283074157303087,
+        "12": 0.17450956365198167
+      },
+      "no_arbitrary_double_dq_multiplier": true,
+      "probability_by_runner": {
+        "1": 0.4424580608235063,
+        "2": 0.4424580608235063,
+        "3": 0.2748881220550684,
+        "4": 0.19782327625200635,
+        "5": 0.3346132377290998,
+        "6": 0.2811802360867093,
+        "7": 0.192895922924682,
+        "8": 0.17815167910679772,
+        "9": 0.20668159246645554,
+        "10": 0.23715256745578195,
+        "11": 0.283074157303087,
+        "12": 0.17450956365198167
+      }
+    },
+    "race_context": {
+      "applied_to_winner": true,
+      "selected_group": "NON_PRECISE|long",
+      "calibrated_probability_by_runner": {
+        "1": 0.11096279427288937,
+        "2": 0.07154008601654911,
+        "3": 0.055462761810980345,
+        "4": 0.027936572544696284,
+        "5": 0.07783760938939416,
+        "6": 0.027297687473227212,
+        "7": 0.038057308590917105,
+        "8": 0.18673397151186874,
+        "9": 0.0929680150329594,
+        "10": 0.12906343457033026,
+        "11": 0.15438361015910998,
+        "12": 0.02775614862707808
+      }
+    },
+    "market_odds_bands": {
+      "applied_if_verified_quotes": true,
+      "applied_to_value_if_quotes": true,
+      "applied_to_final_probabilities": false
+    },
+    "activation_model_lock": "turf_lab_v4_fully_integrated_1",
+    "real_money_betting_allowed": false,
+    "version": "turf_lab_v4_fully_integrated_1",
+    "race_specialization": {
+      "status": "APPLIED_TO_FINAL_WINNER",
+      "selected_group": "NON_PRECISE|long",
+      "applied_to_winner": true
+    },
+    "odds_bias": {
+      "status": "NO_VERIFIED_QUOTES",
+      "applied_to_winner": false
+    },
+    "quinte_unordered": {
+      "selection": [
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "joint_probability_unordered": 0.012721944741886995,
+      "selection_probability_source": "FROZEN_5_STAGE_CONDITIONAL_RANK_MODEL",
+      "greedy_selection": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "greedy_unordered_probability": 0.010805126504054777,
+      "alternatives": [
+        {
+          "numbers": [
+            5,
+            8,
+            9,
+            10,
+            11
+          ],
+          "p_exact_five_unordered": 0.012721944741886995
+        },
+        {
+          "numbers": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "p_exact_five_unordered": 0.012175876469928177
+        },
+        {
+          "numbers": [
+            1,
+            8,
+            9,
+            10,
+            11
+          ],
+          "p_exact_five_unordered": 0.011436629043972654
+        }
+      ],
+      "candidates_examined": 462,
+      "joint_calibration_verified": false,
+      "recommended_stake_eur": null,
+      "status": "RESEARCH_ONLY_NOT_A_VALIDATED_ZE5_BET",
+      "applied_to_final_top5": true,
+      "no_executable_ZEturf_price": true
+    }
+  },
+  "model_activation_sha256": {
+    "fitted_signed_DQ": "1ff5456b23a7e109f20df1302c524f95e798af76310b11052a9519ab44804c7e",
+    "all_five_bundle": "63f76107eb34d7e8df2f05c7201a783ee69f56dcbc13b897963b1d21cea18526"
+  }
+}
