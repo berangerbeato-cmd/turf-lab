@@ -1,3 +1,23 @@
+# TURF LAB V4 : les cinq derniers chantiers intégrés ensemble (22/11/2026)
+
+**Toujours une seule V4.** Les 47 variables et trois modèles d'origine gagnant/Top5/cotes restent gelés. Son **même rapport** `v4_integrated.json` incorpore désormais, via le lot [V4 Next Bundle](reports/v4_next_bundle/RESULTS.md), cinq nouveaux contrôles :
+
+1. **History Repair V2** : classer les écarts de profondeur des historiques, isoler les vrais conflits, ne jamais inventer des anciennes courses. 6 848 cas de fenêtre 60 jours contre historique plus profond, 103 conflits conservés en quarantaine.
+2. **DQ** : modèle de risque entraîné sur 224 047 participants ; indicateur séparé du gagnant pour éviter d'appliquer une double pénalité.
+3. **Hippodrome/départ/distance** : températures calibrées et régularisées sur les groupes suffisamment documentés.
+4. **Tranches de cotes** : corrections exploratoires 1-4, 4-8, 8-20, 20-50, 50+, avec limitation de l'effet et tests historiques.
+5. **Quinté sans ordre** : probabilité jointe calculée depuis le vrai modèle à cinq rangs conditionnels, sans produit abusif des probabilités individuelles.
+
+**Bilan exploratoire 2026 (déjà connu, non indépendant) :** DQ Brier 0,16375 contre 0,17017 pour une référence constante ; contexte gagnant log loss 2,10285 → 2,10234 ; cotes PMU log loss 1,92332 → 1,91797 ; Quinté 6 réussites pour 5,31 attendues sur 246 courses. Il reste à vérifier ces gains sur des prévisions réellement archivées AVANT le départ.
+
+**Aucune seconde V5/V6, aucun pari ni mise conseillés.** Le premier choix gagnant reste fondé sur les coefficients V4 47 variables gelés ; les nouveaux réglages par contexte/cote sont exposés en simulation tant que la validation prospective n'est pas acquise. La qualité des historiques, le risque DQ et le Z5 affichent leurs diagnostics dans le rapport unique.
+
+[Résultats des cinq chantiers](reports/v4_next_bundle/RESULTS.md) | [Modèle V4 actif](config/v4_active.json) | [Suivi prospectif](reports/v4_integrated/prospective_scores.json) | [Audit GitHub](https://github.com/berangerbeato-cmd/turf-lab/actions/runs/44964541734)
+
+---
+
+## Ancien suivi conservé ci-dessous
+
 # TURF LAB V4 : toutes les pistes intégrées en une fois (22 novembre 2026)
 
 **UNE SEULE V4, 47 variables, poids réellement réentraînés :** les 43 variables précédentes (dont le chrono corrigé V7), les gains de carrière relatifs issus de la dernière course antérieure, la classe relative cumulée des résultats passés, la forme pondérée 35/25/18/12/10, et l'indice R de complétude des données. Le modèle de cotes apprend un coefficient de modulation selon R sur un sous-ensemble temporel distinct de 2025.
