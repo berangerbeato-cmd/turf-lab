@@ -1,0 +1,398 @@
+{
+  "value_shadow": {
+    "status": "UNAVAILABLE",
+    "reason": "Quote more than 15 minutes before start",
+    "recommendations_allowed": false
+  },
+  "primary_model": "available_history_v3",
+  "race_id": "2026-11-22_R10C1",
+  "observed_at": "2026-11-22T12:56:00+01:00",
+  "calculated_at": "2026-11-22T12:00:06.907011+00:00",
+  "status": "PRESTART_ESTIMATE",
+  "recommendations_allowed": false,
+  "recommendation_status": "SUSPENDED",
+  "recommendation_reasons": [
+    "favorite_underestimation_and_longshot_overestimation_in_frozen_holdouts",
+    "positive_ev_selections_not_validated_against_executable_market_prices",
+    "individual_history_coverage_and_recent_disqualifications_need_reconciliation"
+  ],
+  "recommendation_audit": "reports/value_audit_2026-10-29/RESULTS.md",
+  "rows": [
+    {
+      "number": 12,
+      "name": "NAMTSO DU VALO",
+      "odds": 84.1,
+      "models": {
+        "v6": {
+          "probability": 0.025783256978577734,
+          "fair_odds": 38.78485952456897,
+          "ev": 1.168371911898387,
+          "implied_raw": 0.011890606420927468,
+          "difference_pp": 1.3892650557650266,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.029778222036517542,
+          "fair_odds": 33.581588543925925,
+          "ev": 1.5043484732711252,
+          "implied_raw": 0.011890606420927468,
+          "difference_pp": 1.7887615615590073,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.027864668574099305,
+          "fair_odds": 35.88774068282002,
+          "ev": 1.3434186270817512,
+          "implied_raw": 0.011890606420927468,
+          "difference_pp": 1.5974062153171837,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "name": "NO DOUBT DU SAPTEL",
+      "odds": 21.1,
+      "models": {
+        "v6": {
+          "probability": 0.09554825845532983,
+          "fair_odds": 10.465915508732316,
+          "ev": 1.0160682534074597,
+          "implied_raw": 0.04739336492890995,
+          "difference_pp": 4.815489352641988,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.08834368732808615,
+          "fair_odds": 11.319427909843208,
+          "ev": 0.8640518026226178,
+          "implied_raw": 0.04739336492890995,
+          "difference_pp": 4.09503223991762,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.10013353097374839,
+          "fair_odds": 9.986664709368593,
+          "ev": 1.1128175035460912,
+          "implied_raw": 0.04739336492890995,
+          "difference_pp": 5.274016604483844,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "name": "NEVADA DE BEYLEV",
+      "odds": 26.9,
+      "models": {
+        "v6": {
+          "probability": 0.08362903096400838,
+          "fair_odds": 11.957570098239836,
+          "ev": 1.2496209329318253,
+          "implied_raw": 0.03717472118959108,
+          "difference_pp": 4.64543097744173,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.08390236337241462,
+          "fair_odds": 11.918615397772925,
+          "ev": 1.2569735747179531,
+          "implied_raw": 0.03717472118959108,
+          "difference_pp": 4.672764218282354,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.07826549923695572,
+          "fair_odds": 12.777021928556433,
+          "ev": 1.105341929474109,
+          "implied_raw": 0.03717472118959108,
+          "difference_pp": 4.109077804736464,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "name": "NAGELE DE L'ETOILE",
+      "odds": 13.4,
+      "models": {
+        "v6": {
+          "probability": 0.13664696617587033,
+          "fair_odds": 7.318128078401378,
+          "ev": 0.8310693467566623,
+          "implied_raw": 0.07462686567164178,
+          "difference_pp": 6.202010050422854,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.13676945727991216,
+          "fair_odds": 7.311573942663248,
+          "ev": 0.832710727550823,
+          "implied_raw": 0.07462686567164178,
+          "difference_pp": 6.214259160827037,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.13580265114169182,
+          "fair_odds": 7.363626494718681,
+          "ev": 0.8197555252986704,
+          "implied_raw": 0.07462686567164178,
+          "difference_pp": 6.117578547005004,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "name": "NINO DU CAP",
+      "odds": 20.9,
+      "models": {
+        "v6": {
+          "probability": 0.06983365120601227,
+          "fair_odds": 14.31974388751287,
+          "ev": 0.4595233102056564,
+          "implied_raw": 0.04784688995215311,
+          "difference_pp": 2.198676125385916,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.06269049057584161,
+          "fair_odds": 15.951382591115975,
+          "ev": 0.3102312530350897,
+          "implied_raw": 0.04784688995215311,
+          "difference_pp": 1.4843600623688502,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.06599881391583384,
+          "fair_odds": 15.151787443866306,
+          "ev": 0.3793752108409272,
+          "implied_raw": 0.04784688995215311,
+          "difference_pp": 1.8151923963680732,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "name": "NOTHING GEKA",
+      "odds": 11.2,
+      "models": {
+        "v6": {
+          "probability": 0.06694352844072639,
+          "fair_odds": 14.93796373290104,
+          "ev": -0.25023248146386445,
+          "implied_raw": 0.08928571428571429,
+          "difference_pp": -2.23421858449879,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.08750660904628374,
+          "fair_odds": 11.427708271395625,
+          "ev": -0.01992597868162216,
+          "implied_raw": 0.08928571428571429,
+          "difference_pp": -0.1779105239430548,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.08146031189229254,
+          "fair_odds": 12.27591666138239,
+          "ev": -0.08764450680632363,
+          "implied_raw": 0.08928571428571429,
+          "difference_pp": -0.7825402393421749,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "name": "NEMESIA FLEURY",
+      "odds": 23.5,
+      "models": {
+        "v6": {
+          "probability": 0.04262016988160008,
+          "fair_odds": 23.463069311502643,
+          "ev": 0.001573992217601905,
+          "implied_raw": 0.0425531914893617,
+          "difference_pp": 0.006697839223837598,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.03636044113672087,
+          "fair_odds": 27.502416602698677,
+          "ev": -0.14552963328705948,
+          "implied_raw": 0.0425531914893617,
+          "difference_pp": -0.619275035264083,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03390107392001151,
+          "fair_odds": 29.497590617909857,
+          "ev": -0.20332476287972956,
+          "implied_raw": 0.0425531914893617,
+          "difference_pp": -0.8652117569350193,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "name": "NEPTUNE BLEU",
+      "odds": 8.1,
+      "models": {
+        "v6": {
+          "probability": 0.08755808392769257,
+          "fair_odds": 11.420989989066257,
+          "ev": -0.2907795201856902,
+          "implied_raw": 0.1234567901234568,
+          "difference_pp": -3.5898706195764225,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.09412054513344141,
+          "fair_odds": 10.624672844618873,
+          "ev": -0.23762358441912457,
+          "implied_raw": 0.1234567901234568,
+          "difference_pp": -2.9336244990015388,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.08619023781913587,
+          "fair_odds": 11.602242032310311,
+          "ev": -0.3018590736649994,
+          "implied_raw": 0.1234567901234568,
+          "difference_pp": -3.7266552304320926,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "name": "NO LIMIT SMILE",
+      "odds": 21.1,
+      "models": {
+        "v6": {
+          "probability": 0.04797975789167117,
+          "fair_odds": 20.842122677188215,
+          "ev": 0.012372891514261797,
+          "implied_raw": 0.04739336492890995,
+          "difference_pp": 0.0586392962761223,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.036510102943689775,
+          "fair_odds": 27.389679003160275,
+          "ev": -0.22963682788814566,
+          "implied_raw": 0.04739336492890995,
+          "difference_pp": -1.0883261985220174,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.03286315881875125,
+          "fair_odds": 30.429211187982766,
+          "ev": -0.3065873489243486,
+          "implied_raw": 0.04739336492890995,
+          "difference_pp": -1.4530206110158699,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "name": "NOEMIE RIDGEHEAD",
+      "odds": 5,
+      "models": {
+        "v6": {
+          "probability": 0.13298145188170032,
+          "fair_odds": 7.519845706674908,
+          "ev": -0.3350927405914984,
+          "implied_raw": 0.2,
+          "difference_pp": -6.701854811829969,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.12794310242859006,
+          "fair_odds": 7.815974296528712,
+          "ev": -0.3602844878570497,
+          "implied_raw": 0.2,
+          "difference_pp": -7.205689757140996,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.13435812018272716,
+          "fair_odds": 7.442795408569271,
+          "ev": -0.32820939908636415,
+          "implied_raw": 0.2,
+          "difference_pp": -6.564187981727285,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "name": "NAFISA MENUET",
+      "odds": 2.9,
+      "models": {
+        "v6": {
+          "probability": 0.15918851476769727,
+          "fair_odds": 6.281860230050474,
+          "ev": -0.5383533071736779,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -18.56390714391993,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.1671463293346536,
+          "fair_odds": 5.982781697813062,
+          "ev": -0.5152756449295046,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -17.7681256872243,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.17917734629193513,
+          "fair_odds": 5.581062677257714,
+          "ev": -0.4803856957533882,
+          "implied_raw": 0.3448275862068966,
+          "difference_pp": -16.565023991496144,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "name": "NOISETTE",
+      "odds": 10.2,
+      "models": {
+        "v6": {
+          "probability": 0.05128732942911366,
+          "fair_odds": 19.49799319112806,
+          "ev": -0.47686923982304075,
+          "implied_raw": 0.09803921568627452,
+          "difference_pp": -4.675188625716086,
+          "version": "v6@fb2aea565cfb"
+        },
+        "classic_full": {
+          "probability": 0.04892864938384844,
+          "fair_odds": 20.43792364172849,
+          "ev": -0.5009277762847459,
+          "implied_raw": 0.09803921568627452,
+          "difference_pp": -4.911056630242609,
+          "version": "classic_full@1c5e0e8f4900"
+        },
+        "available_history_v3": {
+          "probability": 0.04398458723281744,
+          "fair_odds": 22.73523665703262,
+          "ev": -0.5513572102252622,
+          "implied_raw": 0.09803921568627452,
+          "difference_pp": -5.405462845345708,
+          "version": "available_history_v3@c6ccc2335485"
+        }
+      }
+    }
+  ],
+  "place": {
+    "status": "EV placé non calculable"
+  },
+  "limits": "Observed odds may change; field must be rechecked; positive estimated EV is unvalidated. Recommendations suspended; research comparison only."
+}
