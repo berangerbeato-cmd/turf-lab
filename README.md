@@ -1,3 +1,13 @@
+# Suivi prospectif V4 : objectif 10 courses par jour (22/11/2026)
+
+**Collecte automatique programmée**, sans intervention ni pari : **jusqu'à 10 courses françaises de trot attelé par jour**. La sélection des dix premières courses admissibles est enregistrée et figée dès la première exécution du jour, au moins 40 minutes avant départ. Une course impossible ou manquée reste visible comme échec : elle n'est jamais remplacée par une course choisie a posteriori.
+
+**Six déclenchements par jour**, à 06 h 10, 08 h 10, 10 h 10, 12 h 10, 14 h 10 et 16 h 10 (Europe/Paris). Maximum **4 courses par exécution**, maximum **10 courses planifiées par jour**. Les appels PMU et les résultats officiels restent soumis à disponibilité : 10 est un objectif de collecte, **pas une garantie de 10 résultats vérifiés quotidiennement**.
+
+Le suivi écrit `reports/history_repair_shadow_v1/prospective_forecasts/<jour>/selection_plan.json`, `daily_summary.json` et `reports/v4_integrated/prospective_scores.json` pour mesurer sélection, tentatives, captures réellement réussies, courses vérifiées et progrès vers les **200** évaluations prospectives. Une seule V4 47 caractéristiques, `NO BET` inchangé.
+
+---
+
 # TURF LAB V4 : les cinq derniers chantiers intégrés ensemble (22/11/2026)
 
 **Toujours une seule V4.** Les 47 variables et trois modèles d'origine gagnant/Top5/cotes restent gelés. Son **même rapport** `v4_integrated.json` incorpore désormais, via le lot [V4 Next Bundle](reports/v4_next_bundle/RESULTS.md), cinq nouveaux contrôles :
