@@ -1,0 +1,66 @@
+name: TURF LAB V4 all FIVE improvements one-shot research
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4_next_bundle.yml'
+      - 'config/v4_next_bundle.json'
+      - 'turf_lab/history_repair_v2.py'
+      - 'turf_lab/v4_next_research.py'
+      - 'scripts/train_v4_next_bundle.py'
+      - 'tests/test_v4_next_bundle.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turf-v4-five-improvements-bundle
+  cancel-in-progress: false
+jobs:
+  single_bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked model scientific dependencies
+        run: pip install -r requirements-v5.txt scipy==1.17.0
+      - name: Test all 5 enhancements against frozen source
+        run: |
+          python -m py_compile turf_lab/history_repair_v2.py turf_lab/v4_next_research.py scripts/train_v4_next_bundle.py
+          python -m unittest tests.test_v4_next_bundle tests.test_v4_multifeature tests.test_v4_multifeature_inference -v
+      - name: Reconcile history, train DQ and course contexts, assess odds-band and Quinté
+        run: python -m scripts.train_v4_next_bundle
+      - name: Freeze new components and archive paired research results
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f models/v4_next_bundle reports/v4_next_bundle
+          if ! git diff --cached --quiet; then
+            git commit -m 'Freeze five V4 research improvements together with audited outcomes'
+            for n in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
+      - name: Preserve honest failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: V4-five-improvements-failed
+          if-no-files-found: ignore
+          path: |
+            reports/v4_next_bundle/failure.json
+            reports/v4_next_bundle/history_repair_v2_audit.json
+            models/v4_next_bundle/frozen_before_test.json
