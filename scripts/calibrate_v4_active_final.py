@@ -72,7 +72,7 @@ def main():
         raise ValueError("Duplicate new V4 row")
     validation=[
         byid[r["race_id"]] for r in splits["validation"]
-        if "2025-01-01"<=r["date"]<="2025-06-30"]
+        if "2025-01-01"<=r["date"]<="2025-06-30"
     ]
     if len(validation)<2500 or any(len(h["features"])!=47 for r in validation
                                     for h in r["runners"]):
