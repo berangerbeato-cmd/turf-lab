@@ -1,7 +1,7 @@
 {
-  "version": "turf_lab_v4_multifeature_1",
+  "version": "turf_lab_v4_fully_integrated_1",
   "active_user_model": "TURF_LAB_V4",
-  "model_family": "turf_lab_v4_multifeature_1",
+  "model_family": "turf_lab_v4_fully_integrated_1",
   "context_file": "v4_speed_context.json",
   "output_file": "v4_integrated.json",
   "winner": "models/v4_multifeature/winner.json",
@@ -12,17 +12,17 @@
   "historical_2026_reused": true,
   "independent_validation_complete": false,
   "ready_for_research_inference": true,
-  "promotion_reason": "Explicit user decision to integrate class, relative historical gains, weighted recent form and R in the SINGLE V4 at once; retrained winner, ranker and R-conditioned odds correction on separate chronological windows.",
+  "promotion_reason": "User explicitly ordered immediate active, not shadow-only, integration of all five improvements in the one V4. DQ adjustment calibrated with signed residual on 2025 H1 and frozen; context, odds-band and maximum joint quintet now affect main predictions.",
   "value_requires_verified_prestart_quotes": true,
   "recommendations_allowed": false,
   "real_money_betting": false,
   "missing_context_behavior": "BLOCK_V4_IF_SNAPSHOT_MISSING; LEARNED_NONE_IF_A_HORSE_HAS_NO_PRIOR_TIMED_STARTS",
   "limits": [
-    "Historical 2026 comparison is reused/exploratory; first-choice accuracy decreased versus 43-feature V4",
-    "Lagged historical PMU career euro snapshots are not independently proven contemporaneous at past race date",
-    "Relative class also includes nonmonetary prior-place points",
-    "Market R-conditioned correction is not certified on executable ZEturf odds",
-    "No stake or ROI claim; real money betting policy remains SUSPENDED"
+    "All improvements are now applied to the one main V4 calculation; fitted DQ residual had no post-2025 input",
+    "Clinical precision/ROI claims are not warranted: 2025 calibration reused and 2026 explorations already inspected",
+    "Odds band only applies when complete verified <=15-minute prestart board exists",
+    "Individual disputed historical records remain quarantined, not fabricated",
+    "No real money betting recommendations or stakes until independent prospective verification"
   ],
   "aux_context_file": "v4_aux_context.json",
   "feature_count": 47,
@@ -37,16 +37,26 @@
   "research_bundle": {
     "version": "turf_lab_v4_next_research_bundle_1",
     "training_lock": "models/v4_next_bundle/frozen_before_test.json",
+    "activation_lock": "models/v4_active_activation/frozen_activation.json",
     "components": {
-      "history_repair_v2": "SOURCE_RECONCILIATION_AND_QUARANTINE",
-      "disqualification": "INDIVIDUAL_PROBABILITY_DIAGNOSTIC_NOT_DOUBLE_COUNTED",
-      "race_context": "SHRUNK_TEMPERATURE_COMPARISON_NOT_AUTO_SUBSTITUTED",
-      "odds_bias": "PRIOR_PRICE_BAND_CALIBRATION_SHADOW_ONLY",
-      "ze5": "EXACT_UNORDERED_JOINT_PROBABILITY_PAPER_ONLY"
+      "history_repair_v2": "APPLIED_AS_HISTORY_QUALITY_GATE_WITH_CONFLICT_QUARANTINE",
+      "disqualification": "APPLIED_TO_WIN_PROBABILITY_AS_FITTED_SIGNED_RESIDUAL",
+      "race_context": "APPLIED_TO_WIN_PROBABILITY_VENUE_START_DISTANCE",
+      "odds_bias": "APPLIED_TO_FINAL_ODDS_AND_VALUE_WHEN_VERIFIED_PRICE_BOARD_AVAILABLE",
+      "ze5": "APPLIED_TO_FINAL_TOP5_AND_QUINTE_SELECTION"
     },
     "all_components_in_single_V4_report": true,
     "another_user_visible_model": false,
     "independent_forward_validation_complete": false,
     "recommendations_allowed": false
-  }
+  },
+  "active_inference_entrypoint": "turf_lab/v4_multifeature_inference.py",
+  "activation_lock": "models/v4_active_activation/frozen_activation.json",
+  "dq_residual_fit": "models/v4_active_activation/dq_residual.json",
+  "history_repair_v2": "turf_lab/history_repair_v2.py",
+  "all_improvements_applied_in_primary_outputs": true,
+  "winner_calculation": "V4_47F_PLUS_APPLIED_VENUE_START_DISTANCE_TEMPERATURE_PLUS_FITTED_SIGNED_DQ_SURVIVAL_RESIDUAL",
+  "top5_and_quinte_calculation": "ONE_MAX_JOINT_UNORDERED_PROBABILITY_COMBINATION_FROM_V4_FIVE_STAGE_RANKER",
+  "market_and_value_calculation": "VERIFIED_PRESTART_QUOTES_PLUS_R_CONDITIONED_MARKET_PLUS_APPLIED_ODDS_PRICE_BANDS_THEN_EV",
+  "one_user_facing_model": true
 }
