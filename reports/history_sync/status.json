@@ -1,17 +1,17 @@
 {
   "status": "PARTIEL",
-  "checked_at": "2026-11-22T22:39:13.481502+00:00",
-  "required_through": "2026-11-21",
-  "last_complete_day": "2026-11-21",
-  "last_collected_day": "2026-11-21",
+  "checked_at": "2026-11-23T15:34:24.766045+00:00",
+  "required_through": "2026-11-22",
+  "last_complete_day": "2026-11-22",
+  "last_collected_day": "2026-11-22",
   "complete_continuously_through": "2023-01-21",
-  "verified_races": 31235,
-  "recovered_races": 0,
-  "requests": 23,
+  "verified_races": 31288,
+  "recovered_races": 53,
+  "requests": 131,
   "missing_days": 6,
   "unknown_programme_days": 1,
   "missing_races": 21,
-  "cancelled_races": 119,
+  "cancelled_races": 120,
   "scope": "PMU-listed French harness races, 2022-01-01 through yesterday",
   "days": [
     {
@@ -16399,6 +16399,15 @@
       "status": "OK",
       "verified_races": 28,
       "cancelled_races": 0
+    },
+    {
+      "date": "2026-11-22",
+      "pending": [],
+      "issues": [],
+      "expected": 54,
+      "status": "OK",
+      "verified_races": 53,
+      "cancelled_races": 1
     }
   ],
   "prediction_inputs_status": "READY_WITH_GAPS"
