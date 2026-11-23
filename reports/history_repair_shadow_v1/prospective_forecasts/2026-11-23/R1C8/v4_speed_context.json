@@ -1,0 +1,92 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-23_R1C8",
+  "target_date": "2026-11-23",
+  "captured_at": "2026-11-23T15:54:11.671015+00:00",
+  "prior_races": 30636,
+  "last_prior_day": "2026-11-22",
+  "prior_history_sha256": "c6c8e205ec8cce0d083c357c264082e6d98b3de4b3f41c5365c66ecf40c4810d",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('NO LIMIT DELO', 'ETINCELLE DELO', 'CHARLY DU NOYER')",
+      "context_residual": -0.8836719792654403,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('NOTE REBELLE', 'REBELLE', 'FOLLOW YOU')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:(\"NOUBA D'ATOUT\", 'RIVIERE ESPERANCE', \"GU D'HERIPRE\")",
+      "context_residual": 1.0601169137820543,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('NOBLESS DU NOYER', 'EXCITING LADY', 'HOHNECK')",
+      "context_residual": 0.22645455035516351,
+      "prior_races_used": 3
+    },
+    "5": {
+      "horse_id": "pedigree:('NATIVE DE PLAY', 'HERMINA DE GODREL', 'ORLANDO VICI')",
+      "context_residual": -0.776466544387389,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:('NEBULEUSE FLIGNY', 'BRIGHT STAR', 'ASTOR DE ROZOY')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:('NIKITA DU MOUTHIEU', 'HERMIONE DU CORTA', 'BIRD PARKER')",
+      "context_residual": -0.12040364519451395,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:(\"NINA HAGEN D'OR\", \"GRACIOUS D'OR\", 'EXIT MONEY')",
+      "context_residual": 1.2785332605250588,
+      "prior_races_used": 2
+    },
+    "9": {
+      "horse_id": "pedigree:('NOMADE VRIE', 'FANTASIA VRIE', 'INVINCIBLE CASH')",
+      "context_residual": -0.2805806735561564,
+      "prior_races_used": 2
+    },
+    "10": {
+      "horse_id": "pedigree:('NOSTRA DEMONIA', 'DEMONIA ROMA', 'READY CASH')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "11": {
+      "horse_id": "pedigree:('NIGHT FOR YOU', 'VIVA LOVE', 'GOETMALS WOOD')",
+      "context_residual": 1.0667478583552583,
+      "prior_races_used": 2
+    },
+    "12": {
+      "horse_id": "pedigree:('NOLITA MADRIK', 'AIMA DE VILLENEUVE', 'READY CASH')",
+      "context_residual": -0.9219519752130291,
+      "prior_races_used": 1
+    },
+    "13": {
+      "horse_id": "pedigree:('NIKITA DU BOUFFEY', 'URSULE DU BOUFFEY', 'DOLLAR MACKER')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "14": {
+      "horse_id": "pedigree:('NOSTRA COSA', 'ITALIENNE', 'ITALIANO VERO')",
+      "context_residual": -0.5415316494694562,
+      "prior_races_used": 3
+    },
+    "15": {
+      "horse_id": "pedigree:('NEVALE VET', 'VENALE VET', \"NI HO PED D'OMBREE\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 15,
+  "coverage_active": 10,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
