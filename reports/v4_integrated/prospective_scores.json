@@ -26,58 +26,28 @@
   "attempted_slots": 11,
   "captured_planned_slots": 5,
   "original_captures": 5,
-  "verified_results": 3,
-  "pending_results": 2,
-  "invalid_inputs": 0,
+  "verified_results": 1,
+  "pending_results": 0,
+  "invalid_inputs": 4,
   "minimum_review_races": 200,
   "validation_ready": false,
   "mean": {
     "v4_integrated": {
-      "log_loss": 2.4138233734480794,
-      "brier": 0.911675879755382,
-      "top1_correct": 0.3333333333333333,
+      "log_loss": 1.6648698032468523,
+      "brier": 0.7223192546352741,
+      "top1_correct": 1,
       "top5_overlap": 2,
       "top5_exact": 0
     },
     "v3_frozen": {
-      "log_loss": 2.3658745619027743,
-      "brier": 0.9044056177827786,
-      "top1_correct": 0.3333333333333333,
-      "top5_overlap": 2.3333333333333335,
+      "log_loss": 1.8908408318600092,
+      "brier": 0.7885831880384304,
+      "top1_correct": 1,
+      "top5_overlap": 2,
       "top5_exact": 0
     }
   },
   "scored": [
-    {
-      "race_id": "2026-11-22_R10C1",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/v4_integrated.json",
-      "outcome": "VERIFIED_OFFICIAL",
-      "prior_speed_coverage": 7,
-      "metrics": {
-        "v4_integrated": {
-          "log_loss": 2.6428146317254897,
-          "brier": 0.9720703990650544,
-          "top1_correct": 0,
-          "top5_overlap": 2,
-          "top5_exact": 0
-        },
-        "v3_frozen": {
-          "log_loss": 2.451198358083848,
-          "brier": 0.9357314593346449,
-          "top1_correct": 0,
-          "top5_overlap": 2,
-          "top5_exact": 0
-        }
-      },
-      "ze5_paper": {
-        "predicted_joint_probability": 0.012721944741886995,
-        "actual_exact": 0
-      },
-      "dq_brier": {
-        "n": 12,
-        "total_squared_error": 2.025965038973272
-      }
-    },
     {
       "race_id": "2026-11-22_R12C3",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R12C3/v4_integrated.json",
@@ -107,62 +77,36 @@
         "n": 14,
         "total_squared_error": 1.9365720616704194
       }
-    },
-    {
-      "race_id": "2026-11-22_R1C1",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R1C1/v4_integrated.json",
-      "outcome": "VERIFIED_OFFICIAL",
-      "prior_speed_coverage": 14,
-      "metrics": {
-        "v4_integrated": {
-          "log_loss": 2.9337856853718964,
-          "brier": 1.0406379855658174,
-          "top1_correct": 0,
-          "top5_overlap": 2,
-          "top5_exact": 0
-        },
-        "v3_frozen": {
-          "log_loss": 2.7555844957644653,
-          "brier": 0.9889022059752605,
-          "top1_correct": 0,
-          "top5_overlap": 3,
-          "top5_exact": 0
-        }
-      },
-      "ze5_paper": {
-        "predicted_joint_probability": 0.004366905673573414,
-        "actual_exact": 0
-      },
-      "dq_brier": {
-        "n": 14,
-        "total_squared_error": 2.417090187652728
-      }
     }
   ],
-  "pending": [
+  "pending": [],
+  "invalid": [
     {
-      "race_id": "2026-11-22_R11C2",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/v4_integrated.json",
+      "error": "Original integrated V4 and its five research components not reproducible"
+    },
+    {
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R11C2/v4_integrated.json",
-      "outcome": "HORSE_IDENTITY_OR_STARTER_MISMATCH",
-      "prior_speed_coverage": 6
+      "error": "Original integrated V4 and its five research components not reproducible"
     },
     {
-      "race_id": "2026-11-23_R1C8",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R1C1/v4_integrated.json",
+      "error": "Original integrated V4 and its five research components not reproducible"
+    },
+    {
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-23/R1C8/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
-      "prior_speed_coverage": 10
+      "error": "Original integrated V4 and its five research components not reproducible"
     }
   ],
-  "invalid": [],
   "ze5_paper_validation": {
-    "races": 3,
-    "expected_exact": 0.022103780057948042,
+    "races": 1,
+    "expected_exact": 0.005014929642487633,
     "actual_exact": 0,
     "not_market_validated": true
   },
   "disqualification_validation": {
-    "horses": 40,
-    "brier": 0.15949068220741047
+    "horses": 14,
+    "brier": 0.1383265758336014
   },
   "roi": null,
   "limits": [
