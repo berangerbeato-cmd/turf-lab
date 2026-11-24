@@ -1,0 +1,87 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-24_R4C4",
+  "target_date": "2026-11-24",
+  "captured_at": "2026-11-24T15:48:37.182742+00:00",
+  "prior_races": 30641,
+  "last_prior_day": "2026-11-23",
+  "prior_history_sha256": "eb448c3421852c121817f795d9a5dbe284126047b30474c2d5a81482039ba194",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('MARBELLA TEJY', 'STANIE BELLE', 'GALA TEJY')",
+      "context_residual": -0.6945123508339821,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('MILOTTE DU HOULBET', 'FERIA DU HOULBET', 'GO ON BOY')",
+      "context_residual": -0.8888124227414519,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('MISSION IMPOSSIBLE', 'AENA JOSSELYN', 'EXIT MONEY')",
+      "context_residual": -0.9349013669821288,
+      "prior_races_used": 3
+    },
+    "4": {
+      "horse_id": "pedigree:('MILONGA DU CHENE', 'ELLA DU CHENE', 'UN CHARME FOU')",
+      "context_residual": 0.524975745453703,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('MIRELLA DE LOU', 'UNORA DE LOU', 'ERIDAN')",
+      "context_residual": -1.3492806291666493,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:('MAGIC ALOUETTE', 'UNE ALOUETTE', 'CAPTAIN SPARROW')",
+      "context_residual": 0.24422990696040506,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('MIMI CHARMEUSE', 'CHARMEUSE', 'DOBERMAN')",
+      "context_residual": -0.38604470835502436,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:(\"MUSE D'EURVAD\", \"VIVE D'EURVAD\", 'ECU PIERJI')",
+      "context_residual": -0.8761786600496271,
+      "prior_races_used": 3
+    },
+    "9": {
+      "horse_id": "pedigree:('MAKINA DANICA', 'CALINE DE CHAHAINS', 'VERY NICE MARCEAUX')",
+      "context_residual": -0.8846618901623733,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('MALIZIOSA', 'CRESTA ROSSA', 'FOLLOW YOU')",
+      "context_residual": 0.7755286858735199,
+      "prior_races_used": 3
+    },
+    "11": {
+      "horse_id": "pedigree:('MISS WINNER', 'HOVELY WINNER', 'FELICIANO')",
+      "context_residual": -0.47617866004962706,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('MADELEINE RENKA', 'UNE MISS DE NAPPES', 'FEELING CASH')",
+      "context_residual": -1.0576957833390843,
+      "prior_races_used": 2
+    },
+    "13": {
+      "horse_id": "pedigree:('MISS STORY', 'FUN DESTINEE', \"UN MEC D'HERIPRE\")",
+      "context_residual": -2.546117935790215,
+      "prior_races_used": 1
+    },
+    "14": {
+      "horse_id": "pedigree:('MUSANIA DE WARNOC', 'CUSANIA', 'ROYAL DREAM')",
+      "context_residual": -1.5726383514106637,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 14,
+  "coverage_active": 14,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

@@ -5,7 +5,7 @@
   "recommendations_allowed": false,
   "daily_target_races": 10,
   "daily_execution_cap": 4,
-  "planned_days": 2,
+  "planned_days": 3,
   "daily_capture_plans": [
     {
       "date": "2026-11-22",
@@ -20,15 +20,22 @@
       "attempted": 1,
       "v4_captured": 1,
       "missed_or_failed": 0
+    },
+    {
+      "date": "2026-11-24",
+      "selected": 7,
+      "attempted": 4,
+      "v4_captured": 4,
+      "missed_or_failed": 0
     }
   ],
-  "planned_slots": 11,
-  "attempted_slots": 11,
-  "captured_planned_slots": 5,
-  "original_captures": 5,
+  "planned_slots": 18,
+  "attempted_slots": 15,
+  "captured_planned_slots": 9,
+  "original_captures": 9,
   "verified_results": 1,
-  "pending_results": 0,
-  "invalid_inputs": 4,
+  "pending_results": 3,
+  "invalid_inputs": 5,
   "minimum_review_races": 200,
   "validation_ready": false,
   "mean": {
@@ -79,7 +86,26 @@
       }
     }
   ],
-  "pending": [],
+  "pending": [
+    {
+      "race_id": "2026-11-24_R4C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C3/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 11
+    },
+    {
+      "race_id": "2026-11-24_R4C4",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C4/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 14
+    },
+    {
+      "race_id": "2026-11-24_R4C5",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C5/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 11
+    }
+  ],
   "invalid": [
     {
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-22/R10C1/v4_integrated.json",
@@ -96,6 +122,10 @@
     {
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-23/R1C8/v4_integrated.json",
       "error": "Original integrated V4 and its five research components not reproducible"
+    },
+    {
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C2/v4_integrated.json",
+      "error": "Frozen V3 field differs from V4"
     }
   ],
   "ze5_paper_validation": {

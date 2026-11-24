@@ -1,0 +1,87 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-24_R4C2",
+  "target_date": "2026-11-24",
+  "captured_at": "2026-11-24T15:46:38.283970+00:00",
+  "prior_races": 30641,
+  "last_prior_day": "2026-11-23",
+  "prior_history_sha256": "eb448c3421852c121817f795d9a5dbe284126047b30474c2d5a81482039ba194",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('KING MOKO', 'URSULA MESLOISE', 'TIMOKO')",
+      "context_residual": -1.179216056902791,
+      "prior_races_used": 1
+    },
+    "2": {
+      "horse_id": "pedigree:('IDEAL DU DIGEON', 'TORNADE DU DIGEON', \"SHADOW D'ODYSSEE\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('KONDOR', 'SHUCCA', 'FABULOUS WOOD')",
+      "context_residual": 2.0659525776646044,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('KENTUCKY WOOD', 'ANNA MARIA', 'FOLLOW YOU')",
+      "context_residual": -0.4339851719161961,
+      "prior_races_used": 3
+    },
+    "5": {
+      "horse_id": "pedigree:('ISEA DU QUENNE', 'BRISKA DU QUENNE', 'VERY NICE MARCEAUX')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "6": {
+      "horse_id": "pedigree:('KINASSE DE VIVOIN', 'CHANCE DES LANDES', 'TORNADO BELLO')",
+      "context_residual": 0.9577282210182239,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('HANUGAN', 'UGANDA', \"UN MEC D'HERIPRE\")",
+      "context_residual": -1.2542506744194397,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:('JAGUAR DE DALINE', 'VAYA DE DALINE', 'EROS DU CHENE')",
+      "context_residual": 1.385109336988113,
+      "prior_races_used": 2
+    },
+    "9": {
+      "horse_id": "pedigree:('KAYNE RICHER', 'MAMELIE', 'RODRIGO JET')",
+      "context_residual": 2.279596354805486,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('HAMYOT DE BOMO', 'TIMBALE DE BOMO', 'UNIQUE QUICK')",
+      "context_residual": 0.9863628198018269,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('KEN FERFAY', 'FRANCE FERFAY', 'TONKIN DE BELLOUET')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:('KISS ME', 'VALSE DARLING', 'FABULOUS WOOD')",
+      "context_residual": 1.425700034589965,
+      "prior_races_used": 2
+    },
+    "13": {
+      "horse_id": "pedigree:('JUST DE LA MORTRIE', 'BEER DE LA MORTRIE', 'UN CHARME FOU')",
+      "context_residual": -2.824714250343466,
+      "prior_races_used": 2
+    },
+    "14": {
+      "horse_id": "pedigree:('JEALOUS GIRL', 'VEGA FRANCA', 'BOCCADOR DE SIMM')",
+      "context_residual": 1.2110166775329998,
+      "prior_races_used": 3
+    }
+  },
+  "target_participants": 14,
+  "coverage_active": 9,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

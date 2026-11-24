@@ -4,10 +4,10 @@
   "recommendations_allowed": false,
   "prospective_start": "2026-11-22T00:00:00+01:00",
   "selection_cohort": "Deterministic predeclared first ten races per day, original two-race cohorts kept only for backward compatibility; no user-selected forecasts",
-  "eligible_forecasts": 5,
+  "eligible_forecasts": 9,
   "verified_results": 4,
-  "pending_or_excluded_outcomes": 1,
-  "candidate_changes": 5,
+  "pending_or_excluded_outcomes": 5,
+  "candidate_changes": 9,
   "validation_minimum_races": 200,
   "validation_ready": false,
   "means": {
@@ -213,6 +213,34 @@
       "model": "history_repair_shadow_v1_1_nancy_alias",
       "status": "HORSE_IDENTITY_OR_STARTER_MISMATCH",
       "runner_changes": 3
+    },
+    {
+      "race_id": "2026-11-24_R4C2",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C2/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 6
+    },
+    {
+      "race_id": "2026-11-24_R4C3",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C3/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 9
+    },
+    {
+      "race_id": "2026-11-24_R4C4",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C4/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 6
+    },
+    {
+      "race_id": "2026-11-24_R4C5",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-24/R4C5/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 5
     }
   ],
   "invalid_forecasts": [],
