@@ -1,0 +1,87 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-25_R4C8",
+  "target_date": "2026-11-25",
+  "captured_at": "2026-11-25T15:32:13.414349+00:00",
+  "prior_races": 30654,
+  "last_prior_day": "2026-11-24",
+  "prior_history_sha256": "c2e24d84dc9e9b5632affe84d3b97869c6175b1536305b9636e4aff1b69455c5",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('MYRTO DU MINON', 'CELIA DU MINON', \"NI HO PED D'OMBREE\")",
+      "context_residual": 4.6149442481657754e-05,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('MISS MAGIQUE', 'VIGOGNE DU BOULAY', 'BOLD EAGLE')",
+      "context_residual": 0.6755286858735199,
+      "prior_races_used": 1
+    },
+    "3": {
+      "horse_id": "pedigree:('MISS FRANCE PIYA', 'GRANDE BISE PIYA', 'BIRD PARKER')",
+      "context_residual": -0.8681681860613025,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('MADEMOISELLE JOLIE', 'UCAYALI JOLIE', 'EXPRESS JET')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "5": {
+      "horse_id": "pedigree:('MANDARINE TIVO', 'DIVA TIVOLI', 'DUCATO BOURBON')",
+      "context_residual": -0.6876276222019078,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('MANDARINE', 'HONORA AVIS', 'FACE TIME BOURBON')",
+      "context_residual": 0.7637475971233653,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('MAUNY DE PLAY', 'HARADISE DE PLAY', \"NI HO PED D'OMBREE\")",
+      "context_residual": 0.006568779573979555,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:('MIRA DE BAFFAIS', 'OLYMPE DE BAFFE', 'ORLANDO VICI')",
+      "context_residual": -2.25889153960644,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('MYRTILLE DE SEE', 'FOLIE DE SEE', 'EXPRESS JET')",
+      "context_residual": -0.5681681860613026,
+      "prior_races_used": 3
+    },
+    "10": {
+      "horse_id": "pedigree:('MERVEILLE DAB', 'BIANCA MESLOISE', 'EQUINOXE')",
+      "context_residual": -0.3489268823623861,
+      "prior_races_used": 3
+    },
+    "11": {
+      "horse_id": "pedigree:('MA DOUCE DE DALINE', 'DOUCEUR DE DALINE', 'UN CHARME FOU')",
+      "context_residual": -1.1588915396064403,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('MORGANE DE HOERDT', 'TOSCANE DE HOERDT', 'HOOKER BERRY')",
+      "context_residual": -0.07799824373307637,
+      "prior_races_used": 4
+    },
+    "13": {
+      "horse_id": "pedigree:('MELLYNGA', 'BELLYNGA', 'FADO DU CHENE')",
+      "context_residual": -0.6379355584896548,
+      "prior_races_used": 3
+    },
+    "14": {
+      "horse_id": "pedigree:('MONIA VERDERIE', 'CLEO VERDERIE', 'DIABLE DE VAUVERT')",
+      "context_residual": -0.4879210926021988,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 14,
+  "coverage_active": 13,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

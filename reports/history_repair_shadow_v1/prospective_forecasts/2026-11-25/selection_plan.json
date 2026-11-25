@@ -1,0 +1,28 @@
+{
+  "version": "prospective_10_per_day_v1",
+  "date": "2026-11-25",
+  "created_at_utc": "2026-11-25T15:29:32.068057+00:00",
+  "selection_rule": "SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2",
+  "daily_target": 10,
+  "per_execution_max": 4,
+  "lead_minutes": 40,
+  "selected": [
+    {
+      "race_id": "2026-11-25_R4C6",
+      "reunion": 4,
+      "course": 6,
+      "start_ms": 1795624920000,
+      "selection_index": 1
+    },
+    {
+      "race_id": "2026-11-25_R4C8",
+      "reunion": 4,
+      "course": 8,
+      "start_ms": 1795629240000,
+      "selection_index": 2
+    }
+  ],
+  "no_replacements_after_error": true,
+  "no_outcome_or_odds_filter": true,
+  "recommendations_allowed": false
+}

@@ -1,0 +1,67 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-25_R4C6",
+  "target_date": "2026-11-25",
+  "captured_at": "2026-11-25T15:31:10.997932+00:00",
+  "prior_races": 30654,
+  "last_prior_day": "2026-11-24",
+  "prior_history_sha256": "c2e24d84dc9e9b5632affe84d3b97869c6175b1536305b9636e4aff1b69455c5",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:(\"NORA D'OLMEN\", \"DIVINE D'ECAJEUL\", 'BOOSTER WINNER')",
+      "context_residual": -1.2066899064359677,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('NELEA MIP', 'PRETTY JET', 'DJANGO RIFF')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('NORDIC GIRL', 'GAELIQUE GIRL', 'DOBERMAN')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('NUTTY DREAM', 'GASPAIE', 'ROYAL DREAM')",
+      "context_residual": -0.5482241942589607,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('NIKITA DU PONT', 'TINA DU PONT', 'BOOSTER WINNER')",
+      "context_residual": -1.984214322095264,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:('NELLY DE CLARAFLOR', 'FLEUR DE THE', \"HEAVEN'S PRIDE\")",
+      "context_residual": -2.55821354070917,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('NICE FLASH SEMILLY', 'FANCY', 'FACE TIME BOURBON')",
+      "context_residual": -1.997026919440701,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('NIKITA DU POMMEAU', 'UNE LADY DE NAPPES', 'READY CASH')",
+      "context_residual": -0.26011856825968427,
+      "prior_races_used": 2
+    },
+    "9": {
+      "horse_id": "pedigree:('NIKITA SLY', 'ELITE SLY', 'FELICIANO')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('NOUVELLE CHANCE', 'CHANCEUSE WILLIAM', 'DIJON')",
+      "context_residual": -0.25889153960644035,
+      "prior_races_used": 1
+    }
+  },
+  "target_participants": 10,
+  "coverage_active": 7,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
