@@ -4,10 +4,10 @@
   "recommendations_allowed": false,
   "prospective_start": "2026-11-22T00:00:00+01:00",
   "selection_cohort": "Deterministic predeclared first ten races per day, original two-race cohorts kept only for backward compatibility; no user-selected forecasts",
-  "eligible_forecasts": 11,
+  "eligible_forecasts": 15,
   "verified_results": 8,
-  "pending_or_excluded_outcomes": 3,
-  "candidate_changes": 11,
+  "pending_or_excluded_outcomes": 7,
+  "candidate_changes": 15,
   "validation_minimum_races": 200,
   "validation_ready": false,
   "means": {
@@ -371,6 +371,34 @@
       "model": "history_repair_shadow_v1_1_nancy_alias",
       "status": "RACE_START_MISMATCH",
       "runner_changes": 9
+    },
+    {
+      "race_id": "2026-11-26_R1C6",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R1C6/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 5
+    },
+    {
+      "race_id": "2026-11-26_R4C1",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R4C1/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 6
+    },
+    {
+      "race_id": "2026-11-26_R1C7",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R1C7/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 1
+    },
+    {
+      "race_id": "2026-11-26_R4C2",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R4C2/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "AWAITING_VERIFIED_RESULT",
+      "runner_changes": 8
     }
   ],
   "invalid_forecasts": [],

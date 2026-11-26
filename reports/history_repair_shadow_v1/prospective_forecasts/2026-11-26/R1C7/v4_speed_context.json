@@ -1,0 +1,82 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-26_R1C7",
+  "target_date": "2026-11-26",
+  "captured_at": "2026-11-26T15:05:16.477152+00:00",
+  "prior_races": 30664,
+  "last_prior_day": "2026-11-25",
+  "prior_history_sha256": "28f1dcd87a03a10d43c8523349250f453e0cedb6918a5cc9833ca28206de5a63",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('I CAN WIN GARDENIA', 'VIKKI C.N. (DEN)', 'ENS SNAPSHOT (US)')",
+      "context_residual": 0.9115809100971092,
+      "prior_races_used": 3
+    },
+    "2": {
+      "horse_id": "pedigree:(\"RED D'OVER\", 'HONEY WALKER N', 'BOOSTER WINNER')",
+      "context_residual": 0.4115809100971092,
+      "prior_races_used": 1
+    },
+    "3": {
+      "horse_id": "pedigree:('INDY BOY (DEN)', 'WHOS SMILING NOW', 'ENS SNAPSHOT')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('JUBII VANG', 'RASMINE VANG', 'MAHARAJAH')",
+      "context_residual": 0.9788519289265387,
+      "prior_races_used": 2
+    },
+    "5": {
+      "horse_id": "pedigree:('KOOL AND THE GANG', 'CONGA', 'READY CASH')",
+      "context_residual": -2.570922635233539,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('EL DORADO BAR', 'SISTER DANY BAR', 'BRILLANTISSIME')",
+      "context_residual": 1.6286264930866163,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('KHEO VIVANCIERE', 'SIDONIE DE JOE', 'TUCSON')",
+      "context_residual": 1.834012955825019,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:('KANAKA DE BUSSET', 'PLUME INDIENNE', 'ENINO DU POMMEREUX')",
+      "context_residual": -1.4140371987443068,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('KOVES DU PONT', 'PARADE DU PONT', 'QUINOA DU GERS')",
+      "context_residual": 1.8286264930866163,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:(\"KALITA D'HENINEL\", 'REBELLION', 'BOCCADOR DE SIMM')",
+      "context_residual": 1.2486814949409382,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('JUST A LADY (DEN)', 'GLOBAL LADY', \"S.J.'S PHOTO\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:(\"EXPRESS D'ARC\", 'MRS MARY DANY', 'WISHING STONE')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "13": {
+      "horse_id": "pedigree:('KEROSEN DU GERS', 'BIENVENUE DU GERS', 'PRODIGIOUS')",
+      "context_residual": 1.8779698986373405,
+      "prior_races_used": 3
+    }
+  },
+  "target_participants": 13,
+  "coverage_active": 10,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

@@ -1,0 +1,82 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-26_R1C6",
+  "target_date": "2026-11-26",
+  "captured_at": "2026-11-26T15:03:47.021502+00:00",
+  "prior_races": 30664,
+  "last_prior_day": "2026-11-25",
+  "prior_history_sha256": "28f1dcd87a03a10d43c8523349250f453e0cedb6918a5cc9833ca28206de5a63",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('BARKLEY', 'A SWEET DANCE', 'FACE TIME BOURBON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('GANGSTER VENDIL', 'M.T.KLARA', 'POWER')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('GUARDAMI', 'TAST OF BOURBON', 'TACTICAL LANDING (US)')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('MOHAWK', 'MAHANA', 'LOVE YOU')",
+      "context_residual": 0.5454867304215731,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('MYSTERY QUEEN', 'GLORY QUEEN', 'PRODIGIOUS')",
+      "context_residual": 0.9019775404760585,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:('MILTON DU NOYER', 'STRAWINSKA MAUZUN', 'FACE TIME BOURBON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:('MANASLU', 'CARANCA', 'LOVE YOU')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "8": {
+      "horse_id": "pedigree:('MOSTRA DE BANVILLE', 'COLOR DE BANVILLE', 'HOHNECK')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:('GOGGIA', 'ASIA (ITY)', 'GREENSHOE (US)')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('MISTRAL DU GOUTIER', 'EXTRA LIGHT', 'HOHNECK')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "11": {
+      "horse_id": "pedigree:('GEILES LEBEN HOME', 'VANATTA', 'MAHARAJAH')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:('MELLOW SPEED', 'PRUDENCE DU HAM', 'GALIUS')",
+      "context_residual": 2.6503294063254725,
+      "prior_races_used": 2
+    },
+    "13": {
+      "horse_id": "pedigree:('MADEMOISELLE JANE', 'ANGELICA', 'READY CASH')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 13,
+  "coverage_active": 3,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

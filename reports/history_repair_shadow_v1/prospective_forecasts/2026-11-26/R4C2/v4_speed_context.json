@@ -1,0 +1,97 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-26_R4C2",
+  "target_date": "2026-11-26",
+  "captured_at": "2026-11-26T15:06:03.610600+00:00",
+  "prior_races": 30664,
+  "last_prior_day": "2026-11-25",
+  "prior_history_sha256": "28f1dcd87a03a10d43c8523349250f453e0cedb6918a5cc9833ca28206de5a63",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('HAVANA MOST', 'CALIENTA JETS', 'CHARLY DU NOYER')",
+      "context_residual": 0.9176138046155029,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('ISIDORO DIDAN', 'QLORE TIVOLI', 'PASSWORD')",
+      "context_residual": 1.1311040271040402,
+      "prior_races_used": 3
+    },
+    "3": {
+      "horse_id": "pedigree:(\"JAGUAR D'ESCRIT\", \"TAHITI D'ESCRIT\", 'BRILLANTISSIME')",
+      "context_residual": 0.6174315439928906,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('JINGLE PASS', 'ECLIPSE STARDUST', 'UNIVERS LOVE')",
+      "context_residual": -1.0315569756625045,
+      "prior_races_used": 2
+    },
+    "5": {
+      "horse_id": "pedigree:('HARLEM LOCA', 'QUEEN AIGLONNE', 'THEO JOSSELYN')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "6": {
+      "horse_id": "pedigree:('IGLOO DE BEAULIEU', 'BALLINROBE', 'ATLAS DE JOUDES')",
+      "context_residual": -0.8720358296264312,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('HARABICA', 'PRETTY', 'PRINCE GEDE')",
+      "context_residual": -0.3718162779355771,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('JAMSHIR', 'MANZIR', 'LOVE YOU')",
+      "context_residual": 1.1411084603935597,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('JUST VERY NICE', 'BAIKA JACK', 'VERY NICE MARCEAUX')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('JOHORE', 'TOKAJY', 'UNIQUE QUICK')",
+      "context_residual": 0.9999674448951046,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('INCAHUASI', 'SANAWA', 'READY CASH')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:('IRIS FARCEUSE', 'PETITE FARCE', 'VERY NICE MARCEAUX')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "13": {
+      "horse_id": "pedigree:(\"IN LOVE D'ECAJEUL\", 'BELLA CASH', 'LOVE YOU')",
+      "context_residual": 3.3871705678472352,
+      "prior_races_used": 1
+    },
+    "14": {
+      "horse_id": "pedigree:('JORIA MESLOISE', 'EUROPE MESLOISE', 'PARIS HAUFOR')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "15": {
+      "horse_id": "pedigree:(\"JAGUAR D'OBRET\", \"RENOMMEE D'OBRET\", 'MEMPHIS DU RIB')",
+      "context_residual": -0.02250079651006672,
+      "prior_races_used": 1
+    },
+    "16": {
+      "horse_id": "pedigree:(\"JANNIG D'EREVAN\", \"VASSILIA D'EREVAN\", 'VERY NICE MARCEAUX')",
+      "context_residual": -0.2853480189449474,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 16,
+  "coverage_active": 11,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
