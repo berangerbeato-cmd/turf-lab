@@ -5,38 +5,38 @@
   "prospective_start": "2026-11-22T00:00:00+01:00",
   "selection_cohort": "Deterministic predeclared first ten races per day, original two-race cohorts kept only for backward compatibility; no user-selected forecasts",
   "eligible_forecasts": 11,
-  "verified_results": 6,
-  "pending_or_excluded_outcomes": 5,
+  "verified_results": 8,
+  "pending_or_excluded_outcomes": 3,
   "candidate_changes": 11,
   "validation_minimum_races": 200,
   "validation_ready": false,
   "means": {
     "v3_baseline": {
-      "log_loss": 2.2758926900335865,
-      "brier": 0.8752729029417647,
-      "top1_correct": 0.3333333333333333,
+      "log_loss": 2.376580650268611,
+      "brier": 0.9009278162345651,
+      "top1_correct": 0.25,
       "top4_overlap": 1.5,
-      "top5_overlap": 2.1666666666666665,
+      "top5_overlap": 2.25,
       "top4_exact": 0,
       "top5_exact": 0
     },
     "research_candidate": {
-      "log_loss": 2.332742837976881,
-      "brier": 0.8928544577158563,
-      "top1_correct": 0.3333333333333333,
-      "top4_overlap": 1.3333333333333333,
-      "top5_overlap": 2,
+      "log_loss": 2.399947951422555,
+      "brier": 0.9100929883819432,
+      "top1_correct": 0.25,
+      "top4_overlap": 1.5,
+      "top5_overlap": 2.125,
       "top4_exact": 0,
       "top5_exact": 0
     }
   },
   "paired_differences": {
     "log_loss": {
-      "candidate_minus_v3": 0.05685014794329409,
+      "candidate_minus_v3": 0.023367301153943948,
       "clustered_95pct_ci": null
     },
     "brier": {
-      "candidate_minus_v3": 0.01758155477409155,
+      "candidate_minus_v3": 0.009165172147378081,
       "clustered_95pct_ci": null
     },
     "top1_correct": {
@@ -44,11 +44,11 @@
       "clustered_95pct_ci": null
     },
     "top4_overlap": {
-      "candidate_minus_v3": -0.16666666666666666,
+      "candidate_minus_v3": 0,
       "clustered_95pct_ci": null
     },
     "top5_overlap": {
-      "candidate_minus_v3": -0.16666666666666666,
+      "candidate_minus_v3": -0.125,
       "clustered_95pct_ci": null
     },
     "top4_exact": {
@@ -276,6 +276,78 @@
           "top5_exact": 0
         }
       }
+    },
+    {
+      "race_id": "2026-11-25_R4C6",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-25/R4C6/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "VERIFIED_OFFICIAL",
+      "runner_changes": 3,
+      "finish_top5": [
+        8,
+        2,
+        5,
+        10,
+        4
+      ],
+      "metrics": {
+        "v3_baseline": {
+          "winner_probability": 0.0825229651397955,
+          "log_loss": 2.4946786590470875,
+          "brier": 0.9768182055896654,
+          "top1_correct": 0,
+          "top4_overlap": 2,
+          "top5_overlap": 2,
+          "top4_exact": 0,
+          "top5_exact": 0
+        },
+        "research_candidate": {
+          "winner_probability": 0.0989263401985055,
+          "log_loss": 2.313379744180426,
+          "brier": 0.9398086539578915,
+          "top1_correct": 0,
+          "top4_overlap": 2,
+          "top5_overlap": 2,
+          "top4_exact": 0,
+          "top5_exact": 0
+        }
+      }
+    },
+    {
+      "race_id": "2026-11-25_R4C8",
+      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-25/R4C8/history_repair_shadow_v1_1.json",
+      "model": "history_repair_shadow_v1_1_nancy_alias",
+      "status": "VERIFIED_OFFICIAL",
+      "runner_changes": 4,
+      "finish_top5": [
+        13,
+        5,
+        11,
+        1,
+        6
+      ],
+      "metrics": {
+        "v3_baseline": {
+          "winner_probability": 0.057119460678392166,
+          "log_loss": 2.862610402900282,
+          "brier": 0.9789669066362673,
+          "top1_correct": 0,
+          "top4_overlap": 1,
+          "top5_overlap": 3,
+          "top4_exact": 0,
+          "top5_exact": 0
+        },
+        "research_candidate": {
+          "winner_probability": 0.05559028410331757,
+          "log_loss": 2.8897468393387307,
+          "brier": 0.9838085068025165,
+          "top1_correct": 0,
+          "top4_overlap": 2,
+          "top5_overlap": 3,
+          "top4_exact": 0,
+          "top5_exact": 0
+        }
+      }
     }
   ],
   "awaiting_outcomes": [
@@ -299,20 +371,6 @@
       "model": "history_repair_shadow_v1_1_nancy_alias",
       "status": "RACE_START_MISMATCH",
       "runner_changes": 9
-    },
-    {
-      "race_id": "2026-11-25_R4C6",
-      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-25/R4C6/history_repair_shadow_v1_1.json",
-      "model": "history_repair_shadow_v1_1_nancy_alias",
-      "status": "AWAITING_VERIFIED_RESULT",
-      "runner_changes": 3
-    },
-    {
-      "race_id": "2026-11-25_R4C8",
-      "sidecar": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-25/R4C8/history_repair_shadow_v1_1.json",
-      "model": "history_repair_shadow_v1_1_nancy_alias",
-      "status": "AWAITING_VERIFIED_RESULT",
-      "runner_changes": 4
     }
   ],
   "invalid_forecasts": [],
