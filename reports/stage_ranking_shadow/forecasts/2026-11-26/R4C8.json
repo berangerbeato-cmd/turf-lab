@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-26_R4C8",
+  "date": "2026-11-26",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-26T19:03:11.205971+00:00",
+  "predicted_at": "2026-11-26T19:03:33.868772+00:00",
+  "scheduled_start": "2026-11-26T20:03:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('INZAGHY', 'NOUVELLE ORLEANS', 'BALTIC CHARM')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('JULIE DU NORD', 'VARINA DU LYS', \"UN MEC D'HERIPRE\")",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('ICK DU VIVIER', 'LEXIE DU VIVIER', 'GOETMALS WOOD')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:(\"HERRA D'AVENIR\", 'NATIVE SOMOLLI', \"TITAN D'OCCAGNES\")",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('HEROS DE BEAUCAMP', \"VULGATE D'AWAGNE\", 'ROCKLYN')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('JAGUAR DE MONE', 'VIOLETTE DE MONE', 'SAXO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('JOVIAL', 'AUDACE MARCEAUX', 'CRISTAL MONEY')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:(\"JAGUAR D'ANAMA\", \"PROVENCE D'ANAMA\", 'BILIBILI')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('IN VIVO', 'VICKY DU BOCAGE', 'BIRD PARKER')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('INCOGNITO', 'SERENA DU BOUFFEY', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('INDYDARCHE', 'UROBILINE DARCHE', 'BOLERO LOVE')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('HAOUSSA DE VENNES', 'TRIMURTI DE GODREL', 'REACH DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('HOUBLON BLEU', 'AURORE BLEUE', 'VITTEL DE BREVOL')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('IVALO DU BOCAGE', 'RIKIA DE MAI', 'TAG WOOD')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('ISA DU PRESSOIR', 'TOURTERELLE', 'VERY LOOK')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('HORACE DU VIVIER', 'ONDINE DU VIVIER', 'VULCAIN DU VIVIER')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "4993791df98f3aa61ede5d87a06286496b9d0a31809207c1cc6fa4fa1dfc69a6",
+  "history_through": "2026-11-25",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          2,
+          10,
+          3,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.02099091081397954,
+          "stage_raw": 0.006709329336651386,
+          "stage_calibrated": 0.00732605190070631
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          2,
+          10,
+          3,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.014570915457859464,
+          "stage_raw": 0.01030819353246873,
+          "stage_calibrated": 0.011657385271732204
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          2,
+          10,
+          3,
+          12,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.013778035533571839,
+          "stage_raw": 0.00346799169213996,
+          "stage_calibrated": 0.0037844501160583448
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          2,
+          10,
+          3,
+          11,
+          15
+        ],
+        "probabilities": {
+          "v3": 0.006584047132180661,
+          "stage_raw": 0.005359903254252253,
+          "stage_calibrated": 0.005997467922236049
+        }
+      }
+    }
+  }
+}
