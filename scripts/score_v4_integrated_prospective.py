@@ -11,12 +11,53 @@ from pathlib import Path
 from statistics import mean
 
 from scripts.score_history_repair_prospective import validate_sidecar,verified_top5
+from scripts.capture_history_repair_prospective import MAX_PER_RUN
 from turf_lab.history_sync import History
 from turf_lab.evidence import dump
 
 ROOT=Path("reports/history_repair_shadow_v1/prospective_forecasts")
 OUT=Path("reports/v4_integrated/prospective_scores.json")
 BEGIN=datetime.fromisoformat("2026-11-22T00:00:00+01:00")
+
+
+def assert_reproduced(saved, reproduced, path):
+    """Match structure exactly; permit only machine-precision float roundoff.
+
+    Never forgive different runner IDs, ranks, flags, hashes, missing keys,
+    NaN/infinity or materially changed probabilities. Include the failing
+    field in quarantine diagnostics rather than discarding it anonymously.
+    """
+    if type(saved) is not type(reproduced):
+        raise ValueError(f"Original V4 not reproducible at {path}: type differs")
+    if isinstance(saved, dict):
+        if saved.keys() != reproduced.keys():
+            raise ValueError(f"Original V4 not reproducible at {path}: keys differ")
+        for key in saved:
+            assert_reproduced(saved[key], reproduced[key], f"{path}.{key}")
+    elif isinstance(saved, list):
+        if len(saved) != len(reproduced):
+            raise ValueError(f"Original V4 not reproducible at {path}: length differs")
+        for i, (a, b) in enumerate(zip(saved, reproduced)):
+            assert_reproduced(a, b, f"{path}[{i}]")
+    elif isinstance(saved, float):
+        if (not math.isfinite(saved) or not math.isfinite(reproduced)
+                or not math.isclose(saved, reproduced, rel_tol=1e-12, abs_tol=1e-14)):
+            raise ValueError(f"Original V4 not reproducible at {path}: {saved!r} != {reproduced!r}")
+    elif saved != reproduced:
+        raise ValueError(f"Original V4 not reproducible at {path}: value differs")
+
+
+def paired_field(pred, v4, v3):
+    """Align the same prestart field, with exactly zero for declared nonrunners."""
+    field = {r["numPmu"] for r in pred["target_snapshot"]["participants"]}
+    active = {r["numPmu"] for r in pred["target_snapshot"]["participants"]
+              if r["statut"] == "PARTANT"}
+    inactive = field - active
+    if (set(v3) != field or set(v4) not in (field, active)
+            or any(v3[n] != 0 for n in inactive)
+            or any(v4.get(n, 0) != 0 for n in inactive)):
+        raise ValueError("Frozen V3 field differs from V4 or nonrunner probability is nonzero")
+    return {n: v4.get(n, 0.0) for n in sorted(field)}
 
 
 def confirm(path):
@@ -56,8 +97,7 @@ def confirm(path):
     for key in ("gagnant","top5","history_repair","context_speed","model_sha256",
                 "relative_class_and_gains","weighted_recent_form","reliability_R",
                 "research_improvements","ze5","model_activation_sha256"):
-        if saved[key]!=reproduced[key]:
-            raise ValueError("Original integrated V4 and its five research components not reproducible")
+        assert_reproduced(saved[key],reproduced[key],key)
     objects,lock=frozen()
     aux=json.loads(aux_path.read_text())
     runners,_,active,_,indices=enhanced_frame(
@@ -77,8 +117,7 @@ def confirm(path):
             or saved["research_improvements"]["quinte_unordered"]["applied_to_final_top5"] is not True):
         raise ValueError("Original V4 did not really apply all components")
     v3={int(n):float(val) for n,val in pred["models"]["available_history_v3"]["probabilities"].items()}
-    if set(v3)!=set(v4):
-        raise ValueError("Frozen V3 field differs from V4")
+    v4=paired_field(pred,v4,v3)
     return saved,pred,v4,v3
 
 
@@ -169,7 +208,8 @@ def run(output=OUT):
             "status":"SINGLE_47_FEATURE_ALL_COMPONENTS_APPLIED_PRESTART_COHORT",
             "research_only":True,"recommendations_allowed":False,
             "daily_target_races":10,
-            "daily_execution_cap":4,
+            "daily_execution_cap":MAX_PER_RUN,
+            "per_execution_max":MAX_PER_RUN,
             "planned_days":len(daily_plans),
             "daily_capture_plans":daily_plans,
             "planned_slots":sum(row["selected"] for row in daily_plans),

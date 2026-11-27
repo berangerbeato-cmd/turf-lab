@@ -34,18 +34,18 @@ class TenDailyCohort(unittest.TestCase):
             folder=Path(tmp)/"2026-11-23"
             p=plan_for_day(folder,programme(now),now)
             self.assertEqual(MAX_PER_DAY,10)
-            self.assertEqual(MAX_PER_RUN,4)
+            self.assertEqual(MAX_PER_RUN,10)
             self.assertEqual(len(p["selected"]),10)
             self.assertEqual(p["selection_rule"],SELECTION_RULE)
             self.assertEqual([r["course"] for r in p["selected"]],list(range(1,11)))
-            self.assertEqual(len(next_planned(folder,p,now)),4)
+            self.assertEqual(len(next_planned(folder,p,now)),10)
             first=p["selected"][0]
             dest=folder/"R1C1"
             dest.mkdir()
             (dest/"attempt.json").write_text(json.dumps(
                 {"race_id":first["race_id"],"status":"ERROR","reason":"PMU unavailable"}))
             others=next_planned(folder,p,now)
-            self.assertEqual([r["course"] for r in others],[2,3,4,5])
+            self.assertEqual([r["course"] for r in others],list(range(2,11)))
             # Even if programme order changes and a new early race appears,
             # daily selection is frozen. Failures cannot be replaced.
             altered=programme(now,reverse=True)
@@ -60,12 +60,34 @@ class TenDailyCohort(unittest.TestCase):
     def test_cutoff_and_country_and_quota(self):
         now=datetime(2026,11,23,6,tzinfo=timezone.utc)
         chosen=select(programme(now),now,0)
-        self.assertEqual(len(chosen),4)
+        self.assertEqual(len(chosen),10)
         self.assertTrue(all(meeting["pays"]["code"]=="FRA" for meeting,course in chosen))
-        self.assertEqual([c["numOrdre"] for m,c in chosen],[1,2,3,4])
+        self.assertEqual([c["numOrdre"] for m,c in chosen],list(range(1,11)))
         self.assertEqual(len(select(programme(now),now,9)),1)
         self.assertEqual(select(programme(now),now,10),[])
         self.assertEqual(len(select(programme(now),now,0,max_per_run=10)),10)
+
+    def test_reproducibility_roundoff_does_not_change_selection_or_flags(self):
+        from scripts.score_v4_integrated_prospective import assert_reproduced
+        a={"numbers":[1,2,3,4,5],"p":0.123456789,"flag":False,"hash":"frozen"}
+        assert_reproduced(a,dict(a,p=0.1234567890000001),"report")
+        for changed in (dict(a,p=0.1235),dict(a,p=float("nan")),dict(a,flag=0),
+                        dict(a,numbers=[1,2,3,4,6]),dict(a,hash="changed")):
+            with self.assertRaisesRegex(ValueError,"Original V4 not reproducible at report"):
+                assert_reproduced(a,changed,"report")
+
+    def test_align_nonrunners_only_if_explicit_and_zero(self):
+        from scripts.score_v4_integrated_prospective import paired_field
+        pred={"target_snapshot":{"participants":[
+            {"numPmu":1,"statut":"PARTANT"},{"numPmu":2,"statut":"PARTANT"},
+            {"numPmu":3,"statut":"NON_PARTANT"}]}}
+        baseline={1:.4,2:.6,3:0}
+        self.assertEqual(paired_field(pred,{1:.5,2:.5},baseline),{1:.5,2:.5,3:0.})
+        for bad in ({1:1.},{1:.5,2:.4,3:.1},{1:.5,2:.5,4:0.}):
+            with self.assertRaises(ValueError):
+                paired_field(pred,bad,baseline)
+        with self.assertRaises(ValueError):
+            paired_field(pred,{1:.5,2:.5},{1:.4,2:.5,3:.1})
 
     def test_new_prestart_sidecar_requires_immutable_daily_plan(self):
         with tempfile.TemporaryDirectory() as temp:

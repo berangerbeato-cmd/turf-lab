@@ -20,8 +20,10 @@ ROOT = Path("reports/history_repair_shadow_v1/prospective_forecasts")
 START = "2026-11-22"
 END = "2027-03-22"
 # Ten FIXED race slots per day, sampled without looking at form/odds.
-# Four at most per workflow avoids a burst of per-horse PMU requests.
-MAX_PER_RUN = 4
+# Process up to all ten frozen slots sequentially in one workflow: GitHub
+# scheduled invocations can be delayed. Existing per-request pacing and source
+# budgets remain unchanged; there are no parallel per-horse requests.
+MAX_PER_RUN = 10
 MAX_PER_DAY = 10
 LEAD_MINUTES = 40
 SELECTION_RULE = "SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2"
@@ -129,7 +131,7 @@ def capture():
            "cohort_version":"history_repair_shadow_v1_1_nancy_alias",
            "daily_target":MAX_PER_DAY,"per_execution_limit":MAX_PER_RUN,
            "selection_rule":SELECTION_RULE,
-           "selection":"Ten fixed first French harness races selected daily before odds/results, 40 min prestart, max four attempted per execution; no failed-race replacement"}
+           "selection":"Ten fixed first French harness races selected daily before odds/results, 40 min prestart, max ten attempted per execution; no failed-race replacement"}
     if not picks:
         state["daily_summary"]=daily_summary(folder,plan)
         dump(folder/"capture_status.json",state)

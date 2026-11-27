@@ -1,7 +1,7 @@
 name: Turf Lab forward history-repair cohort
 on:
   schedule:
-    # Multiple prestart opportunities, four selected races maximum per run.
+    # Multiple prestart opportunities; up to ten fixed slots per run.
     # Daily frozen sample is exactly the first ten eligible French harness races.
     - cron: '10 6,8,10,12,14,16 * * *'
       timezone: Europe/Paris
@@ -52,20 +52,37 @@ jobs:
       - run: pip install -r requirements-v5.txt scipy==1.17.0
       - name: Test prospective selection, provenance and result-scoring
         run: python -m unittest tests.test_prospective_ten_daily tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective tests.test_v4_full_inference tests.test_v4_speed tests.test_v4_speed_shadow tests.test_v4_multifeature tests.test_v4_multifeature_inference tests.test_capture_v4_context -v
-      - name: Capture up to four from ten frozen daily harness race slots (no betting)
+      - name: Refresh missing prior-day history before capture (bounded)
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timedelta
+          from zoneinfo import ZoneInfo
+          import subprocess, sys
+          from turf_lab.history_sync import History
+          yesterday=(datetime.now(ZoneInfo("Europe/Paris")).date()-timedelta(days=1)).isoformat()
+          state=History().day(yesterday)
+          if state["programme"] is None or (state["expected"] and not state["records"]):
+              subprocess.run([sys.executable,"-m","scripts.sync_history","--max-requests","150"],check=True)
+          else:
+              print("Verified prior-day history is available:",yesterday)
+          PY
+      - name: Capture up to ten frozen daily harness race slots (no betting)
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')
         run: python -m scripts.capture_history_repair_prospective
       - name: Score only verified immutable prestart forecasts
-        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')
+        if: ${{ !cancelled() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
         run: python -m scripts.score_history_repair_prospective
       - name: Score the ONLY integrated 47-feature V4 from real prestart snapshots
-        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')
+        if: ${{ !cancelled() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
         run: python -m scripts.score_v4_integrated_prospective
       - name: Archive prestart evidence and paired scorecard
-        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')
+        if: ${{ !cancelled() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # Preserve any bounded prior-day refresh, even if capture failed.
+          git add --all -- data/history_updates evidence/history_updates reports/history_sync
           if [ -d reports/history_repair_shadow_v1/prospective_forecasts ]; then
             git add -f reports/history_repair_shadow_v1/prospective_forecasts
           fi
