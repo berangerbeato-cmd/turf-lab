@@ -51,7 +51,8 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements-v5.txt scipy==1.17.0
       - name: Test prospective selection, provenance and result-scoring
-        run: python -m unittest tests.test_prospective_ten_daily tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective tests.test_v4_full_inference tests.test_v4_speed tests.test_v4_speed_shadow tests.test_v4_multifeature tests.test_v4_multifeature_inference tests.test_capture_v4_context -v
+        id: prospective_tests
+        run: python -m unittest tests.test_prospective_ten_daily tests.test_history_repair_prospective tests.test_history_repair_shadow tests.test_v4_unified tests.test_score_v4_prospective tests.test_v4_full_inference tests.test_v4_speed tests.test_v4_speed_shadow tests.test_v4_multifeature tests.test_v4_multifeature_inference tests.test_capture_v4_context tests.test_v4_all_active -v
       - name: Refresh missing prior-day history before capture (bounded)
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')
         run: |
@@ -71,10 +72,10 @@ jobs:
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')
         run: python -m scripts.capture_history_repair_prospective
       - name: Score only verified immutable prestart forecasts
-        if: ${{ !cancelled() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
+        if: ${{ !cancelled() && steps.prospective_tests.outcome == 'success' && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
         run: python -m scripts.score_history_repair_prospective
       - name: Score the ONLY integrated 47-feature V4 from real prestart snapshots
-        if: ${{ !cancelled() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
+        if: ${{ !cancelled() && steps.prospective_tests.outcome == 'success' && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
         run: python -m scripts.score_v4_integrated_prospective
       - name: Archive prestart evidence and paired scorecard
         if: ${{ !cancelled() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[kickoff-v4]')) }}
