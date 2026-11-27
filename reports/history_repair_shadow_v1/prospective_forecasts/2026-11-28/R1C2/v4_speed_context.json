@@ -1,0 +1,62 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R1C2",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:27:51.686569+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:(\"OPIUM D'AMOUR\", \"GAZELLE D'AMOUR\", \"PRINCE D'ESPACE\")",
+      "context_residual": 0.5005542505592748,
+      "prior_races_used": 1
+    },
+    "2": {
+      "horse_id": "pedigree:('OZZARO DIBAH', 'VANILLE DU NOYER', 'CHARLY DU NOYER')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('ODOACRE TURGOT', 'GELINOTTE TURGOT', 'HOHNECK')",
+      "context_residual": -1.834145392142811,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('OLIVIO BELLO', 'BOLIVIA BELLA', 'JUST A GIGOLO')",
+      "context_residual": -2.368135312010316,
+      "prior_races_used": 3
+    },
+    "5": {
+      "horse_id": "pedigree:(\"OTTO D'IQUAINE\", \"HORELA D'IQUAINE\", 'CLIF DU POMMEREUX')",
+      "context_residual": -0.826303575554899,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:('ORACE DES MOLLES', 'GRAINE DES MOLLES', 'HOHNECK')",
+      "context_residual": -1.3560426590679708,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('OSWALD PORT', 'DEESSE PORT', 'IDAO DE TILLARD')",
+      "context_residual": -1.9531614016690728,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:(\"ONYX D'AVRIL\", \"CAPUCINE D'AVRIL\", 'IZOARD VEDAQUAIS')",
+      "context_residual": 0.9005542505592748,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('OSSAU DU PRE', 'GEISHA DU PRE', 'IDAO DE TILLARD')",
+      "context_residual": -1.1560426590679709,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 9,
+  "coverage_active": 8,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

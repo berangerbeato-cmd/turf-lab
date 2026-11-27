@@ -1,0 +1,97 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R6C4",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:32:41.806396+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('JOSY EXPRESS', 'PARMELIE', 'PAGALOR')",
+      "context_residual": -0.12040364519451395,
+      "prior_races_used": 1
+    },
+    "2": {
+      "horse_id": "pedigree:('IMPERIAL EMIR', 'ORPHEA DE MOUCI', 'THE BEST MADRIK')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('JOYAU DARLING', 'RAPID DARLING', 'TIMOKO')",
+      "context_residual": -4.976178660049627,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('JUST REMEMBER', 'VICTORY CHARM', 'UNBRIDLED CHARM')",
+      "context_residual": -1.4482241942589609,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('IRAFARA', 'OFARA', 'VILLAGE MYSTIC')",
+      "context_residual": 0.851754624064517,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('JOKER DU CHOQUEL', 'BRITTANY WINNER', 'UP AND QUICK')",
+      "context_residual": -2.9870090715766273,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('IKAKOU', \"USTIA D'ORVAL\", 'TAG WOOD')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "8": {
+      "horse_id": "pedigree:('HE STAR DU CALICE', 'STAR DU CALICE', 'NAHAR DE BEVAL')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:(\"JAGUAR'S EYES\", 'AGLAE PIERJI', 'READY CASH')",
+      "context_residual": 0.42736164858933623,
+      "prior_races_used": 2
+    },
+    "10": {
+      "horse_id": "pedigree:('IDEAL FOUR', 'JOLIE DU BIEF', 'UHLAN DU VAL')",
+      "context_residual": -1.5220301013626594,
+      "prior_races_used": 3
+    },
+    "11": {
+      "horse_id": "pedigree:('HECTOR DE CORDAY', 'SORAYA LAP', 'BOOSTER WINNER')",
+      "context_residual": 0.7153381098376267,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('IN AMERICA', 'NINA MADRIK', 'READY CASH')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "13": {
+      "horse_id": "pedigree:('JAZZY MAKER', 'BELGIAN BEAUTY', 'BIRD PARKER')",
+      "context_residual": -0.07502425454629702,
+      "prior_races_used": 1
+    },
+    "14": {
+      "horse_id": "pedigree:('JANGO ELEVEN', 'REVOLTE BLONDE', 'DJANGO RIFF')",
+      "context_residual": 1.1467729126422055,
+      "prior_races_used": 1
+    },
+    "15": {
+      "horse_id": "pedigree:('JAVELOT DE HOUELLE', 'SAWASDE DE HOUELLE', 'BRILLANTISSIME')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "16": {
+      "horse_id": "pedigree:('JOY EASTER', 'RIVER CREEK', 'BRIAC DARK')",
+      "context_residual": 1.3153381098376267,
+      "prior_races_used": 3
+    }
+  },
+  "target_participants": 16,
+  "coverage_active": 11,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

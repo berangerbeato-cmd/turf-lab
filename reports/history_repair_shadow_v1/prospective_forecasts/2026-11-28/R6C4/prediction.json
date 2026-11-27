@@ -1,0 +1,5860 @@
+{
+  "race_id": "2026-11-28_R6C4",
+  "status": "PRESTART_RESEARCH",
+  "primary_model": "available_history_v3",
+  "recommendations_allowed": false,
+  "predicted_at": "2026-11-27T23:32:19.501903+00:00",
+  "scheduled_start": "2026-11-28T14:30:00+00:00",
+  "target_snapshot": {
+    "date": "2026-11-28",
+    "race_id": "2026-11-28_R6C4",
+    "venue": "LE CROISE LAROCHE",
+    "country": "FRA",
+    "start_type": "AUTOSTART",
+    "distance_m": 2700,
+    "scheduled_start_ms": 1795876200000,
+    "course": {
+      "cached": false,
+      "departImminent": false,
+      "timezoneOffset": 3600000,
+      "numReunion": 6,
+      "numExterneReunion": 6,
+      "numOrdre": 4,
+      "numExterne": 4,
+      "heureDepart": 1795876200000,
+      "libelle": "PRIX POROTO",
+      "libelleCourt": "POROTO",
+      "montantPrix": 18500,
+      "parcours": "",
+      "distance": 2700,
+      "distanceUnit": "METRE",
+      "discipline": "ATTELE",
+      "specialite": "TROT_ATTELE",
+      "categorieParticularite": "APPRENTIS_LADS_JOCKEYS_AUTOSTART",
+      "conditionSexe": "TOUS_CHEVAUX",
+      "nombreDeclaresPartants": 16,
+      "grandPrixNationalTrot": false,
+      "numSocieteMere": 590103,
+      "pariMultiCourses": false,
+      "pariSpecial": false,
+      "montantTotalOffert": 18500,
+      "montantOffert1er": 8325,
+      "montantOffert2eme": 4625,
+      "montantOffert3eme": 2590,
+      "montantOffert4eme": 1480,
+      "montantOffert5eme": 925,
+      "conditions": "PRIX POROTO Course  3 Course G APPRENTIS-LADS-JOCKEYS Départ à l'Autostart 18.500. - Attelé. - 2.700 mètres. 8.325, 4.625, 2.590, 1.480, 925, 370, 185.- alloués par la S.E.T.F. Pour 7, 8 et 9 ans, n'ayant pas gagné 99.000.",
+      "numCourseDedoublee": 0,
+      "paris": [
+        {
+          "poolId": "aedd4bf4-4e1d-4e29-b6fa-10a49c8c13e3",
+          "typePari": "SIMPLE_GAGNANT",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "SIMPLE_GAGNANT",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 1,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 300,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "adc6cbdf-f72e-480d-8d8c-30ca2ed78ffd",
+          "typePari": "E_SIMPLE_GAGNANT",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_SIMPLE_GAGNANT",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 1,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 150,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "bd0470ff-7a9c-4904-81c8-42f9e6ac8fae",
+          "typePari": "SIMPLE_PLACE",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "SIMPLE_PLACE",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 1,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 300,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "5417aef6-9a52-4988-803d-9a966cccb8c0",
+          "typePari": "E_SIMPLE_PLACE",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_SIMPLE_PLACE",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 1,
+          "complement": false,
+          "infosJackpot": {
+            "miseBase": 150,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 3
+            }
+          }
+        },
+        {
+          "poolId": "f6ba6770-39f6-49ba-9a13-5fe1c4802d46",
+          "typePari": "COUPLE_GAGNANT",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "COUPLE_GAGNANT",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 2,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true
+        },
+        {
+          "poolId": "01f00c09-5318-46c2-9aff-cb61b67dd0ab",
+          "typePari": "E_COUPLE_GAGNANT",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_COUPLE_GAGNANT",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 2,
+          "complement": true
+        },
+        {
+          "poolId": "0e3f2c14-7086-4720-b4f1-1f72be484914",
+          "typePari": "COUPLE_PLACE",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "COUPLE_PLACE",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 2,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true
+        },
+        {
+          "poolId": "d49a79ab-8c7b-4575-b74b-9f3c09965b96",
+          "typePari": "E_COUPLE_PLACE",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_COUPLE_PLACE",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 2,
+          "complement": true
+        },
+        {
+          "poolId": "2aa66933-14fa-4bd5-9244-11bc18668a37",
+          "typePari": "DEUX_SUR_QUATRE",
+          "miseBase": 300,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "DEUX_SUR_QUATRE",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 2,
+          "valeursFlexiAutorisees": [
+            50,
+            25
+          ],
+          "complement": true,
+          "infosJackpot": {
+            "miseBase": 400,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 4
+            }
+          }
+        },
+        {
+          "poolId": "63e484a6-33c1-4ba2-9828-a44465a1e965",
+          "typePari": "E_DEUX_SUR_QUATRE",
+          "miseBase": 300,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": true,
+          "codePari": "E_DEUX_SUR_QUATRE",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 2,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true,
+          "infosJackpot": {
+            "miseBase": 400,
+            "tauxContribution": {
+              "numerateur": 1,
+              "denominateur": 4
+            }
+          }
+        },
+        {
+          "poolId": "3b3257e1-ea4f-49a4-a085-707d150344ad",
+          "typePari": "TRIO",
+          "miseBase": 200,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "TRIO",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 3,
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": true
+        },
+        {
+          "poolId": "75c6eca4-1d3d-4275-9f66-b458e3c772ba",
+          "typePari": "E_TRIO",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "E_TRIO",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 3,
+          "complement": true
+        },
+        {
+          "poolId": "ecae802e-976d-41cd-b73f-397983b99d50",
+          "typePari": "MULTI",
+          "miseBase": 300,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "MULTI",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 4,
+          "valeursRisqueAutorisees": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "valeursFlexiAutorisees": [
+            50,
+            25
+          ],
+          "complement": false
+        },
+        {
+          "poolId": "ae722654-2cb7-4f9e-a911-eb52075348af",
+          "typePari": "E_MULTI",
+          "miseBase": 300,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "cagnotte": 0,
+          "reportable": false,
+          "codePari": "E_MULTI",
+          "spotAutorise": true,
+          "combine": true,
+          "ordre": false,
+          "nbChevauxReglementaire": 4,
+          "valeursRisqueAutorisees": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "valeursFlexiAutorisees": [
+            50
+          ],
+          "complement": false
+        },
+        {
+          "poolId": "3f9249c3-40f8-40cb-9422-bbcc81c3858b",
+          "typePari": "REPORT_PLUS",
+          "miseBase": 100,
+          "miseMax": 9999999999,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "reportable": false,
+          "codePari": "REPORT_PLUS",
+          "spotAutorise": false,
+          "combine": false,
+          "ordre": false,
+          "nbChevauxReglementaire": 1,
+          "complement": false
+        },
+        {
+          "poolId": "a22d3d0f-e016-48ca-849e-db8d124e6ef4",
+          "typePari": "E_REPORT_PLUS",
+          "miseBase": 100,
+          "miseMax": 3000000,
+          "enVente": true,
+          "audience": "NATIONAL",
+          "reportable": false,
+          "codePari": "E_REPORT_PLUS",
+          "spotAutorise": false,
+          "combine": false,
+          "ordre": false,
+          "nbChevauxReglementaire": 1,
+          "complement": false
+        }
+      ],
+      "statut": "PROGRAMMEE",
+      "categorieStatut": "A_PARTIR",
+      "participants": [],
+      "ecuries": [],
+      "rapportsDefinitifsDisponibles": false,
+      "isDepartImminent": false,
+      "isDepartAJPlusUn": false,
+      "cagnottes": [],
+      "pronosticsExpires": false,
+      "replayDisponible": false,
+      "hippodrome": {
+        "codeHippodrome": "CRO",
+        "libelleCourt": "LE CROISE LAROCHE",
+        "libelleLong": "HIPPODROME DU CROISE LAROCHE",
+        "codeParcours": "2700"
+      },
+      "epcPourTousParis": true,
+      "courseTrackee": false,
+      "courseExclusiveInternet": false,
+      "formuleChampLibreIndisponible": false,
+      "hasEParis": true
+    },
+    "participants": [
+      {
+        "idCheval": "JOSY EXPRESS-PARMELIE-PAGALOR",
+        "nom": "JOSY EXPRESS",
+        "numPmu": 1,
+        "age": 7,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 1,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie Hervé GUERIN",
+        "entraineur": "P. LELIEVRE",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "R. VILAULT",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "0a2a7a0a(25)8mDmDaDa8a",
+        "nombreCourses": 35,
+        "nombreVictoires": 4,
+        "nombrePlaces": 15,
+        "nombrePlacesSecond": 6,
+        "nombrePlacesTroisieme": 2,
+        "gainsParticipant": {
+          "gainsCarriere": 9636500,
+          "gainsVictoires": 4995000,
+          "gainsPlace": 4641500,
+          "gainsAnneeEnCours": 771000,
+          "gainsAnneePrecedente": 1384000
+        },
+        "nomPere": "PAGALOR",
+        "nomMere": "PARMELIE",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-1.png",
+        "eleveur": "M. Laurent DUTERTRE",
+        "allure": "TROT",
+        "avisEntraineur": "POSITIF"
+      },
+      {
+        "idCheval": "IMPERIAL EMIR-ORPHEA DE MOUCI-THE BEST MADRIK",
+        "nom": "IMPERIAL EMIR",
+        "numPmu": 2,
+        "age": 8,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 2,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Vasco BARBOSA DE BASTOS",
+        "entraineur": "B. HOJKA",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "M. MOREIRA DE BASTOS",
+        "driverChange": false,
+        "robe": {
+          "code": "001",
+          "libelleCourt": "ALEZAN",
+          "libelleLong": "ALEZAN"
+        },
+        "indicateurInedit": false,
+        "musique": "0m0a0m3m2m3m3m3m6m8m",
+        "nombreCourses": 63,
+        "nombreVictoires": 4,
+        "nombrePlaces": 39,
+        "nombrePlacesSecond": 7,
+        "nombrePlacesTroisieme": 11,
+        "gainsParticipant": {
+          "gainsCarriere": 9895000,
+          "gainsVictoires": 2880000,
+          "gainsPlace": 7015000,
+          "gainsAnneeEnCours": 1521500,
+          "gainsAnneePrecedente": 2406000
+        },
+        "nomPere": "THE BEST MADRIK",
+        "nomMere": "ORPHEA DE MOUCI",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-2.png",
+        "eleveur": "M. Dominique JOUSSE",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JOYAU DARLING-RAPID DARLING-TIMOKO",
+        "nom": "JOYAU DARLING",
+        "numPmu": 3,
+        "age": 7,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 3,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "A. RIPOLL RIGO",
+        "entraineur": "A. RIPOLL RIGO",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "E. HANOT",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "0a8a2a7a6a4a5a0a3a5a",
+        "nombreCourses": 57,
+        "nombreVictoires": 2,
+        "nombrePlaces": 40,
+        "nombrePlacesSecond": 9,
+        "nombrePlacesTroisieme": 9,
+        "gainsParticipant": {
+          "gainsCarriere": 9393500,
+          "gainsVictoires": 1665000,
+          "gainsPlace": 7728500,
+          "gainsAnneeEnCours": 1321500,
+          "gainsAnneePrecedente": 3347000
+        },
+        "nomPere": "TIMOKO",
+        "nomMere": "RAPID DARLING",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-3.png",
+        "eleveur": "Mme Joëlle LAROCHE",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JUST REMEMBER-VICTORY CHARM-UNBRIDLED CHARM",
+        "nom": "JUST REMEMBER",
+        "numPmu": 4,
+        "age": 7,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 4,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie OASIS",
+        "entraineur": "G. SALLES",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "G. D'HAENENS",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "2a4aDa5a9a(25)Da1aDa1a",
+        "nombreCourses": 37,
+        "nombreVictoires": 12,
+        "nombrePlaces": 13,
+        "nombrePlacesSecond": 5,
+        "nombrePlacesTroisieme": 1,
+        "gainsParticipant": {
+          "gainsCarriere": 9029500,
+          "gainsVictoires": 6997500,
+          "gainsPlace": 2032000,
+          "gainsAnneeEnCours": 521500,
+          "gainsAnneePrecedente": 3577500
+        },
+        "nomPere": "UNBRIDLED CHARM",
+        "nomMere": "VICTORY CHARM",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-4.png",
+        "eleveur": "M. Jean-Philippe DUBOIS",
+        "allure": "TROT",
+        "avisEntraineur": "POSITIF"
+      },
+      {
+        "idCheval": "IRAFARA-OFARA-VILLAGE MYSTIC",
+        "nom": "IRAFARA",
+        "numPmu": 5,
+        "age": 8,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 5,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie Stéphane LEVOY",
+        "entraineur": "S. LEVOY",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "driver": "Mme I. LELIEVRE",
+        "driverChange": false,
+        "robe": {
+          "code": "021",
+          "libelleCourt": "BAI F.",
+          "libelleLong": "BAI FONCE"
+        },
+        "indicateurInedit": false,
+        "musique": "6aDa0mDa4a0aDa0aDmDa",
+        "nombreCourses": 62,
+        "nombreVictoires": 7,
+        "nombrePlaces": 17,
+        "nombrePlacesSecond": 5,
+        "nombrePlacesTroisieme": 3,
+        "gainsParticipant": {
+          "gainsCarriere": 9650500,
+          "gainsVictoires": 5962500,
+          "gainsPlace": 3688000,
+          "gainsAnneeEnCours": 728000,
+          "gainsAnneePrecedente": 4590500
+        },
+        "nomPere": "VILLAGE MYSTIC",
+        "nomMere": "OFARA",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-5.png",
+        "eleveur": "M. Paul VIEL",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JOKER DU CHOQUEL-BRITTANY WINNER-UP AND QUICK",
+        "nom": "JOKER DU CHOQUEL",
+        "numPmu": 6,
+        "age": 7,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 6,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Oscar LE LOUREC",
+        "entraineur": "Gregg LUPI",
+        "driver": "L. CUEFF",
+        "driverChange": false,
+        "robe": {
+          "code": "001",
+          "libelleCourt": "ALEZAN",
+          "libelleLong": "ALEZAN"
+        },
+        "indicateurInedit": false,
+        "musique": "0a0aDa7a6a0a0a6a4a4a",
+        "nombreCourses": 58,
+        "nombreVictoires": 6,
+        "nombrePlaces": 25,
+        "nombrePlacesSecond": 4,
+        "nombrePlacesTroisieme": 3,
+        "gainsParticipant": {
+          "gainsCarriere": 9881000,
+          "gainsVictoires": 4365000,
+          "gainsPlace": 5516000,
+          "gainsAnneeEnCours": 2008000,
+          "gainsAnneePrecedente": 3152000
+        },
+        "nomPere": "UP AND QUICK",
+        "nomMere": "BRITTANY WINNER",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-6.png",
+        "eleveur": "Mme Françoise DROUILLY",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "IKAKOU-USTIA D'ORVAL-TAG WOOD",
+        "nom": "IKAKOU",
+        "numPmu": 7,
+        "age": 8,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 7,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Mme Maria DEVAUX",
+        "entraineur": "G. BEAUFILS",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "driver": "N. ERNAULT",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "DmDaDa2aDa3a2aDa0aDa",
+        "nombreCourses": 60,
+        "nombreVictoires": 4,
+        "nombrePlaces": 27,
+        "nombrePlacesSecond": 10,
+        "nombrePlacesTroisieme": 5,
+        "gainsParticipant": {
+          "gainsCarriere": 9396000,
+          "gainsVictoires": 2700000,
+          "gainsPlace": 6696000,
+          "gainsAnneeEnCours": 1237500,
+          "gainsAnneePrecedente": 1754000
+        },
+        "nomPere": "TAG WOOD",
+        "nomMere": "USTIA D'ORVAL",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-7.png",
+        "eleveur": "M. Paul DEVAUX",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "HE STAR DU CALICE-STAR DU CALICE-NAHAR DE BEVAL",
+        "nom": "HE STAR DU CALICE",
+        "numPmu": 8,
+        "age": 9,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 8,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "H. NOBILET",
+        "entraineur": "G. BEAUFILS",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "J.CH. BEAUFILS",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "4a4a5a0a8a5a9a4aDa9a",
+        "nombreCourses": 90,
+        "nombreVictoires": 11,
+        "nombrePlaces": 34,
+        "nombrePlacesSecond": 4,
+        "nombrePlacesTroisieme": 6,
+        "gainsParticipant": {
+          "gainsCarriere": 9370000,
+          "gainsVictoires": 5377500,
+          "gainsPlace": 3992500,
+          "gainsAnneeEnCours": 756000,
+          "gainsAnneePrecedente": 2830500
+        },
+        "nomPere": "NAHAR DE BEVAL",
+        "nomMere": "STAR DU CALICE",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-8.png",
+        "eleveur": "Mme Yannick MAIGNE",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JAGUAR'S EYES-AGLAE PIERJI-READY CASH",
+        "nom": "JAGUAR'S EYES",
+        "numPmu": 9,
+        "age": 7,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 9,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Kirsten AXISA",
+        "entraineur": "A. DUPERCHE",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "J. DENISOT",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "3a6aDa4a7a4a2aDa7aDa",
+        "nombreCourses": 53,
+        "nombreVictoires": 3,
+        "nombrePlaces": 28,
+        "nombrePlacesSecond": 8,
+        "nombrePlacesTroisieme": 5,
+        "gainsParticipant": {
+          "gainsCarriere": 8895000,
+          "gainsVictoires": 2880000,
+          "gainsPlace": 6015000,
+          "gainsAnneeEnCours": 954000,
+          "gainsAnneePrecedente": 2896000
+        },
+        "nomPere": "READY CASH",
+        "nomMere": "AGLAE PIERJI",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-9.png",
+        "eleveur": "M. Kevin TEBIRENT",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "IDEAL FOUR-JOLIE DU BIEF-UHLAN DU VAL",
+        "nom": "IDEAL FOUR",
+        "numPmu": 10,
+        "age": 8,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 10,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie Jérôme DAVID",
+        "entraineur": "JEROME DAVID",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "CL. CIMAROSTI",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "0a0a0a7a7a0a0a0a8a9a",
+        "nombreCourses": 88,
+        "nombreVictoires": 6,
+        "nombrePlaces": 41,
+        "nombrePlacesSecond": 4,
+        "nombrePlacesTroisieme": 4,
+        "gainsParticipant": {
+          "gainsCarriere": 8835500,
+          "gainsVictoires": 4590000,
+          "gainsPlace": 4245500,
+          "gainsAnneeEnCours": 216000,
+          "gainsAnneePrecedente": 527000
+        },
+        "nomPere": "UHLAN DU VAL",
+        "nomMere": "JOLIE DU BIEF",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-10.png",
+        "eleveur": "M. Jérôme DAVID",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "HECTOR DE CORDAY-SORAYA LAP-BOOSTER WINNER",
+        "nom": "HECTOR DE CORDAY",
+        "numPmu": 11,
+        "age": 9,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 11,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Nick TALPE",
+        "entraineur": "L. CANNAERT",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "R. HOJKA",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "5a5aDa7a5aDa7a1a7a3a",
+        "nombreCourses": 114,
+        "nombreVictoires": 10,
+        "nombrePlaces": 60,
+        "nombrePlacesSecond": 6,
+        "nombrePlacesTroisieme": 15,
+        "gainsParticipant": {
+          "gainsCarriere": 8060000,
+          "gainsVictoires": 3244500,
+          "gainsPlace": 4815500,
+          "gainsAnneeEnCours": 1087500,
+          "gainsAnneePrecedente": 1830000
+        },
+        "nomPere": "BOOSTER WINNER",
+        "nomMere": "SORAYA LAP",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-11.png",
+        "eleveur": "M. Marc LEBOURGEOIS",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "IN AMERICA-NINA MADRIK-READY CASH",
+        "nom": "IN AMERICA",
+        "numPmu": 12,
+        "age": 8,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 12,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Ecurie TH ROUSSEL",
+        "entraineur": "TH. ROUSSEL",
+        "driver": "W. DEVENNE",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "DaDaDaDaDa0aDa3a4aDa",
+        "nombreCourses": 77,
+        "nombreVictoires": 4,
+        "nombrePlaces": 41,
+        "nombrePlacesSecond": 1,
+        "nombrePlacesTroisieme": 11,
+        "gainsParticipant": {
+          "gainsCarriere": 9010000,
+          "gainsVictoires": 3442500,
+          "gainsPlace": 5567500,
+          "gainsAnneeEnCours": 510000,
+          "gainsAnneePrecedente": 856000
+        },
+        "nomPere": "READY CASH",
+        "nomMere": "NINA MADRIK",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-12.png",
+        "eleveur": "M. Hugues ROUSSEAU",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JAZZY MAKER-BELGIAN BEAUTY-BIRD PARKER",
+        "nom": "JAZZY MAKER",
+        "numPmu": 13,
+        "age": 7,
+        "sexe": "FEMELLES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 13,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "P. VAN ACHTER",
+        "entraineur": "P. VAN ACHTER",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "M. GARCON",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "0aDaDa5aDa8a0aDa7a3a",
+        "nombreCourses": 69,
+        "nombreVictoires": 3,
+        "nombrePlaces": 38,
+        "nombrePlacesSecond": 6,
+        "nombrePlacesTroisieme": 7,
+        "gainsParticipant": {
+          "gainsCarriere": 8061500,
+          "gainsVictoires": 2430000,
+          "gainsPlace": 5631500,
+          "gainsAnneeEnCours": 516500,
+          "gainsAnneePrecedente": 3884000
+        },
+        "nomPere": "BIRD PARKER",
+        "nomMere": "BELGIAN BEAUTY",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-13.png",
+        "eleveur": "NV HICEWA",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JANGO ELEVEN-REVOLTE BLONDE-DJANGO RIFF",
+        "nom": "JANGO ELEVEN",
+        "numPmu": 14,
+        "age": 7,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 14,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "O. PINELLI",
+        "entraineur": "A. RIPOLL RIGO",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "K. ACHARD",
+        "driverChange": false,
+        "robe": {
+          "code": "001",
+          "libelleCourt": "ALEZAN",
+          "libelleLong": "ALEZAN"
+        },
+        "indicateurInedit": false,
+        "musique": "Da4a4a5a1a3aDaDa4a5a",
+        "nombreCourses": 49,
+        "nombreVictoires": 7,
+        "nombrePlaces": 28,
+        "nombrePlacesSecond": 4,
+        "nombrePlacesTroisieme": 4,
+        "gainsParticipant": {
+          "gainsCarriere": 9000000,
+          "gainsVictoires": 5175000,
+          "gainsPlace": 3825000,
+          "gainsAnneeEnCours": 1942500,
+          "gainsAnneePrecedente": 2101500
+        },
+        "nomPere": "DJANGO RIFF",
+        "nomMere": "REVOLTE BLONDE",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-14.png",
+        "eleveur": "Mlle Kiara DOMINICI",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JAVELOT DE HOUELLE-SAWASDE DE HOUELLE-BRILLANTISSIME",
+        "nom": "JAVELOT DE HOUELLE",
+        "numPmu": 15,
+        "age": 7,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 15,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "Mme Barbara GUENET",
+        "entraineur": "Mme Barbara GUENET",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "driver": "L. GUENET",
+        "driverChange": false,
+        "robe": {
+          "code": "001",
+          "libelleCourt": "ALEZAN",
+          "libelleLong": "ALEZAN"
+        },
+        "indicateurInedit": false,
+        "musique": "Da5a2a5aDaDa5a1a1a1a",
+        "nombreCourses": 45,
+        "nombreVictoires": 8,
+        "nombrePlaces": 20,
+        "nombrePlacesSecond": 4,
+        "nombrePlacesTroisieme": 4,
+        "gainsParticipant": {
+          "gainsCarriere": 8380000,
+          "gainsVictoires": 4162500,
+          "gainsPlace": 4217500,
+          "gainsAnneeEnCours": 1519000,
+          "gainsAnneePrecedente": 20000
+        },
+        "nomPere": "BRILLANTISSIME",
+        "nomMere": "SAWASDE DE HOUELLE",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-15.png",
+        "eleveur": "M. Franck LEBLANC",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      },
+      {
+        "idCheval": "JOY EASTER-RIVER CREEK-BRIAC DARK",
+        "nom": "JOY EASTER",
+        "numPmu": 16,
+        "age": 7,
+        "sexe": "HONGRES",
+        "race": "TROTTEUR FRANCAIS",
+        "statut": "PARTANT",
+        "placeCorde": 16,
+        "oeilleres": "SANS_OEILLERES",
+        "proprietaire": "F. GRISEZ",
+        "entraineur": "Pavel TAMSIN",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "driver": "LORIS BIZOUX",
+        "driverChange": false,
+        "robe": {
+          "code": "020",
+          "libelleCourt": "BAI",
+          "libelleLong": "BAI"
+        },
+        "indicateurInedit": false,
+        "musique": "1a1a2a2a7a0a2a2aDa7a",
+        "nombreCourses": 62,
+        "nombreVictoires": 6,
+        "nombrePlaces": 38,
+        "nombrePlacesSecond": 7,
+        "nombrePlacesTroisieme": 5,
+        "gainsParticipant": {
+          "gainsCarriere": 8402100,
+          "gainsVictoires": 3622500,
+          "gainsPlace": 4779600,
+          "gainsAnneeEnCours": 1873000,
+          "gainsAnneePrecedente": 178500
+        },
+        "nomPere": "BRIAC DARK",
+        "nomMere": "RIVER CREEK",
+        "jumentPleine": false,
+        "engagement": false,
+        "supplement": 0,
+        "handicapDistance": 2700,
+        "poidsConditionMonteChange": false,
+        "urlCasaque": "https://assets.racingdata.pmu.fr/silks/20261128/CRO/4/20261128-CRO-4-16.png",
+        "eleveur": "M. Freddy GRISEZ",
+        "allure": "TROT",
+        "avisEntraineur": "NEUTRE"
+      }
+    ]
+  },
+  "models": {
+    "available_history_v3": {
+      "probabilities": {
+        "1": 0.050283142570110885,
+        "2": 0.011536440830688785,
+        "3": 0.04951690639893486,
+        "4": 0.1671760196609697,
+        "5": 0.04387119025934542,
+        "6": 0.022569572561745858,
+        "7": 0.054458354309590916,
+        "8": 0.06050140439214801,
+        "9": 0.07755470679799872,
+        "10": 0.005864709871817382,
+        "11": 0.048232170932731445,
+        "12": 0.009377733816465065,
+        "13": 0.030910717260867738,
+        "14": 0.18649864515557596,
+        "15": 0.039609788225208345,
+        "16": 0.14203849695580095
+      },
+      "runners": [
+        {
+          "number": 1,
+          "name": "JOSY EXPRESS",
+          "horse_id": "pedigree:('JOSY EXPRESS', 'PARMELIE', 'PAGALOR')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.2,
+            0.2,
+            3.713572066704308,
+            1.0,
+            -0.009477438023343972,
+            3.1354942159291497,
+            0.23460326805598405,
+            0.06700085347841402,
+            0.004179670201150756,
+            3.295836866004329,
+            0.24018905185612532,
+            3.58351893845611,
+            -0.023057486438056815,
+            1.3862943611198906,
+            0.21709991050362054,
+            1.6094379124341003,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.02178487160809342,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.23831758180611262,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.009477438023343972,
+            3.1354942159291497,
+            0.23460326805598405,
+            0.06700085347841402
+          ],
+          "connection_features": {
+            "driver": [
+              0.004179670201150756,
+              3.295836866004329,
+              0.24018905185612532,
+              3.58351893845611
+            ],
+            "trainer": [
+              -0.023057486438056815,
+              1.3862943611198906,
+              0.21709991050362054,
+              1.6094379124341003
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.02178487160809342,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "R. VILAULT",
+            "trainer": "P. LELIEVRE"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 2,
+          "name": "IMPERIAL EMIR",
+          "horse_id": "pedigree:('IMPERIAL EMIR', 'ORPHEA DE MOUCI', 'THE BEST MADRIK')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            5.902633333401366,
+            1.0,
+            -0.20183651256502386,
+            2.8903717578961645,
+            0.07961212793271774,
+            0.05115593703106719,
+            null,
+            0.0,
+            0.21051989260434464,
+            0.0,
+            -0.009410755445148274,
+            1.3862943611198906,
+            0.24841591408347571,
+            1.791759469228055,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.07961212793271774,
+            0.85,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.20183651256502386,
+            2.8903717578961645,
+            0.07961212793271774,
+            0.05115593703106719
+          ],
+          "connection_features": {
+            "driver": [
+              null,
+              0.0,
+              0.21051989260434464,
+              0.0
+            ],
+            "trainer": [
+              -0.009410755445148274,
+              1.3862943611198906,
+              0.24841591408347571,
+              1.791759469228055
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. MOREIRA DE BASTOS",
+            "trainer": "B. HOJKA"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 3,
+          "name": "JOYAU DARLING",
+          "horse_id": "pedigree:('JOYAU DARLING', 'RAPID DARLING', 'TIMOKO')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.2,
+            0.0,
+            3.6109179126442243,
+            1.0,
+            0.02875220743790722,
+            3.784189633918261,
+            0.12326771472729964,
+            0.042798856557117945,
+            0.01603362348738686,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.04092292282621346,
+            3.4011973816621555,
+            0.22776548020839468,
+            3.6635616461296463,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.03278364743689008,
+            1.0986122886681096,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.07165091513944596,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.02875220743790722,
+            3.784189633918261,
+            0.12326771472729964,
+            0.042798856557117945
+          ],
+          "connection_features": {
+            "driver": [
+              0.01603362348738686,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "trainer": [
+              0.04092292282621346,
+              3.4011973816621555,
+              0.22776548020839468,
+              3.6635616461296463
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.03278364743689008,
+              1.0986122886681096
+            ]
+          },
+          "connection_entities": {
+            "driver": "E. HANOT",
+            "trainer": "A. RIPOLL RIGO"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 4,
+          "name": "JUST REMEMBER",
+          "horse_id": "pedigree:('JUST REMEMBER', 'VICTORY CHARM', 'UNBRIDLED CHARM')",
+          "non_runner": false,
+          "features": [
+            0.2,
+            0.4,
+            0.4,
+            4.110873864173311,
+            1.0,
+            0.1713980512126133,
+            2.8903717578961645,
+            0.2234227329432306,
+            0.07251019057898177,
+            0.014235135963068702,
+            2.0794415416798357,
+            0.2403465950695631,
+            2.3978952727983707,
+            -0.011382010885438538,
+            1.9459101490553132,
+            0.22179992328881762,
+            2.1972245773362196,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.014393139377180862,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.2049842484727793,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.1713980512126133,
+            2.8903717578961645,
+            0.2234227329432306,
+            0.07251019057898177
+          ],
+          "connection_features": {
+            "driver": [
+              0.014235135963068702,
+              2.0794415416798357,
+              0.2403465950695631,
+              2.3978952727983707
+            ],
+            "trainer": [
+              -0.011382010885438538,
+              1.9459101490553132,
+              0.22179992328881762,
+              2.1972245773362196
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.014393139377180862,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "G. D'HAENENS",
+            "trainer": "G. SALLES"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 5,
+          "name": "IRAFARA",
+          "horse_id": "pedigree:('IRAFARA', 'OFARA', 'VILLAGE MYSTIC')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.4,
+            3.332204510175204,
+            1.0,
+            0.05623673720969054,
+            2.833213344056216,
+            0.35539263389684805,
+            0.07764438327683278,
+            -0.003719819742179406,
+            1.3862943611198906,
+            0.183060776177691,
+            1.3862943611198906,
+            0.012264617518227461,
+            1.0986122886681096,
+            0.22653903704725623,
+            1.3862943611198906,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            1.0,
+            0.0,
+            -0.003931624618217381,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453,
+            0.3049842484727793,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05623673720969054,
+            2.833213344056216,
+            0.35539263389684805,
+            0.07764438327683278
+          ],
+          "connection_features": {
+            "driver": [
+              -0.003719819742179406,
+              1.3862943611198906,
+              0.183060776177691,
+              1.3862943611198906
+            ],
+            "trainer": [
+              0.012264617518227461,
+              1.0986122886681096,
+              0.22653903704725623,
+              1.3862943611198906
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "MME I. LELIEVRE",
+            "trainer": "S. LEVOY"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            -0.003931624618217381,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 6,
+          "name": "JOKER DU CHOQUEL",
+          "horse_id": "pedigree:('JOKER DU CHOQUEL', 'BRITTANY WINNER', 'UP AND QUICK')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.2,
+            3.5553480614894135,
+            1.0,
+            -0.005031462151951498,
+            3.4339872044851463,
+            0.2721062971958342,
+            0.061131540854222254,
+            0.011614689660196105,
+            1.6094379124341003,
+            0.26705177229951454,
+            2.0794415416798357,
+            -0.023478652197764942,
+            1.3862943611198906,
+            0.21709991050362054,
+            1.6094379124341003,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.2049842484727793,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.005031462151951498,
+            3.4339872044851463,
+            0.2721062971958342,
+            0.061131540854222254
+          ],
+          "connection_features": {
+            "driver": [
+              0.011614689660196105,
+              1.6094379124341003,
+              0.26705177229951454,
+              2.0794415416798357
+            ],
+            "trainer": [
+              -0.023478652197764942,
+              1.3862943611198906,
+              0.21709991050362054,
+              1.6094379124341003
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "L. CUEFF",
+            "trainer": "GREGG LUPI"
+          },
+          "equipment_code": "UNKNOWN",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 7,
+          "name": "IKAKOU",
+          "horse_id": "pedigree:('IKAKOU', \"USTIA D'ORVAL\", 'TAG WOOD')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.4,
+            0.4,
+            4.04305126783455,
+            1.0,
+            0.0663400970293861,
+            2.8903717578961645,
+            0.2469553773994963,
+            0.0739571455747036,
+            -0.017016191378971438,
+            1.0986122886681096,
+            0.2587665771702872,
+            1.6094379124341003,
+            0.05264144377085313,
+            2.8903717578961645,
+            0.18025994630217232,
+            3.044522437723423,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453,
+            0.23831758180611262,
+            1.0,
+            1.0,
+            0.05
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.0663400970293861,
+            2.8903717578961645,
+            0.2469553773994963,
+            0.0739571455747036
+          ],
+          "connection_features": {
+            "driver": [
+              -0.017016191378971438,
+              1.0986122886681096,
+              0.2587665771702872,
+              1.6094379124341003
+            ],
+            "trainer": [
+              0.05264144377085313,
+              2.8903717578961645,
+              0.18025994630217232,
+              3.044522437723423
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "N. ERNAULT",
+            "trainer": "G. BEAUFILS"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 8,
+          "name": "HE STAR DU CALICE",
+          "horse_id": "pedigree:('HE STAR DU CALICE', 'STAR DU CALICE', 'NAHAR DE BEVAL')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            4.2626798770413155,
+            1.0,
+            0.12845740223657637,
+            3.5553480614894135,
+            0.16299054908366756,
+            0.05172033202679772,
+            0.022734668301122474,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.05264144377085313,
+            2.8903717578961645,
+            0.18025994630217232,
+            3.044522437723423,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            null,
+            0.0,
+            9,
+            81,
+            0.0,
+            1.0,
+            0.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.13831758180611262,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.12845740223657637,
+            3.5553480614894135,
+            0.16299054908366756,
+            0.05172033202679772
+          ],
+          "connection_features": {
+            "driver": [
+              0.022734668301122474,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "trainer": [
+              0.05264144377085313,
+              2.8903717578961645,
+              0.18025994630217232,
+              3.044522437723423
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "J.CH. BEAUFILS",
+            "trainer": "G. BEAUFILS"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            9,
+            81,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 9,
+          "name": "JAGUAR'S EYES",
+          "horse_id": "pedigree:(\"JAGUAR'S EYES\", 'AGLAE PIERJI', 'READY CASH')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.2,
+            0.2,
+            3.332204510175204,
+            1.0,
+            0.07712943077690382,
+            3.6375861597263857,
+            0.2647463517079242,
+            0.05603220861848673,
+            -0.0052365701377245985,
+            1.6094379124341003,
+            0.17543324383695388,
+            1.6094379124341003,
+            0.01653229023345614,
+            1.9459101490553132,
+            0.16193837892641896,
+            1.9459101490553132,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.009513356403458531,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.23831758180611262,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.07712943077690382,
+            3.6375861597263857,
+            0.2647463517079242,
+            0.05603220861848673
+          ],
+          "connection_features": {
+            "driver": [
+              -0.0052365701377245985,
+              1.6094379124341003,
+              0.17543324383695388,
+              1.6094379124341003
+            ],
+            "trainer": [
+              0.01653229023345614,
+              1.9459101490553132,
+              0.16193837892641896,
+              1.9459101490553132
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.009513356403458531,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "J. DENISOT",
+            "trainer": "A. DUPERCHE"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 10,
+          "name": "IDEAL FOUR",
+          "horse_id": "pedigree:('IDEAL FOUR', 'JOLIE DU BIEF', 'UHLAN DU VAL')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            null,
+            0.0,
+            2.8903717578961645,
+            1.0,
+            -0.36369573492737073,
+            3.8712010109078907,
+            0.1153149589384416,
+            0.040240826458005155,
+            0.011447006931598317,
+            0.6931471805599453,
+            0.20049513581366157,
+            0.6931471805599453,
+            -0.020352863649406288,
+            2.639057329615259,
+            0.1532469956496145,
+            2.70805020110221,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.033800923337872796,
+            1.3862943611198906,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.10498424847277929,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.36369573492737073,
+            3.8712010109078907,
+            0.1153149589384416,
+            0.040240826458005155
+          ],
+          "connection_features": {
+            "driver": [
+              0.011447006931598317,
+              0.6931471805599453,
+              0.20049513581366157,
+              0.6931471805599453
+            ],
+            "trainer": [
+              -0.020352863649406288,
+              2.639057329615259,
+              0.1532469956496145,
+              2.70805020110221
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.033800923337872796,
+              1.3862943611198906
+            ]
+          },
+          "connection_entities": {
+            "driver": "CL. CIMAROSTI",
+            "trainer": "JEROME DAVID"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 11,
+          "name": "HECTOR DE CORDAY",
+          "horse_id": "pedigree:('HECTOR DE CORDAY', 'SORAYA LAP', 'BOOSTER WINNER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.4,
+            3.091042453358316,
+            1.0,
+            0.05095519876035455,
+            3.332204510175204,
+            0.3166574010624192,
+            0.06450782472138457,
+            0.03132665398224579,
+            1.3862943611198906,
+            0.21709991050362054,
+            1.6094379124341003,
+            -0.007183314470688185,
+            1.6094379124341003,
+            0.2084159140834757,
+            1.791759469228055,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.004906287951159889,
+            0.6931471805599453,
+            9,
+            81,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.3049842484727793,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05095519876035455,
+            3.332204510175204,
+            0.3166574010624192,
+            0.06450782472138457
+          ],
+          "connection_features": {
+            "driver": [
+              0.03132665398224579,
+              1.3862943611198906,
+              0.21709991050362054,
+              1.6094379124341003
+            ],
+            "trainer": [
+              -0.007183314470688185,
+              1.6094379124341003,
+              0.2084159140834757,
+              1.791759469228055
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.004906287951159889,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "R. HOJKA",
+            "trainer": "L. CANNAERT"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            9,
+            81,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 12,
+          "name": "IN AMERICA",
+          "horse_id": "pedigree:('IN AMERICA', 'NINA MADRIK', 'READY CASH')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.2,
+            0.6,
+            3.8712010109078907,
+            1.0,
+            -0.1503411390230961,
+            3.4657359027997265,
+            0.2936277718942432,
+            0.060858516170509525,
+            -0.0022024642536697726,
+            1.0986122886681096,
+            0.2587665771702872,
+            1.6094379124341003,
+            0.004921200031328629,
+            1.0986122886681096,
+            0.2587665771702872,
+            1.6094379124341003,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.3383175818061126,
+            1.0,
+            1.0,
+            0.1
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.1503411390230961,
+            3.4657359027997265,
+            0.2936277718942432,
+            0.060858516170509525
+          ],
+          "connection_features": {
+            "driver": [
+              -0.0022024642536697726,
+              1.0986122886681096,
+              0.2587665771702872,
+              1.6094379124341003
+            ],
+            "trainer": [
+              0.004921200031328629,
+              1.0986122886681096,
+              0.2587665771702872,
+              1.6094379124341003
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "W. DEVENNE",
+            "trainer": "TH. ROUSSEL"
+          },
+          "equipment_code": "UNKNOWN",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 13,
+          "name": "JAZZY MAKER",
+          "horse_id": "pedigree:('JAZZY MAKER', 'BELGIAN BEAUTY', 'BIRD PARKER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            null,
+            0.4,
+            2.5649493574615367,
+            1.0,
+            -0.048288267496428616,
+            3.6635616461296463,
+            0.2228733466810742,
+            0.05372783543320475,
+            -0.023301600956179738,
+            1.3862943611198906,
+            0.183060776177691,
+            1.3862943611198906,
+            -0.004232430729472704,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.004232430729472704,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0,
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453,
+            0.23831758180611262,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.048288267496428616,
+            3.6635616461296463,
+            0.2228733466810742,
+            0.05372783543320475
+          ],
+          "connection_features": {
+            "driver": [
+              -0.023301600956179738,
+              1.3862943611198906,
+              0.183060776177691,
+              1.3862943611198906
+            ],
+            "trainer": [
+              -0.004232430729472704,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.004232430729472704,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. GARCON",
+            "trainer": "P. VAN ACHTER"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 14,
+          "name": "JANGO ELEVEN",
+          "horse_id": "pedigree:('JANGO ELEVEN', 'REVOLTE BLONDE', 'DJANGO RIFF')",
+          "non_runner": false,
+          "features": [
+            0.2,
+            0.4,
+            0.2,
+            3.367295829986474,
+            1.0,
+            0.12270609903057865,
+            3.367295829986474,
+            0.18521653304962224,
+            0.057910154345560814,
+            0.03507836342461093,
+            2.1972245773362196,
+            0.20701326173622978,
+            2.3978952727983707,
+            0.04092292282621346,
+            3.4011973816621555,
+            0.22776548020839468,
+            3.6635616461296463,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.005659914315460437,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            0.005659914315460436,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453,
+            0.2049842484727793,
+            1.0,
+            1.0,
+            0.05
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.12270609903057865,
+            3.367295829986474,
+            0.18521653304962224,
+            0.057910154345560814
+          ],
+          "connection_features": {
+            "driver": [
+              0.03507836342461093,
+              2.1972245773362196,
+              0.20701326173622978,
+              2.3978952727983707
+            ],
+            "trainer": [
+              0.04092292282621346,
+              3.4011973816621555,
+              0.22776548020839468,
+              3.6635616461296463
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.005659914315460437,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "K. ACHARD",
+            "trainer": "A. RIPOLL RIGO"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            0.005659914315460436,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 15,
+          "name": "JAVELOT DE HOUELLE",
+          "horse_id": "pedigree:('JAVELOT DE HOUELLE', 'SAWASDE DE HOUELLE', 'BRILLANTISSIME')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.6,
+            2.8903717578961645,
+            1.0,
+            -0.06520423336641686,
+            3.1780538303479458,
+            0.20896224241495842,
+            0.06428394505237497,
+            0.00659538553991666,
+            1.0986122886681096,
+            0.22653903704725623,
+            1.3862943611198906,
+            0.00028136341426836936,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            0.0,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.27165091513944595,
+            1.0,
+            1.0,
+            0.05
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.06520423336641686,
+            3.1780538303479458,
+            0.20896224241495842,
+            0.06428394505237497
+          ],
+          "connection_features": {
+            "driver": [
+              0.00659538553991666,
+              1.0986122886681096,
+              0.22653903704725623,
+              1.3862943611198906
+            ],
+            "trainer": [
+              0.00028136341426836936,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "L. GUENET",
+            "trainer": "MME BARBARA GUENET"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 16,
+          "name": "JOY EASTER",
+          "horse_id": "pedigree:('JOY EASTER', 'RIVER CREEK', 'BRIAC DARK')",
+          "non_runner": false,
+          "features": [
+            0.4,
+            0.8,
+            0.0,
+            2.8903717578961645,
+            1.0,
+            0.141899563859621,
+            3.5263605246161616,
+            0.18299054908366755,
+            0.054143058148583466,
+            0.0039973517976378955,
+            2.4849066497880004,
+            0.1628249328777154,
+            2.5649493574615367,
+            0.0710657710157439,
+            1.9459101490553132,
+            0.2736799284028964,
+            2.3978952727983707,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.05014123873275856,
+            1.3862943611198906,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0,
+            0.13831758180611262,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.141899563859621,
+            3.5263605246161616,
+            0.18299054908366755,
+            0.054143058148583466
+          ],
+          "connection_features": {
+            "driver": [
+              0.0039973517976378955,
+              2.4849066497880004,
+              0.1628249328777154,
+              2.5649493574615367
+            ],
+            "trainer": [
+              0.0710657710157439,
+              1.9459101490553132,
+              0.2736799284028964,
+              2.3978952727983707
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.05014123873275856,
+              1.3862943611198906
+            ]
+          },
+          "connection_entities": {
+            "driver": "LORIS BIZOUX",
+            "trainer": "PAVEL TAMSIN"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        }
+      ],
+      "temperature": 0.9411457597147692,
+      "role": "primary",
+      "selection_file": "reports/available_history_v3/selection_frozen_before_test.json",
+      "feature_version": "last5_available_dq20",
+      "model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24"
+    },
+    "v6": {
+      "runners": [
+        {
+          "number": 1,
+          "name": "JOSY EXPRESS",
+          "horse_id": "pedigree:('JOSY EXPRESS', 'PARMELIE', 'PAGALOR')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.713572066704308,
+            0.2,
+            -0.009477438023343972,
+            3.1354942159291497,
+            0.23460326805598405,
+            0.06700085347841402,
+            0.004179670201150756,
+            3.295836866004329,
+            0.24018905185612532,
+            3.58351893845611,
+            -0.023057486438056815,
+            1.3862943611198906,
+            0.21709991050362054,
+            1.6094379124341003,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.02178487160809342,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.009477438023343972,
+            3.1354942159291497,
+            0.23460326805598405,
+            0.06700085347841402
+          ],
+          "connection_features": {
+            "driver": [
+              0.004179670201150756,
+              3.295836866004329,
+              0.24018905185612532,
+              3.58351893845611
+            ],
+            "trainer": [
+              -0.023057486438056815,
+              1.3862943611198906,
+              0.21709991050362054,
+              1.6094379124341003
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.02178487160809342,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "R. VILAULT",
+            "trainer": "P. LELIEVRE"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 2,
+          "name": "IMPERIAL EMIR",
+          "horse_id": "pedigree:('IMPERIAL EMIR', 'ORPHEA DE MOUCI', 'THE BEST MADRIK')",
+          "non_runner": false,
+          "features": [
+            null,
+            null,
+            null,
+            null,
+            0.0,
+            -0.20183651256502386,
+            2.8903717578961645,
+            0.07961212793271774,
+            0.05115593703106719,
+            null,
+            0.0,
+            0.21051989260434464,
+            0.0,
+            -0.009410755445148274,
+            1.3862943611198906,
+            0.24841591408347571,
+            1.791759469228055,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.20183651256502386,
+            2.8903717578961645,
+            0.07961212793271774,
+            0.05115593703106719
+          ],
+          "connection_features": {
+            "driver": [
+              null,
+              0.0,
+              0.21051989260434464,
+              0.0
+            ],
+            "trainer": [
+              -0.009410755445148274,
+              1.3862943611198906,
+              0.24841591408347571,
+              1.791759469228055
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. MOREIRA DE BASTOS",
+            "trainer": "B. HOJKA"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 3,
+          "name": "JOYAU DARLING",
+          "horse_id": "pedigree:('JOYAU DARLING', 'RAPID DARLING', 'TIMOKO')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.6109179126442243,
+            0.4,
+            0.02875220743790722,
+            3.784189633918261,
+            0.12326771472729964,
+            0.042798856557117945,
+            0.01603362348738686,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.04092292282621346,
+            3.4011973816621555,
+            0.22776548020839468,
+            3.6635616461296463,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.03278364743689008,
+            1.0986122886681096,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.02875220743790722,
+            3.784189633918261,
+            0.12326771472729964,
+            0.042798856557117945
+          ],
+          "connection_features": {
+            "driver": [
+              0.01603362348738686,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "trainer": [
+              0.04092292282621346,
+              3.4011973816621555,
+              0.22776548020839468,
+              3.6635616461296463
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.03278364743689008,
+              1.0986122886681096
+            ]
+          },
+          "connection_entities": {
+            "driver": "E. HANOT",
+            "trainer": "A. RIPOLL RIGO"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 4,
+          "name": "JUST REMEMBER",
+          "horse_id": "pedigree:('JUST REMEMBER', 'VICTORY CHARM', 'UNBRIDLED CHARM')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            1.0,
+            0.0,
+            4.110873864173311,
+            0.2,
+            0.1713980512126133,
+            2.8903717578961645,
+            0.2234227329432306,
+            0.07251019057898177,
+            0.014235135963068702,
+            2.0794415416798357,
+            0.2403465950695631,
+            2.3978952727983707,
+            -0.011382010885438538,
+            1.9459101490553132,
+            0.22179992328881762,
+            2.1972245773362196,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.014393139377180862,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.1713980512126133,
+            2.8903717578961645,
+            0.2234227329432306,
+            0.07251019057898177
+          ],
+          "connection_features": {
+            "driver": [
+              0.014235135963068702,
+              2.0794415416798357,
+              0.2403465950695631,
+              2.3978952727983707
+            ],
+            "trainer": [
+              -0.011382010885438538,
+              1.9459101490553132,
+              0.22179992328881762,
+              2.1972245773362196
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.014393139377180862,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "G. D'HAENENS",
+            "trainer": "G. SALLES"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 5,
+          "name": "IRAFARA",
+          "horse_id": "pedigree:('IRAFARA', 'OFARA', 'VILLAGE MYSTIC')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.5,
+            3.332204510175204,
+            0.4,
+            0.05623673720969054,
+            2.833213344056216,
+            0.35539263389684805,
+            0.07764438327683278,
+            -0.003719819742179406,
+            1.3862943611198906,
+            0.183060776177691,
+            1.3862943611198906,
+            0.012264617518227461,
+            1.0986122886681096,
+            0.22653903704725623,
+            1.3862943611198906,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            1.0,
+            0.0,
+            -0.003931624618217381,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05623673720969054,
+            2.833213344056216,
+            0.35539263389684805,
+            0.07764438327683278
+          ],
+          "connection_features": {
+            "driver": [
+              -0.003719819742179406,
+              1.3862943611198906,
+              0.183060776177691,
+              1.3862943611198906
+            ],
+            "trainer": [
+              0.012264617518227461,
+              1.0986122886681096,
+              0.22653903704725623,
+              1.3862943611198906
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "MME I. LELIEVRE",
+            "trainer": "S. LEVOY"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            -0.003931624618217381,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 6,
+          "name": "JOKER DU CHOQUEL",
+          "horse_id": "pedigree:('JOKER DU CHOQUEL', 'BRITTANY WINNER', 'UP AND QUICK')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.5553480614894135,
+            0.2,
+            -0.005031462151951498,
+            3.4339872044851463,
+            0.2721062971958342,
+            0.061131540854222254,
+            0.011614689660196105,
+            1.6094379124341003,
+            0.26705177229951454,
+            2.0794415416798357,
+            -0.023478652197764942,
+            1.3862943611198906,
+            0.21709991050362054,
+            1.6094379124341003,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.005031462151951498,
+            3.4339872044851463,
+            0.2721062971958342,
+            0.061131540854222254
+          ],
+          "connection_features": {
+            "driver": [
+              0.011614689660196105,
+              1.6094379124341003,
+              0.26705177229951454,
+              2.0794415416798357
+            ],
+            "trainer": [
+              -0.023478652197764942,
+              1.3862943611198906,
+              0.21709991050362054,
+              1.6094379124341003
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "L. CUEFF",
+            "trainer": "GREGG LUPI"
+          },
+          "equipment_code": "UNKNOWN",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 7,
+          "name": "IKAKOU",
+          "horse_id": "pedigree:('IKAKOU', \"USTIA D'ORVAL\", 'TAG WOOD')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            4.04305126783455,
+            0.2,
+            0.0663400970293861,
+            2.8903717578961645,
+            0.2469553773994963,
+            0.0739571455747036,
+            -0.017016191378971438,
+            1.0986122886681096,
+            0.2587665771702872,
+            1.6094379124341003,
+            0.05264144377085313,
+            2.8903717578961645,
+            0.18025994630217232,
+            3.044522437723423,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.0663400970293861,
+            2.8903717578961645,
+            0.2469553773994963,
+            0.0739571455747036
+          ],
+          "connection_features": {
+            "driver": [
+              -0.017016191378971438,
+              1.0986122886681096,
+              0.2587665771702872,
+              1.6094379124341003
+            ],
+            "trainer": [
+              0.05264144377085313,
+              2.8903717578961645,
+              0.18025994630217232,
+              3.044522437723423
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "N. ERNAULT",
+            "trainer": "G. BEAUFILS"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 8,
+          "name": "HE STAR DU CALICE",
+          "horse_id": "pedigree:('HE STAR DU CALICE', 'STAR DU CALICE', 'NAHAR DE BEVAL')",
+          "non_runner": false,
+          "features": [
+            null,
+            null,
+            null,
+            null,
+            0.0,
+            0.12845740223657637,
+            3.5553480614894135,
+            0.16299054908366756,
+            0.05172033202679772,
+            0.022734668301122474,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.05264144377085313,
+            2.8903717578961645,
+            0.18025994630217232,
+            3.044522437723423,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            null,
+            0.0,
+            9,
+            81,
+            0.0,
+            1.0,
+            0.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.12845740223657637,
+            3.5553480614894135,
+            0.16299054908366756,
+            0.05172033202679772
+          ],
+          "connection_features": {
+            "driver": [
+              0.022734668301122474,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "trainer": [
+              0.05264144377085313,
+              2.8903717578961645,
+              0.18025994630217232,
+              3.044522437723423
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "J.CH. BEAUFILS",
+            "trainer": "G. BEAUFILS"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            9,
+            81,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 9,
+          "name": "JAGUAR'S EYES",
+          "horse_id": "pedigree:(\"JAGUAR'S EYES\", 'AGLAE PIERJI', 'READY CASH')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.5,
+            0.0,
+            3.332204510175204,
+            0.4,
+            0.07712943077690382,
+            3.6375861597263857,
+            0.2647463517079242,
+            0.05603220861848673,
+            -0.0052365701377245985,
+            1.6094379124341003,
+            0.17543324383695388,
+            1.6094379124341003,
+            0.01653229023345614,
+            1.9459101490553132,
+            0.16193837892641896,
+            1.9459101490553132,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.009513356403458531,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.07712943077690382,
+            3.6375861597263857,
+            0.2647463517079242,
+            0.05603220861848673
+          ],
+          "connection_features": {
+            "driver": [
+              -0.0052365701377245985,
+              1.6094379124341003,
+              0.17543324383695388,
+              1.6094379124341003
+            ],
+            "trainer": [
+              0.01653229023345614,
+              1.9459101490553132,
+              0.16193837892641896,
+              1.9459101490553132
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.009513356403458531,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "J. DENISOT",
+            "trainer": "A. DUPERCHE"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 10,
+          "name": "IDEAL FOUR",
+          "horse_id": "pedigree:('IDEAL FOUR', 'JOLIE DU BIEF', 'UHLAN DU VAL')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            2.8903717578961645,
+            0.6,
+            -0.36369573492737073,
+            3.8712010109078907,
+            0.1153149589384416,
+            0.040240826458005155,
+            0.011447006931598317,
+            0.6931471805599453,
+            0.20049513581366157,
+            0.6931471805599453,
+            -0.020352863649406288,
+            2.639057329615259,
+            0.1532469956496145,
+            2.70805020110221,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.033800923337872796,
+            1.3862943611198906,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.36369573492737073,
+            3.8712010109078907,
+            0.1153149589384416,
+            0.040240826458005155
+          ],
+          "connection_features": {
+            "driver": [
+              0.011447006931598317,
+              0.6931471805599453,
+              0.20049513581366157,
+              0.6931471805599453
+            ],
+            "trainer": [
+              -0.020352863649406288,
+              2.639057329615259,
+              0.1532469956496145,
+              2.70805020110221
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.033800923337872796,
+              1.3862943611198906
+            ]
+          },
+          "connection_entities": {
+            "driver": "CL. CIMAROSTI",
+            "trainer": "JEROME DAVID"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 11,
+          "name": "HECTOR DE CORDAY",
+          "horse_id": "pedigree:('HECTOR DE CORDAY', 'SORAYA LAP', 'BOOSTER WINNER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.0,
+            3.091042453358316,
+            0.2,
+            0.05095519876035455,
+            3.332204510175204,
+            0.3166574010624192,
+            0.06450782472138457,
+            0.03132665398224579,
+            1.3862943611198906,
+            0.21709991050362054,
+            1.6094379124341003,
+            -0.007183314470688185,
+            1.6094379124341003,
+            0.2084159140834757,
+            1.791759469228055,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.004906287951159889,
+            0.6931471805599453,
+            9,
+            81,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.05095519876035455,
+            3.332204510175204,
+            0.3166574010624192,
+            0.06450782472138457
+          ],
+          "connection_features": {
+            "driver": [
+              0.03132665398224579,
+              1.3862943611198906,
+              0.21709991050362054,
+              1.6094379124341003
+            ],
+            "trainer": [
+              -0.007183314470688185,
+              1.6094379124341003,
+              0.2084159140834757,
+              1.791759469228055
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.004906287951159889,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "R. HOJKA",
+            "trainer": "L. CANNAERT"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            9,
+            81,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 12,
+          "name": "IN AMERICA",
+          "horse_id": "pedigree:('IN AMERICA', 'NINA MADRIK', 'READY CASH')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            3.8712010109078907,
+            0.4,
+            -0.1503411390230961,
+            3.4657359027997265,
+            0.2936277718942432,
+            0.060858516170509525,
+            -0.0022024642536697726,
+            1.0986122886681096,
+            0.2587665771702872,
+            1.6094379124341003,
+            0.004921200031328629,
+            1.0986122886681096,
+            0.2587665771702872,
+            1.6094379124341003,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            null,
+            0.0,
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.1503411390230961,
+            3.4657359027997265,
+            0.2936277718942432,
+            0.060858516170509525
+          ],
+          "connection_features": {
+            "driver": [
+              -0.0022024642536697726,
+              1.0986122886681096,
+              0.2587665771702872,
+              1.6094379124341003
+            ],
+            "trainer": [
+              0.004921200031328629,
+              1.0986122886681096,
+              0.2587665771702872,
+              1.6094379124341003
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              null,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "W. DEVENNE",
+            "trainer": "TH. ROUSSEL"
+          },
+          "equipment_code": "UNKNOWN",
+          "age_sex_features": [
+            8,
+            64,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 13,
+          "name": "JAZZY MAKER",
+          "horse_id": "pedigree:('JAZZY MAKER', 'BELGIAN BEAUTY', 'BIRD PARKER')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.5,
+            2.5649493574615367,
+            0.4,
+            -0.048288267496428616,
+            3.6635616461296463,
+            0.2228733466810742,
+            0.05372783543320475,
+            -0.023301600956179738,
+            1.3862943611198906,
+            0.183060776177691,
+            1.3862943611198906,
+            -0.004232430729472704,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.004232430729472704,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0,
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.048288267496428616,
+            3.6635616461296463,
+            0.2228733466810742,
+            0.05372783543320475
+          ],
+          "connection_features": {
+            "driver": [
+              -0.023301600956179738,
+              1.3862943611198906,
+              0.183060776177691,
+              1.3862943611198906
+            ],
+            "trainer": [
+              -0.004232430729472704,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.004232430729472704,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "M. GARCON",
+            "trainer": "P. VAN ACHTER"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.2518354944038654,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 14,
+          "name": "JANGO ELEVEN",
+          "horse_id": "pedigree:('JANGO ELEVEN', 'REVOLTE BLONDE', 'DJANGO RIFF')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            0.5,
+            3.367295829986474,
+            0.4,
+            0.12270609903057865,
+            3.367295829986474,
+            0.18521653304962224,
+            0.057910154345560814,
+            0.03507836342461093,
+            2.1972245773362196,
+            0.20701326173622978,
+            2.3978952727983707,
+            0.04092292282621346,
+            3.4011973816621555,
+            0.22776548020839468,
+            3.6635616461296463,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.005659914315460437,
+            0.6931471805599453,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            0.005659914315460436,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.12270609903057865,
+            3.367295829986474,
+            0.18521653304962224,
+            0.057910154345560814
+          ],
+          "connection_features": {
+            "driver": [
+              0.03507836342461093,
+              2.1972245773362196,
+              0.20701326173622978,
+              2.3978952727983707
+            ],
+            "trainer": [
+              0.04092292282621346,
+              3.4011973816621555,
+              0.22776548020839468,
+              3.6635616461296463
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.005659914315460437,
+              0.6931471805599453
+            ]
+          },
+          "connection_entities": {
+            "driver": "K. ACHARD",
+            "trainer": "A. RIPOLL RIGO"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            0.005659914315460436,
+            0.6931471805599453,
+            0.20421644678481776,
+            0.6931471805599453
+          ]
+        },
+        {
+          "number": 15,
+          "name": "JAVELOT DE HOUELLE",
+          "horse_id": "pedigree:('JAVELOT DE HOUELLE', 'SAWASDE DE HOUELLE', 'BRILLANTISSIME')",
+          "non_runner": false,
+          "features": [
+            0.0,
+            0.0,
+            1.0,
+            2.8903717578961645,
+            0.2,
+            -0.06520423336641686,
+            3.1780538303479458,
+            0.20896224241495842,
+            0.06428394505237497,
+            0.00659538553991666,
+            1.0986122886681096,
+            0.22653903704725623,
+            1.3862943611198906,
+            0.00028136341426836936,
+            0.6931471805599453,
+            0.2368362660039497,
+            1.0986122886681096,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            null,
+            0.0,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            -0.06520423336641686,
+            3.1780538303479458,
+            0.20896224241495842,
+            0.06428394505237497
+          ],
+          "connection_features": {
+            "driver": [
+              0.00659538553991666,
+              1.0986122886681096,
+              0.22653903704725623,
+              1.3862943611198906
+            ],
+            "trainer": [
+              0.00028136341426836936,
+              0.6931471805599453,
+              0.2368362660039497,
+              1.0986122886681096
+            ],
+            "equipment": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              null,
+              0.0
+            ]
+          },
+          "connection_entities": {
+            "driver": "L. GUENET",
+            "trainer": "MME BARBARA GUENET"
+          },
+          "equipment_code": "DEFERRE_ANTERIEURS_POSTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        },
+        {
+          "number": 16,
+          "name": "JOY EASTER",
+          "horse_id": "pedigree:('JOY EASTER', 'RIVER CREEK', 'BRIAC DARK')",
+          "non_runner": false,
+          "features": [
+            0.6666666666666666,
+            1.0,
+            0.0,
+            2.8903717578961645,
+            0.6,
+            0.141899563859621,
+            3.5263605246161616,
+            0.18299054908366755,
+            0.054143058148583466,
+            0.0039973517976378955,
+            2.4849066497880004,
+            0.1628249328777154,
+            2.5649493574615367,
+            0.0710657710157439,
+            1.9459101490553132,
+            0.2736799284028964,
+            2.3978952727983707,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.05014123873275856,
+            1.3862943611198906,
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0,
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ],
+          "won": 0,
+          "rank": null,
+          "incident": null,
+          "opposition_features": [
+            0.141899563859621,
+            3.5263605246161616,
+            0.18299054908366755,
+            0.054143058148583466
+          ],
+          "connection_features": {
+            "driver": [
+              0.0039973517976378955,
+              2.4849066497880004,
+              0.1628249328777154,
+              2.5649493574615367
+            ],
+            "trainer": [
+              0.0710657710157439,
+              1.9459101490553132,
+              0.2736799284028964,
+              2.3978952727983707
+            ],
+            "equipment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.05014123873275856,
+              1.3862943611198906
+            ]
+          },
+          "connection_entities": {
+            "driver": "LORIS BIZOUX",
+            "trainer": "PAVEL TAMSIN"
+          },
+          "equipment_code": "PROTEGE_ANTERIEURS",
+          "age_sex_features": [
+            7,
+            49,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tandem_features": [
+            null,
+            0.0,
+            0.21442726912405866,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  "history_through": "2026-11-27",
+  "history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "research_only": true,
+  "original_operational_latest_modified": false,
+  "individual_history_check": {
+    "status": "RESEARCH_HISTORY_WARNING",
+    "affected_runners": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "runners": [
+      {
+        "number": 1,
+        "name": "JOSY EXPRESS",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 35,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 32,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-19",
+            "venue": "LES SABLES D'OLONNE",
+            "racecourse_code": "LSO",
+            "race_number": 4,
+            "race_name": "PRIX DU VENDEE GLOBE",
+            "discipline": "ATTELE",
+            "distance_m": 2775,
+            "distance_covered_m": 2775,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 14,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.8,
+            "race_time_seconds": 210.0,
+            "driver": "Mlle CL. LELIEVRE",
+            "trainer": "P. LELIEVRE",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 17,
+            "purse_eur": 35000,
+            "race_type": "Course D",
+            "turn": "G",
+            "conditions": "PRIX DU VENDEE GLOBE Race 3 Class D 35.000. - Harness. - 2.775 metres. 15.750, 8.750, 4.900, 2.800, 1.750, 700, 350.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than €248.000. - 25 meters behind for horses who have won more than €119.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.0,
+          3.713572066704308,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 2,
+        "name": "IMPERIAL EMIR",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 63,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 29,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-10-04",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2021-07-30",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2021-07-14",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          null,
+          null,
+          null,
+          null,
+          0.0
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 3,
+        "name": "JOYAU DARLING",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 57,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 53,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-23",
+            "venue": "STRASBOURG",
+            "racecourse_code": "STR",
+            "race_number": 7,
+            "race_name": "PRIX FRANCE 3 ALSACE",
+            "discipline": "ATTELE",
+            "distance_m": 2750,
+            "distance_covered_m": 2750,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 11,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 80.8,
+            "race_time_seconds": 222.0,
+            "driver": "F. GUERINEAU",
+            "trainer": "A. RIPOLL RIGO",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 14,
+            "purse_eur": 27000,
+            "race_type": "Course E",
+            "turn": "D",
+            "conditions": "PRIX FRANCE 3 ALSACE Race 5 Class E Autostart start 27.000. - Harness. - 2.750 metres. 12.150, 6.750, 3.780, 2.160, 1.350, 540, 270.- allocated by the S.E.T.F. For horses aged 7 and 8, who have won less than €118.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+            "track_condition": {
+              "label": "Bon",
+              "measure": "3,0",
+              "measureTimestamp": 1792744200
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-14",
+            "venue": "REIMS",
+            "racecourse_code": "REI",
+            "race_number": 4,
+            "race_name": "PRIX DU CHAMPAGNE CASTELNAU",
+            "discipline": "ATTELE",
+            "distance_m": 2500,
+            "distance_covered_m": 2500,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 8,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "K. ACHARD",
+            "trainer": "A. RIPOLL RIGO",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 14,
+            "purse_eur": 23000,
+            "race_type": "Course F",
+            "turn": "D",
+            "conditions": "PRIX DU CHAMPAGNE CASTELNAU Race 5 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 23.000. - Harness. - 2.500 metres. 10.350, 5.750, 3.220, 1.840, 1.150, 460, 230.- allocated by the S.E.T.F. For horses aged 6, 7 and 8, who have won less than €95.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 1
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.0,
+          3.6109179126442243,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 4,
+        "name": "JUST REMEMBER",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 37,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 35,
+        "missing_recent_starts": [
+          {
+            "date": "2026-09-29",
+            "venue": "PARIS-VINCENNES",
+            "racecourse_code": "VIN",
+            "race_number": 3,
+            "race_name": "PRIX DE GUINGAMP",
+            "discipline": "ATTELE",
+            "distance_m": 2850,
+            "distance_covered_m": 2850,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 2,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.6,
+            "race_time_seconds": 215.0,
+            "driver": "CH. KOROSI",
+            "trainer": "N. CATHERINE",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 14,
+            "purse_eur": 18000,
+            "race_type": null,
+            "turn": "G",
+            "conditions": "PRIX DE GUINGAMP Race 6 Race R Race \"CLAIMING\" APPRENTICES-LADS-JOCKEYS 18.000. - Harness. - 2.850 metres (G. P.) 8.100, 4.500, 2.520, 1.440, 900, 360, 180. For horses aged 6 and 7, who have won less than €110.000, to claim for €14.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2025-05-29",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2022-06-25",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          1.0,
+          0.0,
+          4.110873864173311,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 5,
+        "name": "IRAFARA",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 62,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 33,
+        "missing_recent_starts": [
+          {
+            "date": "2026-11-01",
+            "venue": "LISIEUX",
+            "racecourse_code": "LIS",
+            "race_number": 4,
+            "race_name": "PRIX DE SAINT-PIERRE-EN-AUGE",
+            "discipline": "ATTELE",
+            "distance_m": 2725,
+            "distance_covered_m": 2725,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 6,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.9,
+            "race_time_seconds": 206.0,
+            "driver": "Mme I. LELIEVRE",
+            "trainer": "S. LEVOY",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 14,
+            "purse_eur": 22000,
+            "race_type": "Course E",
+            "turn": "D",
+            "conditions": "PRIX DE SAINT-PIERRE-EN-AUGE Race 4 Class E APPRENTICES - LADS-JOCKEYS 22.000. - Harness. - 2.725 metres. 9.900, 5.500, 3.080, 1.760, 1.100, 440, 220.- allocated by the S.E.T.F. For horses aged between 6 and 10 inclusive, who have won less than €203.000 and who have won less than €15.000 since 2 November last inclusive. - 25 meters behind for horses who have won more than €103.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-15",
+            "venue": "ENGHIEN",
+            "racecourse_code": "ENG",
+            "race_number": 8,
+            "race_name": "PRIX DE MONTRESOR",
+            "discipline": "ATTELE",
+            "distance_m": 2150,
+            "distance_covered_m": 2150,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "TH. SCIPION",
+            "trainer": "S. LEVOY",
+            "shoes_raw": "6",
+            "shoes": "PA_DP",
+            "field_size": 13,
+            "purse_eur": 12000,
+            "race_type": "Course E",
+            "turn": "G",
+            "conditions": "PRIX DE MONTRESOR Race 8 Class E AMATEURS Autostart departure 12.000. - Harness. - 2.150 metres. 5.400, 3.000, 1.680, 960, 600, 240, 120. For horses aged between 6 and 11 inclusive, who have won less than €140.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2024-12-01",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.5,
+          3.332204510175204,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 6,
+        "name": "JOKER DU CHOQUEL",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 58,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 57,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-25",
+            "venue": "SAINT GALMIER",
+            "racecourse_code": "GAL",
+            "race_number": 8,
+            "race_name": "PRIX SAINT-ETIENNE LA METROPOLE",
+            "discipline": "ATTELE",
+            "distance_m": 2650,
+            "distance_covered_m": 2650,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 10,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 79.3,
+            "race_time_seconds": 210.0,
+            "driver": "A. PEREIRA",
+            "trainer": "A. PEREIRA",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 14,
+            "purse_eur": 20000,
+            "race_type": "Course F",
+            "turn": "D",
+            "conditions": "PRIX SAINT-ETIENNE LA METROPOLE Race 6 Class F 20.000. - Harness. - 2.650 metres. 9.000, 5.000, 2.800, 1.600, 1.000, 400, 200.- allocated by the S.E.T.F. For horses aged 7, who have won less than €108.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2025-05-04",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.0,
+          3.5553480614894135,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 7,
+        "name": "IKAKOU",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 60,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 51,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-03",
+            "venue": "AMIENS",
+            "racecourse_code": "AMI",
+            "race_number": 1,
+            "race_name": "PRIX JEEP AMIENS - SOFIDA AUTO",
+            "discipline": "ATTELE",
+            "distance_m": 2400,
+            "distance_covered_m": 2400,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "N. ERNAULT",
+            "trainer": "G. BEAUFILS",
+            "shoes_raw": "1",
+            "shoes": "DA",
+            "field_size": 14,
+            "purse_eur": 18500,
+            "race_type": "Course F",
+            "turn": "D",
+            "conditions": "PRIX CANCANNIERE Race 1 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 18.500. - Harness. - 2.400 metres. 8.325, 4.625, 2.590, 1.480, 925, 370, 185.- allocated by the S.E.T.F. For horses aged 6, 7 and 8, who have won less than €99.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2022-10-09",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2022-09-18",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2022-07-03",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2022-05-15",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2021-09-26",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2021-08-01",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          1.0,
+          4.04305126783455,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 8,
+        "name": "HE STAR DU CALICE",
+        "status": "NO_DISCREPANCY_IN_RETURNED_WINDOW",
+        "snapshot_career_starts": 90,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 77,
+        "missing_recent_starts": [],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-07-14",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2025-09-21",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2025-04-21",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2024-05-08",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2024-03-16",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2021-08-15",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2021-06-27",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2021-05-16",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2020-08-15",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2020-07-28",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          null,
+          null,
+          null,
+          null,
+          0.0
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 9,
+        "name": "JAGUAR'S EYES",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 53,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 52,
+        "missing_recent_starts": [
+          {
+            "date": "2026-11-01",
+            "venue": "LA CAPELLE",
+            "racecourse_code": "CAP",
+            "race_number": 6,
+            "race_name": "PRIX COM. DE COM. DE LA THIERACHE DU CENTRE",
+            "discipline": "ATTELE",
+            "distance_m": 2750,
+            "distance_covered_m": 2750,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 3,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.2,
+            "race_time_seconds": 206.0,
+            "driver": "J.CH. PITON",
+            "trainer": "A. DUPERCHE",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 16,
+            "purse_eur": 25000,
+            "race_type": "Course E",
+            "turn": "G",
+            "conditions": "PRIX DE VERVINS Race 5 Class E 25.000. - Harness. - 2.750 metres. 11.250, 6.250, 3.500, 2.000, 1.250, 500, 250.- allocated by the Regional Trot Council. For horses aged between 7 and 10 inclusive, who have won less than €179.000. - 25 meters behind for horses who have won more than €87.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-08",
+            "venue": "LA CAPELLE",
+            "racecourse_code": "CAP",
+            "race_number": 5,
+            "race_name": "GRAND PRIX DE LA SAUR",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 6,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.3,
+            "race_time_seconds": 203.0,
+            "driver": "A. DUPERCHE",
+            "trainer": "A. DUPERCHE",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 15,
+            "purse_eur": 28000,
+            "race_type": "Course E",
+            "turn": "G",
+            "conditions": "PRIX DE MAUBEUGE Race 7 Class E Autostart start 28.000. - Harness. - 2.700 metres. 12.600, 7.000, 3.920, 2.240, 1.400, 560, 280.- allocated by the S.E.T.F. For horses aged 7, who have won less than €111.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-02-23",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.5,
+          0.0,
+          3.332204510175204,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 10,
+        "name": "IDEAL FOUR",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 88,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 82,
+        "missing_recent_starts": [
+          {
+            "date": "2026-11-11",
+            "venue": "ANGERS",
+            "racecourse_code": "ANG",
+            "race_number": 8,
+            "race_name": "PRIX DU CONSEIL DEPARTEMENTAL DE MAINE ET LOIRE",
+            "discipline": "ATTELE",
+            "distance_m": 3125,
+            "distance_covered_m": 3125,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 13,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 76.4,
+            "race_time_seconds": 238.0,
+            "driver": "JEROME DAVID",
+            "trainer": "JEROME DAVID",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 18,
+            "purse_eur": 25000,
+            "race_type": null,
+            "turn": "D",
+            "conditions": "PRIX DU CONSEIL DEPARTEMENTAL DE MAINE ET LOIRE Race 5 PRIX AMAZONE B Class E 25.000. - Harness, males. - 3.125 metres. 11.250, 6.250, 3.500, 2.000, 1.250, 500, 250.- allocated by the S.E.T.F. For entire horses and geldings aged 6 to 9 inclusive, who have won less than €178.000. - 25 meters behind for horses who have won more than €93.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-24",
+            "venue": "CHATEAUBRIANT",
+            "racecourse_code": "CHB",
+            "race_number": 9,
+            "race_name": "PRIX PAUL BROCHARD",
+            "discipline": "ATTELE",
+            "distance_m": 3000,
+            "distance_covered_m": 3000,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 13,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 79.6,
+            "race_time_seconds": 238.0,
+            "driver": "M. DE MEYER",
+            "trainer": "JEROME DAVID",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 16,
+            "purse_eur": 21000,
+            "race_type": "Course E",
+            "turn": "D",
+            "conditions": "PRIX PAUL BROCHARD Race 5 Class E APPRENTICES-LADS-JOCKEYS 21.000. - Harness. - 3.000 metres. 9.450, 5.250, 2.940, 1.680, 1.050, 420, 210.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than €188.000. - 25 meters behind for horses who have won more than €92.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-03",
+            "venue": "CABOURG",
+            "racecourse_code": "CAB",
+            "race_number": 6,
+            "race_name": "PRIX D'ISIGNY-SUR-MER",
+            "discipline": "ATTELE",
+            "distance_m": 2750,
+            "distance_covered_m": 2750,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 14,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 76.6,
+            "race_time_seconds": 210.0,
+            "driver": "JEROME DAVID",
+            "trainer": "JEROME DAVID",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 16,
+            "purse_eur": 31000,
+            "race_type": "Course E",
+            "turn": "D",
+            "conditions": "PRIX D'ISIGNY-SUR-MER Race 6 Class E 31.000. - Harness. - 2.750 metres. 13.950, 7.750, 4.340, 2.480, 1.550, 620, 310. For horses aged 6, 7 and 8, who have won less than €175.000. - 25 meters behind for horses who have won more than €93.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-04-11",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2025-07-27",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2024-04-15",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2023-07-23",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2023-07-14",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2023-06-18",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2022-08-14",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.0,
+          2.8903717578961645,
+          0.6
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 11,
+        "name": "HECTOR DE CORDAY",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 114,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 101,
+        "missing_recent_starts": [
+          {
+            "date": "2026-11-07",
+            "venue": "MAUQUENCHY",
+            "racecourse_code": "ROU",
+            "race_number": 8,
+            "race_name": "PRIX DE L'UNAT",
+            "discipline": "ATTELE",
+            "distance_m": 2150,
+            "distance_covered_m": 2150,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 5,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 74.5,
+            "race_time_seconds": 160.0,
+            "driver": "S. HOSTE",
+            "trainer": "L. CANNAERT",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 16,
+            "purse_eur": 6000,
+            "race_type": "Course G",
+            "turn": "G",
+            "conditions": "PRIX DE L'UNAT Race 7 Class G CHALLENGE UNAT AMATEURS Autostart start 6.000. - Harness. - 2.150 metres. 2.700, 1.500, 840, 480, 300, 120, 60.- of which 5.800 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged 7, 8 and 9, who have won less than €83.000. Only drivers who have won at least two races or who have raced at least thirty times are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-05-23",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2026-01-10",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2025-05-29",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2023-09-10",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2020-08-23",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2020-08-09",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2020-07-26",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.0,
+          3.091042453358316,
+          0.2
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 12,
+        "name": "IN AMERICA",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 77,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 74,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-12",
+            "venue": "LE CROISE-LAROCHE",
+            "racecourse_code": "CRO",
+            "race_number": 4,
+            "race_name": "PRIX DE LESQUIN",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "D. BROHIER",
+            "trainer": "TH. ROUSSEL",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 15,
+            "purse_eur": 25000,
+            "race_type": "Course E",
+            "turn": "G",
+            "conditions": "PRIX DE LESQUIN Race 4 Class E Autostart start 25.000. - Harness. - 2.700 metres. 11.250, 6.250, 3.500, 2.000, 1.250, 500, 250.- allocated by the S.E.T.F. For horses aged between 7 and 11 inclusive, who have won less than €140.000. Only drivers who have won at least five races (and who hold a professional licence) are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-03",
+            "venue": "AMIENS",
+            "racecourse_code": "AMI",
+            "race_number": 1,
+            "race_name": "PRIX JEEP AMIENS - SOFIDA AUTO",
+            "discipline": "ATTELE",
+            "distance_m": 2400,
+            "distance_covered_m": 2400,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "C. PLANCHAIS",
+            "trainer": "TH. ROUSSEL",
+            "shoes_raw": null,
+            "shoes": null,
+            "field_size": 14,
+            "purse_eur": 18500,
+            "race_type": "Course F",
+            "turn": "D",
+            "conditions": "PRIX CANCANNIERE Race 1 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 18.500. - Harness. - 2.400 metres. 8.325, 4.625, 2.590, 1.480, 925, 370, 185.- allocated by the S.E.T.F. For horses aged 6, 7 and 8, who have won less than €99.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-03-14",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2026-02-23",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2025-08-26",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          1.0,
+          3.8712010109078907,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 13,
+        "name": "JAZZY MAKER",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 69,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 64,
+        "missing_recent_starts": [
+          {
+            "date": "2026-11-16",
+            "venue": "LE CROISE-LAROCHE",
+            "racecourse_code": "CRO",
+            "race_number": 2,
+            "race_name": "PRIX ROLLING, GU ET UN MEC D' HERIPRE",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 10,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 75.2,
+            "race_time_seconds": 203.0,
+            "driver": "F. OUVRIE",
+            "trainer": "P. VAN ACHTER",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 16,
+            "purse_eur": 21000,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX ROLLING, GU ET UN MEC D'HERIPRE Course 7 Course F Départ à l'Autostart 21.000. - Attelé, femelles. - 2.700 mètres. 9.450, 5.250, 2.940, 1.680, 1.050, 420, 210.- alloués par la S.E.T.F. Pour juments de 6 et 7 ans, n'ayant pas gagné 81.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-12",
+            "venue": "LE CROISE-LAROCHE",
+            "racecourse_code": "CRO",
+            "race_number": 5,
+            "race_name": "PRIX DE FRETUN",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "M. GARCON",
+            "trainer": "P. VAN ACHTER",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 14,
+            "purse_eur": 19000,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX DE FRETUN Race 5 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 19.000. - Harness. - 2.700 metres. 8.550, 4.750, 2.660, 1.520, 950, 380, 190.- allocated by the S.E.T.F. For horses aged 7, who have won less than €90.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-07-24",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2026-03-07",
+            "reason": "unknown_outcome"
+          },
+          {
+            "date": "2025-08-26",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.5,
+          2.5649493574615367,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 14,
+        "name": "JANGO ELEVEN",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 49,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 49,
+        "missing_recent_starts": [
+          {
+            "date": "2026-10-31",
+            "venue": "REIMS",
+            "racecourse_code": "REI",
+            "race_number": 8,
+            "race_name": "PRIX DE L'HIPPODROME DE CHALONS",
+            "discipline": "ATTELE",
+            "distance_m": 2500,
+            "distance_covered_m": 2500,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "R. MORRO PONS",
+            "trainer": "A. RIPOLL RIGO",
+            "shoes_raw": "4",
+            "shoes": "P4",
+            "field_size": 12,
+            "purse_eur": 5500,
+            "race_type": "Course G",
+            "turn": "D",
+            "conditions": "PRIX EL DORADO Race 7 Class G Challenge UNAT NIDFE - HIPPOMAT AMATEURS Autostart departure 5.500. - Harness. - 2.500 metres. 2.475, 1.375, 770, 440, 275, 110, 55.- of which 5.300 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 6 and 10 inclusive, who have won less than €92.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-12",
+            "venue": "LE CROISE-LAROCHE",
+            "racecourse_code": "CRO",
+            "race_number": 5,
+            "race_name": "PRIX DE FRETUN",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 4,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 74.0,
+            "race_time_seconds": 199.0,
+            "driver": "K. ACHARD",
+            "trainer": "A. RIPOLL RIGO",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 14,
+            "purse_eur": 19000,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX DE FRETUN Race 5 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 19.000. - Harness. - 2.700 metres. 8.550, 4.750, 2.660, 1.520, 950, 380, 190.- allocated by the S.E.T.F. For horses aged 7, who have won less than €90.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 1
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.5,
+          3.367295829986474,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 15,
+        "name": "JAVELOT DE HOUELLE",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 45,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 44,
+        "missing_recent_starts": [
+          {
+            "date": "2026-11-11",
+            "venue": "LA CAPELLE",
+            "racecourse_code": "CAP",
+            "race_number": 7,
+            "race_name": "PRIX DE LA PIERRE D'HAUDROY",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": null,
+            "arrival_status": "DISQUALIFIE_POUR_ALLURE_IRREGULIERE",
+            "disqualified": true,
+            "seconds_per_km": null,
+            "race_time_seconds": null,
+            "driver": "Mme B. GUENET",
+            "trainer": "Mme Barbara GUENET",
+            "shoes_raw": "3",
+            "shoes": "D4",
+            "field_size": 14,
+            "purse_eur": 5500,
+            "race_type": "Course G",
+            "turn": "G",
+            "conditions": "PRIX INTERFLORA DE L'AISNE Race 7 Class G Challenge UNAT NIDFE - HIPPOMAT AMATEURS Autostart departure 5.500. - Harness. - 2.700 metres. 2.475, 1.375, 770, 440, 275, 110, 55.- of which 5.300 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 7 and 10 inclusive, who have won less than €85.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-11",
+            "venue": "ALKMAAR",
+            "racecourse_code": "O83",
+            "race_number": 1,
+            "race_name": "Ton de Groot Memorial",
+            "discipline": "ATTELE",
+            "distance_m": 4545,
+            "distance_covered_m": 4545,
+            "handicap_m": 0,
+            "start_type": "NON_PRECISE",
+            "rank": 5,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 78.7,
+            "race_time_seconds": 357.0,
+            "driver": "B. Guénet",
+            "trainer": "B. Guénet",
+            "shoes_raw": "0",
+            "shoes": "FERRE",
+            "field_size": 10,
+            "purse_eur": 12100,
+            "race_type": null,
+            "turn": "G",
+            "conditions": "Pour 5 ans et plus",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": null
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.0,
+          0.0,
+          0.5,
+          2.8903717578961645,
+          0.4
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      },
+      {
+        "number": 16,
+        "name": "JOY EASTER",
+        "status": "MODEL_HISTORY_INCOMPLETE",
+        "snapshot_career_starts": 62,
+        "model_recent_starts": 0,
+        "individual_prior_starts_returned": 61,
+        "missing_recent_starts": [
+          {
+            "date": "2026-11-11",
+            "venue": "LA CAPELLE",
+            "racecourse_code": "CAP",
+            "race_number": 7,
+            "race_name": "PRIX DE LA PIERRE D'HAUDROY",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 1,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 74.7,
+            "race_time_seconds": 201.0,
+            "driver": "A. NEIRINCK",
+            "trainer": "Pavel TAMSIN",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 14,
+            "purse_eur": 5500,
+            "race_type": "Course G",
+            "turn": "G",
+            "conditions": "PRIX INTERFLORA DE L'AISNE Race 7 Class G Challenge UNAT NIDFE - HIPPOMAT AMATEURS Autostart departure 5.500. - Harness. - 2.700 metres. 2.475, 1.375, 770, 440, 275, 110, 55.- of which 5.300 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged between 7 and 10 inclusive, who have won less than €85.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-11-07",
+            "venue": "MAUQUENCHY",
+            "racecourse_code": "ROU",
+            "race_number": 8,
+            "race_name": "PRIX DE L'UNAT",
+            "discipline": "ATTELE",
+            "distance_m": 2150,
+            "distance_covered_m": 2150,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 1,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 73.9,
+            "race_time_seconds": 158.0,
+            "driver": "A. NEIRINCK",
+            "trainer": "Pavel TAMSIN",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 16,
+            "purse_eur": 6000,
+            "race_type": "Course G",
+            "turn": "G",
+            "conditions": "PRIX DE L'UNAT Race 7 Class G CHALLENGE UNAT AMATEURS Autostart start 6.000. - Harness. - 2.150 metres. 2.700, 1.500, 840, 480, 300, 120, 60.- of which 5.800 allocated by the S.E.T.F. and 200 by the Amateurs. For horses aged 7, 8 and 9, who have won less than €83.000. Only drivers who have won at least two races or who have raced at least thirty times are eligible to drive.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          },
+          {
+            "date": "2026-10-12",
+            "venue": "LE CROISE-LAROCHE",
+            "racecourse_code": "CRO",
+            "race_number": 5,
+            "race_name": "PRIX DE FRETUN",
+            "discipline": "ATTELE",
+            "distance_m": 2700,
+            "distance_covered_m": 2700,
+            "handicap_m": 0,
+            "start_type": "AUTOSTART",
+            "rank": 2,
+            "arrival_status": "PLACE",
+            "disqualified": false,
+            "seconds_per_km": 73.6,
+            "race_time_seconds": 198.0,
+            "driver": "J. DENISOT",
+            "trainer": "Pavel TAMSIN",
+            "shoes_raw": "5",
+            "shoes": "PA",
+            "field_size": 14,
+            "purse_eur": 19000,
+            "race_type": "Course F",
+            "turn": "G",
+            "conditions": "PRIX DE FRETUN Race 5 Class F APPRENTICES-LADS-JOCKEYS Autostart departure 19.000. - Harness. - 2.700 metres. 8.550, 4.750, 2.660, 1.520, 950, 380, 190.- allocated by the S.E.T.F. For horses aged 7, who have won less than €90.000.",
+            "track_condition": {
+              "measureTimestamp": 0
+            },
+            "trainer_opinion_raw": 2
+          }
+        ],
+        "conflicts": [],
+        "excluded": [
+          {
+            "date": "2026-11-28",
+            "reason": "target_or_future_day"
+          },
+          {
+            "date": "2026-07-24",
+            "reason": "unknown_outcome"
+          }
+        ],
+        "supplemented_recent_features_for_research": [
+          0.6666666666666666,
+          1.0,
+          0.0,
+          2.8903717578961645,
+          0.6
+        ],
+        "frozen_features_unchanged": true,
+        "recommendations_allowed": false,
+        "limits": "Returned history may be truncated. No assertion of complete career. Supplemented features are not fed to frozen model weights."
+      }
+    ],
+    "evidence_manifest": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R6C4/individual_history_evidence/manifest.json",
+    "market_independent": true,
+    "frozen_features_changed": false,
+    "recommendations_allowed": false
+  }
+}

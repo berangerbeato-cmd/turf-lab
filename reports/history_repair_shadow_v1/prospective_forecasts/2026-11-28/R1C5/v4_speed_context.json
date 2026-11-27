@@ -1,0 +1,82 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R1C5",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:33:29.554195+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('LADY DES ARRIS', 'ALENSKA', 'GOLDEN BRIDGE')",
+      "context_residual": 0.8660148280838039,
+      "prior_races_used": 3
+    },
+    "2": {
+      "horse_id": "pedigree:('LADY HAUFOR', 'CITY HAUFOR', 'BOCCADOR DE SIMM')",
+      "context_residual": 0.5606134996729961,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('LAREDO BAY', 'CAUSEWAY BAY', 'FACE TIME BOURBON')",
+      "context_residual": 0.14535651323957427,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('LATIKA BELLA', 'CATINKA BELLA', 'CARAT WILLIAMS')",
+      "context_residual": 1.082151494551028,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('LOLA DU CAMPUS', 'ELISIA DE VANDEL', 'VOELAND')",
+      "context_residual": 0.3453565132395743,
+      "prior_races_used": 3
+    },
+    "6": {
+      "horse_id": "pedigree:('LIPA STAR', 'CALINKA STAR', 'UZO JOSSELYN')",
+      "context_residual": 0.4985806359298731,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('LAGUNE PIYA', 'DESTINEE PIYA', 'FACE TIME BOURBON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "8": {
+      "horse_id": "pedigree:('LOUANGE CASTELETS', 'CORTERA', 'PRODIGIOUS')",
+      "context_residual": 0.882151494551028,
+      "prior_races_used": 3
+    },
+    "9": {
+      "horse_id": "pedigree:('LITTLE ITALY', 'TATE GALLERY', 'ORLANDO VICI')",
+      "context_residual": 0.3985806359298731,
+      "prior_races_used": 2
+    },
+    "10": {
+      "horse_id": "pedigree:(\"LOUISA D'ATOUT\", \"BIANCA D'ATOUT\", 'GOTLAND')",
+      "context_residual": -0.5565139212323702,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('LELIA FRANCE', 'BLACK ROSA FRANCE', 'CARAT WILLIAMS')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:('LOVELY DU VALLON', 'PERLE DU VALLON', 'BIRD PARKER')",
+      "context_residual": 1.382151494551028,
+      "prior_races_used": 1
+    },
+    "13": {
+      "horse_id": "pedigree:('LOU DU DONJON', 'SCIENCE DU DONJON', 'GOTLAND')",
+      "context_residual": 0.8169781265856,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 13,
+  "coverage_active": 11,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

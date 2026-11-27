@@ -1,0 +1,62 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R1C1",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:27:07.448266+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('OURAGANE JENILOU', 'ENIGME JENILOU', 'READY CASH')",
+      "context_residual": -2.612445503514442,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('OLYMPE DE BELINE', 'DAVINA DU MANERET', 'FOR YOU MADRIK')",
+      "context_residual": -2.792243984650595,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('OUIJA BELLA', 'AURA DES JACQUETS', 'VILLAGE MYSTIC')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('OH FAMILY', \"FAMILY D'ARJEANC\", 'IDAO DE TILLARD')",
+      "context_residual": -1.3531614016690727,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('ORIGINE CASTELLE', 'ICONE DE CASTELLE', 'IDAO DE TILLARD')",
+      "context_residual": -1.0060426590679707,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:('OLYMPIC JOY', 'ILIKA DE BOMO', 'DOLLAR MACKER')",
+      "context_residual": -0.6560426590679709,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('ORFEE ROSA', 'IVORY CASH', 'IDAO DE TILLARD')",
+      "context_residual": -1.9126395686952165,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('OASIS DU CHOQUEL', 'FOLIE DU CHOQUEL', 'BOCCADOR DE SIMM')",
+      "context_residual": -3.167727120955285,
+      "prior_races_used": 2
+    },
+    "9": {
+      "horse_id": "pedigree:('OLDHAM', 'BLUE GRASS', 'BOOSTER WINNER')",
+      "context_residual": -0.5060426590679709,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 9,
+  "coverage_active": 8,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

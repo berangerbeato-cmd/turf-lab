@@ -1,0 +1,77 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R6C2",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:29:22.640567+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('NASSAN', 'FILLE DU NORD', 'GARIBALDI')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('NIMOGERO', 'ATTENTIONALLY', 'BOLD EAGLE')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('NICE DE RIVRAY', 'TRILOGIEDARCHE', 'CLIF DU POMMEREUX')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('NEW HOPE', 'ARGOVIE', 'VILLAGE MYSTIC')",
+      "context_residual": -2.9129027766231594,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('NATIVE DU PERRON', 'VENISE DU GUET', 'HUSSARD DU LANDRET')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "6": {
+      "horse_id": "pedigree:('NEPTUNE DES FANES', 'BELLE DES FANES', 'FALCAO DE LAURMA')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:('NEVADA DU DOME', 'GELINOTTE DU DOME', 'DIGNE ET DROIT')",
+      "context_residual": -4.3630368077789825,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:(\"NIKO D'AZUR\", 'BYZANCE DU VIVIER', 'TIMOKO')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:('NUIT DU DER', 'DEMOISELLE DU DER', 'FIFTY KALOUMA')",
+      "context_residual": -2.012902776623159,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('NEVELE STAR', 'FAIRBANKS', 'EL VILLAGIO')",
+      "context_residual": -3.6351551043429207,
+      "prior_races_used": 1
+    },
+    "11": {
+      "horse_id": "pedigree:('NALA DU COIGNET', 'BELLE PERLE MERITE', 'DIJON')",
+      "context_residual": -3.9484651576440957,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:(\"NYMPHE D'ERABLE\", \"SOIREE D'ERABLE\", 'ITALIANO VERO')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 12,
+  "coverage_active": 5,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

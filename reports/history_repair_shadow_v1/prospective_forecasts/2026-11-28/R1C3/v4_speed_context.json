@@ -1,0 +1,92 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R1C3",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:30:09.615532+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('NEW SPIRIT', 'CALA ROSSA', 'IMPRESSIONIST')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('NATIONAL HERO', 'A NOUS DEUX', 'FABULOUS WOOD')",
+      "context_residual": -0.8860022422892216,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('NEWTON DE LOIRON', 'DOTKA DE LOIRON', 'BIRD PARKER')",
+      "context_residual": -3.0199119278316067,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('NAVAH MERCURY', 'DAPHNE DES EPINES', \"ALADIN D'ECAJEUL\")",
+      "context_residual": -2.580979551509372,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('NIARKOS DU CEBE', 'EPOPEE DU CEBE', 'ATLAS DE JOUDES')",
+      "context_residual": -3.014037198744307,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('NICKEL GEMA', 'ETOILE GEMA', 'BOLD EAGLE')",
+      "context_residual": -0.42447131412648015,
+      "prior_races_used": 3
+    },
+    "7": {
+      "horse_id": "pedigree:('NELSON CHARENTAIS', 'FOUDRE CHARENTAISE', 'UN CHARME FOU')",
+      "context_residual": -0.6905621627931104,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:('NIMBUS DU NORD', 'EAST ISLAND', 'BOLD EAGLE')",
+      "context_residual": -0.6516983931839786,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('NOBEL DU GERS', 'GLORIA DU GERS', 'ROYAL DREAM')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('NOBELL DALLAUCH', 'CLARA DALLAUCH', 'IN THE MONEY')",
+      "context_residual": -0.8804157012299983,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('NO LIMITS QUICK', 'HIGHNESS QUICK', 'PRODIGIOUS')",
+      "context_residual": 2.376646442180325,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('NICE PARIS', 'BONNE AVENTURE', 'GALIUS')",
+      "context_residual": -1.987026252414311,
+      "prior_races_used": 2
+    },
+    "13": {
+      "horse_id": "pedigree:('NICO DU CAIEU', 'CIVELLE DU CAIEU', 'SAXO DE VANDEL')",
+      "context_residual": 0.12129397465084912,
+      "prior_races_used": 2
+    },
+    "14": {
+      "horse_id": "pedigree:('NARCO CONNECTION', 'FEVER', 'FACE TIME BOURBON')",
+      "context_residual": -0.5885998113738169,
+      "prior_races_used": 1
+    },
+    "15": {
+      "horse_id": "pedigree:('NOURKIS', 'BELLA DU VIVIER', 'SINGALO')",
+      "context_residual": 0.5294888478574575,
+      "prior_races_used": 2
+    }
+  },
+  "target_participants": 15,
+  "coverage_active": 13,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

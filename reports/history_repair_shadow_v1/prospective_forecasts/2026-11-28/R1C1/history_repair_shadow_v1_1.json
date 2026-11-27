@@ -1,0 +1,166 @@
+{
+  "race_id": "2026-11-28_R1C1",
+  "status": "PRESTART_HISTORY_REPAIR_SHADOW",
+  "research_only": true,
+  "is_independent_prospective_validation": true,
+  "recommendations_allowed": false,
+  "candidate": "history_repair_shadow_v1_1_nancy_alias",
+  "frozen_v3_model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+  "original_predicted_at": "2026-11-27T23:26:51.915320+00:00",
+  "scheduled_start": "2026-11-28T12:23:00+00:00",
+  "candidate_evidence_origin": "Immutable original prestart individual_history_evidence",
+  "source_prediction": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R1C1/prediction.json",
+  "runners_changed_recent5": 0,
+  "runner_audit": [
+    {
+      "number": 1,
+      "status": "FEWER_THAN_FIVE_VERIFIED_STARTS",
+      "individual_prior_starts": 3
+    },
+    {
+      "number": 2,
+      "status": "UNCHANGED",
+      "old_recent5": [
+        0.0,
+        0.4,
+        0.4,
+        2.302585092994046,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.4,
+        0.4,
+        2.302585092994046,
+        1.0
+      ],
+      "individual_prior_starts": 8
+    },
+    {
+      "number": 3,
+      "status": "FEWER_THAN_FIVE_VERIFIED_STARTS",
+      "individual_prior_starts": 4
+    },
+    {
+      "number": 4,
+      "status": "FEWER_THAN_FIVE_VERIFIED_STARTS",
+      "individual_prior_starts": 4
+    },
+    {
+      "number": 5,
+      "status": "UNCHANGED",
+      "old_recent5": [
+        0.2,
+        0.8,
+        0.0,
+        3.784189633918261,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.2,
+        0.8,
+        0.0,
+        3.784189633918261,
+        1.0
+      ],
+      "individual_prior_starts": 5
+    },
+    {
+      "number": 6,
+      "status": "UNCHANGED",
+      "old_recent5": [
+        0.2,
+        0.6,
+        0.0,
+        3.784189633918261,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.2,
+        0.6,
+        0.0,
+        3.784189633918261,
+        1.0
+      ],
+      "individual_prior_starts": 5
+    },
+    {
+      "number": 7,
+      "status": "FEWER_THAN_FIVE_VERIFIED_STARTS",
+      "individual_prior_starts": 4
+    },
+    {
+      "number": 8,
+      "status": "FEWER_THAN_FIVE_VERIFIED_STARTS",
+      "individual_prior_starts": 4
+    },
+    {
+      "number": 9,
+      "status": "FEWER_THAN_FIVE_VERIFIED_STARTS",
+      "individual_prior_starts": 4
+    }
+  ],
+  "v3_baseline": {
+    "probabilities": {
+      "1": 0.09233877750970934,
+      "2": 0.028445303050435963,
+      "3": 0.015279042736944326,
+      "4": 0.2026012689948028,
+      "5": 0.12190974373625718,
+      "6": 0.05244138877481,
+      "7": 0.1718076250023165,
+      "8": 0.06677990901360734,
+      "9": 0.2483969411811166
+    },
+    "top4": [
+      9,
+      4,
+      7,
+      5
+    ],
+    "top5": [
+      9,
+      4,
+      7,
+      5,
+      1
+    ]
+  },
+  "research_candidate": {
+    "probabilities": {
+      "1": 0.09233877750970934,
+      "2": 0.028445303050435963,
+      "3": 0.015279042736944326,
+      "4": 0.2026012689948028,
+      "5": 0.12190974373625718,
+      "6": 0.05244138877481,
+      "7": 0.1718076250023165,
+      "8": 0.06677990901360734,
+      "9": 0.2483969411811166
+    },
+    "top4": [
+      9,
+      4,
+      7,
+      5
+    ],
+    "top5": [
+      9,
+      4,
+      7,
+      5,
+      1
+    ]
+  },
+  "limitations": [
+    "Reuses frozen V3 model coefficients and temperature, only patches first five recent form features.",
+    "Elo, driver, trainer and 20-start DQ features remain archive-based.",
+    "Individual API source might not contain all career starts; unresolved recent outcomes abstain.",
+    "Prestart replay is not independent forward validation. No promotion or betting."
+  ],
+  "shadow_calculated_at": "2026-11-27T23:26:58.462871+00:00",
+  "source_request_id": "prospective-cohort-2026-11-28_R1C1",
+  "selection_rule": "SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2",
+  "daily_cohort_plan": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/selection_plan.json",
+  "selection_index": 1
+}

@@ -1,0 +1,97 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R6C3",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:30:58.383322+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('LORD DU TRIEUX', 'URIBIA DU DONJON', \"UN MEC D'HERIPRE\")",
+      "context_residual": -0.5840207940916734,
+      "prior_races_used": 1
+    },
+    "2": {
+      "horse_id": "pedigree:(\"LOVERMAN D'HERTALS\", \"BELLE D'HERTALS\", 'DOBERMAN')",
+      "context_residual": -0.38402079409167345,
+      "prior_races_used": 1
+    },
+    "3": {
+      "horse_id": "pedigree:('LIBERTY ZEN', 'FIRENZE ZEN', 'ESPOIR PRESTANCE')",
+      "context_residual": -1.3480855898857333,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('LUBERON', 'CLIVIA', \"OPIUM D'ARTOIS\")",
+      "context_residual": -0.8032607953008701,
+      "prior_races_used": 2
+    },
+    "5": {
+      "horse_id": "pedigree:('LEONE MAGNIFIQUE', 'DIVA LEONE', 'MAGNIFICENT RODNEY')",
+      "context_residual": 0.23513820012415818,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('LANCELOT DU NORD', 'SISTER WINNER', 'DJANGO RIFF')",
+      "context_residual": -2.3032607953008704,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('LABEL DADDY', 'TARTARA', 'BILIBILI')",
+      "context_residual": -1.1840207940916734,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('LOVE YOU DADDY', 'DA LA TARTA', 'DUCATO BOURBON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:('LOST IN PARADISE', 'BELLE LIBERTINE', 'FABULOUS WOOD')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "10": {
+      "horse_id": "pedigree:('LOCKDOWN POWER', 'ULTRA GENTILLE', 'CAPTAIN SPARROW')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "11": {
+      "horse_id": "pedigree:('LEONARD PEEL', 'ANIZA', 'CAPTAIN SPARROW')",
+      "context_residual": -2.4840207940916734,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('LOLA RONVILLAIS', 'BRITNEY RONVILLAIS', 'FALCAO DE LAURMA')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "13": {
+      "horse_id": "pedigree:('LONGING VENESI', 'ROLLS DU BOUFFEY', 'THE BEST MADRIK')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "14": {
+      "horse_id": "pedigree:('LEADER DE VAUVILLE', 'ULINE DE VAUVILLE', 'MAGNIFICENT RODNEY')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "15": {
+      "horse_id": "pedigree:('LORD OF SPAIN', 'CADIX', 'ROYAL DREAM')",
+      "context_residual": 1.5279545085516293,
+      "prior_races_used": 1
+    },
+    "16": {
+      "horse_id": "pedigree:(\"LOUP D'ERPION\", \"BYTINA D'ERPION\", 'DROLE DE JET')",
+      "context_residual": -1.0840207940916735,
+      "prior_races_used": 1
+    }
+  },
+  "target_participants": 16,
+  "coverage_active": 10,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

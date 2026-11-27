@@ -6,7 +6,7 @@
   "daily_target_races": 10,
   "daily_execution_cap": 10,
   "per_execution_max": 10,
-  "planned_days": 6,
+  "planned_days": 7,
   "daily_capture_plans": [
     {
       "date": "2026-11-22",
@@ -49,30 +49,37 @@
       "attempted": 10,
       "v4_captured": 10,
       "missed_or_failed": 0
+    },
+    {
+      "date": "2026-11-28",
+      "selected": 10,
+      "attempted": 10,
+      "v4_captured": 10,
+      "missed_or_failed": 0
     }
   ],
-  "planned_slots": 39,
-  "attempted_slots": 31,
-  "captured_planned_slots": 25,
-  "original_captures": 25,
-  "verified_results": 11,
-  "pending_results": 14,
+  "planned_slots": 49,
+  "attempted_slots": 41,
+  "captured_planned_slots": 35,
+  "original_captures": 35,
+  "verified_results": 12,
+  "pending_results": 23,
   "invalid_inputs": 0,
   "minimum_review_races": 200,
   "validation_ready": false,
   "mean": {
     "v4_integrated": {
-      "log_loss": 2.2952882972800364,
-      "brier": 0.8970209864215695,
-      "top1_correct": 0.18181818181818182,
-      "top5_overlap": 2.6363636363636362,
-      "top5_exact": 0.09090909090909091
+      "log_loss": 2.3353965056752273,
+      "brier": 0.9020662291887662,
+      "top1_correct": 0.16666666666666666,
+      "top5_overlap": 2.5,
+      "top5_exact": 0.08333333333333333
     },
     "v3_frozen": {
-      "log_loss": 2.2913932867926357,
-      "brier": 0.8908686801162813,
-      "top1_correct": 0.2727272727272727,
-      "top5_overlap": 2.5454545454545454,
+      "log_loss": 2.335674795958393,
+      "brier": 0.8966449062932378,
+      "top1_correct": 0.25,
+      "top5_overlap": 2.4166666666666665,
       "top5_exact": 0
     }
   },
@@ -406,6 +413,36 @@
         "n": 16,
         "total_squared_error": 2.318299457970285
       }
+    },
+    {
+      "race_id": "2026-11-27_R6C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R6C3/v4_integrated.json",
+      "outcome": "VERIFIED_OFFICIAL",
+      "prior_speed_coverage": 11,
+      "metrics": {
+        "v4_integrated": {
+          "log_loss": 2.7765867980223287,
+          "brier": 0.9575638996279298,
+          "top1_correct": 0,
+          "top5_overlap": 1,
+          "top5_exact": 0
+        },
+        "v3_frozen": {
+          "log_loss": 2.822771396781723,
+          "brier": 0.9601833942397587,
+          "top1_correct": 0,
+          "top5_overlap": 1,
+          "top5_exact": 0
+        }
+      },
+      "ze5_paper": {
+        "predicted_joint_probability": 0.00171124645160517,
+        "actual_exact": 0
+      },
+      "dq_brier": {
+        "n": 14,
+        "total_squared_error": 2.17856362336523
+      }
     }
   ],
   "pending": [
@@ -436,74 +473,128 @@
     {
       "race_id": "2026-11-27_R1C1",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R1C1/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 13
     },
     {
       "race_id": "2026-11-27_R1C2",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R1C2/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 9
     },
     {
       "race_id": "2026-11-27_R1C3",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R1C3/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 11
     },
     {
       "race_id": "2026-11-27_R5C1",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C1/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 8
     },
     {
       "race_id": "2026-11-27_R5C2",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C2/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 12
     },
     {
       "race_id": "2026-11-27_R5C3",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C3/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 8
     },
     {
       "race_id": "2026-11-27_R5C4",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C4/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 11
     },
     {
       "race_id": "2026-11-27_R5C5",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C5/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 9
     },
     {
       "race_id": "2026-11-27_R6C1",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R6C1/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "HORSE_IDENTITY_OR_STARTER_MISMATCH",
       "prior_speed_coverage": 12
     },
     {
-      "race_id": "2026-11-27_R6C3",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R6C3/v4_integrated.json",
+      "race_id": "2026-11-28_R1C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R1C1/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 8
+    },
+    {
+      "race_id": "2026-11-28_R1C2",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R1C2/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 8
+    },
+    {
+      "race_id": "2026-11-28_R1C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R1C3/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 13
+    },
+    {
+      "race_id": "2026-11-28_R1C4",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R1C4/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 15
+    },
+    {
+      "race_id": "2026-11-28_R1C5",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R1C5/v4_integrated.json",
       "outcome": "AWAITING_VERIFIED_RESULT",
       "prior_speed_coverage": 11
+    },
+    {
+      "race_id": "2026-11-28_R6C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R6C1/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 6
+    },
+    {
+      "race_id": "2026-11-28_R6C2",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R6C2/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 5
+    },
+    {
+      "race_id": "2026-11-28_R6C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R6C3/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 10
+    },
+    {
+      "race_id": "2026-11-28_R6C4",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R6C4/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 11
+    },
+    {
+      "race_id": "2026-11-28_R6C5",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-28/R6C5/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 9
     }
   ],
   "invalid": [],
   "ze5_paper_validation": {
-    "races": 11,
-    "expected_exact": 0.11718802349803464,
+    "races": 12,
+    "expected_exact": 0.11889926994963981,
     "actual_exact": 1,
     "not_market_validated": true
   },
   "disqualification_validation": {
-    "horses": 150,
-    "brier": 0.1675921943660881
+    "horses": 164,
+    "brier": 0.16656946816023444
   },
   "roi": null,
   "limits": [

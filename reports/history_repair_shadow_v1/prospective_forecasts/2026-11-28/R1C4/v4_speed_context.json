@@ -1,0 +1,97 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-28_R1C4",
+  "target_date": "2026-11-28",
+  "captured_at": "2026-11-27T23:31:48.877812+00:00",
+  "prior_races": 30695,
+  "last_prior_day": "2026-11-27",
+  "prior_history_sha256": "fe19aa2b2310fadee5f7310498944c7ce8c9407f2ccf91f293fbf1d3c6b9e0c9",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('MASTER PIT', 'BELLA BOURBON', 'PRODIGIOUS')",
+      "context_residual": 1.1761508109474672,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('MEXICAIN', 'UKRAINIENNE', 'QUAKER JET')",
+      "context_residual": -6.4369281362409385,
+      "prior_races_used": 1
+    },
+    "3": {
+      "horse_id": "pedigree:('MUSTANG HAUFOR', 'SANTA HAUFOR', \"UN MEC D'HERIPRE\")",
+      "context_residual": -0.009407061072874062,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('MEC DE MUTRECY', 'DELPHYSIA', 'VALKO JENILAT')",
+      "context_residual": -0.49757083847505423,
+      "prior_races_used": 2
+    },
+    "5": {
+      "horse_id": "pedigree:('MONEY DI MALAVITA', 'UKRAINSKA DARBY', 'HOOKER BERRY')",
+      "context_residual": 0.14706968631164635,
+      "prior_races_used": 3
+    },
+    "6": {
+      "horse_id": "pedigree:('MIRABILIS VRIE', 'BASTIDE VRIE', 'ETONNANT')",
+      "context_residual": 2.6240975959690114,
+      "prior_races_used": 2
+    },
+    "7": {
+      "horse_id": "pedigree:('MOJI DE VANDEL', 'DAELIA DE VANDEL', 'VILLAGE MYSTIC')",
+      "context_residual": 0.979596354805486,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('MERGINIO', 'DASCALIA', 'CASH AND GO')",
+      "context_residual": 1.402594858020151,
+      "prior_races_used": 2
+    },
+    "9": {
+      "horse_id": "pedigree:('MOSCATO SHOW', 'DOURGA DUBRIO', \"PRINCE D'ESPACE\")",
+      "context_residual": -0.3780076366394278,
+      "prior_races_used": 2
+    },
+    "10": {
+      "horse_id": "pedigree:('MARTIN DOL', 'DOLGA DU VIVIER', 'DJANGO RIFF')",
+      "context_residual": -0.7369281362409383,
+      "prior_races_used": 1
+    },
+    "11": {
+      "horse_id": "pedigree:('MYSTERE DES MARES', 'BELLE DU BISSON', 'HOOKER BERRY')",
+      "context_residual": -0.32558647901634685,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('MAESTRO DE BRION', 'DIVINE DU KLAU', 'UP AND QUICK')",
+      "context_residual": 0.510691407048158,
+      "prior_races_used": 2
+    },
+    "13": {
+      "horse_id": "pedigree:('MEDELLIN ELLIS', 'DONA MAZA', 'BOLD EAGLE')",
+      "context_residual": 2.4294888478574577,
+      "prior_races_used": 2
+    },
+    "14": {
+      "horse_id": "pedigree:('MURPHY DU PONCELET', 'CANDY DU PONCELET', 'COUP DE POKER')",
+      "context_residual": -1.7041097322645364,
+      "prior_races_used": 3
+    },
+    "15": {
+      "horse_id": "pedigree:('MADMAX JEF', 'TOPAZE JEF', 'BOLERO LOVE')",
+      "context_residual": -3.18266798459171,
+      "prior_races_used": 2
+    },
+    "16": {
+      "horse_id": "pedigree:('MAJOR MESLOIS', 'OCARINA MESLOISE', 'ROC MESLOIS')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 16,
+  "coverage_active": 15,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
