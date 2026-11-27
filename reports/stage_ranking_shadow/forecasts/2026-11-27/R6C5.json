@@ -1,0 +1,151 @@
+{
+  "race_id": "2026-11-27_R6C5",
+  "date": "2026-11-27",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-27T19:01:17.075724+00:00",
+  "predicted_at": "2026-11-27T19:01:39.702116+00:00",
+  "scheduled_start": "2026-11-27T19:30:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('MALVERN DE GUEZ', 'FANISSE DE GUEZ', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('MIAMI DREAM', 'GIULETTA JET', 'FOLLOW YOU')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('MASH POOK', 'ALTESSE DU LONDEL', 'QUALMIO DE VANDEL')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('MAGIQUE GWENOL', 'DEMOISELLE TATA', 'TIMOKO')",
+      "NON_PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('MONTE CARLO', 'FANTASIA DREAM', 'FEELING CASH')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('MINI DU PADOUENG', 'CORSE ALDO', 'CLASSIC WAY')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('MORANE', 'A STAR DU PRIEURE', 'QUAKER JET')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('MARQUIS BOURBON', 'VENDETTA BOURBON', 'BOLD EAGLE')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('MARENGO ATALANTE', 'CIRCE', 'NIKY')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('MANGOUSTANE', 'VIBIZA', 'GOOD BOY LIGNERIES')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('MADISON DE NIMES', 'AMAZING TWIN', 'URIEL SPEED')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('MOSCATO BELLO', 'DOSMINA BELLA', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('MILORD MARANDAIS', 'BELLE MARANDAISE', 'BIRD PARKER')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('MILADY CASTELETS', 'CYBELE CASTELETS', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('MUST MAJYC', \"ALESIA D'ATOUT\", 'BOLERO LOVE')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "f3565aacdcec180f9d1fca277b132b8a79b1657abd38d17897d0b3dd8cde457f",
+  "history_through": "2026-11-26",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          1,
+          8,
+          12,
+          13
+        ],
+        "probabilities": {
+          "v3": 0.019383488137501785,
+          "stage_raw": 0.007009648182473144,
+          "stage_calibrated": 0.00752778961786234
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          1,
+          8,
+          13,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.00850086576038646,
+          "stage_raw": 0.0060505460944914324,
+          "stage_calibrated": 0.0065162173354748444
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          1,
+          8,
+          12,
+          13,
+          5
+        ],
+        "probabilities": {
+          "v3": 0.013302496774510956,
+          "stage_raw": 0.0034556481159595098,
+          "stage_calibrated": 0.003681572373132162
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          1,
+          8,
+          13,
+          6,
+          11
+        ],
+        "probabilities": {
+          "v3": 0.0008390597888473642,
+          "stage_raw": 0.0023574428150425807,
+          "stage_calibrated": 0.002483159327304413
+        }
+      }
+    }
+  }
+}

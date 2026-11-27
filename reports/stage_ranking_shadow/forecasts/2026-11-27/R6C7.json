@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-27_R6C7",
+  "date": "2026-11-27",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-27T19:02:32.433746+00:00",
+  "predicted_at": "2026-11-27T19:02:57.436181+00:00",
+  "scheduled_start": "2026-11-27T20:30:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('INCUDINE', \"TOCCATA D'ENFER\", 'ROC MESLOIS')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('HEPICETOU', 'MIRZA DU VIVIER', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:(\"ISKO D'IQUAINE\", \"OREALE D'IQUAINE\", 'RIEUSSEC')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('IVES DES GLENAN', 'BAVELLA DE CARSI', 'UN CHARME FOU')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('GLADIATOR DE NIMES', \"LARA D'AILVERT\", 'KOOL DU CAUX')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('HAYRTON MAGIC', 'CICCIOLINA MOON', \"PRINCE D'ESPACE\")",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:(\"HARONA D'OLIVERIE\", 'ASIA', 'BOCCADOR DE SIMM')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('IBERICO', 'BLUE PEARL', \"UN MEC D'HERIPRE\")",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('INCA DE MONE', 'QUELMA DE MONE', 'KEPLER')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('HADES DE SUCE', 'REBELLE DE SUCE', 'REPEAT LOVE')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('I SANTO DUSSAC', 'STAR DE DUSSAC', 'BRISSAC')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('HAPPY DE TOUCHYVON', 'SACY DE TOUCHYVON', 'OTELLO PIERJI')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('IDOLE DE BEYLEV', 'CABALE DE BEYLEV', 'TWIST DES CAILLONS')",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:(\"IMPULSIF D'AVENIR\", 'UFANIA DU CLOSET', 'VAILLANT CASH')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('HASPARNE DUEM', 'RARITA DE VIETTE', 'PRODIGIOUS')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('ILESLOR DES KECHES', 'AURORE DES KECHES', 'UP AND QUICK')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "f3565aacdcec180f9d1fca277b132b8a79b1657abd38d17897d0b3dd8cde457f",
+  "history_through": "2026-11-26",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          16,
+          9,
+          3,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.006235337550121471,
+          "stage_raw": 0.004854961939853006,
+          "stage_calibrated": 0.005331645414587267
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          16,
+          3,
+          9,
+          4
+        ],
+        "probabilities": {
+          "v3": 0.006235337550121471,
+          "stage_raw": 0.004854961939853006,
+          "stage_calibrated": 0.005331645414587267
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          16,
+          9,
+          3,
+          4,
+          14
+        ],
+        "probabilities": {
+          "v3": 0.0049457278144643645,
+          "stage_raw": 0.002497229738779321,
+          "stage_calibrated": 0.0027175428504987525
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          16,
+          3,
+          9,
+          4,
+          12
+        ],
+        "probabilities": {
+          "v3": 0.0016039166208986631,
+          "stage_raw": 0.0019589379121950547,
+          "stage_calibrated": 0.0021106524574390543
+        }
+      }
+    }
+  }
+}

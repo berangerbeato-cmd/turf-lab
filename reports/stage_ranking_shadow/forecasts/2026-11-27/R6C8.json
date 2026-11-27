@@ -1,0 +1,156 @@
+{
+  "race_id": "2026-11-27_R6C8",
+  "date": "2026-11-27",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-27T19:02:58.439168+00:00",
+  "predicted_at": "2026-11-27T19:03:23.661336+00:00",
+  "scheduled_start": "2026-11-27T21:00:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('JET DE LA FERME', 'AKKAD DE LA FERME', 'ROYAL DREAM')",
+      "PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('INVINCIBLE BOURBON', 'CETA EXTRA BOURBON', 'LOVE YOU')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('ILTON DU BRAY', 'AURANA DE MADKER', 'BRISSAC')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:(\"ISEA D'HOULBEC\", 'UNOPALINE DU RIB', 'UALTAR')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('JOLIE FLEUR OR', 'A CAPPELLA OR', 'BILIBILI')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('KATSUMOTO', 'NORTH AMERICA', 'VILLAGE MYSTIC')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('ICARIOS GEMINI', 'AMERINDIENNE', 'TUCSON')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:(\"IBIS D'OR\", 'BERLINE DU PONT', 'TURBO JET')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('IDEAL GABINLEA', 'RIVALE DU BOSCAIL', 'MAGNIFICENT RODNEY')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('JIRENS DUEM', 'AFILITOSA', 'ROYAL DREAM')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('KASSAV DE FRECA', \"VIGNE D'OR\", 'FOLLOW YOU')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('KIKI', 'DUMBEA', 'FOLLOW YOU')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('IGGY RUDLAND', 'ORTIZIA', \"PANACHE DE L'ITON\")",
+      "PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('KAROUZO', 'RASPBERRY', 'SCIPION DU GOUTIER')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('KIANNICK OF NOUIC', \"EVA DE L'ISOP\", 'PICSOU DE VILLABON')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('KHALIFE DELALANDE', 'CHARMEUSE BELRI', 'REX HAIE NEUVE')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "f3565aacdcec180f9d1fca277b132b8a79b1657abd38d17897d0b3dd8cde457f",
+  "history_through": "2026-11-26",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          11,
+          12,
+          15,
+          1
+        ],
+        "probabilities": {
+          "v3": 0.01656795836493472,
+          "stage_raw": 0.0037601520974992384,
+          "stage_calibrated": 0.004014327145572694
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          12,
+          11,
+          10,
+          8
+        ],
+        "probabilities": {
+          "v3": 0.004412619681074921,
+          "stage_raw": 0.003731943586661817,
+          "stage_calibrated": 0.004057485168343993
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          11,
+          12,
+          15,
+          1,
+          7
+        ],
+        "probabilities": {
+          "v3": 0.008512189195791284,
+          "stage_raw": 0.0011823702418288207,
+          "stage_calibrated": 0.0012466582756631395
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          12,
+          11,
+          10,
+          8,
+          3
+        ],
+        "probabilities": {
+          "v3": 0.000791018415194017,
+          "stage_raw": 0.0012573870925706233,
+          "stage_calibrated": 0.001342649277762697
+        }
+      }
+    }
+  }
+}

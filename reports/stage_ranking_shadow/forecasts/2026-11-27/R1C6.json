@@ -1,0 +1,161 @@
+{
+  "race_id": "2026-11-27_R1C6",
+  "date": "2026-11-27",
+  "status": "PRESTART_SHADOW",
+  "captured_at": "2026-11-27T19:02:06.678179+00:00",
+  "predicted_at": "2026-11-27T19:02:31.651653+00:00",
+  "scheduled_start": "2026-11-27T20:18:00+00:00",
+  "field": [
+    [
+      1,
+      "pedigree:('MISS DU RABUTIN', 'EITA CHATHO', 'GALIUS')",
+      "NON_PARTANT"
+    ],
+    [
+      2,
+      "pedigree:('MALINE DU PLESSIS', 'URSALINA', 'FADO DU CHENE')",
+      "PARTANT"
+    ],
+    [
+      3,
+      "pedigree:('MOON DU VIVIER', 'DJANCA DU VIVIER', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      4,
+      "pedigree:('MALINE DES ARRIS', 'SIRENE DE MAI', 'NIKY')",
+      "PARTANT"
+    ],
+    [
+      5,
+      "pedigree:('MALVINA MADRIK', 'AIMA DE VILLENEUVE', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      6,
+      "pedigree:('MAGIQUE HAUFOR', 'DIVA HAUFOR', 'FACE TIME BOURBON')",
+      "PARTANT"
+    ],
+    [
+      7,
+      "pedigree:('MERIBEL', 'HARMONIE DE RETZ', 'BOOSTER WINNER')",
+      "PARTANT"
+    ],
+    [
+      8,
+      "pedigree:('MILADY DE MONTCEAU', 'TRINITY', 'BLUE PASS')",
+      "PARTANT"
+    ],
+    [
+      9,
+      "pedigree:('MARVINA BELLA', 'LOUVINA BELLA', 'THE BEST MADRIK')",
+      "PARTANT"
+    ],
+    [
+      10,
+      "pedigree:('MOSCANTIDA PEAL', 'URIELLE PEAL', 'ORLANDO VICI')",
+      "PARTANT"
+    ],
+    [
+      11,
+      "pedigree:('MISS MOCCA', 'FASHION QUEEN', 'PRODIGIOUS')",
+      "PARTANT"
+    ],
+    [
+      12,
+      "pedigree:('MERCEDES DU LOISIR', 'UVANA', 'COUP DROIT')",
+      "PARTANT"
+    ],
+    [
+      13,
+      "pedigree:('MILADY MADRIK', 'GODIVA DE FAEL', \"UN MEC D'HERIPRE\")",
+      "NON_PARTANT"
+    ],
+    [
+      14,
+      "pedigree:('MUSIQUE CLASSIQUE', 'POLE POSITION', 'PRODIGIOUS')",
+      "PARTANT"
+    ],
+    [
+      15,
+      "pedigree:('MAGIE MESLOISE', 'DIVINE MESLOISE', 'CHARLY DU NOYER')",
+      "PARTANT"
+    ],
+    [
+      16,
+      "pedigree:('MIGRAINE DE CONNEE', 'CITE DE CONNEE', 'ECU PIERJI')",
+      "PARTANT"
+    ],
+    [
+      17,
+      "pedigree:('MISSLADY DU VICLAU', 'VENUS DE LA LOGE', 'EXPRESS JET')",
+      "PARTANT"
+    ]
+  ],
+  "models": {
+    "v3": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+    "stage": "a4a46232c8d06740eeb062049155e311baa25dd2f17a8880f24057ce7850679d"
+  },
+  "history_sha256": "f3565aacdcec180f9d1fca277b132b8a79b1657abd38d17897d0b3dd8cde457f",
+  "history_through": "2026-11-26",
+  "combinations": {
+    "4": {
+      "v3": {
+        "selection": [
+          16,
+          4,
+          3,
+          6
+        ],
+        "probabilities": {
+          "v3": 0.014401306067320624,
+          "stage_raw": 0.004707690628619135,
+          "stage_calibrated": 0.005005279702210627
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          16,
+          4,
+          3,
+          10
+        ],
+        "probabilities": {
+          "v3": 0.010154204680811308,
+          "stage_raw": 0.005535517879604945,
+          "stage_calibrated": 0.006016331332208277
+        }
+      }
+    },
+    "5": {
+      "v3": {
+        "selection": [
+          16,
+          4,
+          3,
+          6,
+          14
+        ],
+        "probabilities": {
+          "v3": 0.008729128663133565,
+          "stage_raw": 0.0021103513834298698,
+          "stage_calibrated": 0.002235537968026235
+        }
+      },
+      "stage_raw": {
+        "selection": [
+          16,
+          4,
+          3,
+          10,
+          17
+        ],
+        "probabilities": {
+          "v3": 0.0025306018584900303,
+          "stage_raw": 0.002362391150417852,
+          "stage_calibrated": 0.0025308505011319028
+        }
+      }
+    }
+  }
+}
