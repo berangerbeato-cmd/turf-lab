@@ -1,0 +1,77 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-27_R5C1",
+  "target_date": "2026-11-27",
+  "captured_at": "2026-11-27T00:26:13.198431+00:00",
+  "prior_races": 30676,
+  "last_prior_day": "2026-11-26",
+  "prior_history_sha256": "d1a2b9a8772f17e71a8fbfe66282bfd8254729d22dcff18927a04e3d4a0a4461",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('NOBEL DE FAEL', 'BELLISSIMA DE FAEL', 'BOLERO LOVE')",
+      "context_residual": -2.3107210213760263,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('NOLAN QUESNOT', 'TETHYS QUESNOT', 'GOTLAND')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('NUMBER ONE CHOC', \"DEESSE D'HERIPRE\", 'VILLAGE MYSTIC')",
+      "context_residual": -2.7484651576440955,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('NESOS DE MER', 'SARABOLE MERITE', 'CHE JENILOU')",
+      "context_residual": -2.0107656863212324,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('NEW HOT SUMMER', 'SUMMER NIGHT', 'ATLAS DE JOUDES')",
+      "context_residual": -2.620913246498865,
+      "prior_races_used": 3
+    },
+    "6": {
+      "horse_id": "pedigree:('NIKO PLEIN CHENE', 'FUSION DE GREZ', 'LOVE YOU')",
+      "context_residual": -0.4288282344595209,
+      "prior_races_used": 3
+    },
+    "7": {
+      "horse_id": "pedigree:(\"NAKILI D'ALEX\", 'ULA DE TOUCHYVON', 'EXPRESS JET')",
+      "context_residual": -2.545784499636582,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:('NEED YOU AGAIN', \"TEMPETE D'AUNOU\", 'IMPRESSIONIST')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:('NIGHT DES FORGES', \"SALSA D'ORGERES\", \"ROLLING D'HERIPRE\")",
+      "context_residual": -0.7107656863212324,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('NAPOLEON DE GOUYE', 'AFARA', 'ASTOR DE ROZOY')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "11": {
+      "horse_id": "pedigree:('NOVA DE VISAIS', 'AUDE DE TOURAINE', 'GIMY DU POMMEREUX')",
+      "context_residual": -1.118331954961919,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('NILDA LAND', 'DALJEMOSA', 'GOTLAND')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 12,
+  "coverage_active": 8,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

@@ -1,0 +1,82 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-27_R5C4",
+  "target_date": "2026-11-27",
+  "captured_at": "2026-11-27T00:31:19.963773+00:00",
+  "prior_races": 30676,
+  "last_prior_day": "2026-11-26",
+  "prior_history_sha256": "d1a2b9a8772f17e71a8fbfe66282bfd8254729d22dcff18927a04e3d4a0a4461",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('JOJO DE BOURGOGNE', 'ARTEMIS DU GOUTIER', 'REPEAT LOVE')",
+      "context_residual": -1.7852663784502802,
+      "prior_races_used": 3
+    },
+    "2": {
+      "horse_id": "pedigree:('JOLIE COSTARDIERE', 'RICA DE PIENCOURT', 'REVE DE BEYLEV')",
+      "context_residual": -1.397982083636656,
+      "prior_races_used": 3
+    },
+    "3": {
+      "horse_id": "pedigree:('IBERNATUS', 'UVEDA', 'TI PUNCH RIVER')",
+      "context_residual": -0.486272538289777,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('JORSO', 'VENITIENNE', 'RANCHO GEDE')",
+      "context_residual": -0.41076568632123234,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('IDEAL LOVER', 'PENY DU PADOUENG', 'REPEAT LOVE')",
+      "context_residual": -1.0396435944284894,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('JACEE DULYS', 'CANDIE DU PASSAGE', 'ALDO DES CHAMPS')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:('JOE LOUIS', 'TOOTSIE SMILING', 'ERIDAN')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "8": {
+      "horse_id": "pedigree:('JUP AND STAR', 'UA UKA DU JAAR', 'UP AND QUICK')",
+      "context_residual": 0.3722420447249315,
+      "prior_races_used": 4
+    },
+    "9": {
+      "horse_id": "pedigree:('HACH DES CAPELLES', 'OLGA DES CAPELLES', 'VAILLANT CASH')",
+      "context_residual": -2.3983123394888097,
+      "prior_races_used": 3
+    },
+    "10": {
+      "horse_id": "pedigree:('JOYEUSE MAB', 'THAIS MAB', 'CAPTAIN SPARROW')",
+      "context_residual": 0.6722420447249314,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('JUST FOR YOU', 'DISCOVERY', 'VILLAGE MYSTIC')",
+      "context_residual": 0.26374759712336526,
+      "prior_races_used": 3
+    },
+    "12": {
+      "horse_id": "pedigree:(\"HOUSTON D'ARIANE\", 'ABERDEEN', 'VIKING DE VAL')",
+      "context_residual": 0.642788562246904,
+      "prior_races_used": 2
+    },
+    "13": {
+      "horse_id": "pedigree:('HERMES SCOTT', 'QUETE DE CLERLANDE', 'GOGO')",
+      "context_residual": 0.7456261150210557,
+      "prior_races_used": 4
+    }
+  },
+  "target_participants": 13,
+  "coverage_active": 11,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

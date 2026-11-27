@@ -1,0 +1,82 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-27_R5C2",
+  "target_date": "2026-11-27",
+  "captured_at": "2026-11-27T00:27:12.536098+00:00",
+  "prior_races": 30676,
+  "last_prior_day": "2026-11-26",
+  "prior_history_sha256": "d1a2b9a8772f17e71a8fbfe66282bfd8254729d22dcff18927a04e3d4a0a4461",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('KARLITO SCOTT', 'ALEXIA SCOTT', 'UGO DE NIEUL')",
+      "context_residual": 1.7372659406744788,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('KAISER DE CHANLECY', 'BOLLEVILLE', 'REDEO JOSSELYN')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "3": {
+      "horse_id": "pedigree:('KATIEU DE COUZAN', 'USSYA LITTORAL', 'EPIC JULRY')",
+      "context_residual": 1.2905050417148376,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('KING GIORGIO', 'ELENA PRINCESSE', 'READY CASH')",
+      "context_residual": 0.04944985853628896,
+      "prior_races_used": 2
+    },
+    "5": {
+      "horse_id": "pedigree:('KISS PAULCA', 'TISYA DES CAILLONS', 'DAHLIA DU RIB')",
+      "context_residual": 0.6601169137820543,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('KISS ME JIVE', 'FLORIDE DU BOURG', 'OLBLAK DU BOCAGE')",
+      "context_residual": -0.24148056478796934,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('KALINA LOVE', 'CALINE DU BIWETZ', 'VERY WELL JET')",
+      "context_residual": -2.421281716007623,
+      "prior_races_used": 2
+    },
+    "8": {
+      "horse_id": "pedigree:('KELLE ILE LILA', 'BELLE ILE ROYALE', 'AKIM DU CAP VERT')",
+      "context_residual": -0.26757739756326193,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('KEL COPAIN', 'QUELLE COPINE', 'PRODIGIOUS')",
+      "context_residual": -0.44363401257412627,
+      "prior_races_used": 3
+    },
+    "10": {
+      "horse_id": "pedigree:('KATCHINA', 'VIGA DU RIB', 'DRAGON DES RACQUES')",
+      "context_residual": 0.47877058194336863,
+      "prior_races_used": 2
+    },
+    "11": {
+      "horse_id": "pedigree:('KOLIBRI', 'UBRINE', 'VIGOVE')",
+      "context_residual": 1.2023980406336485,
+      "prior_races_used": 3
+    },
+    "12": {
+      "horse_id": "pedigree:('KALGARY', 'ANNABELLA SMILING', 'LOVE YOU')",
+      "context_residual": 0.0789805620477855,
+      "prior_races_used": 1
+    },
+    "13": {
+      "horse_id": "pedigree:('KING CRIMSON', 'ALLEZ DARLING', 'BOLD EAGLE')",
+      "context_residual": 0.7785606018389517,
+      "prior_races_used": 3
+    }
+  },
+  "target_participants": 13,
+  "coverage_active": 12,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

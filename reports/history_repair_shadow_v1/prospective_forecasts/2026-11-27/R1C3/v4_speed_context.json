@@ -1,0 +1,92 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-27_R1C3",
+  "target_date": "2026-11-27",
+  "captured_at": "2026-11-27T00:35:23.042688+00:00",
+  "prior_races": 30676,
+  "last_prior_day": "2026-11-26",
+  "prior_history_sha256": "d1a2b9a8772f17e71a8fbfe66282bfd8254729d22dcff18927a04e3d4a0a4461",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('LOVING STAR', 'NUMBRIA STAR', \"LET'S GO ALONG\")",
+      "context_residual": 1.114557047281116,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('LEADER ATOUT', 'RIVIERE ESPERANCE', 'CHARLY DU NOYER')",
+      "context_residual": 0.8798422134869397,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:(\"LANNISTER D'AVRIL\", \"VAILLANTE D'AVRIL\", 'ECU PIERJI')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "4": {
+      "horse_id": "pedigree:('LUTIN DU PRATEL', 'FUSION MAJYC', 'CASH AND GO')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "5": {
+      "horse_id": "pedigree:('LOTUS MADRIK', 'TEQUILA DARA', 'CARAT WILLIAMS')",
+      "context_residual": 1.8795963548054861,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('LATINO AU CROSNIER', 'FALAMA DE VIETTE', 'ATLAS DE JOUDES')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "7": {
+      "horse_id": "pedigree:('LASCAR PILE', 'URSULE PILE', 'DJANGO RIFF')",
+      "context_residual": 0.5393994185634219,
+      "prior_races_used": 3
+    },
+    "8": {
+      "horse_id": "pedigree:('LOOPING MIL', 'PAISY STED', 'DESIR CASTELETS')",
+      "context_residual": 1.1385527788592444,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('LOU PANTAIL', 'BLUETTE JET', 'DIJON')",
+      "context_residual": -4.8243964904049355,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:(\"LUXOR D'ECAJEUL\", \"BERTILLE D'ECAJEUL\", 'FACE TIME BOURBON')",
+      "context_residual": 1.0551051719573588,
+      "prior_races_used": 3
+    },
+    "11": {
+      "horse_id": "pedigree:('LAKOS DE BERLES', 'DRYADE DU BOUFFEY', 'OISEAU DE FEUX')",
+      "context_residual": 0.642226085202179,
+      "prior_races_used": 2
+    },
+    "12": {
+      "horse_id": "pedigree:('LUI DU DONJON', 'VARIZE DU DONJON', 'EXPRESS JET')",
+      "context_residual": 1.8041235821269657,
+      "prior_races_used": 1
+    },
+    "13": {
+      "horse_id": "pedigree:('LUDO PAROYO', 'AMIE PAROYO', 'INSERT GEDE')",
+      "context_residual": 0.9706849343312497,
+      "prior_races_used": 3
+    },
+    "14": {
+      "horse_id": "pedigree:('LATINO BELLO', 'NAMARA', 'VOLTIGEUR DE MYRT')",
+      "context_residual": 0.18511024293395167,
+      "prior_races_used": 1
+    },
+    "15": {
+      "horse_id": "pedigree:('LACKING SPIRIT', 'AMARATA', 'ATLAS DE JOUDES')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 15,
+  "coverage_active": 11,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

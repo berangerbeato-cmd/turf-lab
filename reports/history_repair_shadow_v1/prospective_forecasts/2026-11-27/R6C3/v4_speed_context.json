@@ -1,0 +1,92 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-27_R6C3",
+  "target_date": "2026-11-27",
+  "captured_at": "2026-11-27T00:34:22.255784+00:00",
+  "prior_races": 30676,
+  "last_prior_day": "2026-11-26",
+  "prior_history_sha256": "d1a2b9a8772f17e71a8fbfe66282bfd8254729d22dcff18927a04e3d4a0a4461",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:(\"LOUVE D'ENFER\", \"ECUME D'ENFER\", \"UNIVERS D'ENFER\")",
+      "context_residual": 1.127775725387335,
+      "prior_races_used": 2
+    },
+    "2": {
+      "horse_id": "pedigree:('LITTERATURE', 'CIME DU NORD', 'ROC MESLOIS')",
+      "context_residual": -0.390583363531121,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('LILOU', 'CALIDA', \"PRINCE D'ESPACE\")",
+      "context_residual": 1.135370094331389,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('LAZIZA DE LIGNY', 'BELLA FLORE', 'GOTLAND')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "5": {
+      "horse_id": "pedigree:('LOVELY MARINA', 'AUREA VIKLAND', 'DROLE DE JET')",
+      "context_residual": 0.8711717655404791,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('LIBREVILLE', 'EXUBERANTE STAR', 'AVE AVIS')",
+      "context_residual": 1.1711717655404792,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('LIBRE SAUTONNE', 'RHUNE SAUTONNE', 'LOOK DE STAR')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "8": {
+      "horse_id": "pedigree:('LOUANE DE VEAUCE', 'VENUS DES FERRETS', 'BLUE PASS')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:(\"LETTY D'ARGENVIERE\", 'VERSION DE JUSSY', 'DIJON')",
+      "context_residual": -1.5801016436447024,
+      "prior_races_used": 2
+    },
+    "10": {
+      "horse_id": "pedigree:('LIKE A DESTINY', 'CAMBODIA', 'GOLDEN BRIDGE')",
+      "context_residual": -1.459430707687512,
+      "prior_races_used": 1
+    },
+    "11": {
+      "horse_id": "pedigree:('LIV QUESNOT', 'QUEEN INES', 'FEELING CASH')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "12": {
+      "horse_id": "pedigree:('LADY MYSTIC', 'CLARA DES LUCAS', 'VILLAGE MYSTIC')",
+      "context_residual": 0.34651540380835655,
+      "prior_races_used": 2
+    },
+    "13": {
+      "horse_id": "pedigree:('LA KIFFANCE', 'VIATKA', 'ENINO DU POMMEREUX')",
+      "context_residual": -8.159430707687513,
+      "prior_races_used": 1
+    },
+    "14": {
+      "horse_id": "pedigree:(\"LINSKAYA D'ART\", 'BE MY QUEEN', 'ROYAL DREAM')",
+      "context_residual": -1.059430707687512,
+      "prior_races_used": 1
+    },
+    "15": {
+      "horse_id": "pedigree:('LEILA DU CHATELET', \"VANESSA D'ATOUT\", 'AVE AVIS')",
+      "context_residual": 1.0843796852341911,
+      "prior_races_used": 1
+    }
+  },
+  "target_participants": 15,
+  "coverage_active": 11,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

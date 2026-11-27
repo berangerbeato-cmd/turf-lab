@@ -6,7 +6,7 @@
   "daily_target_races": 10,
   "daily_execution_cap": 10,
   "per_execution_max": 10,
-  "planned_days": 5,
+  "planned_days": 6,
   "daily_capture_plans": [
     {
       "date": "2026-11-22",
@@ -42,30 +42,37 @@
       "attempted": 4,
       "v4_captured": 4,
       "missed_or_failed": 0
+    },
+    {
+      "date": "2026-11-27",
+      "selected": 10,
+      "attempted": 10,
+      "v4_captured": 10,
+      "missed_or_failed": 0
     }
   ],
-  "planned_slots": 29,
-  "attempted_slots": 21,
-  "captured_planned_slots": 15,
-  "original_captures": 15,
-  "verified_results": 8,
-  "pending_results": 7,
+  "planned_slots": 39,
+  "attempted_slots": 31,
+  "captured_planned_slots": 25,
+  "original_captures": 25,
+  "verified_results": 11,
+  "pending_results": 14,
   "invalid_inputs": 0,
   "minimum_review_races": 200,
   "validation_ready": false,
   "mean": {
     "v4_integrated": {
-      "log_loss": 2.3715441764639125,
-      "brier": 0.9021153085470284,
-      "top1_correct": 0.25,
-      "top5_overlap": 2.375,
-      "top5_exact": 0
+      "log_loss": 2.2952882972800364,
+      "brier": 0.8970209864215695,
+      "top1_correct": 0.18181818181818182,
+      "top5_overlap": 2.6363636363636362,
+      "top5_exact": 0.09090909090909091
     },
     "v3_frozen": {
-      "log_loss": 2.376580650268611,
-      "brier": 0.9009278162345651,
-      "top1_correct": 0.25,
-      "top5_overlap": 2.25,
+      "log_loss": 2.2913932867926357,
+      "brier": 0.8908686801162813,
+      "top1_correct": 0.2727272727272727,
+      "top5_overlap": 2.5454545454545454,
       "top5_exact": 0
     }
   },
@@ -309,6 +316,96 @@
         "n": 14,
         "total_squared_error": 3.483172242176007
       }
+    },
+    {
+      "race_id": "2026-11-26_R1C7",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R1C7/v4_integrated.json",
+      "outcome": "VERIFIED_OFFICIAL",
+      "prior_speed_coverage": 10,
+      "metrics": {
+        "v4_integrated": {
+          "log_loss": 1.9698689814240196,
+          "brier": 0.8380914701329389,
+          "top1_correct": 0,
+          "top5_overlap": 2,
+          "top5_exact": 0
+        },
+        "v3_frozen": {
+          "log_loss": 2.0078957838718186,
+          "brier": 0.8457348043920638,
+          "top1_correct": 0,
+          "top5_overlap": 3,
+          "top5_exact": 0
+        }
+      },
+      "ze5_paper": {
+        "predicted_joint_probability": 0.015432450456592405,
+        "actual_exact": 0
+      },
+      "dq_brier": {
+        "n": 13,
+        "total_squared_error": 0.3745521940483693
+      }
+    },
+    {
+      "race_id": "2026-11-26_R4C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R4C1/v4_integrated.json",
+      "outcome": "VERIFIED_OFFICIAL",
+      "prior_speed_coverage": 8,
+      "metrics": {
+        "v4_integrated": {
+          "log_loss": 1.662403440831218,
+          "brier": 0.7672410308307331,
+          "top1_correct": 0,
+          "top5_overlap": 5,
+          "top5_exact": 1
+        },
+        "v3_frozen": {
+          "log_loss": 1.5113327783094481,
+          "brier": 0.6867768292590594,
+          "top1_correct": 1,
+          "top5_overlap": 4,
+          "top5_exact": 0
+        }
+      },
+      "ze5_paper": {
+        "predicted_joint_probability": 0.015956544192438728,
+        "actual_exact": 1
+      },
+      "dq_brier": {
+        "n": 14,
+        "total_squared_error": 2.5780991513122826
+      }
+    },
+    {
+      "race_id": "2026-11-26_R4C2",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R4C2/v4_integrated.json",
+      "outcome": "VERIFIED_OFFICIAL",
+      "prior_speed_coverage": 11,
+      "metrics": {
+        "v4_integrated": {
+          "log_loss": 2.6435454361138593,
+          "brier": 1.0449758812973653,
+          "top1_correct": 0,
+          "top5_overlap": 3,
+          "top5_exact": 0
+        },
+        "v3_frozen": {
+          "log_loss": 2.6734523903888343,
+          "brier": 1.0596213177514504,
+          "top1_correct": 0,
+          "top5_overlap": 3,
+          "top5_exact": 0
+        }
+      },
+      "ze5_paper": {
+        "predicted_joint_probability": 0.011564753418186689,
+        "actual_exact": 0
+      },
+      "dq_brier": {
+        "n": 16,
+        "total_squared_error": 2.318299457970285
+      }
     }
   ],
   "pending": [
@@ -333,38 +430,80 @@
     {
       "race_id": "2026-11-26_R1C6",
       "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R1C6/v4_integrated.json",
-      "outcome": "AWAITING_VERIFIED_RESULT",
+      "outcome": "RACE_START_MISMATCH",
       "prior_speed_coverage": 3
     },
     {
-      "race_id": "2026-11-26_R1C7",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R1C7/v4_integrated.json",
+      "race_id": "2026-11-27_R1C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R1C1/v4_integrated.json",
       "outcome": "AWAITING_VERIFIED_RESULT",
-      "prior_speed_coverage": 10
+      "prior_speed_coverage": 13
     },
     {
-      "race_id": "2026-11-26_R4C1",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R4C1/v4_integrated.json",
+      "race_id": "2026-11-27_R1C2",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R1C2/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 9
+    },
+    {
+      "race_id": "2026-11-27_R1C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R1C3/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 11
+    },
+    {
+      "race_id": "2026-11-27_R5C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C1/v4_integrated.json",
       "outcome": "AWAITING_VERIFIED_RESULT",
       "prior_speed_coverage": 8
     },
     {
-      "race_id": "2026-11-26_R4C2",
-      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-26/R4C2/v4_integrated.json",
+      "race_id": "2026-11-27_R5C2",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C2/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 12
+    },
+    {
+      "race_id": "2026-11-27_R5C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C3/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 8
+    },
+    {
+      "race_id": "2026-11-27_R5C4",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C4/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 11
+    },
+    {
+      "race_id": "2026-11-27_R5C5",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R5C5/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 9
+    },
+    {
+      "race_id": "2026-11-27_R6C1",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R6C1/v4_integrated.json",
+      "outcome": "AWAITING_VERIFIED_RESULT",
+      "prior_speed_coverage": 12
+    },
+    {
+      "race_id": "2026-11-27_R6C3",
+      "source": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R6C3/v4_integrated.json",
       "outcome": "AWAITING_VERIFIED_RESULT",
       "prior_speed_coverage": 11
     }
   ],
   "invalid": [],
   "ze5_paper_validation": {
-    "races": 8,
-    "expected_exact": 0.07423427543081683,
-    "actual_exact": 0,
+    "races": 11,
+    "expected_exact": 0.11718802349803464,
+    "actual_exact": 1,
     "not_market_validated": true
   },
   "disqualification_validation": {
-    "horses": 107,
-    "brier": 0.185681106089554
+    "horses": 150,
+    "brier": 0.1675921943660881
   },
   "roi": null,
   "limits": [

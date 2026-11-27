@@ -1,0 +1,362 @@
+{
+  "race_id": "2026-11-27_R6C3",
+  "status": "PRESTART_HISTORY_REPAIR_SHADOW",
+  "research_only": true,
+  "is_independent_prospective_validation": true,
+  "recommendations_allowed": false,
+  "candidate": "history_repair_shadow_v1_1_nancy_alias",
+  "frozen_v3_model_sha256": "c6ccc2335485be3753eaccdaad1926d5a34200602255ac0a6cafcc2a07ae4f24",
+  "original_predicted_at": "2026-11-27T00:33:58.702151+00:00",
+  "scheduled_start": "2026-11-27T18:30:00+00:00",
+  "candidate_evidence_origin": "Immutable original prestart individual_history_evidence",
+  "source_prediction": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/R6C3/prediction.json",
+  "runners_changed_recent5": 10,
+  "runner_audit": [
+    {
+      "number": 1,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.2,
+        0.4,
+        0.2,
+        2.4849066497880004,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.0,
+        0.2,
+        2.4849066497880004,
+        1.0
+      ],
+      "individual_prior_starts": 38
+    },
+    {
+      "number": 2,
+      "status": "UNCHANGED",
+      "old_recent5": [
+        0.0,
+        0.6,
+        0.0,
+        2.70805020110221,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.6,
+        0.0,
+        2.70805020110221,
+        1.0
+      ],
+      "individual_prior_starts": 26
+    },
+    {
+      "number": 3,
+      "status": "UNCHANGED",
+      "old_recent5": [
+        0.0,
+        0.2,
+        0.2,
+        2.4849066497880004,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.2,
+        0.2,
+        2.4849066497880004,
+        1.0
+      ],
+      "individual_prior_starts": 44
+    },
+    {
+      "number": 4,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.2,
+        0.2,
+        0.2,
+        5.605802066295998,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.2,
+        0.4,
+        4.127134385045092,
+        1.0
+      ],
+      "individual_prior_starts": 17
+    },
+    {
+      "number": 5,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.2,
+        0.2,
+        0.0,
+        2.4849066497880004,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.0,
+        0.2,
+        2.4849066497880004,
+        1.0
+      ],
+      "individual_prior_starts": 32
+    },
+    {
+      "number": 6,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.0,
+        0.0,
+        0.2,
+        2.4849066497880004,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.0,
+        0.0,
+        2.4849066497880004,
+        1.0
+      ],
+      "individual_prior_starts": 45
+    },
+    {
+      "number": 7,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.0,
+        0.2,
+        0.6,
+        4.5217885770490405,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.0,
+        0.8,
+        4.5217885770490405,
+        1.0
+      ],
+      "individual_prior_starts": 18
+    },
+    {
+      "number": 8,
+      "status": "UNRESOLVED_RECENT_OUTCOME",
+      "individual_prior_starts": 28
+    },
+    {
+      "number": 9,
+      "status": "UNCHANGED",
+      "old_recent5": [
+        0.0,
+        0.0,
+        0.0,
+        2.833213344056216,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.0,
+        0.0,
+        2.833213344056216,
+        1.0
+      ],
+      "individual_prior_starts": 22
+    },
+    {
+      "number": 10,
+      "status": "UNCHANGED",
+      "old_recent5": [
+        0.0,
+        0.2,
+        0.2,
+        2.70805020110221,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.2,
+        0.2,
+        2.70805020110221,
+        1.0
+      ],
+      "individual_prior_starts": 16
+    },
+    {
+      "number": 11,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.2,
+        0.2,
+        0.0,
+        4.9344739331306915,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.2,
+        0.4,
+        3.332204510175204,
+        1.0
+      ],
+      "individual_prior_starts": 14
+    },
+    {
+      "number": 12,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.0,
+        0.4,
+        0.4,
+        3.332204510175204,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.4,
+        0.2,
+        3.332204510175204,
+        1.0
+      ],
+      "individual_prior_starts": 26
+    },
+    {
+      "number": 13,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.0,
+        0.5,
+        0.0,
+        2.70805020110221,
+        0.8
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.2,
+        0.6,
+        2.70805020110221,
+        1.0
+      ],
+      "individual_prior_starts": 10
+    },
+    {
+      "number": 14,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.0,
+        0.0,
+        0.0,
+        2.70805020110221,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.2,
+        0.0,
+        2.70805020110221,
+        1.0
+      ],
+      "individual_prior_starts": 29
+    },
+    {
+      "number": 15,
+      "status": "UPDATED",
+      "old_recent5": [
+        0.2,
+        0.4,
+        0.0,
+        3.367295829986474,
+        1.0
+      ],
+      "candidate_recent5": [
+        0.0,
+        0.0,
+        0.2,
+        2.995732273553991,
+        1.0
+      ],
+      "individual_prior_starts": 27
+    }
+  ],
+  "v3_baseline": {
+    "probabilities": {
+      "1": 0.07696954611353692,
+      "2": 0.09249932198514563,
+      "3": 0.030550831973911084,
+      "4": 0.11194345224296981,
+      "5": 0.03694401052194712,
+      "6": 0.058929441299880786,
+      "7": 0.13353427104779547,
+      "8": 0.04332247214613471,
+      "9": 0.048428689982869685,
+      "10": 0.04859040318268111,
+      "11": 0.05145204436285876,
+      "12": 0.05944097968572522,
+      "13": 0.04381390960458992,
+      "14": 0.0678516329996492,
+      "15": 0.09572899285030465
+    },
+    "top4": [
+      7,
+      4,
+      15,
+      2
+    ],
+    "top5": [
+      7,
+      4,
+      15,
+      2,
+      1
+    ]
+  },
+  "research_candidate": {
+    "probabilities": {
+      "1": 0.05898679288047279,
+      "2": 0.0982093692359609,
+      "3": 0.032436756004259805,
+      "4": 0.11719572186389922,
+      "5": 0.030946779861807754,
+      "6": 0.06161503754978005,
+      "7": 0.133749295020648,
+      "8": 0.04599679837542624,
+      "9": 0.05141822657797768,
+      "10": 0.051589922445685325,
+      "11": 0.055385722469511144,
+      "12": 0.06214988831633606,
+      "13": 0.04542911009517717,
+      "14": 0.07754436892757821,
+      "15": 0.07734621037547969
+    },
+    "top4": [
+      7,
+      4,
+      2,
+      14
+    ],
+    "top5": [
+      7,
+      4,
+      2,
+      14,
+      15
+    ]
+  },
+  "limitations": [
+    "Reuses frozen V3 model coefficients and temperature, only patches first five recent form features.",
+    "Elo, driver, trainer and 20-start DQ features remain archive-based.",
+    "Individual API source might not contain all career starts; unresolved recent outcomes abstain.",
+    "Prestart replay is not independent forward validation. No promotion or betting."
+  ],
+  "shadow_calculated_at": "2026-11-27T00:34:09.796578+00:00",
+  "source_request_id": "prospective-cohort-2026-11-27_R6C3",
+  "selection_rule": "SCHEDULED_FIRST_TEN_FRENCH_HARNESS_WITH_40MIN_LEAD_V2",
+  "daily_cohort_plan": "reports/history_repair_shadow_v1/prospective_forecasts/2026-11-27/selection_plan.json",
+  "selection_index": 9
+}

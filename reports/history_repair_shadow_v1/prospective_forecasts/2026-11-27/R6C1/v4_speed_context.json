@@ -1,0 +1,97 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-27_R6C1",
+  "target_date": "2026-11-27",
+  "captured_at": "2026-11-27T00:30:17.916572+00:00",
+  "prior_races": 30676,
+  "last_prior_day": "2026-11-26",
+  "prior_history_sha256": "d1a2b9a8772f17e71a8fbfe66282bfd8254729d22dcff18927a04e3d4a0a4461",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('LOS ALAMOS', 'FLY MOON', 'SINGALO')",
+      "context_residual": 1.8711717655404791,
+      "prior_races_used": 1
+    },
+    "2": {
+      "horse_id": "pedigree:('LYS DU CAIEU', 'FLEUR DU CAIEU', 'UP AND QUICK')",
+      "context_residual": -0.00043157687770144546,
+      "prior_races_used": 3
+    },
+    "3": {
+      "horse_id": "pedigree:('LE BEAU FOXGLEN', \"BELLE D'ORLANDO\", 'NIKY')",
+      "context_residual": -1.6901723866118845,
+      "prior_races_used": 1
+    },
+    "4": {
+      "horse_id": "pedigree:('LYCAON DES VENTS', 'TIRA NELGER', 'BLUE PASS')",
+      "context_residual": -1.559430707687512,
+      "prior_races_used": 1
+    },
+    "5": {
+      "horse_id": "pedigree:('LORD FAFA', 'ELSA DE BAILLY', 'ATLAS DE JOUDES')",
+      "context_residual": 0.5672015425476639,
+      "prior_races_used": 2
+    },
+    "6": {
+      "horse_id": "pedigree:(\"LUCAS D'AVRIL\", \"TOUNDRA D'ENGHIEN\", 'PASSWORD')",
+      "context_residual": 0.6572629788985068,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:(\"L'ECU DALAMEDA\", 'AHIRA DES MARES', 'DIADEME ATOUT')",
+      "context_residual": 0.2368391495068645,
+      "prior_races_used": 1
+    },
+    "8": {
+      "horse_id": "pedigree:('LIPTON DE CLERCE', 'AGAIN SEVEN', 'EASY DES RACQUES')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "9": {
+      "horse_id": "pedigree:('LUDO DES LUCAS', 'RANIA DE JOUDES', 'ERIDAN')",
+      "context_residual": -0.1367686804451514,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('LAST ROUND', 'TIFFY', 'QUAKER JET')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "11": {
+      "horse_id": "pedigree:('LANCIANO', 'CREATION', 'FEELING CASH')",
+      "context_residual": -1.1292523499099407,
+      "prior_races_used": 2
+    },
+    "12": {
+      "horse_id": "pedigree:('LYNX DES RACQUES', 'LUZACHINGA', 'KUADRO WILD')",
+      "context_residual": -0.11265982024178084,
+      "prior_races_used": 3
+    },
+    "13": {
+      "horse_id": "pedigree:('LEADER BAROQUE', 'BONNE COPINE', 'BRILLANTISSIME')",
+      "context_residual": -2.159430707687512,
+      "prior_races_used": 1
+    },
+    "14": {
+      "horse_id": "pedigree:('LUTIN DES RACQUES', 'SALOME DES RACQUES', 'GOETMALS WOOD')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "15": {
+      "horse_id": "pedigree:('LOBSTER CLUB', 'ANNEE JOYEUSE', 'DIJON')",
+      "context_residual": 1.487340179758219,
+      "prior_races_used": 1
+    },
+    "16": {
+      "horse_id": "pedigree:('LETY BOY DE CHOC', \"RAZZIA D'ERONVILLE\", 'EARL SIMON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 16,
+  "coverage_active": 12,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}

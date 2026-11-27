@@ -1,0 +1,82 @@
+{
+  "version": "v4_speed_prior_only_context_v1",
+  "race_id": "2026-11-27_R5C5",
+  "target_date": "2026-11-27",
+  "captured_at": "2026-11-27T00:33:20.738395+00:00",
+  "prior_races": 30676,
+  "last_prior_day": "2026-11-26",
+  "prior_history_sha256": "d1a2b9a8772f17e71a8fbfe66282bfd8254729d22dcff18927a04e3d4a0a4461",
+  "speed_protocol_sha256": "f10403c48a3819cab2dc5c328ee4d6bc84e25631d5fdd0fe1f6aac6e76e23400",
+  "target_field": {
+    "1": {
+      "horse_id": "pedigree:('LE GRAND FLAC', 'CLASS PETTEVINIERE', 'FACE TIME BOURBON')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "2": {
+      "horse_id": "pedigree:('LUCKY ARCTIC', 'UNE VIE', 'UP AND QUICK')",
+      "context_residual": 0.17188309809380736,
+      "prior_races_used": 2
+    },
+    "3": {
+      "horse_id": "pedigree:('LIBRIS EX BOURBON', 'UNE BELLE BOURBON', 'PRODIGIOUS')",
+      "context_residual": -1.295301981744793,
+      "prior_races_used": 2
+    },
+    "4": {
+      "horse_id": "pedigree:('LUTECE SMART', 'CUP OF SMART', \"UN MEC D'HERIPRE\")",
+      "context_residual": 1.255105171957359,
+      "prior_races_used": 3
+    },
+    "5": {
+      "horse_id": "pedigree:('LA HORSE', \"CREOLE D'EBANE\", 'BOLERO LOVE')",
+      "context_residual": 1.1551051719573588,
+      "prior_races_used": 1
+    },
+    "6": {
+      "horse_id": "pedigree:('LA BELLE MISS', 'QUELLE MISS WIC', 'QUAKER JET')",
+      "context_residual": -0.9631608504931355,
+      "prior_races_used": 1
+    },
+    "7": {
+      "horse_id": "pedigree:('LENNON', 'SWEET PEARL', 'FOLLOW YOU')",
+      "context_residual": 1.0023980406336486,
+      "prior_races_used": 3
+    },
+    "8": {
+      "horse_id": "pedigree:('LUCIFER', 'VALLEY VICTORIA', 'DJANGO RIFF')",
+      "context_residual": 1.0551051719573588,
+      "prior_races_used": 1
+    },
+    "9": {
+      "horse_id": "pedigree:('LAWMAN', 'ULZHANE', 'READY CASH')",
+      "context_residual": -1.9851896398754179,
+      "prior_races_used": 1
+    },
+    "10": {
+      "horse_id": "pedigree:('LASKO DES FORGES', 'VICTOIRE DE FORGES', \"GU D'HERIPRE\")",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "11": {
+      "horse_id": "pedigree:(\"LOOK D'HERMES\", 'URFEE DU MOUCHEL', 'LOVE YOU')",
+      "context_residual": 0.0785606018389517,
+      "prior_races_used": 1
+    },
+    "12": {
+      "horse_id": "pedigree:('LAKARA', 'ECLIPSE DE KARA', 'VILLAGE MYSTIC')",
+      "context_residual": null,
+      "prior_races_used": 0
+    },
+    "13": {
+      "horse_id": "pedigree:('LORKY RED', 'FRANCA MARIA SLY', 'DROLE DE JET')",
+      "context_residual": null,
+      "prior_races_used": 0
+    }
+  },
+  "target_participants": 13,
+  "coverage_active": 9,
+  "source": "VERIFIED_PMU_PRIOR_RACE_RESULTS_ONLY",
+  "contains_target_outcome": false,
+  "note": "One 43rd contextual speed feature per horse, missing kept missing"
+}
